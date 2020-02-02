@@ -1368,6 +1368,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Pull Up Method	public send(query Q, resultName String) : CompletableFuture&lt;R&gt; from class org.axonframework.queryhandling.DefaultQueryGateway to public send(query Q, responseType Class&lt;R&gt;) : CompletableFuture&lt;R&gt; from class org.axonframework.queryhandling.QueryGateway</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L37">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR31">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Pull Up Method	public send(query Q, resultClass Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; from class org.axonframework.queryhandling.DefaultQueryGateway to public send(query Q, responseType Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; from class org.axonframework.queryhandling.QueryGateway</i></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L58">From</a></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR73">To</a></td>
@@ -1387,13 +1394,6 @@
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR73">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public send(query Q, resultName String) : CompletableFuture&lt;R&gt; from class org.axonframework.queryhandling.DefaultQueryGateway to public send(query Q, responseType Class&lt;R&gt;) : CompletableFuture&lt;R&gt; from class org.axonframework.queryhandling.QueryGateway</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L37">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR31">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1404,6 +1404,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-21" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	query : QueryMessage&lt;Q&gt; to query : QueryMessage&lt;Q,R&gt; in method public query(query QueryMessage&lt;Q,R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL56">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, queryName String, responseType Class&lt;R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.QueryGateway</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabL50">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	responseName : String to responseType : Class&lt;R&gt; in method public GenericQueryMessage(delegate Message&lt;T&gt;, queryName String, responseType Class&lt;R&gt;) in class org.axonframework.queryhandling.GenericQueryMessage</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1L44">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, responseType Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; in class org.axonframework.queryhandling.QueryGateway</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L53">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR86">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	handler : MessageHandler&lt;? super QueryMessage&lt;?&gt;&gt; to handler : MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt; in method private unsubscribe(registrationKey QueryDefinition, handler MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt;) : boolean in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL72">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, queryName String, responseType Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; in class org.axonframework.queryhandling.DefaultQueryGateway</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L63">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, queryName String, responseType Class&lt;R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.DefaultQueryGateway</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L48">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R54">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1503,55 +1552,6 @@
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-26e7fd41cde40585316310ff41f5ff67R58">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	query : QueryMessage&lt;Q&gt; to query : QueryMessage&lt;Q,R&gt; in method public query(query QueryMessage&lt;Q,R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL56">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, queryName String, responseType Class&lt;R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.QueryGateway</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabL50">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	responseName : String to responseType : Class&lt;R&gt; in method public GenericQueryMessage(delegate Message&lt;T&gt;, queryName String, responseType Class&lt;R&gt;) in class org.axonframework.queryhandling.GenericQueryMessage</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1L44">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1R71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, responseType Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; in class org.axonframework.queryhandling.QueryGateway</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L53">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR86">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	handler : MessageHandler&lt;? super QueryMessage&lt;?&gt;&gt; to handler : MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt; in method private unsubscribe(registrationKey QueryDefinition, handler MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt;) : boolean in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL72">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, queryName String, responseType Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; in class org.axonframework.queryhandling.DefaultQueryGateway</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L63">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultName : String to responseType : Class&lt;R&gt; in method public send(query Q, queryName String, responseType Class&lt;R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.DefaultQueryGateway</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L48">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R54">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1562,6 +1562,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	QueryMessage&lt;T&gt; to QueryMessage&lt;T,R&gt; in method public andMetaData(metaData Map&lt;String,?&gt;) : QueryMessage&lt;T,R&gt; in class org.axonframework.queryhandling.GenericQueryMessage</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1L66">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1R93">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	String to Integer in method public echo3(echo String) : Integer in class org.axonframework.queryhandling.AnnotationQueryHandlerAdapterTest.MyQueryHandler</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5bdfd7f8a4e2340d5fe456932e03a849L122">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5bdfd7f8a4e2340d5fe456932e03a849R113">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1596,20 +1610,6 @@
                                 <td><i>Change Return Type	CompletableFuture&lt;R&gt; to Stream&lt;R&gt; in method public send(query Q, responseType Class&lt;R&gt;, timeout long, timeUnit TimeUnit) : Stream&lt;R&gt; in class org.axonframework.queryhandling.QueryGateway</i></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L43">From</a></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-4961207534f87ca3f78f103e1dc55fabR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	QueryMessage&lt;T&gt; to QueryMessage&lt;T,R&gt; in method public andMetaData(metaData Map&lt;String,?&gt;) : QueryMessage&lt;T,R&gt; in class org.axonframework.queryhandling.GenericQueryMessage</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1L66">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1R93">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	String to Integer in method public echo3(echo String) : Integer in class org.axonframework.queryhandling.AnnotationQueryHandlerAdapterTest.MyQueryHandler</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5bdfd7f8a4e2340d5fe456932e03a849L122">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5bdfd7f8a4e2340d5fe456932e03a849R113">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1668,20 +1668,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	handlers : Set&lt;MessageHandler&lt;? super QueryMessage&lt;?&gt;&gt;&gt; to handlers : Set&lt;MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt;&gt; in method public query(query QueryMessage&lt;Q,R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL56">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	message : QueryMessage&lt;? extends C&gt; to message : QueryMessage&lt;? extends C,R&gt; in method private processInterceptors(queryMessage QueryMessage&lt;C,R&gt;) : QueryMessage&lt;? extends C,R&gt; in class org.axonframework.queryhandling.DefaultQueryGateway</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L68">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	handlers : Set&lt;MessageHandler&lt;? super QueryMessage&lt;?&gt;&gt;&gt; to handlers : Set&lt;MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt;&gt; in method public queryAll(query QueryMessage&lt;Q,R&gt;, timeout long, unit TimeUnit) : Stream&lt;R&gt; in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL83">From</a></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR111">To</a></td>
@@ -1694,6 +1680,20 @@
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R61">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	handlers : Set&lt;MessageHandler&lt;? super QueryMessage&lt;?&gt;&gt;&gt; to handlers : Set&lt;MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt;&gt; in method public query(query QueryMessage&lt;Q,R&gt;) : CompletableFuture&lt;R&gt; in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL56">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	message : QueryMessage&lt;? extends C&gt; to message : QueryMessage&lt;? extends C,R&gt; in method private processInterceptors(queryMessage QueryMessage&lt;C,R&gt;) : QueryMessage&lt;? extends C,R&gt; in class org.axonframework.queryhandling.DefaultQueryGateway</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4L68">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-6b61a24bed763abb8fc01f9172c9e4a4R60">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1704,13 +1704,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	responseName : String to responseType : Class&lt;R&gt; in class org.axonframework.queryhandling.GenericQueryMessage</i></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1L31">From</a></td>
-                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1R39">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1738,6 +1731,13 @@
                                 <td><i>Change Attribute Type	subscriptions : ConcurrentMap&lt;QueryDefinition,Set&lt;MessageHandler&lt;? super QueryMessage&lt;?&gt;&gt;&gt;&gt; to subscriptions : ConcurrentMap&lt;QueryDefinition,Set&lt;MessageHandler&lt;? super QueryMessage&lt;?,?&gt;&gt;&gt;&gt; in class org.axonframework.queryhandling.SimpleQueryBus</i></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccL39">From</a></td>
                                 <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-5db0d980ed5a9d0bc46a6f308be65fccR47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	responseName : String to responseType : Class&lt;R&gt; in class org.axonframework.queryhandling.GenericQueryMessage</i></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1L31">From</a></td>
+                                <td><a href = "https://github.com/AxonFramework/AxonFramework/commit/ed518aea9a600075682aba41eef54a33d8e8f390?diff=split#diff-0c1a0a697c39672c38a146fab21ec0c1R39">To</a></td>
                             </tr>
                             
                             </tbody>

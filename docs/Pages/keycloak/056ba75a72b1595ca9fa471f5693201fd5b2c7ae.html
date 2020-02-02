@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	cache : Cache&lt;String,SessionEntityWrapper&gt; to cache : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in method public createAndInit(kcSession KeycloakSession, cache Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt;, offline boolean) : LastSessionRefreshStore in class org.keycloak.models.sessions.infinispan.changes.sessions.LastSessionRefreshStoreFactory</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-9f7b3aa9bec02da8d49282131ded8adeL42">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-9f7b3aa9bec02da8d49282131ded8adeR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	ispnCache : Cache to ispnCache : Cache&lt;K,SessionEntityWrapper&lt;V&gt;&gt; in method private checkRemoteCache(session KeycloakSession, ispnCache Cache&lt;K,SessionEntityWrapper&lt;V&gt;&gt;, maxIdleLoader RemoteCacheInvoker.MaxIdleTimeLoader) : boolean in class org.keycloak.models.sessions.infinispan.InfinispanUserSessionProviderFactory</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-51b53e0cb4459faf529f8d2a38ebe8fbL232">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-51b53e0cb4459faf529f8d2a38ebe8fbR233">To</a></td>
@@ -199,13 +206,6 @@
                                 <td><i>Change Parameter Type	remoteCache : RemoteCache&lt;K,V&gt; to remoteCache : RemoteCache&lt;K,SessionEntityWrapper&lt;V&gt;&gt; in method private runOnRemoteCache(remoteCache RemoteCache&lt;K,SessionEntityWrapper&lt;V&gt;&gt;, maxIdleMs long, key K, task SessionUpdateTask&lt;V&gt;, sessionWrapper SessionEntityWrapper&lt;V&gt;) : void in class org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheInvoker</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-7801deb07db7bed1b50cf230681d1324L85">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-7801deb07db7bed1b50cf230681d1324R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	cache : Cache&lt;String,SessionEntityWrapper&gt; to cache : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in method public createAndInit(kcSession KeycloakSession, cache Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt;, offline boolean) : LastSessionRefreshStore in class org.keycloak.models.sessions.infinispan.changes.sessions.LastSessionRefreshStoreFactory</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-9f7b3aa9bec02da8d49282131ded8adeL42">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-9f7b3aa9bec02da8d49282131ded8adeR43">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -320,16 +320,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	cache : Cache&lt;String,SessionEntityWrapper&gt; to cache : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in class org.keycloak.models.sessions.infinispan.changes.sessions.LastSessionRefreshListener</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-d47ee9dd0bbe629a2b4c9160a98303b0L46">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-d47ee9dd0bbe629a2b4c9160a98303b0R47">To</a></td>
+                                <td><i>Change Attribute Type	remoteCache : RemoteCache&lt;K,V&gt; to remoteCache : RemoteCache&lt;K,SessionEntityWrapper&lt;V&gt;&gt; in class org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-6066aa282a52e5d3f37a0368ef240197L50">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-6066aa282a52e5d3f37a0368ef240197R50">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	remoteCache : RemoteCache&lt;K,V&gt; to remoteCache : RemoteCache&lt;K,SessionEntityWrapper&lt;V&gt;&gt; in class org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-6066aa282a52e5d3f37a0368ef240197L50">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-6066aa282a52e5d3f37a0368ef240197R50">To</a></td>
+                                <td><i>Change Attribute Type	cache : Cache&lt;String,SessionEntityWrapper&gt; to cache : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in class org.keycloak.models.sessions.infinispan.changes.sessions.LastSessionRefreshListener</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-d47ee9dd0bbe629a2b4c9160a98303b0L46">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/056ba75a72b1595ca9fa471f5693201fd5b2c7ae?diff=split#diff-d47ee9dd0bbe629a2b4c9160a98303b0R47">To</a></td>
                             </tr>
                             
                             </tbody>

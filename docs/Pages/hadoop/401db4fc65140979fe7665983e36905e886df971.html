@@ -366,20 +366,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method protected fetchBlockByteRange(block LocatedBlock, start long, end long, buf ByteBuffer, corruptedBlocks CorruptedBlocks) : void in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eL964">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eR966">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method package actualGetFromOneDataNode(datanode DNAddrPair, block LocatedBlock, startInBlk long, endInBlk long, buf ByteBuffer, corruptedBlocks CorruptedBlocks) : void in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eL1003">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eR1014">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	decodeInputs : byte[][] to decodeInputs : ByteBuffer[] in method public finalizeDecodeInputs(decodeInputs ByteBuffer[], alignedStripe AlignedStripe) : void in class org.apache.hadoop.hdfs.util.StripedBlockUtil</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-f8d9ce161f564a30b0334387c95171a6L330">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-f8d9ce161f564a30b0334387c95171a6R339">To</a></td>
@@ -425,6 +411,20 @@
                                 <td><i>Change Parameter Type	decodeInputs : byte[][] to decodeInputs : ByteBuffer[] in method public decodeAndFillBuffer(decodeInputs ByteBuffer[], alignedStripe AlignedStripe, dataBlkNum int, parityBlkNum int, decoder RawErasureDecoder) : void in class org.apache.hadoop.hdfs.util.StripedBlockUtil</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-f8d9ce161f564a30b0334387c95171a6L351">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-f8d9ce161f564a30b0334387c95171a6R363">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method protected fetchBlockByteRange(block LocatedBlock, start long, end long, buf ByteBuffer, corruptedBlocks CorruptedBlocks) : void in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eL964">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eR966">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method package actualGetFromOneDataNode(datanode DNAddrPair, block LocatedBlock, startInBlk long, endInBlk long, buf ByteBuffer, corruptedBlocks CorruptedBlocks) : void in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eL1003">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/401db4fc65140979fe7665983e36905e886df971?diff=split#diff-e19ea987d863f38f3865bbc2b729c81eR1014">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -476,14 +476,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Merge Variable	[buf : byte[], offset : int] to bb : ByteBuffer in method private getFromOneDataNode(datanode DNAddrPair, block LocatedBlock, start long, end long, bb ByteBuffer, corruptedBlocks CorruptedBlocks, hedgedReadId int) : Callable&lt;ByteBuffer&gt; in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
+                                <td><i>Merge Variable	[buffer : byte[], offset : int, length : int] to bb : ByteBuffer in method public read(position long, buffer byte[], offset int, length int) : int in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Merge Variable	[buffer : byte[], offset : int, length : int] to bb : ByteBuffer in method public read(position long, buffer byte[], offset int, length int) : int in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
+                                <td><i>Merge Variable	[buf : byte[], offset : int] to bb : ByteBuffer in method private getFromOneDataNode(datanode DNAddrPair, block LocatedBlock, start long, end long, bb ByteBuffer, corruptedBlocks CorruptedBlocks, hedgedReadId int) : Callable&lt;ByteBuffer&gt; in class org.apache.hadoop.hdfs.DFSInputStream</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

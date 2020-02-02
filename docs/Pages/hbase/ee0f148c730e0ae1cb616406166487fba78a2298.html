@@ -337,13 +337,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	package getFileSplitPoint(comparator CellComparator) : byte[] from class org.apache.hadoop.hbase.regionserver.StoreFile to package getFileSplitPoint(file StoreFile, comparator CellComparator) : Optional&lt;byte[]&gt; from class org.apache.hadoop.hbase.regionserver.StoreUtils</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L701">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-9f9f9409e32e85b6f52fb7778d40b1b0R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Method	public getMaxMemstoreTSInList(sfs Collection&lt;StoreFile&gt;) : long from class org.apache.hadoop.hbase.regionserver.StoreFile to public getMaxMemstoreTSInList(sfs Collection&lt;StoreFile&gt;) : long from class org.apache.hadoop.hbase.regionserver.StoreUtils</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L365">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-9f9f9409e32e85b6f52fb7778d40b1b0R85">To</a></td>
@@ -363,6 +356,13 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-7ccddb534b79a379fe56aaff1a74d9abR361">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package getFileSplitPoint(comparator CellComparator) : byte[] from class org.apache.hadoop.hbase.regionserver.StoreFile to package getFileSplitPoint(file StoreFile, comparator CellComparator) : Optional&lt;byte[]&gt; from class org.apache.hadoop.hbase.regionserver.StoreUtils</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L701">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-9f9f9409e32e85b6f52fb7778d40b1b0R117">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -373,6 +373,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-19" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private cacheConf : CacheConfig from class org.apache.hadoop.hbase.regionserver.StoreFile to private cacheConf : CacheConfig from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L109">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private DEFAULT_STORE_FILE_READER_NO_READAHEAD : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to private DEFAULT_STORE_FILE_READER_NO_READAHEAD : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L70">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R64">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private primaryReplica : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to private primaryReplica : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L118">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private maxMemstoreTS : long from class org.apache.hadoop.hbase.regionserver.StoreFile to private maxMemstoreTS : long from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L129">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private cfBloomType : BloomType from class org.apache.hadoop.hbase.regionserver.StoreFile to private cfBloomType : BloomType from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L189">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R145">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -472,41 +507,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R75">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private cacheConf : CacheConfig from class org.apache.hadoop.hbase.regionserver.StoreFile to private cacheConf : CacheConfig from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L109">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private DEFAULT_STORE_FILE_READER_NO_READAHEAD : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to private DEFAULT_STORE_FILE_READER_NO_READAHEAD : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L70">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R64">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private primaryReplica : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to private primaryReplica : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L118">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private maxMemstoreTS : long from class org.apache.hadoop.hbase.regionserver.StoreFile to private maxMemstoreTS : long from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L129">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private cfBloomType : BloomType from class org.apache.hadoop.hbase.regionserver.StoreFile to private cfBloomType : BloomType from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L189">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R145">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -563,6 +563,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	org.apache.hadoop.hbase.regionserver.StoreFile.Comparators.GetSeqId moved to org.apache.hadoop.hbase.regionserver.StoreFileComparators.GetSeqId</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.hadoop.hbase.regionserver.StoreFile.Comparators.GetFileSize moved to org.apache.hadoop.hbase.regionserver.StoreFileComparators.GetFileSize</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	org.apache.hadoop.hbase.regionserver.StoreFile.Comparators.GetPathName moved to org.apache.hadoop.hbase.regionserver.StoreFileComparators.GetPathName</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -582,20 +596,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.hadoop.hbase.regionserver.StoreFile.Comparators.GetSeqId moved to org.apache.hadoop.hbase.regionserver.StoreFileComparators.GetSeqId</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.hadoop.hbase.regionserver.StoreFile.Comparators.GetFileSize moved to org.apache.hadoop.hbase.regionserver.StoreFileComparators.GetFileSize</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -606,41 +606,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	hsf : StoreFile to hsf : HStoreFile in method public testCacheOnWriteEvictOnClose() : void in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL896">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R917">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	hsf : StoreFile to hsf : HStoreFile in method public testReference() : void in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL152">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R173">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	minTimestamp : Long to minTimestamp : OptionalLong in method public shouldPerformMajorCompaction(filesToCompact Collection&lt;StoreFile&gt;) : boolean in class org.apache.hadoop.hbase.regionserver.compactions.DateTieredCompactionPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL111">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	scanners : List to scanners : List&lt;StoreFileScanner&gt; in method private countMobCellsInMobFiles(expectedNumDelfiles int) : int in class org.apache.hadoop.hbase.regionserver.TestMobStoreCompaction</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-c9fc295c7129e7568d62d125fc547602L401">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-c9fc295c7129e7568d62d125fc547602R425">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	bottomF : StoreFile to bottomF : HStoreFile in method private checkHalfHFile(regionFs HRegionFileSystem, f HStoreFile) : void in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL341">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R360">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -733,6 +698,41 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-311d9dd7582a5011e02bbd0ee13db8a5R134">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	hsf : StoreFile to hsf : HStoreFile in method public testCacheOnWriteEvictOnClose() : void in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL896">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R917">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	hsf : StoreFile to hsf : HStoreFile in method public testReference() : void in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL152">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R173">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	minTimestamp : Long to minTimestamp : OptionalLong in method public shouldPerformMajorCompaction(filesToCompact Collection&lt;StoreFile&gt;) : boolean in class org.apache.hadoop.hbase.regionserver.compactions.DateTieredCompactionPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL111">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eR139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	scanners : List to scanners : List&lt;StoreFileScanner&gt; in method private countMobCellsInMobFiles(expectedNumDelfiles int) : int in class org.apache.hadoop.hbase.regionserver.TestMobStoreCompaction</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-c9fc295c7129e7568d62d125fc547602L401">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-c9fc295c7129e7568d62d125fc547602R425">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	bottomF : StoreFile to bottomF : HStoreFile in method private checkHalfHFile(regionFs HRegionFileSystem, f HStoreFile) : void in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL341">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R360">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -793,6 +793,83 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-36" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public markCompactedAway() : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public markCompactedAway() : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L625">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R497">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public initReader() : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public initReader() : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L565">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R443">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public isReferencedInReads() : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to public isReferencedInReads() : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L428">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R312">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public getFirstKey() : Cell from class org.apache.hadoop.hbase.regionserver.StoreFile to public getFirstKey() : Cell from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L142">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public deleteReader() : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public deleteReader() : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L632">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R502">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public getFileInfo() : StoreFileInfo from class org.apache.hadoop.hbase.regionserver.StoreFile to public getFileInfo() : StoreFileInfo from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L291">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R238">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public getQualifiedPath() : Path from class org.apache.hadoop.hbase.regionserver.StoreFile to public getQualifiedPath() : Path from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L306">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R248">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public getMaxSequenceId() : long from class org.apache.hadoop.hbase.regionserver.StoreFile to public getMaxSequenceId() : long from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L345">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R276">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public getPath() : Path from class org.apache.hadoop.hbase.regionserver.StoreFile to public getPath() : Path from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L299">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R243">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public isBulkLoadResult() : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to public isBulkLoadResult() : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L398">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R291">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public closeReader(evictOnClose boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public closeReader(evictOnClose boolean) : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L613">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R488">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -969,83 +1046,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R281">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public markCompactedAway() : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public markCompactedAway() : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L625">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R497">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public initReader() : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public initReader() : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L565">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R443">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public isReferencedInReads() : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to public isReferencedInReads() : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L428">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R312">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public getFirstKey() : Cell from class org.apache.hadoop.hbase.regionserver.StoreFile to public getFirstKey() : Cell from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L142">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public deleteReader() : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public deleteReader() : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L632">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R502">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public getFileInfo() : StoreFileInfo from class org.apache.hadoop.hbase.regionserver.StoreFile to public getFileInfo() : StoreFileInfo from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L291">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R238">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public getQualifiedPath() : Path from class org.apache.hadoop.hbase.regionserver.StoreFile to public getQualifiedPath() : Path from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L306">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R248">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public getMaxSequenceId() : long from class org.apache.hadoop.hbase.regionserver.StoreFile to public getMaxSequenceId() : long from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L345">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R276">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public getPath() : Path from class org.apache.hadoop.hbase.regionserver.StoreFile to public getPath() : Path from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L299">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R243">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public isBulkLoadResult() : boolean from class org.apache.hadoop.hbase.regionserver.StoreFile to public isBulkLoadResult() : boolean from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L398">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R291">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public closeReader(evictOnClose boolean) : void from class org.apache.hadoop.hbase.regionserver.StoreFile to public closeReader(evictOnClose boolean) : void from class org.apache.hadoop.hbase.regionserver.HStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-5394438e4400774d95d5fe04f8aa5996L613">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-6822f5b639270b4a8626954e9ec6b120R488">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1074,6 +1074,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	StoreFile to HStoreFile in method private mockStoreFile(bulkLoad boolean, size long, bulkTimestamp long, seqId long, path String) : HStoreFile in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL778">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R779">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1108,13 +1115,6 @@
                                 <td><i>Change Return Type	Integer to OptionalInt in method public getDeterministicRandomSeed(files Collection&lt;StoreFile&gt;) : OptionalInt in class org.apache.hadoop.hbase.regionserver.StoreUtils</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-9f9f9409e32e85b6f52fb7778d40b1b0L31">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-9f9f9409e32e85b6f52fb7778d40b1b0R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	StoreFile to HStoreFile in method private mockStoreFile(bulkLoad boolean, size long, bulkTimestamp long, seqId long, path String) : HStoreFile in class org.apache.hadoop.hbase.regionserver.TestHStoreFile</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-0ba5f8a3a9fc59608dcc85d5a6af680eL778">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/ee0f148c730e0ae1cb616406166487fba78a2298?diff=split#diff-b50745bb30b2ff8c388ba3a9a4c916d0R779">To</a></td>
                             </tr>
                             
                             </tbody>

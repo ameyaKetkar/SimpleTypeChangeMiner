@@ -286,13 +286,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Merge Attribute	[topicName : String, startMessageId : MessageId] to conf : ReaderConfigurationData in class org.apache.pulsar.client.impl.ReaderBuilderImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Merge Attribute	[subscriptionName : String, topicNames : Set&lt;String&gt;] to conf : ConsumerConfigurationData in class org.apache.pulsar.client.impl.ConsumerBuilderImpl</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -312,6 +305,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Merge Attribute	[topicName : String, startMessageId : MessageId] to conf : ReaderConfigurationData in class org.apache.pulsar.client.impl.ReaderBuilderImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -322,6 +322,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-22" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	conf : ConsumerConfiguration to conf : ConsumerConfigurationData in method package ConsumerImpl(client PulsarClientImpl, topic String, conf ConsumerConfigurationData, listenerExecutor ExecutorService, partitionIndex int, subscribeFuture CompletableFuture&lt;Consumer&gt;, subscriptionMode SubscriptionMode, startMessageId MessageId) in class org.apache.pulsar.client.impl.ConsumerImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-debb36270f152d2533b03902f214fa9aL134">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-debb36270f152d2533b03902f214fa9aR137">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	encKeys : ConcurrentOpenHashSet&lt;String&gt; to encKeys : Set&lt;String&gt; in method public encrypt(encKeys Set&lt;String&gt;, keyReader CryptoKeyReader, msgMetadata MessageMetadata.Builder, payload ByteBuf) : ByteBuf in class org.apache.pulsar.client.impl.MessageCrypto</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e68ed20e8b15976a290afc81f62848dcL380">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e68ed20e8b15976a290afc81f62848dcR378">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	readerConfiguration : ReaderConfiguration to readerConfiguration : ReaderConfigurationData in method public ReaderImpl(client PulsarClientImpl, readerConfiguration ReaderConfigurationData, listenerExecutor ExecutorService, consumerFuture CompletableFuture&lt;Consumer&gt;) in class org.apache.pulsar.client.impl.ReaderImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-f5e34472e9e9b7feac1ac41cd5e2aa18L43">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-f5e34472e9e9b7feac1ac41cd5e2aa18R43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	conf : ConsumerConfiguration to conf : ConsumerConfigurationData in method package RawConsumerImpl(client PulsarClientImpl, conf ConsumerConfigurationData, consumerFuture CompletableFuture&lt;Consumer&gt;) in class org.apache.pulsar.client.impl.RawReaderImpl.RawConsumerImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271L95">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271R85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	conf : ClientConfiguration to conf : ClientConfigurationData in method private getEventLoopGroup(conf ClientConfigurationData) : EventLoopGroup in class org.apache.pulsar.client.impl.PulsarClientImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-8ee9d9ff5ee61c939daaef7e698134a4L538">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-8ee9d9ff5ee61c939daaef7e698134a4R593">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	conf : ClientConfiguration to conf : ClientConfigurationData in method public HttpLookupService(conf ClientConfigurationData, eventLoopGroup EventLoopGroup) in class org.apache.pulsar.client.impl.HttpLookupService</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-c76718c27f52443af88f1c33e27a0d17L43">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-c76718c27f52443af88f1c33e27a0d17R43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	conf : ProducerConfiguration to conf : ProducerConfigurationData in method protected ProducerBase(client PulsarClientImpl, topic String, conf ProducerConfigurationData, producerCreatedFuture CompletableFuture&lt;Producer&gt;) in class org.apache.pulsar.client.impl.ProducerBase</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0a1e30bae9d629bfd36dc40b510e9f60L37">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0a1e30bae9d629bfd36dc40b510e9f60R37">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -428,55 +477,6 @@
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-87aa4b583e2631d2541dd97486645109R109">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	conf : ConsumerConfiguration to conf : ConsumerConfigurationData in method package ConsumerImpl(client PulsarClientImpl, topic String, conf ConsumerConfigurationData, listenerExecutor ExecutorService, partitionIndex int, subscribeFuture CompletableFuture&lt;Consumer&gt;, subscriptionMode SubscriptionMode, startMessageId MessageId) in class org.apache.pulsar.client.impl.ConsumerImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-debb36270f152d2533b03902f214fa9aL134">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-debb36270f152d2533b03902f214fa9aR137">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	encKeys : ConcurrentOpenHashSet&lt;String&gt; to encKeys : Set&lt;String&gt; in method public encrypt(encKeys Set&lt;String&gt;, keyReader CryptoKeyReader, msgMetadata MessageMetadata.Builder, payload ByteBuf) : ByteBuf in class org.apache.pulsar.client.impl.MessageCrypto</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e68ed20e8b15976a290afc81f62848dcL380">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e68ed20e8b15976a290afc81f62848dcR378">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	readerConfiguration : ReaderConfiguration to readerConfiguration : ReaderConfigurationData in method public ReaderImpl(client PulsarClientImpl, readerConfiguration ReaderConfigurationData, listenerExecutor ExecutorService, consumerFuture CompletableFuture&lt;Consumer&gt;) in class org.apache.pulsar.client.impl.ReaderImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-f5e34472e9e9b7feac1ac41cd5e2aa18L43">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-f5e34472e9e9b7feac1ac41cd5e2aa18R43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	conf : ConsumerConfiguration to conf : ConsumerConfigurationData in method package RawConsumerImpl(client PulsarClientImpl, conf ConsumerConfigurationData, consumerFuture CompletableFuture&lt;Consumer&gt;) in class org.apache.pulsar.client.impl.RawReaderImpl.RawConsumerImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271L95">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	conf : ClientConfiguration to conf : ClientConfigurationData in method private getEventLoopGroup(conf ClientConfigurationData) : EventLoopGroup in class org.apache.pulsar.client.impl.PulsarClientImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-8ee9d9ff5ee61c939daaef7e698134a4L538">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-8ee9d9ff5ee61c939daaef7e698134a4R593">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	conf : ClientConfiguration to conf : ClientConfigurationData in method public HttpLookupService(conf ClientConfigurationData, eventLoopGroup EventLoopGroup) in class org.apache.pulsar.client.impl.HttpLookupService</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-c76718c27f52443af88f1c33e27a0d17L43">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-c76718c27f52443af88f1c33e27a0d17R43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	conf : ProducerConfiguration to conf : ProducerConfigurationData in method protected ProducerBase(client PulsarClientImpl, topic String, conf ProducerConfigurationData, producerCreatedFuture CompletableFuture&lt;Producer&gt;) in class org.apache.pulsar.client.impl.ProducerBase</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0a1e30bae9d629bfd36dc40b510e9f60L37">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0a1e30bae9d629bfd36dc40b510e9f60R37">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -533,174 +533,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-49" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private numListenerThreads : int from class org.apache.pulsar.client.api.ClientConfiguration to private numListenerThreads : int from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L47">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private connectionsPerBroker : int from class org.apache.pulsar.client.api.ClientConfiguration to private connectionsPerBroker : int from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L48">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.api.ConsumerConfiguration to private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L67">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private cryptoFailureAction : ProducerCryptoFailureAction from class org.apache.pulsar.client.api.ProducerConfiguration to private cryptoFailureAction : ProducerCryptoFailureAction from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L79">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.api.ReaderConfiguration to private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL40">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private compressionType : CompressionType from class org.apache.pulsar.client.api.ProducerConfiguration to private compressionType : CompressionType from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L63">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private operationTimeoutMs : long from class org.apache.pulsar.client.api.ClientConfiguration to private operationTimeoutMs : long from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L43">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private tlsTrustCertsFilePath : String from class org.apache.pulsar.client.api.ClientConfiguration to private tlsTrustCertsFilePath : String from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L53">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private maxTotalReceiverQueueSizeAcrossPartitions : int from class org.apache.pulsar.client.api.ConsumerConfiguration to private maxTotalReceiverQueueSizeAcrossPartitions : int from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L57">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private useTls : boolean from class org.apache.pulsar.client.api.ClientConfiguration to private useTls : boolean from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L52">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private readerListener : ReaderListener from class org.apache.pulsar.client.api.ReaderConfiguration to private readerListener : ReaderListener from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL35">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private cryptoKeyReader : CryptoKeyReader from class org.apache.pulsar.client.api.ReaderConfiguration to private cryptoKeyReader : CryptoKeyReader from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL39">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private topicName : String from class org.apache.pulsar.client.impl.ProducerBuilderImpl to private topicName : String from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-60536db1223f81e7c8a398a6c07f8097L43">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private consumerEventListener : ConsumerEventListener from class org.apache.pulsar.client.api.ConsumerConfiguration to private consumerEventListener : ConsumerEventListener from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L53">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private topicNames : Set&lt;String&gt; from class org.apache.pulsar.client.impl.ConsumerBuilderImpl to private topicNames : Set&lt;String&gt; from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0d7259a71e8daea848e3c1cdcef68c15L51">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private topicName : String from class org.apache.pulsar.client.impl.ReaderBuilderImpl to private topicName : String from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b746a0c0d52b62c87f2f0610470adeaL42">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	package serviceUrl : String from class org.apache.pulsar.client.impl.ClientBuilderImpl to private serviceUrl : String from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b5bcf7cbaefa4f88d610936aca0ff4aL36">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private useTcpNoDelay : boolean from class org.apache.pulsar.client.api.ClientConfiguration to private useTcpNoDelay : boolean from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L50">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private consumerName : String from class org.apache.pulsar.client.api.ConsumerConfiguration to private consumerName : String from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L59">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private producerName : String from class org.apache.pulsar.client.api.ProducerConfiguration to private producerName : String from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L45">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private sendTimeoutMs : long from class org.apache.pulsar.client.api.ProducerConfiguration to private sendTimeoutMs : long from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L46">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private subscriptionType : SubscriptionType from class org.apache.pulsar.client.api.ConsumerConfiguration to private subscriptionType : SubscriptionType from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L47">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private receiverQueueSize : int from class org.apache.pulsar.client.api.ReaderConfiguration to private receiverQueueSize : int from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL33">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private authentication : Authentication from class org.apache.pulsar.client.api.ClientConfiguration to private authentication : Authentication from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L42">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R40">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -877,6 +709,174 @@
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R66">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private numListenerThreads : int from class org.apache.pulsar.client.api.ClientConfiguration to private numListenerThreads : int from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L47">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private connectionsPerBroker : int from class org.apache.pulsar.client.api.ClientConfiguration to private connectionsPerBroker : int from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L48">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R46">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.api.ConsumerConfiguration to private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L67">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private cryptoFailureAction : ProducerCryptoFailureAction from class org.apache.pulsar.client.api.ProducerConfiguration to private cryptoFailureAction : ProducerCryptoFailureAction from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L79">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.api.ReaderConfiguration to private cryptoFailureAction : ConsumerCryptoFailureAction from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL40">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private compressionType : CompressionType from class org.apache.pulsar.client.api.ProducerConfiguration to private compressionType : CompressionType from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L63">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private operationTimeoutMs : long from class org.apache.pulsar.client.api.ClientConfiguration to private operationTimeoutMs : long from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L43">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private tlsTrustCertsFilePath : String from class org.apache.pulsar.client.api.ClientConfiguration to private tlsTrustCertsFilePath : String from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L53">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private maxTotalReceiverQueueSizeAcrossPartitions : int from class org.apache.pulsar.client.api.ConsumerConfiguration to private maxTotalReceiverQueueSizeAcrossPartitions : int from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L57">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private useTls : boolean from class org.apache.pulsar.client.api.ClientConfiguration to private useTls : boolean from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L52">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private readerListener : ReaderListener from class org.apache.pulsar.client.api.ReaderConfiguration to private readerListener : ReaderListener from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL35">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private cryptoKeyReader : CryptoKeyReader from class org.apache.pulsar.client.api.ReaderConfiguration to private cryptoKeyReader : CryptoKeyReader from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL39">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private topicName : String from class org.apache.pulsar.client.impl.ProducerBuilderImpl to private topicName : String from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-60536db1223f81e7c8a398a6c07f8097L43">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R46">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private consumerEventListener : ConsumerEventListener from class org.apache.pulsar.client.api.ConsumerConfiguration to private consumerEventListener : ConsumerEventListener from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L53">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private topicNames : Set&lt;String&gt; from class org.apache.pulsar.client.impl.ConsumerBuilderImpl to private topicNames : Set&lt;String&gt; from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0d7259a71e8daea848e3c1cdcef68c15L51">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private topicName : String from class org.apache.pulsar.client.impl.ReaderBuilderImpl to private topicName : String from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b746a0c0d52b62c87f2f0610470adeaL42">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	package serviceUrl : String from class org.apache.pulsar.client.impl.ClientBuilderImpl to private serviceUrl : String from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b5bcf7cbaefa4f88d610936aca0ff4aL36">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private useTcpNoDelay : boolean from class org.apache.pulsar.client.api.ClientConfiguration to private useTcpNoDelay : boolean from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L50">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private consumerName : String from class org.apache.pulsar.client.api.ConsumerConfiguration to private consumerName : String from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L59">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private producerName : String from class org.apache.pulsar.client.api.ProducerConfiguration to private producerName : String from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L45">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private sendTimeoutMs : long from class org.apache.pulsar.client.api.ProducerConfiguration to private sendTimeoutMs : long from class org.apache.pulsar.client.impl.conf.ProducerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-d21d3095ffdab9e93bc354bf1c1efd91L46">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-e669f9aed0cab13b11676f9dfd603179R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private subscriptionType : SubscriptionType from class org.apache.pulsar.client.api.ConsumerConfiguration to private subscriptionType : SubscriptionType from class org.apache.pulsar.client.impl.conf.ConsumerConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-92d275b6c936c9ead2cdf0267b348365L47">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-0504362c39b0035dc7313be5434834acR48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private receiverQueueSize : int from class org.apache.pulsar.client.api.ReaderConfiguration to private receiverQueueSize : int from class org.apache.pulsar.client.impl.conf.ReaderConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3339b02faac0bf3a49743f6651bc61feL33">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-77f38ad74e11d5ec5a7347cfdbbd41e0R36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private authentication : Authentication from class org.apache.pulsar.client.api.ClientConfiguration to private authentication : Authentication from class org.apache.pulsar.client.impl.conf.ClientConfigurationData</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-879fd1d845aec467577103ed0d451557L42">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-ae45b8688605b1c4b22d446bdb37b285R40">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -887,6 +887,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	org.apache.pulsar.client.impl.conf.ReaderConfigurationData from class org.apache.pulsar.client.api.ReaderConfiguration</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	org.apache.pulsar.client.impl.conf.ReaderConfigurationData from class org.apache.pulsar.client.impl.ReaderBuilderImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -912,20 +926,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	org.apache.pulsar.client.impl.conf.ClientConfigurationData from class org.apache.pulsar.client.api.ClientConfiguration</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Class	org.apache.pulsar.client.impl.conf.ReaderConfigurationData from class org.apache.pulsar.client.api.ReaderConfiguration</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Class	org.apache.pulsar.client.impl.conf.ReaderConfigurationData from class org.apache.pulsar.client.impl.ReaderBuilderImpl</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -986,20 +986,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	internalConsumerConfig : ConsumerConfiguration to internalConsumerConfig : ConsumerConfigurationData in method private getInternalConsumerConfig() : ConsumerConfigurationData in class org.apache.pulsar.client.impl.PartitionedConsumerImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-bbced2cbb73414dfcac0c55dc9169d37L437">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-bbced2cbb73414dfcac0c55dc9169d37R438">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	conf : ClientConfiguration to conf : ClientConfigurationData in method public testDoubleIpAddress() : void in class org.apache.pulsar.client.impl.ConnectionPoolTest</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-150ad2d601bf72271d1c76c08dc040beL70">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-150ad2d601bf72271d1c76c08dc040beR75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	internalConfig : ConsumerConfiguration to internalConfig : ConsumerConfigurationData in method private start() : void in class org.apache.pulsar.client.impl.PartitionedConsumerImpl</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-bbced2cbb73414dfcac0c55dc9169d37L89">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-bbced2cbb73414dfcac0c55dc9169d37R92">To</a></td>
@@ -1031,6 +1017,20 @@
                                 <td><i>Change Variable Type	consumerConfiguration : ConsumerConfiguration to consumerConfiguration : ConsumerConfigurationData in method public ReaderImpl(client PulsarClientImpl, readerConfiguration ReaderConfigurationData, listenerExecutor ExecutorService, consumerFuture CompletableFuture&lt;Consumer&gt;) in class org.apache.pulsar.client.impl.ReaderImpl</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-f5e34472e9e9b7feac1ac41cd5e2aa18L43">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-f5e34472e9e9b7feac1ac41cd5e2aa18R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	internalConsumerConfig : ConsumerConfiguration to internalConsumerConfig : ConsumerConfigurationData in method private getInternalConsumerConfig() : ConsumerConfigurationData in class org.apache.pulsar.client.impl.PartitionedConsumerImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-bbced2cbb73414dfcac0c55dc9169d37L437">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-bbced2cbb73414dfcac0c55dc9169d37R438">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	conf : ClientConfiguration to conf : ClientConfigurationData in method public testDoubleIpAddress() : void in class org.apache.pulsar.client.impl.ConnectionPoolTest</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-150ad2d601bf72271d1c76c08dc040beL70">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-150ad2d601bf72271d1c76c08dc040beR75">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1092,20 +1092,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	conf : ClientConfiguration to conf : ClientConfigurationData in class org.apache.pulsar.client.impl.ClientBuilderImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b5bcf7cbaefa4f88d610936aca0ff4aL37">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b5bcf7cbaefa4f88d610936aca0ff4aR36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	consumerConfiguration : ConsumerConfiguration to consumerConfiguration : ConsumerConfigurationData in class org.apache.pulsar.client.impl.RawReaderImpl</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271L54">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	internalConfig : ConsumerConfiguration to internalConfig : ConsumerConfigurationData in class org.apache.pulsar.client.impl.TopicsConsumerImpl</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-b997eefec56c41b0b1bc9bae9db6f5dfL82">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-b997eefec56c41b0b1bc9bae9db6f5dfR83">To</a></td>
@@ -1151,6 +1137,20 @@
                                 <td><i>Change Attribute Type	conf : ReaderConfiguration to conf : ReaderConfigurationData in class org.apache.pulsar.client.impl.ReaderBuilderImpl</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b746a0c0d52b62c87f2f0610470adeaL41">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b746a0c0d52b62c87f2f0610470adeaR40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	conf : ClientConfiguration to conf : ClientConfigurationData in class org.apache.pulsar.client.impl.ClientBuilderImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b5bcf7cbaefa4f88d610936aca0ff4aL37">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-3b5bcf7cbaefa4f88d610936aca0ff4aR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	consumerConfiguration : ConsumerConfiguration to consumerConfiguration : ConsumerConfigurationData in class org.apache.pulsar.client.impl.RawReaderImpl</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271L54">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1a1a6e3b06711248663b3a960c302c9dc2bf02e6?diff=split#diff-1e6d14405993f0264e501fea6f0c6271R46">To</a></td>
                             </tr>
                             
                             </tbody>

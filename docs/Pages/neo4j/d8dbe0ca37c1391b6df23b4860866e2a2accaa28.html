@@ -319,13 +319,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public marshal(member CoreMember, buffer ByteBuffer) : void moved from class org.neo4j.coreedge.server.CoreMember.CoreMemberMarshal to class org.neo4j.coreedge.raft.net.codecs.RaftMessageEncoder &amp; inlined to protected encode(ctx ChannelHandlerContext, message RaftMessages.RaftMessage&lt;CoreMember&gt;, list List&lt;Object&gt;) : void</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Inline Method	public unmarshal(buffer ByteBuf) : CoreMember moved from class org.neo4j.coreedge.server.CoreMember.CoreMemberMarshal to class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder &amp; inlined to protected decode(ctx ChannelHandlerContext, buffer ByteBuf, list List&lt;Object&gt;) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -345,6 +338,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Inline Method	public marshal(member CoreMember, buffer ByteBuffer) : void moved from class org.neo4j.coreedge.server.CoreMember.CoreMemberMarshal to class org.neo4j.coreedge.raft.net.codecs.RaftMessageEncoder &amp; inlined to protected encode(ctx ChannelHandlerContext, message RaftMessages.RaftMessage&lt;CoreMember&gt;, list List&lt;Object&gt;) : void</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -355,6 +355,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	marshal : ByteBufMarshal&lt;ReplicatedContent&gt; to marshal : ChannelMarshal&lt;ReplicatedContent&gt; in method public RaftMessageDecoder(marshal ChannelMarshal&lt;ReplicatedContent&gt;) in class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aL50">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aR52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	buffer : ByteBuf to buffer : WritableChannel in method public marshal(coreSnapshot CoreSnapshot, buffer WritableChannel) : void in class org.neo4j.coreedge.raft.state.CoreSnapshot.Marshal</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-e10d15318514cc2c03d7060483eff933L78">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-e10d15318514cc2c03d7060483eff933R76">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -403,20 +417,6 @@
                                 <td><i>Change Parameter Type	marshal : ByteBufMarshal&lt;ReplicatedContent&gt; to marshal : ChannelMarshal&lt;ReplicatedContent&gt; in method public NaiveDurableRaftLog(fileSystem FileSystemAbstraction, directory File, marshal ChannelMarshal&lt;ReplicatedContent&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.log.naive.NaiveDurableRaftLog</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-16a2b1a41b3cb3517a175cb6f49c74e3L92">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-16a2b1a41b3cb3517a175cb6f49c74e3R97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	marshal : ByteBufMarshal&lt;ReplicatedContent&gt; to marshal : ChannelMarshal&lt;ReplicatedContent&gt; in method public RaftMessageDecoder(marshal ChannelMarshal&lt;ReplicatedContent&gt;) in class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aL50">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aR52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	buffer : ByteBuf to buffer : WritableChannel in method public marshal(coreSnapshot CoreSnapshot, buffer WritableChannel) : void in class org.neo4j.coreedge.raft.state.CoreSnapshot.Marshal</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-e10d15318514cc2c03d7060483eff933L78">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-e10d15318514cc2c03d7060483eff933R76">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -504,27 +504,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	logChannel : NetworkReadableClosableByteBuf to logChannel : NetworkReadableClosableChannelNetty4 in method protected decode(ctx ChannelHandlerContext, msg ByteBuf, out List&lt;Object&gt;) : void in class org.neo4j.coreedge.catchup.tx.edge.TxPullResponseDecoder</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9L49">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9R55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	transactionCursor : PhysicalTransactionCursor&lt;NetworkReadableClosableByteBuf&gt; to transactionCursor : PhysicalTransactionCursor&lt;NetworkReadableClosableChannelNetty4&gt; in method protected decode(ctx ChannelHandlerContext, msg ByteBuf, out List&lt;Object&gt;) : void in class org.neo4j.coreedge.catchup.tx.edge.TxPullResponseDecoder</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9L49">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	marshal : AdvertisedSocketAddress.AdvertisedSocketAddressByteBufferMarshal to marshal : AdvertisedSocketAddress.AdvertisedSocketAddressChannelMarshal in method private retrieveMember(buffer ReadableChannel) : CoreMember in class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aL144">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aR150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	marshal : AdvertisedSocketAddress.AdvertisedSocketAddressByteBufferMarshal to marshal : AdvertisedSocketAddress.AdvertisedSocketAddressChannelMarshal in method public shouldMarshalAndUnmarshalFromChannel() : void in class org.neo4j.coreedge.server.AdvertisedSocketAddressMarshallingTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-ddd2774fbb989d7b280a07762b853090L52">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-ddd2774fbb989d7b280a07762b853090R43">To</a></td>
@@ -549,6 +528,27 @@
                                 <td><i>Change Variable Type	buffer : ByteBuf to channel : ReadableChannel in method protected decode(ctx ChannelHandlerContext, buffer ByteBuf, list List&lt;Object&gt;) : void in class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aL55">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aR60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	logChannel : NetworkReadableClosableByteBuf to logChannel : NetworkReadableClosableChannelNetty4 in method protected decode(ctx ChannelHandlerContext, msg ByteBuf, out List&lt;Object&gt;) : void in class org.neo4j.coreedge.catchup.tx.edge.TxPullResponseDecoder</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9L49">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9R55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	transactionCursor : PhysicalTransactionCursor&lt;NetworkReadableClosableByteBuf&gt; to transactionCursor : PhysicalTransactionCursor&lt;NetworkReadableClosableChannelNetty4&gt; in method protected decode(ctx ChannelHandlerContext, msg ByteBuf, out List&lt;Object&gt;) : void in class org.neo4j.coreedge.catchup.tx.edge.TxPullResponseDecoder</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9L49">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-290925d13c1fa81a1ed213ad0ce3d7a9R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	marshal : AdvertisedSocketAddress.AdvertisedSocketAddressByteBufferMarshal to marshal : AdvertisedSocketAddress.AdvertisedSocketAddressChannelMarshal in method private retrieveMember(buffer ReadableChannel) : CoreMember in class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aL144">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d8dbe0ca37c1391b6df23b4860866e2a2accaa28?diff=split#diff-74778e1edea7e647b0c1c47461e2015aR150">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -582,6 +582,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private assertMarshalingEquality(buffer ByteBuf, replicatedTx ReplicatedContent) : void extracted from public shouldMarshalIdRangeRequest() : void in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentMarshalTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private assertMarshalingEquality(buffer ByteBuf, replicatedTx ReplicatedContent) : void extracted from public shouldMarshalMemberSet() : void in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentMarshalTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -604,13 +611,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private assertMarshalingEquality(buffer ByteBuf, replicatedTx ReplicatedContent) : void extracted from public shouldMarshalTokenRequest() : void in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentMarshalTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private assertMarshalingEquality(buffer ByteBuf, replicatedTx ReplicatedContent) : void extracted from public shouldMarshalIdRangeRequest() : void in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentMarshalTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

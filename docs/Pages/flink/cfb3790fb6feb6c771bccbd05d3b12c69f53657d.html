@@ -220,13 +220,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getTaskManagerActorGateway() : ActorGateway renamed to public getTaskManagerGateway() : TaskManagerGateway in class org.apache.flink.runtime.jobmanager.slots.AllocatedSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbL135">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbR134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getActorGateway() : ActorGateway renamed to public getTaskManagerGateway() : TaskManagerGateway in class org.apache.flink.runtime.instance.Instance</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-58f95f700944741d8e651cc19928f5e3L332">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-58f95f700944741d8e651cc19928f5e3R334">To</a></td>
@@ -239,6 +232,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6R190">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getTaskManagerActorGateway() : ActorGateway renamed to public getTaskManagerGateway() : TaskManagerGateway in class org.apache.flink.runtime.jobmanager.slots.AllocatedSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbL135">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbR134">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -249,6 +249,83 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-24" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	executionContext : ExecutionContext to executor : Executor in method public ExecutionGraph(executor Executor, jobId JobID, jobName String, jobConfig Configuration, serializedConfig SerializedValue&lt;ExecutionConfig&gt;, timeout Time, restartStrategy RestartStrategy, requiredJarFiles List&lt;BlobKey&gt;, requiredClasspaths List&lt;URL&gt;, userClassLoader ClassLoader, metricGroup MetricGroup) in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L256">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R257">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL57">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	timeout : FiniteDuration to timeout : Time in method public Execution(executor Executor, vertex ExecutionVertex, attemptNumber int, startTimestamp long, timeout Time) in class org.apache.flink.runtime.executiongraph.Execution</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L149">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R147">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	actorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public AllocatedSlot(slotAllocationId AllocationID, jobID JobID, location TaskManagerLocation, slotNumber int, resourceProfile ResourceProfile, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.jobmanager.slots.AllocatedSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbL63">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbR68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	gateway : ActorGateway to gateway : TaskManagerGateway in method public getInstance(gateway TaskManagerGateway) : Instance in class org.apache.flink.runtime.executiongraph.ExecutionGraphTestUtils</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4L106">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4R106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method protected Slot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, parent SharedSlot, groupID AbstractID) in class org.apache.flink.runtime.instance.Slot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6L89">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6R109">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	gateway : ActorGateway to gateway : TaskManagerGateway in method public getInstance(gateway TaskManagerGateway, numberOfSlots int) : Instance in class org.apache.flink.runtime.executiongraph.ExecutionGraphTestUtils</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4L110">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4R110">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	executionContext : ExecutionContext to executor : Executor in method package ExecutionGraph(executor Executor, jobId JobID, jobName String, jobConfig Configuration, serializedConfig SerializedValue&lt;ExecutionConfig&gt;, timeout Time, restartStrategy RestartStrategy) in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L230">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R234">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SharedSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, assignmentGroup SlotSharingGroupAssignment) in class org.apache.flink.runtime.instance.SharedSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933L58">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933R72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	timeout : FiniteDuration to timeout : Time in method public ExecutionJobVertex(graph ExecutionGraph, jobVertex JobVertex, defaultParallelism int, timeout Time, createTimestamp long) in class org.apache.flink.runtime.executiongraph.ExecutionJobVertex</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-44b080396a1c8c290f8a7542e92770c3L98">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-44b080396a1c8c290f8a7542e92770c3R102">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, parent SharedSlot, groupID AbstractID) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR87">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -341,83 +418,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4R171">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	executionContext : ExecutionContext to executor : Executor in method public ExecutionGraph(executor Executor, jobId JobID, jobName String, jobConfig Configuration, serializedConfig SerializedValue&lt;ExecutionConfig&gt;, timeout Time, restartStrategy RestartStrategy, requiredJarFiles List&lt;BlobKey&gt;, requiredClasspaths List&lt;URL&gt;, userClassLoader ClassLoader, metricGroup MetricGroup) in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L256">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R257">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL57">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	timeout : FiniteDuration to timeout : Time in method public Execution(executor Executor, vertex ExecutionVertex, attemptNumber int, startTimestamp long, timeout Time) in class org.apache.flink.runtime.executiongraph.Execution</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L149">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R147">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	actorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public AllocatedSlot(slotAllocationId AllocationID, jobID JobID, location TaskManagerLocation, slotNumber int, resourceProfile ResourceProfile, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.jobmanager.slots.AllocatedSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbL63">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbR68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	gateway : ActorGateway to gateway : TaskManagerGateway in method public getInstance(gateway TaskManagerGateway) : Instance in class org.apache.flink.runtime.executiongraph.ExecutionGraphTestUtils</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4L106">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4R106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method protected Slot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, parent SharedSlot, groupID AbstractID) in class org.apache.flink.runtime.instance.Slot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6L89">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6R109">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	gateway : ActorGateway to gateway : TaskManagerGateway in method public getInstance(gateway TaskManagerGateway, numberOfSlots int) : Instance in class org.apache.flink.runtime.executiongraph.ExecutionGraphTestUtils</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4L110">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-fab56955815fa635c4849a50f34502a4R110">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	executionContext : ExecutionContext to executor : Executor in method package ExecutionGraph(executor Executor, jobId JobID, jobName String, jobConfig Configuration, serializedConfig SerializedValue&lt;ExecutionConfig&gt;, timeout Time, restartStrategy RestartStrategy) in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L230">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R234">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SharedSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, assignmentGroup SlotSharingGroupAssignment) in class org.apache.flink.runtime.instance.SharedSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933L58">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933R72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	timeout : FiniteDuration to timeout : Time in method public ExecutionJobVertex(graph ExecutionGraph, jobVertex JobVertex, defaultParallelism int, timeout Time, createTimestamp long) in class org.apache.flink.runtime.executiongraph.ExecutionJobVertex</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-44b080396a1c8c290f8a7542e92770c3L98">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-44b080396a1c8c290f8a7542e92770c3R102">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, parent SharedSlot, groupID AbstractID) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR87">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -446,13 +446,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	gateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method private sendFailIntermediateResultPartitionsRpcCall() : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L925">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R971">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -487,6 +480,13 @@
                                 <td><i>Rename Variable	gateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method private sendCancelRpcCall() : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L895">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R945">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	gateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method private sendFailIntermediateResultPartitionsRpcCall() : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L925">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R971">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -627,27 +627,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	response : ResponseStackTraceSampleSuccess to response : StackTraceSampleResponse in method public testTriggerStackTraceSampleMessage() : void in class org.apache.flink.runtime.taskmanager.TaskManagerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3dfea36ad5d4022470e9fdf0de45af81L1073">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3dfea36ad5d4022470e9fdf0de45af81R1277">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	actorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public registerTaskManager(taskManagerGateway TaskManagerGateway, taskManagerLocation TaskManagerLocation, resources HardwareDescription, numberOfSlots int) : InstanceID in class org.apache.flink.runtime.instance.InstanceManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3683fe0c5ad5415ff9d2c8fe60cc04acL130">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3683fe0c5ad5415ff9d2c8fe60cc04acR140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	gateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method private sendFailIntermediateResultPartitionsRpcCall() : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L921">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R971">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	gateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public stop() : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L408">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R401">To</a></td>
@@ -695,6 +674,27 @@
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-a79e8d4857114d3c98337eebb38b36d8R80">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	response : ResponseStackTraceSampleSuccess to response : StackTraceSampleResponse in method public testTriggerStackTraceSampleMessage() : void in class org.apache.flink.runtime.taskmanager.TaskManagerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3dfea36ad5d4022470e9fdf0de45af81L1073">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3dfea36ad5d4022470e9fdf0de45af81R1277">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	actorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public registerTaskManager(taskManagerGateway TaskManagerGateway, taskManagerLocation TaskManagerLocation, resources HardwareDescription, numberOfSlots int) : InstanceID in class org.apache.flink.runtime.instance.InstanceManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3683fe0c5ad5415ff9d2c8fe60cc04acL130">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-3683fe0c5ad5415ff9d2c8fe60cc04acR140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	gateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method private sendFailIntermediateResultPartitionsRpcCall() : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L921">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R971">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -705,20 +705,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L171">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R171">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	executionContext : ExecutionContext to executor : Executor in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L218">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R218">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -776,6 +762,20 @@
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-58f95f700944741d8e651cc19928f5e3R54">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L171">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R171">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	executionContext : ExecutionContext to executor : Executor in class org.apache.flink.runtime.executiongraph.ExecutionGraph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7L218">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-db400d27f89469eca0a85a5e9b564bc7R218">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -804,6 +804,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL68">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, parent SharedSlot, groupID AbstractID) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL85">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR87">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	actorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public AllocatedSlot(slotAllocationId AllocationID, jobID JobID, location TaskManagerLocation, slotNumber int, resourceProfile ResourceProfile, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.jobmanager.slots.AllocatedSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbL69">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbR68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SharedSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, assignmentGroup SlotSharingGroupAssignment, parent SharedSlot, groupId AbstractID) in class org.apache.flink.runtime.instance.SharedSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933L92">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933R96">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -859,34 +887,6 @@
                                 <td><i>Rename Parameter	executionContext : ExecutionContext to executor : Executor in method public Execution(executor Executor, vertex ExecutionVertex, attemptNumber int, startTimestamp long, timeout Time) in class org.apache.flink.runtime.executiongraph.Execution</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729L150">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-80737dbca5cba87886455334dea0a729R143">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL68">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SimpleSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, parent SharedSlot, groupID AbstractID) in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL85">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR87">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	actorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public AllocatedSlot(slotAllocationId AllocationID, jobID JobID, location TaskManagerLocation, slotNumber int, resourceProfile ResourceProfile, taskManagerGateway TaskManagerGateway) in class org.apache.flink.runtime.jobmanager.slots.AllocatedSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbL69">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-b69c6540c6914da94ee130a3d6fd30dbR68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskManagerActorGateway : ActorGateway to taskManagerGateway : TaskManagerGateway in method public SharedSlot(jobID JobID, owner SlotOwner, location TaskManagerLocation, slotNumber int, taskManagerGateway TaskManagerGateway, assignmentGroup SlotSharingGroupAssignment, parent SharedSlot, groupId AbstractID) in class org.apache.flink.runtime.instance.SharedSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933L92">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/cfb3790fb6feb6c771bccbd05d3b12c69f53657d?diff=split#diff-e62fd807403772b0ae36c6f611148933R96">To</a></td>
                             </tr>
                             
                             </tbody>

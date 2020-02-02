@@ -154,13 +154,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	locsForExpectedStorageTypes : StorageTypeNodeMap to locsForExpectedStorageTypes : EnumMap&lt;StorageType,List&lt;DatanodeWithStorage.StorageDetails&gt;&gt; in method private chooseTarget(block LocatedBlock, source DatanodeInfo, targetTypes List&lt;StorageType&gt;, matcher Matcher, locsForExpectedStorageTypes EnumMap&lt;StorageType,List&lt;DatanodeWithStorage.StorageDetails&gt;&gt;, excludeNodes List&lt;DatanodeInfo&gt;) : StorageTypeNodePair in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL772">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR795">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	liveDns : DatanodeStorageReport[] to liveDns : DatanodeMap in method private computeBlockMovingInfos(blockMovingInfos List&lt;BlockMovingInfo&gt;, blockInfo LocatedBlock, expectedStorageTypes List&lt;StorageType&gt;, existing List&lt;StorageType&gt;, storages DatanodeInfo[], liveDns DatanodeMap, ecPolicy ErasureCodingPolicy) : boolean in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL512">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR539">To</a></td>
@@ -171,6 +164,13 @@
                                 <td><i>Change Parameter Type	liveDns : DatanodeStorageReport[] to liveDns : DatanodeMap in method private checkSourceAndTargetTypeExists(dn DatanodeInfo, existingStorageTypes List&lt;StorageType&gt;, expectedStorageTypes List&lt;StorageType&gt;, liveDns DatanodeMap) : boolean in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL838">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR884">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	locsForExpectedStorageTypes : StorageTypeNodeMap to locsForExpectedStorageTypes : EnumMap&lt;StorageType,List&lt;DatanodeWithStorage.StorageDetails&gt;&gt; in method private chooseTarget(block LocatedBlock, source DatanodeInfo, targetTypes List&lt;StorageType&gt;, matcher Matcher, locsForExpectedStorageTypes EnumMap&lt;StorageType,List&lt;DatanodeWithStorage.StorageDetails&gt;&gt;, excludeNodes List&lt;DatanodeInfo&gt;) : StorageTypeNodePair in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL772">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR795">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -229,16 +229,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	existing : List&lt;StorageType&gt; to existingStorageTypes : List&lt;StorageType&gt; in method private checkSourceAndTargetTypeExists(dn DatanodeInfo, existingStorageTypes List&lt;StorageType&gt;, expectedStorageTypes List&lt;StorageType&gt;, liveDns DatanodeMap) : boolean in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL839">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR883">To</a></td>
+                                <td><i>Rename Parameter	expected : List&lt;StorageType&gt; to expectedTypes : List&lt;StorageType&gt; in method private findSourceAndTargetToMove(blockMovingInfos List&lt;BlockMovingInfo&gt;, blockInfo LocatedBlock, sourceWithStorageList List&lt;StorageTypeNodePair&gt;, expectedTypes List&lt;StorageType&gt;, targetDns EnumMap&lt;StorageType,List&lt;DatanodeWithStorage.StorageDetails&gt;&gt;, ecPolicy ErasureCodingPolicy) : boolean in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL606">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR610">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	expected : List&lt;StorageType&gt; to expectedTypes : List&lt;StorageType&gt; in method private findSourceAndTargetToMove(blockMovingInfos List&lt;BlockMovingInfo&gt;, blockInfo LocatedBlock, sourceWithStorageList List&lt;StorageTypeNodePair&gt;, expectedTypes List&lt;StorageType&gt;, targetDns EnumMap&lt;StorageType,List&lt;DatanodeWithStorage.StorageDetails&gt;&gt;, ecPolicy ErasureCodingPolicy) : boolean in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL606">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR610">To</a></td>
+                                <td><i>Rename Parameter	existing : List&lt;StorageType&gt; to existingStorageTypes : List&lt;StorageType&gt; in method private checkSourceAndTargetTypeExists(dn DatanodeInfo, existingStorageTypes List&lt;StorageType&gt;, expectedStorageTypes List&lt;StorageType&gt;, liveDns DatanodeMap) : boolean in class org.apache.hadoop.hdfs.server.namenode.sps.StoragePolicySatisfier</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aL839">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/75ccc1396b677777cdc0d4992a4af3911f9f88c2?diff=split#diff-91de2a6480e637bb8e97cff5de804a7aR883">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -190,13 +190,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public getSignatureValidationKey(client ClientModel, attributePrefix String) : PublicKey from class org.keycloak.services.util.CertificateInfoHelper to private getSignatureValidationKey(certInfo CertificateRepresentation) : PublicKey from class org.keycloak.keys.loader.ClientPublicKeyLoader</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-99570684d9109e1a25e8c9d118c57d61L89">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-63ac29afa2c018216b791ece2cba06a1R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Method	private sendRequest(requestUrl String, parameters List&lt;NameValuePair&gt;) : HttpResponse from class org.keycloak.testsuite.client.OIDCClientRegistrationTest to private sendRequest(requestUrl String, parameters List&lt;NameValuePair&gt;) : HttpResponse from class org.keycloak.testsuite.client.OIDCJwksClientRegistrationTest</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-797c32747a9b97b628e57eeee89b4947L339">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-d583a81d656a39d6701c76f274f49356R297">To</a></td>
@@ -221,6 +214,13 @@
                                 <td><i>Move Method	private getClientSignedJWT(clientId String, privateKeyPem String) : String from class org.keycloak.testsuite.client.OIDCClientRegistrationTest to private getClientSignedJWT(clientId String, keyPair KeyPair, kid String) : String from class org.keycloak.testsuite.client.OIDCJwksClientRegistrationTest</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-797c32747a9b97b628e57eeee89b4947L305">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-d583a81d656a39d6701c76f274f49356R251">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public getSignatureValidationKey(client ClientModel, attributePrefix String) : PublicKey from class org.keycloak.services.util.CertificateInfoHelper to private getSignatureValidationKey(certInfo CertificateRepresentation) : PublicKey from class org.keycloak.keys.loader.ClientPublicKeyLoader</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-99570684d9109e1a25e8c9d118c57d61L89">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-63ac29afa2c018216b791ece2cba06a1R80">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -340,6 +340,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private getClient2PrivateKey() : PrivateKey renamed to private getClient2KeyPair() : KeyPair in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L793">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R796">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private getClient1PrivateKey() : PrivateKey renamed to private getClient1KeyPair() : KeyPair in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L788">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R791">To</a></td>
@@ -350,13 +357,6 @@
                                 <td><i>Rename Method	public loadPrivateKeyFromKeystore(keystoreFile String, storePassword String, keyPassword String, keyAlias String, format KeystoreFormat) : PrivateKey renamed to public loadKeyPairFromKeystore(keystoreFile String, storePassword String, keyPassword String, keyAlias String, format KeystoreFormat) : KeyPair in class org.keycloak.common.util.KeystoreUtil</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-010b523ed0ab1eada5a74b2d1538e5e3L52">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-010b523ed0ab1eada5a74b2d1538e5e3R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private getClient2PrivateKey() : PrivateKey renamed to private getClient2KeyPair() : KeyPair in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L793">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R796">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -408,6 +408,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	PrivateKey to KeyPair in method private getClient1KeyPair() : KeyPair in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L788">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R791">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	PrivateKey to KeyPair in method public loadKeyPairFromKeystore(keystoreFile String, storePassword String, keyPassword String, keyAlias String, format KeystoreFormat) : KeyPair in class org.keycloak.common.util.KeystoreUtil</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-010b523ed0ab1eada5a74b2d1538e5e3L52">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-010b523ed0ab1eada5a74b2d1538e5e3R54">To</a></td>
@@ -418,13 +425,6 @@
                                 <td><i>Change Return Type	PrivateKey to KeyPair in method private getClient2KeyPair() : KeyPair in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L793">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R796">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	PrivateKey to KeyPair in method private getClient1KeyPair() : KeyPair in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L788">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R791">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -458,16 +458,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	privateKey : PrivateKey to keyPair : KeyPair in method private getClientSignedJWT(keyPair KeyPair, clientId String) : String in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L798">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R801">To</a></td>
+                                <td><i>Rename Parameter	privateKeyPem : String to kid : String in method private getClientSignedJWT(clientId String, keyPair KeyPair, kid String) : String in class org.keycloak.testsuite.client.OIDCJwksClientRegistrationTest</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-797c32747a9b97b628e57eeee89b4947L305">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-d583a81d656a39d6701c76f274f49356R251">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	privateKeyPem : String to kid : String in method private getClientSignedJWT(clientId String, keyPair KeyPair, kid String) : String in class org.keycloak.testsuite.client.OIDCJwksClientRegistrationTest</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-797c32747a9b97b628e57eeee89b4947L305">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-d583a81d656a39d6701c76f274f49356R251">To</a></td>
+                                <td><i>Rename Parameter	privateKey : PrivateKey to keyPair : KeyPair in method private getClientSignedJWT(keyPair KeyPair, clientId String) : String in class org.keycloak.testsuite.oauth.ClientAuthSignedJWTTest</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305L798">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/f9a0abcfc47f2c4a5569b9de1a70642a1c856086?diff=split#diff-fdbe6512a434ab007a8e2af296baa305R801">To</a></td>
                             </tr>
                             
                             </tbody>

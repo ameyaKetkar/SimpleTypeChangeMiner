@@ -154,13 +154,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public visitRemoveCommand(ctx InvocationContext, command RemoveCommand) : Object renamed to protected visitDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.OptimisticLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861L136">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R121">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public visitPutKeyValueCommand(ctx InvocationContext, command PutKeyValueCommand) : Object renamed to protected visitDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.PessimisticLockingInterceptor</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470L97">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470R104">To</a></td>
@@ -171,6 +164,13 @@
                                 <td><i>Rename Method	public visitGetKeyValueCommand(ctx InvocationContext, command GetKeyValueCommand) : Object renamed to protected visitDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.NonTransactionalLockingInterceptor</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL30">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bR37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public visitRemoveCommand(ctx InvocationContext, command RemoveCommand) : Object renamed to protected visitDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.OptimisticLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861L136">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R121">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -201,13 +201,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public visitGetCacheEntryCommand(ctx InvocationContext, command GetCacheEntryCommand) : Object from class org.infinispan.interceptors.locking.NonTransactionalLockingInterceptor to public visitGetKeyValueCommand(ctx InvocationContext, command GetKeyValueCommand) : Object from class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL34">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R62">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -293,6 +286,13 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R57">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public visitGetCacheEntryCommand(ctx InvocationContext, command GetCacheEntryCommand) : Object from class org.infinispan.interceptors.locking.NonTransactionalLockingInterceptor to public visitGetKeyValueCommand(ctx InvocationContext, command GetKeyValueCommand) : Object from class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL34">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R62">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -303,6 +303,62 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : GetCacheEntryCommand to command : RemoveCommand in method public visitRemoveCommand(ctx InvocationContext, command RemoveCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL34">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : GetKeyValueCommand to command : RemoveCommand in method public visitRemoveCommand(ctx InvocationContext, command RemoveCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470L66">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : GetKeyValueCommand to command : DataCommand in method protected visitDataReadCommand(ctx InvocationContext, command DataCommand) : Object in class org.infinispan.interceptors.locking.OptimisticLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-86f4d383e11f30264e2de81d7a4750b7L58">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : ReplaceCommand to command : DataWriteCommand in method protected visitNonTxDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL101">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R77">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : GetCacheEntryCommand to command : ReplaceCommand in method public visitReplaceCommand(ctx InvocationContext, command ReplaceCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL34">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : FlagAffectedCommand to command : LocalFlagAffectedCommand in method protected hasSkipLocking(command LocalFlagAffectedCommand) : boolean in class org.infinispan.interceptors.base.CommandInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82L122">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82R122">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : AbstractDataCommand to command : DataCommand in method protected visitDataReadCommand(ctx InvocationContext, command DataCommand) : Object in class org.infinispan.interceptors.locking.PessimisticLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470L75">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	command : FlagAffectedCommand to command : LocalFlagAffectedCommand in method protected getLockAcquisitionTimeout(command LocalFlagAffectedCommand, skipLocking boolean) : long in class org.infinispan.interceptors.base.CommandInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82L114">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82R114">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -365,62 +421,6 @@
                                 <td><i>Change Parameter Type	command : GetKeyValueCommand to command : DataWriteCommand in method protected visitDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.NonTransactionalLockingInterceptor</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL30">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bR38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : GetCacheEntryCommand to command : RemoveCommand in method public visitRemoveCommand(ctx InvocationContext, command RemoveCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL34">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : GetKeyValueCommand to command : RemoveCommand in method public visitRemoveCommand(ctx InvocationContext, command RemoveCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470L66">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : GetKeyValueCommand to command : DataCommand in method protected visitDataReadCommand(ctx InvocationContext, command DataCommand) : Object in class org.infinispan.interceptors.locking.OptimisticLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-86f4d383e11f30264e2de81d7a4750b7L58">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R92">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : ReplaceCommand to command : DataWriteCommand in method protected visitNonTxDataWriteCommand(ctx InvocationContext, command DataWriteCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL101">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R77">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : GetCacheEntryCommand to command : ReplaceCommand in method public visitReplaceCommand(ctx InvocationContext, command ReplaceCommand) : Object in class org.infinispan.interceptors.locking.AbstractLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-f8aca0f024f5b1a22d0820f35651306bL34">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-dc7e488ef36d478d0401a51e750cfcb0R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : FlagAffectedCommand to command : LocalFlagAffectedCommand in method protected hasSkipLocking(command LocalFlagAffectedCommand) : boolean in class org.infinispan.interceptors.base.CommandInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82L122">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82R122">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : AbstractDataCommand to command : DataCommand in method protected visitDataReadCommand(ctx InvocationContext, command DataCommand) : Object in class org.infinispan.interceptors.locking.PessimisticLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470L75">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-922309dc5606a439d0cda2f8ab6ba470R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	command : FlagAffectedCommand to command : LocalFlagAffectedCommand in method protected getLockAcquisitionTimeout(command LocalFlagAffectedCommand, skipLocking boolean) : long in class org.infinispan.interceptors.base.CommandInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82L114">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b05b163e0e691486daeeaa063aa0fa3e9e5e18cf?diff=split#diff-bb23b35c20bb17d39f355cb88beaaf82R114">To</a></td>
                             </tr>
                             
                             </tbody>

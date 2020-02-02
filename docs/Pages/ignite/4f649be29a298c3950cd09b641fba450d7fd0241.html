@@ -156,20 +156,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getOldValue() : V renamed to package oldValue() : V in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEntry</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-4c392874010b47e07cb8307442340235L247">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-69fe340da0194fd2885ced3f7dde4981R154">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public apply(e CacheContinuousQueryEntry) : boolean renamed to public evaluate(e CacheEntryEvent&lt;? extends K,? extends V&gt;) : boolean in class org.apache.ignite.internal.processors.cache.datastructures.CacheDataStructuresManager.QueueHeaderPredicate</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-0c1555c00f11f2f9726e02ef9792a57aL558">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-0c1555c00f11f2f9726e02ef9792a57aR543">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getKey() : K renamed to package key() : K in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEntry</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-4c392874010b47e07cb8307442340235L237">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-69fe340da0194fd2885ced3f7dde4981R140">To</a></td>
@@ -187,6 +173,20 @@
                                 <td><i>Rename Method	public getValue() : V renamed to package value() : V in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEntry</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-4c392874010b47e07cb8307442340235L242">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-69fe340da0194fd2885ced3f7dde4981R147">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getOldValue() : V renamed to package oldValue() : V in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEntry</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-4c392874010b47e07cb8307442340235L247">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-69fe340da0194fd2885ced3f7dde4981R154">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public apply(e CacheContinuousQueryEntry) : boolean renamed to public evaluate(e CacheEntryEvent&lt;? extends K,? extends V&gt;) : boolean in class org.apache.ignite.internal.processors.cache.datastructures.CacheDataStructuresManager.QueueHeaderPredicate</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-0c1555c00f11f2f9726e02ef9792a57aL558">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-0c1555c00f11f2f9726e02ef9792a57aR543">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -234,6 +234,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	contQryFilter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to contQryFilter : CacheEntryEventFilter&lt;K,V&gt; in method public CacheQueryReadEvent(node ClusterNode, msg String, type int, qryType CacheQueryType, cacheName String, clsName String, clause String, scanQryFilter IgniteBiPredicate&lt;K,V&gt;, contQryFilter CacheEntryEventFilter&lt;K,V&gt;, args Object[], subjId UUID, taskName String, key K, val V, oldVal V, row Object) in class org.apache.ignite.events.CacheQueryReadEvent</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5adf6946e734a8e04c88e95f7bc7f0e1L115">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5adf6946e734a8e04c88e95f7bc7f0e1R138">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	filter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to rmtFilter : CacheEntryEventFilter&lt;K,V&gt; in method public CacheContinuousQueryHandler(cacheName String, topic Object, locLsnr CacheEntryUpdatedListener&lt;K,V&gt;, rmtFilter CacheEntryEventFilter&lt;K,V&gt;, internal boolean, oldValRequired boolean, sync boolean, ignoreExpired boolean, taskHash int, skipPrimaryCheck boolean) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL98">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	src : IgniteCache to source : Cache in method package CacheContinuousQueryEvent(source Cache, eventType EventType, e CacheContinuousQueryEntry&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEvent</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-51d7594fce4e08f63138644f5440968eL32">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-09ad8ae8fc65e94fbee55ffd21d72987R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	contQryMgr : GridCacheContinuousQueryManager&lt;K,V&gt; to contQryMgr : CacheContinuousQueryManager&lt;K,V&gt; in method public GridCacheContext(ctx GridKernalContext, sharedCtx GridCacheSharedContext, cacheCfg CacheConfiguration, evtMgr GridCacheEventManager&lt;K,V&gt;, swapMgr GridCacheSwapManager&lt;K,V&gt;, serMgr IgniteCacheSerializationManager&lt;K,V&gt;, storeMgr GridCacheStoreManager&lt;K,V&gt;, evictMgr GridCacheEvictionManager&lt;K,V&gt;, qryMgr GridCacheQueryManager&lt;K,V&gt;, contQryMgr CacheContinuousQueryManager&lt;K,V&gt;, affMgr GridCacheAffinityManager&lt;K,V&gt;, dataStructuresMgr CacheDataStructuresManager&lt;K,V&gt;, ttlMgr GridCacheTtlManager&lt;K,V&gt;, drMgr GridCacheDrManager&lt;K,V&gt;, jtaMgr CacheJtaManagerAdapter&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.GridCacheContext</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-96e6281946e4c6c9c2d896ce074fc89dL210">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-96e6281946e4c6c9c2d896ce074fc89dR243">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	contQryFilter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to contQryFilter : CacheEntryEventFilter&lt;K,V&gt; in method public CacheQueryExecutedEvent(node ClusterNode, msg String, type int, qryType CacheQueryType, cacheName String, clsName String, clause String, scanQryFilter IgniteBiPredicate&lt;K,V&gt;, contQryFilter CacheEntryEventFilter&lt;K,V&gt;, args Object[], subjId UUID, taskName String) in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eL99">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eR120">To</a></td>
@@ -267,34 +295,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-6967fb4b7c08e7ecab26a82ebca9b717R629">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	contQryFilter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to contQryFilter : CacheEntryEventFilter&lt;K,V&gt; in method public CacheQueryReadEvent(node ClusterNode, msg String, type int, qryType CacheQueryType, cacheName String, clsName String, clause String, scanQryFilter IgniteBiPredicate&lt;K,V&gt;, contQryFilter CacheEntryEventFilter&lt;K,V&gt;, args Object[], subjId UUID, taskName String, key K, val V, oldVal V, row Object) in class org.apache.ignite.events.CacheQueryReadEvent</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5adf6946e734a8e04c88e95f7bc7f0e1L115">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5adf6946e734a8e04c88e95f7bc7f0e1R138">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	filter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to rmtFilter : CacheEntryEventFilter&lt;K,V&gt; in method public CacheContinuousQueryHandler(cacheName String, topic Object, locLsnr CacheEntryUpdatedListener&lt;K,V&gt;, rmtFilter CacheEntryEventFilter&lt;K,V&gt;, internal boolean, oldValRequired boolean, sync boolean, ignoreExpired boolean, taskHash int, skipPrimaryCheck boolean) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL98">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	src : IgniteCache to source : Cache in method package CacheContinuousQueryEvent(source Cache, eventType EventType, e CacheContinuousQueryEntry&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEvent</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-51d7594fce4e08f63138644f5440968eL32">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-09ad8ae8fc65e94fbee55ffd21d72987R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	contQryMgr : GridCacheContinuousQueryManager&lt;K,V&gt; to contQryMgr : CacheContinuousQueryManager&lt;K,V&gt; in method public GridCacheContext(ctx GridKernalContext, sharedCtx GridCacheSharedContext, cacheCfg CacheConfiguration, evtMgr GridCacheEventManager&lt;K,V&gt;, swapMgr GridCacheSwapManager&lt;K,V&gt;, serMgr IgniteCacheSerializationManager&lt;K,V&gt;, storeMgr GridCacheStoreManager&lt;K,V&gt;, evictMgr GridCacheEvictionManager&lt;K,V&gt;, qryMgr GridCacheQueryManager&lt;K,V&gt;, contQryMgr CacheContinuousQueryManager&lt;K,V&gt;, affMgr GridCacheAffinityManager&lt;K,V&gt;, dataStructuresMgr CacheDataStructuresManager&lt;K,V&gt;, ttlMgr GridCacheTtlManager&lt;K,V&gt;, drMgr GridCacheDrManager&lt;K,V&gt;, jtaMgr CacheJtaManagerAdapter&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.GridCacheContext</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-96e6281946e4c6c9c2d896ce074fc89dL210">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-96e6281946e4c6c9c2d896ce074fc89dR243">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -326,27 +326,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	info : ListenerInfo to lsnr : CacheContinuousQueryListener&lt;K,V&gt; in method package unregisterListener(internal boolean, id UUID) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5a9e426c8ad32f75d73e8a9bf6dbd210L326">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dR424">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	e : Map.Entry&lt;K,V&gt; to evt : CacheEntryEvent&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL344">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R298">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	entries : Collection&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to evts : Collection&lt;CacheEntryEvent&lt;? extends K,? extends V&gt;&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL340">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R294">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	qe : GridCacheContinuousQueryEntry&lt;K,V&gt; to e : CacheContinuousQueryEntry&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL347">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R301">To</a></td>
@@ -366,6 +345,27 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dR149">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	info : ListenerInfo to lsnr : CacheContinuousQueryListener&lt;K,V&gt; in method package unregisterListener(internal boolean, id UUID) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5a9e426c8ad32f75d73e8a9bf6dbd210L326">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dR424">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	e : Map.Entry&lt;K,V&gt; to evt : CacheEntryEvent&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL344">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R298">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	entries : Collection&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to evts : Collection&lt;CacheEntryEvent&lt;? extends K,? extends V&gt;&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL340">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R294">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -376,6 +376,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	GridCacheContinuousQueryManager&lt;K,V&gt; to CacheContinuousQueryManager&lt;K,V&gt; in method private manager(ctx GridKernalContext) : CacheContinuousQueryManager&lt;K,V&gt; in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL324">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R278">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to CacheEntryEventFilter&lt;K,V&gt; in method public continuousQueryFilter() : CacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eL190">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eR190">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -398,20 +412,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R1585">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	GridCacheContinuousQueryManager&lt;K,V&gt; to CacheContinuousQueryManager&lt;K,V&gt; in method private manager(ctx GridKernalContext) : CacheContinuousQueryManager&lt;K,V&gt; in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL324">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R278">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to CacheEntryEventFilter&lt;K,V&gt; in method public continuousQueryFilter() : CacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eL190">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eR190">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -425,6 +425,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Attribute	private autoUnsubscribe : boolean from class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAdapter to private autoUnsubscribe : boolean from class org.apache.ignite.cache.query.ContinuousQuery</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-de8a2a5b26e40e453c30c9d388c6c8d5L86">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feR143">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Attribute	private timeInterval : long from class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAdapter to private timeInterval : long from class org.apache.ignite.cache.query.ContinuousQuery</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-de8a2a5b26e40e453c30c9d388c6c8d5L83">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feR140">To</a></td>
@@ -435,13 +442,6 @@
                                 <td><i>Move Attribute	private bufSize : int from class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAdapter to private bufSize : int from class org.apache.ignite.cache.query.ContinuousQuery</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-de8a2a5b26e40e453c30c9d388c6c8d5L79">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feR137">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private autoUnsubscribe : boolean from class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAdapter to private autoUnsubscribe : boolean from class org.apache.ignite.cache.query.ContinuousQuery</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-de8a2a5b26e40e453c30c9d388c6c8d5L86">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feR143">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -550,41 +550,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-29" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	e : Map.Entry&lt;K,V&gt; to evt : CacheEntryEvent&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL332">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R298">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	all : Collection&lt;Map.Entry&lt;Integer,Integer&gt;&gt; to all : Collection&lt;CacheEntryEvent&lt;? extends Integer,? extends Integer&gt;&gt; in method public testNodeJoin() : void in class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAbstractSelfTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bL1270">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bR801">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cache : GridCache&lt;Integer,Integer&gt; to cache : IgniteCache&lt;Integer,Integer&gt; in method public testNodeJoin() : void in class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAbstractSelfTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bL1270">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bR797">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	entry : Map.Entry&lt;GridHadoopJobId,GridHadoopJobMetadata&gt; to entry : CacheEntryEvent&lt;? extends GridHadoopJobId,? extends GridHadoopJobMetadata&gt; in method private processJobMetadataUpdates(updated Iterable&lt;CacheEntryEvent&lt;? extends GridHadoopJobId,? extends GridHadoopJobMetadata&gt;&gt;) : void in class org.apache.ignite.internal.processors.hadoop.jobtracker.GridHadoopJobTracker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-6967fb4b7c08e7ecab26a82ebca9b717L627">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-6967fb4b7c08e7ecab26a82ebca9b717R633">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	qe : GridCacheContinuousQueryEntry&lt;K,V&gt; to e : CacheContinuousQueryEntry&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL332">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R301">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -754,6 +719,41 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-644b0b6f9b71dd27728f19a5a577cc18R91">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	e : Map.Entry&lt;K,V&gt; to evt : CacheEntryEvent&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL332">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R298">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	all : Collection&lt;Map.Entry&lt;Integer,Integer&gt;&gt; to all : Collection&lt;CacheEntryEvent&lt;? extends Integer,? extends Integer&gt;&gt; in method public testNodeJoin() : void in class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAbstractSelfTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bL1270">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bR801">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cache : GridCache&lt;Integer,Integer&gt; to cache : IgniteCache&lt;Integer,Integer&gt; in method public testNodeJoin() : void in class org.apache.ignite.internal.processors.cache.query.continuous.GridCacheContinuousQueryAbstractSelfTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bL1270">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-303150ab71748fc359c8e9a14274849bR797">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	entry : Map.Entry&lt;GridHadoopJobId,GridHadoopJobMetadata&gt; to entry : CacheEntryEvent&lt;? extends GridHadoopJobId,? extends GridHadoopJobMetadata&gt; in method private processJobMetadataUpdates(updated Iterable&lt;CacheEntryEvent&lt;? extends GridHadoopJobId,? extends GridHadoopJobMetadata&gt;&gt;) : void in class org.apache.ignite.internal.processors.hadoop.jobtracker.GridHadoopJobTracker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-6967fb4b7c08e7ecab26a82ebca9b717L627">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-6967fb4b7c08e7ecab26a82ebca9b717R633">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	qe : GridCacheContinuousQueryEntry&lt;K,V&gt; to e : CacheContinuousQueryEntry&lt;? extends K,? extends V&gt; in method public notifyCallback(nodeId UUID, routineId UUID, objs Collection&lt;?&gt;, ctx GridKernalContext) : void in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-229368a1759d5e8c051ad3327bc652bbL332">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-b4734203e762b8729a6bc109a760be14R301">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -764,6 +764,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	contQryFilter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to contQryFilter : CacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eL87">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eR87">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -800,13 +807,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-5adf6946e734a8e04c88e95f7bc7f0e1R87">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	contQryFilter : IgnitePredicate&lt;CacheContinuousQueryEntry&lt;K,V&gt;&gt; to contQryFilter : CacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eL87">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-ed0c772751799063364a29e655edc68eR87">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -817,6 +817,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	type : EventType to eventType : EventType in method package CacheContinuousQueryEvent(source Cache, eventType EventType, e CacheContinuousQueryEntry&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEvent</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-51d7594fce4e08f63138644f5440968eL37">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-09ad8ae8fc65e94fbee55ffd21d72987R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	filter : CacheEntryEventFilter&lt;K,V&gt; to rmtFilter : CacheEntryEventFilter&lt;K,V&gt; in method public setRemoteFilter(rmtFilter CacheEntryEventFilter&lt;K,V&gt;) : void in class org.apache.ignite.cache.query.ContinuousQuery</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feL158">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feR203">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -837,20 +851,6 @@
                                 <td><i>Rename Parameter	src : IgniteCache to source : Cache in method package CacheContinuousQueryEvent(source Cache, eventType EventType, e CacheContinuousQueryEntry&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEvent</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-51d7594fce4e08f63138644f5440968eL37">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-09ad8ae8fc65e94fbee55ffd21d72987R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	type : EventType to eventType : EventType in method package CacheContinuousQueryEvent(source Cache, eventType EventType, e CacheContinuousQueryEntry&lt;K,V&gt;) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryEvent</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-51d7594fce4e08f63138644f5440968eL37">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-09ad8ae8fc65e94fbee55ffd21d72987R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	filter : CacheEntryEventFilter&lt;K,V&gt; to rmtFilter : CacheEntryEventFilter&lt;K,V&gt; in method public setRemoteFilter(rmtFilter CacheEntryEventFilter&lt;K,V&gt;) : void in class org.apache.ignite.cache.query.ContinuousQuery</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feL158">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4f649be29a298c3950cd09b641fba450d7fd0241?diff=split#diff-cceafeee306086a24586c78c289781feR203">To</a></td>
                             </tr>
                             
                             </tbody>

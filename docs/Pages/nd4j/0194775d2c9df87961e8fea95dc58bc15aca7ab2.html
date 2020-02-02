@@ -286,20 +286,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	tensors : int in method public parititonForkJoinBasedOnTensorsAlongDimension(arr INDArray, op Op, opExecutioner OpExecutioner, dimension int...) : Pair&lt;CountDownLatch,List&lt;ForkJoinTask&lt;INDArray&gt;&gt;&gt; from class org.nd4j.linalg.api.parallel.TaskCreator</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	slices : int in method public parititonRunnablesBasedOnSlices(arr INDArray, task INDArrayTask) : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; from class org.nd4j.linalg.api.parallel.TaskCreator</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	tensors : int in method public parititonForkJoinBasedOnTensorsAlongDimension(arr INDArray, task INDArrayTask, dimension int...) : Pair&lt;List&lt;ForkJoinTask&lt;INDArray&gt;&gt;,CountDownLatch&gt; from class org.nd4j.linalg.api.parallel.TaskCreator</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -319,6 +305,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	tensors : int in method public parititonForkJoinBasedOnTensorsAlongDimension(arr INDArray, op Op, opExecutioner OpExecutioner, dimension int...) : Pair&lt;CountDownLatch,List&lt;ForkJoinTask&lt;INDArray&gt;&gt;&gt; from class org.nd4j.linalg.api.parallel.TaskCreator</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	slices : int in method public parititonRunnablesBasedOnSlices(arr INDArray, task INDArrayTask) : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; from class org.nd4j.linalg.api.parallel.TaskCreator</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -329,6 +329,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	runnables : List&lt;Runnable&gt; to runnables : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; in method public execBasedOnArraysAlongDimension(arr INDArray, task Op, executioner OpExecutioner, dimension int...) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL79">From</a></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR95">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	runnables : List&lt;Runnable&gt; to runnables : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; in method public execBasedOnSlices(arr INDArray, task TaskCreator.INDArrayTask) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL227">From</a></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR219">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tasks : List&lt;ForkJoinTask&lt;INDArray&gt;&gt; to tasks : Pair&lt;List&lt;ForkJoinTask&lt;INDArray&gt;&gt;,CountDownLatch&gt; in method public execBasedOnArraysAlongDimension(arr INDArray, task TaskCreator.INDArrayTask, dimension int...) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL151">From</a></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	runnables : List&lt;Runnable&gt; to runnables : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; in method public execBasedOnSlices(arr INDArray, task Op, executioner OpExecutioner) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL115">From</a></td>
+                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR123">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -363,34 +391,6 @@
                                 <td><i>Change Variable Type	tasks : List&lt;ForkJoinTask&lt;INDArray&gt;&gt; to tasks : Pair&lt;List&lt;ForkJoinTask&lt;INDArray&gt;&gt;,CountDownLatch&gt; in method public execBasedOnSlices(arr INDArray, task Op, executioner OpExecutioner) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
                                 <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL115">From</a></td>
                                 <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR110">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	runnables : List&lt;Runnable&gt; to runnables : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; in method public execBasedOnArraysAlongDimension(arr INDArray, task Op, executioner OpExecutioner, dimension int...) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL79">From</a></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR95">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	runnables : List&lt;Runnable&gt; to runnables : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; in method public execBasedOnSlices(arr INDArray, task TaskCreator.INDArrayTask) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL227">From</a></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tasks : List&lt;ForkJoinTask&lt;INDArray&gt;&gt; to tasks : Pair&lt;List&lt;ForkJoinTask&lt;INDArray&gt;&gt;,CountDownLatch&gt; in method public execBasedOnArraysAlongDimension(arr INDArray, task TaskCreator.INDArrayTask, dimension int...) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL151">From</a></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	runnables : List&lt;Runnable&gt; to runnables : Pair&lt;List&lt;Runnable&gt;,CountDownLatch&gt; in method public execBasedOnSlices(arr INDArray, task Op, executioner OpExecutioner) : void in class org.nd4j.linalg.api.parallel.DefaultParallelExecutioner</i></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adL115">From</a></td>
-                                <td><a href = "https://github.com/deeplearning4j/nd4j/commit/0194775d2c9df87961e8fea95dc58bc15aca7ab2?diff=split#diff-fe2570b5aaf3a33c852fbde3728699adR123">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -380,6 +380,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public compileJoinFilterFunctionVerifierFactory(internalJoinFilterFunction InternalJoinFilterFunction) : JoinFilterFunctionVerifierFactory renamed to public compileJoinFilterFunctionFactory(internalJoinFilterFunction InternalJoinFilterFunction) : JoinFilterFunctionFactory in class com.facebook.presto.sql.gen.JoinCompiler</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560L124">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560R124">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public applyFilterFunction(leftBlockIndex int, leftPosition int, rightPosition int, allRightBlocks Block[]) : boolean renamed to public filter(leftBlockIndex int, leftPosition int, rightPosition int, allRightBlocks Block[]) : boolean in class com.facebook.presto.operator.JoinFilterFunction</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-07cc4621ea7dd15fae987ec6171d7065L20">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-5eb3bf60450c8d8155531062c41bc146R20">To</a></td>
@@ -390,13 +397,6 @@
                                 <td><i>Rename Method	public applyFilterFunction(leftBlockIndex int, leftPosition int, rightPosition int, allRightBlocks Block[]) : boolean renamed to public filter(leftBlockIndex int, leftPosition int, rightPosition int, allRightBlocks Block[]) : boolean in class com.facebook.presto.operator.StandardJoinFilterFunction</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-641b16f83ad97d5c49add5ff8876ab03L51">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-a4fe66253831a55eb518a857d5d648a7R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public compileJoinFilterFunctionVerifierFactory(internalJoinFilterFunction InternalJoinFilterFunction) : JoinFilterFunctionVerifierFactory renamed to public compileJoinFilterFunctionFactory(internalJoinFilterFunction InternalJoinFilterFunction) : JoinFilterFunctionFactory in class com.facebook.presto.sql.gen.JoinCompiler</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560L124">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560R124">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -480,16 +480,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	filterFunctionVerifier : JoinFilterFunctionVerifier to filterFunction : JoinFilterFunction in class com.facebook.presto.operator.InMemoryJoinHash</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6L45">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6R45">To</a></td>
+                                <td><i>Rename Attribute	joinFilterFunctionVerifierClasses : LoadingCache&lt;Class&lt;? extends InternalJoinFilterFunction&gt;,Class&lt;? extends JoinFilterFunctionVerifier&gt;&gt; to joinFilterFunctionClasses : LoadingCache&lt;Class&lt;? extends InternalJoinFilterFunction&gt;,Class&lt;? extends JoinFilterFunction&gt;&gt; in class com.facebook.presto.sql.gen.JoinCompiler</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560L99">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560R99">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	joinFilterFunctionVerifierClasses : LoadingCache&lt;Class&lt;? extends InternalJoinFilterFunction&gt;,Class&lt;? extends JoinFilterFunctionVerifier&gt;&gt; to joinFilterFunctionClasses : LoadingCache&lt;Class&lt;? extends InternalJoinFilterFunction&gt;,Class&lt;? extends JoinFilterFunction&gt;&gt; in class com.facebook.presto.sql.gen.JoinCompiler</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560L99">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560R99">To</a></td>
+                                <td><i>Rename Attribute	filterFunctionVerifier : JoinFilterFunctionVerifier to filterFunction : JoinFilterFunction in class com.facebook.presto.operator.InMemoryJoinHash</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6L45">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6R45">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -530,16 +530,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	filterFunctionVerifierOptional : Optional&lt;JoinFilterFunctionVerifier&gt; to filterFunction : Optional&lt;JoinFilterFunction&gt; in method public InMemoryJoinHash(addresses LongArrayList, pagesHashStrategy PagesHashStrategy, filterFunction Optional&lt;JoinFilterFunction&gt;) in class com.facebook.presto.operator.InMemoryJoinHash</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6L58">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6R58">To</a></td>
+                                <td><i>Rename Parameter	joinFilterFunctionVerifier : Optional&lt;JoinFilterFunctionVerifier&gt; to joinFilterFunction : Optional&lt;JoinFilterFunction&gt; in method public createLookupSource(addresses LongArrayList, channels List&lt;List&lt;Block&gt;&gt;, hashChannel Optional&lt;Integer&gt;, joinFilterFunction Optional&lt;JoinFilterFunction&gt;) : LookupSource in class com.facebook.presto.sql.gen.JoinCompiler.LookupSourceFactory</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560L717">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560R717">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	joinFilterFunctionVerifier : Optional&lt;JoinFilterFunctionVerifier&gt; to joinFilterFunction : Optional&lt;JoinFilterFunction&gt; in method public createLookupSource(addresses LongArrayList, channels List&lt;List&lt;Block&gt;&gt;, hashChannel Optional&lt;Integer&gt;, joinFilterFunction Optional&lt;JoinFilterFunction&gt;) : LookupSource in class com.facebook.presto.sql.gen.JoinCompiler.LookupSourceFactory</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560L717">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-69d08a8543e9f3023b88822da9bd9560R717">To</a></td>
+                                <td><i>Rename Parameter	filterFunctionVerifierOptional : Optional&lt;JoinFilterFunctionVerifier&gt; to filterFunction : Optional&lt;JoinFilterFunction&gt; in method public InMemoryJoinHash(addresses LongArrayList, pagesHashStrategy PagesHashStrategy, filterFunction Optional&lt;JoinFilterFunction&gt;) in class com.facebook.presto.operator.InMemoryJoinHash</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6L58">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/b490ceedc74ccfd4780973e5073b15147e296086?diff=split#diff-cc58d9f8668f9f278dae5330c9e4d7a6R58">To</a></td>
                             </tr>
                             
                             </tbody>

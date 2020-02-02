@@ -180,13 +180,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Push Down Method	public submit(command String, key K, entry V) : CompletableFuture&lt;U&gt; from class net.kuujo.copycat.state.StateLog to public submit(command String, key K, entry V) : CompletableFuture&lt;U&gt; from class net.kuujo.copycat.state.DiscreteStateLog</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-35b6c70b480dd027321bec3d90523fb2L110">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-5aa553e53912b9574fedd090340e6087R132">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Push Down Method	public unregister(name String) : StateLog&lt;K,V&gt; from class net.kuujo.copycat.state.StateLog to protected unregister(name String) : StateLog&lt;K,V&gt; from class net.kuujo.copycat.state.PartitionedStateLog</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-35b6c70b480dd027321bec3d90523fb2L84">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-7a2322af981d69698c8cf0af12cf1bfcR83">To</a></td>
@@ -204,6 +197,13 @@
                                 <td><i>Push Down Method	public register(name String, type Command.Type, command Command&lt;? extends K,? extends V,?&gt;, consistency Consistency) : StateLog&lt;K,V&gt; from class net.kuujo.copycat.state.StateLog to protected register(name String, type Command.Type, command Command&lt;? extends K,? extends V,?&gt;, consistency Consistency) : StateLog&lt;K,V&gt; from class net.kuujo.copycat.state.PartitionedStateLog</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-35b6c70b480dd027321bec3d90523fb2L66">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-7a2322af981d69698c8cf0af12cf1bfcR65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public submit(command String, key K, entry V) : CompletableFuture&lt;U&gt; from class net.kuujo.copycat.state.StateLog to public submit(command String, key K, entry V) : CompletableFuture&lt;U&gt; from class net.kuujo.copycat.state.DiscreteStateLog</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-35b6c70b480dd027321bec3d90523fb2L110">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-5aa553e53912b9574fedd090340e6087R132">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -244,14 +244,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Subclass	net.kuujo.copycat.state.DiscreteStateLog from class net.kuujo.copycat.state.StateLog</i></td>
+                                <td><i>Extract Subclass	net.kuujo.copycat.state.PartitionedStateLog from class net.kuujo.copycat.state.StateLog</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Subclass	net.kuujo.copycat.state.PartitionedStateLog from class net.kuujo.copycat.state.StateLog</i></td>
+                                <td><i>Extract Subclass	net.kuujo.copycat.state.DiscreteStateLog from class net.kuujo.copycat.state.StateLog</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -372,13 +372,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private LOGGER : Logger from class net.kuujo.copycat.state.StateLogPartition to private LOGGER : Logger from class net.kuujo.copycat.state.DiscreteStateLog</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-c502c9b2a77c769cd3c7221fb286af0eL41">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-5aa553e53912b9574fedd090340e6087R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private defaultConsistency : Consistency from class net.kuujo.copycat.state.StateLogPartition to private defaultConsistency : Consistency from class net.kuujo.copycat.state.DiscreteStateLog</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-c502c9b2a77c769cd3c7221fb286af0eL46">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-5aa553e53912b9574fedd090340e6087R53">To</a></td>
@@ -396,6 +389,13 @@
                                 <td><i>Move Attribute	private bufferPool : ReferencePool&lt;Buffer&gt; from class net.kuujo.copycat.state.StateLogPartition to private bufferPool : ReferencePool&lt;Buffer&gt; from class net.kuujo.copycat.state.DiscreteStateLog</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-c502c9b2a77c769cd3c7221fb286af0eL43">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-5aa553e53912b9574fedd090340e6087R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private LOGGER : Logger from class net.kuujo.copycat.state.StateLogPartition to private LOGGER : Logger from class net.kuujo.copycat.state.DiscreteStateLog</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-c502c9b2a77c769cd3c7221fb286af0eL41">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/91235be54035efc96e2cef32717e8040dbecedcf?diff=split#diff-5aa553e53912b9574fedd090340e6087R49">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -429,13 +429,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	net.kuujo.copycat.state.PartitionedStateLog.Builder from class net.kuujo.copycat.state.StateLogConfig</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Class	net.kuujo.copycat.state.DiscreteStateLog.Builder from class net.kuujo.copycat.state.StateLogConfig</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -444,6 +437,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	net.kuujo.copycat.state.DiscreteStateLog from class net.kuujo.copycat.state.StateLogPartition</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	net.kuujo.copycat.state.PartitionedStateLog.Builder from class net.kuujo.copycat.state.StateLogConfig</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

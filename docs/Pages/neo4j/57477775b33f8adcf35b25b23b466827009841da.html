@@ -302,14 +302,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public indexGetReader(statement StorageStatement, index IndexDescriptor) : IndexReader moved from class org.neo4j.kernel.impl.api.store.StorageLayer to class org.neo4j.kernel.impl.api.StateHandlingStatementOperations &amp; inlined to public nodesCountIndexed(statement KernelStatement, index IndexDescriptor, nodeId long, value Object) : long</i></td>
+                                <td><i>Move And Inline Method	public relationshipCursor(statement StorageStatement, relationshipId long, state ReadableTransactionState) : Cursor&lt;RelationshipItem&gt; moved from class org.neo4j.kernel.impl.api.store.StorageLayer to class org.neo4j.kernel.impl.api.StateHandlingStatementOperations &amp; inlined to private relationshipCursor(statement KernelStatement, relationshipId long) : Cursor&lt;RelationshipItem&gt;</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public relationshipCursor(statement StorageStatement, relationshipId long, state ReadableTransactionState) : Cursor&lt;RelationshipItem&gt; moved from class org.neo4j.kernel.impl.api.store.StorageLayer to class org.neo4j.kernel.impl.api.StateHandlingStatementOperations &amp; inlined to private relationshipCursor(statement KernelStatement, relationshipId long) : Cursor&lt;RelationshipItem&gt;</i></td>
+                                <td><i>Move And Inline Method	public indexGetReader(statement StorageStatement, index IndexDescriptor) : IndexReader moved from class org.neo4j.kernel.impl.api.store.StorageLayer to class org.neo4j.kernel.impl.api.StateHandlingStatementOperations &amp; inlined to public nodesCountIndexed(statement KernelStatement, index IndexDescriptor, nodeId long, value Object) : long</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -435,27 +435,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	dataRead : EntityReadOperations in method public nodeGetRelationshipTypes(nodeId long) : PrimitiveIntIterator from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Variable	dataRead : EntityReadOperations in method public nodeGetProperty(nodeId long, propertyKeyId int) : Object from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Variable	dataRead : EntityReadOperations in method public relationshipGetProperty(relationshipId long, propertyKeyId int) : Object from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Inline Variable	dataRead : EntityReadOperations in method public nodeGetDegree(nodeId long, direction Direction, relType int) : int from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -510,6 +489,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Variable	dataRead : EntityReadOperations in method public nodeGetRelationshipTypes(nodeId long) : PrimitiveIntIterator from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Variable	dataRead : EntityReadOperations in method public nodeGetProperty(nodeId long, propertyKeyId int) : Object from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Variable	dataRead : EntityReadOperations in method public relationshipGetProperty(relationshipId long, propertyKeyId int) : Object from class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -523,6 +523,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	storeReadLayer : StoreReadLayer to kernelStatement : KernelStatement in method private addMockedIndexReader(kernelStatement KernelStatement) : IndexReader in class org.neo4j.kernel.impl.api.state.StateHandlingStatementOperationsTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-69d801248569db49f15c4193732fdb5eL610">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-69d801248569db49f15c4193732fdb5eR623">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	statement : KernelStatement to state : KernelStatement in method public nodeGetFromUniqueIndexSeek(state KernelStatement, index IndexDescriptor, query IndexQuery.ExactPredicate...) : long in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-94e898a8535f13220449b217db75fd90L724">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-94e898a8535f13220449b217db75fd90R737">To</a></td>
@@ -533,13 +540,6 @@
                                 <td><i>Rename Parameter	statement : KernelStatement to state : KernelStatement in method public indexQuery(state KernelStatement, index IndexDescriptor, predicates IndexQuery...) : PrimitiveLongIterator in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-94e898a8535f13220449b217db75fd90L743">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-94e898a8535f13220449b217db75fd90R755">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	storeReadLayer : StoreReadLayer to kernelStatement : KernelStatement in method private addMockedIndexReader(kernelStatement KernelStatement) : IndexReader in class org.neo4j.kernel.impl.api.state.StateHandlingStatementOperationsTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-69d801248569db49f15c4193732fdb5eL610">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/57477775b33f8adcf35b25b23b466827009841da?diff=split#diff-69d801248569db49f15c4193732fdb5eR623">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -292,6 +292,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	indexWriterFactory : LuceneIndexWriterFactory to indexWriterFactory : IndexWriterFactory&lt;LuceneIndexWriter&gt; in method package NonUniqueLuceneIndexPopulator(queueThreshold int, documentStructure LuceneDocumentStructure, indexWriterFactory IndexWriterFactory&lt;LuceneIndexWriter&gt;, writerStatus IndexWriterStatus, dirFactory DirectoryFactory, dirFile File, failureStorage FailureStorage, indexId long, samplingConfig IndexSamplingConfig) in class org.neo4j.kernel.api.impl.index.NonUniqueLuceneIndexPopulator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-ada24a75e050c1048e882273d8a7899fL46">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-ada24a75e050c1048e882273d8a7899fR49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	writer : IndexWriter to writer : LuceneIndexWriter in method public commitAsOnline(writer LuceneIndexWriter) : void in class org.neo4j.kernel.api.impl.index.IndexWriterStatus</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8dc35b5d08afb9b2b7d5652914a9578fL36">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8dc35b5d08afb9b2b7d5652914a9578fR35">To</a></td>
@@ -360,13 +367,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-bdea66427b6607242f08ef49276eeef1R46">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	indexWriterFactory : LuceneIndexWriterFactory to indexWriterFactory : IndexWriterFactory&lt;LuceneIndexWriter&gt; in method package NonUniqueLuceneIndexPopulator(queueThreshold int, documentStructure LuceneDocumentStructure, indexWriterFactory IndexWriterFactory&lt;LuceneIndexWriter&gt;, writerStatus IndexWriterStatus, dirFactory DirectoryFactory, dirFile File, failureStorage FailureStorage, indexId long, samplingConfig IndexSamplingConfig) in class org.neo4j.kernel.api.impl.index.NonUniqueLuceneIndexPopulator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-ada24a75e050c1048e882273d8a7899fL46">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-ada24a75e050c1048e882273d8a7899fR49">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -377,6 +377,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-3" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public shouldNotUpdateIndexesOnPropertyCommandsWhenThePropertyIsNotOnANode() : void from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to public shouldNotUpdateIndexesOnPropertyCommandsWhenThePropertyIsNotOnANode() : void from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidatorTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL160">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-6c92db55e13bebace2f84b10c71980d6R135">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -392,13 +399,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR150">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public shouldNotUpdateIndexesOnPropertyCommandsWhenThePropertyIsNotOnANode() : void from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to public shouldNotUpdateIndexesOnPropertyCommandsWhenThePropertyIsNotOnANode() : void from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidatorTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL160">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-6c92db55e13bebace2f84b10c71980d6R135">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -409,34 +409,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private propertyStore : PropertyStore from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to private propertyStore : PropertyStore from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL61">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL63">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.transaction.command.IndexTransactionApplier to private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-f8902bc6c25f018c6cf50f08d40b4fbcL78">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private propertyStore : PropertyStore from class org.neo4j.kernel.impl.transaction.command.IndexTransactionApplier to private propertyStore : PropertyStore from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-f8902bc6c25f018c6cf50f08d40b4fbcL75">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR56">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -464,6 +436,34 @@
                                 <td><i>Move Attribute	private nodeStore : NodeStore from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to private nodeStore : NodeStore from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL60">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private propertyStore : PropertyStore from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to private propertyStore : PropertyStore from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL61">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.transaction.command.NeoTransactionIndexApplierTest to private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-868490d562a36b0a48600e3b1440ea9eL63">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.transaction.command.IndexTransactionApplier to private propertyLoader : PropertyLoader from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-f8902bc6c25f018c6cf50f08d40b4fbcL78">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private propertyStore : PropertyStore from class org.neo4j.kernel.impl.transaction.command.IndexTransactionApplier to private propertyStore : PropertyStore from class org.neo4j.kernel.impl.api.index.IndexUpdatesValidator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-f8902bc6c25f018c6cf50f08d40b4fbcL75">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-1cc58e6fb61572b7b5338ac628faf09aR56">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -686,6 +686,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	IndexWriter to LuceneIndexWriter in method private instantiateWriter(directory File) : LuceneIndexWriter in class org.neo4j.index.impl.lucene.LuceneBatchInserterIndex</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-bcaca2b4b5af71ed73eb631aa6f83150L253">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-bcaca2b4b5af71ed73eb631aa6f83150R265">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	IndexWriter to LuceneIndexWriter in method private newWriter() : LuceneIndexWriter in class org.neo4j.kernel.api.impl.index.WriterLogicTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-d9f540289e0a8ac03ba366bb90d01fc8L109">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-d9f540289e0a8ac03ba366bb90d01fc8R107">To</a></td>
@@ -712,13 +719,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8d9c6845b7c32710f5a253623cc06b8fR697">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	IndexWriter to LuceneIndexWriter in method private instantiateWriter(directory File) : LuceneIndexWriter in class org.neo4j.index.impl.lucene.LuceneBatchInserterIndex</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-bcaca2b4b5af71ed73eb631aa6f83150L253">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-bcaca2b4b5af71ed73eb631aa6f83150R265">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -729,13 +729,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	writer : IndexWriter to writer : LuceneIndexWriter in class org.neo4j.kernel.api.impl.index.LuceneLabelScanStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8637f20963457a74b522656bef069809L61">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8637f20963457a74b522656bef069809R60">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -784,6 +777,13 @@
                                 <td><i>Change Attribute Type	writer : IndexWriter to writer : LuceneIndexWriter in class org.neo4j.kernel.api.impl.index.LuceneSnapshotterTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-22c973fca8d6ff69d154faad3ac7c21bL52">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-22c973fca8d6ff69d154faad3ac7c21bR50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	writer : IndexWriter to writer : LuceneIndexWriter in class org.neo4j.kernel.api.impl.index.LuceneLabelScanStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8637f20963457a74b522656bef069809L61">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eb962726f29b3cf3f97c25e18dde5d62b4732ebc?diff=split#diff-8637f20963457a74b522656bef069809R60">To</a></td>
                             </tr>
                             
                             </tbody>

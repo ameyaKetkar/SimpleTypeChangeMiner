@@ -1320,20 +1320,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.wildfly.clustering.spi.ClusteredGroupBuilderProvider renamed to org.wildfly.clustering.spi.DistributedGroupBuilderProvider</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.wildfly.clustering.server.provider.ServiceProviderRegistrationFactoryBuilderProvider renamed to org.wildfly.clustering.server.provider.ServiceProviderRegistryBuilderProvider</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.wildfly.clustering.spi.ClusteredCacheGroupBuilderProvider renamed to org.wildfly.clustering.spi.DistributedCacheGroupBuilderProvider</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -1381,6 +1367,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.wildfly.clustering.spi.ClusteredGroupBuilderProvider renamed to org.wildfly.clustering.spi.DistributedGroupBuilderProvider</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.wildfly.clustering.server.provider.ServiceProviderRegistrationFactoryBuilderProvider renamed to org.wildfly.clustering.server.provider.ServiceProviderRegistryBuilderProvider</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1412,16 +1412,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	builder : Builder&lt;ServiceProviderRegistrationFactory&gt; to builder : Builder&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in method public getBuilders(containerName String, cacheName String) : Collection&lt;Builder&lt;?&gt;&gt; in class org.wildfly.clustering.server.provider.ServiceProviderRegistryBuilderProvider</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-e2f9f05bf7f452b42e3e7a33938f4a68L50">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-754f1c4484835d5f35189b3ff533a9bcR55">To</a></td>
+                                <td><i>Change Variable Type	builder : Builder&lt;ServiceProviderRegistrationFactory&gt; to builder : Builder&lt;ServiceProviderRegistry&gt; in method public getBuilders(containerName String, aliasCacheName String, targetCacheName String) : Collection&lt;Builder&lt;?&gt;&gt; in class org.wildfly.clustering.server.provider.ServiceProviderRegistryAliasBuilderProvider</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-7c92a3acd0e595aa5c1036fa168dd044L44">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-df74354c53dbccf52b053256598b5215R47">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	builder : Builder&lt;ServiceProviderRegistrationFactory&gt; to builder : Builder&lt;ServiceProviderRegistry&gt; in method public getBuilders(containerName String, aliasCacheName String, targetCacheName String) : Collection&lt;Builder&lt;?&gt;&gt; in class org.wildfly.clustering.server.provider.ServiceProviderRegistryAliasBuilderProvider</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-7c92a3acd0e595aa5c1036fa168dd044L44">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-df74354c53dbccf52b053256598b5215R47">To</a></td>
+                                <td><i>Change Variable Type	builder : Builder&lt;ServiceProviderRegistrationFactory&gt; to builder : Builder&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in method public getBuilders(containerName String, cacheName String) : Collection&lt;Builder&lt;?&gt;&gt; in class org.wildfly.clustering.server.provider.ServiceProviderRegistryBuilderProvider</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-e2f9f05bf7f452b42e3e7a33938f4a68L50">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-754f1c4484835d5f35189b3ff533a9bcR55">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1473,41 +1473,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	factory : CacheBuilderFactory&lt;ServiceProviderRegistrationFactory&gt; to factory : CacheBuilderFactory&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in class org.wildfly.clustering.server.provider.ServiceProviderRegistryBuilderProvider</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-e2f9f05bf7f452b42e3e7a33938f4a68L44">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-754f1c4484835d5f35189b3ff533a9bcR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	registration : ServiceProviderRegistration to registration : ServiceProviderRegistration&lt;String&gt; in class org.jboss.as.test.clustering.cluster.provider.bean.ServiceProviderRetrieverBean</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-26f5e50d5afbbaf3129d43719d7109eaL20">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-26f5e50d5afbbaf3129d43719d7109eaR20">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	registry : ServiceRegistry to registry : InjectedValue&lt;ServiceProviderRegistry&gt; in class org.wildfly.clustering.server.singleton.CacheSingletonServiceBuilder</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-d5eb93ddd50c0d2eaa9142da8b89fde3L88">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-d5eb93ddd50c0d2eaa9142da8b89fde3R75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	FACTORY : CacheBuilderFactory&lt;ServiceProviderRegistrationFactory&gt; to FACTORY : CacheBuilderFactory&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in class org.wildfly.clustering.server.provider.CacheServiceProviderRegistryBuilderProvider</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-44f6733db759aec2a9b0a6faac0a46e9L35">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-2cd27226e8979502aacd1d10af834f2cR35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	registration : ServiceProviderRegistration to registration : ServiceProviderRegistration&lt;String&gt; in class org.jboss.as.test.clustering.cluster.provider.bean.ServiceProviderRegistrationBean</i></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-476c7ce742dbaeca7a0a81a9f374d81fL22">From</a></td>
-                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-476c7ce742dbaeca7a0a81a9f374d81fR22">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	registration : ServiceProviderRegistration to registration : ServiceProviderRegistration&lt;ServiceName&gt; in class org.wildfly.clustering.server.singleton.CacheSingletonServiceBuilder</i></td>
                                 <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-d5eb93ddd50c0d2eaa9142da8b89fde3L84">From</a></td>
                                 <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-d5eb93ddd50c0d2eaa9142da8b89fde3R85">To</a></td>
@@ -1539,6 +1504,41 @@
                                 <td><i>Change Attribute Type	FACTORY : CacheBuilderFactory&lt;ServiceProviderRegistrationFactory&gt; to FACTORY : CacheBuilderFactory&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in class org.wildfly.clustering.server.provider.LocalServiceProviderRegistryBuilderProvider</i></td>
                                 <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-163b0a61167287b0124a1b05938696efL35">From</a></td>
                                 <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-240e02d692ae3aa4b10ca946e2478a3aR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	factory : CacheBuilderFactory&lt;ServiceProviderRegistrationFactory&gt; to factory : CacheBuilderFactory&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in class org.wildfly.clustering.server.provider.ServiceProviderRegistryBuilderProvider</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-e2f9f05bf7f452b42e3e7a33938f4a68L44">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-754f1c4484835d5f35189b3ff533a9bcR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	registration : ServiceProviderRegistration to registration : ServiceProviderRegistration&lt;String&gt; in class org.jboss.as.test.clustering.cluster.provider.bean.ServiceProviderRetrieverBean</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-26f5e50d5afbbaf3129d43719d7109eaL20">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-26f5e50d5afbbaf3129d43719d7109eaR20">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	registry : ServiceRegistry to registry : InjectedValue&lt;ServiceProviderRegistry&gt; in class org.wildfly.clustering.server.singleton.CacheSingletonServiceBuilder</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-d5eb93ddd50c0d2eaa9142da8b89fde3L88">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-d5eb93ddd50c0d2eaa9142da8b89fde3R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	FACTORY : CacheBuilderFactory&lt;ServiceProviderRegistrationFactory&gt; to FACTORY : CacheBuilderFactory&lt;ServiceProviderRegistry&lt;Object&gt;&gt; in class org.wildfly.clustering.server.provider.CacheServiceProviderRegistryBuilderProvider</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-44f6733db759aec2a9b0a6faac0a46e9L35">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-2cd27226e8979502aacd1d10af834f2cR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	registration : ServiceProviderRegistration to registration : ServiceProviderRegistration&lt;String&gt; in class org.jboss.as.test.clustering.cluster.provider.bean.ServiceProviderRegistrationBean</i></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-476c7ce742dbaeca7a0a81a9f374d81fL22">From</a></td>
+                                <td><a href = "https://github.com/wildfly/wildfly/commit/78c777055a12744515cac604228ed26b32d70842?diff=split#diff-476c7ce742dbaeca7a0a81a9f374d81fR22">To</a></td>
                             </tr>
                             
                             </tbody>

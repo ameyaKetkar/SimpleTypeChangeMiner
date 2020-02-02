@@ -302,13 +302,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private check(transaction KernelTransactionImplementation, timeoutDescription String) : void renamed to private doCheck(transaction KernelTransaction) : void in class org.neo4j.kernel.guard.TimeoutGuard</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dL61">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dR61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getMetaData() : Map&lt;String,Object&gt; renamed to public getUserMetaData() : Map&lt;String,Object&gt; in class org.neo4j.kernel.impl.api.KernelTransactionImplementation</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823L325">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823R326">To</a></td>
@@ -321,6 +314,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823R320">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private check(transaction KernelTransactionImplementation, timeoutDescription String) : void renamed to private doCheck(transaction KernelTransaction) : void in class org.neo4j.kernel.guard.TimeoutGuard</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dL61">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dR61">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -331,6 +331,83 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-27" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public executionStatisticsOperations() : ExecutionStatisticsOperations from class org.neo4j.kernel.impl.api.KernelStatement to public executionStatisticsOperations() : ExecutionStatisticsOperations from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L112">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	package assertAllows(allows Function&lt;AccessMode,Boolean&gt;, mode String) : void from class org.neo4j.kernel.impl.api.KernelStatement to private assertAllows(allows Function&lt;AccessMode,Boolean&gt;, mode String) : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L281">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R297">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public writableTxState() : WritableTransactionState from class org.neo4j.kernel.impl.api.KernelStatement to public writableTxState() : WritableTransactionState from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L160">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R160">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public KernelStatement(transaction KernelTransactionImplementation, txStateHolder TxStateHolder, storeStatement StorageStatement, procedures Procedures, accessCapability AccessCapability, systemLockTracer LockTracer) from class org.neo4j.kernel.impl.api.KernelStatement to public KernelStatementImplementation(transaction KernelTransactionImplementation, txStateHolder TxStateHolder, storeStatement StorageStatement, procedures Procedures, accessCapability AccessCapability, systemLockTracer LockTracer) from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L83">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	private cleanupResources() : void from class org.neo4j.kernel.impl.api.KernelStatement to private cleanupResources() : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L269">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R278">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public legacyIndexTxState() : LegacyIndexTransactionState from class org.neo4j.kernel.impl.api.KernelStatement to public legacyIndexTxState() : LegacyIndexTransactionState from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L166">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R166">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public dataWriteOperations() : DataWriteOperations from class org.neo4j.kernel.impl.api.KernelStatement to public dataWriteOperations() : DataWriteOperations from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L126">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	package forceClose() : void from class org.neo4j.kernel.impl.api.KernelStatement to package forceClose() : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L234">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R238">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public queryRegistration() : QueryRegistryOperations from class org.neo4j.kernel.impl.api.KernelStatement to public queryRegistration() : QueryRegistryOperations from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L148">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	package stopQueryExecution(executingQuery ExecutingQuery) : void from class org.neo4j.kernel.impl.api.KernelStatement to public stopQueryExecution(executingQuery ExecutingQuery) : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L259">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R266">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	package isAcquired() : boolean from class org.neo4j.kernel.impl.api.KernelStatement to package isAcquired() : boolean from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L229">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R233">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -444,83 +521,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R206">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public executionStatisticsOperations() : ExecutionStatisticsOperations from class org.neo4j.kernel.impl.api.KernelStatement to public executionStatisticsOperations() : ExecutionStatisticsOperations from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L112">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	package assertAllows(allows Function&lt;AccessMode,Boolean&gt;, mode String) : void from class org.neo4j.kernel.impl.api.KernelStatement to private assertAllows(allows Function&lt;AccessMode,Boolean&gt;, mode String) : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L281">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R297">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public writableTxState() : WritableTransactionState from class org.neo4j.kernel.impl.api.KernelStatement to public writableTxState() : WritableTransactionState from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L160">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R160">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public KernelStatement(transaction KernelTransactionImplementation, txStateHolder TxStateHolder, storeStatement StorageStatement, procedures Procedures, accessCapability AccessCapability, systemLockTracer LockTracer) from class org.neo4j.kernel.impl.api.KernelStatement to public KernelStatementImplementation(transaction KernelTransactionImplementation, txStateHolder TxStateHolder, storeStatement StorageStatement, procedures Procedures, accessCapability AccessCapability, systemLockTracer LockTracer) from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L83">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	private cleanupResources() : void from class org.neo4j.kernel.impl.api.KernelStatement to private cleanupResources() : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L269">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R278">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public legacyIndexTxState() : LegacyIndexTransactionState from class org.neo4j.kernel.impl.api.KernelStatement to public legacyIndexTxState() : LegacyIndexTransactionState from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L166">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R166">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public dataWriteOperations() : DataWriteOperations from class org.neo4j.kernel.impl.api.KernelStatement to public dataWriteOperations() : DataWriteOperations from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L126">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R126">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	package forceClose() : void from class org.neo4j.kernel.impl.api.KernelStatement to package forceClose() : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L234">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R238">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public queryRegistration() : QueryRegistryOperations from class org.neo4j.kernel.impl.api.KernelStatement to public queryRegistration() : QueryRegistryOperations from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L148">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	package stopQueryExecution(executingQuery ExecutingQuery) : void from class org.neo4j.kernel.impl.api.KernelStatement to public stopQueryExecution(executingQuery ExecutingQuery) : void from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L259">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	package isAcquired() : boolean from class org.neo4j.kernel.impl.api.KernelStatement to package isAcquired() : boolean from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L229">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R233">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -552,16 +552,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	transaction : KernelTransactionImplementation to transaction : KernelTransaction in method private getMaxTransactionCompletionTime(transaction KernelTransaction) : long in class org.neo4j.kernel.guard.TimeoutGuard</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dL75">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dR75">To</a></td>
+                                <td><i>Change Parameter Type	transaction : KernelTransactionImplementation to transaction : KernelTransaction in method private doCheck(transaction KernelTransaction) : void in class org.neo4j.kernel.guard.TimeoutGuard</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dL61">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dR61">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	transaction : KernelTransactionImplementation to transaction : KernelTransaction in method private doCheck(transaction KernelTransaction) : void in class org.neo4j.kernel.guard.TimeoutGuard</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dL61">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dR61">To</a></td>
+                                <td><i>Change Parameter Type	transaction : KernelTransactionImplementation to transaction : KernelTransaction in method private getMaxTransactionCompletionTime(transaction KernelTransaction) : long in class org.neo4j.kernel.guard.TimeoutGuard</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dL75">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-1041b50f2ca3f1a2540f43623fb8967dR75">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -592,20 +592,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private systemLockTracer : LockTracer from class org.neo4j.kernel.impl.api.KernelStatement to private systemLockTracer : LockTracer from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L81">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private statementLocks : StatementLocks from class org.neo4j.kernel.impl.api.KernelStatement to private statementLocks : StatementLocks from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L77">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R77">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -663,6 +649,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R80">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private systemLockTracer : LockTracer from class org.neo4j.kernel.impl.api.KernelStatement to private systemLockTracer : LockTracer from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L81">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Attribute	private statementLocks : StatementLocks from class org.neo4j.kernel.impl.api.KernelStatement to private statementLocks : StatementLocks from class org.neo4j.kernel.impl.api.KernelStatementImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L77">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-17ce988e6a6358db1ea0db23a340d4d2R77">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -673,27 +673,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	statement : KernelStatement to statement : KernelStatementImplementation in method public shouldReleaseStoreStatementWhenForceClosingStatements() : void in class org.neo4j.kernel.impl.api.StatementLifecycleTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3518a981fe3b0796308faa3e75d9d081L55">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3518a981fe3b0796308faa3e75d9d081R61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	statement : KernelStatement to statement : KernelStatementImplementation in method public shouldThrowTerminateExceptionWhenTransactionTerminated() : void in class org.neo4j.kernel.impl.api.KernelStatementTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e28ba7ea331210ac8ccf8a51684e75baL43">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e28ba7ea331210ac8ccf8a51684e75baR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	transaction : KernelTransactionImplementation to transaction : KernelTransaction in method public allowToProceedWhenTransactionTimeoutNotReached() : void in class org.neo4j.kernel.guard.TimeoutGuardTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-f4a5519d17ac356bbfdc5659feaf9c81L76">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-f4a5519d17ac356bbfdc5659feaf9c81R89">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -716,6 +695,27 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e28ba7ea331210ac8ccf8a51684e75baR63">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	statement : KernelStatement to statement : KernelStatementImplementation in method public shouldReleaseStoreStatementWhenForceClosingStatements() : void in class org.neo4j.kernel.impl.api.StatementLifecycleTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3518a981fe3b0796308faa3e75d9d081L55">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3518a981fe3b0796308faa3e75d9d081R61">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	statement : KernelStatement to statement : KernelStatementImplementation in method public shouldThrowTerminateExceptionWhenTransactionTerminated() : void in class org.neo4j.kernel.impl.api.KernelStatementTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e28ba7ea331210ac8ccf8a51684e75baL43">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e28ba7ea331210ac8ccf8a51684e75baR50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	transaction : KernelTransactionImplementation to transaction : KernelTransaction in method public allowToProceedWhenTransactionTimeoutNotReached() : void in class org.neo4j.kernel.guard.TimeoutGuardTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-f4a5519d17ac356bbfdc5659feaf9c81L76">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-f4a5519d17ac356bbfdc5659feaf9c81R89">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -729,16 +729,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	currentStatement : KernelStatement to currentStatement : KernelStatementImplementation in class org.neo4j.kernel.impl.api.KernelTransactionImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823L119">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823R119">To</a></td>
+                                <td><i>Change Attribute Type	state : KernelStatement to state : KernelStatementImplementation in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321L92">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321R92">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	state : KernelStatement to state : KernelStatementImplementation in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321L92">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321R92">To</a></td>
+                                <td><i>Change Attribute Type	currentStatement : KernelStatement to currentStatement : KernelStatementImplementation in class org.neo4j.kernel.impl.api.KernelTransactionImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823L119">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/eef8df327a4617bbab3257c91ad6965c2d6a3d4e?diff=split#diff-e846f0ece315673d2137c213a8b1c823R119">To</a></td>
                             </tr>
                             
                             </tbody>

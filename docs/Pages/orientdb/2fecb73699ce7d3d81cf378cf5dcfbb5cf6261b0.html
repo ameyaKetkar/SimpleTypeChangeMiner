@@ -228,13 +228,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getUpdateRecord() : Set&lt;ORecord&gt; renamed to public getUpdateRecords() : Set&lt;ORecord&gt; in class com.orientechnologies.orient.core.record.impl.ODirtyManager</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6f48ad7a31206d26292ef3125e4e287aL50">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6f48ad7a31206d26292ef3125e4e287aR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getRecordVersion() : ORecordVersion renamed to public getVersion() : int in class com.orientechnologies.orient.core.storage.ORecordMetadata</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-8925bfa1b0e10716df4bfaf2b9350470L43">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-8925bfa1b0e10716df4bfaf2b9350470R42">To</a></td>
@@ -254,6 +247,13 @@
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-c98639fe61c9080c9a6a20367c580a12R611">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getUpdateRecord() : Set&lt;ORecord&gt; renamed to public getUpdateRecords() : Set&lt;ORecord&gt; in class com.orientechnologies.orient.core.record.impl.ODirtyManager</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6f48ad7a31206d26292ef3125e4e287aL50">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6f48ad7a31206d26292ef3125e4e287aR50">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -264,6 +264,314 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-125" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL2329">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR2365">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordVersion : ORecordVersion to iRecordVersion : int in method public createRecord(iRecordId ORecordId, iContent byte[], iRecordVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Long&gt;) : OStorageOperationResult&lt;OPhysicalPosition&gt; in class com.orientechnologies.orient.server.distributed.ODistributedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411L459">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411R458">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public ORecordMetadata(recordId ORID, recordVersion int) in class com.orientechnologies.orient.core.storage.ORecordMetadata</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-8925bfa1b0e10716df4bfaf2b9350470L34">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-8925bfa1b0e10716df4bfaf2b9350470R33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iDatabaseVersion : ORecordVersion to iDatabaseVersion : AtomicInteger in method public onUpdate(storage OStorage, iRecordType byte, rid ORecordId, iRecordVersion int, iRecordContent byte[], iDatabaseVersion AtomicInteger) : byte[] in class com.orientechnologies.orient.core.conflict.OAutoMergeRecordConflictStrategy</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-293d29245447dd92c855a736cfc678a8L39">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-293d29245447dd92c855a736cfc678a8R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	ver : ORecordVersion to ver : int in method public executeSaveRecord(record ORecord, clusterName String, ver int, mode OPERATION_MODE, forceCreate boolean, recordCreatedCallback ORecordCallback&lt;? extends Number&gt;, recordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1770">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1777">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(clusterPosition long, recordVersion int) : ORawBuffer in class com.orientechnologies.orient.core.storage.impl.local.paginated.OOfflineCluster</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01L148">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01R136">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	callback : ORecordCallback&lt;ORecordVersion&gt; to callback : ORecordCallback&lt;Integer&gt; in method public updateRecord(rid ORecordId, updateContent boolean, content byte[], version int, recordType byte, mode int, callback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L916">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R917">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method private doDeleteRecord(rid ORecordId, version int, cluster OCluster) : OStorageOperationResult&lt;Boolean&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3395">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3400">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private makeMessage(recordOperation int, rid ORID, databaseVersion int, recordVersion int) : String in class com.orientechnologies.orient.core.exception.OConcurrentModificationException</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147L105">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147R97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method protected fill(iRid ORID, iVersion int, iBuffer byte[], iDirty boolean) : ORecordAbstract in class com.orientechnologies.orient.core.record.impl.ODocument</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-217b3c77792b81e2cc6c9f16496940ebL2178">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-217b3c77792b81e2cc6c9f16496940ebR2178">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public deleteRecord(iRid ORecordId, iVersion int, iMode int, iCallback ORecordCallback&lt;Boolean&gt;) : OStorageOperationResult&lt;Boolean&gt; in class com.orientechnologies.orient.client.remote.OStorageRemote</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089L778">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089R791">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public updateRecord(clusterPosition long, content byte[], recordVersion int, recordType byte) : void in class com.orientechnologies.orient.core.storage.impl.local.paginated.OOfflineCluster</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01L138">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01R126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to recordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public executeSaveRecord(record ORecord, clusterName String, ver int, mode OPERATION_MODE, forceCreate boolean, recordCreatedCallback ORecordCallback&lt;? extends Number&gt;, recordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1770">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1779">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public OResurrectRecordTask(iRid ORecordId, iVersion int) in class com.orientechnologies.orient.server.distributed.task.OResurrectRecordTask</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbL51">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbR49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public createRecord(content byte[], recordVersion int, recordType byte) : OPhysicalPosition in class com.orientechnologies.orient.core.storage.impl.local.paginated.OOfflineCluster</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01L128">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01R116">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public OReadRecordIfNotLatestTask(iRid ORecordId, recordVersion int) in class com.orientechnologies.orient.server.distributed.task.OReadRecordIfNotLatestTask</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ca967966f3dbdd5b910b84a3fa26be5eL45">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ca967966f3dbdd5b910b84a3fa26be5eR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public cleanOutRecord(recordId ORecordId, recordVersion int, iMode int, callback ORecordCallback&lt;Boolean&gt;) : boolean in class com.orientechnologies.orient.core.storage.OStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL103">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR98">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public loadRecordIfVersionIsNotLatest(rid ORID, recordVersion int, fetchPlan String, ignoreCache boolean) : ORecord in class com.orientechnologies.orient.core.tx.OTransaction</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6da3263bbf8f69400553b4bcb5ce5b5L95">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6da3263bbf8f69400553b4bcb5ce5b5R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private addEntry(recordVersion int, entryContent byte[], atomicOperation OAtomicOperation) : AddEntryResult in class com.orientechnologies.orient.core.storage.impl.local.paginated.OPaginatedCluster</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4L1495">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4R1483">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iCallback : ORecordCallback&lt;ORecordVersion&gt; to iCallback : ORecordCallback&lt;Integer&gt; in method public updateRecord(iRecordId ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.OStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL95">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public updateRecord(iRid ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.client.remote.OStorageRemote</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089L701">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089R715">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordVersion : ORecordVersion to iRecordVersion : int in method protected checkVersions(rid ORecordId, iRecordVersion int, iDatabaseVersion int) : void in class com.orientechnologies.orient.core.conflict.OVersionRecordConflictStrategy</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4L51">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iDatabaseVersion : ORecordVersion to iDatabaseVersion : AtomicInteger in method public onUpdate(storage OStorage, iRecordType byte, rid ORecordId, iRecordVersion int, iRecordContent byte[], iDatabaseVersion AtomicInteger) : byte[] in class com.orientechnologies.orient.core.conflict.OVersionRecordConflictStrategy</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4L39">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(rid ORecordId, fetchPlan String, ignoreCache boolean, recordVersion int) : OStorageOperationResult&lt;ORawBuffer&gt; in class com.orientechnologies.orient.server.distributed.ODistributedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411L630">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411R628">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iPojo Object, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L437">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R448">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method protected deleteRecord(iDatabase ODatabaseDocument, rid ORID, version int) : int in class com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bfefc0e07a6b60a6a77f3a679467c51dL322">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bfefc0e07a6b60a6a77f3a679467c51dR320">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private doCreateRecord(rid ORecordId, content byte[], recordVersion int, recordType byte, callback ORecordCallback&lt;Long&gt;, cluster OCluster, ppos OPhysicalPosition) : OStorageOperationResult&lt;OPhysicalPosition&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3266">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3266">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method private doUpdateRecord(rid ORecordId, updateContent boolean, content byte[], version int, recordType byte, callback ORecordCallback&lt;Integer&gt;, cluster OCluster) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3326">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3326">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public loadIfVersionIsNotLatest(rid ORID, recordVersion int, fetchPlan String, ignoreCache boolean) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1505">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1508">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(rid ORecordId, fetchPlan String, ignoreCache boolean, recordVersion int) : OStorageOperationResult&lt;ORawBuffer&gt; in class com.orientechnologies.orient.core.storage.OStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL92">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR89">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iContent Object, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L411">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R417">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method public deleteRecord(rid ORecordId, version int, mode int, callback ORecordCallback&lt;Boolean&gt;) : OStorageOperationResult&lt;Boolean&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L969">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R969">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public saveRecord(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ORecord in class com.orientechnologies.orient.core.tx.OTransactionOptimistic</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ec1fe66f39e4d09f05a34db5c69ba4fcL351">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ec1fe66f39e4d09f05a34db5c69ba4fcR356">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iRecord ORecord, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ODocument in class com.orientechnologies.orient.core.command.script.OScriptDocumentDatabaseWrapper</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440L267">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440R267">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordVersion : ORecordVersion to iRecordVersion : int in method public onUpdate(storage OStorage, iRecordType byte, rid ORecordId, iRecordVersion int, iRecordContent byte[], iDatabaseVersion AtomicInteger) : byte[] in class com.orientechnologies.orient.core.conflict.OVersionRecordConflictStrategy</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4L39">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public setObjectVersion(iVersion int, iPojo Object) : String in class com.orientechnologies.orient.object.serialization.OObjectSerializerHelper</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795L300">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795R298">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public appendRecord(recordVersion int, record byte[]) : int in class com.orientechnologies.orient.core.storage.impl.local.paginated.OClusterPage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eL76">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eR75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private doReadRecordIfNotLatest(cluster OCluster, rid ORecordId, recordVersion int) : ORawBuffer in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3481">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public cleanOutRecord(recordId ORecordId, recordVersion int, iMode int, callback ORecordCallback&lt;Boolean&gt;) : boolean in class com.orientechnologies.orient.client.remote.OStorageRemoteThread</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03L354">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03R360">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ODocument in class com.orientechnologies.orient.core.command.script.OScriptDocumentDatabaseWrapper</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440L380">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440R380">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(rid ORecordId, fetchPlan String, ignoreCache boolean, recordVersion int) : OStorageOperationResult&lt;ORawBuffer&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L909">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R910">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public delete(iRID ORID, iVersion int) : ODatabaseObject in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L534">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R534">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public saveRecord(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ORecord in class com.orientechnologies.orient.core.tx.OTransactionNoTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-5a3798f4f98184eb1b6c4bd855db1f6dL155">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-5a3798f4f98184eb1b6c4bd855db1f6dR162">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public executeDeleteRecord(record OIdentifiable, iVersion int, iRequired boolean, iMode OPERATION_MODE, prohibitTombstones boolean) : void in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1925">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1933">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -832,314 +1140,6 @@
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-c98639fe61c9080c9a6a20367c580a12R611">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL2329">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR2365">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordVersion : ORecordVersion to iRecordVersion : int in method public createRecord(iRecordId ORecordId, iContent byte[], iRecordVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Long&gt;) : OStorageOperationResult&lt;OPhysicalPosition&gt; in class com.orientechnologies.orient.server.distributed.ODistributedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411L459">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411R458">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public ORecordMetadata(recordId ORID, recordVersion int) in class com.orientechnologies.orient.core.storage.ORecordMetadata</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-8925bfa1b0e10716df4bfaf2b9350470L34">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-8925bfa1b0e10716df4bfaf2b9350470R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iDatabaseVersion : ORecordVersion to iDatabaseVersion : AtomicInteger in method public onUpdate(storage OStorage, iRecordType byte, rid ORecordId, iRecordVersion int, iRecordContent byte[], iDatabaseVersion AtomicInteger) : byte[] in class com.orientechnologies.orient.core.conflict.OAutoMergeRecordConflictStrategy</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-293d29245447dd92c855a736cfc678a8L39">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-293d29245447dd92c855a736cfc678a8R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	ver : ORecordVersion to ver : int in method public executeSaveRecord(record ORecord, clusterName String, ver int, mode OPERATION_MODE, forceCreate boolean, recordCreatedCallback ORecordCallback&lt;? extends Number&gt;, recordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1770">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1777">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(clusterPosition long, recordVersion int) : ORawBuffer in class com.orientechnologies.orient.core.storage.impl.local.paginated.OOfflineCluster</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01L148">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01R136">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	callback : ORecordCallback&lt;ORecordVersion&gt; to callback : ORecordCallback&lt;Integer&gt; in method public updateRecord(rid ORecordId, updateContent boolean, content byte[], version int, recordType byte, mode int, callback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L916">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R917">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method private doDeleteRecord(rid ORecordId, version int, cluster OCluster) : OStorageOperationResult&lt;Boolean&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3395">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3400">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private makeMessage(recordOperation int, rid ORID, databaseVersion int, recordVersion int) : String in class com.orientechnologies.orient.core.exception.OConcurrentModificationException</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147L105">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147R97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method protected fill(iRid ORID, iVersion int, iBuffer byte[], iDirty boolean) : ORecordAbstract in class com.orientechnologies.orient.core.record.impl.ODocument</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-217b3c77792b81e2cc6c9f16496940ebL2178">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-217b3c77792b81e2cc6c9f16496940ebR2178">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public deleteRecord(iRid ORecordId, iVersion int, iMode int, iCallback ORecordCallback&lt;Boolean&gt;) : OStorageOperationResult&lt;Boolean&gt; in class com.orientechnologies.orient.client.remote.OStorageRemote</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089L778">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089R791">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public updateRecord(clusterPosition long, content byte[], recordVersion int, recordType byte) : void in class com.orientechnologies.orient.core.storage.impl.local.paginated.OOfflineCluster</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01L138">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01R126">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to recordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public executeSaveRecord(record ORecord, clusterName String, ver int, mode OPERATION_MODE, forceCreate boolean, recordCreatedCallback ORecordCallback&lt;? extends Number&gt;, recordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1770">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1779">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public OResurrectRecordTask(iRid ORecordId, iVersion int) in class com.orientechnologies.orient.server.distributed.task.OResurrectRecordTask</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbL51">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbR49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public createRecord(content byte[], recordVersion int, recordType byte) : OPhysicalPosition in class com.orientechnologies.orient.core.storage.impl.local.paginated.OOfflineCluster</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01L128">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-616bd08778f374ce46c4bad53bf45c01R116">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public OReadRecordIfNotLatestTask(iRid ORecordId, recordVersion int) in class com.orientechnologies.orient.server.distributed.task.OReadRecordIfNotLatestTask</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ca967966f3dbdd5b910b84a3fa26be5eL45">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ca967966f3dbdd5b910b84a3fa26be5eR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public cleanOutRecord(recordId ORecordId, recordVersion int, iMode int, callback ORecordCallback&lt;Boolean&gt;) : boolean in class com.orientechnologies.orient.core.storage.OStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL103">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public loadRecordIfVersionIsNotLatest(rid ORID, recordVersion int, fetchPlan String, ignoreCache boolean) : ORecord in class com.orientechnologies.orient.core.tx.OTransaction</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6da3263bbf8f69400553b4bcb5ce5b5L95">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6da3263bbf8f69400553b4bcb5ce5b5R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private addEntry(recordVersion int, entryContent byte[], atomicOperation OAtomicOperation) : AddEntryResult in class com.orientechnologies.orient.core.storage.impl.local.paginated.OPaginatedCluster</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4L1495">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4R1483">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iCallback : ORecordCallback&lt;ORecordVersion&gt; to iCallback : ORecordCallback&lt;Integer&gt; in method public updateRecord(iRecordId ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.OStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL95">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR92">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public updateRecord(iRid ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.client.remote.OStorageRemote</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089L701">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089R715">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordVersion : ORecordVersion to iRecordVersion : int in method protected checkVersions(rid ORecordId, iRecordVersion int, iDatabaseVersion int) : void in class com.orientechnologies.orient.core.conflict.OVersionRecordConflictStrategy</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4L51">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iDatabaseVersion : ORecordVersion to iDatabaseVersion : AtomicInteger in method public onUpdate(storage OStorage, iRecordType byte, rid ORecordId, iRecordVersion int, iRecordContent byte[], iDatabaseVersion AtomicInteger) : byte[] in class com.orientechnologies.orient.core.conflict.OVersionRecordConflictStrategy</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4L39">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(rid ORecordId, fetchPlan String, ignoreCache boolean, recordVersion int) : OStorageOperationResult&lt;ORawBuffer&gt; in class com.orientechnologies.orient.server.distributed.ODistributedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411L630">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411R628">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iPojo Object, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L437">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R448">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method protected deleteRecord(iDatabase ODatabaseDocument, rid ORID, version int) : int in class com.orientechnologies.orient.server.network.protocol.binary.OBinaryNetworkProtocolAbstract</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bfefc0e07a6b60a6a77f3a679467c51dL322">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bfefc0e07a6b60a6a77f3a679467c51dR320">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private doCreateRecord(rid ORecordId, content byte[], recordVersion int, recordType byte, callback ORecordCallback&lt;Long&gt;, cluster OCluster, ppos OPhysicalPosition) : OStorageOperationResult&lt;OPhysicalPosition&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3266">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method private doUpdateRecord(rid ORecordId, updateContent boolean, content byte[], version int, recordType byte, callback ORecordCallback&lt;Integer&gt;, cluster OCluster) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3326">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3326">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public loadIfVersionIsNotLatest(rid ORID, recordVersion int, fetchPlan String, ignoreCache boolean) : RET in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1505">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1508">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(rid ORecordId, fetchPlan String, ignoreCache boolean, recordVersion int) : OStorageOperationResult&lt;ORawBuffer&gt; in class com.orientechnologies.orient.core.storage.OStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL92">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iContent Object, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : RET in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L411">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R417">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	version : ORecordVersion to version : int in method public deleteRecord(rid ORecordId, version int, mode int, callback ORecordCallback&lt;Boolean&gt;) : OStorageOperationResult&lt;Boolean&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L969">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R969">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public saveRecord(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ORecord in class com.orientechnologies.orient.core.tx.OTransactionOptimistic</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ec1fe66f39e4d09f05a34db5c69ba4fcL351">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ec1fe66f39e4d09f05a34db5c69ba4fcR356">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iRecord ORecord, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ODocument in class com.orientechnologies.orient.core.command.script.OScriptDocumentDatabaseWrapper</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440L267">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440R267">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordVersion : ORecordVersion to iRecordVersion : int in method public onUpdate(storage OStorage, iRecordType byte, rid ORecordId, iRecordVersion int, iRecordContent byte[], iDatabaseVersion AtomicInteger) : byte[] in class com.orientechnologies.orient.core.conflict.OVersionRecordConflictStrategy</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4L39">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-6e28e937bb7e15595b96b4829c1917d4R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public setObjectVersion(iVersion int, iPojo Object) : String in class com.orientechnologies.orient.object.serialization.OObjectSerializerHelper</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795L300">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795R298">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public appendRecord(recordVersion int, record byte[]) : int in class com.orientechnologies.orient.core.storage.impl.local.paginated.OClusterPage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eL76">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eR75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method private doReadRecordIfNotLatest(cluster OCluster, rid ORecordId, recordVersion int) : ORawBuffer in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L3481">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R3486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public cleanOutRecord(recordId ORecordId, recordVersion int, iMode int, callback ORecordCallback&lt;Boolean&gt;) : boolean in class com.orientechnologies.orient.client.remote.OStorageRemoteThread</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03L354">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03R360">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public save(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ODocument in class com.orientechnologies.orient.core.command.script.OScriptDocumentDatabaseWrapper</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440L380">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a61ffc86a461f60858e620f30b8f4440R380">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordVersion : ORecordVersion to recordVersion : int in method public readRecordIfVersionIsNotLatest(rid ORecordId, fetchPlan String, ignoreCache boolean, recordVersion int) : OStorageOperationResult&lt;ORawBuffer&gt; in class com.orientechnologies.orient.core.storage.impl.local.OAbstractPaginatedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98L909">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-63f9074e87b3665c55a745d817aeaa98R910">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public delete(iRID ORID, iVersion int) : ODatabaseObject in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L534">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R534">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iRecordUpdatedCallback : ORecordCallback&lt;ORecordVersion&gt; to iRecordUpdatedCallback : ORecordCallback&lt;Integer&gt; in method public saveRecord(iRecord ORecord, iClusterName String, iMode OPERATION_MODE, iForceCreate boolean, iRecordCreatedCallback ORecordCallback&lt;? extends Number&gt;, iRecordUpdatedCallback ORecordCallback&lt;Integer&gt;) : ORecord in class com.orientechnologies.orient.core.tx.OTransactionNoTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-5a3798f4f98184eb1b6c4bd855db1f6dL155">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-5a3798f4f98184eb1b6c4bd855db1f6dR162">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iVersion : ORecordVersion to iVersion : int in method public executeDeleteRecord(record OIdentifiable, iVersion int, iRequired boolean, iMode OPERATION_MODE, prohibitTombstones boolean) : void in class com.orientechnologies.orient.core.db.document.ODatabaseDocumentTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fL1925">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fa321e343a918f51754cdf0912bc112fR1933">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1150,62 +1150,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OStorageOperationResult&lt;ORecordVersion&gt; to OStorageOperationResult&lt;Integer&gt; in method public updateRecord(iRid ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.client.remote.OStorageRemoteThread</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03L299">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03R304">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ORecordVersion to int in method public getRecordVersion(position int) : int in class com.orientechnologies.orient.core.storage.impl.local.paginated.OClusterPage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eL186">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eR176">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion() : int in class com.orientechnologies.orient.object.enhancement.OVersionSerializationTest.EntityExactVersionType</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-dad163962281be13413077b69a08e2b8L167">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-dad163962281be13413077b69a08e2b8R128">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion(iPojo Object) : int in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L642">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R641">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OStorageOperationResult&lt;ORecordVersion&gt; to OStorageOperationResult&lt;Integer&gt; in method public updateRecord(iRecordId ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.OStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL95">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR91">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion(proxiedObject Proxy) : int in class com.orientechnologies.orient.object.enhancement.OObjectEntitySerializer</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05L270">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05R297">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OStorageOperationResult&lt;ORecordVersion&gt; to OStorageOperationResult&lt;Integer&gt; in method public updateRecord(iRid ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.client.remote.OStorageRemote</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089L701">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089R714">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion(iPojo Object) : int in class com.orientechnologies.orient.object.db.ODatabasePojoAbstract</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6ba12209cd7b5b272104596133b9406L189">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6ba12209cd7b5b272104596133b9406R190">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1312,6 +1256,62 @@
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bfefc0e07a6b60a6a77f3a679467c51dR358">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OStorageOperationResult&lt;ORecordVersion&gt; to OStorageOperationResult&lt;Integer&gt; in method public updateRecord(iRid ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.client.remote.OStorageRemoteThread</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03L299">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-deb2c568bbee8c77c2e737d14fe0be03R304">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ORecordVersion to int in method public getRecordVersion(position int) : int in class com.orientechnologies.orient.core.storage.impl.local.paginated.OClusterPage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eL186">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-3738deee073c1331f7f661d74a57694eR176">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion() : int in class com.orientechnologies.orient.object.enhancement.OVersionSerializationTest.EntityExactVersionType</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-dad163962281be13413077b69a08e2b8L167">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-dad163962281be13413077b69a08e2b8R128">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion(iPojo Object) : int in class com.orientechnologies.orient.object.db.OObjectDatabaseTx</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72L642">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-95928c9cf876e982597cde979c5f2f72R641">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OStorageOperationResult&lt;ORecordVersion&gt; to OStorageOperationResult&lt;Integer&gt; in method public updateRecord(iRecordId ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.core.storage.OStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dL95">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b0909fc49435f3aa8556f05c7158437dR91">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion(proxiedObject Proxy) : int in class com.orientechnologies.orient.object.enhancement.OObjectEntitySerializer</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05L270">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05R297">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OStorageOperationResult&lt;ORecordVersion&gt; to OStorageOperationResult&lt;Integer&gt; in method public updateRecord(iRid ORecordId, updateContent boolean, iContent byte[], iVersion int, iRecordType byte, iMode int, iCallback ORecordCallback&lt;Integer&gt;) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.client.remote.OStorageRemote</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089L701">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a6534c3b70a6fa0bd16f8d66c454e089R714">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ORecordVersion to int in method public getVersion(iPojo Object) : int in class com.orientechnologies.orient.object.db.ODatabasePojoAbstract</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6ba12209cd7b5b272104596133b9406L189">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-e6ba12209cd7b5b272104596133b9406R190">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1340,55 +1340,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-34" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method public onRequest(iRequestCode byte, obj Object) : void in class com.orientechnologies.orient.client.remote.OStorageRemoteAsynchEventListener</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b04ea66fbb57899daf84141525f32552L51">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b04ea66fbb57899daf84141525f32552R70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	finalVersion : ORecordVersion to finalVersion : int in method private addEntry(recordVersion int, entryContent byte[], atomicOperation OAtomicOperation) : AddEntryResult in class com.orientechnologies.orient.core.storage.impl.local.paginated.OPaginatedCluster</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4L1495">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4R1499">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	newVersion : ORecordVersion to newVersion : int in method protected updateRecord() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-2d0549cc3c4950165888be0e16104d5fL1639">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-2d0549cc3c4950165888be0e16104d5fR1662">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method protected toStream(iPojo T, iProxiedPojo Proxy, db ODatabaseObject) : T in class com.orientechnologies.orient.object.enhancement.OObjectEntitySerializer</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05L1066">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05R1142">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method private deleteAllRidBags(document ODocument) : void in class com.orientechnologies.orient.core.db.record.ridbag.sbtree.ORidBagDeleteHook</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-262a4c9a58357fad3074ec34c21a5678L51">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-262a4c9a58357fad3074ec34c21a5678R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method public toStream(iPojo Object, iRecord ODocument, iEntityManager OEntityManager, schemaClass OClass, iObj2RecHandler OUserObject2RecordHandler, db ODatabaseObject, iSaveOnlyDirty boolean) : ODocument in class com.orientechnologies.orient.object.serialization.OObjectSerializerHelper</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795L383">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795R425">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	v : ORecordVersion to v : int in method public commit(iTx OTransaction, callback Runnable) : void in class com.orientechnologies.orient.server.distributed.ODistributedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411L961">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411R1037">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1579,6 +1530,55 @@
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-9fe93e07fbcc7c9857c471e65c6a4d2aR113">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method public onRequest(iRequestCode byte, obj Object) : void in class com.orientechnologies.orient.client.remote.OStorageRemoteAsynchEventListener</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b04ea66fbb57899daf84141525f32552L51">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b04ea66fbb57899daf84141525f32552R70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	finalVersion : ORecordVersion to finalVersion : int in method private addEntry(recordVersion int, entryContent byte[], atomicOperation OAtomicOperation) : AddEntryResult in class com.orientechnologies.orient.core.storage.impl.local.paginated.OPaginatedCluster</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4L1495">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-a9828887f759b558c860e74856f46ca4R1499">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	newVersion : ORecordVersion to newVersion : int in method protected updateRecord() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-2d0549cc3c4950165888be0e16104d5fL1639">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-2d0549cc3c4950165888be0e16104d5fR1662">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method protected toStream(iPojo T, iProxiedPojo Proxy, db ODatabaseObject) : T in class com.orientechnologies.orient.object.enhancement.OObjectEntitySerializer</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05L1066">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-67964d8b11392b9800e65916f11c6a05R1142">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method private deleteAllRidBags(document ODocument) : void in class com.orientechnologies.orient.core.db.record.ridbag.sbtree.ORidBagDeleteHook</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-262a4c9a58357fad3074ec34c21a5678L51">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-262a4c9a58357fad3074ec34c21a5678R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	version : ORecordVersion to version : int in method public toStream(iPojo Object, iRecord ODocument, iEntityManager OEntityManager, schemaClass OClass, iObj2RecHandler OUserObject2RecordHandler, db ODatabaseObject, iSaveOnlyDirty boolean) : ODocument in class com.orientechnologies.orient.object.serialization.OObjectSerializerHelper</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795L383">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-b80c235a8f59600d77c91cd8f2558795R425">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	v : ORecordVersion to v : int in method public commit(iTx OTransaction, callback Runnable) : void in class com.orientechnologies.orient.server.distributed.ODistributedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411L961">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-fc2b9d206fd00e98daf4bcfb8d11a411R1037">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1589,6 +1589,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	version : ORecordVersion to version : int in class com.orientechnologies.orient.server.distributed.task.OResurrectRecordTask</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbL46">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	databaseVersion : ORecordVersion to databaseVersion : int in class com.orientechnologies.orient.core.exception.OConcurrentModificationException</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147L45">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147R42">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1679,20 +1693,6 @@
                                 <td><i>Change Attribute Type	recordVersion : ORecordVersion to recordVersion : int in class com.orientechnologies.orient.server.distributed.task.OReadRecordIfNotLatestTask</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ca967966f3dbdd5b910b84a3fa26be5eL40">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-ca967966f3dbdd5b910b84a3fa26be5eR38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	version : ORecordVersion to version : int in class com.orientechnologies.orient.server.distributed.task.OResurrectRecordTask</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbL46">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-cfc9da0b167259633a080186455dd8cbR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	databaseVersion : ORecordVersion to databaseVersion : int in class com.orientechnologies.orient.core.exception.OConcurrentModificationException</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147L45">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/2fecb73699ce7d3d81cf378cf5dcfbb5cf6261b0?diff=split#diff-bc9a48857e95f91a3f2354962fa40147R42">To</a></td>
                             </tr>
                             
                             </tbody>

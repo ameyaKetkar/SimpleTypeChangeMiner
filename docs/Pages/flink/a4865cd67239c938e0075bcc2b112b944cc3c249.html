@@ -302,6 +302,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	heartbeatConsumerFunction : BiFunction&lt;JobMasterGateway,ResourceID,Consumer&lt;ResourceID&gt;&gt; to heartbeatConsumerFunction : BiFunction&lt;JobMasterGateway,ResourceID,BiConsumer&lt;ResourceID,AllocatedSlotReport&gt;&gt; in method private runJobFailureWhenTaskExecutorTerminatesTest(heartbeatServices HeartbeatServices, jobReachedRunningState BiConsumer&lt;LocalTaskManagerLocation,JobMasterGateway&gt;, heartbeatConsumerFunction BiFunction&lt;JobMasterGateway,ResourceID,BiConsumer&lt;ResourceID,AllocatedSlotReport&gt;&gt;) : void in class org.apache.flink.runtime.jobmaster.JobMasterTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-5b3f198e3d01f29ca924bbf84792d629L1599">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-5b3f198e3d01f29ca924bbf84792d629R1601">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	heartbeatJobManagerConsumer : Consumer&lt;ResourceID&gt; to heartbeatJobManagerConsumer : BiConsumer&lt;ResourceID,AllocatedSlotReport&gt; in method public setHeartbeatJobManagerConsumer(heartbeatJobManagerConsumer BiConsumer&lt;ResourceID,AllocatedSlotReport&gt;) : TestingTaskExecutorGatewayBuilder in class org.apache.flink.runtime.taskexecutor.TestingTaskExecutorGatewayBuilder</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-bb4fc1c84bef1d7210f5acd92144f800L75">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-bb4fc1c84bef1d7210f5acd92144f800R76">To</a></td>
@@ -312,13 +319,6 @@
                                 <td><i>Change Parameter Type	heartbeatJobManagerConsumer : Consumer&lt;ResourceID&gt; to heartbeatJobManagerConsumer : BiConsumer&lt;ResourceID,AllocatedSlotReport&gt; in method package TestingTaskExecutorGateway(address String, hostname String, heartbeatJobManagerConsumer BiConsumer&lt;ResourceID,AllocatedSlotReport&gt;, disconnectJobManagerConsumer BiConsumer&lt;JobID,Throwable&gt;, submitTaskConsumer BiFunction&lt;TaskDeploymentDescriptor,JobMasterId,CompletableFuture&lt;Acknowledge&gt;&gt;, requestSlotFunction Function&lt;Tuple5&lt;SlotID,JobID,AllocationID,String,ResourceManagerId&gt;,CompletableFuture&lt;Acknowledge&gt;&gt;, freeSlotFunction BiFunction&lt;AllocationID,Throwable,CompletableFuture&lt;Acknowledge&gt;&gt;, heartbeatResourceManagerConsumer Consumer&lt;ResourceID&gt;, disconnectResourceManagerConsumer Consumer&lt;Exception&gt;, cancelTaskFunction Function&lt;ExecutionAttemptID,CompletableFuture&lt;Acknowledge&gt;&gt;, canBeReleasedSupplier Supplier&lt;Boolean&gt;) in class org.apache.flink.runtime.taskexecutor.TestingTaskExecutorGateway</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-db5e456df5c019329e1de77ebf6ae340L76">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-db5e456df5c019329e1de77ebf6ae340R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	heartbeatConsumerFunction : BiFunction&lt;JobMasterGateway,ResourceID,Consumer&lt;ResourceID&gt;&gt; to heartbeatConsumerFunction : BiFunction&lt;JobMasterGateway,ResourceID,BiConsumer&lt;ResourceID,AllocatedSlotReport&gt;&gt; in method private runJobFailureWhenTaskExecutorTerminatesTest(heartbeatServices HeartbeatServices, jobReachedRunningState BiConsumer&lt;LocalTaskManagerLocation,JobMasterGateway&gt;, heartbeatConsumerFunction BiFunction&lt;JobMasterGateway,ResourceID,BiConsumer&lt;ResourceID,AllocatedSlotReport&gt;&gt;) : void in class org.apache.flink.runtime.jobmaster.JobMasterTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-5b3f198e3d01f29ca924bbf84792d629L1599">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-5b3f198e3d01f29ca924bbf84792d629R1601">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -352,20 +352,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	jobManagerHeartbeatManager : HeartbeatManager&lt;Void,AccumulatorReport&gt; to jobManagerHeartbeatManager : HeartbeatManager&lt;AllocatedSlotReport,AccumulatorReport&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL147">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR153">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	heartbeatJobManagerConsumer : Consumer&lt;ResourceID&gt; to heartbeatJobManagerConsumer : BiConsumer&lt;ResourceID,AllocatedSlotReport&gt; in class org.apache.flink.runtime.taskexecutor.TestingTaskExecutorGateway</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-db5e456df5c019329e1de77ebf6ae340L58">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-db5e456df5c019329e1de77ebf6ae340R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	NOOP_HEARTBEAT_JOBMANAGER_CONSUMER : Consumer&lt;ResourceID&gt; to NOOP_HEARTBEAT_JOBMANAGER_CONSUMER : BiConsumer&lt;ResourceID,AllocatedSlotReport&gt; in class org.apache.flink.runtime.taskexecutor.TestingTaskExecutorGatewayBuilder</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-bb4fc1c84bef1d7210f5acd92144f800L44">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-bb4fc1c84bef1d7210f5acd92144f800R45">To</a></td>
@@ -383,6 +369,20 @@
                                 <td><i>Change Attribute Type	taskManagerHeartbeatManager : HeartbeatManager&lt;AccumulatorReport,Void&gt; to taskManagerHeartbeatManager : HeartbeatManager&lt;AccumulatorReport,AllocatedSlotReport&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-25b66d647903625abd46ed702f50bec5L143">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-25b66d647903625abd46ed702f50bec5R143">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	jobManagerHeartbeatManager : HeartbeatManager&lt;Void,AccumulatorReport&gt; to jobManagerHeartbeatManager : HeartbeatManager&lt;AllocatedSlotReport,AccumulatorReport&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL147">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR153">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	heartbeatJobManagerConsumer : Consumer&lt;ResourceID&gt; to heartbeatJobManagerConsumer : BiConsumer&lt;ResourceID,AllocatedSlotReport&gt; in class org.apache.flink.runtime.taskexecutor.TestingTaskExecutorGateway</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-db5e456df5c019329e1de77ebf6ae340L58">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a4865cd67239c938e0075bcc2b112b944cc3c249?diff=split#diff-db5e456df5c019329e1de77ebf6ae340R59">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -296,20 +296,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	first : ListMultimap&lt;String,TablePermission&gt; to first : ListMultimap&lt;String,UserPermission&gt; in method public checkMultimapEqual(first ListMultimap&lt;String,UserPermission&gt;, second ListMultimap&lt;String,UserPermission&gt;) : void in class org.apache.hadoop.hbase.security.access.TestTablePermissions</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7L319">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7R319">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	perm : ListMultimap&lt;String,TablePermission&gt; to perm : ListMultimap&lt;String,UserPermission&gt; in method public toUserTablePermissions(perm ListMultimap&lt;String,UserPermission&gt;) : AccessControlProtos.UsersAndPermissions in class org.apache.hadoop.hbase.security.access.AccessControlUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-81b2446d1aacb69967dbe8e22f859ce4L487">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-81b2446d1aacb69967dbe8e22f859ce4R469">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	perms : ListMultimap&lt;String,TablePermission&gt; to perms : ListMultimap&lt;String,UserPermission&gt; in method public writePermissionsAsBytes(perms ListMultimap&lt;String,UserPermission&gt;, conf Configuration) : byte[] in class org.apache.hadoop.hbase.security.access.AccessControlLists</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edL737">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edR750">To</a></td>
@@ -362,6 +348,20 @@
                                 <td><i>Change Parameter Type	tablePerms : ListMultimap&lt;String,TablePermission&gt; to tablePerms : ListMultimap&lt;String,Permission&gt; in method private updateTableCache(table TableName, tablePerms ListMultimap&lt;String,Permission&gt;) : void in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL233">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR242">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	first : ListMultimap&lt;String,TablePermission&gt; to first : ListMultimap&lt;String,UserPermission&gt; in method public checkMultimapEqual(first ListMultimap&lt;String,UserPermission&gt;, second ListMultimap&lt;String,UserPermission&gt;) : void in class org.apache.hadoop.hbase.security.access.TestTablePermissions</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7L319">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7R319">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	perm : ListMultimap&lt;String,TablePermission&gt; to perm : ListMultimap&lt;String,UserPermission&gt; in method public toUserTablePermissions(perm ListMultimap&lt;String,UserPermission&gt;) : AccessControlProtos.UsersAndPermissions in class org.apache.hadoop.hbase.security.access.AccessControlUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-81b2446d1aacb69967dbe8e22f859ce4L487">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-81b2446d1aacb69967dbe8e22f859ce4R469">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -453,6 +453,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-54" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	permissions : TablePermission to permission : Permission in method private parsePermissions(entryName byte[], result Result, cf byte[], cq byte[], user String, hasFilterUser boolean) : ListMultimap&lt;String,UserPermission&gt; in class org.apache.hadoop.hbase.security.access.AccessControlLists</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edL595">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edR608">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	allPerms : Map&lt;byte[],ListMultimap&lt;String,TablePermission&gt;&gt; to allPerms : Map&lt;byte[],ListMultimap&lt;String,UserPermission&gt;&gt; in method public testBasicWrite() : void in class org.apache.hadoop.hbase.security.access.TestTablePermissions</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7L140">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7R218">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	t : Map.Entry&lt;byte[],ListMultimap&lt;String,TablePermission&gt;&gt; to t : Map.Entry&lt;byte[],ListMultimap&lt;String,UserPermission&gt;&gt; in method private initialize(e RegionCoprocessorEnvironment) : void in class org.apache.hadoop.hbase.security.access.AccessController</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-86d2430350220bb2a0131da811ba77c5L244">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-86d2430350220bb2a0131da811ba77c5R250">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	user3Perms : List&lt;TablePermission&gt; to user3Perms : List&lt;UserPermission&gt; in method public testGlobalPermission() : void in class org.apache.hadoop.hbase.security.access.TestTablePermissions</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7L389">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7R416">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -804,34 +832,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edR379">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	permissions : TablePermission to permission : Permission in method private parsePermissions(entryName byte[], result Result, cf byte[], cq byte[], user String, hasFilterUser boolean) : ListMultimap&lt;String,UserPermission&gt; in class org.apache.hadoop.hbase.security.access.AccessControlLists</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edL595">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edR608">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	allPerms : Map&lt;byte[],ListMultimap&lt;String,TablePermission&gt;&gt; to allPerms : Map&lt;byte[],ListMultimap&lt;String,UserPermission&gt;&gt; in method public testBasicWrite() : void in class org.apache.hadoop.hbase.security.access.TestTablePermissions</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7L140">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7R218">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	t : Map.Entry&lt;byte[],ListMultimap&lt;String,TablePermission&gt;&gt; to t : Map.Entry&lt;byte[],ListMultimap&lt;String,UserPermission&gt;&gt; in method private initialize(e RegionCoprocessorEnvironment) : void in class org.apache.hadoop.hbase.security.access.AccessController</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-86d2430350220bb2a0131da811ba77c5L244">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-86d2430350220bb2a0131da811ba77c5R250">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	user3Perms : List&lt;TablePermission&gt; to user3Perms : List&lt;UserPermission&gt; in method public testGlobalPermission() : void in class org.apache.hadoop.hbase.security.access.TestTablePermissions</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7L389">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-0d6c9dc061fedb35d9c955b0961db5c7R416">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -842,13 +842,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-3" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	perm : AccessControlProtos.NamespacePermission in method public toPermission(proto AccessControlProtos.Permission) : Permission from class org.apache.hadoop.hbase.security.access.AccessControlUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -864,6 +857,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	perm : AccessControlProtos.NamespacePermission in method public toPermission(proto AccessControlProtos.Permission) : Permission from class org.apache.hadoop.hbase.security.access.AccessControlUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -874,6 +874,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public equalsExceptActions(obj Object) : boolean extracted from public equals(obj Object) : boolean in class org.apache.hadoop.hbase.security.access.TablePermission</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private failCheckFamily(family byte[]) : boolean extracted from public implies(table TableName, family byte[], qualifier byte[], action Action) : boolean in class org.apache.hadoop.hbase.security.access.TablePermission</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -917,20 +931,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public equalsExceptActions(obj Object) : boolean extracted from public equals(obj Object) : boolean in class org.apache.hadoop.hbase.security.access.TablePermission</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private failCheckFamily(family byte[]) : boolean extracted from public implies(table TableName, family byte[], qualifier byte[], action Action) : boolean in class org.apache.hadoop.hbase.security.access.TablePermission</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -944,14 +944,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	namespace : String in method public toTablePermission(proto AccessControlProtos.Permission) : TablePermission from class org.apache.hadoop.hbase.security.access.AccessControlUtil</i></td>
+                                <td><i>Inline Variable	groups : String[] in method public authorize(user User, action Permission.Action) : boolean from class org.apache.hadoop.hbase.security.access.TableAuthManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	groups : String[] in method public authorize(user User, action Permission.Action) : boolean from class org.apache.hadoop.hbase.security.access.TableAuthManager</i></td>
+                                <td><i>Inline Variable	namespace : String in method public toTablePermission(proto AccessControlProtos.Permission) : TablePermission from class org.apache.hadoop.hbase.security.access.AccessControlUtil</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -1005,6 +1005,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	str : StringBuilder to raw : StringBuilder in method protected rawExpression() : String in class org.apache.hadoop.hbase.security.access.TablePermission</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-c151b72108bb7d42d29cdc4e5ac03ae4L365">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-c151b72108bb7d42d29cdc4e5ac03ae4R276">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	permissions : TablePermission to permission : Permission in method package loadAll(aclRegion Region) : Map&lt;byte[],ListMultimap&lt;String,UserPermission&gt;&gt; in class org.apache.hadoop.hbase.security.access.AccessControlLists</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edL439">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edR450">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	newTablePerms : PermissionCache&lt;TablePermission&gt; to cacheToUpdate : PermissionCache&lt;TablePermission&gt; in method private updateTableCache(table TableName, tablePerms ListMultimap&lt;String,Permission&gt;) : void in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL243">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR243">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	str : StringBuilder to raw : StringBuilder in method protected rawExpression() : String in class org.apache.hadoop.hbase.security.access.Permission</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-005c35bfaee23552ee8b33b14eb21d53L159">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-005c35bfaee23552ee8b33b14eb21d53R190">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1081,34 +1109,6 @@
                                 <td><i>Rename Variable	a : Action to action : Action in method public readFields(in DataInput) : void in class org.apache.hadoop.hbase.security.access.Permission</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-005c35bfaee23552ee8b33b14eb21d53L190">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-005c35bfaee23552ee8b33b14eb21d53R218">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	str : StringBuilder to raw : StringBuilder in method protected rawExpression() : String in class org.apache.hadoop.hbase.security.access.TablePermission</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-c151b72108bb7d42d29cdc4e5ac03ae4L365">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-c151b72108bb7d42d29cdc4e5ac03ae4R276">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	permissions : TablePermission to permission : Permission in method package loadAll(aclRegion Region) : Map&lt;byte[],ListMultimap&lt;String,UserPermission&gt;&gt; in class org.apache.hadoop.hbase.security.access.AccessControlLists</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edL439">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-fc4f00c92f05000f9e67dcb99dd268edR450">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	newTablePerms : PermissionCache&lt;TablePermission&gt; to cacheToUpdate : PermissionCache&lt;TablePermission&gt; in method private updateTableCache(table TableName, tablePerms ListMultimap&lt;String,Permission&gt;) : void in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL243">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR243">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	str : StringBuilder to raw : StringBuilder in method protected rawExpression() : String in class org.apache.hadoop.hbase.security.access.Permission</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-005c35bfaee23552ee8b33b14eb21d53L159">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-005c35bfaee23552ee8b33b14eb21d53R190">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1297,48 +1297,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	user : byte[] to user : String in class org.apache.hadoop.hbase.security.access.UserPermission</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-7485fb806f12ac57e01125cdca7489b9L39">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-7485fb806f12ac57e01125cdca7489b9R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	nsCache : ConcurrentSkipListMap&lt;String,PermissionCache&lt;TablePermission&gt;&gt; to namespaceCache : ConcurrentHashMap&lt;String,PermissionCache&lt;NamespacePermission&gt;&gt; in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL109">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR110">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	authManager : TableAuthManager to authManager : AuthManager in class org.apache.hadoop.hbase.security.access.ZKPermissionWatcher</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-ee03c68c19ff1a222209ac48afdef2c0L59">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-ee03c68c19ff1a222209ac48afdef2c0R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	AUTH_B : TableAuthManager to AUTH_B : AuthManager in class org.apache.hadoop.hbase.security.access.TestZKPermissionWatcher</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346L57">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346R60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	AUTH_A : TableAuthManager to AUTH_A : AuthManager in class org.apache.hadoop.hbase.security.access.TestZKPermissionWatcher</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346L56">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	refCount : Map&lt;TableAuthManager,Integer&gt; to refCount : Map&lt;AuthManager,Integer&gt; in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL740">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR554">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	tableCache : ConcurrentSkipListMap&lt;TableName,PermissionCache&lt;TablePermission&gt;&gt; to tableCache : ConcurrentHashMap&lt;TableName,PermissionCache&lt;TablePermission&gt;&gt; in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL106">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR113">To</a></td>
@@ -1377,6 +1335,48 @@
                                 <td><i>Change Attribute Type	authManager : TableAuthManager to authManager : AuthManager in class org.apache.hadoop.hbase.security.access.AccessChecker</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-eea0482b3d638f320f6a43beb4da5fa1L53">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-eea0482b3d638f320f6a43beb4da5fa1R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	user : byte[] to user : String in class org.apache.hadoop.hbase.security.access.UserPermission</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-7485fb806f12ac57e01125cdca7489b9L39">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-7485fb806f12ac57e01125cdca7489b9R33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	nsCache : ConcurrentSkipListMap&lt;String,PermissionCache&lt;TablePermission&gt;&gt; to namespaceCache : ConcurrentHashMap&lt;String,PermissionCache&lt;NamespacePermission&gt;&gt; in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL109">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR110">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	authManager : TableAuthManager to authManager : AuthManager in class org.apache.hadoop.hbase.security.access.ZKPermissionWatcher</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-ee03c68c19ff1a222209ac48afdef2c0L59">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-ee03c68c19ff1a222209ac48afdef2c0R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	AUTH_B : TableAuthManager to AUTH_B : AuthManager in class org.apache.hadoop.hbase.security.access.TestZKPermissionWatcher</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346L57">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346R60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	AUTH_A : TableAuthManager to AUTH_A : AuthManager in class org.apache.hadoop.hbase.security.access.TestZKPermissionWatcher</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346L56">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-8da22ddcf3ab38dfcffb56c08578d346R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	refCount : Map&lt;TableAuthManager,Integer&gt; to refCount : Map&lt;AuthManager,Integer&gt; in class org.apache.hadoop.hbase.security.access.AuthManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-42e82b8f02ef06cd4494459d32013b8bL740">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/130057f13774f6b213cdb06952c805a29d59396e?diff=split#diff-a88dacae71e350cfed57ad02580cd66dR554">To</a></td>
                             </tr>
                             
                             </tbody>

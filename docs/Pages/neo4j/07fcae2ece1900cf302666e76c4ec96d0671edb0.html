@@ -320,14 +320,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation &amp; inlined to private onUpdate(update IndexEntryUpdate) : void</i></td>
+                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.unsafe.batchinsert.internal.BatchInserterImpl.IndexPopulatorWithSchema &amp; inlined to public add(update IndexEntryUpdate&lt;?&gt;) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.unsafe.batchinsert.internal.BatchInserterImpl.IndexPopulatorWithSchema &amp; inlined to public add(update IndexEntryUpdate&lt;?&gt;) : void</i></td>
+                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation &amp; inlined to private onUpdate(update IndexEntryUpdate) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -345,16 +345,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	update : IndexEntryUpdate to update : IndexEntryUpdate&lt;?&gt; in method public batch(update IndexEntryUpdate&lt;?&gt;) : boolean in class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-faaa337b66b27c8ff63b764e7197d06cL500">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-faaa337b66b27c8ff63b764e7197d06cR525">To</a></td>
+                                <td><i>Change Parameter Type	batch : List&lt;IndexEntryUpdate&lt;?&gt;&gt; to batch : Collection&lt;IndexEntryUpdate&lt;?&gt;&gt; in method private flush(population IndexPopulation, batch Collection&lt;IndexEntryUpdate&lt;?&gt;&gt;) : void in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-cebc8e7e821cf167a622fcd7574a40ffL223">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-cebc8e7e821cf167a622fcd7574a40ffR184">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	batch : List&lt;IndexEntryUpdate&lt;?&gt;&gt; to batch : Collection&lt;IndexEntryUpdate&lt;?&gt;&gt; in method private flush(population IndexPopulation, batch Collection&lt;IndexEntryUpdate&lt;?&gt;&gt;) : void in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-cebc8e7e821cf167a622fcd7574a40ffL223">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-cebc8e7e821cf167a622fcd7574a40ffR184">To</a></td>
+                                <td><i>Change Parameter Type	update : IndexEntryUpdate to update : IndexEntryUpdate&lt;?&gt; in method public batch(update IndexEntryUpdate&lt;?&gt;) : boolean in class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-faaa337b66b27c8ff63b764e7197d06cL500">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/07fcae2ece1900cf302666e76c4ec96d0671edb0?diff=split#diff-faaa337b66b27c8ff63b764e7197d06cR525">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -485,6 +485,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	package itemsMatches(expected Iterable&lt;T&gt;, actual Iterable&lt;T&gt;) : boolean extracted from protected matchesSafely(objects Iterable&lt;T&gt;) : boolean in class org.neo4j.test.mockito.matcher.IterableMatcher</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private immediateExecutor() : ExecutorService extracted from private sameThreadExecutor() : ExecutorService in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulatorTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -507,13 +514,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private immediateExecutor() : ExecutorService extracted from public executorForcefullyShutdownIfStoreScanFails() : void in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulatorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	package itemsMatches(expected Iterable&lt;T&gt;, actual Iterable&lt;T&gt;) : boolean extracted from protected matchesSafely(objects Iterable&lt;T&gt;) : boolean in class org.neo4j.test.mockito.matcher.IterableMatcher</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

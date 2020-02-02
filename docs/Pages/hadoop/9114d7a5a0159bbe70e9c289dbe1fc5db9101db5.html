@@ -232,13 +232,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	minorNumbersOfUsableGpus : List&lt;Integer&gt; to usableGpus : List&lt;GpuDevice&gt; in method public bootstrap(configuration Configuration) : List&lt;PrivilegedOperation&gt; in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceHandlerImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-7a56a37a01456fc95d79095457e2b529L67">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-7a56a37a01456fc95d79095457e2b529R67">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	deviceNum : int to gpu : GpuDevice in method public assignGpus(container Container) : GpuAllocation in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceAllocator</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399L185">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R184">To</a></td>
@@ -279,6 +272,13 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R119">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	minorNumbersOfUsableGpus : List&lt;Integer&gt; to usableGpus : List&lt;GpuDevice&gt; in method public bootstrap(configuration Configuration) : List&lt;PrivilegedOperation&gt; in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceHandlerImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-7a56a37a01456fc95d79095457e2b529L67">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-7a56a37a01456fc95d79095457e2b529R67">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -289,13 +289,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;Integer,ContainerId&gt; to Map&lt;GpuDevice,ContainerId&gt; in method public getDeviceAllocationMapping() : Map&lt;GpuDevice,ContainerId&gt; in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceAllocator</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399L238">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R226">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -316,6 +309,13 @@
                                 <td><i>Change Return Type	Set&lt;Integer&gt; to Set&lt;GpuDevice&gt; in method public getDeniedGPUs() : Set&lt;GpuDevice&gt; in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceAllocator.GpuAllocation</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399L86">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Map&lt;Integer,ContainerId&gt; to Map&lt;GpuDevice,ContainerId&gt; in method public getDeviceAllocationMapping() : Map&lt;GpuDevice,ContainerId&gt; in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceAllocator</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399L238">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R226">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -476,20 +476,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	containerId : ContainerId to container : Container in method public abstract storeAssignedResources(container Container, resourceType String, assignedResources List&lt;Serializable&gt;) : void in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMStateStoreService</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666L739">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666R740">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	minorNumber : int to gpuDevice : GpuDevice in method public addGpu(gpuDevice GpuDevice) : void in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceAllocator</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399L95">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	containerId : ContainerId to container : Container in method public storeAssignedResources(container Container, resourceType String, assignedResources List&lt;Serializable&gt;) : void in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMMemoryStateStoreService</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-47aef434238623587f01883c2283dd94L506">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-47aef434238623587f01883c2283dd94R507">To</a></td>
@@ -500,6 +486,20 @@
                                 <td><i>Rename Parameter	containerId : ContainerId to container : Container in method public storeAssignedResources(container Container, resourceType String, assignedResources List&lt;Serializable&gt;) : void in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-dade6f9112582c3d5a522fd11f5752f6L1176">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-dade6f9112582c3d5a522fd11f5752f6R1175">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	containerId : ContainerId to container : Container in method public abstract storeAssignedResources(container Container, resourceType String, assignedResources List&lt;Serializable&gt;) : void in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMStateStoreService</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666L739">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666R740">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	minorNumber : int to gpuDevice : GpuDevice in method public addGpu(gpuDevice GpuDevice) : void in class org.apache.hadoop.yarn.server.nodemanager.containermanager.linux.resources.gpu.GpuResourceAllocator</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399L95">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9114d7a5a0159bbe70e9c289dbe1fc5db9101db5?diff=split#diff-245593184f02b18ba82d18266d611399R94">To</a></td>
                             </tr>
                             
                             </tbody>

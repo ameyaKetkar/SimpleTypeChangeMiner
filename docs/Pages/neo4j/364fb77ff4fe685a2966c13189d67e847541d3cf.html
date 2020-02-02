@@ -322,6 +322,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	lockTokenManager : LockTokenManager to pendingLockTokensRequests : PendingLockTokensRequests&lt;MEMBER&gt; in method public LeaderOnlyLockManager(myself MEMBER, replicator Replicator, leaderLocator LeaderLocator&lt;MEMBER&gt;, localLocks Locks, pendingLockTokensRequests PendingLockTokensRequests&lt;MEMBER&gt;, leaderLockTokenTimeout long) in class org.neo4j.coreedge.server.core.locks.LeaderOnlyLockManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acL62">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acR68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	idAllocationStateMachine : ReplicatedIdAllocationStateMachine to pendingIdAllocationRequests : PendingIdAllocationRequests in method public ReplicatedIdRangeAcquirer(replicator Replicator, pendingIdAllocationRequests PendingIdAllocationRequests, allocationChunk int, retryTimeoutMillis long, me CoreMember, logProvider LogProvider) in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdRangeAcquirer</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-d35ce07feb1494242869e590aa85ce59L43">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-d35ce07feb1494242869e590aa85ce59R54">To</a></td>
@@ -381,13 +388,6 @@
                                 <td><i>Change Parameter Type	timeoutMillis : long to timeoutMillis : Long in method public ReplicatedLabelTokenHolder(registry TokenRegistry&lt;Token&gt;, replicator Replicator, idGeneratorFactory IdGeneratorFactory, dependencies Dependencies, timeoutMillis Long) in class org.neo4j.coreedge.raft.replication.token.ReplicatedLabelTokenHolder</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-4fb3e05c7c38117a4eb2e006f26be5fbL34">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-4fb3e05c7c38117a4eb2e006f26be5fbR35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	lockTokenManager : LockTokenManager to pendingLockTokensRequests : PendingLockTokensRequests&lt;MEMBER&gt; in method public LeaderOnlyLockManager(myself MEMBER, replicator Replicator, leaderLocator LeaderLocator&lt;MEMBER&gt;, localLocks Locks, pendingLockTokensRequests PendingLockTokensRequests&lt;MEMBER&gt;, leaderLockTokenTimeout long) in class org.neo4j.coreedge.server.core.locks.LeaderOnlyLockManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acL62">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acR68">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -463,6 +463,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Attribute	private log : Log from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenHolder to private log : Log from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenStateMachine</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-06957f69e6276b82a84d33e9825e5b69L80">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-990da9c926e333dc73d1465be7acbd48R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Attribute	private me : CoreMember from class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachine to package me : CoreMember from class org.neo4j.coreedge.raft.replication.id.PendingIdAllocationRequestsTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-c9e95f4f3adf636d1280373bcf07ae83L53">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-848532ac0eb07c7b67e43f1c5438dda3R38">To</a></td>
@@ -510,13 +517,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-963b088a75a93064bb1c4bb0bead246fR46">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private log : Log from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenHolder to private log : Log from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenStateMachine</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-06957f69e6276b82a84d33e9825e5b69L80">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-990da9c926e333dc73d1465be7acbd48R56">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -530,13 +530,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.neo4j.coreedge.raft.replication.token.TokenRegistry from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenHolder</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Class	org.neo4j.coreedge.raft.replication.token.ReplicatedTokenStateMachine from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenHolder</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -545,6 +538,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	org.neo4j.coreedge.raft.replication.token.ReplicatedTokenStateMachineTest from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenHolderTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	org.neo4j.coreedge.raft.replication.token.TokenRegistry from class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenHolder</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -637,6 +637,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private consecutiveAllocationFromSeparateIdGeneratosForSameIdTypeShouldNotDuplicateForGivenInitialHighId(initialHighId long) : void renamed to private consecutiveAllocationFromSeparateIdGeneratorsForSameIdTypeShouldNotDuplicateForGivenInitialHighId(initialHighId long) : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdRangeAcquirerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-963b088a75a93064bb1c4bb0bead246fL62">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-963b088a75a93064bb1c4bb0bead246fR66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public TriggeredReplicator(stateMachine StateMachine) renamed to public setStateMachines(stateMachine StateMachines) : void in class org.neo4j.coreedge.raft.replication.tx.CommitProcessStateMachineCollaborationTest.TriggeredReplicator</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-134afa03ae8ce8425563189673e7966cL145">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-134afa03ae8ce8425563189673e7966cR178">To</a></td>
@@ -649,13 +656,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-9ca63913ed667971abd3d5b887fc2e52R87">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private consecutiveAllocationFromSeparateIdGeneratosForSameIdTypeShouldNotDuplicateForGivenInitialHighId(initialHighId long) : void renamed to private consecutiveAllocationFromSeparateIdGeneratorsForSameIdTypeShouldNotDuplicateForGivenInitialHighId(initialHighId long) : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdRangeAcquirerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-963b088a75a93064bb1c4bb0bead246fL62">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-963b088a75a93064bb1c4bb0bead246fR66">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -666,6 +666,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	idAllocationStateMachine : ReplicatedIdAllocationStateMachine to stateMachine : ReplicatedIdAllocationStateMachine in method public severalEqualRequestsShouldOnlyUpdateOnce() : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachineTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-880aef3efc943a7088ca86621e2fc358L117">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-880aef3efc943a7088ca86621e2fc358R94">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -693,13 +700,6 @@
                                 <td><i>Rename Variable	idAllocationStateMachine : ReplicatedIdAllocationStateMachine to stateMachine : ReplicatedIdAllocationStateMachine in method public severalDistinctRequestsShouldIncrementallyUpdate() : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachineTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-880aef3efc943a7088ca86621e2fc358L100">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-880aef3efc943a7088ca86621e2fc358R76">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	idAllocationStateMachine : ReplicatedIdAllocationStateMachine to stateMachine : ReplicatedIdAllocationStateMachine in method public severalEqualRequestsShouldOnlyUpdateOnce() : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachineTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-880aef3efc943a7088ca86621e2fc358L117">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-880aef3efc943a7088ca86621e2fc358R94">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -776,20 +776,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	lockTokenManager : LockTokenManager to pendingLockTokensRequests : PendingLockTokensRequests&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.LeaderOnlyLockManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acL59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acR63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	transactionFutures : CommittingTransactions to committingTransactions : CommittingTransactions in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L52">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	lockTokenManager : LockTokenManager to lockTokenStateMachine : ReplicatedLockTokenStateMachine&lt;MEMBER&gt; in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L50">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R51">To</a></td>
@@ -807,6 +793,20 @@
                                 <td><i>Rename Attribute	idAllocationStateMachine : ReplicatedIdAllocationStateMachine to pendingIdAllocationRequests : PendingIdAllocationRequests in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdRangeAcquirer</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-d35ce07feb1494242869e590aa85ce59L35">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-d35ce07feb1494242869e590aa85ce59R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	lockTokenManager : LockTokenManager to pendingLockTokensRequests : PendingLockTokensRequests&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.LeaderOnlyLockManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acL59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	transactionFutures : CommittingTransactions to committingTransactions : CommittingTransactions in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L52">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R54">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -840,20 +840,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	lockTokenManager : LockTokenManager to lockTokenStateMachine : ReplicatedLockTokenStateMachine&lt;MEMBER&gt; in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L50">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	machines : List&lt;StateMachine&gt; to machines : StateMachine[] in class org.neo4j.coreedge.raft.state.StateMachines</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-78be1e71c8653ee7f3ca3b948064f56fL30">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-78be1e71c8653ee7f3ca3b948064f56fR28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	lockTokenManager : LockTokenManager to pendingLockTokensRequests : PendingLockTokensRequests&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.LeaderOnlyLockManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acL59">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-625328f686c1993fd6d4c1bc40b013acR63">To</a></td>
@@ -878,6 +864,20 @@
                                 <td><i>Change Attribute Type	globalSession : GlobalSession to globalSession : GlobalSession&lt;CoreMember&gt; in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentByteBufferMarshalTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-9e081e5eb2eed3a3b7d83e224e2bb9cbL59">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-9e081e5eb2eed3a3b7d83e224e2bb9cbR59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	lockTokenManager : LockTokenManager to lockTokenStateMachine : ReplicatedLockTokenStateMachine&lt;MEMBER&gt; in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L50">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	machines : List&lt;StateMachine&gt; to machines : StateMachine[] in class org.neo4j.coreedge.raft.state.StateMachines</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-78be1e71c8653ee7f3ca3b948064f56fL30">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/364fb77ff4fe685a2966c13189d67e847541d3cf?diff=split#diff-78be1e71c8653ee7f3ca3b948064f56fR28">To</a></td>
                             </tr>
                             
                             </tbody>

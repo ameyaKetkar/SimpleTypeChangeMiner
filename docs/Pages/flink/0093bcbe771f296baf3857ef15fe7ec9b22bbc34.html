@@ -252,6 +252,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	partitionRequestHandler : PartitionRequestClientHandler to clientHandler : NetworkClientHandler in method package PartitionRequestClient(tcpChannel Channel, clientHandler NetworkClientHandler, connectionId ConnectionID, clientFactory PartitionRequestClientFactory) in class org.apache.flink.runtime.io.network.netty.PartitionRequestClient</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eL63">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eR66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	reader : SequenceNumberingViewReader to reader : NetworkSequenceViewReader in method public notifyReaderCreated(reader NetworkSequenceViewReader) : void in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0L132">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0R133">To</a></td>
@@ -278,13 +285,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0R105">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	partitionRequestHandler : PartitionRequestClientHandler to clientHandler : NetworkClientHandler in method package PartitionRequestClient(tcpChannel Channel, clientHandler NetworkClientHandler, connectionId ConnectionID, clientFactory PartitionRequestClientFactory) in class org.apache.flink.runtime.io.network.netty.PartitionRequestClient</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eL63">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eR66">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -295,20 +295,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private isAvailable(bufferAndBacklog BufferAndBacklog, remaining long) : boolean from class org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader to private isAvailable(bufferAndBacklog BufferAndBacklog, remaining long) : boolean from class org.apache.flink.runtime.io.network.netty.CreditBasedSequenceNumberingViewReader</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-3a2c2296a0ce15277d6c60c45fc0d5c5L132">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-58a3ec20ce410acb352ac36afe31e618R125">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public channelWritabilityChanged(ctx ChannelHandlerContext) : void from class org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler to public channelWritabilityChanged(ctx ChannelHandlerContext) : void from class org.apache.flink.runtime.io.network.netty.CreditBasedPartitionRequestClientHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dL207">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-0daa3f7e377e1e06ddd442bb88cbc603R207">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -380,6 +366,20 @@
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-0daa3f7e377e1e06ddd442bb88cbc603R113">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private isAvailable(bufferAndBacklog BufferAndBacklog, remaining long) : boolean from class org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader to private isAvailable(bufferAndBacklog BufferAndBacklog, remaining long) : boolean from class org.apache.flink.runtime.io.network.netty.CreditBasedSequenceNumberingViewReader</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-3a2c2296a0ce15277d6c60c45fc0d5c5L132">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-58a3ec20ce410acb352ac36afe31e618R125">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public channelWritabilityChanged(ctx ChannelHandlerContext) : void from class org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler to public channelWritabilityChanged(ctx ChannelHandlerContext) : void from class org.apache.flink.runtime.io.network.netty.CreditBasedPartitionRequestClientHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dL207">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-0daa3f7e377e1e06ddd442bb88cbc603R207">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -390,13 +390,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private isRegisteredAsAvailable : boolean from class org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader to private isRegisteredAsAvailable : boolean from class org.apache.flink.runtime.io.network.netty.CreditBasedSequenceNumberingViewReader</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-3a2c2296a0ce15277d6c60c45fc0d5c5L60">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-58a3ec20ce410acb352ac36afe31e618R60">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -417,6 +410,13 @@
                                 <td><i>Move Attribute	private numCreditsAvailable : int from class org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader to private numCreditsAvailable : int from class org.apache.flink.runtime.io.network.netty.CreditBasedSequenceNumberingViewReader</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-3a2c2296a0ce15277d6c60c45fc0d5c5L63">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-58a3ec20ce410acb352ac36afe31e618R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private isRegisteredAsAvailable : boolean from class org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader to private isRegisteredAsAvailable : boolean from class org.apache.flink.runtime.io.network.netty.CreditBasedSequenceNumberingViewReader</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-3a2c2296a0ce15277d6c60c45fc0d5c5L60">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-58a3ec20ce410acb352ac36afe31e618R60">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -483,6 +483,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	handler : PartitionRequestClientHandler to handler : NetworkClientHandler in method public testExceptionOnWrite() : void in class org.apache.flink.runtime.io.network.netty.ClientTransportErrorHandlingTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-6e44292099841ce0397b6d83903ba972L72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-6e44292099841ce0397b6d83903ba972R97">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -575,13 +582,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-5cfbe16c2ca9dd3f76926736dd0b55a7R66">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	handler : PartitionRequestClientHandler to handler : NetworkClientHandler in method public testExceptionOnWrite() : void in class org.apache.flink.runtime.io.network.netty.ClientTransportErrorHandlingTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-6e44292099841ce0397b6d83903ba972L72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-6e44292099841ce0397b6d83903ba972R97">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -613,20 +613,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	ArrayDeque&lt;SequenceNumberingViewReader&gt; to ArrayDeque&lt;NetworkSequenceViewReader&gt; in method package getAvailableReaders() : ArrayDeque&lt;NetworkSequenceViewReader&gt; in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0L120">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0R121">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to boolean in method private decodeBufferOrEvent(inputChannel RemoteInputChannel, bufferOrEvent NettyMessage.BufferResponse, isStagedBuffer boolean) : boolean in class org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dL297">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dR285">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	void to boolean in method private decodeMsg(msg Object, isStagedBuffer boolean) : boolean in class org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dL249">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dR234">To</a></td>
@@ -637,6 +623,20 @@
                                 <td><i>Change Return Type	PartitionRequestClientHandler to NetworkClientHandler in method private getClientHandler(ch Channel) : NetworkClientHandler in class org.apache.flink.runtime.io.network.netty.ClientTransportErrorHandlingTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-6e44292099841ce0397b6d83903ba972L390">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-6e44292099841ce0397b6d83903ba972R394">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ArrayDeque&lt;SequenceNumberingViewReader&gt; to ArrayDeque&lt;NetworkSequenceViewReader&gt; in method package getAvailableReaders() : ArrayDeque&lt;NetworkSequenceViewReader&gt; in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0L120">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0R121">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to boolean in method private decodeBufferOrEvent(inputChannel RemoteInputChannel, bufferOrEvent NettyMessage.BufferResponse, isStagedBuffer boolean) : boolean in class org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dL297">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-40070370a5fa0adeaf03669706a1974dR285">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -670,14 +670,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Interface	org.apache.flink.runtime.io.network.NetworkSequenceViewReader from classes [org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader]</i></td>
+                                <td><i>Extract Interface	org.apache.flink.runtime.io.network.NetworkClientHandler from classes [org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Interface	org.apache.flink.runtime.io.network.NetworkClientHandler from classes [org.apache.flink.runtime.io.network.netty.PartitionRequestClientHandler]</i></td>
+                                <td><i>Extract Interface	org.apache.flink.runtime.io.network.NetworkSequenceViewReader from classes [org.apache.flink.runtime.io.network.netty.SequenceNumberingViewReader]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -695,6 +695,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	partitionRequestHandler : PartitionRequestClientHandler to clientHandler : NetworkClientHandler in class org.apache.flink.runtime.io.network.netty.PartitionRequestClient</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eL54">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eR55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	availableReaders : ArrayDeque&lt;SequenceNumberingViewReader&gt; to availableReaders : ArrayDeque&lt;NetworkSequenceViewReader&gt; in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0L59">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0R60">To</a></td>
@@ -705,13 +712,6 @@
                                 <td><i>Change Attribute Type	allReaders : ConcurrentMap&lt;InputChannelID,SequenceNumberingViewReader&gt; to allReaders : ConcurrentMap&lt;InputChannelID,NetworkSequenceViewReader&gt; in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0L62">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-7dd9be8fbe98154a4afda209e12c52d0R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	partitionRequestHandler : PartitionRequestClientHandler to clientHandler : NetworkClientHandler in class org.apache.flink.runtime.io.network.netty.PartitionRequestClient</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eL54">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0093bcbe771f296baf3857ef15fe7ec9b22bbc34?diff=split#diff-e13167eab89649a0d5acfb138477950eR55">To</a></td>
                             </tr>
                             
                             </tbody>

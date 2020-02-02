@@ -246,16 +246,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	protected createNetworkConnection(iServerURL String, clientConfiguration OContextConfiguration, iAdditionalArg Map&lt;String,Object&gt;, asynchEventListener ORemoteServerEventListener) : OChannelBinaryAsynchClient from class com.orientechnologies.orient.client.remote.ORemoteConnectionManager to protected createNetworkConnection(iServerURL String, clientConfiguration OContextConfiguration, iAdditionalArg Map&lt;String,Object&gt;) : OChannelBinaryAsynchClient from class com.orientechnologies.orient.client.remote.ORemoteConnectionPool</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL217">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-4ba462c70e79cf0babc26a67ae7b050aR27">To</a></td>
+                                <td><i>Move Method	public onChannelClose(channel OChannel) : void from class com.orientechnologies.orient.client.remote.ORemoteConnectionManager to public onChannelClose(channel OChannel) : void from class com.orientechnologies.orient.client.remote.ORemoteConnectionPool</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL148">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-4ba462c70e79cf0babc26a67ae7b050aR82">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public onChannelClose(channel OChannel) : void from class com.orientechnologies.orient.client.remote.ORemoteConnectionManager to public onChannelClose(channel OChannel) : void from class com.orientechnologies.orient.client.remote.ORemoteConnectionPool</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL148">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-4ba462c70e79cf0babc26a67ae7b050aR82">To</a></td>
+                                <td><i>Move Method	protected createNetworkConnection(iServerURL String, clientConfiguration OContextConfiguration, iAdditionalArg Map&lt;String,Object&gt;, asynchEventListener ORemoteServerEventListener) : OChannelBinaryAsynchClient from class com.orientechnologies.orient.client.remote.ORemoteConnectionManager to protected createNetworkConnection(iServerURL String, clientConfiguration OContextConfiguration, iAdditionalArg Map&lt;String,Object&gt;) : OChannelBinaryAsynchClient from class com.orientechnologies.orient.client.remote.ORemoteConnectionPool</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL217">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-4ba462c70e79cf0babc26a67ae7b050aR27">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -268,6 +268,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	pool : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to pool : ORemoteConnectionPool in method public getCreatedInstancesInPool(url String) : int in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL188">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR165">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	prev : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to prev : ORemoteConnectionPool in method public acquire(iServerURL String, clientConfiguration OContextConfiguration, iConfiguration Map&lt;String,Object&gt;, iListener ORemoteServerEventListener) : OChannelBinaryAsynchClient in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL66">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	pool : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to pool : ORemoteConnectionPool in method public getAvailableConnections(url String) : int in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL172">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR149">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -316,27 +337,6 @@
                                 <td><i>Change Variable Type	pool : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to pool : ORemoteConnectionPool in method public getReusableConnections(url String) : int in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL180">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR157">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	pool : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to pool : ORemoteConnectionPool in method public getCreatedInstancesInPool(url String) : int in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL188">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR165">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	prev : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to prev : ORemoteConnectionPool in method public acquire(iServerURL String, clientConfiguration OContextConfiguration, iConfiguration Map&lt;String,Object&gt;, iListener ORemoteServerEventListener) : OChannelBinaryAsynchClient in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL66">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	pool : OResourcePool&lt;String,OChannelBinaryAsynchClient&gt; to pool : ORemoteConnectionPool in method public getAvailableConnections(url String) : int in class com.orientechnologies.orient.client.remote.ORemoteConnectionManager</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cL172">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/8a36975b7acf715c2624a6df553ebd6bfb0da5fd?diff=split#diff-17f8b732e27bea01163433dbce92129cR149">To</a></td>
                             </tr>
                             
                             </tbody>

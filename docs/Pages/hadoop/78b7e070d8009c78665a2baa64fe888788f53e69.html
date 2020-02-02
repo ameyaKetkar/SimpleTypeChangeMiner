@@ -292,6 +292,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	knownCollectorsMap : Map&lt;ApplicationId,String&gt; to incomingCollectorsMap : Map&lt;ApplicationId,AppCollectorData&gt; in method private updateTimelineCollectorData(response NodeHeartbeatResponse) : void in class org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.StatusUpdaterRunnable</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-c895b911069a444d49a3038678dfd701L1167">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-c895b911069a444d49a3038678dfd701R1169">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	entry : Map.Entry&lt;ApplicationId,String&gt; to entry : Map.Entry&lt;ApplicationId,AppCollectorData&gt; in method private addAppCollectorsMapToProto() : void in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L147">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	appCollector : AppCollectorsMap to appCollector : AppCollectorData in method public reportNewCollectorInfo(request ReportNewCollectorInfoRequest) : ReportNewCollectorInfoResponse in class org.apache.hadoop.yarn.TestRPC.DummyNMCollectorService</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a4e9d976eb17f19dba44fb4b91a8981aL428">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a4e9d976eb17f19dba44fb4b91a8981aR435">To</a></td>
@@ -500,20 +514,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-3454579f2507bc9706370c7ab0022217R113">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	knownCollectorsMap : Map&lt;ApplicationId,String&gt; to incomingCollectorsMap : Map&lt;ApplicationId,AppCollectorData&gt; in method private updateTimelineCollectorData(response NodeHeartbeatResponse) : void in class org.apache.hadoop.yarn.server.nodemanager.NodeStatusUpdaterImpl.StatusUpdaterRunnable</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-c895b911069a444d49a3038678dfd701L1167">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-c895b911069a444d49a3038678dfd701R1169">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	entry : Map.Entry&lt;ApplicationId,String&gt; to entry : Map.Entry&lt;ApplicationId,AppCollectorData&gt; in method private addAppCollectorsMapToProto() : void in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L147">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R151">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -567,41 +567,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getAppCollectorsMap() : Map&lt;ApplicationId,String&gt; renamed to public getAppCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L570">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R575">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getRegisteredCollectors() : Map&lt;ApplicationId,String&gt; renamed to public getRegisteringCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.nodemanager.Context</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-16d7db0e1a31b5a283957337cbb086dbL67">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-16d7db0e1a31b5a283957337cbb086dbR68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setAppCollectorsMap(appCollectorsMap Map&lt;ApplicationId,String&gt;) : void renamed to public setAppCollectors(appCollectors Map&lt;ApplicationId,AppCollectorData&gt;) : void in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L613">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R620">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public removeCollectorAddr() : void renamed to public removeCollectorData() : void in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659L623">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659R623">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getRegisteredCollectors() : Map&lt;ApplicationId,String&gt; renamed to public getRegisteringCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.nodemanager.amrmproxy.BaseAMRMProxyTest.NullContext</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88L661">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88R662">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -687,6 +652,41 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-57367bad0456c7a3f408b730f9b19661R86">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getAppCollectorsMap() : Map&lt;ApplicationId,String&gt; renamed to public getAppCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L570">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R575">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getRegisteredCollectors() : Map&lt;ApplicationId,String&gt; renamed to public getRegisteringCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.nodemanager.Context</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-16d7db0e1a31b5a283957337cbb086dbL67">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-16d7db0e1a31b5a283957337cbb086dbR68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setAppCollectorsMap(appCollectorsMap Map&lt;ApplicationId,String&gt;) : void renamed to public setAppCollectors(appCollectors Map&lt;ApplicationId,AppCollectorData&gt;) : void in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L613">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R620">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public removeCollectorAddr() : void renamed to public removeCollectorData() : void in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659L623">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659R623">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getRegisteredCollectors() : Map&lt;ApplicationId,String&gt; renamed to public getRegisteringCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.nodemanager.amrmproxy.BaseAMRMProxyTest.NullContext</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88L661">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88R662">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -697,6 +697,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	registeredCollectors : Map&lt;ApplicationId,String&gt; to registeringCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in method private updateCollectorStatus(app ApplicationImpl) : void in class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.AppCompletelyDoneTransition</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-ab77e08f834374e4c897e444b3d27c64L572">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-ab77e08f834374e4c897e444b3d27c64R567">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -733,13 +740,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-c895b911069a444d49a3038678dfd701R1182">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	registeredCollectors : Map&lt;ApplicationId,String&gt; to registeringCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in method private updateCollectorStatus(app ApplicationImpl) : void in class org.apache.hadoop.yarn.server.nodemanager.containermanager.application.ApplicationImpl.AppCompletelyDoneTransition</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-ab77e08f834374e4c897e444b3d27c64L572">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-ab77e08f834374e4c897e444b3d27c64R567">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -750,6 +750,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Map&lt;ApplicationId,String&gt; to Map&lt;ApplicationId,AppCollectorData&gt; in method public getRegisteringCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.nodemanager.amrmproxy.BaseAMRMProxyTest.NullContext</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88L661">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88R662">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Map&lt;ApplicationId,String&gt; to Map&lt;ApplicationId,AppCollectorData&gt; in method public abstract getAppCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.api.protocolrecords.NodeHeartbeatResponse</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-d60a6f6b6bed5d299bb0ea10a124f659L50">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-d60a6f6b6bed5d299bb0ea10a124f659R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	String to AppCollectorData in method public getCollectorData() : AppCollectorData in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.MockRMApp</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-518af981431dafb622ee3c295421077eL308">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-518af981431dafb622ee3c295421077eR309">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -849,27 +870,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-3454579f2507bc9706370c7ab0022217R351">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;ApplicationId,String&gt; to Map&lt;ApplicationId,AppCollectorData&gt; in method public getRegisteringCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.nodemanager.amrmproxy.BaseAMRMProxyTest.NullContext</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88L661">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4a33853a3d3a2087ac058abfd2d84b88R662">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;ApplicationId,String&gt; to Map&lt;ApplicationId,AppCollectorData&gt; in method public abstract getAppCollectors() : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.api.protocolrecords.NodeHeartbeatResponse</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-d60a6f6b6bed5d299bb0ea10a124f659L50">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-d60a6f6b6bed5d299bb0ea10a124f659R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	String to AppCollectorData in method public getCollectorData() : AppCollectorData in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.MockRMApp</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-518af981431dafb622ee3c295421077eL308">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-518af981431dafb622ee3c295421077eR309">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -901,13 +901,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	registeredCollectors : Map&lt;ApplicationId,String&gt; to registeringCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatRequestPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-f618ee00e4b781e178ef79c20237f280L61">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-f618ee00e4b781e178ef79c20237f280R62">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	collectorAddr : String to collectorData : AppCollectorData in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659L168">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659R169">To</a></td>
@@ -920,6 +913,13 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-780bcfb433d0f4081a93bad2abc3fafdR496">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	registeredCollectors : Map&lt;ApplicationId,String&gt; to registeringCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatRequestPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-f618ee00e4b781e178ef79c20237f280L61">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-f618ee00e4b781e178ef79c20237f280R62">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -930,6 +930,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	proto : AppCollectorsMapProto to proto : AppCollectorDataProto in class org.apache.hadoop.yarn.server.api.records.impl.pb.AppCollectorDataPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-b60c143bd2d0ae216d7c78482a995789L36">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4837126ba3065e0b1b349390cc107feeR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	builder : AppCollectorsMapProto.Builder to builder : AppCollectorDataProto.Builder in class org.apache.hadoop.yarn.server.api.records.impl.pb.AppCollectorDataPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-b60c143bd2d0ae216d7c78482a995789L39">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4837126ba3065e0b1b349390cc107feeR39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	collectorAddr : String to collectorData : AppCollectorData in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659L168">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659R169">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -959,27 +980,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-780bcfb433d0f4081a93bad2abc3fafdR496">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	proto : AppCollectorsMapProto to proto : AppCollectorDataProto in class org.apache.hadoop.yarn.server.api.records.impl.pb.AppCollectorDataPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-b60c143bd2d0ae216d7c78482a995789L36">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4837126ba3065e0b1b349390cc107feeR36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	builder : AppCollectorsMapProto.Builder to builder : AppCollectorDataProto.Builder in class org.apache.hadoop.yarn.server.api.records.impl.pb.AppCollectorDataPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-b60c143bd2d0ae216d7c78482a995789L39">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-4837126ba3065e0b1b349390cc107feeR39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	collectorAddr : String to collectorData : AppCollectorData in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659L168">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659R169">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -993,6 +993,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	registeredCollectors : Map&lt;ApplicationId,String&gt; to registeringCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in method public newInstance(nodeStatus NodeStatus, lastKnownContainerTokenMasterKey MasterKey, lastKnownNMTokenMasterKey MasterKey, nodeLabels Set&lt;NodeLabel&gt;, registeringCollectors Map&lt;ApplicationId,AppCollectorData&gt;) : NodeHeartbeatRequest in class org.apache.hadoop.yarn.server.api.protocolrecords.NodeHeartbeatRequest</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-57367bad0456c7a3f408b730f9b19661L50">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-57367bad0456c7a3f408b730f9b19661R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	appCollectorsMap : Map&lt;ApplicationId,String&gt; to appCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in method public setAppCollectors(appCollectors Map&lt;ApplicationId,AppCollectorData&gt;) : void in class org.apache.hadoop.yarn.server.api.protocolrecords.impl.pb.NodeHeartbeatResponsePBImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744L615">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-69121db1bd243cd36ddd879900fb6744R622">To</a></td>
@@ -1003,13 +1010,6 @@
                                 <td><i>Rename Parameter	collectorAddress : String to incomingData : AppCollectorData in method public setCollectorData(incomingData AppCollectorData) : void in class org.apache.hadoop.yarn.server.resourcemanager.rmapp.RMAppImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659L619">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-a1160beaa70af1ce4b5518e5dbaad659R619">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	registeredCollectors : Map&lt;ApplicationId,String&gt; to registeringCollectors : Map&lt;ApplicationId,AppCollectorData&gt; in method public newInstance(nodeStatus NodeStatus, lastKnownContainerTokenMasterKey MasterKey, lastKnownNMTokenMasterKey MasterKey, nodeLabels Set&lt;NodeLabel&gt;, registeringCollectors Map&lt;ApplicationId,AppCollectorData&gt;) : NodeHeartbeatRequest in class org.apache.hadoop.yarn.server.api.protocolrecords.NodeHeartbeatRequest</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-57367bad0456c7a3f408b730f9b19661L50">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/78b7e070d8009c78665a2baa64fe888788f53e69?diff=split#diff-57367bad0456c7a3f408b730f9b19661R51">To</a></td>
                             </tr>
                             
                             </tbody>

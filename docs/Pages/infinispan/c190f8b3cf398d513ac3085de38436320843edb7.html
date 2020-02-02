@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public addListener(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, classLoader ClassLoader) : void renamed to public addListenerAsync(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, classLoader ClassLoader) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1115">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1271">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public addListener(listener Object, filter KeyFilter&lt;? super K&gt;) : void renamed to public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.DecoratedCache</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-7de4a4787822c4096ec576e117ba81d3L650">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-7de4a4787822c4096ec576e117ba81d3R653">To</a></td>
@@ -474,13 +481,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-16d7fd1202fded0dea1d5c8a80fbd5e1R1098">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public addListener(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, classLoader ClassLoader) : void renamed to public addListenerAsync(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, classLoader ClassLoader) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1115">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1271">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -534,6 +534,307 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-147" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method protected sendNotification(key Object, value Object, pre boolean, ctx InvocationContext, cmd FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.impl.CacheLoaderInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d70f5361c5448faaa6e2d954a02b42bbL424">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d70f5361c5448faaa6e2d954a02b42bbR448">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.CacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffL977">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffR978">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method private commitClearCommand(dataContainer DataContainer&lt;Object,Object&gt;, context InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.AbstractClusteringDependentLogic</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L194">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R211">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invoke(event EventWrapper&lt;K,V,CacheEntryEvent&lt;K,V&gt;&gt;, isLocalNodePrimaryOwner boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.query.dsl.embedded.impl.BaseIckleFilterIndexingServiceProvider.FilteringListenerInvocation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-cd80ea3f7cad65c88eff9dc2724ccacdL304">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-cd80ea3f7cad65c88eff9dc2724ccacdR313">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryCreated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL380">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR383">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public onEntryEviction(evicted Map&lt;K,Map.Entry&lt;K,V&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.eviction.EvictionManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-fe8436a99ba8e1099b39ed42883b3ff4L21">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-fe8436a99ba8e1099b39ed42883b3ff4R22">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to Object in method private applyAndFixVersion(ctx InvocationContext, cmd VisitableCommand, rv Object) : Object in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L674">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R692">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public commitEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.OnlyPrimaryOwnerTest.MockCDL</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-a71477f6267d661fc2ad8682768a2464L100">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-a71477f6267d661fc2ad8682768a2464R101">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, classLoader ClassLoader) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.DataConversionAwareListenable</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-6594025dba05423ed39b13e3b053dab2L16">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-6594025dba05423ed39b13e3b053dab2R22">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachemanagerlistener.CacheManagerNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-61654570bdb1f22c064b3c990a06f62cL135">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-61654570bdb1f22c064b3c990a06f62cR165">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyTransactionRegistered(globalTransaction GlobalTransaction, isOriginLocal boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL668">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR776">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invokeNoChecks(event EventWrapper&lt;K,V,CacheEntryEvent&lt;K,V&gt;&gt;, skipQueue boolean, skipConverter boolean, needsTransform boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.filter.DelegatingCacheEntryListenerInvocation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-42e950cebc4a0f61e6b96bdd85884babL52">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-42e950cebc4a0f61e6b96bdd85884babR55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method private applyChanges(ctx InvocationContext, command WriteCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L587">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R605">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invokeNoChecks(wrapped EventWrapper&lt;K,V,CacheEntryEvent&lt;K,V&gt;&gt;, skipQueue boolean, skipConverter boolean, needsTransform boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl.BaseCacheEntryListenerInvocation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1603">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1817">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public transferComplete() : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.DistributedQueueingSegmentListener</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60L79">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invoke(event A) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.impl.AbstractListenerImpl.ListenerInvocationImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9L353">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9R386">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;Void&gt; in method protected commitSingleEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletableFuture&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.ScatteredLogic</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L592">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R613">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public transferComplete() : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.QueueingAllSegmentListener</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-33c9e4abc230bd802c759da35def5963L64">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-33c9e4abc230bd802c759da35def5963R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1098">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1255">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public sendEvents() : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.cluster.ClusterEventManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e1c4a7b9c7d588fd42ce6adba6c89556L21">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e1c4a7b9c7d588fd42ce6adba6c89556R22">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifiedKey(key K) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.DistributedQueueingSegmentListener</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60L98">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60R101">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyPartitionStatusChanged(mode AvailabilityMode, pre boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL709">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR848">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addFilteredListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.FilteringListenable</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e96f723ce8f05c7b5461cbd4c2407111L49">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e96f723ce8f05c7b5461cbd4c2407111R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addFilteredListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.security.impl.SecureCacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-8eec030156b9245e89701dbd2afc4686L112">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-8eec030156b9245e89701dbd2afc4686R113">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addStorageFormatFilteredListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1109">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1266">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryRemoved(key K, previousValue V, previousMetadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL434">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR461">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheStarted(cacheName String) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachemanagerlistener.CacheManagerNotifier</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-1e3832accc6467e93f1e93464f8c5d40L26">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-1e3832accc6467e93f1e93464f8c5d40R28">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryVisited(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L47">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to Object in method private commitEntriesFinally(rCtx InvocationContext, rCommand VisitableCommand, rv Object, t Throwable) : Object in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L697">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R715">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryModified(key K, value V, metadata Metadata, previousValue V, previousMetadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L33">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method protected commitSingleEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.DistributionLogic</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L515">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R535">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method private doNotifyVisited(key K, value V, pre boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL518">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR561">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL826">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR993">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL649">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR746">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.CacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffL953">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffR955">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.manager.DefaultCacheManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-b37bf8d5b7683ca4effccbdb92ad4ae8L810">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-b37bf8d5b7683ca4effccbdb92ad4ae8R812">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryActivated(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL608">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR688">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public removeListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1817">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR2031">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.SimpleCacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-16d7fd1202fded0dea1d5c8a80fbd5e1L1078">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-16d7fd1202fded0dea1d5c8a80fbd5e1R1098">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addFilteredListenerAsync(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1125">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1283">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L93">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R98">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntriesEvicted(entries Collection&lt;Map.Entry&lt;K,V&gt;&gt;, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L54">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method protected abstract commitSingleEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.AbstractClusteringDependentLogic</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L206">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R230">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1263,307 +1564,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R129">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method protected sendNotification(key Object, value Object, pre boolean, ctx InvocationContext, cmd FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.impl.CacheLoaderInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d70f5361c5448faaa6e2d954a02b42bbL424">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d70f5361c5448faaa6e2d954a02b42bbR448">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.CacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffL977">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffR978">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method private commitClearCommand(dataContainer DataContainer&lt;Object,Object&gt;, context InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.AbstractClusteringDependentLogic</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L194">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R211">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invoke(event EventWrapper&lt;K,V,CacheEntryEvent&lt;K,V&gt;&gt;, isLocalNodePrimaryOwner boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.query.dsl.embedded.impl.BaseIckleFilterIndexingServiceProvider.FilteringListenerInvocation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-cd80ea3f7cad65c88eff9dc2724ccacdL304">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-cd80ea3f7cad65c88eff9dc2724ccacdR313">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryCreated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL380">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR383">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public onEntryEviction(evicted Map&lt;K,Map.Entry&lt;K,V&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.eviction.EvictionManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-fe8436a99ba8e1099b39ed42883b3ff4L21">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-fe8436a99ba8e1099b39ed42883b3ff4R22">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to Object in method private applyAndFixVersion(ctx InvocationContext, cmd VisitableCommand, rv Object) : Object in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L674">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R692">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public commitEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.OnlyPrimaryOwnerTest.MockCDL</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-a71477f6267d661fc2ad8682768a2464L100">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-a71477f6267d661fc2ad8682768a2464R101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, classLoader ClassLoader) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.DataConversionAwareListenable</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-6594025dba05423ed39b13e3b053dab2L16">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-6594025dba05423ed39b13e3b053dab2R22">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachemanagerlistener.CacheManagerNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-61654570bdb1f22c064b3c990a06f62cL135">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-61654570bdb1f22c064b3c990a06f62cR165">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyTransactionRegistered(globalTransaction GlobalTransaction, isOriginLocal boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL668">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR776">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invokeNoChecks(event EventWrapper&lt;K,V,CacheEntryEvent&lt;K,V&gt;&gt;, skipQueue boolean, skipConverter boolean, needsTransform boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.filter.DelegatingCacheEntryListenerInvocation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-42e950cebc4a0f61e6b96bdd85884babL52">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-42e950cebc4a0f61e6b96bdd85884babR55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method private applyChanges(ctx InvocationContext, command WriteCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L587">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R605">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invokeNoChecks(wrapped EventWrapper&lt;K,V,CacheEntryEvent&lt;K,V&gt;&gt;, skipQueue boolean, skipConverter boolean, needsTransform boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl.BaseCacheEntryListenerInvocation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1603">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1817">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public transferComplete() : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.DistributedQueueingSegmentListener</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60L79">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public invoke(event A) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.impl.AbstractListenerImpl.ListenerInvocationImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9L353">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9R386">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;Void&gt; in method protected commitSingleEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletableFuture&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.ScatteredLogic</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L592">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R613">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public transferComplete() : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.QueueingAllSegmentListener</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-33c9e4abc230bd802c759da35def5963L64">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-33c9e4abc230bd802c759da35def5963R68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1098">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1255">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public sendEvents() : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.cluster.ClusterEventManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e1c4a7b9c7d588fd42ce6adba6c89556L21">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e1c4a7b9c7d588fd42ce6adba6c89556R22">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifiedKey(key K) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.DistributedQueueingSegmentListener</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60L98">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9f052a0d77a0ad5fa908a9968173ab60R101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyPartitionStatusChanged(mode AvailabilityMode, pre boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL709">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR848">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addFilteredListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.FilteringListenable</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e96f723ce8f05c7b5461cbd4c2407111L49">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-e96f723ce8f05c7b5461cbd4c2407111R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addFilteredListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.security.impl.SecureCacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-8eec030156b9245e89701dbd2afc4686L112">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-8eec030156b9245e89701dbd2afc4686R113">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addStorageFormatFilteredListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1109">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryRemoved(key K, previousValue V, previousMetadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL434">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR461">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheStarted(cacheName String) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachemanagerlistener.CacheManagerNotifier</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-1e3832accc6467e93f1e93464f8c5d40L26">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-1e3832accc6467e93f1e93464f8c5d40R28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryVisited(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L47">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to Object in method private commitEntriesFinally(rCtx InvocationContext, rCommand VisitableCommand, rv Object, t Throwable) : Object in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L697">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R715">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryModified(key K, value V, metadata Metadata, previousValue V, previousMetadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L33">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method protected commitSingleEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.DistributionLogic</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L515">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R535">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method private doNotifyVisited(key K, value V, pre boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL518">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR561">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL826">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR993">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL649">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR746">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.CacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffL953">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-9b63fc521d77aa81f1b2500dca6f63ffR955">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.manager.DefaultCacheManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-b37bf8d5b7683ca4effccbdb92ad4ae8L810">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-b37bf8d5b7683ca4effccbdb92ad4ae8R812">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntryActivated(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL608">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR688">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public removeListenerAsync(listener Object) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1817">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR2031">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addListenerAsync(listener Object, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.cache.impl.SimpleCacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-16d7fd1202fded0dea1d5c8a80fbd5e1L1078">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-16d7fd1202fded0dea1d5c8a80fbd5e1R1098">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public addFilteredListenerAsync(listenerHolder ListenerHolder, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faL1125">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-182863b563ea048f2b8e7a9ea42927faR1283">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L93">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method public notifyCacheEntriesEvicted(entries Collection&lt;Map.Entry&lt;K,V&gt;&gt;, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; in class org.infinispan.notifications.cachelistener.CacheNotifier</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1L54">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d761d6d8684af7b1de47dff67e59dda1R56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletionStage&lt;Void&gt; in method protected abstract commitSingleEntry(entry CacheEntry, command FlagAffectedCommand, ctx InvocationContext, trackFlag Flag, l1Invalidation boolean) : CompletionStage&lt;Void&gt; in class org.infinispan.interceptors.locking.ClusteringDependentLogic.AbstractClusteringDependentLogic</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32L206">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-18919e23549d96e35d7304fec24ffd32R230">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1628,20 +1628,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	asyncProcessor : ExecutorService to asyncProcessor : Executor in class org.infinispan.notifications.impl.AbstractListenerImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9L116">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9R118">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dataReadReturnHandler : InvocationSuccessAction to dataReadReturnHandler : InvocationSuccessFunction in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L122">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R126">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1720,6 +1706,20 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R155">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	asyncProcessor : ExecutorService to asyncProcessor : Executor in class org.infinispan.notifications.impl.AbstractListenerImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9L116">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-77ddda1c7ece23ce5f695d5e6ce19ef9R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dataReadReturnHandler : InvocationSuccessAction to dataReadReturnHandler : InvocationSuccessFunction in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314L122">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c190f8b3cf398d513ac3085de38436320843edb7?diff=split#diff-d7e74cc6236d782d324013d36fc08314R126">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1730,6 +1730,90 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-30" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doPassivate(key Object, entry InternalCacheEntry) : boolean extracted from public passivate(entry InternalCacheEntry) : void in class org.infinispan.eviction.impl.PassivationManagerImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyActivated(key K, value V, pre boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryActivated(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyPassivated(key K, value V, pre boolean) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryPassivated(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyDataRehashed(oldCH ConsistentHash, newCH ConsistentHash, unionCH ConsistentHash, newTopologyId int, pre boolean) : CompletionStage&lt;Void&gt; extracted from public notifyDataRehashed(oldCH ConsistentHash, newCH ConsistentHash, unionCH ConsistentHash, newTopologyId int, pre boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private isClusterListenerAvailable(mode CacheMode) : boolean extracted from private addFilteredListenerInternal(listener Object, keyDataConversion DataConversion, valueDataConversion DataConversion, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;, useStorageFormat boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyPersistenceAvailabilityChanged(available boolean) : CompletionStage&lt;Void&gt; extracted from public notifyPersistenceAvailabilityChanged(available boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private commitEntryIfNeeded(ctx InvocationContext, command FlagAffectedCommand, key Object, entry CacheEntry, stateTransferFlag Flag) : CompletionStage&lt;Void&gt; extracted from protected commitContextEntries(ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private sendEvents(aggregateCompletionStage AggregateCompletionStage&lt;Void&gt;) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryCreated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private updateAvailabilityMode(mode AvailabilityMode) : CompletionStage&lt;Void&gt; extracted from public setAvailabilityMode(availabilityMode AvailabilityMode) : void in class org.infinispan.partitionhandling.impl.PartitionHandlingManagerImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; extracted from public notifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyInvalidated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryInvalidated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private doNotifyTopologyChanged(oldTopology CacheTopology, newTopology CacheTopology, newTopologyId int, pre boolean) : CompletionStage&lt;Void&gt; extracted from public notifyTopologyChanged(oldTopology CacheTopology, newTopology CacheTopology, newTopologyId int, pre boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1857,90 +1941,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doPassivate(key Object, entry InternalCacheEntry) : boolean extracted from public passivate(entry InternalCacheEntry) : void in class org.infinispan.eviction.impl.PassivationManagerImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyActivated(key K, value V, pre boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryActivated(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyPassivated(key K, value V, pre boolean) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryPassivated(key K, value V, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyDataRehashed(oldCH ConsistentHash, newCH ConsistentHash, unionCH ConsistentHash, newTopologyId int, pre boolean) : CompletionStage&lt;Void&gt; extracted from public notifyDataRehashed(oldCH ConsistentHash, newCH ConsistentHash, unionCH ConsistentHash, newTopologyId int, pre boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private isClusterListenerAvailable(mode CacheMode) : boolean extracted from private addFilteredListenerInternal(listener Object, keyDataConversion DataConversion, valueDataConversion DataConversion, filter CacheEventFilter&lt;? super K,? super V&gt;, converter CacheEventConverter&lt;? super K,? super V,C&gt;, filterAnnotations Set&lt;Class&lt;? extends Annotation&gt;&gt;, useStorageFormat boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyPersistenceAvailabilityChanged(available boolean) : CompletionStage&lt;Void&gt; extracted from public notifyPersistenceAvailabilityChanged(available boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private commitEntryIfNeeded(ctx InvocationContext, command FlagAffectedCommand, key Object, entry CacheEntry, stateTransferFlag Flag) : CompletionStage&lt;Void&gt; extracted from protected commitContextEntries(ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private sendEvents(aggregateCompletionStage AggregateCompletionStage&lt;Void&gt;) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryCreated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private updateAvailabilityMode(mode AvailabilityMode) : CompletionStage&lt;Void&gt; extracted from public setAvailabilityMode(availabilityMode AvailabilityMode) : void in class org.infinispan.partitionhandling.impl.PartitionHandlingManagerImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : CompletionStage&lt;Void&gt; extracted from public notifyTransactionCompleted(transaction GlobalTransaction, successful boolean, ctx InvocationContext) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyInvalidated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : CompletionStage&lt;Void&gt; extracted from public notifyCacheEntryInvalidated(key K, value V, metadata Metadata, pre boolean, ctx InvocationContext, command FlagAffectedCommand) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doNotifyTopologyChanged(oldTopology CacheTopology, newTopology CacheTopology, newTopologyId int, pre boolean) : CompletionStage&lt;Void&gt; extracted from public notifyTopologyChanged(oldTopology CacheTopology, newTopology CacheTopology, newTopologyId int, pre boolean) : void in class org.infinispan.notifications.cachelistener.CacheNotifierImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1951,20 +1951,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public delayedValue(stage CompletionStage&lt;Void&gt;, syncValue Object) : Object extracted from public visitComputeIfAbsentCommand(ctx InvocationContext, command ComputeIfAbsentCommand) : Object in class org.infinispan.interceptors.impl.CallInterceptor &amp; moved to class org.infinispan.interceptors.BaseAsyncInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public delayedValue(stage CompletionStage&lt;Void&gt;, syncValue Object) : Object extracted from public visitComputeCommand(ctx InvocationContext, command ComputeCommand) : Object in class org.infinispan.interceptors.impl.CallInterceptor &amp; moved to class org.infinispan.interceptors.BaseAsyncInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -2004,6 +1990,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public delayedValue(stage CompletionStage&lt;Void&gt;, syncValue Object) : Object extracted from private prepareHandler(nonTxCtx InvocationContext, command VisitableCommand, nil Object) : Object in class org.infinispan.interceptors.impl.VersionedEntryWrappingInterceptor &amp; moved to class org.infinispan.interceptors.BaseAsyncInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public delayedValue(stage CompletionStage&lt;Void&gt;, syncValue Object) : Object extracted from public visitComputeIfAbsentCommand(ctx InvocationContext, command ComputeIfAbsentCommand) : Object in class org.infinispan.interceptors.impl.CallInterceptor &amp; moved to class org.infinispan.interceptors.BaseAsyncInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public delayedValue(stage CompletionStage&lt;Void&gt;, syncValue Object) : Object extracted from public visitComputeCommand(ctx InvocationContext, command ComputeCommand) : Object in class org.infinispan.interceptors.impl.CallInterceptor &amp; moved to class org.infinispan.interceptors.BaseAsyncInterceptor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

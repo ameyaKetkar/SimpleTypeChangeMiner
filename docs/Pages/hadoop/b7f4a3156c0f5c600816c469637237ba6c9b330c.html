@@ -332,6 +332,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	targetVolume : FsVolumeImpl to targetVolume : FsVolumeReference in method package ReplicaLazyPersistTask(bpId String, blockId long, genStamp long, creationTime long, blockFile File, metaFile File, targetVolume FsVolumeReference, lazyPersistDir File) in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.RamDiskAsyncLazyPersistService.ReplicaLazyPersistTask</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-5a79bed5e203f57d37f84d88740dbab1L207">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-5a79bed5e203f57d37f84d88740dbab1R213">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	volume : FsVolumeImpl to volumeRef : FsVolumeReference in method package deleteAsync(volumeRef FsVolumeReference, blockFile File, metaFile File, block ExtendedBlock, trashDirectory String) : void in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetAsyncDiskService</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-fb15a914511b1d32584f7ce030162086L199">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-fb15a914511b1d32584f7ce030162086R206">To</a></td>
@@ -351,13 +358,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-5a79bed5e203f57d37f84d88740dbab1R180">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	targetVolume : FsVolumeImpl to targetVolume : FsVolumeReference in method package ReplicaLazyPersistTask(bpId String, blockId long, genStamp long, creationTime long, blockFile File, metaFile File, targetVolume FsVolumeReference, lazyPersistDir File) in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.RamDiskAsyncLazyPersistService.ReplicaLazyPersistTask</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-5a79bed5e203f57d37f84d88740dbab1L207">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-5a79bed5e203f57d37f84d88740dbab1R213">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -368,13 +368,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ReplicaInPipelineInterface to ReplicaHandler in method public createTemporary(t StorageType, b ExtendedBlock) : ReplicaHandler in class org.apache.hadoop.hdfs.server.datanode.extdataset.ExternalDatasetImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-3d77036e76858cdfb9b006eab5067f97L150">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-3d77036e76858cdfb9b006eab5067f97R150">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -530,6 +523,13 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-a56f9c9ed14dbf1df3f4fa7ba1c34ebeR887">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ReplicaInPipelineInterface to ReplicaHandler in method public createTemporary(t StorageType, b ExtendedBlock) : ReplicaHandler in class org.apache.hadoop.hdfs.server.datanode.extdataset.ExternalDatasetImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-3d77036e76858cdfb9b006eab5067f97L150">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b7f4a3156c0f5c600816c469637237ba6c9b330c?diff=split#diff-3d77036e76858cdfb9b006eab5067f97R150">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -586,14 +586,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private chooseVolume(list List&lt;FsVolumeImpl&gt;, blockSize long) : FsVolumeReference extracted from package getNextTransientVolume(blockSize long) : FsVolumeImpl in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsVolumeList</i></td>
+                                <td><i>Extract Method	private chooseVolume(list List&lt;FsVolumeImpl&gt;, blockSize long) : FsVolumeReference extracted from package getNextVolume(storageType StorageType, blockSize long) : FsVolumeImpl in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsVolumeList</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private chooseVolume(list List&lt;FsVolumeImpl&gt;, blockSize long) : FsVolumeReference extracted from package getNextVolume(storageType StorageType, blockSize long) : FsVolumeImpl in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsVolumeList</i></td>
+                                <td><i>Extract Method	private chooseVolume(list List&lt;FsVolumeImpl&gt;, blockSize long) : FsVolumeReference extracted from package getNextTransientVolume(blockSize long) : FsVolumeImpl in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsVolumeList</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

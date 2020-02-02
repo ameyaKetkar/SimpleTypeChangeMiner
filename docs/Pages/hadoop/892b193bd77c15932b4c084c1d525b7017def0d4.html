@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getRowKeyPrefix(clusterId String, userId String, flowName String) : byte[] renamed to public getRowKey() : byte[] in class org.apache.hadoop.yarn.server.timelineservice.storage.application.ApplicationRowKey</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-ef5f2709bd410ef527d03d2b22d276e6L60">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-ef5f2709bd410ef527d03d2b22d276e6R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private storeInFlowActivityTable(clusterId String, userId String, flowName String, flowVersion String, flowRunId long, appId String, activityTimeStamp long) : void renamed to private onApplicationFinished(flowRunRowKey FlowRunRowKey, flowVersion String, appId String, te TimelineEntity, appFinishedTimeStamp long) : void in class org.apache.hadoop.yarn.server.timelineservice.storage.HBaseTimelineWriterImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-f013d17ac02b2549b20a697fbca7262eL194">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-f013d17ac02b2549b20a697fbca7262eR243">To</a></td>
@@ -180,13 +187,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-51133868e0d597ee1057d620fe8d0120R86">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getRowKeyPrefix(clusterId String, userId String, flowName String) : byte[] renamed to public getRowKey() : byte[] in class org.apache.hadoop.yarn.server.timelineservice.storage.application.ApplicationRowKey</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-ef5f2709bd410ef527d03d2b22d276e6L60">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-ef5f2709bd410ef527d03d2b22d276e6R68">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -197,20 +197,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Method	public testApplicationRowKeyConverter() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to public testApplicationRowKey() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L141">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Method	public testAppToFlowRowKeyConverter() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to public testAppToFlowRowKey() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L229">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R121">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -233,6 +219,20 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R134">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Method	public testApplicationRowKeyConverter() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to public testApplicationRowKey() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L141">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Method	public testAppToFlowRowKeyConverter() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to public testAppToFlowRowKey() : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L229">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R121">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -243,6 +243,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private verifyRowPrefixBytes(byteRowKeyPrefix byte[]) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to private verifyRowPrefixBytes(byteRowKeyPrefix byte[]) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L74">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public readEvents(entity TimelineEntity, result Result, prefix ColumnPrefix&lt;T&gt;) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TimelineStorageUtils to protected readEvents(entity TimelineEntity, result Result, prefix ColumnPrefix&lt;T&gt;) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.reader.TimelineEntityReader</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-0516c54fe5e9b5608bf24127ff11d8f3L703">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-4f13fe3039deef5203efc982be2dda76R459">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -300,20 +314,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-f013d17ac02b2549b20a697fbca7262eR484">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private verifyRowPrefixBytes(byteRowKeyPrefix byte[]) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to private verifyRowPrefixBytes(byteRowKeyPrefix byte[]) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L74">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public readEvents(entity TimelineEntity, result Result, prefix ColumnPrefix&lt;T&gt;) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TimelineStorageUtils to protected readEvents(entity TimelineEntity, result Result, prefix ColumnPrefix&lt;T&gt;) : void from class org.apache.hadoop.yarn.server.timelineservice.storage.reader.TimelineEntityReader</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-0516c54fe5e9b5608bf24127ff11d8f3L703">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-4f13fe3039deef5203efc982be2dda76R459">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -324,13 +324,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private USER : String from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to private USER : String from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L44">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R42">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -374,6 +367,13 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R41">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private USER : String from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestKeyConverters to private USER : String from class org.apache.hadoop.yarn.server.timelineservice.storage.common.TestRowKeys</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-592f92313b221ba4f7d0096a218c2102L44">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/892b193bd77c15932b4c084c1d525b7017def0d4?diff=split#diff-3eccf7f0013d61e2fc7af8356567ec49R42">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -405,6 +405,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	org.apache.hadoop.yarn.server.timelineservice.storage.entity.EntityRowKeyConverter moved to org.apache.hadoop.yarn.server.timelineservice.storage.entity.EntityRowKey.EntityRowKeyConverter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	org.apache.hadoop.yarn.server.timelineservice.storage.flow.FlowActivityRowKeyConverter moved to org.apache.hadoop.yarn.server.timelineservice.storage.flow.FlowActivityRowKey.FlowActivityRowKeyConverter</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -427,13 +434,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.apache.hadoop.yarn.server.timelineservice.storage.apptoflow.AppToFlowRowKeyConverter moved to org.apache.hadoop.yarn.server.timelineservice.storage.apptoflow.AppToFlowRowKey.AppToFlowRowKeyConverter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.hadoop.yarn.server.timelineservice.storage.entity.EntityRowKeyConverter moved to org.apache.hadoop.yarn.server.timelineservice.storage.entity.EntityRowKey.EntityRowKeyConverter</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -154,6 +154,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	partitions : Map&lt;Integer,ClusterPartition&gt; to partitions : Collection&lt;ClusterPartition&gt; in method private checkSlotsChange(cfg ClusterServersConfig, partitions Collection&lt;ClusterPartition&gt;) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L176">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R208">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	endSlot : int to slotRange : ClusterSlotRange in method protected changeMaster(slotRange ClusterSlotRange, host String, port int) : void in class org.redisson.connection.MasterSlaveConnectionManager</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aL534">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aR545">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	slots : List&lt;Integer&gt; to slots : List&lt;ClusterSlotRange&gt; in method private retryReadRandomAsync(command RedisCommand&lt;T&gt;, mainPromise Promise&lt;R&gt;, slots List&lt;ClusterSlotRange&gt;, params Object...) : void in class org.redisson.CommandExecutorService</i></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feL115">From</a></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feR117">To</a></td>
@@ -173,20 +187,6 @@
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aR553">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	partitions : Map&lt;Integer,ClusterPartition&gt; to partitions : Collection&lt;ClusterPartition&gt; in method private checkSlotsChange(cfg ClusterServersConfig, partitions Collection&lt;ClusterPartition&gt;) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L176">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R208">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	endSlot : int to slotRange : ClusterSlotRange in method protected changeMaster(slotRange ClusterSlotRange, host String, port int) : void in class org.redisson.connection.MasterSlaveConnectionManager</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aL534">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aR545">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -197,13 +197,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public getStartSlot() : int from class org.redisson.connection.MasterSlaveEntry to public getStartSlot() : int from class org.redisson.cluster.ClusterSlotRange</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L174">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R29">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -247,6 +240,13 @@
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R33">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public getStartSlot() : int from class org.redisson.connection.MasterSlaveEntry to public getStartSlot() : int from class org.redisson.cluster.ClusterSlotRange</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L174">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R29">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -257,27 +257,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	package endSlot : int from class org.redisson.connection.MasterSlaveEntry to private endSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L51">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R21">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private startSlot : int from class org.redisson.connection.ClusterNodeInfo to private startSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-87d9fdc794df4fb03c00adc754caeed6L33">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R20">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private endSlot : int from class org.redisson.connection.ClusterPartition to private endSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-e37e95cd07c89d9f24ad26a46aad22ebL27">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R21">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -298,6 +277,27 @@
                                 <td><i>Move Attribute	package startSlot : int from class org.redisson.connection.MasterSlaveEntry to private startSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L50">From</a></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R20">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	package endSlot : int from class org.redisson.connection.MasterSlaveEntry to private endSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L51">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R21">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private startSlot : int from class org.redisson.connection.ClusterNodeInfo to private startSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-87d9fdc794df4fb03c00adc754caeed6L33">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R20">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private endSlot : int from class org.redisson.connection.ClusterPartition to private endSlot : int from class org.redisson.cluster.ClusterSlotRange</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-e37e95cd07c89d9f24ad26a46aad22ebL27">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-037b9067276dbe4a021bf2b1b265d3c1R21">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -345,6 +345,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	org.redisson.connection.ClusterNodeInfo moved to org.redisson.cluster.ClusterNodeInfo</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	org.redisson.connection.ClusterConnectionManager moved to org.redisson.cluster.ClusterConnectionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -353,13 +360,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.redisson.connection.ClusterPartition moved to org.redisson.cluster.ClusterPartition</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.redisson.connection.ClusterNodeInfo moved to org.redisson.cluster.ClusterNodeInfo</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -392,27 +392,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	slot : Integer to slot : ClusterSlotRange in method private checkSlotsChange(cfg ClusterServersConfig, partitions Collection&lt;ClusterPartition&gt;) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L176">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R218">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	slot : Integer to slot : ClusterSlotRange in method public evalAllAsync(readOnlyMode boolean, command RedisCommand&lt;T&gt;, callback SlotCallback&lt;T,R&gt;, script String, keys List&lt;Object&gt;, params Object...) : Future&lt;R&gt; in class org.redisson.CommandExecutorService</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feL326">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feR357">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	removeSlots : Set&lt;Integer&gt; to removedSlots : Set&lt;ClusterSlotRange&gt; in method private checkSlotsChange(cfg ClusterServersConfig, partitions Collection&lt;ClusterPartition&gt;) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L176">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R210">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -491,6 +470,27 @@
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feR175">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	slot : Integer to slot : ClusterSlotRange in method private checkSlotsChange(cfg ClusterServersConfig, partitions Collection&lt;ClusterPartition&gt;) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L176">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R218">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	slot : Integer to slot : ClusterSlotRange in method public evalAllAsync(readOnlyMode boolean, command RedisCommand&lt;T&gt;, callback SlotCallback&lt;T,R&gt;, script String, keys List&lt;Object&gt;, params Object...) : Future&lt;R&gt; in class org.redisson.CommandExecutorService</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feL326">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-333caac7e7f30e75844a9789097625feR357">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	removeSlots : Set&lt;Integer&gt; to removedSlots : Set&lt;ClusterSlotRange&gt; in method private checkSlotsChange(cfg ClusterServersConfig, partitions Collection&lt;ClusterPartition&gt;) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L176">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R210">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -504,14 +504,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	protected addMaster(slotRange ClusterSlotRange, entry MasterSlaveEntry) : void extracted from protected initEntry(config MasterSlaveServersConfig) : void in class org.redisson.connection.MasterSlaveConnectionManager</i></td>
+                                <td><i>Extract Method	private checkMasterNodesChange(newPartitions Collection&lt;ClusterPartition&gt;) : void extracted from private monitorClusterChange(cfg ClusterServersConfig) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private checkMasterNodesChange(newPartitions Collection&lt;ClusterPartition&gt;) : void extracted from private monitorClusterChange(cfg ClusterServersConfig) : void in class org.redisson.cluster.ClusterConnectionManager</i></td>
+                                <td><i>Extract Method	protected addMaster(slotRange ClusterSlotRange, entry MasterSlaveEntry) : void extracted from protected initEntry(config MasterSlaveServersConfig) : void in class org.redisson.connection.MasterSlaveConnectionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -554,6 +554,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	Map&lt;Integer,ClusterPartition&gt; to Collection&lt;ClusterPartition&gt; in method private parsePartitions(nodesValue String) : Collection&lt;ClusterPartition&gt; in class org.redisson.cluster.ClusterConnectionManager</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L207">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R240">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	NavigableMap&lt;Integer,MasterSlaveEntry&gt; to Map&lt;ClusterSlotRange,MasterSlaveEntry&gt; in method public getEntries() : Map&lt;ClusterSlotRange,MasterSlaveEntry&gt; in class org.redisson.connection.MasterSlaveConnectionManager</i></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aL105">From</a></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aR106">To</a></td>
@@ -564,13 +571,6 @@
                                 <td><i>Change Return Type	NavigableMap&lt;Integer,MasterSlaveEntry&gt; to Map&lt;ClusterSlotRange,MasterSlaveEntry&gt; in method public getEntries() : Map&lt;ClusterSlotRange,MasterSlaveEntry&gt; in class org.redisson.connection.ConnectionManager</i></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-15f4674b3d48eb4498ee4c36dbd4c940L57">From</a></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-15f4674b3d48eb4498ee4c36dbd4c940R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;Integer,ClusterPartition&gt; to Collection&lt;ClusterPartition&gt; in method private parsePartitions(nodesValue String) : Collection&lt;ClusterPartition&gt; in class org.redisson.cluster.ClusterConnectionManager</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L207">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R240">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -622,13 +622,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	endSlot : int to slotRanges : List&lt;ClusterSlotRange&gt; in class org.redisson.connection.MasterSlaveEntry</i></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L51">From</a></td>
-                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	lastPartitions : Map&lt;Integer,ClusterPartition&gt; to lastPartitions : Map&lt;ClusterSlotRange,ClusterPartition&gt; in class org.redisson.cluster.ClusterConnectionManager</i></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-21064ed7a7fe417a05b87a04003e2e95L49">From</a></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-9f4a03669217ea42cbcfb46e6d22c8e0R53">To</a></td>
@@ -639,6 +632,13 @@
                                 <td><i>Change Attribute Type	entries : NavigableMap&lt;Integer,MasterSlaveEntry&gt; to entries : Map&lt;ClusterSlotRange,MasterSlaveEntry&gt; in class org.redisson.connection.MasterSlaveConnectionManager</i></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aL81">From</a></td>
                                 <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-972484ba478c94a0cc179c578ef2924aR82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	endSlot : int to slotRanges : List&lt;ClusterSlotRange&gt; in class org.redisson.connection.MasterSlaveEntry</i></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438L51">From</a></td>
+                                <td><a href = "https://github.com/redisson/redisson/commit/2323e9bc020da2119848039e10df270e5b9e8de0?diff=split#diff-01f8624242691db8376ea7774b4fc438R52">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -654,14 +654,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	protected addMaster(slotRange ClusterSlotRange, entry MasterSlaveEntry) : void extracted from protected initEntry(config MasterSlaveServersConfig) : void in class org.redisson.connection.SingleConnectionManager &amp; moved to class org.redisson.connection.MasterSlaveConnectionManager</i></td>
+                                <td><i>Extract And Move Method	public addSlotRange(range ClusterSlotRange) : void extracted from private parse(nodesResponse String) : List&lt;ClusterNodeInfo&gt; in class org.redisson.connection.ClusterConnectionManager &amp; moved to class org.redisson.cluster.ClusterNodeInfo</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	public addSlotRange(range ClusterSlotRange) : void extracted from private parse(nodesResponse String) : List&lt;ClusterNodeInfo&gt; in class org.redisson.connection.ClusterConnectionManager &amp; moved to class org.redisson.cluster.ClusterNodeInfo</i></td>
+                                <td><i>Extract And Move Method	protected addMaster(slotRange ClusterSlotRange, entry MasterSlaveEntry) : void extracted from protected initEntry(config MasterSlaveServersConfig) : void in class org.redisson.connection.SingleConnectionManager &amp; moved to class org.redisson.connection.MasterSlaveConnectionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -370,6 +370,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Attribute	collectedContent : Map&lt;Integer,Set&lt;String&gt;&gt; to actualContent : Map&lt;Integer,Set&lt;String&gt;&gt; in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase.TestingSinkFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L245">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R176">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Attribute	readerState : Tuple3&lt;List&lt;FileInputSplit&gt;,FileInputSplit,S&gt; to restoredReaderState : List&lt;TimestampedFileInputSplit&gt; in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL83">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR79">To</a></td>
@@ -394,13 +401,6 @@
                                 <td><i>Rename Attribute	fs : FileSystem to localFs : FileSystem in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L67">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	collectedContent : Map&lt;Integer,Set&lt;String&gt;&gt; to actualContent : Map&lt;Integer,Set&lt;String&gt;&gt; in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase.TestingSinkFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L245">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R176">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -431,55 +431,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	split : FileInputSplit to split : TimestampedFileInputSplit in method public snapshotState(os FSDataOutputStream, checkpointId long, timestamp long) : void in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL388">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR357">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	reader : ContinuousFileReaderOperator&lt;String,?&gt; to reader : ContinuousFileReaderOperator&lt;String&gt; in method public testFileReadingOperatorWithIngestionTime() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-11212521190a293337a4a5cb31d35015L108">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-abb9ef4de62be657638f23418bac12d7R129">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	splits : DataStream&lt;FileInputSplit&gt; to splits : DataStream&lt;TimestampedFileInputSplit&gt; in method protected testProgram() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-9887ccdcc4a49bd07a037ade8d8d50faL103">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-5709088ab4e65211d91fc89ad2ed04c7R132">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	collected : Map&lt;Integer,List&lt;String&gt;&gt; to collected : Map&lt;Integer,Set&lt;String&gt;&gt; in method public postSubmit() : void in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L127">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R132">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	pendingSplits : List&lt;FileInputSplit&gt; to pendingSplits : List&lt;TimestampedFileInputSplit&gt; in method public restoreState(is FSDataInputStream) : void in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL409">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR372">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tester : OneInputStreamOperatorTestHarness&lt;FileInputSplit,String&gt; to tester : OneInputStreamOperatorTestHarness&lt;TimestampedFileInputSplit,String&gt; in method public testFileReadingOperatorWithIngestionTime() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-11212521190a293337a4a5cb31d35015L108">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-abb9ef4de62be657638f23418bac12d7R130">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	reader : ContinuousFileReaderOperator&lt;String,?&gt; to reader : ContinuousFileReaderOperator&lt;String&gt; in method protected testProgram() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-9887ccdcc4a49bd07a037ade8d8d50faL103">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-5709088ab4e65211d91fc89ad2ed04c7R135">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -530,6 +481,55 @@
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-abb9ef4de62be657638f23418bac12d7R288">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	split : FileInputSplit to split : TimestampedFileInputSplit in method public snapshotState(os FSDataOutputStream, checkpointId long, timestamp long) : void in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL388">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR357">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	reader : ContinuousFileReaderOperator&lt;String,?&gt; to reader : ContinuousFileReaderOperator&lt;String&gt; in method public testFileReadingOperatorWithIngestionTime() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-11212521190a293337a4a5cb31d35015L108">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-abb9ef4de62be657638f23418bac12d7R129">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	splits : DataStream&lt;FileInputSplit&gt; to splits : DataStream&lt;TimestampedFileInputSplit&gt; in method protected testProgram() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-9887ccdcc4a49bd07a037ade8d8d50faL103">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-5709088ab4e65211d91fc89ad2ed04c7R132">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	collected : Map&lt;Integer,List&lt;String&gt;&gt; to collected : Map&lt;Integer,Set&lt;String&gt;&gt; in method public postSubmit() : void in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L127">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R132">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	pendingSplits : List&lt;FileInputSplit&gt; to pendingSplits : List&lt;TimestampedFileInputSplit&gt; in method public restoreState(is FSDataInputStream) : void in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL409">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR372">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tester : OneInputStreamOperatorTestHarness&lt;FileInputSplit,String&gt; to tester : OneInputStreamOperatorTestHarness&lt;TimestampedFileInputSplit,String&gt; in method public testFileReadingOperatorWithIngestionTime() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-11212521190a293337a4a5cb31d35015L108">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-abb9ef4de62be657638f23418bac12d7R130">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	reader : ContinuousFileReaderOperator&lt;String,?&gt; to reader : ContinuousFileReaderOperator&lt;String&gt; in method protected testProgram() : void in class org.apache.flink.hdfstests.ContinuousFileProcessingITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-9887ccdcc4a49bd07a037ade8d8d50faL103">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-5709088ab4e65211d91fc89ad2ed04c7R135">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -540,6 +540,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	readerState : Tuple3&lt;List&lt;FileInputSplit&gt;,FileInputSplit,S&gt; to restoredReaderState : List&lt;TimestampedFileInputSplit&gt; in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL83">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	pendingSplits : Queue&lt;FileInputSplit&gt; to pendingSplits : Queue&lt;TimestampedFileInputSplit&gt; in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.SplitReader</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL203">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR199">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	finalCollectedContent : Map&lt;Integer,List&lt;String&gt;&gt; to actualCollectedContent : Map&lt;Integer,Set&lt;String&gt;&gt; in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L71">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R70">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -567,27 +588,6 @@
                                 <td><i>Change Attribute Type	currentSplit : FileInputSplit to currentSplit : TimestampedFileInputSplit in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.SplitReader</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL205">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR201">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	readerState : Tuple3&lt;List&lt;FileInputSplit&gt;,FileInputSplit,S&gt; to restoredReaderState : List&lt;TimestampedFileInputSplit&gt; in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL83">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	pendingSplits : Queue&lt;FileInputSplit&gt; to pendingSplits : Queue&lt;TimestampedFileInputSplit&gt; in class org.apache.flink.streaming.api.functions.source.ContinuousFileReaderOperator.SplitReader</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eL203">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-4ad14817e962f9d344a4f6004846c28eR199">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	finalCollectedContent : Map&lt;Integer,List&lt;String&gt;&gt; to actualCollectedContent : Map&lt;Integer,Set&lt;String&gt;&gt; in class org.apache.flink.test.checkpointing.ContinuousFileProcessingCheckpointITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9L71">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b410c393c960f55c09fadd4f22732d06f801b938?diff=split#diff-e7503c4900120a2a89ac6ceca69558c9R70">To</a></td>
                             </tr>
                             
                             </tbody>

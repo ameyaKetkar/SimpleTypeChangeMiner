@@ -168,6 +168,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	offset : Param&lt;Integer&gt; to offset : Number in method public addOffset(offset Number) : void in class org.jooq.impl.SelectQueryImpl</i></td>
+                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-64d12045201b8a4578b32eefbe12e82aL1780">From</a></td>
+                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-64d12045201b8a4578b32eefbe12e82aR1781">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	o : Param&lt;Integer&gt; to o : Param&lt;? extends Number&gt; in method public limit(o Param&lt;? extends Number&gt;, l Param&lt;? extends Number&gt;) : SelectImpl in class org.jooq.impl.SelectImpl</i></td>
                                 <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-3629e9ad516176786452f6aabdbd522cL1640">From</a></td>
                                 <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-3629e9ad516176786452f6aabdbd522cR1661">To</a></td>
@@ -271,13 +278,6 @@
                                 <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-64d12045201b8a4578b32eefbe12e82aR1811">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	offset : Param&lt;Integer&gt; to offset : Number in method public addOffset(offset Number) : void in class org.jooq.impl.SelectQueryImpl</i></td>
-                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-64d12045201b8a4578b32eefbe12e82aL1780">From</a></td>
-                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-64d12045201b8a4578b32eefbe12e82aR1781">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -313,6 +313,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public limit(l Number) : SelectImpl extracted from public limit(l int) : SelectImpl in class org.jooq.impl.SelectImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public limit(o Number, l Param&lt;? extends Number&gt;) : SelectImpl extracted from public limit(o int, l Param&lt;Integer&gt;) : SelectImpl in class org.jooq.impl.SelectImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public addLimit(offset Param&lt;? extends Number&gt;, numberOfRows Number) : void extracted from public addLimit(offset Param&lt;Integer&gt;, numberOfRows int) : void in class org.jooq.impl.SelectQueryImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -363,27 +384,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public limit(l Number) : SelectImpl extracted from public limit(l int) : SelectImpl in class org.jooq.impl.SelectImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public limit(o Number, l Param&lt;? extends Number&gt;) : SelectImpl extracted from public limit(o int, l Param&lt;Integer&gt;) : SelectImpl in class org.jooq.impl.SelectImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public addLimit(offset Param&lt;? extends Number&gt;, numberOfRows Number) : void extracted from public addLimit(offset Param&lt;Integer&gt;, numberOfRows int) : void in class org.jooq.impl.SelectQueryImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -394,20 +394,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	numberOfRowsOrMax : Field&lt;Integer&gt; to numberOfRowsOrMax : Field&lt;?&gt; in class org.jooq.impl.Limit</i></td>
-                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09L85">From</a></td>
-                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	offsetPlusOne : Field&lt;Integer&gt; to offsetPlusOne : Field&lt;?&gt; in class org.jooq.impl.Limit</i></td>
-                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09L88">From</a></td>
-                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09R88">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -456,6 +442,20 @@
                                 <td><i>Change Attribute Type	offset : Field&lt;Integer&gt; to offset : Field&lt;?&gt; in class org.jooq.impl.Limit</i></td>
                                 <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09L86">From</a></td>
                                 <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09R86">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	numberOfRowsOrMax : Field&lt;Integer&gt; to numberOfRowsOrMax : Field&lt;?&gt; in class org.jooq.impl.Limit</i></td>
+                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09L85">From</a></td>
+                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09R85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	offsetPlusOne : Field&lt;Integer&gt; to offsetPlusOne : Field&lt;?&gt; in class org.jooq.impl.Limit</i></td>
+                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09L88">From</a></td>
+                                <td><a href = "https://github.com/jOOQ/jOOQ/commit/af0d8e1750fb81de83850a45e0b489c5e305fcfd?diff=split#diff-7f864fe092a4894b984da550194bda09R88">To</a></td>
                             </tr>
                             
                             </tbody>

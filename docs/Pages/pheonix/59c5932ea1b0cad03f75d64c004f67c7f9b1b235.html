@@ -333,20 +333,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public setLockedAncestorTable(value PTableProtos.PTable) : Builder from class org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetTableRequest.Builder to public setParentTable(value PTableProtos.PTable) : Builder from class org.apache.phoenix.coprocessor.generated.MetaDataProtos.CreateTableRequest.Builder</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-86c85b4596b6104fed8b6de84d60ae05L5305">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-86c85b4596b6104fed8b6de84d60ae05R7478">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Method	private addDerivedColumnsFromAncestors(table PTable, timestamp long, clientVersion int, lockedAncestorTable PTable) : PTable from class org.apache.phoenix.coprocessor.MetaDataEndpointImpl to public addDerivedColumnsAndIndexesFromParent(connection PhoenixConnection, table PTable, parentTable PTable) : PTable from class org.apache.phoenix.util.ViewUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L724">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-53b52d28f3c133a2d105287fde2ea72eR304">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Rename Method	public clearSkipAddingParentColumns() : Builder from class org.apache.phoenix.coprocessor.generated.MetaDataProtos.DropTableRequest.Builder to public clearViewModifiedUseStatsForParallelization() : Builder from class org.apache.phoenix.coprocessor.generated.PTableProtos.PTable.Builder</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-86c85b4596b6104fed8b6de84d60ae05L10245">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-46eb1b8a9d2879674351591f220a6477R8440">To</a></td>
@@ -450,6 +436,20 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-46eb1b8a9d2879674351591f220a6477R8407">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Method	public setLockedAncestorTable(value PTableProtos.PTable) : Builder from class org.apache.phoenix.coprocessor.generated.MetaDataProtos.GetTableRequest.Builder to public setParentTable(value PTableProtos.PTable) : Builder from class org.apache.phoenix.coprocessor.generated.MetaDataProtos.CreateTableRequest.Builder</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-86c85b4596b6104fed8b6de84d60ae05L5305">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-86c85b4596b6104fed8b6de84d60ae05R7478">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Method	private addDerivedColumnsFromAncestors(table PTable, timestamp long, clientVersion int, lockedAncestorTable PTable) : PTable from class org.apache.phoenix.coprocessor.MetaDataEndpointImpl to public addDerivedColumnsAndIndexesFromParent(connection PhoenixConnection, table PTable, parentTable PTable) : PTable from class org.apache.phoenix.util.ViewUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L724">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-53b52d28f3c133a2d105287fde2ea72eR304">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -534,16 +534,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	Mutation to void in method private getParentAndPhysicalNames(tableMetadata List&lt;Mutation&gt;, parentTenantSchemaTableNames byte[][], physicalSchemaTableNames byte[][]) : void in class org.apache.phoenix.coprocessor.MetaDataEndpointImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L1982">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45R1601">To</a></td>
+                                <td><i>Change Return Type	boolean to void in method public addIndexesFromParent(connection PhoenixConnection, view PTable, parentTable PTable, inheritedIndexes List&lt;PTable&gt;) : void in class org.apache.phoenix.util.ViewUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-22b411fa63cfb065d1df67bf1c7e6390L834">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-53b52d28f3c133a2d105287fde2ea72eR222">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	boolean to void in method public addIndexesFromParent(connection PhoenixConnection, view PTable, parentTable PTable, inheritedIndexes List&lt;PTable&gt;) : void in class org.apache.phoenix.util.ViewUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-22b411fa63cfb065d1df67bf1c7e6390L834">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-53b52d28f3c133a2d105287fde2ea72eR222">To</a></td>
+                                <td><i>Change Return Type	Mutation to void in method private getParentAndPhysicalNames(tableMetadata List&lt;Mutation&gt;, parentTenantSchemaTableNames byte[][], physicalSchemaTableNames byte[][]) : void in class org.apache.phoenix.coprocessor.MetaDataEndpointImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L1982">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45R1601">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -656,13 +656,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	basePhysicalTable : PTable to table : PTable in method public validateWithChildViews(table PTable, childViews List&lt;PTable&gt;, tableMetadata List&lt;Mutation&gt;, schemaName byte[], tableName byte[]) : MetaDataMutationResult in class org.apache.phoenix.coprocessor.AddColumnMutator</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L3157">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-b1274bc8df61689e5b798d06cd585449R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	additionalTableMetaData : List&lt;Mutation&gt; to tableMetaData : List&lt;Mutation&gt; in method private dropIndexes(env RegionCoprocessorEnvironment, table PTable, invalidateList List&lt;ImmutableBytesPtr&gt;, locks List&lt;RowLock&gt;, clientTimeStamp long, tableMetaData List&lt;Mutation&gt;, columnToDelete PColumn, tableNamesToDelete List&lt;byte[]&gt;, sharedTablesToDelete List&lt;SharedTableState&gt;, clientVersion int) : MetaDataMutationResult in class org.apache.phoenix.coprocessor.MetaDataEndpointImpl</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L3971">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45R2864">To</a></td>
@@ -673,6 +666,13 @@
                                 <td><i>Rename Parameter	basePhysicalTable : PTable to table : PTable in method public validateWithChildViews(table PTable, childViews List&lt;PTable&gt;, tableMetadata List&lt;Mutation&gt;, schemaName byte[], tableName byte[]) : MetaDataMutationResult in class org.apache.phoenix.coprocessor.DropColumnMutator</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L3341">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-1f762ffa41fec5eef81d1c549508c808R92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	basePhysicalTable : PTable to table : PTable in method public validateWithChildViews(table PTable, childViews List&lt;PTable&gt;, tableMetadata List&lt;Mutation&gt;, schemaName byte[], tableName byte[]) : MetaDataMutationResult in class org.apache.phoenix.coprocessor.AddColumnMutator</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-19d4ffaedf0223db6cbcd3e30f034e45L3157">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/59c5932ea1b0cad03f75d64c004f67c7f9b1b235?diff=split#diff-b1274bc8df61689e5b798d06cd585449R94">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -174,6 +174,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	reference : ActorReference&lt;?&gt; to reference : RemoteReference&lt;?&gt; in method public clearState(reference RemoteReference&lt;?&gt;, state Object) : Task&lt;Void&gt; in class com.ea.orbit.actors.extensions.mongodb.MongoDBStorageExtension</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c435ce34e84ee44d911b7cfbb73a5e06L121">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c435ce34e84ee44d911b7cfbb73a5e06R122">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	reference : ActorReference to reference : RemoteReference in method public readState(reference RemoteReference, state Object) : Task&lt;Boolean&gt; in class com.ea.orbit.actors.extensions.ldap.LdapStorageExtension</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-16d961bdaaeff7e57dd2a0071816f65dL98">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-16d961bdaaeff7e57dd2a0071816f65dR100">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	factory : ReferenceFactory to factory : DescriptorFactory in method public RefDeserializer(iClass Class&lt;?&gt;, factory DescriptorFactory) in class com.ea.orbit.actors.extensions.json.ActorReferenceModule.RefDeserializer</i></td>
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-66258cb9b29aa67418a61d56c5131edfL179">From</a></td>
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-66258cb9b29aa67418a61d56c5131edfR179">To</a></td>
@@ -480,20 +494,6 @@
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-b2760234ce6af75b7f7abef52e05d943R149">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	reference : ActorReference&lt;?&gt; to reference : RemoteReference&lt;?&gt; in method public clearState(reference RemoteReference&lt;?&gt;, state Object) : Task&lt;Void&gt; in class com.ea.orbit.actors.extensions.mongodb.MongoDBStorageExtension</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c435ce34e84ee44d911b7cfbb73a5e06L121">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c435ce34e84ee44d911b7cfbb73a5e06R122">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	reference : ActorReference to reference : RemoteReference in method public readState(reference RemoteReference, state Object) : Task&lt;Boolean&gt; in class com.ea.orbit.actors.extensions.ldap.LdapStorageExtension</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-16d961bdaaeff7e57dd2a0071816f65dL98">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-16d961bdaaeff7e57dd2a0071816f65dR100">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -550,6 +550,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	com.ea.orbit.actors.runtime.ActorReference renamed to com.ea.orbit.actors.runtime.RemoteReference</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	com.ea.orbit.actors.runtime.DefaultReferenceFactory renamed to com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -558,13 +565,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	com.ea.orbit.actors.runtime.ActorInvoker renamed to com.ea.orbit.actors.runtime.ObjectInvoker</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	com.ea.orbit.actors.runtime.ActorReference renamed to com.ea.orbit.actors.runtime.RemoteReference</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -615,55 +615,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	reference : ActorReference to reference : RemoteReference in method public write(ctx HandlerContext, message Object) : Task&lt;?&gt; in class com.ea.orbit.actors.test.ActorBaseTest.LoggingExtension</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3L566">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3R575">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	actorReference : ActorReference&lt;?&gt; to actorReference : RemoteReference&lt;?&gt; in method public sendInvocation(ctx HandlerContext, invocation Invocation) : Task&lt;?&gt; in class com.ea.orbit.actors.runtime.Messaging</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-5ea38af5852e1b32b9a844a01ecb89d5L234">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-5ea38af5852e1b32b9a844a01ecb89d5R266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	reference : ActorReference&lt;T&gt; to reference : RemoteReference&lt;T&gt; in method private createObjectReference(iClass Class&lt;T&gt;, observer T, objectId String) : T in class com.ea.orbit.actors.runtime.Execution</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c8aa1f92453a884bb06ce94562693a7fL591">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c8aa1f92453a884bb06ce94562693a7fR615">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	interfaceDescriptor : InterfaceDescriptor to interfaceDescriptor : ClassDescriptor in method private getDescriptor(interfaceId int) : ClassDescriptor in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L125">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R128">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	ref : ActorReference to ref : RemoteReference in method package toString(obj Object) : String in class com.ea.orbit.actors.test.ActorBaseTest.LoggingExtension</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3L546">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3R540">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	descriptor : InterfaceDescriptor to descriptor : ClassDescriptor in method public getInvoker(interfaceId int) : ObjectInvoker&lt;?&gt; in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L155">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R158">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	concurrentInterfaceDescriptor : InterfaceDescriptor to concurrentInterfaceDescriptor : ClassDescriptor in method private getDescriptor(aInterface Class&lt;?&gt;) : ClassDescriptor in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L96">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R115">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -777,6 +728,55 @@
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c1cec6891e64620002721f670aaf19d1R108">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	reference : ActorReference to reference : RemoteReference in method public write(ctx HandlerContext, message Object) : Task&lt;?&gt; in class com.ea.orbit.actors.test.ActorBaseTest.LoggingExtension</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3L566">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3R575">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	actorReference : ActorReference&lt;?&gt; to actorReference : RemoteReference&lt;?&gt; in method public sendInvocation(ctx HandlerContext, invocation Invocation) : Task&lt;?&gt; in class com.ea.orbit.actors.runtime.Messaging</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-5ea38af5852e1b32b9a844a01ecb89d5L234">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-5ea38af5852e1b32b9a844a01ecb89d5R266">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	reference : ActorReference&lt;T&gt; to reference : RemoteReference&lt;T&gt; in method private createObjectReference(iClass Class&lt;T&gt;, observer T, objectId String) : T in class com.ea.orbit.actors.runtime.Execution</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c8aa1f92453a884bb06ce94562693a7fL591">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c8aa1f92453a884bb06ce94562693a7fR615">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	interfaceDescriptor : InterfaceDescriptor to interfaceDescriptor : ClassDescriptor in method private getDescriptor(interfaceId int) : ClassDescriptor in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L125">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R128">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ref : ActorReference to ref : RemoteReference in method package toString(obj Object) : String in class com.ea.orbit.actors.test.ActorBaseTest.LoggingExtension</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3L546">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-8a664fb2652a2f223efcd6968fd4a2b3R540">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	descriptor : InterfaceDescriptor to descriptor : ClassDescriptor in method public getInvoker(interfaceId int) : ObjectInvoker&lt;?&gt; in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L155">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R158">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	concurrentInterfaceDescriptor : InterfaceDescriptor to concurrentInterfaceDescriptor : ClassDescriptor in method private getDescriptor(aInterface Class&lt;?&gt;) : ClassDescriptor in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L96">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R115">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -790,14 +790,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	package findLastHandlerContext(name String) : DefaultHandlerContext extracted from public addHandler(handler Handler, name String) : void in class com.ea.orbit.actors.net.DefaultPipeline</i></td>
+                                <td><i>Extract Method	package addContextBefore(base DefaultHandlerContext, newContext DefaultHandlerContext) : void extracted from public addHandler(handler Handler, name String) : void in class com.ea.orbit.actors.net.DefaultPipeline</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	package addContextBefore(base DefaultHandlerContext, newContext DefaultHandlerContext) : void extracted from public addHandler(handler Handler, name String) : void in class com.ea.orbit.actors.net.DefaultPipeline</i></td>
+                                <td><i>Extract Method	package findLastHandlerContext(name String) : DefaultHandlerContext extracted from public addHandler(handler Handler, name String) : void in class com.ea.orbit.actors.net.DefaultPipeline</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -855,62 +855,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-20" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	InterfaceDescriptor to ClassDescriptor in method private getDescriptor(aInterface Class&lt;?&gt;) : ClassDescriptor in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L96">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ActorFactory&lt;T&gt; to ReferenceFactory&lt;T&gt; in method public getFactoryFor(aInterface Class&lt;T&gt;) : ReferenceFactory&lt;T&gt; in class com.ea.orbit.actors.runtime.ActorFactoryGenerator</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850L91">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850R91">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ActorFactory&lt;T&gt; to ReferenceFactory&lt;T&gt; in method private getFactory(iClass Class&lt;T&gt;) : ReferenceFactory&lt;T&gt; in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L186">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R189">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ActorInvoker&lt;?&gt; to ObjectInvoker&lt;?&gt; in method public getInvoker(interfaceId int) : ObjectInvoker&lt;?&gt; in class com.ea.orbit.actors.Stage</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290L760">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290R756">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ActorInvoker&lt;T&gt; to ObjectInvoker&lt;T&gt; in method public getInvoker() : ObjectInvoker&lt;T&gt; in class com.ea.orbit.actors.runtime.ActorFactoryGenerator.GenericActorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850L71">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850R71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ActorReference to RemoteReference in method public from(actor AbstractActor) : RemoteReference in class com.ea.orbit.actors.runtime.RemoteReference</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9ec5b4a4c04f2167738ceade2155d3aaL203">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c1cec6891e64620002721f670aaf19d1R203">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ActorInvoker&lt;Object&gt; to ObjectInvoker&lt;Object&gt; in method public getInvokerFor(concreteClass Class&lt;?&gt;) : ObjectInvoker&lt;Object&gt; in class com.ea.orbit.actors.runtime.ActorFactoryGenerator</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850L190">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850R190">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to ObjectInvoker&lt;?&gt; in method public getInvoker(interfaceId int) : ObjectInvoker&lt;?&gt; in class com.ea.orbit.actors.test.FakeClient</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-0285160343ffa2b04fcca7ac98d81b2bL17">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-0285160343ffa2b04fcca7ac98d81b2bR73">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -996,6 +940,62 @@
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c1cec6891e64620002721f670aaf19d1R208">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	InterfaceDescriptor to ClassDescriptor in method private getDescriptor(aInterface Class&lt;?&gt;) : ClassDescriptor in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L96">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R96">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ActorFactory&lt;T&gt; to ReferenceFactory&lt;T&gt; in method public getFactoryFor(aInterface Class&lt;T&gt;) : ReferenceFactory&lt;T&gt; in class com.ea.orbit.actors.runtime.ActorFactoryGenerator</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850L91">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850R91">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ActorFactory&lt;T&gt; to ReferenceFactory&lt;T&gt; in method private getFactory(iClass Class&lt;T&gt;) : ReferenceFactory&lt;T&gt; in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L186">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R189">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ActorInvoker&lt;?&gt; to ObjectInvoker&lt;?&gt; in method public getInvoker(interfaceId int) : ObjectInvoker&lt;?&gt; in class com.ea.orbit.actors.Stage</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290L760">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290R756">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ActorInvoker&lt;T&gt; to ObjectInvoker&lt;T&gt; in method public getInvoker() : ObjectInvoker&lt;T&gt; in class com.ea.orbit.actors.runtime.ActorFactoryGenerator.GenericActorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850L71">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ActorReference to RemoteReference in method public from(actor AbstractActor) : RemoteReference in class com.ea.orbit.actors.runtime.RemoteReference</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9ec5b4a4c04f2167738ceade2155d3aaL203">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c1cec6891e64620002721f670aaf19d1R203">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ActorInvoker&lt;Object&gt; to ObjectInvoker&lt;Object&gt; in method public getInvokerFor(concreteClass Class&lt;?&gt;) : ObjectInvoker&lt;Object&gt; in class com.ea.orbit.actors.runtime.ActorFactoryGenerator</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850L190">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-09931a776fed9f07c494fbe397eed850R190">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to ObjectInvoker&lt;?&gt; in method public getInvoker(interfaceId int) : ObjectInvoker&lt;?&gt; in class com.ea.orbit.actors.test.FakeClient</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-0285160343ffa2b04fcca7ac98d81b2bL17">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-0285160343ffa2b04fcca7ac98d81b2bR73">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1067,6 +1067,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-21" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	runtime : Runtime to runtime : BasicRuntime in class com.ea.orbit.actors.runtime.RemoteReference</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9ec5b4a4c04f2167738ceade2155d3aaL57">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c1cec6891e64620002721f670aaf19d1R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	instance : DefaultReferenceFactory to instance : DefaultDescriptorFactory in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L52">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	cachedRef : WeakReference&lt;Runtime&gt; to cachedRef : WeakReference&lt;ActorRuntime&gt; in class com.ea.orbit.actors.Stage</i></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290L138">From</a></td>
+                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290R138">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1192,27 +1213,6 @@
                                 <td><i>Change Attribute Type	factories : ConcurrentMap&lt;Class&lt;?&gt;,ActorFactory&lt;?&gt;&gt; to factories : ConcurrentMap&lt;Class&lt;?&gt;,ReferenceFactory&lt;?&gt;&gt; in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L54">From</a></td>
                                 <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	runtime : Runtime to runtime : BasicRuntime in class com.ea.orbit.actors.runtime.RemoteReference</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9ec5b4a4c04f2167738ceade2155d3aaL57">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-c1cec6891e64620002721f670aaf19d1R57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	instance : DefaultReferenceFactory to instance : DefaultDescriptorFactory in class com.ea.orbit.actors.runtime.DefaultDescriptorFactory</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-2acbd01a70e9d422a84c9ef799fb1b69L52">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-89fedf713d96aadf3e7e7bb930213f64R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	cachedRef : WeakReference&lt;Runtime&gt; to cachedRef : WeakReference&lt;ActorRuntime&gt; in class com.ea.orbit.actors.Stage</i></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290L138">From</a></td>
-                                <td><a href = "https://github.com/orbit/orbit/commit/c5d4082c3f15cfe70c123ffcf85e4da1270ad983?diff=split#diff-9aaf540ec7ec61abff475e4ae442d290R138">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -154,16 +154,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	ctx : DirContext to ctxConsumer : Consumer&lt;Consumer&lt;DirContext&gt;&gt; in method private getAllRoles(user DirContextOperations, userDn String, result List&lt;GrantedAuthority&gt;, userName String, ctxConsumer Consumer&lt;Consumer&lt;DirContext&gt;&gt;) : void in class org.geoserver.security.ldap.BindingLdapAuthoritiesPopulator</i></td>
-                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bL292">From</a></td>
-                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bR417">To</a></td>
+                                <td><i>Change Parameter Type	ctx : DirContext to ctxConsumer : Consumer&lt;Consumer&lt;DirContext&gt;&gt; in method public getGroupMembershipRoles(ctxConsumer Consumer&lt;Consumer&lt;DirContext&gt;&gt;, userDn String, username String) : Set&lt;GrantedAuthority&gt; in class org.geoserver.security.ldap.BindingLdapAuthoritiesPopulator</i></td>
+                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bL168">From</a></td>
+                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bR199">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	ctx : DirContext to ctxConsumer : Consumer&lt;Consumer&lt;DirContext&gt;&gt; in method public getGroupMembershipRoles(ctxConsumer Consumer&lt;Consumer&lt;DirContext&gt;&gt;, userDn String, username String) : Set&lt;GrantedAuthority&gt; in class org.geoserver.security.ldap.BindingLdapAuthoritiesPopulator</i></td>
-                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bL168">From</a></td>
-                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bR199">To</a></td>
+                                <td><i>Change Parameter Type	ctx : DirContext to ctxConsumer : Consumer&lt;Consumer&lt;DirContext&gt;&gt; in method private getAllRoles(user DirContextOperations, userDn String, result List&lt;GrantedAuthority&gt;, userName String, ctxConsumer Consumer&lt;Consumer&lt;DirContext&gt;&gt;) : void in class org.geoserver.security.ldap.BindingLdapAuthoritiesPopulator</i></td>
+                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bL292">From</a></td>
+                                <td><a href = "https://github.com/geoserver/geoserver/commit/c6ec068909cb552333d2a5ae0ea314ca37218b7b?diff=split#diff-4466f7ff6b1545f2d167ec316e53346bR417">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -197,13 +197,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	userByUsername : GeoServerUser in method public executeWithContext(ctx DirContext, ldapEntryIdentification LdapEntryIdentification) : void from class org.geoserver.security.ldap.LDAPUserGroupService.addUsersFromGroup.authenticateIfNeeded</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	userDn : String in method public getRolesForUser(username String) : SortedSet&lt;GeoServerRole&gt; from class org.geoserver.security.ldap.LDAPRoleService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -212,6 +205,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	attribute : Object in method public executeWithContext(ctx DirContext, ldapEntryIdentification LdapEntryIdentification) : void from class org.geoserver.security.ldap.LDAPBaseSecurityService.getUserNameFromMembership.authenticateIfNeeded</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	userByUsername : GeoServerUser in method public executeWithContext(ctx DirContext, ldapEntryIdentification LdapEntryIdentification) : void from class org.geoserver.security.ldap.LDAPUserGroupService.addUsersFromGroup.authenticateIfNeeded</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -247,14 +247,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private addUsersFromGroup(group GeoServerUserGroup, users Set&lt;GeoServerUser&gt;) : void extracted from public getUsersForGroup(group GeoServerUserGroup) : SortedSet&lt;GeoServerUser&gt; in class org.geoserver.security.ldap.LDAPUserGroupService</i></td>
+                                <td><i>Extract Method	private normalizeGroupName(role String) : String extracted from private fillUsersForRole(ctx DirContext, users SortedSet&lt;String&gt;, role GeoServerRole) : void in class org.geoserver.security.ldap.LDAPRoleService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private normalizeGroupName(role String) : String extracted from private fillUsersForRole(ctx DirContext, users SortedSet&lt;String&gt;, role GeoServerRole) : void in class org.geoserver.security.ldap.LDAPRoleService</i></td>
+                                <td><i>Extract Method	private addUsersFromGroup(group GeoServerUserGroup, users Set&lt;GeoServerUser&gt;) : void extracted from public getUsersForGroup(group GeoServerUserGroup) : SortedSet&lt;GeoServerUser&gt; in class org.geoserver.security.ldap.LDAPUserGroupService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

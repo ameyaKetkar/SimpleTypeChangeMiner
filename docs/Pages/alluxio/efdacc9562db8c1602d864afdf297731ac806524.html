@@ -325,6 +325,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	tachyon.thrift.LineageMasterService.AsyncClient.recreateFile_call renamed to tachyon.thrift.LineageMasterService.AsyncClient.reinitializeFile_call</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	tachyon.thrift.LineageMasterService.recreateFile_result renamed to tachyon.thrift.LineageMasterService.reinitializeFile_result</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	tachyon.thrift.LineageMasterService.AsyncProcessor.recreateFile renamed to tachyon.thrift.LineageMasterService.AsyncProcessor.reinitializeFile</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -340,20 +354,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	tachyon.thrift.LineageMasterService.recreateFile_args renamed to tachyon.thrift.LineageMasterService.reinitializeFile_args</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	tachyon.thrift.LineageMasterService.AsyncClient.recreateFile_call renamed to tachyon.thrift.LineageMasterService.AsyncClient.reinitializeFile_call</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	tachyon.thrift.LineageMasterService.recreateFile_result renamed to tachyon.thrift.LineageMasterService.reinitializeFile_result</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -438,6 +438,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	result : recreateFile_result to result : reinitializeFile_result in method public getResult(iface I, args reinitializeFile_args) : reinitializeFile_result in class tachyon.thrift.LineageMasterService.Processor.reinitializeFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL600">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR601">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	outputFiles : List&lt;LineageFileInfo&gt; to mId : long in method public generateLineageInfo() : LineageInfo in class tachyon.master.lineage.meta.Lineage</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e79b96091454e796bce47da1f87c6b32L74">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e79b96091454e796bce47da1f87c6b32R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	method_call : recreateFile_call to method_call : reinitializeFile_call in method public reinitializeFile(path String, blockSizeBytes long, ttl long, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.LineageMasterService.AsyncClient</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL382">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR384">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	args : recreateFile_args to args : reinitializeFile_args in method public send_reinitializeFile(path String, blockSizeBytes long, ttl long) : void in class tachyon.thrift.LineageMasterService.Client</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL187">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR189">To</a></td>
@@ -471,27 +492,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR198">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : recreateFile_result to result : reinitializeFile_result in method public getResult(iface I, args reinitializeFile_args) : reinitializeFile_result in class tachyon.thrift.LineageMasterService.Processor.reinitializeFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL600">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR601">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	outputFiles : List&lt;LineageFileInfo&gt; to mId : long in method public generateLineageInfo() : LineageInfo in class tachyon.master.lineage.meta.Lineage</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e79b96091454e796bce47da1f87c6b32L74">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e79b96091454e796bce47da1f87c6b32R37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	method_call : recreateFile_call to method_call : reinitializeFile_call in method public reinitializeFile(path String, blockSizeBytes long, ttl long, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.LineageMasterService.AsyncClient</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL382">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR384">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -520,69 +520,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-83" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getMBlockIds() : List&lt;Long&gt; renamed to public getBlockIds() : List&lt;Long&gt; in class tachyon.thrift.CheckpointFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L203">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R203">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public isSetMId() : boolean renamed to public isSetId() : boolean in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L190">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R190">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setMId(mId long) : LineageInfo renamed to public setId(id long) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL244">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR244">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getMCommandType() : CommandType renamed to public getCommandType() : CommandType in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L173">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R173">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setMJob(mJob CommandLineJobInfo) : LineageInfo renamed to public setJob(job CommandLineJobInfo) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL345">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR345">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public isSetMCommandType() : boolean renamed to public isSetCommandType() : boolean in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L194">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R194">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setMOutputFilesIsSet(value boolean) : void renamed to public setOutputFilesIsSet(value boolean) : void in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL335">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR335">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private recreate(path TachyonURI, options OutStreamOptions) : long renamed to private reinitializeFile(path TachyonURI, options OutStreamOptions) : long in class tachyon.client.lineage.TachyonLineageFileSystem</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-200e1c0037512fec336e1125230ab2b2L55">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-200e1c0037512fec336e1125230ab2b2R55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public isSetMState() : boolean renamed to public isSetState() : boolean in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L212">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R212">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1102,6 +1039,69 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R207">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getMBlockIds() : List&lt;Long&gt; renamed to public getBlockIds() : List&lt;Long&gt; in class tachyon.thrift.CheckpointFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L203">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R203">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public isSetMId() : boolean renamed to public isSetId() : boolean in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L190">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R190">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setMId(mId long) : LineageInfo renamed to public setId(id long) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL244">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR244">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getMCommandType() : CommandType renamed to public getCommandType() : CommandType in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L173">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R173">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setMJob(mJob CommandLineJobInfo) : LineageInfo renamed to public setJob(job CommandLineJobInfo) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL345">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR345">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public isSetMCommandType() : boolean renamed to public isSetCommandType() : boolean in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L194">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R194">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setMOutputFilesIsSet(value boolean) : void renamed to public setOutputFilesIsSet(value boolean) : void in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL335">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR335">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private recreate(path TachyonURI, options OutStreamOptions) : long renamed to private reinitializeFile(path TachyonURI, options OutStreamOptions) : long in class tachyon.client.lineage.TachyonLineageFileSystem</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-200e1c0037512fec336e1125230ab2b2L55">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-200e1c0037512fec336e1125230ab2b2R55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public isSetMState() : boolean renamed to public isSetState() : boolean in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L212">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R212">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1112,6 +1112,62 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-40" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	present_mCheckpointFiles : boolean to present_checkpointFiles : boolean in method public hashCode() : int in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L335">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R335">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	that_present_mId : boolean to that_present_id : boolean in method public equals(that LineageInfo) : boolean in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL593">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR593">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	that_present_mId : boolean to that_present_id : boolean in method public equals(that LineageFileInfo) : boolean in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L322">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R322">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	present_mInputFiles : boolean to present_inputFiles : boolean in method public hashCode() : int in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL667">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR667">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	present_mCommandType : boolean to present_commandType : boolean in method public hashCode() : int in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L330">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R330">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	that_present_mJob : boolean to that_present_job : boolean in method public equals(that LineageInfo) : boolean in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL620">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR620">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	present_mId : boolean to present_id : boolean in method public hashCode() : int in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL662">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR662">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	that_present_mCommandType : boolean to that_present_commandType : boolean in method public equals(that LineageCommand) : boolean in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L306">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R306">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1337,62 +1393,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR611">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	present_mCheckpointFiles : boolean to present_checkpointFiles : boolean in method public hashCode() : int in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L335">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R335">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	that_present_mId : boolean to that_present_id : boolean in method public equals(that LineageInfo) : boolean in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL593">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR593">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	that_present_mId : boolean to that_present_id : boolean in method public equals(that LineageFileInfo) : boolean in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L322">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R322">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	present_mInputFiles : boolean to present_inputFiles : boolean in method public hashCode() : int in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL667">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR667">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	present_mCommandType : boolean to present_commandType : boolean in method public hashCode() : int in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L330">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R330">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	that_present_mJob : boolean to that_present_job : boolean in method public equals(that LineageInfo) : boolean in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL620">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR620">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	present_mId : boolean to present_id : boolean in method public hashCode() : int in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL662">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR662">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	that_present_mCommandType : boolean to that_present_commandType : boolean in method public equals(that LineageCommand) : boolean in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L306">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R306">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1403,6 +1403,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	recreateFile_args to reinitializeFile_args in method public setBlockSizeBytes(blockSizeBytes long) : reinitializeFile_args in class tachyon.thrift.LineageMasterService.reinitializeFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL4372">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR4372">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	recreateFile_args to reinitializeFile_args in method public setTtl(ttl long) : reinitializeFile_args in class tachyon.thrift.LineageMasterService.reinitializeFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL4395">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR4395">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	recreateFile_result to reinitializeFile_result in method public getResult(iface I, args reinitializeFile_args) : reinitializeFile_result in class tachyon.thrift.LineageMasterService.Processor.reinitializeFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL600">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR600">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	recreateFile_args to reinitializeFile_args in method public getEmptyArgsInstance() : reinitializeFile_args in class tachyon.thrift.LineageMasterService.Processor.reinitializeFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL592">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR592">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1481,34 +1509,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR4957">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	recreateFile_args to reinitializeFile_args in method public setBlockSizeBytes(blockSizeBytes long) : reinitializeFile_args in class tachyon.thrift.LineageMasterService.reinitializeFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL4372">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR4372">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	recreateFile_args to reinitializeFile_args in method public setTtl(ttl long) : reinitializeFile_args in class tachyon.thrift.LineageMasterService.reinitializeFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL4395">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR4395">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	recreateFile_result to reinitializeFile_result in method public getResult(iface I, args reinitializeFile_args) : reinitializeFile_result in class tachyon.thrift.LineageMasterService.Processor.reinitializeFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL600">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR600">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	recreateFile_args to reinitializeFile_args in method public getEmptyArgsInstance() : reinitializeFile_args in class tachyon.thrift.LineageMasterService.Processor.reinitializeFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL592">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR592">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1544,6 +1544,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-28" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	WORKER_LINEAGE_SYNC_INTERVAL_MS : String to WORKER_LINEAGE_HEARTBEAT_INTERVAL_MS : String in class tachyon.Constants</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e1f168d496029608a5f4a145489ff9f6L219">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e1f168d496029608a5f4a145489ff9f6R219">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	mCheckpointFiles : List&lt;CheckpointFile&gt; to checkpointFiles : List&lt;CheckpointFile&gt; in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L55">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	M_COMMAND_TYPE_FIELD_DESC : TField to COMMAND_TYPE_FIELD_DESC : TField in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L41">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	__MCREATIONTIMEMS_ISSET_ID : int to __CREATIONTIMEMS_ISSET_ID : int in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL141">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR141">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	M_UNDER_FILE_PATH_FIELD_DESC : TField to UNDER_FILE_PATH_FIELD_DESC : TField in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L43">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R43">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1706,41 +1741,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R52">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	WORKER_LINEAGE_SYNC_INTERVAL_MS : String to WORKER_LINEAGE_HEARTBEAT_INTERVAL_MS : String in class tachyon.Constants</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e1f168d496029608a5f4a145489ff9f6L219">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-e1f168d496029608a5f4a145489ff9f6R219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	mCheckpointFiles : List&lt;CheckpointFile&gt; to checkpointFiles : List&lt;CheckpointFile&gt; in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L55">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	M_COMMAND_TYPE_FIELD_DESC : TField to COMMAND_TYPE_FIELD_DESC : TField in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L41">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	__MCREATIONTIMEMS_ISSET_ID : int to __CREATIONTIMEMS_ISSET_ID : int in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL141">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR141">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	M_UNDER_FILE_PATH_FIELD_DESC : TField to UNDER_FILE_PATH_FIELD_DESC : TField in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L43">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R43">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1769,6 +1769,76 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-24" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mState : String to state : String in method public setState(state String) : LineageFileInfo in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L203">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R203">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mJob : CommandLineJobInfo to job : CommandLineJobInfo in method public setJob(job CommandLineJobInfo) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL345">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR345">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mUnderFilePath : String to underFilePath : String in method public setUnderFilePath(underFilePath String) : LineageFileInfo in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L227">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R227">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mCreationTimeMs : long to creationTimeMs : long in method public setCreationTimeMs(creationTimeMs long) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL369">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR369">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mFileId : long to fileId : long in method public CheckpointFile(fileId long, blockIds List&lt;Long&gt;) in class tachyon.thrift.CheckpointFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L133">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R133">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mCheckpointFiles : List&lt;CheckpointFile&gt; to checkpointFiles : List&lt;CheckpointFile&gt; in method public LineageCommand(commandType CommandType, checkpointFiles List&lt;CheckpointFile&gt;) in class tachyon.thrift.LineageCommand</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L140">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mFileId : long to fileId : long in method public setFileId(fileId long) : CheckpointFile in class tachyon.thrift.CheckpointFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L169">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R169">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mId : long to id : long in method public setId(id long) : LineageFileInfo in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L180">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R180">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mJob : CommandLineJobInfo to job : CommandLineJobInfo in method public LineageInfo(id long, inputFiles List&lt;Long&gt;, outputFiles List&lt;LineageFileInfo&gt;, job CommandLineJobInfo, creationTimeMs long, parents List&lt;Long&gt;, children List&lt;Long&gt;) in class tachyon.thrift.LineageInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL175">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR175">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	mState : String to state : String in method public LineageFileInfo(id long, state String, underFilePath String) in class tachyon.thrift.LineageFileInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L140">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R140">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1866,76 +1936,6 @@
                                 <td><i>Rename Parameter	mBlockIds : List&lt;Long&gt; to blockIds : List&lt;Long&gt; in method public setBlockIds(blockIds List&lt;Long&gt;) : CheckpointFile in class tachyon.thrift.CheckpointFile</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L207">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R207">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mState : String to state : String in method public setState(state String) : LineageFileInfo in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L203">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R203">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mJob : CommandLineJobInfo to job : CommandLineJobInfo in method public setJob(job CommandLineJobInfo) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL345">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR345">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mUnderFilePath : String to underFilePath : String in method public setUnderFilePath(underFilePath String) : LineageFileInfo in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L227">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R227">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mCreationTimeMs : long to creationTimeMs : long in method public setCreationTimeMs(creationTimeMs long) : LineageInfo in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL369">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR369">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mFileId : long to fileId : long in method public CheckpointFile(fileId long, blockIds List&lt;Long&gt;) in class tachyon.thrift.CheckpointFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L133">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R133">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mCheckpointFiles : List&lt;CheckpointFile&gt; to checkpointFiles : List&lt;CheckpointFile&gt; in method public LineageCommand(commandType CommandType, checkpointFiles List&lt;CheckpointFile&gt;) in class tachyon.thrift.LineageCommand</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2L140">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-7facba5ccba20360c2486340487f77f2R140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mFileId : long to fileId : long in method public setFileId(fileId long) : CheckpointFile in class tachyon.thrift.CheckpointFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L169">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R169">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mId : long to id : long in method public setId(id long) : LineageFileInfo in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L180">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R180">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mJob : CommandLineJobInfo to job : CommandLineJobInfo in method public LineageInfo(id long, inputFiles List&lt;Long&gt;, outputFiles List&lt;LineageFileInfo&gt;, job CommandLineJobInfo, creationTimeMs long, parents List&lt;Long&gt;, children List&lt;Long&gt;) in class tachyon.thrift.LineageInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL175">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR175">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	mState : String to state : String in method public LineageFileInfo(id long, state String, underFilePath String) in class tachyon.thrift.LineageFileInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6L140">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efdacc9562db8c1602d864afdf297731ac806524?diff=split#diff-64e8bd2b37b132ff7023409c03aa10a6R140">To</a></td>
                             </tr>
                             
                             </tbody>

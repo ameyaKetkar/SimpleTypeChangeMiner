@@ -276,14 +276,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.keycloak.cluster.infinispan.ConcurrencyJDGSessionsCacheTest renamed to org.keycloak.cluster.infinispan.ConcurrencyJDGCacheReplaceTest</i></td>
+                                <td><i>Rename Class	org.keycloak.cluster.infinispan.ConcurrencyJDGRemoteCacheTest renamed to org.keycloak.cluster.infinispan.ConcurrencyJDGCachePutTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.keycloak.cluster.infinispan.ConcurrencyJDGRemoteCacheTest renamed to org.keycloak.cluster.infinispan.ConcurrencyJDGCachePutTest</i></td>
+                                <td><i>Rename Class	org.keycloak.cluster.infinispan.ConcurrencyJDGSessionsCacheTest renamed to org.keycloak.cluster.infinispan.ConcurrencyJDGCacheReplaceTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -376,6 +376,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	nodeName : String to route : String in method public encodeSessionId(sessionId String) : String in class org.keycloak.models.sessions.infinispan.InfinispanStickySessionEncoderProvider</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-322618f9c0a3662d329a437d730b0883L48">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-322618f9c0a3662d329a437d730b0883R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	authSessionIds : List&lt;String&gt; to authSessionCookies : List&lt;String&gt; in method public getCurrentAuthenticationSession(realm RealmModel, client ClientModel, tabId String) : AuthenticationSessionModel in class org.keycloak.services.managers.AuthenticationSessionManager</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6L117">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6R119">To</a></td>
@@ -407,13 +414,6 @@
                                 <td><i>Rename Variable	iteration : int to replaceIteration : int in method private replace(topology TopologyInfo, remoteCache RemoteCache&lt;K,SessionEntityWrapper&lt;V&gt;&gt;, lifespanMs long, maxIdleMs long, key K, task SessionUpdateTask&lt;V&gt;) : void in class org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheInvoker</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-7801deb07db7bed1b50cf230681d1324L136">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-7801deb07db7bed1b50cf230681d1324R139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	nodeName : String to route : String in method public encodeSessionId(sessionId String) : String in class org.keycloak.models.sessions.infinispan.InfinispanStickySessionEncoderProvider</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-322618f9c0a3662d329a437d730b0883L48">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-322618f9c0a3662d329a437d730b0883R47">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -468,20 +468,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	myAddress : String to topologyInfo : TopologyInfo in class org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-6066aa282a52e5d3f37a0368ef240197L52">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-6066aa282a52e5d3f37a0368ef240197R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	nodeName : String to topologyInfo : TopologyInfo in class org.keycloak.connections.infinispan.DefaultInfinispanConnectionProvider</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-9e799aee20af8997d90deb73185df9feL32">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-9e799aee20af8997d90deb73185df9feR31">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	myAddress : String to topologyInfo : TopologyInfo in class org.keycloak.models.sessions.infinispan.changes.sessions.LastSessionRefreshListener</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-d47ee9dd0bbe629a2b4c9160a98303b0L49">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-d47ee9dd0bbe629a2b4c9160a98303b0R49">To</a></td>
@@ -492,6 +478,20 @@
                                 <td><i>Rename Attribute	sessionsPerSegment : int to ctx : SessionLoader.LoaderContext in class org.keycloak.models.sessions.infinispan.initializer.SessionInitializerWorker</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-bae20d93121059ec77ed776aebfe2bc6L39">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-bae20d93121059ec77ed776aebfe2bc6R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	myAddress : String to topologyInfo : TopologyInfo in class org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-6066aa282a52e5d3f37a0368ef240197L52">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-6066aa282a52e5d3f37a0368ef240197R54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	nodeName : String to topologyInfo : TopologyInfo in class org.keycloak.connections.infinispan.DefaultInfinispanConnectionProvider</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-9e799aee20af8997d90deb73185df9feL32">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-9e799aee20af8997d90deb73185df9feR31">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -546,6 +546,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	first : int to segment : int in method public loadSessions(session KeycloakSession, ctx OfflinePersistentUserSessionLoaderContext, segment int) : boolean in class org.keycloak.models.sessions.infinispan.initializer.OfflinePersistentUserSessionLoader</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-63f5998a390fcc0b132f5dfc748e2320L70">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-63f5998a390fcc0b132f5dfc748e2320R78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	decodedAuthSessionId : String to oldEncodedAuthSessionId : String in method package reencodeAuthSessionCookie(oldEncodedAuthSessionId String, newAuthSessionId AuthSessionId, realm RealmModel) : void in class org.keycloak.services.managers.AuthenticationSessionManager</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6L158">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6R171">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	nodeName : String to topologyInfo : TopologyInfo in method public DefaultInfinispanConnectionProvider(cacheManager EmbeddedCacheManager, remoteCacheProvider RemoteCacheProvider, topologyInfo TopologyInfo) in class org.keycloak.connections.infinispan.DefaultInfinispanConnectionProvider</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-9e799aee20af8997d90deb73185df9feL34">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-9e799aee20af8997d90deb73185df9feR33">To</a></td>
@@ -563,20 +577,6 @@
                                 <td><i>Rename Parameter	authSessionId : String to encodedAuthSessionId : String in method package decodeAuthSessionId(encodedAuthSessionId String) : AuthSessionId in class org.keycloak.services.managers.AuthenticationSessionManager</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6L149">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6R161">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	first : int to segment : int in method public loadSessions(session KeycloakSession, ctx OfflinePersistentUserSessionLoaderContext, segment int) : boolean in class org.keycloak.models.sessions.infinispan.initializer.OfflinePersistentUserSessionLoader</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-63f5998a390fcc0b132f5dfc748e2320L70">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-63f5998a390fcc0b132f5dfc748e2320R78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	decodedAuthSessionId : String to oldEncodedAuthSessionId : String in method package reencodeAuthSessionCookie(oldEncodedAuthSessionId String, newAuthSessionId AuthSessionId, realm RealmModel) : void in class org.keycloak.services.managers.AuthenticationSessionManager</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6L158">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/6fc99cd7496be821f3f852eb4aa06c71fa522d77?diff=split#diff-34a6cfd084373763f6e0f212b15deee6R171">To</a></td>
                             </tr>
                             
                             </tbody>

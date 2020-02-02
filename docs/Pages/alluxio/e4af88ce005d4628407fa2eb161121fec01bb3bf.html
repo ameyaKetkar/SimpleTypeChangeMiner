@@ -184,20 +184,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public addCheckpoint(fileId long, nonce long) : void renamed to public persistFile(fileId long, nonce long, path String) : void in class tachyon.thrift.WorkerService.Iface</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L44">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public addCheckpoint(fileId long, nonce long, resultHandler AsyncMethodCallback) : void renamed to public persistFile(fileId long, nonce long, path String, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.WorkerService.AsyncClient</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L508">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R509">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public addCheckpointEntryTest() : void renamed to public persistFileEntryTest() : void in class tachyon.master.journal.JournalFormatterTestBase</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-f49b3635256e571aa23ccb72d4454e41L164">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-f49b3635256e571aa23ccb72d4454e41R164">To</a></td>
@@ -252,6 +238,20 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-13a2621f887dac183343b2d365f8d783R66">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public addCheckpoint(fileId long, nonce long) : void renamed to public persistFile(fileId long, nonce long, path String) : void in class tachyon.thrift.WorkerService.Iface</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L44">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public addCheckpoint(fileId long, nonce long, resultHandler AsyncMethodCallback) : void renamed to public persistFile(fileId long, nonce long, path String, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.WorkerService.AsyncClient</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L508">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R509">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -262,6 +262,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	struct : addCheckpoint_result to struct : persistFile_result in method public read(iprot TProtocol, struct persistFile_result) : void in class tachyon.thrift.WorkerService.persistFile_result.persistFile_resultStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L3387">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R3496">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	args : addCheckpoint_args to args : persistFile_args in method public start(iface I, args persistFile_args, resultHandler AsyncMethodCallback&lt;Void&gt;) : void in class tachyon.thrift.WorkerService.AsyncProcessor.persistFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L1286">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R1290">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	that : addCheckpoint_args to that : persistFile_args in method public equals(that persistFile_args) : boolean in class tachyon.thrift.WorkerService.persistFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L2629">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R2683">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	struct : addCheckpoint_args to struct : persistFile_args in method public read(prot TProtocol, struct persistFile_args) : void in class tachyon.thrift.WorkerService.persistFile_args.persistFile_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L2841">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R2947">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -345,34 +373,6 @@
                                 <td><i>Change Parameter Type	struct : addCheckpoint_result to struct : persistFile_result in method public write(oprot TProtocol, struct persistFile_result) : void in class tachyon.thrift.WorkerService.persistFile_result.persistFile_resultStandardScheme</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L3444">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R3553">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	struct : addCheckpoint_result to struct : persistFile_result in method public read(iprot TProtocol, struct persistFile_result) : void in class tachyon.thrift.WorkerService.persistFile_result.persistFile_resultStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L3387">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R3496">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	args : addCheckpoint_args to args : persistFile_args in method public start(iface I, args persistFile_args, resultHandler AsyncMethodCallback&lt;Void&gt;) : void in class tachyon.thrift.WorkerService.AsyncProcessor.persistFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L1286">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R1290">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	that : addCheckpoint_args to that : persistFile_args in method public equals(that persistFile_args) : boolean in class tachyon.thrift.WorkerService.persistFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L2629">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R2683">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	struct : addCheckpoint_args to struct : persistFile_args in method public read(prot TProtocol, struct persistFile_args) : void in class tachyon.thrift.WorkerService.persistFile_args.persistFile_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L2841">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R2947">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -522,20 +522,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	tachyon.thrift.WorkerService.Processor.addCheckpoint renamed to tachyon.thrift.WorkerService.Processor.persistFile</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	tachyon.thrift.WorkerService.addCheckpoint_args renamed to tachyon.thrift.WorkerService.persistFile_args</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	tachyon.thrift.WorkerService.AsyncProcessor.addCheckpoint renamed to tachyon.thrift.WorkerService.AsyncProcessor.persistFile</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -555,6 +541,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	tachyon.thrift.WorkerService.Processor.addCheckpoint renamed to tachyon.thrift.WorkerService.Processor.persistFile</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	tachyon.thrift.WorkerService.addCheckpoint_args renamed to tachyon.thrift.WorkerService.persistFile_args</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -565,6 +565,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.WorkerService.addCheckpoint_result.addCheckpoint_resultStandardSchemeFactory moved and renamed to tachyon.thrift.WorkerService.persistFile_result.persistFile_resultStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.WorkerService.addCheckpoint_args.addCheckpoint_argsStandardSchemeFactory moved and renamed to tachyon.thrift.WorkerService.persistFile_args.persistFile_argsStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -608,20 +622,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.WorkerService.addCheckpoint_result.addCheckpoint_resultStandardSchemeFactory moved and renamed to tachyon.thrift.WorkerService.persistFile_result.persistFile_resultStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.WorkerService.addCheckpoint_args.addCheckpoint_argsStandardSchemeFactory moved and renamed to tachyon.thrift.WorkerService.persistFile_args.persistFile_argsStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -653,6 +653,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	args : addCheckpoint_args to args : persistFile_args in method public write_args(prot TProtocol) : void in class tachyon.thrift.WorkerService.AsyncClient.persistFile_call</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L524">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R529">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	result : addCheckpoint_result to result : persistFile_result in method public recv_persistFile() : void in class tachyon.thrift.WorkerService.Client</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L211">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R214">To</a></td>
@@ -677,13 +684,6 @@
                                 <td><i>Change Variable Type	args : addCheckpoint_args to args : persistFile_args in method public send_persistFile(fileId long, nonce long, path String) : void in class tachyon.thrift.WorkerService.Client</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L203">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R205">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	args : addCheckpoint_args to args : persistFile_args in method public write_args(prot TProtocol) : void in class tachyon.thrift.WorkerService.AsyncClient.persistFile_call</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872L524">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/e4af88ce005d4628407fa2eb161121fec01bb3bf?diff=split#diff-146466386de0c6fce4db02c83e6a7872R529">To</a></td>
                             </tr>
                             
                             </tbody>

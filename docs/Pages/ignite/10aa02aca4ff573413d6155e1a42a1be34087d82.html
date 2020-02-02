@@ -273,14 +273,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager.CheckpointEntry moved to org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointEntry</i></td>
+                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager.CheckpointEntryType moved to org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointEntryType</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager.CheckpointEntryType moved to org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointEntryType</i></td>
+                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager.CheckpointEntry moved to org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointEntry</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -316,6 +316,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	hist : GridCacheDatabaseSharedManager.CheckpointHistory to hist : CheckpointHistory in method public testCheckpointHistory() : void in class org.apache.ignite.internal.processors.cache.persistence.db.wal.WalRecoveryTxLogicalRecordsTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-389071b63116859374ac0c7c491df977L474">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-389071b63116859374ac0c7c491df977R504">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	partId : Integer to partId : int in method public reserveHistoryForExchange() : Map&lt;Integer,Map&lt;Integer,Long&gt;&gt; in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1565">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1625">To</a></td>
@@ -340,13 +347,6 @@
                                 <td><i>Change Variable Type	cpHist : GridCacheDatabaseSharedManager.CheckpointHistory to cpHist : CheckpointHistory in method private doTestSimple() : void in class org.apache.ignite.internal.processors.cache.persistence.LocalWalModeChangeDuringRebalancingSelfTest</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-31d31c7fe525180b41518a1054014a02L209">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-31d31c7fe525180b41518a1054014a02R227">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	hist : GridCacheDatabaseSharedManager.CheckpointHistory to hist : CheckpointHistory in method public testCheckpointHistory() : void in class org.apache.ignite.internal.processors.cache.persistence.db.wal.WalRecoveryTxLogicalRecordsTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-389071b63116859374ac0c7c491df977L474">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-389071b63116859374ac0c7c491df977R504">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -380,13 +380,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private firstEntry() : CheckpointEntry renamed to public lastCheckpoint() : CheckpointEntry in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointHistory</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4181">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-858ec847342d49b9b4161c7e4a40a912R112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	private partsForCheckpointHistorySearch() : Map&lt;Integer,Set&lt;Integer&gt;&gt; renamed to private partitionsApplicableForWalRebalance() : Map&lt;Integer,Set&lt;Integer&gt;&gt; in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1618">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1644">To</a></td>
@@ -399,6 +392,13 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-1cdd19107e8a2874e5df1765b1a42938R78">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private firstEntry() : CheckpointEntry renamed to public lastCheckpoint() : CheckpointEntry in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointHistory</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4181">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-858ec847342d49b9b4161c7e4a40a912R112">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -409,6 +409,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	part : GridDhtLocalPartition to locPart : GridDhtLocalPartition in method private partitionsApplicableForWalRebalance() : Map&lt;Integer,Set&lt;Integer&gt;&gt; in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1629">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1654">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	groupState : GroupState to grpState : GroupState in method private remap(stateRec Map&lt;Integer,CacheState&gt;) : Map&lt;Integer,GroupState&gt; in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointEntry.GroupStateLazyStore</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4564">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-1cdd19107e8a2874e5df1765b1a42938R283">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	part4CheckpointHistSearch : Map&lt;Integer,Set&lt;Integer&gt;&gt; to res : Map&lt;Integer,Set&lt;Integer&gt;&gt; in method private partitionsApplicableForWalRebalance() : Map&lt;Integer,Set&lt;Integer&gt;&gt; in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1623">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1648">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	t : int to it : int in method public testPartitionCounterConsistencyOnUnstableTopology() : void in class org.apache.ignite.internal.processors.cache.persistence.IgnitePdsCacheRebalancingAbstractTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-23f0508dd31d0b63b5949eeaa34b3beaL591">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-23f0508dd31d0b63b5949eeaa34b3beaR532">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -459,34 +487,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-23f0508dd31d0b63b5949eeaa34b3beaR321">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	part : GridDhtLocalPartition to locPart : GridDhtLocalPartition in method private partitionsApplicableForWalRebalance() : Map&lt;Integer,Set&lt;Integer&gt;&gt; in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1629">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1654">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	groupState : GroupState to grpState : GroupState in method private remap(stateRec Map&lt;Integer,CacheState&gt;) : Map&lt;Integer,GroupState&gt; in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointEntry.GroupStateLazyStore</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4564">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-1cdd19107e8a2874e5df1765b1a42938R283">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	part4CheckpointHistSearch : Map&lt;Integer,Set&lt;Integer&gt;&gt; to res : Map&lt;Integer,Set&lt;Integer&gt;&gt; in method private partitionsApplicableForWalRebalance() : Map&lt;Integer,Set&lt;Integer&gt;&gt; in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1623">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1648">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	t : int to it : int in method public testPartitionCounterConsistencyOnUnstableTopology() : void in class org.apache.ignite.internal.processors.cache.persistence.IgnitePdsCacheRebalancingAbstractTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-23f0508dd31d0b63b5949eeaa34b3beaL591">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-23f0508dd31d0b63b5949eeaa34b3beaR532">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -500,6 +500,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	void to List&lt;CheckpointEntry&gt; in method public onWalTruncated(ptr WALPointer) : List&lt;CheckpointEntry&gt; in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointHistory</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4218">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-858ec847342d49b9b4161c7e4a40a912R164">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	void to boolean in method public beforeExchange(fut GridDhtPartitionsExchangeFuture) : boolean in class org.apache.ignite.internal.processors.cache.persistence.GridCacheDatabaseSharedManager</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L1271">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1R1295">To</a></td>
@@ -510,13 +517,6 @@
                                 <td><i>Change Return Type	void to List&lt;CheckpointEntry&gt; in method public onCheckpointFinished(chp GridCacheDatabaseSharedManager.Checkpoint, truncateWal boolean) : List&lt;CheckpointEntry&gt; in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointHistory</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4247">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-858ec847342d49b9b4161c7e4a40a912R195">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to List&lt;CheckpointEntry&gt; in method public onWalTruncated(ptr WALPointer) : List&lt;CheckpointEntry&gt; in class org.apache.ignite.internal.processors.cache.persistence.checkpoint.CheckpointHistory</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-cacbb66ea1331a1869d9da2bcd039ef1L4218">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/10aa02aca4ff573413d6155e1a42a1be34087d82?diff=split#diff-858ec847342d49b9b4161c7e4a40a912R164">To</a></td>
                             </tr>
                             
                             </tbody>

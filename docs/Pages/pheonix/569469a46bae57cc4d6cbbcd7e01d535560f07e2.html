@@ -226,6 +226,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	uncommittedStatementIndexes : int[] to uncommittedState : MutationState in method public CommitException(e Exception, uncommittedState MutationState, committedState MutationState) in class org.apache.phoenix.execute.CommitException</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-e14d8b35c68f0bd3bfc18f940882813aL28">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-e14d8b35c68f0bd3bfc18f940882813aR27">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	maxSize : long to maxSize : int in method public MutationState(maxSize int, connection PhoenixConnection) in class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL94">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR85">To</a></td>
@@ -243,13 +250,6 @@
                                 <td><i>Change Parameter Type	values : Map&lt;ImmutableBytesPtr,RowMutationState&gt; to values : Map&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt; in method private addRowMutations(tableRef TableRef, values Map&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt;, timestamp long, includeMutableIndexes boolean) : Iterator&lt;Pair&lt;byte[],List&lt;Mutation&gt;&gt;&gt; in class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL173">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR179">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	uncommittedStatementIndexes : int[] to uncommittedState : MutationState in method public CommitException(e Exception, uncommittedState MutationState, committedState MutationState) in class org.apache.phoenix.execute.CommitException</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-e14d8b35c68f0bd3bfc18f940882813aL28">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-e14d8b35c68f0bd3bfc18f940882813aR27">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -298,6 +298,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	valuesMap : Map&lt;ImmutableBytesPtr,RowMutationState&gt; to valuesMap : Map&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt; in method public commit() : void in class org.apache.phoenix.execute.MutationState</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL352">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR368">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	mutation : Map&lt;ImmutableBytesPtr,RowMutationState&gt; to mutation : Map&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt; in method private upsertSelect(statement PhoenixStatement, tableRef TableRef, projector RowProjector, iterator ResultIterator, columnIndexes int[], pkSlotIndexes int[]) : MutationState in class org.apache.phoenix.compile.UpsertCompiler</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-838511994c658adc108846e81cc7d8e3L121">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-838511994c658adc108846e81cc7d8e3R131">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -409,20 +423,6 @@
                                 <td><i>Change Variable Type	rowEntry : Map.Entry&lt;ImmutableBytesPtr,RowMutationState&gt; to rowEntry : Map.Entry&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt; in method public join(newMutation MutationState) : void in class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL121">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR145">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	valuesMap : Map&lt;ImmutableBytesPtr,RowMutationState&gt; to valuesMap : Map&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt; in method public commit() : void in class org.apache.phoenix.execute.MutationState</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL352">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR368">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	mutation : Map&lt;ImmutableBytesPtr,RowMutationState&gt; to mutation : Map&lt;ImmutableBytesPtr,Map&lt;PColumn,byte[]&gt;&gt; in method private upsertSelect(statement PhoenixStatement, tableRef TableRef, projector RowProjector, iterator ResultIterator, columnIndexes int[], pkSlotIndexes int[]) : MutationState in class org.apache.phoenix.compile.UpsertCompiler</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-838511994c658adc108846e81cc7d8e3L121">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/569469a46bae57cc4d6cbbcd7e01d535560f07e2?diff=split#diff-838511994c658adc108846e81cc7d8e3R131">To</a></td>
                             </tr>
                             
                             </tbody>

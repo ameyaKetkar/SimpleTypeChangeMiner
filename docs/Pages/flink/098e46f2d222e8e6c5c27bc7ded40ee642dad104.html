@@ -230,16 +230,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	restoreStateHandle : RocksDBIncrementalKeyedStateHandle to restoreStateHandle : IncrementalKeyedStateHandle in method private restoreInstance(restoreStateHandle IncrementalKeyedStateHandle, hasExtraKeys boolean) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1304">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1279">To</a></td>
+                                <td><i>Change Parameter Type	unregisteredSstFiles : Map&lt;String,StreamStateHandle&gt; to createdSharedState : Map&lt;StateHandleID,StreamStateHandle&gt; in method public IncrementalKeyedStateHandle(operatorIdentifier String, keyGroupRange KeyGroupRange, checkpointId long, createdSharedState Map&lt;StateHandleID,StreamStateHandle&gt;, referencedSharedState Map&lt;StateHandleID,StreamStateHandle&gt;, privateState Map&lt;StateHandleID,StreamStateHandle&gt;, metaStateHandle StreamStateHandle) in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L80">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R102">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	unregisteredSstFiles : Map&lt;String,StreamStateHandle&gt; to createdSharedState : Map&lt;StateHandleID,StreamStateHandle&gt; in method public IncrementalKeyedStateHandle(operatorIdentifier String, keyGroupRange KeyGroupRange, checkpointId long, createdSharedState Map&lt;StateHandleID,StreamStateHandle&gt;, referencedSharedState Map&lt;StateHandleID,StreamStateHandle&gt;, privateState Map&lt;StateHandleID,StreamStateHandle&gt;, metaStateHandle StreamStateHandle) in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L80">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R102">To</a></td>
+                                <td><i>Change Parameter Type	restoreStateHandle : RocksDBIncrementalKeyedStateHandle to restoreStateHandle : IncrementalKeyedStateHandle in method private restoreInstance(restoreStateHandle IncrementalKeyedStateHandle, hasExtraKeys boolean) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1304">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1279">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -309,48 +309,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	keyedStateBackend : KeyGroupsStateHandle to keyedStateBackend : KeyedStateHandle in method public createOperatorStates(random Random, numTaskStates int, numSubtasksPerTask int) : Collection&lt;OperatorState&gt; in class org.apache.flink.runtime.checkpoint.savepoint.CheckpointTestUtils</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-fdddb98a93dcd598509731846abbe466L61">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-fdddb98a93dcd598509731846abbe466R118">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	miscFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to entry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method private readAllStateData(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1304">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1436">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	oldSstFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to oldSstFileEntry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method public unregisterSharedStates(stateRegistry SharedStateRegistry) : void in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L217">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R259">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	newSstFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to newSstFileEntry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method public unregisterSharedStates(stateRegistry SharedStateRegistry) : void in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L217">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R253">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	miscFileName : String to stateHandleID : StateHandleID in method private createFileHardLinksInRestorePath(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1304">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1447">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	newSstFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to newSstFileEntry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method public registerSharedStates(stateRegistry SharedStateRegistry) : void in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L177">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R213">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	sstFiles : Map&lt;String,StreamStateHandle&gt; to sstFiles : Map&lt;StateHandleID,StreamStateHandle&gt; in method package materializeSnapshot() : KeyedStateHandle in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalSnapshotOperation</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L855">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R895">To</a></td>
@@ -412,6 +370,48 @@
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1292">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	keyedStateBackend : KeyGroupsStateHandle to keyedStateBackend : KeyedStateHandle in method public createOperatorStates(random Random, numTaskStates int, numSubtasksPerTask int) : Collection&lt;OperatorState&gt; in class org.apache.flink.runtime.checkpoint.savepoint.CheckpointTestUtils</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-fdddb98a93dcd598509731846abbe466L61">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-fdddb98a93dcd598509731846abbe466R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	miscFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to entry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method private readAllStateData(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1304">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1436">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	oldSstFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to oldSstFileEntry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method public unregisterSharedStates(stateRegistry SharedStateRegistry) : void in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L217">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R259">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	newSstFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to newSstFileEntry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method public unregisterSharedStates(stateRegistry SharedStateRegistry) : void in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L217">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R253">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	miscFileName : String to stateHandleID : StateHandleID in method private createFileHardLinksInRestorePath(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1304">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1447">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	newSstFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to newSstFileEntry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method public registerSharedStates(stateRegistry SharedStateRegistry) : void in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L177">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R213">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -425,13 +425,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private createFileHardLinksInRestorePath(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void extracted from private restoreInstance(restoreStateHandle RocksDBIncrementalKeyedStateHandle, hasExtraKeys boolean) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public getPrivateStateSize() : long extracted from public getStateSize() : long in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -440,6 +433,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private readAllStateData(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void extracted from private restoreInstance(restoreStateHandle RocksDBIncrementalKeyedStateHandle, hasExtraKeys boolean) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createFileHardLinksInRestorePath(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void extracted from private restoreInstance(restoreStateHandle RocksDBIncrementalKeyedStateHandle, hasExtraKeys boolean) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -457,6 +457,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	package getUnregisteredSstFiles() : Map&lt;String,StreamStateHandle&gt; renamed to public getCreatedSharedState() : Map&lt;StateHandleID,StreamStateHandle&gt; in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L108">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	package getRegisteredSstFiles() : Map&lt;String,StreamStateHandle&gt; renamed to public getReferencedSharedState() : Map&lt;StateHandleID,StreamStateHandle&gt; in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L112">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R130">To</a></td>
@@ -467,13 +474,6 @@
                                 <td><i>Rename Method	package getMiscFiles() : Map&lt;String,StreamStateHandle&gt; renamed to public getPrivateState() : Map&lt;StateHandleID,StreamStateHandle&gt; in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L116">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package getUnregisteredSstFiles() : Map&lt;String,StreamStateHandle&gt; renamed to public getCreatedSharedState() : Map&lt;StateHandleID,StreamStateHandle&gt; in class org.apache.flink.runtime.state.IncrementalKeyedStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-bafab4292cfd384ad516c57ce14b8d33L108">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-8007177612d547d8b98428f98052ccb0R126">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -489,20 +489,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Method	public equals(o Object) : boolean from class org.apache.flink.runtime.state.SharedStateRegistryKey to public equals(o Object) : boolean from class org.apache.flink.util.StringBasedID</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-1fd8ac3d526f17397f448fb3c085d0e0L46">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-cd63902a3ee741d40c3aad9d7dd164eeR47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public getKeyString() : String from class org.apache.flink.runtime.state.SharedStateRegistryKey to public getKeyString() : String from class org.apache.flink.util.StringBasedID</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-1fd8ac3d526f17397f448fb3c085d0e0L42">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-cd63902a3ee741d40c3aad9d7dd164eeR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Pull Up Method	public hashCode() : int from class org.apache.flink.runtime.state.SharedStateRegistryKey to public hashCode() : int from class org.apache.flink.util.StringBasedID</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-1fd8ac3d526f17397f448fb3c085d0e0L59">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-cd63902a3ee741d40c3aad9d7dd164eeR60">To</a></td>
@@ -513,6 +499,20 @@
                                 <td><i>Pull Up Method	public toString() : String from class org.apache.flink.runtime.state.SharedStateRegistryKey to public toString() : String from class org.apache.flink.util.StringBasedID</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-1fd8ac3d526f17397f448fb3c085d0e0L64">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-cd63902a3ee741d40c3aad9d7dd164eeR65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public equals(o Object) : boolean from class org.apache.flink.runtime.state.SharedStateRegistryKey to public equals(o Object) : boolean from class org.apache.flink.util.StringBasedID</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-1fd8ac3d526f17397f448fb3c085d0e0L46">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-cd63902a3ee741d40c3aad9d7dd164eeR47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public getKeyString() : String from class org.apache.flink.runtime.state.SharedStateRegistryKey to public getKeyString() : String from class org.apache.flink.util.StringBasedID</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-1fd8ac3d526f17397f448fb3c085d0e0L42">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-cd63902a3ee741d40c3aad9d7dd164eeR43">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -528,13 +528,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	miscFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to entry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method private readAllStateData(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1331">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1436">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	miscFileName : String to stateHandleID : StateHandleID in method private createFileHardLinksInRestorePath(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1442">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1447">To</a></td>
@@ -545,6 +538,13 @@
                                 <td><i>Rename Variable	fileName : String to stateHandleID : StateHandleID in method private readAllStateData(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1332">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1437">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	miscFileEntry : Map.Entry&lt;String,StreamStateHandle&gt; to entry : Map.Entry&lt;StateHandleID,StreamStateHandle&gt; in method private readAllStateData(stateHandleMap Map&lt;StateHandleID,StreamStateHandle&gt;, restoreInstancePath Path) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10L1331">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/098e46f2d222e8e6c5c27bc7ded40ee642dad104?diff=split#diff-6162fadc74db3e53fc38a28aad090d10R1436">To</a></td>
                             </tr>
                             
                             </tbody>

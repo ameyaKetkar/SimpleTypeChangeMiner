@@ -208,6 +208,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	idx : GridH2IndexBase to idx : H2TreeIndex in method public RangeSource(idx H2TreeIndex, bounds Iterable&lt;GridH2RowRangeBounds&gt;, segment int, filter BPlusTree.TreeRowClosure&lt;H2Row,H2Row&gt;) in class org.apache.ignite.internal.processors.query.h2.opt.join.RangeSource</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-5ef7a73c0d358294774fadf90b39ba1dL56">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-5ef7a73c0d358294774fadf90b39ba1dR62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	idx : GridH2IndexBase to idx : H2TreeIndex in method public DistributedLookupBatch(idx H2TreeIndex, cctx GridCacheContext&lt;?,?&gt;, ucast boolean, affColId int) in class org.apache.ignite.internal.processors.query.h2.opt.join.DistributedLookupBatch</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-fd2162f59b38cbbdec4a50a3ebb542a4L87">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-fd2162f59b38cbbdec4a50a3ebb542a4R95">To</a></td>
@@ -220,13 +227,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-5065587febc71747d078e681e5d352cdR91">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	idx : GridH2IndexBase to idx : H2TreeIndex in method public RangeSource(idx H2TreeIndex, bounds Iterable&lt;GridH2RowRangeBounds&gt;, segment int, filter BPlusTree.TreeRowClosure&lt;H2Row,H2Row&gt;) in class org.apache.ignite.internal.processors.query.h2.opt.join.RangeSource</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-5ef7a73c0d358294774fadf90b39ba1dL56">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-5ef7a73c0d358294774fadf90b39ba1dR62">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -237,6 +237,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public send(nodes Collection&lt;ClusterNode&gt;, msg Message) : void from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to public send(nodes Collection&lt;ClusterNode&gt;, msg Message) : void from class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L304">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR629">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private toSearchRow(msg GridH2RowMessage) : SearchRow from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to private toSearchRow(msg GridH2RowMessage) : SearchRow from class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L469">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR823">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public bubbleUp(arr Z[], off int, cmp Comparator&lt;Z&gt;) : void from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to public bubbleUp(arr Z[], off int, cmp Comparator&lt;Z&gt;) : void from class org.apache.ignite.internal.processors.query.h2.H2Utils</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L531">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-c7afe61e083b643da5baa75425bfd3b0R733">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public createLookupBatch(filters TableFilter[], filter int) : IndexLookupBatch from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to public createLookupBatch(filters TableFilter[], filter int) : IndexLookupBatch from class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L266">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR601">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -273,34 +301,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR760">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public send(nodes Collection&lt;ClusterNode&gt;, msg Message) : void from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to public send(nodes Collection&lt;ClusterNode&gt;, msg Message) : void from class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L304">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR629">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private toSearchRow(msg GridH2RowMessage) : SearchRow from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to private toSearchRow(msg GridH2RowMessage) : SearchRow from class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L469">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR823">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public bubbleUp(arr Z[], off int, cmp Comparator&lt;Z&gt;) : void from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to public bubbleUp(arr Z[], off int, cmp Comparator&lt;Z&gt;) : void from class org.apache.ignite.internal.processors.query.h2.H2Utils</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L531">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-c7afe61e083b643da5baa75425bfd3b0R733">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public createLookupBatch(filters TableFilter[], filter int) : IndexLookupBatch from class org.apache.ignite.internal.processors.query.h2.opt.GridH2IndexBase to public createLookupBatch(filters TableFilter[], filter int) : IndexLookupBatch from class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-e27d122f1ac2a6ad4000ec2f192a1557L266">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR601">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -332,20 +332,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	int to CollocationModelMultiplier in method private multiplier(withUnion boolean) : CollocationModelMultiplier in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L517">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R518">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Type to CollocationModelType in method private type(withUnion boolean) : CollocationModelType in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L543">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R546">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	Affinity to CollocationModelAffinity in method private joinedWithCollocated(f int) : CollocationModelAffinity in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L372">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R372">To</a></td>
@@ -363,6 +349,20 @@
                                 <td><i>Change Return Type	int to CollocationModelMultiplier in method public distributedMultiplier(ses Session, filters TableFilter[], filter int) : CollocationModelMultiplier in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L625">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R629">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	int to CollocationModelMultiplier in method private multiplier(withUnion boolean) : CollocationModelMultiplier in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L517">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R518">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Type to CollocationModelType in method private type(withUnion boolean) : CollocationModelType in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L543">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R546">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -552,13 +552,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	f : int to filterIdx : int in method private isPartitionedTableBeforeExists(filterIdx int) : boolean in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L346">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R339">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	b : boolean to first : boolean in method public findFirstOrLast(session Session, first boolean) : Cursor in class org.apache.ignite.internal.processors.query.h2.database.H2TreeClientIndex</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-ea1fcf89ee7fb601b0dd597ba1efa776L101">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-ea1fcf89ee7fb601b0dd597ba1efa776R88">To</a></td>
@@ -576,6 +569,13 @@
                                 <td><i>Rename Parameter	tbl : GridH2Table to table : GridH2Table in method public H2TreeIndex(cctx GridCacheContext&lt;?,?&gt;, rowCache H2RowCache, table GridH2Table, idxName String, pk boolean, affinityKey boolean, unwrappedColsList List&lt;IndexColumn&gt;, wrappedColsList List&lt;IndexColumn&gt;, inlineSize int, segmentsCnt int) in class org.apache.ignite.internal.processors.query.h2.database.H2TreeIndex</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eL107">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-018e5bf0f9dd0ac277f215603067869eR167">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	f : int to filterIdx : int in method private isPartitionedTableBeforeExists(filterIdx int) : boolean in class org.apache.ignite.internal.processors.query.h2.opt.join.CollocationModel</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38L346">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7b61c32a1c5ab443b315d5a87fec43d19b39e6fc?diff=split#diff-51d721e2eb890392c5580388ec98fc38R339">To</a></td>
                             </tr>
                             
                             </tbody>

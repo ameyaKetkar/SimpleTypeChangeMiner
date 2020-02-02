@@ -280,14 +280,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public writeRowSkippingBytes(out DataOutputStream, cell Cell, rlength short, commonPrefix int) : void extracted from public writeRowKeyExcludingCommon(cell Cell, rLen short, commonPrefix int, out DataOutputStream) : void in class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><i>Extract Method	public matchingValue(left Cell, right Cell, lvlength int, rvlength int) : boolean extracted from public matchingValue(left Cell, right Cell) : boolean in class org.apache.hadoop.hbase.CellUtil</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public matchingValue(left Cell, right Cell, lvlength int, rvlength int) : boolean extracted from public matchingValue(left Cell, right Cell) : boolean in class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><i>Extract Method	public writeRowSkippingBytes(out DataOutputStream, cell Cell, rlength short, commonPrefix int) : void extracted from public writeRowKeyExcludingCommon(cell Cell, rLen short, commonPrefix int, out DataOutputStream) : void in class org.apache.hadoop.hbase.CellUtil</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -302,6 +302,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeQualifier(out DataOutputStream, cell Cell, qlength int) : void extracted from private compressSingleKeyValue(out DataOutputStream, cell Cell, prevCell Cell) : int in class org.apache.hadoop.hbase.io.encoding.FastDiffDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeTags(out DataOutputStream, cell Cell, tagsLength int) : void extracted from protected afterEncodingKeyValue(cell Cell, out DataOutputStream, encodingCtx HFileBlockDefaultEncodingContext) : int in class org.apache.hadoop.hbase.io.encoding.BufferedDataBlockEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeValue(out DataOutputStream, cell Cell, vlength int) : void extracted from public internalEncode(cell Cell, encodingContext HFileBlockDefaultEncodingContext, out DataOutputStream) : int in class org.apache.hadoop.hbase.io.encoding.PrefixKeyDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeValue(out DataOutputStream, cell Cell, vlength int) : void extracted from private compressSingleKeyValue(out DataOutputStream, cell Cell, prevCell Cell) : int in class org.apache.hadoop.hbase.io.encoding.DiffKeyDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeFamily(out DataOutputStream, cell Cell, flength byte) : void extracted from private compressSingleKeyValue(out DataOutputStream, cell Cell, prevCell Cell) : int in class org.apache.hadoop.hbase.io.encoding.DiffKeyDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeValue(out DataOutputStream, cell Cell, vlength int) : void extracted from public encode(cell Cell, encodingCtx HFileBlockEncodingContext, out DataOutputStream) : int in class org.apache.hadoop.hbase.io.hfile.NoOpDataBlockEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -362,48 +404,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public writeTags(out DataOutputStream, cell Cell, tagsLength int) : void extracted from public encode(cell Cell, encodingCtx HFileBlockEncodingContext, out DataOutputStream) : int in class org.apache.hadoop.hbase.io.hfile.NoOpDataBlockEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeQualifier(out DataOutputStream, cell Cell, qlength int) : void extracted from private compressSingleKeyValue(out DataOutputStream, cell Cell, prevCell Cell) : int in class org.apache.hadoop.hbase.io.encoding.FastDiffDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeTags(out DataOutputStream, cell Cell, tagsLength int) : void extracted from protected afterEncodingKeyValue(cell Cell, out DataOutputStream, encodingCtx HFileBlockDefaultEncodingContext) : int in class org.apache.hadoop.hbase.io.encoding.BufferedDataBlockEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeValue(out DataOutputStream, cell Cell, vlength int) : void extracted from public internalEncode(cell Cell, encodingContext HFileBlockDefaultEncodingContext, out DataOutputStream) : int in class org.apache.hadoop.hbase.io.encoding.PrefixKeyDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeValue(out DataOutputStream, cell Cell, vlength int) : void extracted from private compressSingleKeyValue(out DataOutputStream, cell Cell, prevCell Cell) : int in class org.apache.hadoop.hbase.io.encoding.DiffKeyDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeFamily(out DataOutputStream, cell Cell, flength byte) : void extracted from private compressSingleKeyValue(out DataOutputStream, cell Cell, prevCell Cell) : int in class org.apache.hadoop.hbase.io.encoding.DiffKeyDeltaEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeValue(out DataOutputStream, cell Cell, vlength int) : void extracted from public encode(cell Cell, encodingCtx HFileBlockEncodingContext, out DataOutputStream) : int in class org.apache.hadoop.hbase.io.hfile.NoOpDataBlockEncoder &amp; moved to class org.apache.hadoop.hbase.CellUtil</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

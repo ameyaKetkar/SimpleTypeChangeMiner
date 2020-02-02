@@ -212,6 +212,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Variable	isolation : TransactionIsolation in method private randomUpdate(rnd Random, evtsQueues List&lt;BlockingQueue&lt;CacheEntryEvent&lt;?,?&gt;&gt;&gt;, expData ConcurrentMap&lt;Object,Object&gt;, partCntr Map&lt;Integer,Long&gt;, cache IgniteCache&lt;Object,Object&gt;) : void from class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryRandomOperationsTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Variable	proc : EntrySetValueProcessor in method private randomUpdate(rnd Random, evtsQueues List&lt;BlockingQueue&lt;CacheEntryEvent&lt;?,?&gt;&gt;&gt;, expData ConcurrentMap&lt;Object,Object&gt;, partCntr Map&lt;Integer,Long&gt;, cache IgniteCache&lt;Object,Object&gt;) : void from class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryFactoryFilterRandomOperationTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -259,13 +266,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	isolation : TransactionIsolation in method private randomUpdate(rnd Random, evtsQueues List&lt;BlockingQueue&lt;CacheEntryEvent&lt;?,?&gt;&gt;&gt;, expData ConcurrentMap&lt;Object,Object&gt;, partCntr Map&lt;Integer,Long&gt;, cache IgniteCache&lt;Object,Object&gt;) : void from class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryRandomOperationsTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -279,14 +279,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	protected atomicityMode() : CacheAtomicityMode extracted from protected getConfiguration(igniteInstanceName String) : IgniteConfiguration in class org.apache.ignite.internal.processors.cache.query.continuous.IgniteCacheContinuousQueryClientTest</i></td>
+                                <td><i>Extract Method	protected atomicityMode() : CacheAtomicityMode extracted from protected getConfiguration(igniteInstanceName String) : IgniteConfiguration in class org.apache.ignite.internal.processors.cache.query.continuous.IgniteCacheContinuousQueryImmutableEntryTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	protected atomicityMode() : CacheAtomicityMode extracted from protected getConfiguration(igniteInstanceName String) : IgniteConfiguration in class org.apache.ignite.internal.processors.cache.query.continuous.IgniteCacheContinuousQueryImmutableEntryTest</i></td>
+                                <td><i>Extract Method	protected atomicityMode() : CacheAtomicityMode extracted from protected getConfiguration(igniteInstanceName String) : IgniteConfiguration in class org.apache.ignite.internal.processors.cache.query.continuous.IgniteCacheContinuousQueryClientTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -301,6 +301,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public filtered(filtered boolean) : void extracted from public mvccSet(tx IgniteInternalTx, affNodeId UUID, val CacheObject, entryProc EntryProcessor, invokeArgs Object[], ttl0 long, topVer AffinityTopologyVersion, mvccVer MvccSnapshot, op GridCacheOperation, needHistory boolean, noCreate boolean, filter CacheEntryPredicate, retVal boolean) : GridCacheUpdateTxResult in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry &amp; moved to class org.apache.ignite.internal.processors.cache.GridCacheUpdateTxResult</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public oldValue(oldVal CacheObject) : void extracted from public apply(lockFut IgniteInternalFuture) : void in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry.MvccRemoveLockListener &amp; moved to class org.apache.ignite.internal.processors.cache.GridCacheUpdateTxResult</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -347,20 +361,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public filtered(filtered boolean) : void extracted from public apply(lockFut IgniteInternalFuture) : void in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry.MvccUpdateLockListener &amp; moved to class org.apache.ignite.internal.processors.cache.GridCacheUpdateTxResult</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public filtered(filtered boolean) : void extracted from public mvccSet(tx IgniteInternalTx, affNodeId UUID, val CacheObject, entryProc EntryProcessor, invokeArgs Object[], ttl0 long, topVer AffinityTopologyVersion, mvccVer MvccSnapshot, op GridCacheOperation, needHistory boolean, noCreate boolean, filter CacheEntryPredicate, retVal boolean) : GridCacheUpdateTxResult in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry &amp; moved to class org.apache.ignite.internal.processors.cache.GridCacheUpdateTxResult</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public oldValue(oldVal CacheObject) : void extracted from public apply(lockFut IgniteInternalFuture) : void in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry.MvccRemoveLockListener &amp; moved to class org.apache.ignite.internal.processors.cache.GridCacheUpdateTxResult</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -300,20 +300,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public serialize(memberSet CoreMemberSet, buffer ByteBuf) : void renamed to public marshal(memberSet CoreMemberSet, buffer ByteBuf) : void in class org.neo4j.coreedge.raft.membership.CoreMemberSetSerializer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-5fa7e2fcda054f0b85bc44ee594fea2cL66">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-5fa7e2fcda054f0b85bc44ee594fea2cR96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public deserialize(buffer ByteBuf) : ReplicatedLockTokenRequest&lt;CoreMember&gt; renamed to public unmarshal(buffer ByteBuf) : ReplicatedLockTokenRequest&lt;CoreMember&gt; in class org.neo4j.coreedge.raft.net.ReplicatedLockTokenSerializer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-767df431810f078af3f85ce30e8b2503L35">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-767df431810f078af3f85ce30e8b2503R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public serialize(content ReplicatedTokenRequest, buffer ByteBuf) : void renamed to public marshal(content ReplicatedTokenRequest, buffer ByteBuf) : void in class org.neo4j.coreedge.raft.replication.token.ReplicatedTokenRequestSerializer</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-9ca63913ed667971abd3d5b887fc2e52L43">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-9ca63913ed667971abd3d5b887fc2e52R66">To</a></td>
@@ -403,6 +389,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f5215365cbee48d1d31d607d9aa2ab83R60">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public serialize(memberSet CoreMemberSet, buffer ByteBuf) : void renamed to public marshal(memberSet CoreMemberSet, buffer ByteBuf) : void in class org.neo4j.coreedge.raft.membership.CoreMemberSetSerializer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-5fa7e2fcda054f0b85bc44ee594fea2cL66">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-5fa7e2fcda054f0b85bc44ee594fea2cR96">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public deserialize(buffer ByteBuf) : ReplicatedLockTokenRequest&lt;CoreMember&gt; renamed to public unmarshal(buffer ByteBuf) : ReplicatedLockTokenRequest&lt;CoreMember&gt; in class org.neo4j.coreedge.raft.net.ReplicatedLockTokenSerializer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-767df431810f078af3f85ce30e8b2503L35">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-767df431810f078af3f85ce30e8b2503R54">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -413,13 +413,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	buffer : ByteBuffer to buffer : ByteBuf in method public unmarshal(buffer ByteBuf) : ReplicatedContent in class org.neo4j.coreedge.raft.log.DummyRaftableContentSerializer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-e00df9229d3c7089406cfd24c7db6010L55">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-e00df9229d3c7089406cfd24c7db6010R109">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -454,6 +447,13 @@
                                 <td><i>Change Parameter Type	marshal : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in method public RaftMessageDecoder(marshal ByteBufMarshal&lt;ReplicatedContent&gt;) in class org.neo4j.coreedge.raft.net.codecs.RaftMessageDecoder</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-74778e1edea7e647b0c1c47461e2015aL47">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-74778e1edea7e647b0c1c47461e2015aR48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	buffer : ByteBuffer to buffer : ByteBuf in method public unmarshal(buffer ByteBuf) : ReplicatedContent in class org.neo4j.coreedge.raft.log.DummyRaftableContentSerializer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-e00df9229d3c7089406cfd24c7db6010L55">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-e00df9229d3c7089406cfd24c7db6010R109">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -505,6 +505,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Attribute	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.RaftServer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL53">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Attribute	serializer : Serializer to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.log.NaiveDurableRaftLog</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cL74">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cR78">To</a></td>
@@ -515,13 +522,6 @@
                                 <td><i>Rename Attribute	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.net.codecs.RaftMessageEncodingDecodingTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-7030d848b106c241ea4e9ea309894262L186">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-7030d848b106c241ea4e9ea309894262R185">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.RaftServer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL53">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR54">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -537,20 +537,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	serializer : RaftContentSerializer to serializer : CoreReplicatedContentMarshal in method public shouldSerializeMemberSet() : void in class org.neo4j.coreedge.raft.log.RaftContentByteBufferMarshalTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7L55">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7R60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	serializer : RaftContentSerializer to serializer : CoreReplicatedContentMarshal in method public shouldSerializeIdRangeRequest() : void in class org.neo4j.coreedge.raft.log.RaftContentByteBufferMarshalTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7L129">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7R136">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	buffer : ByteBuffer to channel : WritableChannel in method public marshal(content ReplicatedContent, channel WritableChannel) : void in class org.neo4j.coreedge.raft.log.DummyRaftableContentSerializer</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-e00df9229d3c7089406cfd24c7db6010L31">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-e00df9229d3c7089406cfd24c7db6010R40">To</a></td>
@@ -563,6 +549,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7R81">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	serializer : RaftContentSerializer to serializer : CoreReplicatedContentMarshal in method public shouldSerializeMemberSet() : void in class org.neo4j.coreedge.raft.log.RaftContentByteBufferMarshalTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7L55">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7R60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	serializer : RaftContentSerializer to serializer : CoreReplicatedContentMarshal in method public shouldSerializeIdRangeRequest() : void in class org.neo4j.coreedge.raft.log.RaftContentByteBufferMarshalTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7L129">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f6dd9695b606d86f6892daa038aaecc7R136">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -573,27 +573,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	serializer : Serializer to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.log.NaiveDurableRaftLog</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cL74">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cR78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.RaftServer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL53">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	marshal : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentByteBufferMarshalTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-9e081e5eb2eed3a3b7d83e224e2bb9cbL54">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-9e081e5eb2eed3a3b7d83e224e2bb9cbR55">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -630,6 +609,27 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-f11f27606c1b8fe94381ff9ccd7a89d7R38">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	serializer : Serializer to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.log.NaiveDurableRaftLog</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cL74">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cR78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.RaftServer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL53">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	marshal : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in class org.neo4j.coreedge.raft.replication.CoreReplicatedContentByteBufferMarshalTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-9e081e5eb2eed3a3b7d83e224e2bb9cbL54">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-9e081e5eb2eed3a3b7d83e224e2bb9cbR55">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -643,16 +643,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	serializer : Serializer to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in method public NaiveDurableRaftLog(fileSystem FileSystemAbstraction, directory File, marshal ByteBufMarshal&lt;ReplicatedContent&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.log.NaiveDurableRaftLog</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cL81">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cR86">To</a></td>
+                                <td><i>Rename Parameter	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in method public RaftServer(marshal ByteBufMarshal&lt;ReplicatedContent&gt;, listenAddress ListenSocketAddress, logProvider LogProvider) in class org.neo4j.coreedge.raft.RaftServer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL60">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR61">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	serializer : ReplicatedContentMarshal&lt;ByteBuf&gt; to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in method public RaftServer(marshal ByteBufMarshal&lt;ReplicatedContent&gt;, listenAddress ListenSocketAddress, logProvider LogProvider) in class org.neo4j.coreedge.raft.RaftServer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL60">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR61">To</a></td>
+                                <td><i>Rename Parameter	serializer : Serializer to marshal : ByteBufMarshal&lt;ReplicatedContent&gt; in method public NaiveDurableRaftLog(fileSystem FileSystemAbstraction, directory File, marshal ByteBufMarshal&lt;ReplicatedContent&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.log.NaiveDurableRaftLog</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cL81">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/51d12d0a0b987ddd1928eac15b654623b064bc2d?diff=split#diff-be46c387b2d4b0593d797097cea7957cR86">To</a></td>
                             </tr>
                             
                             </tbody>

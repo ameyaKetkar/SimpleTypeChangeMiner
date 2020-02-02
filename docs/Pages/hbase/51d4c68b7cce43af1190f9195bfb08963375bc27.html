@@ -319,13 +319,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	RpcServer.Call to ServerCall in method public createCall(id int, service BlockingService, md MethodDescriptor, header RequestHeader, param Message, cellScanner CellScanner, connection RpcServer.Connection, size long, tinfo TraceInfo, remoteAddress InetAddress, timeout int, reqCleanup CallCleanup) : ServerCall in class org.apache.hadoop.hbase.ipc.NettyRpcServer.NettyConnection</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-0362f07b0a13eff5e79b953326b14bd8L338">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-0362f07b0a13eff5e79b953326b14bd8R338">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	RpcServer.Call to ServerCall in method public createCall(id int, service BlockingService, md MethodDescriptor, header RequestHeader, param Message, cellScanner CellScanner, connection RpcServer.Connection, size long, tinfo TraceInfo, remoteAddress InetAddress, timeout int, reqCleanup CallCleanup) : ServerCall in class org.apache.hadoop.hbase.ipc.SimpleRpcServer.Connection</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-c7b845f110f80c07957c7e24da45e212L1083">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-c7b845f110f80c07957c7e24da45e212R1030">To</a></td>
@@ -345,6 +338,13 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-2d06ac32d716bb018c7599934944ddbeR73">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RpcServer.Call to ServerCall in method public createCall(id int, service BlockingService, md MethodDescriptor, header RequestHeader, param Message, cellScanner CellScanner, connection RpcServer.Connection, size long, tinfo TraceInfo, remoteAddress InetAddress, timeout int, reqCleanup CallCleanup) : ServerCall in class org.apache.hadoop.hbase.ipc.NettyRpcServer.NettyConnection</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-0362f07b0a13eff5e79b953326b14bd8L338">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-0362f07b0a13eff5e79b953326b14bd8R338">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -358,6 +358,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move And Rename Class	org.apache.hadoop.hbase.ipc.RpcServer.Call moved and renamed to org.apache.hadoop.hbase.ipc.ServerCall</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move And Rename Class	org.apache.hadoop.hbase.ipc.NettyRpcServer.Call moved and renamed to org.apache.hadoop.hbase.ipc.NettyServerCall</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -366,13 +373,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Rename Class	org.apache.hadoop.hbase.ipc.SimpleRpcServer.Call moved and renamed to org.apache.hadoop.hbase.ipc.SimpleServerCall</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.hadoop.hbase.ipc.RpcServer.Call moved and renamed to org.apache.hadoop.hbase.ipc.ServerCall</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -405,55 +405,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	smallCall : RpcServer.Call to smallCall : ServerCall in method private testRpcScheduler(queueType String) : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L183">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R194">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	readParamsFailedCall : RpcServer.Call to readParamsFailedCall : ServerCall in method protected processRequest(buf ByteBuff) : void in class org.apache.hadoop.hbase.ipc.RpcServer.Connection</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-4e90c065a69ed4131b35a7039cf7b606L1330">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-4e90c065a69ed4131b35a7039cf7b606R956">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	getCall : RpcServer.Call to getCall : ServerCall in method public testScanQueues() : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L276">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R298">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	putCall : RpcServer.Call to putCall : ServerCall in method public testScanQueues() : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L276">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R289">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	putCall : RpcServer.Call to putCall : ServerCall in method public testSoftAndHardQueueLimits() : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L368">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R381">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	call : Call to call : ServerCall in method private createMockTask() : CallRunner in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L169">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R166">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	hugeCall : RpcServer.Call to hugeCall : ServerCall in method private testRpcScheduler(queueType String) : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L183">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R206">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -509,6 +460,55 @@
                                 <td><i>Change Variable Type	call : Call to call : SimpleServerCall in method private processAllResponses(connection Connection) : boolean in class org.apache.hadoop.hbase.ipc.SimpleRpcServer.Responder</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-c7b845f110f80c07957c7e24da45e212L669">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-c7b845f110f80c07957c7e24da45e212R628">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	smallCall : RpcServer.Call to smallCall : ServerCall in method private testRpcScheduler(queueType String) : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L183">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R194">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	readParamsFailedCall : RpcServer.Call to readParamsFailedCall : ServerCall in method protected processRequest(buf ByteBuff) : void in class org.apache.hadoop.hbase.ipc.RpcServer.Connection</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-4e90c065a69ed4131b35a7039cf7b606L1330">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-4e90c065a69ed4131b35a7039cf7b606R956">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	getCall : RpcServer.Call to getCall : ServerCall in method public testScanQueues() : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L276">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R298">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	putCall : RpcServer.Call to putCall : ServerCall in method public testScanQueues() : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L276">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R289">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	putCall : RpcServer.Call to putCall : ServerCall in method public testSoftAndHardQueueLimits() : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L368">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R381">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	call : Call to call : ServerCall in method private createMockTask() : CallRunner in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L169">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R166">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	hugeCall : RpcServer.Call to hugeCall : ServerCall in method private testRpcScheduler(queueType String) : void in class org.apache.hadoop.hbase.ipc.TestSimpleRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536L183">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/51d4c68b7cce43af1190f9195bfb08963375bc27?diff=split#diff-de7ef7478a6d17cddd12f5b9dc7a0536R206">To</a></td>
                             </tr>
                             
                             </tbody>

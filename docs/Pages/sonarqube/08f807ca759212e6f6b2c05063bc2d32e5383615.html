@@ -306,13 +306,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in method public PersistEventsStep(dbClient DbClient, system2 System2, treeRootHolder TreeRootHolder, reportReader BatchReportReader) in class org.sonar.server.computation.step.PersistEventsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5L41">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	component : BatchReport.Component to component : Component in method private saveDuplications(batchComponent BatchReport.Component, component Component, duplications List&lt;BatchReport.Duplication&gt;) : void in class org.sonar.server.computation.step.PersistDuplicationsStep.DuplicationVisitor</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-74b52c728303400cf63177afa445c8b7L77">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-74b52c728303400cf63177afa445c8b7R94">To</a></td>
@@ -444,6 +437,13 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2R36">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in method public PersistEventsStep(dbClient DbClient, system2 System2, treeRootHolder TreeRootHolder, reportReader BatchReportReader) in class org.sonar.server.computation.step.PersistEventsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5L41">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5R45">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -454,6 +454,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private createXmlDuplications(duplicationContext DuplicationContext, componentKey String, duplications Iterable&lt;BatchReport.Duplication&gt;) : String from class org.sonar.server.computation.step.PersistDuplicationsStep to private createXmlDuplications(componentKey String, duplications Iterable&lt;BatchReport.Duplication&gt;) : String from class org.sonar.server.computation.step.PersistDuplicationsStep.DuplicationVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-74b52c728303400cf63177afa445c8b7L89">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-74b52c728303400cf63177afa445c8b7R104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private persistMeasures(dbSession DbSession, batchReportMeasures List&lt;BatchReport.Measure&gt;, component BatchReport.Component) : void from class org.sonar.server.computation.step.PersistMeasuresStep to private persistMeasures(batchReportMeasures List&lt;BatchReport.Measure&gt;, componentId long, snapshotId long) : void from class org.sonar.server.computation.step.PersistMeasuresStep.MeasureVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-1eea6b7b2346f218174c609fd06e8b3eL84">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-1eea6b7b2346f218174c609fd06e8b3eR101">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -537,20 +551,6 @@
                                 <td><i>Move Method	private mergeLinks(session DbSession, componentUuid String, links List&lt;BatchReport.ComponentLink&gt;, previousLinks List&lt;ComponentLinkDto&gt;) : void from class org.sonar.server.computation.step.PersistProjectLinksStep to private mergeLinks(session DbSession, componentUuid String, links List&lt;BatchReport.ComponentLink&gt;, previousLinks List&lt;ComponentLinkDto&gt;) : void from class org.sonar.server.computation.step.PersistProjectLinksStep.PorjectLinkVisitor</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-7a9fc6c0e899df1ff75c8212edd44792L98">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-7a9fc6c0e899df1ff75c8212edd44792R111">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private createXmlDuplications(duplicationContext DuplicationContext, componentKey String, duplications Iterable&lt;BatchReport.Duplication&gt;) : String from class org.sonar.server.computation.step.PersistDuplicationsStep to private createXmlDuplications(componentKey String, duplications Iterable&lt;BatchReport.Duplication&gt;) : String from class org.sonar.server.computation.step.PersistDuplicationsStep.DuplicationVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-74b52c728303400cf63177afa445c8b7L89">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-74b52c728303400cf63177afa445c8b7R104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private persistMeasures(dbSession DbSession, batchReportMeasures List&lt;BatchReport.Measure&gt;, component BatchReport.Component) : void from class org.sonar.server.computation.step.PersistMeasuresStep to private persistMeasures(batchReportMeasures List&lt;BatchReport.Measure&gt;, componentId long, snapshotId long) : void from class org.sonar.server.computation.step.PersistMeasuresStep.MeasureVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-1eea6b7b2346f218174c609fd06e8b3eL84">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-1eea6b7b2346f218174c609fd06e8b3eR101">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -677,14 +677,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Split Attribute	dbComponentsRefCache : DbComponentsRefCache to [dbIdsRepository : DbIdsRepository, treeRootHolder : TreeRootHolderRule] in class org.sonar.server.computation.step.PersistMeasuresStepTest</i></td>
+                                <td><i>Split Attribute	dbComponentsRefCache : DbComponentsRefCache to [dbIdsRepository : DbIdsRepository, treeRootHolder : TreeRootHolderRule] in class org.sonar.server.computation.step.PersistDuplicationsStepTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Split Attribute	dbComponentsRefCache : DbComponentsRefCache to [dbIdsRepository : DbIdsRepository, treeRootHolder : TreeRootHolderRule] in class org.sonar.server.computation.step.PersistDuplicationsStepTest</i></td>
+                                <td><i>Split Attribute	dbComponentsRefCache : DbComponentsRefCache to [dbIdsRepository : DbIdsRepository, treeRootHolder : TreeRootHolderRule] in class org.sonar.server.computation.step.PersistMeasuresStepTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -806,13 +806,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-26" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.IndexComponentsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2L32">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2R33">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -989,6 +982,13 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2R34">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.IndexComponentsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2L32">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2R33">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -999,90 +999,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-26" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	reportReader : BatchReportReader to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.IndexComponentsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2L33">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2R34">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	reportReader : BatchReportReader to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.IndexTestsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-8cae435453323a5fb5f21d04bad884c4L31">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-8cae435453323a5fb5f21d04bad884c4R29">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.PersistComponentsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-f58037fa693733ab12b40562e9b8ef7fL44">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-f58037fa693733ab12b40562e9b8ef7fR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.SendIssueNotificationsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0L53">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	componentsByRef : Map&lt;Integer,DbComponent&gt; to componentIdsByRef : Map&lt;Integer,Long&gt; in class org.sonar.server.computation.component.DbIdsRepository</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-e7a0e94a1ad8033a4a5847ee8083f41aL32">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-98c4a441c5cbc9d2c7e14b5de4748a2aR31">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.PurgeDatastoresStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-67e1638eecd4862bb75a635fecf51a09L36">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-67e1638eecd4862bb75a635fecf51a09R37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.PersistFileSourcesStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-38fba448bf38b3d012ad7ed895695a9cL55">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-38fba448bf38b3d012ad7ed895695a9cR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolderRule in class org.sonar.server.computation.step.PersistEventsStepTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-4eaff4a8ba43fb0ff5996722fcb700b5L55">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-4eaff4a8ba43fb0ff5996722fcb700b5R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.ApplyPermissionsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-31f83e042fac374380f896e4735146afL38">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-31f83e042fac374380f896e4735146afR38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.PersistEventsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5L38">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	reportReader : BatchReportReader to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.IndexSourceLinesStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-6ac2d448107469b33296c261e2c05ddcL30">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-6ac2d448107469b33296c261e2c05ddcR28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolderRule in class org.sonar.server.computation.step.IndexTestsStepTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-ed5b30fa666ae09682bb3c6e49fe7f7bL55">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-ed5b30fa666ae09682bb3c6e49fe7f7bR54">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1182,6 +1098,90 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2292991995a07dfa2909895850ad052bR70">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	reportReader : BatchReportReader to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.IndexComponentsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2L33">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-0734b06aca56775977034369060218e2R34">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	reportReader : BatchReportReader to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.IndexTestsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-8cae435453323a5fb5f21d04bad884c4L31">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-8cae435453323a5fb5f21d04bad884c4R29">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.PersistComponentsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-f58037fa693733ab12b40562e9b8ef7fL44">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-f58037fa693733ab12b40562e9b8ef7fR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.SendIssueNotificationsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0L53">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	componentsByRef : Map&lt;Integer,DbComponent&gt; to componentIdsByRef : Map&lt;Integer,Long&gt; in class org.sonar.server.computation.component.DbIdsRepository</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-e7a0e94a1ad8033a4a5847ee8083f41aL32">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-98c4a441c5cbc9d2c7e14b5de4748a2aR31">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.PurgeDatastoresStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-67e1638eecd4862bb75a635fecf51a09L36">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-67e1638eecd4862bb75a635fecf51a09R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.PersistFileSourcesStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-38fba448bf38b3d012ad7ed895695a9cL55">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-38fba448bf38b3d012ad7ed895695a9cR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolderRule in class org.sonar.server.computation.step.PersistEventsStepTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-4eaff4a8ba43fb0ff5996722fcb700b5L55">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-4eaff4a8ba43fb0ff5996722fcb700b5R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to dbIdsRepository : DbIdsRepository in class org.sonar.server.computation.step.ApplyPermissionsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-31f83e042fac374380f896e4735146afL38">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-31f83e042fac374380f896e4735146afR38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.PersistEventsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5L38">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-d0f5180f3dc87f8ac431bc3270299bc5R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	reportReader : BatchReportReader to treeRootHolder : TreeRootHolder in class org.sonar.server.computation.step.IndexSourceLinesStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-6ac2d448107469b33296c261e2c05ddcL30">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-6ac2d448107469b33296c261e2c05ddcR28">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolderRule in class org.sonar.server.computation.step.IndexTestsStepTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-ed5b30fa666ae09682bb3c6e49fe7f7bL55">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-ed5b30fa666ae09682bb3c6e49fe7f7bR54">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1192,6 +1192,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in method public SendIssueNotificationsStep(issueCache IssueCache, rules RuleCache, treeRootHolder TreeRootHolder, service NotificationService, reportReader BatchReportReader, newIssuesNotificationFactory NewIssuesNotificationFactory) in class org.sonar.server.computation.step.SendIssueNotificationsStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0L58">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0R58">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1275,13 +1282,6 @@
                                 <td><i>Rename Parameter	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in method public PersistFileSourcesStep(dbClient DbClient, system2 System2, treeRootHolder TreeRootHolder, reportReader BatchReportReader) in class org.sonar.server.computation.step.PersistFileSourcesStep</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-38fba448bf38b3d012ad7ed895695a9cL58">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-38fba448bf38b3d012ad7ed895695a9cR61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	dbComponentsRefCache : DbComponentsRefCache to treeRootHolder : TreeRootHolder in method public SendIssueNotificationsStep(issueCache IssueCache, rules RuleCache, treeRootHolder TreeRootHolder, service NotificationService, reportReader BatchReportReader, newIssuesNotificationFactory NewIssuesNotificationFactory) in class org.sonar.server.computation.step.SendIssueNotificationsStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0L58">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/08f807ca759212e6f6b2c05063bc2d32e5383615?diff=split#diff-2491622c27fc693276ffe9bd5567a1d0R58">To</a></td>
                             </tr>
                             
                             </tbody>

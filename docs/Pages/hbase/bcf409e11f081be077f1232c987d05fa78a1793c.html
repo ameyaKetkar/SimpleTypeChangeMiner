@@ -329,6 +329,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	e : Map.Entry&lt;byte[],Long&gt; to e : Map.Entry&lt;ImmutableByteArray,Long&gt; in method package abortCacheFlush(encodedRegionName byte[]) : void in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L302">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R340">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	m : Map&lt;byte[],Long&gt; to m : Map&lt;ImmutableByteArray,Long&gt; in method package findLower(sequenceids Map&lt;byte[],Long&gt;) : byte[][] in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L369">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R410">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	m : Map&lt;byte[],Long&gt; to m : Map&lt;ImmutableByteArray,Long&gt; in method package startCacheFlush(encodedRegionName byte[], families Set&lt;byte[]&gt;) : Long in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L240">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R276">To</a></td>
@@ -411,20 +425,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R194">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	e : Map.Entry&lt;byte[],Long&gt; to e : Map.Entry&lt;ImmutableByteArray,Long&gt; in method package abortCacheFlush(encodedRegionName byte[]) : void in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L302">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R340">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	m : Map&lt;byte[],Long&gt; to m : Map&lt;ImmutableByteArray,Long&gt; in method package findLower(sequenceids Map&lt;byte[],Long&gt;) : byte[][] in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L369">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R410">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -438,16 +438,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	lowestUnflushedSequenceIds : ConcurrentMap&lt;byte[],ConcurrentMap&lt;byte[],Long&gt;&gt; to lowestUnflushedSequenceIds : ConcurrentMap&lt;byte[],ConcurrentMap&lt;ImmutableByteArray,Long&gt;&gt; in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L72">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R84">To</a></td>
+                                <td><i>Change Attribute Type	flushingSequenceIds : Map&lt;byte[],Map&lt;byte[],Long&gt;&gt; to flushingSequenceIds : Map&lt;byte[],Map&lt;ImmutableByteArray,Long&gt;&gt; in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L82">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R92">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	flushingSequenceIds : Map&lt;byte[],Map&lt;byte[],Long&gt;&gt; to flushingSequenceIds : Map&lt;byte[],Map&lt;ImmutableByteArray,Long&gt;&gt; in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L82">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R92">To</a></td>
+                                <td><i>Change Attribute Type	lowestUnflushedSequenceIds : ConcurrentMap&lt;byte[],ConcurrentMap&lt;byte[],Long&gt;&gt; to lowestUnflushedSequenceIds : ConcurrentMap&lt;byte[],ConcurrentMap&lt;ImmutableByteArray,Long&gt;&gt; in class org.apache.hadoop.hbase.regionserver.wal.SequenceIdAccounting</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2L72">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/bcf409e11f081be077f1232c987d05fa78a1793c?diff=split#diff-47a17f9dd6556da28ed0868fe950bcd2R84">To</a></td>
                             </tr>
                             
                             </tbody>

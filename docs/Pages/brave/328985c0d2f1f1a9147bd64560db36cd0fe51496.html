@@ -274,6 +274,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Method	package remoteEndpoint(remoteEndpoint Endpoint) : void from class brave.internal.recorder.MutableSpan to public remoteEndpoint(remoteEndpoint Endpoint) : void from class brave.internal.recorder.SpanRecord</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-bacba312d850d61bbd8b0f20172ffe2fL71">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-b9259e9dfd62a95b454fa4dde14615edR79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Method	package kind(kind Span.Kind) : void from class brave.internal.recorder.MutableSpan to public kind(kind Kind) : void from class brave.internal.recorder.SpanRecord</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-bacba312d850d61bbd8b0f20172ffe2fL39">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-b9259e9dfd62a95b454fa4dde14615edR44">To</a></td>
@@ -298,13 +305,6 @@
                                 <td><i>Move Method	package annotate(timestamp long, value String) : void from class brave.internal.recorder.MutableSpan to public annotate(timestamp long, value String) : void from class brave.internal.recorder.SpanRecord</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-bacba312d850d61bbd8b0f20172ffe2fL51">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-b9259e9dfd62a95b454fa4dde14615edR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package remoteEndpoint(remoteEndpoint Endpoint) : void from class brave.internal.recorder.MutableSpan to public remoteEndpoint(remoteEndpoint Endpoint) : void from class brave.internal.recorder.SpanRecord</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-bacba312d850d61bbd8b0f20172ffe2fL71">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-b9259e9dfd62a95b454fa4dde14615edR79">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -391,6 +391,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	brave.internal.recorder.MutableSpan renamed to brave.internal.recorder.PendingSpanRecord</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	brave.internal.recorder.Recorder renamed to brave.internal.recorder.SpanRecord</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	brave.internal.recorder.MutableSpanMap renamed to brave.internal.recorder.PendingSpanRecords</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -406,20 +420,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	brave.internal.recorder.MutableSpanTest renamed to brave.internal.recorder.SpanRecordTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	brave.internal.recorder.MutableSpan renamed to brave.internal.recorder.PendingSpanRecord</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	brave.internal.recorder.Recorder renamed to brave.internal.recorder.SpanRecord</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -470,6 +470,62 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	reference : Reference&lt;? extends TraceContext&gt; to contextKey : RealKey in method package reportOrphanedSpans() : void in class brave.internal.recorder.PendingSpanRecords</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL93">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R101">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	key2 : MutableSpanMap.RealKey to key2 : PendingSpanRecords.RealKey in method public realKey_equalToEquivalent() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L295">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R275">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	span : MutableSpan to span : PendingSpanRecord in method public getOrCreate_cachesReference() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L72">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	key : MutableSpanMap.RealKey to key : PendingSpanRecords.RealKey in method public realKey_equalToItself() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L287">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R266">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	trace2Span : MutableSpan to trace2Span : PendingSpanRecord in method public getOrCreate_reusesClockFromParent() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L42">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	map : MutableSpanMap to map : PendingSpanRecords in method public reportOrphanedSpans_whenReporterDies() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L244">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R224">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : MutableSpan to last : PendingSpanRecord in method public remove(context TraceContext) : boolean in class brave.internal.recorder.PendingSpanRecords</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL86">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	parent : MutableSpan to parent : PendingSpanRecord in method package getClockFromParent(context TraceContext) : TickClock in class brave.internal.recorder.PendingSpanRecords</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL68">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R78">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -534,62 +590,6 @@
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R56">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	reference : Reference&lt;? extends TraceContext&gt; to contextKey : RealKey in method package reportOrphanedSpans() : void in class brave.internal.recorder.PendingSpanRecords</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL93">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	key2 : MutableSpanMap.RealKey to key2 : PendingSpanRecords.RealKey in method public realKey_equalToEquivalent() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L295">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R275">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	span : MutableSpan to span : PendingSpanRecord in method public getOrCreate_cachesReference() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L72">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	key : MutableSpanMap.RealKey to key : PendingSpanRecords.RealKey in method public realKey_equalToItself() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L287">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	trace2Span : MutableSpan to trace2Span : PendingSpanRecord in method public getOrCreate_reusesClockFromParent() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L42">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	map : MutableSpanMap to map : PendingSpanRecords in method public reportOrphanedSpans_whenReporterDies() : void in class brave.internal.recorder.PendingSpanRecordsTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-fffbf5f59a82c502fd28fcf602f1d6b6L244">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-542f0d4cb44e3efa2438a8351d6460d0R224">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : MutableSpan to last : PendingSpanRecord in method public remove(context TraceContext) : boolean in class brave.internal.recorder.PendingSpanRecords</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL86">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	parent : MutableSpan to parent : PendingSpanRecord in method package getClockFromParent(context TraceContext) : TickClock in class brave.internal.recorder.PendingSpanRecords</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL68">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R78">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -621,6 +621,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public error_noMessage() : void renamed to public error_noMessage_customizer() : void in class brave.ErrorParserTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-98561d5fa63bb8c5d0ebaeb952a323a0L22">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-98561d5fa63bb8c5d0ebaeb952a323a0R29">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public error() : void renamed to public error_customizer() : void in class brave.ErrorParserTest</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-98561d5fa63bb8c5d0ebaeb952a323a0L16">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-98561d5fa63bb8c5d0ebaeb952a323a0R17">To</a></td>
@@ -638,13 +645,6 @@
                                 <td><i>Rename Method	package maybeClockFromParent(context TraceContext) : Clock renamed to package getClockFromParent(context TraceContext) : TickClock in class brave.internal.recorder.PendingSpanRecords</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL68">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public error_noMessage() : void renamed to public error_noMessage_customizer() : void in class brave.ErrorParserTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-98561d5fa63bb8c5d0ebaeb952a323a0L22">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-98561d5fa63bb8c5d0ebaeb952a323a0R29">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -685,6 +685,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	MutableSpan to PendingSpanRecord in method package get(context TraceContext) : PendingSpanRecord in class brave.internal.recorder.PendingSpanRecords</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL46">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	MutableSpan to boolean in method public remove(context TraceContext) : boolean in class brave.internal.recorder.PendingSpanRecords</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL86">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R91">To</a></td>
@@ -704,13 +711,6 @@
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R55">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	MutableSpan to PendingSpanRecord in method package get(context TraceContext) : PendingSpanRecord in class brave.internal.recorder.PendingSpanRecords</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-c853cce5b66cd68d8f36664373f494dfL46">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-8a695623334455194cc625b902ef1f58R49">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -721,6 +721,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	reporter : Reporter&lt;zipkin2.Span&gt; to spanReporter : Tracing.SpanReporter in class brave.Tracer</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L65">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R66">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -743,13 +750,6 @@
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-9ff3cba2ac95320f2dd02b1dcccc6f75R14">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	reporter : Reporter&lt;zipkin2.Span&gt; to spanReporter : Tracing.SpanReporter in class brave.Tracer</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L65">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R66">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -760,13 +760,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	clock : Clock to clock : TickClock in class brave.internal.recorder.PendingSpanRecord</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-bacba312d850d61bbd8b0f20172ffe2fL10">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-6f1198718a3b15558ca29c153af9e602R7">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -815,6 +808,13 @@
                                 <td><i>Change Attribute Type	reporter : Reporter&lt;zipkin2.Span&gt; to spanReporter : Tracing.SpanReporter in class brave.Tracer</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L65">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	clock : Clock to clock : TickClock in class brave.internal.recorder.PendingSpanRecord</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-bacba312d850d61bbd8b0f20172ffe2fL10">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/328985c0d2f1f1a9147bd64560db36cd0fe51496?diff=split#diff-6f1198718a3b15558ca29c153af9e602R7">To</a></td>
                             </tr>
                             
                             </tbody>

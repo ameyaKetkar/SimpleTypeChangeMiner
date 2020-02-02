@@ -154,6 +154,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public readEvent(buf ByteBuf, expectedListenerId byte[], marshaller Marshaller, whitelist List&lt;String&gt;, serverAddress SocketAddress) : ClientEvent renamed to public readCacheEvent(buf ByteBuf, marshaller Marshaller, eventTypeId short, whitelist List&lt;String&gt;, serverAddress SocketAddress) : AbstractClientEvent in class org.infinispan.client.hotrod.impl.protocol.Codec20</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970L197">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970R235">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readHeader(buf ByteBuf, params HeaderParams, channelFactory ChannelFactory, serverAddress SocketAddress) : short renamed to public readOpCode(buf ByteBuf) : short in class org.infinispan.client.hotrod.impl.protocol.Codec20</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970L166">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970R157">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public readEvent(buf ByteBuf, expectedListenerId byte[], marshaller Marshaller, whitelist List&lt;String&gt;, serverAddress SocketAddress) : ClientEvent renamed to public readCacheEvent(buf ByteBuf, marshaller Marshaller, eventTypeId short, whitelist List&lt;String&gt;, serverAddress SocketAddress) : AbstractClientEvent in class org.infinispan.client.hotrod.impl.protocol.Codec</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-c10e87fdb2b967096c684cd362447712L60">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-c10e87fdb2b967096c684cd362447712R61">To</a></td>
@@ -208,20 +222,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-20e6d2625df07ce3b2765cc5814b430eR152">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readEvent(buf ByteBuf, expectedListenerId byte[], marshaller Marshaller, whitelist List&lt;String&gt;, serverAddress SocketAddress) : ClientEvent renamed to public readCacheEvent(buf ByteBuf, marshaller Marshaller, eventTypeId short, whitelist List&lt;String&gt;, serverAddress SocketAddress) : AbstractClientEvent in class org.infinispan.client.hotrod.impl.protocol.Codec20</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970L197">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970R235">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readHeader(buf ByteBuf, params HeaderParams, channelFactory ChannelFactory, serverAddress SocketAddress) : short renamed to public readOpCode(buf ByteBuf) : short in class org.infinispan.client.hotrod.impl.protocol.Codec20</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970L166">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970R157">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -232,13 +232,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	channel : Channel to cleanup : Runnable in method package EventDispatcher(cacheName String, listener Object, listenerId byte[], address SocketAddress, cleanup Runnable) in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L32">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R23">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -261,6 +254,13 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-66efca66fe2d64253edebe3ac018c066R79">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	channel : Channel to cleanup : Runnable in method package EventDispatcher(cacheName String, listener Object, listenerId byte[], address SocketAddress, cleanup Runnable) in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L32">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R23">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -274,13 +274,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	channel : Channel to address : SocketAddress in method private findEventServer() : InetSocketAddress in class org.infinispan.client.hotrod.counter.BaseCounterAPITest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-da602476dc05939d17cba26c2c241614L163">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-da602476dc05939d17cba26c2c241614R162">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	receivedListenerId : byte[] to listenerId : byte[] in method public readCounterEvent(buf ByteBuf) : HotRodCounterEvent in class org.infinispan.client.hotrod.impl.protocol.Codec20</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970L234">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970R220">To</a></td>
@@ -291,6 +284,13 @@
                                 <td><i>Rename Variable	eventTypeId : short to status : short in method public readCacheEvent(buf ByteBuf, marshaller Marshaller, eventTypeId short, whitelist List&lt;String&gt;, serverAddress SocketAddress) : AbstractClientEvent in class org.infinispan.client.hotrod.impl.protocol.Codec20</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970L200">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-4d19e2a34b9921ce702cc59c3b919970R237">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	channel : Channel to address : SocketAddress in method private findEventServer() : InetSocketAddress in class org.infinispan.client.hotrod.counter.BaseCounterAPITest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-da602476dc05939d17cba26c2c241614L163">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-da602476dc05939d17cba26c2c241614R162">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -473,16 +473,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	notifier : ClientListenerNotifier to address : SocketAddress in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L25">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R18">To</a></td>
+                                <td><i>Change Attribute Type	channel : Channel to cleanup : Runnable in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L28">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R20">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	channel : Channel to cleanup : Runnable in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L28">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R20">To</a></td>
+                                <td><i>Change Attribute Type	notifier : ClientListenerNotifier to address : SocketAddress in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L25">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R18">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -498,13 +498,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	channel : Channel to cleanup : Runnable in method package EventDispatcher(cacheName String, listener Object, listenerId byte[], address SocketAddress, cleanup Runnable) in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L32">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R23">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	notifier : ClientListenerNotifier to address : SocketAddress in method public create(op AddClientListenerOperation, address SocketAddress, cleanup Runnable) : ClientEventDispatcher in class org.infinispan.client.hotrod.event.impl.ClientEventDispatcher</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-55e983620b69cc90e5bb1c66106618f4L52">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-55e983620b69cc90e5bb1c66106618f4R51">To</a></td>
@@ -515,6 +508,13 @@
                                 <td><i>Rename Parameter	listenerId : String to receivedListenerId : String in method public unexpectedListenerId(expectedListenerId String, receivedListenerId String) : IllegalStateException in class org.infinispan.client.hotrod.logging.Log</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-38931d6a06b24bd800d5f5246ca5b642L136">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-38931d6a06b24bd800d5f5246ca5b642R136">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	channel : Channel to cleanup : Runnable in method package EventDispatcher(cacheName String, listener Object, listenerId byte[], address SocketAddress, cleanup Runnable) in class org.infinispan.client.hotrod.event.impl.EventDispatcher</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9L32">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/54eadba31f46478eb70036306021b5261313e9e2?diff=split#diff-936de04c0f3330120e56f78b957df5f9R23">To</a></td>
                             </tr>
                             
                             </tbody>

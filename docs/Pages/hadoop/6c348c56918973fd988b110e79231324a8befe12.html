@@ -419,16 +419,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private LOG : Logger from class org.apache.hadoop.fs.s3a.S3AFastOutputStream to private LOG : Logger from class org.apache.hadoop.fs.s3a.S3AInstrumentation</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-7dcca7f605aaee5edfafaea20685bf3aL71">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-56ee1e9cd7f9e02ed0bd6db15a03b67cR57">To</a></td>
+                                <td><i>Move Attribute	public testTimeout : Timeout from class org.apache.hadoop.fs.s3a.ITestS3AFastOutputStream to public testTimeout : Timeout from class org.apache.hadoop.fs.s3a.ITestBlockingThreadPoolExecutorService</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-7a275ce99b4892c87ac1d12217eab207L42">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-ee916f70e8ac223e80c4b33b6e8c9343R58">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	public testTimeout : Timeout from class org.apache.hadoop.fs.s3a.ITestS3AFastOutputStream to public testTimeout : Timeout from class org.apache.hadoop.fs.s3a.ITestBlockingThreadPoolExecutorService</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-7a275ce99b4892c87ac1d12217eab207L42">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-ee916f70e8ac223e80c4b33b6e8c9343R58">To</a></td>
+                                <td><i>Move Attribute	private LOG : Logger from class org.apache.hadoop.fs.s3a.S3AFastOutputStream to private LOG : Logger from class org.apache.hadoop.fs.s3a.S3AInstrumentation</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-7dcca7f605aaee5edfafaea20685bf3aL71">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-56ee1e9cd7f9e02ed0bd6db15a03b67cR57">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -462,6 +462,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	org.apache.hadoop.fs.s3a.S3AFastOutputStream.MultiPartUpload moved to org.apache.hadoop.fs.s3a.S3ABlockOutputStream.MultiPartUpload</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService.CallableWithPermitRelease moved to org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor.CallableWithPermitRelease</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -477,13 +484,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService.RunnableWithPermitRelease moved to org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor.RunnableWithPermitRelease</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.hadoop.fs.s3a.S3AFastOutputStream.MultiPartUpload moved to org.apache.hadoop.fs.s3a.S3ABlockOutputStream.MultiPartUpload</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -587,6 +587,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Pull Up Method	public submit(task Callable&lt;T&gt;) : ListenableFuture&lt;T&gt; from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public submit(task Callable&lt;T&gt;) : ListenableFuture&lt;T&gt; from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L160">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR107">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public invokeAny(tasks Collection&lt;? extends Callable&lt;T&gt;&gt;, timeout long, unit TimeUnit) : T from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public invokeAny(tasks Collection&lt;? extends Callable&lt;T&gt;&gt;, timeout long, unit TimeUnit) : T from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L265">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR100">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public execute(command Runnable) : void from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public execute(command Runnable) : void from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L193">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	protected delegate() : ListeningExecutorService from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to protected delegate() : ListeningExecutorService from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L155">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR76">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Pull Up Method	public submit(task Runnable, result T) : ListenableFuture&lt;T&gt; from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public submit(task Runnable, result T) : ListenableFuture&lt;T&gt; from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L171">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR118">To</a></td>
@@ -618,34 +646,6 @@
                                 <td><i>Pull Up Method	public invokeAll(tasks Collection&lt;? extends Callable&lt;T&gt;&gt;) : List&lt;Future&lt;T&gt;&gt; from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public invokeAll(tasks Collection&lt;? extends Callable&lt;T&gt;&gt;) : List&lt;Future&lt;T&gt;&gt; from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L247">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public submit(task Callable&lt;T&gt;) : ListenableFuture&lt;T&gt; from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public submit(task Callable&lt;T&gt;) : ListenableFuture&lt;T&gt; from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L160">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR107">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public invokeAny(tasks Collection&lt;? extends Callable&lt;T&gt;&gt;, timeout long, unit TimeUnit) : T from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public invokeAny(tasks Collection&lt;? extends Callable&lt;T&gt;&gt;, timeout long, unit TimeUnit) : T from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L265">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR100">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public execute(command Runnable) : void from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to public execute(command Runnable) : void from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L193">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	protected delegate() : ListeningExecutorService from class org.apache.hadoop.fs.s3a.BlockingThreadPoolExecutorService to protected delegate() : ListeningExecutorService from class org.apache.hadoop.fs.s3a.SemaphoredDelegatingExecutor</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-3373a97f2377252cc53ae5159f999552L155">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-a228e3d0fd64b3de2eec0e6fec393c1fR76">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -715,16 +715,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	closed : boolean to closed : AtomicBoolean in class org.apache.hadoop.fs.s3a.S3AOutputStream</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-2c593871c8e7e55267d85003e8999f25L50">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-2c593871c8e7e55267d85003e8999f25R50">To</a></td>
+                                <td><i>Change Attribute Type	threadPoolExecutor : ExecutorService to threadPoolExecutor : ListeningExecutorService in class org.apache.hadoop.fs.s3a.S3AFileSystem</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-68d825da8ca6695158f565b6f360d1baL121">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-68d825da8ca6695158f565b6f360d1baR130">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	threadPoolExecutor : ExecutorService to threadPoolExecutor : ListeningExecutorService in class org.apache.hadoop.fs.s3a.S3AFileSystem</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-68d825da8ca6695158f565b6f360d1baL121">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-68d825da8ca6695158f565b6f360d1baR130">To</a></td>
+                                <td><i>Change Attribute Type	closed : boolean to closed : AtomicBoolean in class org.apache.hadoop.fs.s3a.S3AOutputStream</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-2c593871c8e7e55267d85003e8999f25L50">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/6c348c56918973fd988b110e79231324a8befe12?diff=split#diff-2c593871c8e7e55267d85003e8999f25R50">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -740,14 +740,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	public getMultipartSizeProperty(conf Configuration, property String, defVal long) : long extracted from public initialize(name URI, conf Configuration) : void in class org.apache.hadoop.fs.s3a.S3AFileSystem &amp; moved to class org.apache.hadoop.fs.s3a.S3AUtils</i></td>
+                                <td><i>Extract And Move Method	package createTmpFileForWrite(pathStr String, size long, conf Configuration) : File extracted from public S3AOutputStream(conf Configuration, fs S3AFileSystem, key String, progress Progressable) in class org.apache.hadoop.fs.s3a.S3AOutputStream &amp; moved to class org.apache.hadoop.fs.s3a.S3AFileSystem</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	package createTmpFileForWrite(pathStr String, size long, conf Configuration) : File extracted from public S3AOutputStream(conf Configuration, fs S3AFileSystem, key String, progress Progressable) in class org.apache.hadoop.fs.s3a.S3AOutputStream &amp; moved to class org.apache.hadoop.fs.s3a.S3AFileSystem</i></td>
+                                <td><i>Extract And Move Method	public getMultipartSizeProperty(conf Configuration, property String, defVal long) : long extracted from public initialize(name URI, conf Configuration) : void in class org.apache.hadoop.fs.s3a.S3AFileSystem &amp; moved to class org.apache.hadoop.fs.s3a.S3AUtils</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -156,16 +156,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	comp : GridCompoundFuture&lt;GridTuple3&lt;String,Boolean,String&gt;,Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt;&gt; to comp : GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt; in method private runNextNodeCallable(queue ConcurrentLinkedQueue&lt;StartNodeCallable&gt;, comp GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt;, cnt AtomicInteger) : boolean in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
+                                <td><i>Change Parameter Type	queue : ConcurrentLinkedQueue&lt;IgniteNodeCallable&gt; to queue : ConcurrentLinkedQueue&lt;StartNodeCallable&gt; in method private runNextNodeCallable(queue ConcurrentLinkedQueue&lt;StartNodeCallable&gt;, comp GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt;, cnt AtomicInteger) : boolean in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L466">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R472">To</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R471">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	queue : ConcurrentLinkedQueue&lt;IgniteNodeCallable&gt; to queue : ConcurrentLinkedQueue&lt;StartNodeCallable&gt; in method private runNextNodeCallable(queue ConcurrentLinkedQueue&lt;StartNodeCallable&gt;, comp GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt;, cnt AtomicInteger) : boolean in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
+                                <td><i>Change Parameter Type	comp : GridCompoundFuture&lt;GridTuple3&lt;String,Boolean,String&gt;,Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt;&gt; to comp : GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt; in method private runNextNodeCallable(queue ConcurrentLinkedQueue&lt;StartNodeCallable&gt;, comp GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt;, cnt AtomicInteger) : boolean in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L466">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R471">To</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R472">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -178,6 +178,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to Collection&lt;ClusterStartNodeResult&gt; in method public startNodes(file File, restart boolean, timeout int, maxConn int) : Collection&lt;ClusterStartNodeResult&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L191">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R190">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	GridTuple3&lt;String,Boolean,String&gt; to ClusterStartNodeResult in method public call() : ClusterStartNodeResult in class org.apache.ignite.internal.util.nodestart.StartNodeCallableImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-6bd2b1361a1469978863d9b163c5200dL83">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-4d335e59ce7e98c67f5d807753829fa7R84">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to Collection&lt;ClusterStartNodeResult&gt; in method public startNodes(file File, restart boolean, timeout int, maxConn int) : Collection&lt;ClusterStartNodeResult&gt; in class org.apache.ignite.internal.cluster.IgniteClusterAsyncImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3L100">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3R99">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to Collection&lt;ClusterStartNodeResult&gt; in method public startNodes(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : Collection&lt;ClusterStartNodeResult&gt; in class org.apache.ignite.internal.cluster.IgniteClusterAsyncImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3L114">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3R113">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -242,34 +270,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R298">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to Collection&lt;ClusterStartNodeResult&gt; in method public startNodes(file File, restart boolean, timeout int, maxConn int) : Collection&lt;ClusterStartNodeResult&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L191">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R190">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	GridTuple3&lt;String,Boolean,String&gt; to ClusterStartNodeResult in method public call() : ClusterStartNodeResult in class org.apache.ignite.internal.util.nodestart.StartNodeCallableImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-6bd2b1361a1469978863d9b163c5200dL83">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-4d335e59ce7e98c67f5d807753829fa7R84">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to Collection&lt;ClusterStartNodeResult&gt; in method public startNodes(file File, restart boolean, timeout int, maxConn int) : Collection&lt;ClusterStartNodeResult&gt; in class org.apache.ignite.internal.cluster.IgniteClusterAsyncImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3L100">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3R99">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to Collection&lt;ClusterStartNodeResult&gt; in method public startNodes(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : Collection&lt;ClusterStartNodeResult&gt; in class org.apache.ignite.internal.cluster.IgniteClusterAsyncImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3L114">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-928cfcc843efea21290653b8377479f3R113">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -283,14 +283,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.ignite.internal.util.nodestart.IgniteNodeCallableImpl renamed to org.apache.ignite.internal.util.nodestart.StartNodeCallableImpl</i></td>
+                                <td><i>Rename Class	org.apache.ignite.internal.util.nodestart.IgniteNodeCallable renamed to org.apache.ignite.internal.util.nodestart.StartNodeCallable</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.ignite.internal.util.nodestart.IgniteNodeCallable renamed to org.apache.ignite.internal.util.nodestart.StartNodeCallable</i></td>
+                                <td><i>Rename Class	org.apache.ignite.internal.util.nodestart.IgniteNodeCallableImpl renamed to org.apache.ignite.internal.util.nodestart.StartNodeCallableImpl</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -305,41 +305,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-25" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	fut : GridCompoundFuture&lt;GridTuple3&lt;String,Boolean,String&gt;,Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt;&gt; to fut : GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt; in method package startNodesAsync(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : IgniteInternalFuture&lt;Collection&lt;ClusterStartNodeResult&gt;&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L326">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R416">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	res : Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to res : Collection&lt;ClusterStartNodeResult&gt; in method public testStopNodes() : void in class org.apache.ignite.internal.IgniteProjectionStartStopRestartSelfTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1L494">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1R499">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	res : Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to res : Collection&lt;ClusterStartNodeResult&gt; in method public testRestartNodeById() : void in class org.apache.ignite.internal.IgniteProjectionStartStopRestartSelfTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1L809">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1R814">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	nodeRuns : ConcurrentLinkedQueue&lt;IgniteNodeCallable&gt; to nodeRuns : ConcurrentLinkedQueue&lt;StartNodeCallable&gt; in method package startNodesAsync(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : IgniteInternalFuture&lt;Collection&lt;ClusterStartNodeResult&gt;&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L326">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R395">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	queue : ConcurrentLinkedQueue&lt;IgniteNodeCallable&gt; to queue : ConcurrentLinkedQueue&lt;StartNodeCallable&gt; in method package startNodesAsync(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : IgniteInternalFuture&lt;Collection&lt;ClusterStartNodeResult&gt;&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L326">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R422">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -479,6 +444,41 @@
                                 <td><i>Change Variable Type	res : Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to res : Collection&lt;ClusterStartNodeResult&gt; in method public testCustomScript() : void in class org.apache.ignite.internal.IgniteProjectionStartStopRestartSelfTest</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1L458">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1R467">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	fut : GridCompoundFuture&lt;GridTuple3&lt;String,Boolean,String&gt;,Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt;&gt; to fut : GridCompoundFuture&lt;ClusterStartNodeResult,Collection&lt;ClusterStartNodeResult&gt;&gt; in method package startNodesAsync(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : IgniteInternalFuture&lt;Collection&lt;ClusterStartNodeResult&gt;&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L326">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R416">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	res : Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to res : Collection&lt;ClusterStartNodeResult&gt; in method public testStopNodes() : void in class org.apache.ignite.internal.IgniteProjectionStartStopRestartSelfTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1L494">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1R499">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	res : Collection&lt;GridTuple3&lt;String,Boolean,String&gt;&gt; to res : Collection&lt;ClusterStartNodeResult&gt; in method public testRestartNodeById() : void in class org.apache.ignite.internal.IgniteProjectionStartStopRestartSelfTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1L809">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-3de58736d52c13840244c683e4718cc1R814">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	nodeRuns : ConcurrentLinkedQueue&lt;IgniteNodeCallable&gt; to nodeRuns : ConcurrentLinkedQueue&lt;StartNodeCallable&gt; in method package startNodesAsync(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : IgniteInternalFuture&lt;Collection&lt;ClusterStartNodeResult&gt;&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L326">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R395">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	queue : ConcurrentLinkedQueue&lt;IgniteNodeCallable&gt; to queue : ConcurrentLinkedQueue&lt;StartNodeCallable&gt; in method package startNodesAsync(hosts Collection&lt;Map&lt;String,Object&gt;&gt;, dflts Map&lt;String,Object&gt;, restart boolean, timeout int, maxConn int) : IgniteInternalFuture&lt;Collection&lt;ClusterStartNodeResult&gt;&gt; in class org.apache.ignite.internal.cluster.IgniteClusterImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2L326">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/7f4c5eed0af2b56b1dd671cbe76a4224b72f5045?diff=split#diff-1d14d17c882f7e4f1d9af53e4f2c48b2R422">To</a></td>
                             </tr>
                             
                             </tbody>

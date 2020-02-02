@@ -156,6 +156,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	rmtFilter : CacheEntryEventFilter&lt;K,V&gt; to rmtFilter : IgniteCacheEntryEventFilter&lt;K,V&gt; in method public CacheContinuousQueryHandler(cacheName String, topic Object, locLsnr CacheEntryUpdatedListener&lt;K,V&gt;, rmtFilter IgniteCacheEntryEventFilter&lt;K,V&gt;, internal boolean, notifyExisting boolean, oldValRequired boolean, sync boolean, ignoreExpired boolean, taskHash int, skipPrimaryCheck boolean) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-b4734203e762b8729a6bc109a760be14L92">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-b4734203e762b8729a6bc109a760be14R109">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	rmtFilter : CacheEntryEventFilter to rmtFilter : IgniteCacheEntryEventFilter in method public executeInternalQuery(locLsnr CacheEntryUpdatedListener&lt;?,?&gt;, rmtFilter IgniteCacheEntryEventFilter, loc boolean, notifyExisting boolean) : UUID in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dL270">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dR279">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	contQryFilter : CacheEntryEventFilter&lt;K,V&gt; to contQryFilter : IgniteCacheEntryEventFilter&lt;K,V&gt; in method public CacheQueryExecutedEvent(node ClusterNode, msg String, type int, qryType CacheQueryType, cacheName String, clsName String, clause String, scanQryFilter IgniteBiPredicate&lt;K,V&gt;, contQryFilter IgniteCacheEntryEventFilter&lt;K,V&gt;, args Object[], subjId UUID, taskName String) in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-ed0c772751799063364a29e655edc68eL99">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-ed0c772751799063364a29e655edc68eR121">To</a></td>
@@ -196,20 +210,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-cceafeee306086a24586c78c289781feR209">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	rmtFilter : CacheEntryEventFilter&lt;K,V&gt; to rmtFilter : IgniteCacheEntryEventFilter&lt;K,V&gt; in method public CacheContinuousQueryHandler(cacheName String, topic Object, locLsnr CacheEntryUpdatedListener&lt;K,V&gt;, rmtFilter IgniteCacheEntryEventFilter&lt;K,V&gt;, internal boolean, notifyExisting boolean, oldValRequired boolean, sync boolean, ignoreExpired boolean, taskHash int, skipPrimaryCheck boolean) in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-b4734203e762b8729a6bc109a760be14L92">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-b4734203e762b8729a6bc109a760be14R109">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	rmtFilter : CacheEntryEventFilter to rmtFilter : IgniteCacheEntryEventFilter in method public executeInternalQuery(locLsnr CacheEntryUpdatedListener&lt;?,?&gt;, rmtFilter IgniteCacheEntryEventFilter, loc boolean, notifyExisting boolean) : UUID in class org.apache.ignite.internal.processors.cache.query.continuous.CacheContinuousQueryManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dL270">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-38a6d7aff3db46fdc7747f12daf2840dR279">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -220,6 +220,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CacheEntryEventFilter&lt;K,V&gt; to IgniteCacheEntryEventFilter&lt;K,V&gt; in method public getRemoteFilter() : IgniteCacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.cache.query.ContinuousQuery</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-cceafeee306086a24586c78c289781feL214">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-cceafeee306086a24586c78c289781feR215">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -240,13 +247,6 @@
                                 <td><i>Change Return Type	CacheEntryEventFilter&lt;K,V&gt; to IgniteCacheEntryEventFilter&lt;K,V&gt; in method public continuousQueryFilter() : IgniteCacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.events.CacheQueryExecutedEvent</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-ed0c772751799063364a29e655edc68eL190">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-ed0c772751799063364a29e655edc68eR191">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CacheEntryEventFilter&lt;K,V&gt; to IgniteCacheEntryEventFilter&lt;K,V&gt; in method public getRemoteFilter() : IgniteCacheEntryEventFilter&lt;K,V&gt; in class org.apache.ignite.cache.query.ContinuousQuery</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-cceafeee306086a24586c78c289781feL214">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1c72f34bcc42bf989dc4fc23f3d6a45785ae92e4?diff=split#diff-cceafeee306086a24586c78c289781feR215">To</a></td>
                             </tr>
                             
                             </tbody>

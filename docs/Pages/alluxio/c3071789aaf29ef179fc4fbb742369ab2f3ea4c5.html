@@ -188,20 +188,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getFileInfo(path String, resultHandler AsyncMethodCallback) : void renamed to public getStatus(path String, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncIface</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L197">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R186">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public send_getFileInfo(path String) : void renamed to public send_getStatus(path String) : void in class tachyon.thrift.FileSystemMasterClientService.Client</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L400">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R362">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getFileInfo(path String, resultHandler AsyncMethodCallback) : void renamed to public getStatus(path String, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncClient</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L874">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R801">To</a></td>
@@ -249,6 +235,20 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R436">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getFileInfo(path String, resultHandler AsyncMethodCallback) : void renamed to public getStatus(path String, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncIface</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L197">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R186">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public send_getFileInfo(path String) : void renamed to public send_getStatus(path String) : void in class tachyon.thrift.FileSystemMasterClientService.Client</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L400">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R362">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -259,6 +259,104 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-36" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultHandler : AsyncMethodCallback&lt;FileInfo&gt; to resultHandler : AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in method public start(iface I, args listStatus_args, resultHandler AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt;) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.listStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L2060">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R2070">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultHandler : AsyncMethodCallback&lt;tachyon.thrift.FileBlockInfo&gt; to resultHandler : AsyncMethodCallback&lt;FileInfo&gt; in method public start(iface I, args getStatus_args, resultHandler AsyncMethodCallback&lt;FileInfo&gt;) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1946">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1904">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	that : getFileInfoList_args to that : listStatus_args in method public equals(that listStatus_args) : boolean in class tachyon.thrift.FileSystemMasterClientService.listStatus_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9115">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9448">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	struct : getFileInfo_result to struct : listStatus_result in method public read(iprot TProtocol, struct listStatus_result) : void in class tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8821">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R10017">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	args : getFileBlockInfo_args to args : getStatus_args in method public getResult(iface I, args getStatus_args) : getStatus_result in class tachyon.thrift.FileSystemMasterClientService.Processor.getStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1351">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1301">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	struct : getFileBlockInfo_result to struct : getStatus_result in method public read(iprot TProtocol, struct getStatus_result) : void in class tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L7080">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7704">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	args : getFileInfo_args to args : listStatus_args in method public getResult(iface I, args listStatus_args) : listStatus_result in class tachyon.thrift.FileSystemMasterClientService.Processor.listStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1399">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1370">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	struct : getFileInfo_result to struct : listStatus_result in method public read(prot TProtocol, struct listStatus_result) : void in class tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8907">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R10127">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	struct : getFileBlockInfo_args to struct : getStatus_args in method public write(prot TProtocol, struct getStatus_args) : void in class tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6676">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7311">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	other : getFileInfoList_args to other : listStatus_args in method public listStatus_args(other listStatus_args) in class tachyon.thrift.FileSystemMasterClientService.listStatus_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9023">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9359">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	that : getFileInfo_args to that : getStatus_args in method public equals(that getStatus_args) : boolean in class tachyon.thrift.FileSystemMasterClientService.getStatus_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8269">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7152">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	success : FileBlockInfo to success : FileInfo in method public getStatus_result(success FileInfo, e TachyonTException) in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6803">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7428">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	success : FileBlockInfo to success : FileInfo in method public setSuccess(success FileInfo) : getStatus_result in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6838">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7462">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	other : getFileInfo_args to other : getStatus_args in method public compareTo(other getStatus_args) : int in class tachyon.thrift.FileSystemMasterClientService.getStatus_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8297">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7181">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -414,104 +512,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9554">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultHandler : AsyncMethodCallback&lt;FileInfo&gt; to resultHandler : AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in method public start(iface I, args listStatus_args, resultHandler AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt;) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.listStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L2060">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R2070">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultHandler : AsyncMethodCallback&lt;tachyon.thrift.FileBlockInfo&gt; to resultHandler : AsyncMethodCallback&lt;FileInfo&gt; in method public start(iface I, args getStatus_args, resultHandler AsyncMethodCallback&lt;FileInfo&gt;) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1946">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1904">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	that : getFileInfoList_args to that : listStatus_args in method public equals(that listStatus_args) : boolean in class tachyon.thrift.FileSystemMasterClientService.listStatus_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9115">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9448">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	struct : getFileInfo_result to struct : listStatus_result in method public read(iprot TProtocol, struct listStatus_result) : void in class tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8821">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R10017">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	args : getFileBlockInfo_args to args : getStatus_args in method public getResult(iface I, args getStatus_args) : getStatus_result in class tachyon.thrift.FileSystemMasterClientService.Processor.getStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1351">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1301">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	struct : getFileBlockInfo_result to struct : getStatus_result in method public read(iprot TProtocol, struct getStatus_result) : void in class tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L7080">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7704">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	args : getFileInfo_args to args : listStatus_args in method public getResult(iface I, args listStatus_args) : listStatus_result in class tachyon.thrift.FileSystemMasterClientService.Processor.listStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1399">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1370">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	struct : getFileInfo_result to struct : listStatus_result in method public read(prot TProtocol, struct listStatus_result) : void in class tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8907">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R10127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	struct : getFileBlockInfo_args to struct : getStatus_args in method public write(prot TProtocol, struct getStatus_args) : void in class tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6676">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7311">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	other : getFileInfoList_args to other : listStatus_args in method public listStatus_args(other listStatus_args) in class tachyon.thrift.FileSystemMasterClientService.listStatus_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9023">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9359">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	that : getFileInfo_args to that : getStatus_args in method public equals(that getStatus_args) : boolean in class tachyon.thrift.FileSystemMasterClientService.getStatus_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8269">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7152">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	success : FileBlockInfo to success : FileInfo in method public getStatus_result(success FileInfo, e TachyonTException) in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6803">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7428">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	success : FileBlockInfo to success : FileInfo in method public setSuccess(success FileInfo) : getStatus_result in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6838">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7462">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	other : getFileInfo_args to other : getStatus_args in method public compareTo(other getStatus_args) : int in class tachyon.thrift.FileSystemMasterClientService.getStatus_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8297">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7181">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -522,97 +522,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-28" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileInfo_args to getStatus_args in method public setPath(path String) : getStatus_args in class tachyon.thrift.FileSystemMasterClientService.getStatus_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8202">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7085">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileInfoList_args to listStatus_args in method public deepCopy() : listStatus_args in class tachyon.thrift.FileSystemMasterClientService.listStatus_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9032">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9365">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	FileBlockInfo to FileInfo in method public getSuccess() : FileInfo in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6834">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7458">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileBlockInfo_result to getStatus_result in method public setE(e TachyonTException) : getStatus_result in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6862">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileBlockInfo_resultTupleScheme to getStatus_resultTupleScheme in method public getScheme() : getStatus_resultTupleScheme in class tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultTupleSchemeFactory</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L7140">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7764">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileInfo_result to listStatus_result in method public getResult(iface I, args listStatus_args) : listStatus_result in class tachyon.thrift.FileSystemMasterClientService.Processor.listStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1399">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1370">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	AsyncMethodCallback&lt;FileInfo&gt; to AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.listStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L2017">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R2027">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileInfo_resultTupleScheme to listStatus_resultTupleScheme in method public getScheme() : listStatus_resultTupleScheme in class tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultTupleSchemeFactory</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8881">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R10094">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileInfoList_result to listStatus_result in method public setE(e TachyonTException) : listStatus_result in class tachyon.thrift.FileSystemMasterClientService.listStatus_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9469">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9802">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileBlockInfo_argsTupleScheme to getStatus_argsTupleScheme in method public getScheme() : getStatus_argsTupleScheme in class tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsTupleSchemeFactory</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6669">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7303">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileInfo_args to listStatus_args in method public getEmptyArgsInstance() : listStatus_args in class tachyon.thrift.FileSystemMasterClientService.Processor.listStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1391">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1362">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileBlockInfo_args to getStatus_args in method public getEmptyArgsInstance() : getStatus_args in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1899">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1857">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	getFileBlockInfo_args to getStatus_args in method public getEmptyArgsInstance() : getStatus_args in class tachyon.thrift.FileSystemMasterClientService.Processor.getStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1343">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1293">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -719,6 +628,97 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-dd421db9c90da7812f6d1b1a6dbdc4eaR197">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileInfo_args to getStatus_args in method public setPath(path String) : getStatus_args in class tachyon.thrift.FileSystemMasterClientService.getStatus_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8202">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7085">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileInfoList_args to listStatus_args in method public deepCopy() : listStatus_args in class tachyon.thrift.FileSystemMasterClientService.listStatus_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9032">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9365">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	FileBlockInfo to FileInfo in method public getSuccess() : FileInfo in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6834">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7458">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileBlockInfo_result to getStatus_result in method public setE(e TachyonTException) : getStatus_result in class tachyon.thrift.FileSystemMasterClientService.getStatus_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6862">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileBlockInfo_resultTupleScheme to getStatus_resultTupleScheme in method public getScheme() : getStatus_resultTupleScheme in class tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultTupleSchemeFactory</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L7140">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7764">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileInfo_result to listStatus_result in method public getResult(iface I, args listStatus_args) : listStatus_result in class tachyon.thrift.FileSystemMasterClientService.Processor.listStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1399">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1370">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	AsyncMethodCallback&lt;FileInfo&gt; to AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.listStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L2017">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R2027">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileInfo_resultTupleScheme to listStatus_resultTupleScheme in method public getScheme() : listStatus_resultTupleScheme in class tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultTupleSchemeFactory</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L8881">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R10094">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileInfoList_result to listStatus_result in method public setE(e TachyonTException) : listStatus_result in class tachyon.thrift.FileSystemMasterClientService.listStatus_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L9469">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R9802">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileBlockInfo_argsTupleScheme to getStatus_argsTupleScheme in method public getScheme() : getStatus_argsTupleScheme in class tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsTupleSchemeFactory</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L6669">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R7303">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileInfo_args to listStatus_args in method public getEmptyArgsInstance() : listStatus_args in class tachyon.thrift.FileSystemMasterClientService.Processor.listStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1391">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1362">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileBlockInfo_args to getStatus_args in method public getEmptyArgsInstance() : getStatus_args in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1899">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1857">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	getFileBlockInfo_args to getStatus_args in method public getEmptyArgsInstance() : getStatus_args in class tachyon.thrift.FileSystemMasterClientService.Processor.getStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1343">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1293">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -729,13 +729,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getFileBlockInfo renamed to tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -800,6 +793,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getFileBlockInfo renamed to tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -810,55 +810,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileInfo_result.getFileInfo_resultStandardSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_result.getFileBlockInfo_resultStandardScheme moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_result.getFileBlockInfo_resultTupleSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_args.getFileBlockInfo_argsTupleScheme moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsTupleScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileInfo_result.getFileInfo_resultTupleSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_result.getFileBlockInfo_resultStandardSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_args.getFileBlockInfo_argsStandardScheme moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -923,6 +874,55 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileInfo_result.getFileInfo_resultStandardSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_result.getFileBlockInfo_resultStandardScheme moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_result.getFileBlockInfo_resultTupleSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_args.getFileBlockInfo_argsTupleScheme moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsTupleScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileInfo_result.getFileInfo_resultTupleSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.listStatus_result.listStatus_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_result.getFileBlockInfo_resultStandardSchemeFactory moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_result.getStatus_resultStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_args.getFileBlockInfo_argsStandardScheme moved and renamed to tachyon.thrift.FileSystemMasterClientService.getStatus_args.getStatus_argsStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -933,13 +933,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-3" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_args._Fields moved to tachyon.thrift.FileSystemMasterClientService.getStatus_args._Fields</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -955,6 +948,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.FileSystemMasterClientService.getFileBlockInfo_args._Fields moved to tachyon.thrift.FileSystemMasterClientService.getStatus_args._Fields</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -965,6 +965,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : getFileInfo_result to result : listStatus_result in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.listStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L2017">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R2031">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : getFileInfo_result to result : getStatus_result in method public recv_getStatus() : FileInfo in class tachyon.thrift.FileSystemMasterClientService.Client</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L407">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R371">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : getFileBlockInfo_result to result : getStatus_result in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;FileInfo&gt; in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1903">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1865">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : getFileInfoList_result to result : listStatus_result in method public recv_listStatus() : List&lt;FileInfo&gt; in class tachyon.thrift.FileSystemMasterClientService.Client</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L433">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R445">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1034,34 +1062,6 @@
                                 <td><i>Change Variable Type	args : getFileInfo_args to args : getStatus_args in method public write_args(prot TProtocol) : void in class tachyon.thrift.FileSystemMasterClientService.AsyncClient.getStatus_call</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L888">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R817">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : getFileInfo_result to result : listStatus_result in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;List&lt;FileInfo&gt;&gt; in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.listStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L2017">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R2031">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : getFileInfo_result to result : getStatus_result in method public recv_getStatus() : FileInfo in class tachyon.thrift.FileSystemMasterClientService.Client</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L407">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R371">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : getFileBlockInfo_result to result : getStatus_result in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;FileInfo&gt; in class tachyon.thrift.FileSystemMasterClientService.AsyncProcessor.getStatus</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L1903">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R1865">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : getFileInfoList_result to result : listStatus_result in method public recv_listStatus() : List&lt;FileInfo&gt; in class tachyon.thrift.FileSystemMasterClientService.Client</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4L433">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/c3071789aaf29ef179fc4fbb742369ab2f3ea4c5?diff=split#diff-475e2d31807f651c773557c7209ef1c4R445">To</a></td>
                             </tr>
                             
                             </tbody>

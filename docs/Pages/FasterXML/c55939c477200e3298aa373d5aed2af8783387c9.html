@@ -246,13 +246,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public serializeWithType(ref AtomicReference&lt;?&gt;, g JsonGenerator, provider SerializerProvider, typeSer TypeSerializer) : void from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to public serializeWithType(ref T, g JsonGenerator, provider SerializerProvider, typeSer TypeSerializer) : void from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
-                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L269">From</a></td>
-                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR267">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Method	public serialize(ref AtomicReference&lt;?&gt;, g JsonGenerator, provider SerializerProvider) : void from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to public serialize(ref T, g JsonGenerator, provider SerializerProvider) : void from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
                                 <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L247">From</a></td>
                                 <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR245">To</a></td>
@@ -270,6 +263,13 @@
                                 <td><i>Move Method	public unwrappingSerializer(transformer NameTransformer) : JsonSerializer&lt;AtomicReference&lt;?&gt;&gt; from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to public unwrappingSerializer(transformer NameTransformer) : JsonSerializer&lt;T&gt; from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
                                 <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L107">From</a></td>
                                 <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR105">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public serializeWithType(ref AtomicReference&lt;?&gt;, g JsonGenerator, provider SerializerProvider, typeSer TypeSerializer) : void from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to public serializeWithType(ref T, g JsonGenerator, provider SerializerProvider, typeSer TypeSerializer) : void from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
+                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L269">From</a></td>
+                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR267">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -300,6 +300,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Attribute	protected _referredType : JavaType from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to protected _referredType : JavaType from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
+                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L28">From</a></td>
+                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR34">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Attribute	protected _contentInclusion : JsonInclude.Include from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to protected _contentInclusion : JsonInclude.Include from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
+                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L57">From</a></td>
+                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR57">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -334,20 +348,6 @@
                                 <td><i>Pull Up Attribute	protected _unwrapper : NameTransformer from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to protected _unwrapper : NameTransformer from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
                                 <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L49">From</a></td>
                                 <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Attribute	protected _referredType : JavaType from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to protected _referredType : JavaType from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
-                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L28">From</a></td>
-                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR34">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Attribute	protected _contentInclusion : JsonInclude.Include from class com.fasterxml.jackson.databind.ser.std.AtomicReferenceSerializer to protected _contentInclusion : JsonInclude.Include from class com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer</i></td>
-                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-68588f5cea26fb9d10646023d02e57f5L57">From</a></td>
-                                <td><a href = "https://github.com/FasterXML/jackson-databind/commit/c55939c477200e3298aa373d5aed2af8783387c9?diff=split#diff-16098d67385e5d371676615830892a2bR57">To</a></td>
                             </tr>
                             
                             </tbody>

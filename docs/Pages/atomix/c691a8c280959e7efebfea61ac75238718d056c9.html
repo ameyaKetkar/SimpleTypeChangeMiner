@@ -184,6 +184,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	listener : EventListener&lt;E&gt; to listener : Consumer&lt;RaftEvent&gt; in method public addListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.DelegatingRaftProxy</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-68838da262d8741a03aff03a329b771bL80">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-68838da262d8741a03aff03a329b771bR79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	bytes : byte[] to operation : RaftOperation in method package executeCommand(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L419">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R421">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	bytes : byte[] to operation : RaftOperation in method protected OperationRequest(session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.protocol.OperationRequest</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-ccaba8eee89f3da56deb4fd05c051a5dL34">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-ccaba8eee89f3da56deb4fd05c051a5dR36">To</a></td>
@@ -637,20 +651,6 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R533">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	listener : EventListener&lt;E&gt; to listener : Consumer&lt;RaftEvent&gt; in method public addListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.DelegatingRaftProxy</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-68838da262d8741a03aff03a329b771bL80">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-68838da262d8741a03aff03a329b771bR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	bytes : byte[] to operation : RaftOperation in method package executeCommand(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L419">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R421">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -743,13 +743,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	future : CompletableFuture&lt;RaftOperationResult&gt; to future : CompletableFuture&lt;OperationResult&gt; in method package executeCommand(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L419">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R422">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	result : RaftOperationResult to result : OperationResult in method private applyCommand(index long, sequence long, timestamp long, operation RaftOperation, session RaftSessionContext, future CompletableFuture&lt;OperationResult&gt;) : void in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L484">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R491">To</a></td>
@@ -795,6 +788,13 @@
                                 <td><i>Change Variable Type	wrappedListener : EventListener&lt;E&gt; to wrappedListener : Consumer&lt;RaftEvent&gt; in method public removeListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL52">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR74">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : CompletableFuture&lt;RaftOperationResult&gt; to future : CompletableFuture&lt;OperationResult&gt; in method package executeCommand(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L419">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R422">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -843,41 +843,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public removeEventListener(listener EventListener&lt;E&gt;) : void renamed to public removeListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL52">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public command(commit RaftCommit&lt;TestCommand&gt;) : long renamed to protected read(commit RaftCommit&lt;Void&gt;) : long in class io.atomix.protocols.raft.RaftTest.TestStateMachine</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41L1365">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41R1334">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public query(commit RaftCommit&lt;TestQuery&gt;) : long renamed to protected write(commit RaftCommit&lt;Void&gt;) : long in class io.atomix.protocols.raft.RaftTest.TestStateMachine</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41L1369">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41R1330">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public addEventListener(listener EventListener&lt;E&gt;) : void renamed to public addListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL45">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public removeEventListener(listener EventListener&lt;E&gt;) : void renamed to public removeListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.DefaultRaftProxy</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-6dae1bc9d210ba152b40c3f3c33cff5dL176">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-6dae1bc9d210ba152b40c3f3c33cff5dR140">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -963,6 +928,41 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-517efc9c3cc51beb76d04554e2e94628R163">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public removeEventListener(listener EventListener&lt;E&gt;) : void renamed to public removeListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL52">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public command(commit RaftCommit&lt;TestCommand&gt;) : long renamed to protected read(commit RaftCommit&lt;Void&gt;) : long in class io.atomix.protocols.raft.RaftTest.TestStateMachine</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41L1365">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41R1334">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public query(commit RaftCommit&lt;TestQuery&gt;) : long renamed to protected write(commit RaftCommit&lt;Void&gt;) : long in class io.atomix.protocols.raft.RaftTest.TestStateMachine</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41L1369">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41R1330">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public addEventListener(listener EventListener&lt;E&gt;) : void renamed to public addListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL45">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public removeEventListener(listener EventListener&lt;E&gt;) : void renamed to public removeListener(listener Consumer&lt;RaftEvent&gt;) : void in class io.atomix.protocols.raft.proxy.impl.DefaultRaftProxy</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-6dae1bc9d210ba152b40c3f3c33cff5dL176">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-6dae1bc9d210ba152b40c3f3c33cff5dR140">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1033,6 +1033,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-21" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;T&gt; to CompletableFuture&lt;byte[]&gt; in method public submit(operation RaftOperation) : CompletableFuture&lt;byte[]&gt; in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL61">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperationAttempt&lt;CommandRequest,CommandResponse,T&gt; to OperationAttempt&lt;CommandRequest,CommandResponse&gt; in method protected next() : OperationAttempt&lt;CommandRequest,CommandResponse&gt; in class io.atomix.protocols.raft.proxy.impl.RaftProxySubmitter.CommandAttempt</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46L335">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46R324">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;RaftOperationResult&gt; to CompletableFuture&lt;OperationResult&gt; in method package executeCommand(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L419">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R411">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RaftSessionContext to void in method public resendEvents(index long) : void in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ff37e417a506fed8585199ade1c494eL444">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ff37e417a506fed8585199ade1c494eR461">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperationAttempt&lt;QueryRequest,QueryResponse,T&gt; to OperationAttempt&lt;QueryRequest,QueryResponse&gt; in method protected next() : OperationAttempt&lt;QueryRequest,QueryResponse&gt; in class io.atomix.protocols.raft.proxy.impl.RaftProxySubmitter.QueryAttempt</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46L419">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46R408">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1146,41 +1181,6 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R651">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;T&gt; to CompletableFuture&lt;byte[]&gt; in method public submit(operation RaftOperation) : CompletableFuture&lt;byte[]&gt; in class io.atomix.protocols.raft.proxy.impl.BlockingAwareRaftProxy</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cL61">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-51e323077273b973a4f3ff567e98433cR60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperationAttempt&lt;CommandRequest,CommandResponse,T&gt; to OperationAttempt&lt;CommandRequest,CommandResponse&gt; in method protected next() : OperationAttempt&lt;CommandRequest,CommandResponse&gt; in class io.atomix.protocols.raft.proxy.impl.RaftProxySubmitter.CommandAttempt</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46L335">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46R324">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;RaftOperationResult&gt; to CompletableFuture&lt;OperationResult&gt; in method package executeCommand(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L419">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R411">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	RaftSessionContext to void in method public resendEvents(index long) : void in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ff37e417a506fed8585199ade1c494eL444">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-1ff37e417a506fed8585199ade1c494eR461">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperationAttempt&lt;QueryRequest,QueryResponse,T&gt; to OperationAttempt&lt;QueryRequest,QueryResponse&gt; in method protected next() : OperationAttempt&lt;QueryRequest,QueryResponse&gt; in class io.atomix.protocols.raft.proxy.impl.RaftProxySubmitter.QueryAttempt</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46L419">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-0fd95f7b6b02bf9c8d583befb677cf46R408">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1269,20 +1269,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	operations : Map&lt;Class,Function&gt; to operations : Map&lt;OperationId,Function&lt;RaftCommit&lt;byte[]&gt;,byte[]&gt;&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L74">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	bytes : byte[] to operation : RaftOperation in class io.atomix.protocols.raft.protocol.OperationRequest</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-ccaba8eee89f3da56deb4fd05c051a5dL32">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-ccaba8eee89f3da56deb4fd05c051a5dR34">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1396,6 +1382,20 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-f0f6f342ea7c63b46152ea67d55bab3cR35">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	operations : Map&lt;Class,Function&gt; to operations : Map&lt;OperationId,Function&lt;RaftCommit&lt;byte[]&gt;,byte[]&gt;&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L74">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	bytes : byte[] to operation : RaftOperation in class io.atomix.protocols.raft.protocol.OperationRequest</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-ccaba8eee89f3da56deb4fd05c051a5dL32">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-ccaba8eee89f3da56deb4fd05c051a5dR34">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1424,6 +1424,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-20" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method package executeQuery(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L533">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R524">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method public CommandRequest(session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.protocol.CommandRequest</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-592e8c8d4d1d59318455208a7ca68845L50">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-592e8c8d4d1d59318455208a7ca68845R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method public OperationEntry(term long, timestamp long, session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.storage.log.entry.OperationEntry</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-f0f6f342ea7c63b46152ea67d55bab3cL37">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-f0f6f342ea7c63b46152ea67d55bab3cR37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method private sequenceQuery(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation, future CompletableFuture&lt;OperationResult&gt;) : void in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L556">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R547">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method public QueryEntry(term long, timestamp long, session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.storage.log.entry.QueryEntry</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-7234fe73391bae7467b0286057fafc14L33">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-7234fe73391bae7467b0286057fafc14R29">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1528,41 +1563,6 @@
                                 <td><i>Rename Parameter	type : String to typeName : String in method package RaftServerStateMachineContext(id StateMachineId, name String, typeName String, sessions RaftServerStateMachineSessions) in class io.atomix.protocols.raft.impl.RaftServerStateMachineContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-b3a8857b8d2d572da7a964fb1d10d335L62">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-b3a8857b8d2d572da7a964fb1d10d335R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method package executeQuery(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation) : CompletableFuture&lt;OperationResult&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L533">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R524">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method public CommandRequest(session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.protocol.CommandRequest</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-592e8c8d4d1d59318455208a7ca68845L50">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-592e8c8d4d1d59318455208a7ca68845R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method public OperationEntry(term long, timestamp long, session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.storage.log.entry.OperationEntry</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-f0f6f342ea7c63b46152ea67d55bab3cL37">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-f0f6f342ea7c63b46152ea67d55bab3cR37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method private sequenceQuery(index long, sequence long, timestamp long, session RaftSessionContext, operation RaftOperation, future CompletableFuture&lt;OperationResult&gt;) : void in class io.atomix.protocols.raft.impl.RaftServerStateMachineExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L556">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14R547">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	bytes : byte[] to operation : RaftOperation in method public QueryEntry(term long, timestamp long, session long, sequence long, operation RaftOperation) in class io.atomix.protocols.raft.storage.log.entry.QueryEntry</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-7234fe73391bae7467b0286057fafc14L33">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/c691a8c280959e7efebfea61ac75238718d056c9?diff=split#diff-7234fe73391bae7467b0286057fafc14R29">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -296,13 +296,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private getRegionLocationInternal(tableName TableName, row byte[], locateType RegionLocateType, reload boolean) : CompletableFuture&lt;HRegionLocation&gt; renamed to private getRegionLocationsInternal(tableName TableName, row byte[], replicaId int, locateType RegionLocateType, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L451">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R466">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	package getRegionLocation(reload boolean) : CompletableFuture&lt;HRegionLocation&gt; renamed to package getRegionLocations(replicaId int, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aL48">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aR53">To</a></td>
@@ -313,6 +306,13 @@
                                 <td><i>Rename Method	package updateCachedLocation(loc HRegionLocation, exception Throwable) : void renamed to package updateCachedLocationOnError(loc HRegionLocation, exception Throwable) : void in class org.apache.hadoop.hbase.client.AsyncRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-8d1145550d86b36d46891d5745abe059L144">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-8d1145550d86b36d46891d5745abe059R143">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private getRegionLocationInternal(tableName TableName, row byte[], locateType RegionLocateType, reload boolean) : CompletableFuture&lt;HRegionLocation&gt; renamed to private getRegionLocationsInternal(tableName TableName, row byte[], replicaId int, locateType RegionLocateType, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L451">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R466">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -353,6 +353,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	location : Optional&lt;HRegionLocation&gt; to locations : Optional&lt;RegionLocations&gt; in method public clearCompletedRequests(locations Optional&lt;RegionLocations&gt;) : void in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.TableCache</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L136">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R144">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	loc : HRegionLocation to locs : RegionLocations in method private complete(tableName TableName, req LocateRequest, locs RegionLocations, error Throwable) : void in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L241">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R253">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	future : CompletableFuture&lt;HRegionLocation&gt; to future : CompletableFuture&lt;RegionLocations&gt; in method private tryComplete(req LocateRequest, future CompletableFuture&lt;RegionLocations&gt;, locations Optional&lt;RegionLocations&gt;) : boolean in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.TableCache</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L146">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R154">To</a></td>
@@ -386,20 +400,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R155">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	location : Optional&lt;HRegionLocation&gt; to locations : Optional&lt;RegionLocations&gt; in method public clearCompletedRequests(locations Optional&lt;RegionLocations&gt;) : void in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.TableCache</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L136">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R144">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	loc : HRegionLocation to locs : RegionLocations in method private complete(tableName TableName, req LocateRequest, locs RegionLocations, error Throwable) : void in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L241">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R253">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -410,6 +410,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-3" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	metaRegionLocation : HRegionLocation to locs : RegionLocations in method package getRegionLocations(replicaId int, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aL51">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aR65">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -425,13 +432,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R472">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	metaRegionLocation : HRegionLocation to locs : RegionLocations in method package getRegionLocations(replicaId int, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aL51">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aR65">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -442,20 +442,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	HRegionLocation to RegionLocations in method package getRegionLocationInCache(tableName TableName, row byte[]) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L528">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R573">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	HRegionLocation to RegionLocations in method private locateInCache(tableCache TableCache, tableName TableName, row byte[], replicaId int, locateType RegionLocateType) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L441">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R456">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -490,6 +476,20 @@
                                 <td><i>Change Return Type	HRegionLocation to RegionLocations in method private locateRowInCache(tableCache TableCache, tableName TableName, row byte[], replicaId int) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L317">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R324">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	HRegionLocation to RegionLocations in method package getRegionLocationInCache(tableName TableName, row byte[]) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L528">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R573">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	HRegionLocation to RegionLocations in method private locateInCache(tableCache TableCache, tableName TableName, row byte[], replicaId int, locateType RegionLocateType) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L441">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R456">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -566,6 +566,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	entry : Map.Entry&lt;byte[],HRegionLocation&gt; to entry : Map.Entry&lt;byte[],RegionLocations&gt; in method private locateRowBeforeInCache(tableCache TableCache, tableName TableName, row byte[], replicaId int) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L335">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R350">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	future : CompletableFuture&lt;HRegionLocation&gt; to future : CompletableFuture&lt;RegionLocations&gt; in method package getRegionLocations(replicaId int, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aL48">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-d24566d3afdad6d9d12fb6697aa1cf5aR73">To</a></td>
@@ -632,13 +639,6 @@
                                 <td><i>Change Variable Type	future : CompletableFuture&lt;HRegionLocation&gt; to future : CompletableFuture&lt;RegionLocations&gt; in method private getRegionLocationsInternal(tableName TableName, row byte[], replicaId int, locateType RegionLocateType, reload boolean) : CompletableFuture&lt;RegionLocations&gt; in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L451">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R477">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	entry : Map.Entry&lt;byte[],HRegionLocation&gt; to entry : Map.Entry&lt;byte[],RegionLocations&gt; in method private locateRowBeforeInCache(tableCache TableCache, tableName TableName, row byte[], replicaId int) : RegionLocations in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L335">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R350">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -718,13 +718,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	location : Optional&lt;HRegionLocation&gt; to locations : Optional&lt;RegionLocations&gt; in method public clearCompletedRequests(locations Optional&lt;RegionLocations&gt;) : void in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.TableCache</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L136">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R144">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	location : Optional&lt;HRegionLocation&gt; to locations : Optional&lt;RegionLocations&gt; in method private tryComplete(req LocateRequest, future CompletableFuture&lt;RegionLocations&gt;, locations Optional&lt;RegionLocations&gt;) : boolean in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.TableCache</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L147">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R155">To</a></td>
@@ -742,6 +735,13 @@
                                 <td><i>Rename Parameter	loc : HRegionLocation to locs : RegionLocations in method private addToCache(tableCache TableCache, locs RegionLocations) : boolean in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L204">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R231">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	location : Optional&lt;HRegionLocation&gt; to locations : Optional&lt;RegionLocations&gt; in method public clearCompletedRequests(locations Optional&lt;RegionLocations&gt;) : void in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.TableCache</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L136">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/db66e6cc9e1c6ea027631388aba688cb623b7d0a?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R144">To</a></td>
                             </tr>
                             
                             </tbody>

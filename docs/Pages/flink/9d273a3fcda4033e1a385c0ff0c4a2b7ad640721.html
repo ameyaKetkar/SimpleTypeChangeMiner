@@ -308,13 +308,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	entry : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to metaInfoTuple : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; in method public create(stateName String, byteOrderedElementSerializer TypeSerializer&lt;T&gt;) : KeyGroupedInternalPriorityQueue&lt;T&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBPriorityQueueSetFactory</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-4585546df289e14ed098ed06400303c2L2671">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-4585546df289e14ed098ed06400303c2R2671">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	entry : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to metaInfoTuple : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; in method private tryRegisterPriorityQueueMetaInfo(stateName String, byteOrderedElementSerializer TypeSerializer&lt;T&gt;) : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-4585546df289e14ed098ed06400303c2L2711">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-4585546df289e14ed098ed06400303c2R2711">To</a></td>
@@ -367,6 +360,13 @@
                                 <td><i>Rename Variable	kvState : Map.Entry&lt;String,StateSnapshot&gt; to stateSnapshot : Map.Entry&lt;StateUID,StateSnapshot&gt; in method protected performOperation() : SnapshotResult&lt;KeyedStateHandle&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy.performSnapshot.ioCallable</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L695">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R780">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	entry : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to metaInfoTuple : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; in method public create(stateName String, byteOrderedElementSerializer TypeSerializer&lt;T&gt;) : KeyGroupedInternalPriorityQueue&lt;T&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBPriorityQueueSetFactory</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-4585546df289e14ed098ed06400303c2L2671">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-4585546df289e14ed098ed06400303c2R2671">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -443,27 +443,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	cowStateStableSnapshots : Map&lt;String,StateSnapshot&gt; to cowStateStableSnapshots : Map&lt;StateUID,StateSnapshot&gt; in method public performSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L582">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R686">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	kvState : Map.Entry&lt;String,StateSnapshot&gt; to stateSnapshot : Map.Entry&lt;StateUID,StateSnapshot&gt; in method protected performOperation() : SnapshotResult&lt;KeyedStateHandle&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy.performSnapshot.ioCallable</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L676">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R780">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	kvStatesById : Map&lt;Integer,String&gt; to kvStatesById : Map&lt;Integer,StateMetaInfoSnapshot&gt; in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L318">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R346">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	kvState : Map.Entry&lt;String,StateSnapshotRestore&gt; to kvState : Map.Entry&lt;String,? extends StateSnapshotRestore&gt; in method private processSnapshotMetaInfoForAllStates(metaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;, cowStateStableSnapshots Map&lt;StateUID,StateSnapshot&gt;, stateNamesToId Map&lt;StateUID,Integer&gt;, registeredStates Map&lt;String,? extends StateSnapshotRestore&gt;, stateType StateMetaInfoSnapshot.BackendStateType) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L582">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R844">To</a></td>
@@ -511,6 +490,27 @@
                                 <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R840">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cowStateStableSnapshots : Map&lt;String,StateSnapshot&gt; to cowStateStableSnapshots : Map&lt;StateUID,StateSnapshot&gt; in method public performSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L582">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R686">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	kvState : Map.Entry&lt;String,StateSnapshot&gt; to stateSnapshot : Map.Entry&lt;StateUID,StateSnapshot&gt; in method protected performOperation() : SnapshotResult&lt;KeyedStateHandle&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy.performSnapshot.ioCallable</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L676">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R780">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	kvStatesById : Map&lt;Integer,String&gt; to kvStatesById : Map&lt;Integer,StateMetaInfoSnapshot&gt; in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62L318">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9d273a3fcda4033e1a385c0ff0c4a2b7ad640721?diff=split#diff-166333601cc781668209538cca90dd62R346">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -542,14 +542,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	snapshotRestore : StateSnapshotRestore in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void from class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><i>Inline Variable	stateName : String in method protected performOperation() : SnapshotResult&lt;KeyedStateHandle&gt; from class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy.performSnapshot.ioCallable</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	stateName : String in method protected performOperation() : SnapshotResult&lt;KeyedStateHandle&gt; from class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy.performSnapshot.ioCallable</i></td>
+                                <td><i>Inline Variable	snapshotRestore : StateSnapshotRestore in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void from class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -567,20 +567,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private readStateHandleStateData(fsDataInputStream FSDataInputStream, inView DataInputViewStreamWrapper, keyGroupOffsets KeyGroupRangeOffsets, kvStatesById Map&lt;Integer,StateMetaInfoSnapshot&gt;, numStates int, readVersion int, isCompressed boolean) : void extracted from private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private processSnapshotMetaInfoForAllStates(metaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;, cowStateStableSnapshots Map&lt;StateUID,StateSnapshot&gt;, stateNamesToId Map&lt;StateUID,Integer&gt;, registeredStates Map&lt;String,? extends StateSnapshotRestore&gt;, stateType StateMetaInfoSnapshot.BackendStateType) : void extracted from public performSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private readKeyGroupStateData(inputStream InputStream, kvStatesById Map&lt;Integer,StateMetaInfoSnapshot&gt;, keyGroupIndex int, numStates int, readVersion int) : void extracted from private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -589,6 +575,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private createOrCheckStateForMetaInfo(restoredMetaInfo List&lt;StateMetaInfoSnapshot&gt;, kvStatesById Map&lt;Integer,StateMetaInfoSnapshot&gt;) : void extracted from private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private readStateHandleStateData(fsDataInputStream FSDataInputStream, inView DataInputViewStreamWrapper, keyGroupOffsets KeyGroupRangeOffsets, kvStatesById Map&lt;Integer,StateMetaInfoSnapshot&gt;, numStates int, readVersion int, isCompressed boolean) : void extracted from private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private processSnapshotMetaInfoForAllStates(metaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;, cowStateStableSnapshots Map&lt;StateUID,StateSnapshot&gt;, stateNamesToId Map&lt;StateUID,Integer&gt;, registeredStates Map&lt;String,? extends StateSnapshotRestore&gt;, stateType StateMetaInfoSnapshot.BackendStateType) : void extracted from public performSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend.HeapSnapshotStrategy</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

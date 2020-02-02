@@ -290,6 +290,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	package getCopyOfOnlineRegionsSortedBySize() : SortedMap&lt;Long,HRegion&gt; renamed to package getCopyOfOnlineRegionsSortedByOnHeapSize() : SortedMap&lt;Long,HRegion&gt; in class org.apache.hadoop.hbase.regionserver.HRegionServer</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-be941db6ab9164fdf639b8e58efe664aL2745">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-be941db6ab9164fdf639b8e58efe664aR2766">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public estimatedHeapSizeOf(cell Cell) : long renamed to public estimatedSizeOfCell(cell Cell) : long in class org.apache.hadoop.hbase.PrivateCellUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-d4f51e0c88f34729f6f6d7a99921e3fdL2781">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-d4f51e0c88f34729f6f6d7a99921e3fdR2781">To</a></td>
@@ -300,13 +307,6 @@
                                 <td><i>Rename Method	protected getFlushSizeLowerBound(region HRegion) : long renamed to protected setFlushSizeLowerBounds(region HRegion) : void in class org.apache.hadoop.hbase.regionserver.FlushLargeStoresPolicy</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-62f487b7185f72f5481939453f060d46L46">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-62f487b7185f72f5481939453f060d46R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package getCopyOfOnlineRegionsSortedBySize() : SortedMap&lt;Long,HRegion&gt; renamed to package getCopyOfOnlineRegionsSortedByOnHeapSize() : SortedMap&lt;Long,HRegion&gt; in class org.apache.hadoop.hbase.regionserver.HRegionServer</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-be941db6ab9164fdf639b8e58efe664aL2745">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/f3bb9b9613beaefbee0a53be1fb66b94fde1ce19?diff=split#diff-be941db6ab9164fdf639b8e58efe664aR2766">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -372,27 +372,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	res : long in method protected heapSizeChange(cell Cell, succ boolean) : long from class org.apache.hadoop.hbase.regionserver.Segment</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	mult : long in method package setHTableSpecificConf() : void from class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	flushType : FlushType in method public reclaimMemStoreMemory() : void from class org.apache.hadoop.hbase.regionserver.MemStoreFlusher</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	indexOverhead : long in method protected CSLMImmutableSegment(segment Segment) from class org.apache.hadoop.hbase.regionserver.CSLMImmutableSegment</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -408,6 +387,27 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	indexOverhead : long in method protected CellArrayImmutableSegment(segment CSLMImmutableSegment, memstoreSizing MemStoreSizing, action MemStoreCompactionStrategy.Action) from class org.apache.hadoop.hbase.regionserver.CellArrayImmutableSegment</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	res : long in method protected heapSizeChange(cell Cell, succ boolean) : long from class org.apache.hadoop.hbase.regionserver.Segment</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	mult : long in method package setHTableSpecificConf() : void from class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	flushType : FlushType in method public reclaimMemStoreMemory() : void from class org.apache.hadoop.hbase.regionserver.MemStoreFlusher</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

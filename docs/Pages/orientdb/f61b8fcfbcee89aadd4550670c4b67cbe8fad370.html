@@ -218,6 +218,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public removeNodeInServerList(iNode String) : List&lt;String&gt; renamed to public setServerOffline(iNode String, newServerCoordinator String) : List&lt;String&gt; in class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7L640">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7R666">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	protected loadDistributedDatabases() : void renamed to protected loadLocalDatabases() : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-c4c7a6c287c6138913309b4f35ff96b3L1806">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-c4c7a6c287c6138913309b4f35ff96b3R1881">To</a></td>
@@ -228,13 +235,6 @@
                                 <td><i>Rename Method	protected installNewDatabases(iStartup boolean) : void renamed to protected installNewDatabasesFromCluster(iStartup boolean) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-c4c7a6c287c6138913309b4f35ff96b3L1848">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-c4c7a6c287c6138913309b4f35ff96b3R1926">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public removeNodeInServerList(iNode String) : List&lt;String&gt; renamed to public setServerOffline(iNode String, newServerCoordinator String) : List&lt;String&gt; in class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7L640">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7R666">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -365,13 +365,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	task : ORemoteTask in method public send2Nodes(iRequest ODistributedRequest, iClusterNames Collection&lt;String&gt;, iNodes Collection&lt;String&gt;, iExecutionMode ODistributedRequest.EXECUTION_MODE, localResult Object, iAfterSentCallback OCallable&lt;Void,ODistributedRequestId&gt;) : ODistributedResponse from class com.orientechnologies.orient.server.distributed.ODistributedDatabaseImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	clusters : String[] in method public setServerOffline(iNode String, newServerCoordinator String) : List&lt;String&gt; from class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -391,6 +384,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	task : ORemoteTask in method public send2Nodes(iRequest ODistributedRequest, iClusterNames Collection&lt;String&gt;, iNodes Collection&lt;String&gt;, iExecutionMode ODistributedRequest.EXECUTION_MODE, localResult Object, iAfterSentCallback OCallable&lt;Void,ODistributedRequestId&gt;) : ODistributedResponse from class com.orientechnologies.orient.server.distributed.ODistributedDatabaseImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -404,16 +404,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	lastName : String to useTransaction : boolean in class com.orientechnologies.orient.server.distributed.scenariotest.AbstractScenarioTest.RecordUpdater</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-284ab721e4aa6f5f751721930758c40bL173">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-d124dedff9e78d346f57eee13ad49aa1R468">To</a></td>
+                                <td><i>Change Attribute Type	id : String to fields : Map&lt;String,String&gt; in class com.orientechnologies.orient.server.distributed.scenariotest.AbstractScenarioTest.RecordUpdater</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-284ab721e4aa6f5f751721930758c40bL171">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-d124dedff9e78d346f57eee13ad49aa1R467">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	id : String to fields : Map&lt;String,String&gt; in class com.orientechnologies.orient.server.distributed.scenariotest.AbstractScenarioTest.RecordUpdater</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-284ab721e4aa6f5f751721930758c40bL171">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-d124dedff9e78d346f57eee13ad49aa1R467">To</a></td>
+                                <td><i>Change Attribute Type	lastName : String to useTransaction : boolean in class com.orientechnologies.orient.server.distributed.scenariotest.AbstractScenarioTest.RecordUpdater</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-284ab721e4aa6f5f751721930758c40bL173">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/f61b8fcfbcee89aadd4550670c4b67cbe8fad370?diff=split#diff-d124dedff9e78d346f57eee13ad49aa1R468">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -444,6 +444,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private installNewDatabase(iStartup boolean, databaseName String, config ODocument) : boolean extracted from protected installNewDatabases(iStartup boolean) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -483,13 +490,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	protected onDatabaseEvent(nodeName String, databaseName String, status DB_STATUS) : void extracted from public entryUpdated(iEvent EntryEvent&lt;String,Object&gt;) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private installNewDatabase(iStartup boolean, databaseName String, config ODocument) : boolean extracted from protected installNewDatabases(iStartup boolean) : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

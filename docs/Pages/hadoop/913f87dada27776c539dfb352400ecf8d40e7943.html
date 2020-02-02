@@ -226,14 +226,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.yarn.service.component.Component.ComponentNeedsUpgradeTransition renamed to org.apache.hadoop.yarn.service.component.Component.CompletedAfterUpgradeTransition</i></td>
+                                <td><i>Rename Class	org.apache.hadoop.yarn.service.component.instance.ComponentInstance.ContainerUpgradeTransition renamed to org.apache.hadoop.yarn.service.component.instance.ComponentInstance.CancelUpgradeTransition</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.yarn.service.component.instance.ComponentInstance.ContainerUpgradeTransition renamed to org.apache.hadoop.yarn.service.component.instance.ComponentInstance.CancelUpgradeTransition</i></td>
+                                <td><i>Rename Class	org.apache.hadoop.yarn.service.component.Component.ComponentNeedsUpgradeTransition renamed to org.apache.hadoop.yarn.service.component.Component.CompletedAfterUpgradeTransition</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -287,27 +287,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private upgradeAndReadyAllInstances(context ServiceContext) : void extracted from public testAutoFinalize() : void in class org.apache.hadoop.yarn.service.TestServiceManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private setComponentState(state ComponentState) : void extracted from private checkAndUpdateComponentState(component Component, isIncrement boolean) : void in class org.apache.hadoop.yarn.service.component.Component</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private upgradeAndReadyAllInstances(context ServiceContext) : void extracted from public testFinalize() : void in class org.apache.hadoop.yarn.service.TestServiceManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private upgradeAndReadyAllInstances(context ServiceContext) : void extracted from public testAutoFinalizeNothingToUpgrade() : void in class org.apache.hadoop.yarn.service.TestServiceManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -323,6 +302,27 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private resolveCompsToUpgrade(sourceSpec Service, targetSpec Service) : List&lt;org.apache.hadoop.yarn.service.api.records.Component&gt; extracted from package processUpgradeRequest(upgradeVersion String, autoFinalize boolean, expressUpgrade boolean) : void in class org.apache.hadoop.yarn.service.ServiceManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private upgradeAndReadyAllInstances(context ServiceContext) : void extracted from public testAutoFinalize() : void in class org.apache.hadoop.yarn.service.TestServiceManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private setComponentState(state ComponentState) : void extracted from private checkAndUpdateComponentState(component Component, isIncrement boolean) : void in class org.apache.hadoop.yarn.service.component.Component</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private upgradeAndReadyAllInstances(context ServiceContext) : void extracted from public testFinalize() : void in class org.apache.hadoop.yarn.service.TestServiceManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -447,16 +447,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	compsToUpgradeInOrder : Queue&lt;org.apache.hadoop.yarn.service.api.records.Component&gt; to componentsToUpgrade : List&lt;org.apache.hadoop.yarn.service.api.records.Component&gt; in class org.apache.hadoop.yarn.service.ServiceManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-6781c035619da6c6f9cb87c54d9943d6L75">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-6781c035619da6c6f9cb87c54d9943d6R74">To</a></td>
+                                <td><i>Change Attribute Type	compsToUpgradeInOrder : Queue&lt;Component&gt; to compsToUpgrade : List&lt;Component&gt; in class org.apache.hadoop.yarn.service.ServiceEvent</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886L36">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886R37">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	compsToUpgradeInOrder : Queue&lt;Component&gt; to compsToUpgrade : List&lt;Component&gt; in class org.apache.hadoop.yarn.service.ServiceEvent</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886L36">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886R37">To</a></td>
+                                <td><i>Change Attribute Type	compsToUpgradeInOrder : Queue&lt;org.apache.hadoop.yarn.service.api.records.Component&gt; to componentsToUpgrade : List&lt;org.apache.hadoop.yarn.service.api.records.Component&gt; in class org.apache.hadoop.yarn.service.ServiceManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-6781c035619da6c6f9cb87c54d9943d6L75">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-6781c035619da6c6f9cb87c54d9943d6R74">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -469,20 +469,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public setContainerState(state ContainerState) : void extracted from public transition(compInstance ComponentInstance, event ComponentInstanceEvent) : void in class org.apache.hadoop.yarn.service.component.instance.ComponentInstance.ContainerBecomeReadyTransition &amp; moved to class org.apache.hadoop.yarn.service.component.instance.ComponentInstance</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	private postContainerReady() : void extracted from public transition(compInstance ComponentInstance, event ComponentInstanceEvent) : void in class org.apache.hadoop.yarn.service.component.instance.ComponentInstance.ContainerBecomeReadyTransition &amp; moved to class org.apache.hadoop.yarn.service.component.instance.ComponentInstance</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -512,6 +498,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public setContainerState(state ContainerState) : void extracted from public transition(compInstance ComponentInstance, event ComponentInstanceEvent) : void in class org.apache.hadoop.yarn.service.component.instance.ComponentInstance.ContainerBecomeReadyTransition &amp; moved to class org.apache.hadoop.yarn.service.component.instance.ComponentInstance</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	private postContainerReady() : void extracted from public transition(compInstance ComponentInstance, event ComponentInstanceEvent) : void in class org.apache.hadoop.yarn.service.component.instance.ComponentInstance.ContainerBecomeReadyTransition &amp; moved to class org.apache.hadoop.yarn.service.component.instance.ComponentInstance</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -525,16 +525,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	compInstance : ComponentInstance to instance : ComponentInstance in method public transition(instance ComponentInstance, event ComponentInstanceEvent) : ComponentInstanceState in class org.apache.hadoop.yarn.service.component.instance.ComponentInstance.CancelUpgradeTransition</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-1560462b1b9572c0be3e789e6adcf6f3L455">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-1560462b1b9572c0be3e789e6adcf6f3R578">To</a></td>
+                                <td><i>Rename Parameter	compsToUpgradeInOrder : Queue&lt;Component&gt; to compsToUpgrade : List&lt;Component&gt; in method public setCompsToUpgrade(compsToUpgrade List&lt;Component&gt;) : ServiceEvent in class org.apache.hadoop.yarn.service.ServiceEvent</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886L79">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886R79">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	compsToUpgradeInOrder : Queue&lt;Component&gt; to compsToUpgrade : List&lt;Component&gt; in method public setCompsToUpgrade(compsToUpgrade List&lt;Component&gt;) : ServiceEvent in class org.apache.hadoop.yarn.service.ServiceEvent</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886L79">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-2c37dfe8b5b7cbcc0208986df66fb886R79">To</a></td>
+                                <td><i>Rename Parameter	compInstance : ComponentInstance to instance : ComponentInstance in method public transition(instance ComponentInstance, event ComponentInstanceEvent) : ComponentInstanceState in class org.apache.hadoop.yarn.service.component.instance.ComponentInstance.CancelUpgradeTransition</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-1560462b1b9572c0be3e789e6adcf6f3L455">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/913f87dada27776c539dfb352400ecf8d40e7943?diff=split#diff-1560462b1b9572c0be3e789e6adcf6f3R578">To</a></td>
                             </tr>
                             
                             </tbody>

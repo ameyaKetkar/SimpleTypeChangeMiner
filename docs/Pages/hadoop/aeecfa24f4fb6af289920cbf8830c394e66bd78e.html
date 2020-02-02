@@ -512,20 +512,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private copyBytes(in InputStream, out OutputStream, buffSize int) : void extracted from private breakHardlinks(file File, b Block) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private nativeCopyFileUnbuffered(srcFile File, destFile File, preserveFileDate boolean) : void extracted from public copyBlockdata(destination URI) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public getHardLinkCount(fileName File) : int extracted from public breakHardLinksIfNeeded() : boolean in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -555,6 +541,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private replaceFile(src File, target File) : void extracted from private breakHardlinks(file File, b Block) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private copyBytes(in InputStream, out OutputStream, buffSize int) : void extracted from private breakHardlinks(file File, b Block) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private nativeCopyFileUnbuffered(srcFile File, destFile File, preserveFileDate boolean) : void extracted from public copyBlockdata(destination URI) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -590,14 +590,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	blockFile : File in method public getDataInputStream(seekOffset long) : InputStream from class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><i>Inline Variable	ioe : IOException in method public close() : void from class org.apache.hadoop.hdfs.server.datanode.BlockSender</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	ioe : IOException in method public close() : void from class org.apache.hadoop.hdfs.server.datanode.BlockSender</i></td>
+                                <td><i>Inline Variable	blockFile : File in method public getDataInputStream(seekOffset long) : InputStream from class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -612,27 +612,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public syncFileRangeIfPossible(offset long, nbytes long, flags int) : void extracted from private manageWriterOsCache(offsetInBlock long) : void in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public skipChecksumFully(len long) : void extracted from private validateIntegrityAndSetLength(blockFile File, genStamp long) : long in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public readDataFully(buf byte[], off int, len int) : void extracted from private sendPacket(pkt ByteBuffer, maxChunks int, out OutputStream, transferTo boolean, throttler DataTransferThrottler) : int in class org.apache.hadoop.hdfs.server.datanode.BlockSender &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -697,6 +676,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public syncFileRangeIfPossible(offset long, nbytes long, flags int) : void extracted from private manageWriterOsCache(offsetInBlock long) : void in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public skipChecksumFully(len long) : void extracted from private validateIntegrityAndSetLength(blockFile File, genStamp long) : long in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public readDataFully(buf byte[], off int, len int) : void extracted from private sendPacket(pkt ByteBuffer, maxChunks int, out OutputStream, transferTo boolean, throttler DataTransferThrottler) : int in class org.apache.hadoop.hdfs.server.datanode.BlockSender &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -707,13 +707,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	fd : FileDescriptor to outs : ReplicaOutputStreams in method public submitBackgroundSyncFileRangeRequest(block ExtendedBlock, outs ReplicaOutputStreams, offset long, nbytes long, flags int) : void in class org.apache.hadoop.hdfs.server.datanode.SimulatedFSDataset</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/aeecfa24f4fb6af289920cbf8830c394e66bd78e?diff=split#diff-b9c00d3b77cdf874bb05fcbd43e33aebL1367">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/aeecfa24f4fb6af289920cbf8830c394e66bd78e?diff=split#diff-b9c00d3b77cdf874bb05fcbd43e33aebR1364">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -734,6 +727,13 @@
                                 <td><i>Rename Parameter	fd : FileDescriptor to outs : ReplicaOutputStreams in method public submitBackgroundSyncFileRangeRequest(block ExtendedBlock, outs ReplicaOutputStreams, offset long, nbytes long, flags int) : void in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.FsDatasetImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/aeecfa24f4fb6af289920cbf8830c394e66bd78e?diff=split#diff-a56f9c9ed14dbf1df3f4fa7ba1c34ebeL2758">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/aeecfa24f4fb6af289920cbf8830c394e66bd78e?diff=split#diff-a56f9c9ed14dbf1df3f4fa7ba1c34ebeR2757">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	fd : FileDescriptor to outs : ReplicaOutputStreams in method public submitBackgroundSyncFileRangeRequest(block ExtendedBlock, outs ReplicaOutputStreams, offset long, nbytes long, flags int) : void in class org.apache.hadoop.hdfs.server.datanode.SimulatedFSDataset</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/aeecfa24f4fb6af289920cbf8830c394e66bd78e?diff=split#diff-b9c00d3b77cdf874bb05fcbd43e33aebL1367">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/aeecfa24f4fb6af289920cbf8830c394e66bd78e?diff=split#diff-b9c00d3b77cdf874bb05fcbd43e33aebR1364">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -294,6 +294,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	raftServer : RaftServer to mismatchedStoreIdService : MismatchedStoreIdService in method public MembershipWaiter(myself CoreMember, jobScheduler JobScheduler, maxCatchupLag long, mismatchedStoreIdService MismatchedStoreIdService, logProvider LogProvider) in class org.neo4j.coreedge.raft.membership.MembershipWaiter</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5L59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5R60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	message : RaftMessage to message : RaftMessages.StoreIdAwareMessage in method public handle(message RaftMessages.StoreIdAwareMessage) : void in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL54">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR64">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	ex : MismatchedStoreIdException to ex : BatchingMessageHandler.MismatchedStoreIdException in method public onMismatchedStore(ex BatchingMessageHandler.MismatchedStoreIdException) : void in class org.neo4j.coreedge.raft.MismatchedStoreIdService.MismatchedStoreListener</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL188">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-35cc384de614b9ce069fbdbdfc59730cR31">To</a></td>
@@ -325,20 +339,6 @@
                                 <td><i>Change Parameter Type	handler : Inbound.MessageHandler&lt;RaftMessages.RaftMessage&gt; to handler : Inbound.MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in method public registerHandler(handler Inbound.MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt;) : void in class org.neo4j.coreedge.raft.RaftServer</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL136">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR133">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	raftServer : RaftServer to mismatchedStoreIdService : MismatchedStoreIdService in method public MembershipWaiter(myself CoreMember, jobScheduler JobScheduler, maxCatchupLag long, mismatchedStoreIdService MismatchedStoreIdService, logProvider LogProvider) in class org.neo4j.coreedge.raft.membership.MembershipWaiter</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5L59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5R60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	message : RaftMessage to message : RaftMessages.StoreIdAwareMessage in method public handle(message RaftMessages.StoreIdAwareMessage) : void in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL54">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR64">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -458,6 +458,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	raftServer : RaftServer to mismatchedStoreIdService : MismatchedStoreIdService in class org.neo4j.coreedge.raft.membership.MembershipWaiter</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5L56">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	batch : List&lt;RaftMessage&gt; to batch : List&lt;RaftMessages.RaftMessage&gt; in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL41">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR43">To</a></td>
@@ -482,13 +489,6 @@
                                 <td><i>Change Attribute Type	messageHandler : MessageHandler&lt;RaftMessages.RaftMessage&gt; to messageHandler : MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in class org.neo4j.coreedge.raft.RaftServer</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faL65">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-179983b3b7c18a1977c4da94cab4a9faR61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	raftServer : RaftServer to mismatchedStoreIdService : MismatchedStoreIdService in class org.neo4j.coreedge.raft.membership.MembershipWaiter</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5L56">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/551165b6bc3afadfcdd9c8b3b6b374445739e0de?diff=split#diff-a77713bd2741b0a4895bff785de667d5R56">To</a></td>
                             </tr>
                             
                             </tbody>

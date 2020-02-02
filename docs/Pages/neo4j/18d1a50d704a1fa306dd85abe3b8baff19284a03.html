@@ -315,13 +315,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	neoDataSource : NeoStoreDataSource to storeId : StoreId in method package checkDataConsistency(masterClient MasterClient, txIdStore TransactionIdStore, storeId StoreId, masterUri URI, masterIsOld boolean) : void in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L327">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R338">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	resolver : DependencyResolver to txIdStoreSupplier : Supplier&lt;TransactionIdStore&gt; in method public RequestContextFactory(serverId int, txIdStoreSupplier Supplier&lt;TransactionIdStore&gt;) in class org.neo4j.kernel.ha.com.RequestContextFactory</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-872a87f73073ad3de893048467d64bfeL38">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-872a87f73073ad3de893048467d64bfeR37">To</a></td>
@@ -376,6 +369,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R378">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	neoDataSource : NeoStoreDataSource to storeId : StoreId in method package checkDataConsistency(masterClient MasterClient, txIdStore TransactionIdStore, storeId StoreId, masterUri URI, masterIsOld boolean) : void in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L327">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R338">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -386,6 +386,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dependencyResolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldAwaitTransactionObligationsToBeFulfilled() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL203">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR188">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dependencyResolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldApplyQueuedTransactionsIfMany() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL162">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR162">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dataSource : NeoStoreDataSource to transactionIdStore : TransactionIdStore in method public shouldHandleBranchedStoreWhenMyStoreIdDiffersFromMasterStoreId() : void in class org.neo4j.kernel.ha.cluster.SwitchToSlaveTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-d1b6a5302917d5822dd10d3469a41ae8L72">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-d1b6a5302917d5822dd10d3469a41ae8R91">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -420,27 +441,6 @@
                                 <td><i>Change Variable Type	resolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldNotApplyTransactionIfIndexUpdatesValidationFails() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL278">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR249">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dependencyResolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldAwaitTransactionObligationsToBeFulfilled() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL203">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR188">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dependencyResolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldApplyQueuedTransactionsIfMany() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL162">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR162">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dataSource : NeoStoreDataSource to transactionIdStore : TransactionIdStore in method public shouldHandleBranchedStoreWhenMyStoreIdDiffersFromMasterStoreId() : void in class org.neo4j.kernel.ha.cluster.SwitchToSlaveTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-d1b6a5302917d5822dd10d3469a41ae8L72">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-d1b6a5302917d5822dd10d3469a41ae8R91">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -492,6 +492,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies extracted from public testStopShouldAllowTransactionsToCompleteCommitAndApply() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies extracted from public shouldNotApplyTransactionIfIndexUpdatesValidationFails() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies extracted from public shouldIssueKernelPanicInCaseOfFailureToAppendOrApply() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -532,20 +546,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies extracted from public testStopShouldAllowTransactionsToCompleteCommitAndApply() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies extracted from public shouldNotApplyTransactionIfIndexUpdatesValidationFails() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -556,6 +556,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	logicalTransactionStore : LogicalTransactionStore to applier : TransactionRepresentationStoreApplier in method public shouldApplyQueuedTransactionsIfMany() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL173">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR156">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	dependencyResolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldIssueKernelPanicInCaseOfFailureToAppendOrApply() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL236">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR214">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	resolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldNotApplyTransactionIfIndexUpdatesValidationFails() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL282">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR249">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -590,27 +611,6 @@
                                 <td><i>Rename Variable	masterImpl : MasterImpl to master : Master in method public switchToMaster(haCommunicationLife LifeSupport, me URI) : URI in class org.neo4j.kernel.ha.cluster.SwitchToMaster</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-273bd7aa0473f26a4d3419d88d13607bL115">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-273bd7aa0473f26a4d3419d88d13607bR100">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	logicalTransactionStore : LogicalTransactionStore to applier : TransactionRepresentationStoreApplier in method public shouldApplyQueuedTransactionsIfMany() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL173">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR156">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	dependencyResolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldIssueKernelPanicInCaseOfFailureToAppendOrApply() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL236">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR214">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	resolver : DependencyResolver to deps : TransactionCommittingResponseUnpacker.Dependencies in method public shouldNotApplyTransactionIfIndexUpdatesValidationFails() : void in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL282">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR249">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -669,20 +669,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Parameterize Variable	myStoreId : StoreId to storeId : StoreId in method private executeConsistencyChecks(myId InstanceId, txIdStore TransactionIdStore, masterUri URI, storeId StoreId, cancellationRequest CancellationRequest) : boolean in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L288">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R296">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Parameterize Variable	kernelHealth : KernelHealth to health : KernelHealth in method private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL254">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR325">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Parameterize Variable	txIdStore : TransactionIdStore to transactionIdStore : TransactionIdStore in method private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL102">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR325">To</a></td>
@@ -695,6 +681,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR326">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Parameterize Variable	myStoreId : StoreId to storeId : StoreId in method private executeConsistencyChecks(myId InstanceId, txIdStore TransactionIdStore, masterUri URI, storeId StoreId, cancellationRequest CancellationRequest) : boolean in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L288">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R296">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Parameterize Variable	kernelHealth : KernelHealth to health : KernelHealth in method private buildDependencies(transactionIdStore TransactionIdStore, logFile LogFile, health KernelHealth, logRotation LogRotation, indexUpdatesValidator IndexUpdatesValidator, storeApplier TransactionRepresentationStoreApplier, appender TransactionAppender, obligationFulfiller TransactionObligationFulfiller) : TransactionCommittingResponseUnpacker.Dependencies in class org.neo4j.com.storecopy.TransactionCommittingResponseUnpackerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dL254">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-5fcfde6449c07b453e76d4aef63b288dR325">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -705,6 +705,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	masterImplMonitor : MasterImpl.Monitor to masterFactory : Factory&lt;Master&gt; in class org.neo4j.kernel.ha.cluster.SwitchToMaster</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-273bd7aa0473f26a4d3419d88d13607bL63">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-273bd7aa0473f26a4d3419d88d13607bR47">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -753,13 +760,6 @@
                                 <td><i>Rename Attribute	requestMonitor : RequestMonitor to slaveServerFactory : Function&lt;Slave,SlaveServer&gt; in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L137">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	masterImplMonitor : MasterImpl.Monitor to masterFactory : Factory&lt;Master&gt; in class org.neo4j.kernel.ha.cluster.SwitchToMaster</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-273bd7aa0473f26a4d3419d88d13607bL63">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-273bd7aa0473f26a4d3419d88d13607bR47">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -842,13 +842,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	neoDataSource : NeoStoreDataSource to storeId : StoreId in method package checkDataConsistency(masterClient MasterClient, txIdStore TransactionIdStore, storeId StoreId, masterUri URI, masterIsOld boolean) : void in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L327">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R338">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	resolver : DependencyResolver to txIdStoreSupplier : Supplier&lt;TransactionIdStore&gt; in method public RequestContextFactory(serverId int, txIdStoreSupplier Supplier&lt;TransactionIdStore&gt;) in class org.neo4j.kernel.ha.com.RequestContextFactory</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-872a87f73073ad3de893048467d64bfeL38">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-872a87f73073ad3de893048467d64bfeR37">To</a></td>
@@ -915,6 +908,13 @@
                                 <td><i>Rename Parameter	neoDataSource : NeoStoreDataSource to myStoreId : StoreId in method private checkMyStoreIdAndMastersStoreId(myStoreId StoreId, masterIsOld boolean) : void in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L368">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R378">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	neoDataSource : NeoStoreDataSource to storeId : StoreId in method package checkDataConsistency(masterClient MasterClient, txIdStore TransactionIdStore, storeId StoreId, masterUri URI, masterIsOld boolean) : void in class org.neo4j.kernel.ha.cluster.SwitchToSlave</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087L327">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/18d1a50d704a1fa306dd85abe3b8baff19284a03?diff=split#diff-fd737c728b4766f4bed4257af642e087R338">To</a></td>
                             </tr>
                             
                             </tbody>

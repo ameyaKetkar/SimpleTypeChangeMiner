@@ -304,16 +304,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private newVersions(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; renamed to private getProtocolHandlers(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.BoltKernelExtension</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aL228">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aR225">To</a></td>
+                                <td><i>Rename Method	private chooseProtocolVersion(ctx ChannelHandlerContext, buffer ByteBuf) : void renamed to private performHandshake(boltChannel BoltChannel, buffer ByteBuf) : void in class org.neo4j.bolt.transport.SocketTransportHandler</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bL107">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bR115">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private chooseProtocolVersion(ctx ChannelHandlerContext, buffer ByteBuf) : void renamed to private performHandshake(boltChannel BoltChannel, buffer ByteBuf) : void in class org.neo4j.bolt.transport.SocketTransportHandler</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bL107">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bR115">To</a></td>
+                                <td><i>Rename Method	private newVersions(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; renamed to private getProtocolHandlers(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.BoltKernelExtension</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aL228">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aR225">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -424,13 +424,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	availableVersions : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; to protocolHandlers : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in method private getProtocolHandlers(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.BoltKernelExtension</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aL231">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aR228">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	innerSession : BoltWorker to boltWorker : BoltWorker in method public shouldNotWrapWithMonitoredSessionIfNobodyIsListening() : void in class org.neo4j.bolt.v1.runtime.MonitoredBoltWorkerFactoryTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-a4df374bd39ea44b2b54b9393ddb3f63L139">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-a4df374bd39ea44b2b54b9393ddb3f63R134">To</a></td>
@@ -483,6 +476,13 @@
                                 <td><i>Rename Variable	chooser : ProtocolChooser to handshake : BoltHandshakeProtocolHandler in method public shouldChooseFirstAvailableProtocol() : void in class org.neo4j.bolt.v1.transport.BoltHandshakeProtocolHandlerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-7b83778746f470716bee2f32aaee413fL60">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	availableVersions : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; to protocolHandlers : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in method private getProtocolHandlers(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.BoltKernelExtension</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aL231">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aR228">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -612,6 +612,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Attribute	log : Log to internalLog : Log in class org.neo4j.bolt.v1.transport.BoltMessagingProtocolV1Handler</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-489181a4c042d4c4253c289ba058f874L57">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-61ff8a6c16907e9326dbddb52624aca0R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Attribute	available : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; to protocolHandlers : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.v1.transport.BoltHandshakeProtocolHandlerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-7b83778746f470716bee2f32aaee413fL48">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R52">To</a></td>
@@ -638,13 +645,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-0382ed8655edeb1de7085a3a2a4eb775R45">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	log : Log to internalLog : Log in class org.neo4j.bolt.v1.transport.BoltMessagingProtocolV1Handler</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-489181a4c042d4c4253c289ba058f874L57">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-61ff8a6c16907e9326dbddb52624aca0R57">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -655,27 +655,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	chooser : ProtocolChooser to handshake : BoltHandshakeProtocolHandler in method public shouldHandleVersionBoundary() : void in class org.neo4j.bolt.v1.transport.BoltHandshakeProtocolHandlerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-7b83778746f470716bee2f32aaee413fL133">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R159">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	chooser : ProtocolChooser to handshake : BoltHandshakeProtocolHandler in method public shouldFallBackToNoneProtocolIfNoMatch() : void in class org.neo4j.bolt.v1.transport.BoltHandshakeProtocolHandlerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-7b83778746f470716bee2f32aaee413fL157">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R185">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	availableVersions : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; to protocolHandlers : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in method private getProtocolHandlers(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.BoltKernelExtension</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aL228">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aR228">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -740,6 +719,27 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R68">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	chooser : ProtocolChooser to handshake : BoltHandshakeProtocolHandler in method public shouldHandleVersionBoundary() : void in class org.neo4j.bolt.v1.transport.BoltHandshakeProtocolHandlerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-7b83778746f470716bee2f32aaee413fL133">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R159">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	chooser : ProtocolChooser to handshake : BoltHandshakeProtocolHandler in method public shouldFallBackToNoneProtocolIfNoMatch() : void in class org.neo4j.bolt.v1.transport.BoltHandshakeProtocolHandlerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-7b83778746f470716bee2f32aaee413fL157">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-f1cb934e4c5cf372af1c4974fb10f2b0R185">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	availableVersions : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; to protocolHandlers : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in method private getProtocolHandlers(logging LogService, workerFactory WorkerFactory) : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in class org.neo4j.bolt.BoltKernelExtension</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aL228">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-31858d9e85dd33c8caa872961f9e884aR228">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -768,13 +768,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	protocol : BoltProtocol to protocol : BoltMessagingProtocolHandler in class org.neo4j.bolt.transport.SocketTransportHandler</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bL42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bR46">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -839,6 +832,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-a4df374bd39ea44b2b54b9393ddb3f63R42">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	protocol : BoltProtocol to protocol : BoltMessagingProtocolHandler in class org.neo4j.bolt.transport.SocketTransportHandler</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bL42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-d231605696f633b4f3b4147b37f49f5bR46">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -849,13 +849,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	connectionDescriptor : BoltConnectionDescriptor to boltChannel : BoltChannel in method public newMachine(boltChannel BoltChannel, clock Clock) : BoltStateMachine in class org.neo4j.bolt.v1.runtime.BoltFactory</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-5bda099437d231a43aa8a1737309b1abL37">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-5bda099437d231a43aa8a1737309b1abR38">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -925,6 +918,13 @@
                                 <td><i>Rename Parameter	availableVersions : Map&lt;Long,BiFunction&lt;Channel,Boolean,BoltProtocol&gt;&gt; to protocolHandlers : Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt; in method public BoltHandshakeProtocolHandler(protocolHandlers Map&lt;Long,Function&lt;BoltChannel,BoltMessagingProtocolHandler&gt;&gt;, encryptionRequired boolean, isEncrypted boolean) in class org.neo4j.bolt.transport.BoltHandshakeProtocolHandler</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-486b0479162afd0a625cd90ee7142c76L55">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-0382ed8655edeb1de7085a3a2a4eb775R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	connectionDescriptor : BoltConnectionDescriptor to boltChannel : BoltChannel in method public newMachine(boltChannel BoltChannel, clock Clock) : BoltStateMachine in class org.neo4j.bolt.v1.runtime.BoltFactory</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-5bda099437d231a43aa8a1737309b1abL37">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/c79c89249c00a9dd68b0622040ea539ef3476ef1?diff=split#diff-5bda099437d231a43aa8a1737309b1abR38">To</a></td>
                             </tr>
                             
                             </tbody>

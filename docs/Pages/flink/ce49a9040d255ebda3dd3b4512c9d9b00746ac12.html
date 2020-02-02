@@ -278,20 +278,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	requestJobFunction : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to requestJobFunction : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in method public TestingDispatcherGateway(address String, hostname String, cancelJobFunction Function&lt;JobID,CompletableFuture&lt;Acknowledge&gt;&gt;, stopJobFunction Function&lt;JobID,CompletableFuture&lt;Acknowledge&gt;&gt;, requestJobFunction Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt;, requestJobResultFunction Function&lt;JobID,CompletableFuture&lt;JobResult&gt;&gt;, requestJobStatusFunction Function&lt;JobID,CompletableFuture&lt;JobStatus&gt;&gt;, requestMultipleJobDetailsSupplier Supplier&lt;CompletableFuture&lt;MultipleJobsDetails&gt;&gt;, requestClusterOverviewSupplier Supplier&lt;CompletableFuture&lt;ClusterOverview&gt;&gt;, requestMetricQueryServicePathsSupplier Supplier&lt;CompletableFuture&lt;Collection&lt;String&gt;&gt;&gt;, requestTaskManagerMetricQueryServicePathsSupplier Supplier&lt;CompletableFuture&lt;Collection&lt;Tuple2&lt;ResourceID,String&gt;&gt;&gt;&gt;, requestOperatorBackPressureStatsFunction BiFunction&lt;JobID,JobVertexID,CompletableFuture&lt;OperatorBackPressureStatsResponse&gt;&gt;, triggerSavepointFunction BiFunction&lt;JobID,String,CompletableFuture&lt;String&gt;&gt;, submitFunction Function&lt;JobGraph,CompletableFuture&lt;Acknowledge&gt;&gt;, listFunction Supplier&lt;CompletableFuture&lt;Collection&lt;JobID&gt;&gt;&gt;, blobServerPort int, fencingToken DispatcherId, requestArchivedJobFunction Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt;) in class org.apache.flink.runtime.webmonitor.TestingDispatcherGateway</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-4a92dce441c9ab283b1007b6ffc6a436L72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-4a92dce441c9ab283b1007b6ffc6a436R76">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	accessExecutionGraphs : CompletableFuture&lt;? extends AccessExecutionGraph&gt;... to accessExecutionGraphs : CompletableFuture&lt;ArchivedExecutionGraph&gt;... in method private createCountingRestfulGateway(jobId JobID, accessExecutionGraphs CompletableFuture&lt;ArchivedExecutionGraph&gt;...) : CountingRestfulGateway in class org.apache.flink.runtime.rest.handler.legacy.ExecutionGraphCacheTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dL328">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dR328">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	requestJobFunction : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to requestJobFunction : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in method private CountingRestfulGateway(expectedJobId JobID, requestJobFunction Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt;) in class org.apache.flink.runtime.rest.handler.legacy.ExecutionGraphCacheTest.CountingRestfulGateway</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dL344">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dR344">To</a></td>
@@ -318,6 +304,20 @@
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-4a92dce441c9ab283b1007b6ffc6a436R162">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	requestJobFunction : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to requestJobFunction : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in method public TestingDispatcherGateway(address String, hostname String, cancelJobFunction Function&lt;JobID,CompletableFuture&lt;Acknowledge&gt;&gt;, stopJobFunction Function&lt;JobID,CompletableFuture&lt;Acknowledge&gt;&gt;, requestJobFunction Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt;, requestJobResultFunction Function&lt;JobID,CompletableFuture&lt;JobResult&gt;&gt;, requestJobStatusFunction Function&lt;JobID,CompletableFuture&lt;JobStatus&gt;&gt;, requestMultipleJobDetailsSupplier Supplier&lt;CompletableFuture&lt;MultipleJobsDetails&gt;&gt;, requestClusterOverviewSupplier Supplier&lt;CompletableFuture&lt;ClusterOverview&gt;&gt;, requestMetricQueryServicePathsSupplier Supplier&lt;CompletableFuture&lt;Collection&lt;String&gt;&gt;&gt;, requestTaskManagerMetricQueryServicePathsSupplier Supplier&lt;CompletableFuture&lt;Collection&lt;Tuple2&lt;ResourceID,String&gt;&gt;&gt;&gt;, requestOperatorBackPressureStatsFunction BiFunction&lt;JobID,JobVertexID,CompletableFuture&lt;OperatorBackPressureStatsResponse&gt;&gt;, triggerSavepointFunction BiFunction&lt;JobID,String,CompletableFuture&lt;String&gt;&gt;, submitFunction Function&lt;JobGraph,CompletableFuture&lt;Acknowledge&gt;&gt;, listFunction Supplier&lt;CompletableFuture&lt;Collection&lt;JobID&gt;&gt;&gt;, blobServerPort int, fencingToken DispatcherId, requestArchivedJobFunction Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt;) in class org.apache.flink.runtime.webmonitor.TestingDispatcherGateway</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-4a92dce441c9ab283b1007b6ffc6a436L72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-4a92dce441c9ab283b1007b6ffc6a436R76">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	accessExecutionGraphs : CompletableFuture&lt;? extends AccessExecutionGraph&gt;... to accessExecutionGraphs : CompletableFuture&lt;ArchivedExecutionGraph&gt;... in method private createCountingRestfulGateway(jobId JobID, accessExecutionGraphs CompletableFuture&lt;ArchivedExecutionGraph&gt;...) : CountingRestfulGateway in class org.apache.flink.runtime.rest.handler.legacy.ExecutionGraphCacheTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dL328">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dR328">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -331,13 +331,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;? extends AccessExecutionGraph&gt; to CompletableFuture&lt;ArchivedExecutionGraph&gt; in method public requestJob(jobId JobID, timeout Time) : CompletableFuture&lt;ArchivedExecutionGraph&gt; in class org.apache.flink.runtime.webmonitor.RestfulGateway</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-ac8afd4c2af966f7b55fe9b5753f8485L69">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-ac8afd4c2af966f7b55fe9b5753f8485R69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	CompletableFuture&lt;? extends AccessExecutionGraph&gt; to CompletableFuture&lt;ArchivedExecutionGraph&gt; in method public requestJob(jobId JobID, timeout Time) : CompletableFuture&lt;ArchivedExecutionGraph&gt; in class org.apache.flink.runtime.webmonitor.TestingRestfulGateway</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618L145">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618R146">To</a></td>
@@ -348,6 +341,13 @@
                                 <td><i>Change Return Type	CompletableFuture&lt;? extends AccessExecutionGraph&gt; to CompletableFuture&lt;ArchivedExecutionGraph&gt; in method public requestJob(jobId JobID, timeout Time) : CompletableFuture&lt;ArchivedExecutionGraph&gt; in class org.apache.flink.runtime.rest.handler.legacy.ExecutionGraphCacheTest.CountingRestfulGateway</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dL349">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-5a606fb6442a1acb9630be8a1a7ef70dR349">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;? extends AccessExecutionGraph&gt; to CompletableFuture&lt;ArchivedExecutionGraph&gt; in method public requestJob(jobId JobID, timeout Time) : CompletableFuture&lt;ArchivedExecutionGraph&gt; in class org.apache.flink.runtime.webmonitor.RestfulGateway</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-ac8afd4c2af966f7b55fe9b5753f8485L69">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-ac8afd4c2af966f7b55fe9b5753f8485R69">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -388,6 +388,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	requestJobFunction : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to requestJobFunction : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in class org.apache.flink.runtime.webmonitor.TestingRestfulGateway</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618L71">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618R72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	DEFAULT_REQUEST_JOB_FUNCTION : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to DEFAULT_REQUEST_JOB_FUNCTION : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in class org.apache.flink.runtime.webmonitor.TestingRestfulGateway</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618L51">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618R52">To</a></td>
@@ -398,13 +405,6 @@
                                 <td><i>Change Attribute Type	requestJobFunction : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to requestJobFunction : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in class org.apache.flink.runtime.webmonitor.TestingRestfulGateway.Builder</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618L212">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618R213">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	requestJobFunction : Function&lt;JobID,CompletableFuture&lt;? extends AccessExecutionGraph&gt;&gt; to requestJobFunction : Function&lt;JobID,CompletableFuture&lt;ArchivedExecutionGraph&gt;&gt; in class org.apache.flink.runtime.webmonitor.TestingRestfulGateway</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618L71">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/ce49a9040d255ebda3dd3b4512c9d9b00746ac12?diff=split#diff-a89e72d7e590f1d60d2589aedef1e618R72">To</a></td>
                             </tr>
                             
                             </tbody>

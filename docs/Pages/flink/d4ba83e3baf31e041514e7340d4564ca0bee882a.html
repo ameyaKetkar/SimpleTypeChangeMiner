@@ -268,20 +268,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;Acknowledge&gt; in method public suspend() : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.slotpool.SlotPoolGateway</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-9180fea4cabac7473b8f80ec9c5b2502L51">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-9180fea4cabac7473b8f80ec9c5b2502R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;Void&gt; in method private verifyJobSchedulingStatusAndStartJobManager(leaderSessionId UUID) : CompletableFuture&lt;Void&gt; in class org.apache.flink.runtime.jobmaster.JobManagerRunner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-f5f2bf4eebc2fcc4a7a8224b3462d7c5L288">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-f5f2bf4eebc2fcc4a7a8224b3462d7c5R299">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	void to CompletableFuture&lt;Acknowledge&gt; in method public suspend() : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.slotpool.SlotPool</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-f8b8178e6b0035fcdcdfd5e736f65f16L241">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-f8b8178e6b0035fcdcdfd5e736f65f16R241">To</a></td>
@@ -292,6 +278,20 @@
                                 <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method private suspendExecution(cause Exception) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-25b66d647903625abd46ed702f50bec5L1055">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-25b66d647903625abd46ed702f50bec5R1057">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;Acknowledge&gt; in method public suspend() : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.slotpool.SlotPoolGateway</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-9180fea4cabac7473b8f80ec9c5b2502L51">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-9180fea4cabac7473b8f80ec9c5b2502R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;Void&gt; in method private verifyJobSchedulingStatusAndStartJobManager(leaderSessionId UUID) : CompletableFuture&lt;Void&gt; in class org.apache.flink.runtime.jobmaster.JobManagerRunner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-f5f2bf4eebc2fcc4a7a8224b3462d7c5L288">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d4ba83e3baf31e041514e7340d4564ca0bee882a?diff=split#diff-f5f2bf4eebc2fcc4a7a8224b3462d7c5R299">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -325,6 +325,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private getJobSchedulingStatus() : CompletableFuture&lt;JobSchedulingStatus&gt; extracted from private verifyJobSchedulingStatusAndStartJobManager(leaderSessionId UUID) : void in class org.apache.flink.runtime.jobmaster.JobManagerRunner</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private createJobManagerRunner(jobMasterServiceFactory JobMasterServiceFactory, libraryCacheManager LibraryCacheManager) : JobManagerRunner extracted from private createJobManagerRunner(libraryCacheManager LibraryCacheManager) : JobManagerRunner in class org.apache.flink.runtime.jobmaster.JobManagerRunnerTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -354,13 +361,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private handleException(leadershipOperation CompletableFuture&lt;Void&gt;, message String) : void extracted from public revokeLeadership() : void in class org.apache.flink.runtime.jobmaster.JobManagerRunner</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getJobSchedulingStatus() : CompletableFuture&lt;JobSchedulingStatus&gt; extracted from private verifyJobSchedulingStatusAndStartJobManager(leaderSessionId UUID) : void in class org.apache.flink.runtime.jobmaster.JobManagerRunner</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -294,6 +294,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	startParallelOP : int to startParallelOp : int in method private repartition(nameToStateByMode GroupByStateNameResults, parallelism int) : List&lt;Map&lt;StreamStateHandle,OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-3e83ee402778c715041379849f55dab0L109">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-3e83ee402778c715041379849f55dab0R133">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	x : Map&lt;String,List&lt;Long&gt;&gt; to stateToOffsets : Map&lt;String,List&lt;Long&gt;&gt; in method private doTestPartitionableStateRepartitioning(r Random, oldParallelism int, newParallelism int, numNamedStates int, maxPartitionsPerState int) : void in class org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-d13c313263791c153fe4e6635fefde49L2856">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-d13c313263791c153fe4e6635fefde49R2915">To</a></td>
@@ -311,13 +318,6 @@
                                 <td><i>Rename Variable	psh : OperatorStateHandle to operatorStateHandle : OperatorStateHandle in method private repartition(nameToStateByMode GroupByStateNameResults, parallelism int) : List&lt;Map&lt;StreamStateHandle,OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-3e83ee402778c715041379849f55dab0L177">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-3e83ee402778c715041379849f55dab0R206">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	startParallelOP : int to startParallelOp : int in method private repartition(nameToStateByMode GroupByStateNameResults, parallelism int) : List&lt;Map&lt;StreamStateHandle,OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-3e83ee402778c715041379849f55dab0L109">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-3e83ee402778c715041379849f55dab0R133">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -373,20 +373,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-24" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	offsetsMap : Map&lt;String,long[]&gt; to offsetsMap : Map&lt;String,OperatorStateHandle.StateMetaInfo&gt; in method private generateChainedPartitionableStateHandle(states Map&lt;String,List&lt;? extends Serializable&gt;&gt;) : ChainedStateHandle&lt;OperatorStateHandle&gt; in class org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-d13c313263791c153fe4e6635fefde49L2512">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-d13c313263791c153fe4e6635fefde49R2566">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	entry : Map.Entry&lt;String,long[]&gt; to entry : Map.Entry&lt;String,StateMetaInfo&gt; in method public equals(o Object) : boolean in class org.apache.flink.runtime.state.OperatorStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-37656ad802b76d7d503634316f1fb645L71">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-37656ad802b76d7d503634316f1fb645R94">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -540,6 +526,20 @@
                                 <td><i>Change Variable Type	offsetsMap : Map&lt;String,long[]&gt; to offsetsMap : Map&lt;String,OperatorStateHandle.StateMetaInfo&gt; in method package closeAndGetHandle() : OperatorStateHandle in class org.apache.flink.runtime.state.OperatorStateCheckpointOutputStream</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-cf88bb6295c60643c5b53fe7e07713b1L54">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-cf88bb6295c60643c5b53fe7e07713b1R69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	offsetsMap : Map&lt;String,long[]&gt; to offsetsMap : Map&lt;String,OperatorStateHandle.StateMetaInfo&gt; in method private generateChainedPartitionableStateHandle(states Map&lt;String,List&lt;? extends Serializable&gt;&gt;) : ChainedStateHandle&lt;OperatorStateHandle&gt; in class org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-d13c313263791c153fe4e6635fefde49L2512">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-d13c313263791c153fe4e6635fefde49R2566">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	entry : Map.Entry&lt;String,long[]&gt; to entry : Map.Entry&lt;String,StateMetaInfo&gt; in method public equals(o Object) : boolean in class org.apache.flink.runtime.state.OperatorStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-37656ad802b76d7d503634316f1fb645L71">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1020ba2c9cfc1d01703e97c72e20a922bae0732d?diff=split#diff-37656ad802b76d7d503634316f1fb645R94">To</a></td>
                             </tr>
                             
                             </tbody>

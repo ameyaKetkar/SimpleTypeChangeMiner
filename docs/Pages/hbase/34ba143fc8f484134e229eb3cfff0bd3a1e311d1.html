@@ -312,20 +312,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	state : ViolationState to state : SpaceQuotaSnapshot in method public setCurrentState(subject T, state SpaceQuotaSnapshot) : void in class org.apache.hadoop.hbase.quotas.QuotaSnapshotStore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-3c6b5a5ff72a734ee3b77210c3d78a2dL75">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-6e8c6948343f47d9071d38e0780de636R88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	state : ViolationState to snapshot : SpaceQuotaSnapshot in method package setNamespaceQuotaSnapshot(namespace String, snapshot SpaceQuotaSnapshot) : void in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L400">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R437">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	policy : SpaceViolationPolicy to snapshot : SpaceQuotaSnapshot in method public createPutSpaceSnapshot(tableName TableName, snapshot SpaceQuotaSnapshot) : Put in class org.apache.hadoop.hbase.quotas.QuotaTableUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cL385">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cR390">To</a></td>
@@ -380,6 +366,20 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cR239">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	state : ViolationState to state : SpaceQuotaSnapshot in method public setCurrentState(subject T, state SpaceQuotaSnapshot) : void in class org.apache.hadoop.hbase.quotas.QuotaSnapshotStore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-3c6b5a5ff72a734ee3b77210c3d78a2dL75">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-6e8c6948343f47d9071d38e0780de636R88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	state : ViolationState to snapshot : SpaceQuotaSnapshot in method package setNamespaceQuotaSnapshot(namespace String, snapshot SpaceQuotaSnapshot) : void in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L400">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R437">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -390,6 +390,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package createTable() : TableName from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to package createTable() : TableName from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL532">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R161">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package partitionTablesByQuotaTarget(quotas Multimap&lt;TableName,QuotaSettings&gt;, tablesWithTableQuota Set&lt;TableName&gt;, tablesWithNamespaceQuota Set&lt;TableName&gt;) : void from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to package partitionTablesByQuotaTarget(quotas Multimap&lt;TableName,QuotaSettings&gt;, tablesWithTableQuota Set&lt;TableName&gt;, tablesWithNamespaceQuota Set&lt;TableName&gt;) : void from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL580">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R210">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package createTableInNamespace(nd NamespaceDescriptor) : TableName from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to package createTableInNamespace(nd NamespaceDescriptor) : TableName from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL561">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R191">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -419,27 +440,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R116">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package createTable() : TableName from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to package createTable() : TableName from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL532">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R161">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package partitionTablesByQuotaTarget(quotas Multimap&lt;TableName,QuotaSettings&gt;, tablesWithTableQuota Set&lt;TableName&gt;, tablesWithNamespaceQuota Set&lt;TableName&gt;) : void from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to package partitionTablesByQuotaTarget(quotas Multimap&lt;TableName,QuotaSettings&gt;, tablesWithTableQuota Set&lt;TableName&gt;, tablesWithNamespaceQuota Set&lt;TableName&gt;) : void from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL580">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R210">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package createTableInNamespace(nd NamespaceDescriptor) : TableName from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to package createTableInNamespace(nd NamespaceDescriptor) : TableName from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL561">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R191">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -450,6 +450,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private F1 : String from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to public F1 : String from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL76">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R53">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -486,13 +493,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-9025a07cc5028693d4ac1d7dd26c2a41R63">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private F1 : String from class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster to public F1 : String from class org.apache.hadoop.hbase.quotas.SpaceQuotaHelperForTests</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL76">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-01388452f41049ecd75604ec1a664210R53">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -524,20 +524,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.hbase.quotas.TableQuotaViolationStore renamed to org.apache.hadoop.hbase.quotas.TableQuotaSnapshotStore</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.hbase.quotas.QuotaViolationStore renamed to org.apache.hadoop.hbase.quotas.QuotaSnapshotStore</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.hadoop.hbase.quotas.SpaceQuotaViolationNotifierFactory renamed to org.apache.hadoop.hbase.quotas.SpaceQuotaSnapshotNotifierFactory</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -560,6 +546,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	org.apache.hadoop.hbase.quotas.SpaceQuotaViolationPolicyRefresherChore renamed to org.apache.hadoop.hbase.quotas.SpaceQuotaRefresherChore</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.hadoop.hbase.quotas.TableQuotaViolationStore renamed to org.apache.hadoop.hbase.quotas.TableQuotaSnapshotStore</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.hadoop.hbase.quotas.QuotaViolationStore renamed to org.apache.hadoop.hbase.quotas.QuotaSnapshotStore</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -592,34 +592,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-42" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableStore : QuotaViolationStore&lt;TableName&gt; to tableStore : QuotaSnapshotStore&lt;TableName&gt; in method public testFilteringMissingTables() : void in class org.apache.hadoop.hbase.quotas.TestTablesWithQuotas</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-719f83c4c874fc74a13c13809cfbc164L170">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-719f83c4c874fc74a13c13809cfbc164R186">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	currentPolicy : SpaceViolationPolicy to currentSnapshot : SpaceQuotaSnapshot in method protected chore() : void in class org.apache.hadoop.hbase.quotas.SpaceQuotaRefresherChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-1d7ae8ed21ba12564a628013e2ed9666L67">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-1aedb789879884935964d37307d70918R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	actualTableViolationPolicy : SpaceViolationPolicy to actualTableSnapshot : SpaceQuotaSnapshot in method public testTableQuotaOverridesNamespaceQuota() : void in class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL249">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bR320">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	notifier : SpaceQuotaViolationNotifier to notifier : SpaceQuotaSnapshotNotifier in method package createQuotaSnapshotNotifier() : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L1002">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R1007">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -887,6 +859,34 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ed348e72859747e23f489d5012310eb7R53">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableStore : QuotaViolationStore&lt;TableName&gt; to tableStore : QuotaSnapshotStore&lt;TableName&gt; in method public testFilteringMissingTables() : void in class org.apache.hadoop.hbase.quotas.TestTablesWithQuotas</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-719f83c4c874fc74a13c13809cfbc164L170">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-719f83c4c874fc74a13c13809cfbc164R186">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	currentPolicy : SpaceViolationPolicy to currentSnapshot : SpaceQuotaSnapshot in method protected chore() : void in class org.apache.hadoop.hbase.quotas.SpaceQuotaRefresherChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-1d7ae8ed21ba12564a628013e2ed9666L67">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-1aedb789879884935964d37307d70918R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	actualTableViolationPolicy : SpaceViolationPolicy to actualTableSnapshot : SpaceQuotaSnapshot in method public testTableQuotaOverridesNamespaceQuota() : void in class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL249">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bR320">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	notifier : SpaceQuotaViolationNotifier to notifier : SpaceQuotaSnapshotNotifier in method package createQuotaSnapshotNotifier() : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L1002">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R1007">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -897,13 +897,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-3" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	package updateTableQuota(table TableName, currentSnapshot SpaceQuotaSnapshot, targetSnapshot SpaceQuotaSnapshot) : void extracted from package processTablesWithQuotas(tablesWithTableQuotas Set&lt;TableName&gt;) : void in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -919,6 +912,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	package updateTableQuota(table TableName, currentSnapshot SpaceQuotaSnapshot, targetSnapshot SpaceQuotaSnapshot) : void extracted from package processTablesWithQuotas(tablesWithTableQuotas Set&lt;TableName&gt;) : void in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -929,41 +929,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package getNamespaceQuotaViolation(namespace String) : ViolationState renamed to package getNamespaceQuotaSnapshot(namespace String) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L387">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R421">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public makeQuotaViolationScan() : Scan renamed to public makeQuotaSnapshotScan() : Scan in class org.apache.hadoop.hbase.quotas.QuotaTableUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cL214">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cR217">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package getTableViolationStore() : QuotaViolationStore&lt;TableName&gt; renamed to package getTableSnapshotStore() : QuotaSnapshotStore&lt;TableName&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L342">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R391">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private getQuotaManager() : RegionServerRpcQuotaManager renamed to private getRpcQuotaManager() : RegionServerRpcQuotaManager in class org.apache.hadoop.hbase.regionserver.RSRpcServices</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-c8a7b236eb3e2d91981fd0147e79e4b4L1309">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-c8a7b236eb3e2d91981fd0147e79e4b4R1324">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package createQuotaViolationNotifier() : SpaceQuotaViolationNotifier renamed to package createQuotaSnapshotNotifier() : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L1002">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R1006">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1012,6 +977,41 @@
                                 <td><i>Rename Method	public createEnableViolationPolicyUpdate(tableName TableName, policy SpaceViolationPolicy) : Put renamed to public createPutSpaceSnapshot(tableName TableName, snapshot SpaceQuotaSnapshot) : Put in class org.apache.hadoop.hbase.quotas.QuotaTableUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cL385">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cR387">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	package getNamespaceQuotaViolation(namespace String) : ViolationState renamed to package getNamespaceQuotaSnapshot(namespace String) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L387">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R421">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public makeQuotaViolationScan() : Scan renamed to public makeQuotaSnapshotScan() : Scan in class org.apache.hadoop.hbase.quotas.QuotaTableUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cL214">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cR217">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	package getTableViolationStore() : QuotaViolationStore&lt;TableName&gt; renamed to package getTableSnapshotStore() : QuotaSnapshotStore&lt;TableName&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L342">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R391">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private getQuotaManager() : RegionServerRpcQuotaManager renamed to private getRpcQuotaManager() : RegionServerRpcQuotaManager in class org.apache.hadoop.hbase.regionserver.RSRpcServices</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-c8a7b236eb3e2d91981fd0147e79e4b4L1309">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-c8a7b236eb3e2d91981fd0147e79e4b4R1324">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	package createQuotaViolationNotifier() : SpaceQuotaViolationNotifier renamed to package createQuotaSnapshotNotifier() : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L1002">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R1006">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1164,48 +1164,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	SpaceQuotaViolationNotifier to SpaceQuotaSnapshotNotifier in method public getSpaceQuotaSnapshotNotifier() : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L3397">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R3400">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getCurrentState(table TableName) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.TableQuotaSnapshotStore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-8a73874f878d2f89afb6881b733ce5b3L71">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a625dabd61033f2ce312646cac89a976R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getCurrentState(namespace String) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.NamespaceQuotaSnapshotStore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db8974b0c17d9c6503fc477798becbcaL71">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ce4676f900b531c7027e2bb36181194eR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	SpaceQuotaViolationNotifierFactory to SpaceQuotaSnapshotNotifierFactory in method public getInstance() : SpaceQuotaSnapshotNotifierFactory in class org.apache.hadoop.hbase.quotas.SpaceQuotaSnapshotNotifierFactory</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-3d10ef124d71d0517e967d23ea3745a6L40">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ed348e72859747e23f489d5012310eb7R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getTargetState(subject T, spaceQuota SpaceQuota) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.QuotaSnapshotStore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-3c6b5a5ff72a734ee3b77210c3d78a2dL58">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-6e8c6948343f47d9071d38e0780de636R65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getTargetState(subject String, spaceQuota SpaceQuota) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.NamespaceQuotaSnapshotStore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db8974b0c17d9c6503fc477798becbcaL77">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ce4676f900b531c7027e2bb36181194eR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getTargetState(table TableName, spaceQuota SpaceQuota) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.TableQuotaSnapshotStore</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-8a73874f878d2f89afb6881b733ce5b3L77">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a625dabd61033f2ce312646cac89a976R79">To</a></td>
@@ -1260,6 +1218,48 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-6e8c6948343f47d9071d38e0780de636R58">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	SpaceQuotaViolationNotifier to SpaceQuotaSnapshotNotifier in method public getSpaceQuotaSnapshotNotifier() : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L3397">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R3400">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getCurrentState(table TableName) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.TableQuotaSnapshotStore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-8a73874f878d2f89afb6881b733ce5b3L71">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a625dabd61033f2ce312646cac89a976R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getCurrentState(namespace String) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.NamespaceQuotaSnapshotStore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db8974b0c17d9c6503fc477798becbcaL71">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ce4676f900b531c7027e2bb36181194eR73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	SpaceQuotaViolationNotifierFactory to SpaceQuotaSnapshotNotifierFactory in method public getInstance() : SpaceQuotaSnapshotNotifierFactory in class org.apache.hadoop.hbase.quotas.SpaceQuotaSnapshotNotifierFactory</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-3d10ef124d71d0517e967d23ea3745a6L40">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ed348e72859747e23f489d5012310eb7R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getTargetState(subject T, spaceQuota SpaceQuota) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.QuotaSnapshotStore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-3c6b5a5ff72a734ee3b77210c3d78a2dL58">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-6e8c6948343f47d9071d38e0780de636R65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ViolationState to SpaceQuotaSnapshot in method public getTargetState(subject String, spaceQuota SpaceQuota) : SpaceQuotaSnapshot in class org.apache.hadoop.hbase.quotas.NamespaceQuotaSnapshotStore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db8974b0c17d9c6503fc477798becbcaL77">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ce4676f900b531c7027e2bb36181194eR79">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1270,13 +1270,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	tableViolationStore : QuotaViolationStore&lt;TableName&gt; to tableSnapshotStore : QuotaSnapshotStore&lt;TableName&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L90">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R89">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1383,6 +1376,13 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R60">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	tableViolationStore : QuotaViolationStore&lt;TableName&gt; to tableSnapshotStore : QuotaSnapshotStore&lt;TableName&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L90">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R89">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1393,55 +1393,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	store : TableQuotaViolationStore to store : TableQuotaSnapshotStore in class org.apache.hadoop.hbase.quotas.TestTableQuotaViolationStore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-7d2bf0b60d9c9884fe8a447bcf678806L56">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-7d2bf0b60d9c9884fe8a447bcf678806R56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	conn : Connection to rss : RegionServerServices in class org.apache.hadoop.hbase.quotas.TestRegionServerSpaceQuotaManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-dea29362ad5cddcd90737d6e4f126ea2L54">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-dea29362ad5cddcd90737d6e4f126ea2R50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	spaceQuotaRefresher : SpaceQuotaViolationPolicyRefresherChore to spaceQuotaRefresher : SpaceQuotaRefresherChore in class org.apache.hadoop.hbase.quotas.RegionServerSpaceQuotaManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db54c8926021ba66b46890b41156bab7L48">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db54c8926021ba66b46890b41156bab7R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	tableViolationStore : QuotaViolationStore&lt;TableName&gt; to tableSnapshotStore : QuotaSnapshotStore&lt;TableName&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L90">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	tableQuotaViolationStates : Map&lt;TableName,ViolationState&gt; to tableQuotaSnapshots : Map&lt;TableName,SpaceQuotaSnapshot&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L84">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	spaceQuotaViolationNotifier : SpaceQuotaViolationNotifier to spaceQuotaSnapshotNotifier : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L382">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R382">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	violationNotifier : SpaceQuotaViolationNotifierForTest to snapshotNotifier : SpaceQuotaSnapshotNotifierForTest in class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL87">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bR74">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1499,6 +1450,55 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-ed348e72859747e23f489d5012310eb7R34">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	store : TableQuotaViolationStore to store : TableQuotaSnapshotStore in class org.apache.hadoop.hbase.quotas.TestTableQuotaViolationStore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-7d2bf0b60d9c9884fe8a447bcf678806L56">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-7d2bf0b60d9c9884fe8a447bcf678806R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	conn : Connection to rss : RegionServerServices in class org.apache.hadoop.hbase.quotas.TestRegionServerSpaceQuotaManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-dea29362ad5cddcd90737d6e4f126ea2L54">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-dea29362ad5cddcd90737d6e4f126ea2R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	spaceQuotaRefresher : SpaceQuotaViolationPolicyRefresherChore to spaceQuotaRefresher : SpaceQuotaRefresherChore in class org.apache.hadoop.hbase.quotas.RegionServerSpaceQuotaManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db54c8926021ba66b46890b41156bab7L48">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-db54c8926021ba66b46890b41156bab7R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	tableViolationStore : QuotaViolationStore&lt;TableName&gt; to tableSnapshotStore : QuotaSnapshotStore&lt;TableName&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L90">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R89">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	tableQuotaViolationStates : Map&lt;TableName,ViolationState&gt; to tableQuotaSnapshots : Map&lt;TableName,SpaceQuotaSnapshot&gt; in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L84">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	spaceQuotaViolationNotifier : SpaceQuotaViolationNotifier to spaceQuotaSnapshotNotifier : SpaceQuotaSnapshotNotifier in class org.apache.hadoop.hbase.master.HMaster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972L382">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-910fe86f307ab33e4e946c666e739972R382">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	violationNotifier : SpaceQuotaViolationNotifierForTest to snapshotNotifier : SpaceQuotaSnapshotNotifierForTest in class org.apache.hadoop.hbase.quotas.TestQuotaObserverChoreWithMiniCluster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bL87">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-4abce43b1f4a620f4d9cc9fd8db73b3bR74">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1509,6 +1509,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-3" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public copyQuotaSnapshots() : Map&lt;TableName,SpaceQuotaSnapshot&gt; extracted from public testOldPoliciesAreRemoved() : void in class org.apache.hadoop.hbase.quotas.TestSpaceQuotaViolationPolicyRefresherChore &amp; moved to class org.apache.hadoop.hbase.quotas.RegionServerSpaceQuotaManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1524,13 +1531,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public copyQuotaSnapshots() : Map&lt;TableName,SpaceQuotaSnapshot&gt; extracted from public testOldPoliciesAreRemoved() : void in class org.apache.hadoop.hbase.quotas.TestSpaceQuotaViolationPolicyRefresherChore &amp; moved to class org.apache.hadoop.hbase.quotas.RegionServerSpaceQuotaManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1541,6 +1541,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	state : ViolationState to snapshot : SpaceQuotaSnapshot in method package setNamespaceQuotaSnapshot(namespace String, snapshot SpaceQuotaSnapshot) : void in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L403">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R437">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1582,13 +1589,6 @@
                                 <td><i>Rename Parameter	policies : Map&lt;TableName,SpaceViolationPolicy&gt; to snapshots : Map&lt;TableName,SpaceQuotaSnapshot&gt; in method public extractQuotaSnapshot(result Result, snapshots Map&lt;TableName,SpaceQuotaSnapshot&gt;) : void in class org.apache.hadoop.hbase.quotas.QuotaTableUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cL236">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-a78f85d55705668e137ffd638d97238cR239">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	state : ViolationState to snapshot : SpaceQuotaSnapshot in method package setNamespaceQuotaSnapshot(namespace String, snapshot SpaceQuotaSnapshot) : void in class org.apache.hadoop.hbase.quotas.QuotaObserverChore</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4L403">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/34ba143fc8f484134e229eb3cfff0bd3a1e311d1?diff=split#diff-99c75ce9f07d377d9cc5928bfd6ccaf4R437">To</a></td>
                             </tr>
                             
                             </tbody>

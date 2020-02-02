@@ -302,13 +302,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private readHeader() : ByteBuffer renamed to private readAndValidateHeader() : long in class org.neo4j.kernel.impl.store.id.IdFile</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812L106">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812R107">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	private readHighIdFromHeader(channel StoreChannel, fileName File) : ByteBuffer renamed to private readAndValidate(channel StoreChannel, fileName File) : long in class org.neo4j.kernel.impl.store.id.IdFile</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812L121">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812R120">To</a></td>
@@ -319,6 +312,13 @@
                                 <td><i>Rename Method	private writeHeader(buffer ByteBuffer) : void renamed to private markAsCleanlyClosed() : void in class org.neo4j.kernel.impl.store.id.IdFile</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812L209">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812R156">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private readHeader() : ByteBuffer renamed to private readAndValidateHeader() : long in class org.neo4j.kernel.impl.store.id.IdFile</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812L106">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/46b4df583cdd98b1855a2e6fe00371ab027e562a?diff=split#diff-c300b7de355ef5939bcdf90b35268812R107">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -410,6 +410,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-19" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private getFreeIdKeeper(channel StoreChannel, threshold int, aggresiveReuse boolean) : FreeIdKeeper extracted from public shouldStoreAndRestoreIds() : void in class org.neo4j.kernel.impl.store.id.FreeIdKeeperTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private getStoreChannel() : StoreChannel extracted from public shouldStoreAndRestoreIds() : void in class org.neo4j.kernel.impl.store.id.FreeIdKeeperTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -526,20 +540,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private getFreeIdKeeper(channel StoreChannel, threshold int, aggresiveReuse boolean) : FreeIdKeeper extracted from public shouldReturnIdsRestoredAndIgnoreNewlyReleasedIfAggressiveReuseIsFalse() : void in class org.neo4j.kernel.impl.store.id.FreeIdKeeperTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getFreeIdKeeper(channel StoreChannel, threshold int, aggresiveReuse boolean) : FreeIdKeeper extracted from public shouldStoreAndRestoreIds() : void in class org.neo4j.kernel.impl.store.id.FreeIdKeeperTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getStoreChannel() : StoreChannel extracted from public shouldStoreAndRestoreIds() : void in class org.neo4j.kernel.impl.store.id.FreeIdKeeperTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

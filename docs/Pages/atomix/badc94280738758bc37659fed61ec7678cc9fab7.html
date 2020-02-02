@@ -174,13 +174,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	package handleTask(task GroupTask) : void from class io.atomix.coordination.LocalGroupMember to package handleTask(task GroupTask) : void from class io.atomix.coordination.LocalGroupTaskQueue</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L120">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-d2b4caf78d56dc04f17ed03f6900638dR47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Method	public onTask(consumer Consumer&lt;GroupTask&lt;T&gt;&gt;) : Listener&lt;GroupTask&lt;T&gt;&gt; from class io.atomix.coordination.LocalGroupMember to public onTask(consumer Consumer&lt;GroupTask&lt;T&gt;&gt;) : Listener&lt;GroupTask&lt;T&gt;&gt; from class io.atomix.coordination.LocalGroupTaskQueue</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L108">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-d2b4caf78d56dc04f17ed03f6900638dR35">To</a></td>
@@ -198,6 +191,13 @@
                                 <td><i>Move Method	public onMessage(topic String, consumer Consumer&lt;GroupMessage&lt;T&gt;&gt;) : Listener&lt;GroupMessage&lt;T&gt;&gt; from class io.atomix.coordination.LocalGroupMember to public onMessage(topic String, consumer Consumer&lt;GroupMessage&lt;T&gt;&gt;) : Listener&lt;GroupMessage&lt;T&gt;&gt; from class io.atomix.coordination.LocalGroupConnection</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L80">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-ea19b382475ce6b268513c8b2026cb21R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package handleTask(task GroupTask) : void from class io.atomix.coordination.LocalGroupMember to package handleTask(task GroupTask) : void from class io.atomix.coordination.LocalGroupTaskQueue</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L120">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-d2b4caf78d56dc04f17ed03f6900638dR47">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -231,16 +231,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private taskListeners : Listeners&lt;GroupTask&lt;Object&gt;&gt; from class io.atomix.coordination.LocalGroupMember to private taskListeners : Listeners&lt;GroupTask&lt;Object&gt;&gt; from class io.atomix.coordination.LocalGroupTaskQueue</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L64">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-d2b4caf78d56dc04f17ed03f6900638dR29">To</a></td>
+                                <td><i>Move Attribute	private messageListeners : Map&lt;String,MessageListenerHolder&gt; from class io.atomix.coordination.LocalGroupMember to private messageListeners : Map&lt;String,MessageListenerHolder&gt; from class io.atomix.coordination.LocalGroupConnection</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L63">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-ea19b382475ce6b268513c8b2026cb21R31">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private messageListeners : Map&lt;String,MessageListenerHolder&gt; from class io.atomix.coordination.LocalGroupMember to private messageListeners : Map&lt;String,MessageListenerHolder&gt; from class io.atomix.coordination.LocalGroupConnection</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L63">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-ea19b382475ce6b268513c8b2026cb21R31">To</a></td>
+                                <td><i>Move Attribute	private taskListeners : Listeners&lt;GroupTask&lt;Object&gt;&gt; from class io.atomix.coordination.LocalGroupMember to private taskListeners : Listeners&lt;GroupTask&lt;Object&gt;&gt; from class io.atomix.coordination.LocalGroupTaskQueue</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-e501e1b172be020ee82f96c3065596a6L64">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/badc94280738758bc37659fed61ec7678cc9fab7?diff=split#diff-d2b4caf78d56dc04f17ed03f6900638dR29">To</a></td>
                             </tr>
                             
                             </tbody>

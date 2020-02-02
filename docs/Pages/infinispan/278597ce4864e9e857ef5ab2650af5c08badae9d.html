@@ -172,6 +172,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	searchManager : SearchManager to isIndexed : boolean in method public QueryEngine(cache AdvancedCache&lt;?,?&gt;, isIndexed boolean) in class org.infinispan.query.dsl.embedded.impl.QueryEngine</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaL78">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaR81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	types : Class... to types : Class&lt;?&gt;... in method private assertIndexingKnows(cache Cache&lt;Object,Object&gt;, types Class&lt;?&gt;...) : void in class org.infinispan.query.blackbox.IndexedEntityAutodetectTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-0ac87708e72a98e8595077db9dc321a4L696">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-8b417a340ada3c87ca75871e36dcac4dR53">To</a></td>
@@ -189,13 +196,6 @@
                                 <td><i>Change Parameter Type	searchManager : SearchManager to isIndexed : boolean in method public RemoteQueryEngine(cache AdvancedCache&lt;?,?&gt;, isIndexed boolean, isCompatMode boolean, serCtx SerializationContext) in class org.infinispan.query.remote.impl.RemoteQueryEngine</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-d01035d42f1ac43e201c0ead3123123aL59">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-d01035d42f1ac43e201c0ead3123123aR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	searchManager : SearchManager to isIndexed : boolean in method public QueryEngine(cache AdvancedCache&lt;?,?&gt;, isIndexed boolean) in class org.infinispan.query.dsl.embedded.impl.QueryEngine</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaL78">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaR81">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -265,20 +265,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	isIndexed : boolean in method public cacheStarting(cr ComponentRegistry, cfg Configuration, cacheName String) : void from class org.infinispan.query.impl.LifecycleManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	indexedEntities : Class&lt;?&gt;[] in method private getSearchFactory(cacheName String, indexingConfiguration IndexingConfiguration, cr ComponentRegistry) : SearchIntegrator from class org.infinispan.query.impl.LifecycleManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	isIndexed : boolean in method public cacheStarting(cr ComponentRegistry, cfg Configuration, cacheName String) : void from class org.infinispan.query.remote.impl.LifecycleManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -294,6 +280,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	action : GetCacheComponentRegistryAction in method package getCacheComponentRegistry(cache AdvancedCache&lt;?,?&gt;) : ComponentRegistry from class org.infinispan.query.SecurityActions</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	isIndexed : boolean in method public cacheStarting(cr ComponentRegistry, cfg Configuration, cacheName String) : void from class org.infinispan.query.impl.LifecycleManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	indexedEntities : Class&lt;?&gt;[] in method private getSearchFactory(cacheName String, indexingConfiguration IndexingConfiguration, cr ComponentRegistry) : SearchIntegrator from class org.infinispan.query.impl.LifecycleManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -393,20 +393,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Push Down Method	protected getCacheForQuery() : BasicCache&lt;Object,Object&gt; from class org.infinispan.all.embeddedquery.AbstractQueryTest to protected getCacheForQuery() : BasicCache&lt;Object,Object&gt; from class org.infinispan.all.embeddedquery.QueryDslConditionsTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-32bab7916492f25c0a6888f09f809579L76">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-ec2ca9a616762c3afef95f26134b8332R96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public testEntityDiscovery() : void from class org.infinispan.all.embeddedquery.LocalCacheTest to public testEntityDiscovery() : void from class org.infinispan.query.blackbox.IndexedEntityAutodetectTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-ba343825bbeabec116c58ed4790a2d37L508">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-8b417a340ada3c87ca75871e36dcac4dR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Push Down Method	public testEntityDiscovery() : void from class org.infinispan.all.embeddedquery.LocalCacheTest to public testEntityDiscovery() : void from class org.infinispan.all.embeddedquery.IndexedEntityAutodetectTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-ba343825bbeabec116c58ed4790a2d37L508">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-cc88dcbafed0d60373aa9b283958c122R56">To</a></td>
@@ -431,6 +417,20 @@
                                 <td><i>Push Down Method	private assertIndexingKnows(cache Cache&lt;Object,Object&gt;, types Class...) : void from class org.infinispan.query.blackbox.LocalCacheTest to private assertIndexingKnows(cache Cache&lt;Object,Object&gt;, types Class&lt;?&gt;...) : void from class org.infinispan.query.blackbox.IndexedEntityAutodetectTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-0ac87708e72a98e8595077db9dc321a4L696">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-8b417a340ada3c87ca75871e36dcac4dR47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	protected getCacheForQuery() : BasicCache&lt;Object,Object&gt; from class org.infinispan.all.embeddedquery.AbstractQueryTest to protected getCacheForQuery() : BasicCache&lt;Object,Object&gt; from class org.infinispan.all.embeddedquery.QueryDslConditionsTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-32bab7916492f25c0a6888f09f809579L76">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-ec2ca9a616762c3afef95f26134b8332R96">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public testEntityDiscovery() : void from class org.infinispan.all.embeddedquery.LocalCacheTest to public testEntityDiscovery() : void from class org.infinispan.query.blackbox.IndexedEntityAutodetectTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-ba343825bbeabec116c58ed4790a2d37L508">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-8b417a340ada3c87ca75871e36dcac4dR73">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -539,13 +539,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	searchManager : SearchManager to isIndexed : boolean in method public QueryEngine(cache AdvancedCache&lt;?,?&gt;, isIndexed boolean) in class org.infinispan.query.dsl.embedded.impl.QueryEngine</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaL78">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaR81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	properties : Properties to indexingConfiguration : IndexingConfiguration in method private addCacheDependencyIfNeeded(cacheStarting String, cacheManager EmbeddedCacheManager, indexingConfiguration IndexingConfiguration) : void in class org.infinispan.query.impl.LifecycleManager</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-7c4b7fbb84d10e1fb26bdf5c5558cfc4L111">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-7c4b7fbb84d10e1fb26bdf5c5558cfc4R128">To</a></td>
@@ -556,6 +549,13 @@
                                 <td><i>Rename Parameter	searchManager : SearchManager to isIndexed : boolean in method public RemoteQueryEngine(cache AdvancedCache&lt;?,?&gt;, isIndexed boolean, isCompatMode boolean, serCtx SerializationContext) in class org.infinispan.query.remote.impl.RemoteQueryEngine</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-d01035d42f1ac43e201c0ead3123123aL59">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-d01035d42f1ac43e201c0ead3123123aR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	searchManager : SearchManager to isIndexed : boolean in method public QueryEngine(cache AdvancedCache&lt;?,?&gt;, isIndexed boolean) in class org.infinispan.query.dsl.embedded.impl.QueryEngine</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaL78">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/278597ce4864e9e857ef5ab2650af5c08badae9d?diff=split#diff-b0e9067a50839216ee6e0da3201e11eaR81">To</a></td>
                             </tr>
                             
                             </tbody>

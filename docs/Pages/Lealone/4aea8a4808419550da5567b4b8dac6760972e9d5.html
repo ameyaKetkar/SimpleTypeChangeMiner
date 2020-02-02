@@ -158,16 +158,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private executeQueryDirectly(maxRows int, scrollable boolean) : Result renamed to private executeQuery(maxRows int, scrollable boolean, handler AsyncHandler&lt;AsyncResult&lt;Result&gt;&gt;, async boolean) : Result in class org.lealone.client.ClientCommand</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fL172">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fR176">To</a></td>
+                                <td><i>Rename Method	private executeUpdateDirectly(replicationName String) : int renamed to private executeUpdate(replicationName String, handler AsyncHandler&lt;AsyncResult&lt;Integer&gt;&gt;, async boolean) : int in class org.lealone.client.ClientCommand</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fL294">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fR280">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private executeUpdateDirectly(replicationName String) : int renamed to private executeUpdate(replicationName String, handler AsyncHandler&lt;AsyncResult&lt;Integer&gt;&gt;, async boolean) : int in class org.lealone.client.ClientCommand</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fL294">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fR280">To</a></td>
+                                <td><i>Rename Method	private executeQueryDirectly(maxRows int, scrollable boolean) : Result renamed to private executeQuery(maxRows int, scrollable boolean, handler AsyncHandler&lt;AsyncResult&lt;Result&gt;&gt;, async boolean) : Result in class org.lealone.client.ClientCommand</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fL172">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/4aea8a4808419550da5567b4b8dac6760972e9d5?diff=split#diff-00eb85bfa6c95c84191df928233d9c6fR176">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -309,6 +309,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private getQueryResult(isDistributedQuery boolean, fetch int, resultId int, handler AsyncHandler&lt;AsyncResult&lt;Result&gt;&gt;, async boolean) : Result extracted from private executeQueryDirectly(maxRows int, scrollable boolean) : Result in class org.lealone.client.ClientCommand</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private executeQuery(sql String, handler AsyncHandler&lt;AsyncResult&lt;ResultSet&gt;&gt;, async boolean) : ResultSet extracted from public executeQuery(sql String) : ResultSet in class org.lealone.client.jdbc.JdbcStatement</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -317,13 +324,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private executeQuery(handler AsyncHandler&lt;AsyncResult&lt;ResultSet&gt;&gt;, async boolean) : ResultSet extracted from public executeQuery() : ResultSet in class org.lealone.client.jdbc.JdbcPreparedStatement</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getQueryResult(isDistributedQuery boolean, fetch int, resultId int, handler AsyncHandler&lt;AsyncResult&lt;Result&gt;&gt;, async boolean) : Result extracted from private executeQueryDirectly(maxRows int, scrollable boolean) : Result in class org.lealone.client.ClientCommand</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

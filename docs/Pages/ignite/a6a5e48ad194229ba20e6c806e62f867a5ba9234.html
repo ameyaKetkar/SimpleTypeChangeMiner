@@ -206,6 +206,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	clientCacheCfg : ClientCacheConfiguration... to nearCacheCfg : NearCacheConfiguration... in method public setNearCacheConfiguration(nearCacheCfg NearCacheConfiguration...) : void in class org.apache.ignite.configuration.IgniteConfiguration</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cL1580">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cR1589">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	rmt : ClusterNode to rmt : UUID in method private checkCache(locCfg CacheConfiguration, rmtCfg CacheConfiguration, rmt UUID) : void in class org.apache.ignite.internal.processors.cache.GridCacheProcessor</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5L1664">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R1679">To</a></td>
@@ -223,13 +230,6 @@
                                 <td><i>Change Parameter Type	rmt : ClusterNode to rmtNodeId : UUID in method public checkAttributeMismatch(log IgniteLogger, locCfg CacheConfiguration, rmtCfg CacheConfiguration, rmtNodeId UUID, attr T2&lt;String,String&gt;, fail boolean) : void in class org.apache.ignite.internal.processors.cache.GridCacheUtils</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-9a2997a306200a1a06178725791961edL1396">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-9a2997a306200a1a06178725791961edR1373">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	clientCacheCfg : ClientCacheConfiguration... to nearCacheCfg : NearCacheConfiguration... in method public setNearCacheConfiguration(nearCacheCfg NearCacheConfiguration...) : void in class org.apache.ignite.configuration.IgniteConfiguration</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cL1580">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cR1589">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -324,20 +324,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	ccfg : ClientCacheConfiguration to ccfg : NearCacheConfiguration in method public NearCacheConfiguration(cfg CompleteConfiguration&lt;K,V&gt;) in class org.apache.ignite.configuration.NearCacheConfiguration</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-59515917213f9748a93d750c853c40e9L54">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-c175dea8af0ae6ee2cdcdf58e0cef6f4R71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	filter : IgnitePredicate&lt;ClusterNode&gt; to filter : CachePredicate in method private DiscoCache(loc ClusterNode, rmts Collection&lt;ClusterNode&gt;) in class org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.DiscoCache</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-0a68a65f3133d60cf503ae0763b46fe3L1810">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-0a68a65f3133d60cf503ae0763b46fe3R1902">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	store : GridCacheLoaderWriterStore to store : CacheStore in method private initialize(cfg CacheConfiguration) : void in class org.apache.ignite.internal.processors.cache.GridCacheProcessor</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5L133">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R249">To</a></td>
@@ -348,6 +334,20 @@
                                 <td><i>Change Variable Type	entry : Map.Entry&lt;String,IgnitePredicate&lt;ClusterNode&gt;&gt; to entry : Map.Entry&lt;String,CachePredicate&gt; in method private DiscoCache(loc ClusterNode, rmts Collection&lt;ClusterNode&gt;) in class org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.DiscoCache</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-0a68a65f3133d60cf503ae0763b46fe3L1810">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-0a68a65f3133d60cf503ae0763b46fe3R1899">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ccfg : ClientCacheConfiguration to ccfg : NearCacheConfiguration in method public NearCacheConfiguration(cfg CompleteConfiguration&lt;K,V&gt;) in class org.apache.ignite.configuration.NearCacheConfiguration</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-59515917213f9748a93d750c853c40e9L54">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-c175dea8af0ae6ee2cdcdf58e0cef6f4R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	filter : IgnitePredicate&lt;ClusterNode&gt; to filter : CachePredicate in method private DiscoCache(loc ClusterNode, rmts Collection&lt;ClusterNode&gt;) in class org.apache.ignite.internal.managers.discovery.GridDiscoveryManager.DiscoCache</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-0a68a65f3133d60cf503ae0763b46fe3L1810">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-0a68a65f3133d60cf503ae0763b46fe3R1902">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -438,13 +438,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	clientCacheCfg : ClientCacheConfiguration... to nearCacheCfg : NearCacheConfiguration... in method public setNearCacheConfiguration(nearCacheCfg NearCacheConfiguration...) : void in class org.apache.ignite.configuration.IgniteConfiguration</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cL1581">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cR1589">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	rmt : ClusterNode to rmtNodeId : UUID in method public checkAttributeMismatch(log IgniteLogger, cfgName String, rmtNodeId UUID, attrName String, attrMsg String, locVal Object, rmtVal Object, fail boolean) : void in class org.apache.ignite.internal.processors.cache.GridCacheUtils</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-9a2997a306200a1a06178725791961edL1434">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-9a2997a306200a1a06178725791961edR1399">To</a></td>
@@ -455,6 +448,13 @@
                                 <td><i>Rename Parameter	rmt : ClusterNode to rmtNodeId : UUID in method public checkAttributeMismatch(log IgniteLogger, locCfg CacheConfiguration, rmtCfg CacheConfiguration, rmtNodeId UUID, attr T2&lt;String,String&gt;, fail boolean) : void in class org.apache.ignite.internal.processors.cache.GridCacheUtils</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-9a2997a306200a1a06178725791961edL1408">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-9a2997a306200a1a06178725791961edR1373">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	clientCacheCfg : ClientCacheConfiguration... to nearCacheCfg : NearCacheConfiguration... in method public setNearCacheConfiguration(nearCacheCfg NearCacheConfiguration...) : void in class org.apache.ignite.configuration.IgniteConfiguration</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cL1581">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a6a5e48ad194229ba20e6c806e62f867a5ba9234?diff=split#diff-14f6dc38c9a990edd9cc7188c8b5542cR1589">To</a></td>
                             </tr>
                             
                             </tbody>

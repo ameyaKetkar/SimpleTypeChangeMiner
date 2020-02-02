@@ -184,6 +184,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public withTimeout(timeout long) : Builder renamed to public withMinTimeout(timeout long) : Builder in class io.atomix.protocols.raft.protocol.OpenSessionRequest.Builder</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628L188">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628R202">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public timeout() : long renamed to public minTimeout() : long in class io.atomix.protocols.raft.session.RaftSession</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-c6a12866ffe5f809a5998cb936f378bbL87">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-c6a12866ffe5f809a5998cb936f378bbR97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public timeout() : long renamed to public minTimeout() : long in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eL137">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eR144">To</a></td>
@@ -203,20 +217,6 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628R94">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public withTimeout(timeout long) : Builder renamed to public withMinTimeout(timeout long) : Builder in class io.atomix.protocols.raft.protocol.OpenSessionRequest.Builder</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628L188">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628R202">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public timeout() : long renamed to public minTimeout() : long in class io.atomix.protocols.raft.session.RaftSession</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-c6a12866ffe5f809a5998cb936f378bbL87">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-c6a12866ffe5f809a5998cb936f378bbR97">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -230,6 +230,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	timeout : long to maxTimeout : long in method public onOpenSession(request OpenSessionRequest) : CompletableFuture&lt;OpenSessionResponse&gt; in class io.atomix.protocols.raft.roles.LeaderRole</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-0b67c43f70d91c041e1e3762e38c1b9dL731">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-0b67c43f70d91c041e1e3762e38c1b9dR834">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	sessionTimeout : long to maxTimeout : long in method private maybeInstallSnapshot(index long) : void in class io.atomix.protocols.raft.service.impl.DefaultServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-803990a8fbf54203afa8e644bd2641deL272">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-803990a8fbf54203afa8e644bd2641deR269">To</a></td>
@@ -240,13 +247,6 @@
                                 <td><i>Rename Variable	sessionTimeout : long to maxTimeout : long in method private restoreSession(reader SnapshotReader, service DefaultServiceContext) : void in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L261">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R262">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	timeout : long to maxTimeout : long in method public onOpenSession(request OpenSessionRequest) : CompletableFuture&lt;OpenSessionResponse&gt; in class io.atomix.protocols.raft.roles.LeaderRole</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-0b67c43f70d91c041e1e3762e38c1b9dL731">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-0b67c43f70d91c041e1e3762e38c1b9dR834">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -298,27 +298,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	keepAliveFutures : Map&lt;Long,Scheduled&gt; to keepAliveTimers : Map&lt;Long,Scheduled&gt; in class io.atomix.protocols.raft.proxy.impl.RaftProxyManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-4e06b16a6a9c5c7de3c5b7622dd28b09L71">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-4e06b16a6a9c5c7de3c5b7622dd28b09R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	timeout : Duration to maxTimeout : Duration in class io.atomix.protocols.raft.proxy.RaftProxy.Builder</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-a6af33ad9329ea916973a2026fa9f029L199">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-a6af33ad9329ea916973a2026fa9f029R200">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	timeout : long to minTimeout : long in class io.atomix.protocols.raft.storage.log.entry.OpenSessionEntry</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-cef0bd66a356037fd1145c59ff67a9eaL31">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-cef0bd66a356037fd1145c59ff67a9eaR31">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	timeout : Duration to maxTimeout : Duration in class io.atomix.protocols.raft.proxy.RaftProxyClient.Builder</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-f593b7957f8c9fc71fa3a886d312e452L49">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-f593b7957f8c9fc71fa3a886d312e452R50">To</a></td>
@@ -336,6 +315,27 @@
                                 <td><i>Rename Attribute	timeout : long to minTimeout : long in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eL61">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	keepAliveFutures : Map&lt;Long,Scheduled&gt; to keepAliveTimers : Map&lt;Long,Scheduled&gt; in class io.atomix.protocols.raft.proxy.impl.RaftProxyManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-4e06b16a6a9c5c7de3c5b7622dd28b09L71">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-4e06b16a6a9c5c7de3c5b7622dd28b09R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	timeout : Duration to maxTimeout : Duration in class io.atomix.protocols.raft.proxy.RaftProxy.Builder</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-a6af33ad9329ea916973a2026fa9f029L199">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-a6af33ad9329ea916973a2026fa9f029R200">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	timeout : long to minTimeout : long in class io.atomix.protocols.raft.storage.log.entry.OpenSessionEntry</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-cef0bd66a356037fd1145c59ff67a9eaL31">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-cef0bd66a356037fd1145c59ff67a9eaR31">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -390,6 +390,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	timeout : long to minTimeout : long in method public RaftSessionContext(sessionId SessionId, member MemberId, name String, serviceType ServiceType, readConsistency ReadConsistency, minTimeout long, maxTimeout long, context DefaultServiceContext, server RaftContext, threadContextFactory ThreadContextFactory) in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eL87">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eR92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	timeout : long to minTimeout : long in method public OpenSessionEntry(term long, timestamp long, memberId String, serviceName String, serviceType String, readConsistency ReadConsistency, minTimeout long, maxTimeout long) in class io.atomix.protocols.raft.storage.log.entry.OpenSessionEntry</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-cef0bd66a356037fd1145c59ff67a9eaL33">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-cef0bd66a356037fd1145c59ff67a9eaR34">To</a></td>
@@ -400,13 +407,6 @@
                                 <td><i>Rename Parameter	timeout : long to minTimeout : long in method public OpenSessionRequest(member String, name String, typeName String, readConsistency ReadConsistency, minTimeout long, maxTimeout long) in class io.atomix.protocols.raft.protocol.OpenSessionRequest</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628L48">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-517efc9c3cc51beb76d04554e2e94628R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	timeout : long to minTimeout : long in method public RaftSessionContext(sessionId SessionId, member MemberId, name String, serviceType ServiceType, readConsistency ReadConsistency, minTimeout long, maxTimeout long, context DefaultServiceContext, server RaftContext, threadContextFactory ThreadContextFactory) in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eL87">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/7c5c29c04430a09d231738436961b76b24921678?diff=split#diff-1ff37e417a506fed8585199ade1c494eR92">To</a></td>
                             </tr>
                             
                             </tbody>

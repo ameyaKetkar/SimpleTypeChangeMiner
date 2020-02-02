@@ -222,16 +222,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	value : T to value : Object in method public partition(value Object, numberOfPartitions int) : int in class org.apache.flink.streaming.connectors.kafka.partitioner.KafkaConstantPartitioner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-894dae82d957b8ef138d821813113a25L29">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-894dae82d957b8ef138d821813113a25R30">To</a></td>
+                                <td><i>Change Parameter Type	partitioner : KafkaPartitioner&lt;IN&gt; to partitioner : SerializableKafkaPartitioner in method public KafkaSink(zookeeperAddress String, topicId String, serializationSchema SerializationSchema&lt;IN,byte[]&gt;, partitioner SerializableKafkaPartitioner) in class org.apache.flink.streaming.connectors.kafka.api.KafkaSink</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-4f8ff0e7777c72b7d9d9f58648ec067bL67">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-4f8ff0e7777c72b7d9d9f58648ec067bR87">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	partitioner : KafkaPartitioner&lt;IN&gt; to partitioner : SerializableKafkaPartitioner in method public KafkaSink(zookeeperAddress String, topicId String, serializationSchema SerializationSchema&lt;IN,byte[]&gt;, partitioner SerializableKafkaPartitioner) in class org.apache.flink.streaming.connectors.kafka.api.KafkaSink</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-4f8ff0e7777c72b7d9d9f58648ec067bL67">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-4f8ff0e7777c72b7d9d9f58648ec067bR87">To</a></td>
+                                <td><i>Change Parameter Type	value : T to value : Object in method public partition(value Object, numberOfPartitions int) : int in class org.apache.flink.streaming.connectors.kafka.partitioner.KafkaConstantPartitioner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-894dae82d957b8ef138d821813113a25L29">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-894dae82d957b8ef138d821813113a25R30">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -315,14 +315,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Attribute	public DEFAULT_ZOOKEEPER_CONNECTION_TIMEOUT_MS : int in class org.apache.flink.streaming.connectors.kafka.api.simple.KafkaTopicUtils</i></td>
+                                <td><i>Extract Attribute	public DEFAULT_ZOOKEEPER_SESSION_TIMEOUT_MS : int in class org.apache.flink.streaming.connectors.kafka.api.simple.KafkaTopicUtils</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Attribute	public DEFAULT_ZOOKEEPER_SESSION_TIMEOUT_MS : int in class org.apache.flink.streaming.connectors.kafka.api.simple.KafkaTopicUtils</i></td>
+                                <td><i>Extract Attribute	public DEFAULT_ZOOKEEPER_CONNECTION_TIMEOUT_MS : int in class org.apache.flink.streaming.connectors.kafka.api.simple.KafkaTopicUtils</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -340,13 +340,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.flink.streaming.connectors.kafka.partitioner.KafkaPartitioner renamed to org.apache.flink.streaming.connectors.kafka.partitioner.SerializableKafkaPartitioner</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.flink.streaming.connectors.kafka.StringSerializerTest renamed to org.apache.flink.streaming.connectors.kafka.KafkaITCase</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -355,6 +348,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	org.apache.flink.streaming.connectors.kafka.api.simple.iterator.KafkaOnePartitionIterator renamed to org.apache.flink.streaming.connectors.kafka.api.simple.iterator.KafkaSinglePartitionIterator</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.streaming.connectors.kafka.partitioner.KafkaPartitioner renamed to org.apache.flink.streaming.connectors.kafka.partitioner.SerializableKafkaPartitioner</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -433,6 +433,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	partitions : List&lt;KafkaOnePartitionIterator&gt; to partitions : List&lt;KafkaSinglePartitionIterator&gt; in class org.apache.flink.streaming.connectors.kafka.api.simple.iterator.KafkaMultiplePartitionsIterator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-a749394b78b374f880c7c6299a71c20dL33">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-a749394b78b374f880c7c6299a71c20dR33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	partitioner : KafkaPartitioner&lt;IN&gt; to partitioner : SerializableKafkaPartitioner in class org.apache.flink.streaming.connectors.kafka.api.KafkaSink</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-4f8ff0e7777c72b7d9d9f58648ec067bL49">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-4f8ff0e7777c72b7d9d9f58648ec067bR54">To</a></td>
@@ -443,13 +450,6 @@
                                 <td><i>Change Attribute Type	state : Map&lt;String,OperatorState&lt;?&gt;&gt; to state : byte[] in class org.apache.flink.runtime.state.LocalStateHandle</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL31">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	partitions : List&lt;KafkaOnePartitionIterator&gt; to partitions : List&lt;KafkaSinglePartitionIterator&gt; in class org.apache.flink.streaming.connectors.kafka.api.simple.iterator.KafkaMultiplePartitionsIterator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-a749394b78b374f880c7c6299a71c20dL33">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/c0917f23700bdef499ede8cf079aceb37bfe2710?diff=split#diff-a749394b78b374f880c7c6299a71c20dR33">To</a></td>
                             </tr>
                             
                             </tbody>

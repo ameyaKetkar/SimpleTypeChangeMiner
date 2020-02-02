@@ -268,6 +268,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public batch(actions List&lt;? extends Row&gt;) : Object[] renamed to public exists(gets List&lt;Get&gt;) : boolean[] in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL182">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR329">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public batchCallback(actions List&lt;? extends Row&gt;, callback Callback&lt;R&gt;) : Object[] renamed to public getDescriptor() : TableDescriptor in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL196">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR323">To</a></td>
@@ -280,13 +287,6 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR722">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public batch(actions List&lt;? extends Row&gt;) : Object[] renamed to public exists(gets List&lt;Get&gt;) : boolean[] in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL182">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR329">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -297,6 +297,97 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-32" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	htableProps : Map&lt;ImmutableBytesWritable,ImmutableBytesWritable&gt; to htableProps : Map&lt;Bytes,Bytes&gt; in method private createPropertiesMap(htableProps Map&lt;Bytes,Bytes&gt;) : Map&lt;String,Object&gt; in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1649">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1633">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptorsToUpdate : Set&lt;HTableDescriptor&gt; to descriptorsToUpdate : Set&lt;TableDescriptor&gt; in method private updateDescriptorForTx(table PTable, tableProps Map&lt;String,Object&gt;, tableDescriptorBuilder TableDescriptorBuilder, txValue String, descriptorsToUpdate Set&lt;TableDescriptor&gt;, origDescriptors Set&lt;TableDescriptor&gt;) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1837">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1826">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	keyValue : KeyValue to keyValue : Cell in method protected wrapKeyValueAsResult(keyValue Cell) : Tuple in class org.apache.phoenix.execute.ClientAggregatePlan.ClientGroupedAggregatingResultIterator</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980L206">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980R206">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	existingDesc : HTableDescriptor to existingDesc : TableDescriptor in method private generateTableDescriptor(physicalTableName byte[], existingDesc TableDescriptor, tableType PTableType, tableProps Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], isNamespaceMapped boolean) : TableDescriptorBuilder in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL752">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR757">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	hri : HRegionInfo to hri : RegionInfo in method public SnapshotScanner(conf Configuration, fs FileSystem, rootDir Path, htd TableDescriptor, hri RegionInfo, scan Scan) in class org.apache.phoenix.iterate.SnapshotScanner</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-590adbc5c759829447672cbcada8a904L50">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-590adbc5c759829447672cbcada8a904R61">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method private setSharedIndexMaxVersion(table PTable, tableDescriptor TableDescriptor, indexDescriptorBuilder TableDescriptorBuilder) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1897">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1889">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	desc : HTableDescriptor to descBuilder : TableDescriptorBuilder in method public enableIndexing(descBuilder TableDescriptorBuilder, builder Class&lt;? extends IndexBuilder&gt;, properties Map&lt;String,String&gt;, priority int) : void in class org.apache.phoenix.hbase.index.Indexer</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-feac48c2131d0849ccd1d88ad181f84aL790">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-feac48c2131d0849ccd1d88ad181f84aR799">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public getActualStartRow(localIndexScan Scan, regionInfo RegionInfo) : byte[] in class org.apache.phoenix.util.ScanUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7808c203d517f3e6cb9621952a631697L672">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7808c203d517f3e6cb9621952a631697R672">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tableDescriptor : HTableDescriptor to tableDescriptorBuilder : TableDescriptorBuilder in method private updateDescriptorForTx(table PTable, tableProps Map&lt;String,Object&gt;, tableDescriptorBuilder TableDescriptorBuilder, txValue String, descriptorsToUpdate Set&lt;TableDescriptor&gt;, origDescriptors Set&lt;TableDescriptor&gt;) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1837">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1825">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	keyValue : KeyValue to keyValue : Cell in method protected wrapKeyValueAsResult(keyValue Cell) : Tuple in class org.apache.phoenix.execute.ClientAggregatePlan.ClientUngroupedAggregatingResultIterator</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980L232">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980R232">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	origDescriptors : Set&lt;HTableDescriptor&gt; to origDescriptors : Set&lt;TableDescriptor&gt; in method private updateDescriptorForTx(table PTable, tableProps Map&lt;String,Object&gt;, tableDescriptorBuilder TableDescriptorBuilder, txValue String, descriptorsToUpdate Set&lt;TableDescriptor&gt;, origDescriptors Set&lt;TableDescriptor&gt;) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1837">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1826">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	actions : List&lt;? extends Row&gt; to gets : List&lt;Get&gt; in method public exists(gets List&lt;Get&gt;) : boolean[] in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL182">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR330">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	desc : HTableDescriptor to desc : TableDescriptor in method public build(desc TableDescriptor) : TableDescriptor in class org.apache.phoenix.hbase.index.covered.CoveredColumnIndexSpecifierBuilder</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecL130">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecR130">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -431,97 +522,6 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ba62019f476f706fd0b26ae0e6aa73e1R673">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	htableProps : Map&lt;ImmutableBytesWritable,ImmutableBytesWritable&gt; to htableProps : Map&lt;Bytes,Bytes&gt; in method private createPropertiesMap(htableProps Map&lt;Bytes,Bytes&gt;) : Map&lt;String,Object&gt; in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1649">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1633">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptorsToUpdate : Set&lt;HTableDescriptor&gt; to descriptorsToUpdate : Set&lt;TableDescriptor&gt; in method private updateDescriptorForTx(table PTable, tableProps Map&lt;String,Object&gt;, tableDescriptorBuilder TableDescriptorBuilder, txValue String, descriptorsToUpdate Set&lt;TableDescriptor&gt;, origDescriptors Set&lt;TableDescriptor&gt;) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1837">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1826">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	keyValue : KeyValue to keyValue : Cell in method protected wrapKeyValueAsResult(keyValue Cell) : Tuple in class org.apache.phoenix.execute.ClientAggregatePlan.ClientGroupedAggregatingResultIterator</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980L206">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980R206">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	existingDesc : HTableDescriptor to existingDesc : TableDescriptor in method private generateTableDescriptor(physicalTableName byte[], existingDesc TableDescriptor, tableType PTableType, tableProps Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], isNamespaceMapped boolean) : TableDescriptorBuilder in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL752">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR757">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	hri : HRegionInfo to hri : RegionInfo in method public SnapshotScanner(conf Configuration, fs FileSystem, rootDir Path, htd TableDescriptor, hri RegionInfo, scan Scan) in class org.apache.phoenix.iterate.SnapshotScanner</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-590adbc5c759829447672cbcada8a904L50">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-590adbc5c759829447672cbcada8a904R61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method private setSharedIndexMaxVersion(table PTable, tableDescriptor TableDescriptor, indexDescriptorBuilder TableDescriptorBuilder) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1897">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1889">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	desc : HTableDescriptor to descBuilder : TableDescriptorBuilder in method public enableIndexing(descBuilder TableDescriptorBuilder, builder Class&lt;? extends IndexBuilder&gt;, properties Map&lt;String,String&gt;, priority int) : void in class org.apache.phoenix.hbase.index.Indexer</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-feac48c2131d0849ccd1d88ad181f84aL790">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-feac48c2131d0849ccd1d88ad181f84aR799">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public getActualStartRow(localIndexScan Scan, regionInfo RegionInfo) : byte[] in class org.apache.phoenix.util.ScanUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7808c203d517f3e6cb9621952a631697L672">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7808c203d517f3e6cb9621952a631697R672">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tableDescriptor : HTableDescriptor to tableDescriptorBuilder : TableDescriptorBuilder in method private updateDescriptorForTx(table PTable, tableProps Map&lt;String,Object&gt;, tableDescriptorBuilder TableDescriptorBuilder, txValue String, descriptorsToUpdate Set&lt;TableDescriptor&gt;, origDescriptors Set&lt;TableDescriptor&gt;) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1837">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1825">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	keyValue : KeyValue to keyValue : Cell in method protected wrapKeyValueAsResult(keyValue Cell) : Tuple in class org.apache.phoenix.execute.ClientAggregatePlan.ClientUngroupedAggregatingResultIterator</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980L232">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-f1c8546aa68cca46c817d4281ebe4980R232">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	origDescriptors : Set&lt;HTableDescriptor&gt; to origDescriptors : Set&lt;TableDescriptor&gt; in method private updateDescriptorForTx(table PTable, tableProps Map&lt;String,Object&gt;, tableDescriptorBuilder TableDescriptorBuilder, txValue String, descriptorsToUpdate Set&lt;TableDescriptor&gt;, origDescriptors Set&lt;TableDescriptor&gt;) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1837">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1826">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	actions : List&lt;? extends Row&gt; to gets : List&lt;Get&gt; in method public exists(gets List&lt;Get&gt;) : boolean[] in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL182">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR330">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	desc : HTableDescriptor to desc : TableDescriptor in method public build(desc TableDescriptor) : TableDescriptor in class org.apache.phoenix.hbase.index.covered.CoveredColumnIndexSpecifierBuilder</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecL130">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecR130">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -532,6 +532,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	tableDescriptor : HTableDescriptor to tableDescriptorBuilder : TableDescriptorBuilder in method private generateTableDescriptor(physicalTableName byte[], existingDesc TableDescriptor, tableType PTableType, tableProps Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], isNamespaceMapped boolean) : TableDescriptorBuilder in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL756">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR761">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	htableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method public testCreateTableToBeTransactional() : void in class org.apache.phoenix.tx.ParameterizedTransactionIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eL395">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eR396">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -561,20 +575,6 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12R184">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	tableDescriptor : HTableDescriptor to tableDescriptorBuilder : TableDescriptorBuilder in method private generateTableDescriptor(physicalTableName byte[], existingDesc TableDescriptor, tableType PTableType, tableProps Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], isNamespaceMapped boolean) : TableDescriptorBuilder in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL756">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR761">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	htableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method public testCreateTableToBeTransactional() : void in class org.apache.phoenix.tx.ParameterizedTransactionIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eL395">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eR396">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -585,6 +585,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to TableDescriptor in method public build(desc TableDescriptor, clazz Class&lt;? extends IndexCodec&gt;) : TableDescriptor in class org.apache.phoenix.hbase.index.covered.CoveredColumnIndexSpecifierBuilder</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecL134">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecR134">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	HTableDescriptor to TableDescriptor in method public getTableDescriptor(tableName byte[]) : TableDescriptor in class org.apache.phoenix.query.DelegateConnectionQueryServices</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c124499579aea25ce79a0f8b8b869becL160">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c124499579aea25ce79a0f8b8b869becR160">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Object[] to boolean[] in method public exists(gets List&lt;Get&gt;) : boolean[] in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL182">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR329">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	HColumnDescriptor to ColumnFamilyDescriptor in method private generateColumnFamilyDescriptor(family Pair&lt;byte[],Map&lt;String,Object&gt;&gt;, tableType PTableType) : ColumnFamilyDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL703">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR707">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -670,34 +698,6 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR999">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to TableDescriptor in method public build(desc TableDescriptor, clazz Class&lt;? extends IndexCodec&gt;) : TableDescriptor in class org.apache.phoenix.hbase.index.covered.CoveredColumnIndexSpecifierBuilder</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecL134">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-cb9fc1044e253c390007fa2144360eecR134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	HTableDescriptor to TableDescriptor in method public getTableDescriptor(tableName byte[]) : TableDescriptor in class org.apache.phoenix.query.DelegateConnectionQueryServices</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c124499579aea25ce79a0f8b8b869becL160">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c124499579aea25ce79a0f8b8b869becR160">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Object[] to boolean[] in method public exists(gets List&lt;Get&gt;) : boolean[] in class org.apache.phoenix.transaction.OmidTransactionTable</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bL182">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-50cf1a4e6a1f9253c7893289e89b557bR329">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	HColumnDescriptor to ColumnFamilyDescriptor in method private generateColumnFamilyDescriptor(family Pair&lt;byte[],Map&lt;String,Object&gt;&gt;, tableType PTableType) : ColumnFamilyDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL703">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR707">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -708,6 +708,517 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-149" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDescriptorPair : Pair&lt;HTableDescriptor,HTableDescriptor&gt; to tableDescriptorPair : Pair&lt;TableDescriptor,TableDescriptor&gt; in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1714">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	existingDesc : HTableDescriptor to existingDesc : TableDescriptor in method private ensureTableCreated(physicalTableName byte[], tableType PTableType, props Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], modifyExistingMetaData boolean, isNamespaceMapped boolean) : TableDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1015">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1011">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method public hasLocalIndexTable(connection PhoenixConnection, physicalTableName byte[]) : boolean in class org.apache.phoenix.util.MetaDataUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L473">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R473">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	newDesc : HTableDescriptor to newDesc : TableDescriptorBuilder in method private ensureTableCreated(physicalTableName byte[], tableType PTableType, props Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], modifyExistingMetaData boolean, isNamespaceMapped boolean) : TableDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1015">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1031">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	localIndexTables : HTableDescriptor[] to localIndexTables : TableDescriptor[] in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR351">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableRegions : List&lt;HRegionInfo&gt; to tableRegions : List&lt;RegionInfo&gt; in method private ensureTablesOnDifferentRegionServers(tableName1 String, tableName2 String) : void in class org.apache.phoenix.rpc.PhoenixServerRpcIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eL204">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eR219">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionsOfUserTable : List&lt;HRegionInfo&gt; to regionsOfUserTable : List&lt;RegionInfo&gt; in method private splitDuringScan(conn1 Connection, tableName String, indexName String, strings String[], admin Admin, isReverse boolean) : List&lt;RegionInfo&gt; in class org.apache.phoenix.end2end.index.MutableIndexSplitIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-0cd50d3708f67d4077afed6eec9d602cL106">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-0cd50d3708f67d4077afed6eec9d602cR129">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForNewAndExistingColumnFamily() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L435">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R452">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetHTableProperties() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L106">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R122">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cf : HColumnDescriptor to cf : ColumnFamilyDescriptor in method public hasLocalIndexColumnFamily(desc TableDescriptor) : boolean in class org.apache.phoenix.util.MetaDataUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L483">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R482">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	indexRegions : List&lt;HRegionInfo&gt; to indexRegions : List&lt;RegionInfo&gt; in method public testIndexHalfStoreFileReader() : void in class org.apache.phoenix.end2end.index.MutableIndexIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-e7d8c6dbb60a11628ba9c676f60b9234L637">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-e7d8c6dbb60a11628ba9c676f60b9234R651">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs4() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL278">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR295">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	online : List&lt;Region&gt; to online : List&lt;HRegion&gt; in method private getRegionsFromServerForTable(cluster MiniHBaseCluster, server ServerName, table byte[]) : List&lt;HRegion&gt; in class org.apache.phoenix.hbase.index.write.TestWALRecoveryCaching</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12L265">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12R274">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	htableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method public testCreateTableToBeTransactional() : void in class org.apache.phoenix.tx.ParameterizedTransactionIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eL366">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eR396">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	colDesc : HColumnDescriptor to colDesc : ColumnFamilyDescriptor in method public testProperties() : void in class org.apache.phoenix.tx.TransactionIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-3f81c31b78da1c92c586534d1db65a67L158">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-3f81c31b78da1c92c586534d1db65a67R171">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	keyValue : Entry&lt;ImmutableBytesWritable,ImmutableBytesWritable&gt; to keyValue : Entry&lt;Bytes,Bytes&gt; in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR363">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionManifests : List&lt;SnapshotProtos.SnapshotRegionManifest&gt; to regionManifests : List&lt;SnapshotRegionManifest&gt; in method private getRegionLocationsFromManifest(manifest SnapshotManifest) : List&lt;HRegionLocation&gt; in class org.apache.phoenix.iterate.MapReduceParallelScanGrouper</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091L82">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091R84">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1715">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableColDescriptor : HColumnDescriptor to tableColDescriptor : ColumnFamilyDescriptor in method private setSharedIndexMaxVersion(table PTable, tableDescriptor TableDescriptor, indexDescriptorBuilder TableDescriptorBuilder) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1897">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1894">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method public getLocalIndexColumnFamilies(conn PhoenixConnection, physicalTableName byte[]) : List&lt;byte[]&gt; in class org.apache.phoenix.util.MetaDataUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L502">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R501">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testAddingPkColAndSettingProperties() : void in class org.apache.phoenix.end2end.AlterTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0L883">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0R941">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSettingPropertiesWhenTableHasDefaultColFamilySpecified() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L372">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R392">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	indexTable : HTableDescriptor to indexTable : TableDescriptor in method public testTableDescriptorPriority() : void in class org.apache.phoenix.end2end.index.BaseIndexIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958L1042">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958R1087">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tables : HTableDescriptor[] to tables : TableDescriptor[] in method private disableAndDropNonSystemTables() : void in class org.apache.phoenix.query.BaseTest</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1L1522">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1R1529">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	online : List&lt;Region&gt; to online : List&lt;HRegion&gt; in method private ensureTablesLiveOnSameServer(cluster MiniHBaseCluster, indexTable byte[], primaryTable byte[]) : ServerName in class org.apache.phoenix.hbase.index.write.TestWALRecoveryCaching</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12L284">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12R310">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnDescriptor : HColumnDescriptor to columnDescriptor : ColumnFamilyDescriptor in method private generateTableDescriptor(physicalTableName byte[], existingDesc TableDescriptor, tableType PTableType, tableProps Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], isNamespaceMapped boolean) : TableDescriptorBuilder in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL752">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR775">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	htd : HTableDescriptor to htd : TableDescriptor in method public testTableDescriptorPriority() : void in class org.apache.phoenix.end2end.index.BaseIndexIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958L1042">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958R1062">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regions : List&lt;HRegionInfo&gt; to regions : List&lt;RegionInfo&gt; in method public testSplitDuringUpsertSelect() : void in class org.apache.phoenix.execute.UpsertSelectOverlappingBatchesIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7cbce4b16d04da174cebc0d9b7e7e778L189">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7cbce4b16d04da174cebc0d9b7e7e778R215">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs5() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL306">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR322">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public testMajorCompactionPreventsUpdateStatsFromRunning() : void in class org.apache.phoenix.coprocessor.StatisticsCollectionRunTrackerIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752L99">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752R102">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	table : HTableDescriptor to table : TableDescriptor in method public upgradeSystemTables(url String, props Properties) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL2585">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR2638">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testAddColumnForNewColumnFamily() : void in class org.apache.phoenix.end2end.FlappingAlterTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aL47">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public testUpdateStatsPreventsAnotherUpdateStatsFromRunning() : void in class org.apache.phoenix.coprocessor.StatisticsCollectionRunTrackerIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752L112">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752R115">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cdC : HColumnDescriptor to cdC : ColumnFamilyDescriptor in method public testCreateOnExistingTable() : void in class org.apache.phoenix.end2end.QueryDatabaseMetaDataIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-67df1d6adde8cc14f80dc512af03c534L700">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-67df1d6adde8cc14f80dc512af03c534R742">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc3 : HTableDescriptor to tableDesc3 : TableDescriptor in method public testAlteringViewConditionallyModifiesHTableMetadata() : void in class org.apache.phoenix.end2end.AlterMultiTenantTableWithViewsIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aL561">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aR591">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	origTableDescriptor : HTableDescriptor to origTableDescriptor : TableDescriptor in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1716">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	snapshotDescription : HBaseProtos.SnapshotDescription to snapshotDescription : SnapshotDescription in method public getRegionBoundaries(context StatementContext, tableName byte[]) : List&lt;HRegionLocation&gt; in class org.apache.phoenix.iterate.MapReduceParallelScanGrouper</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091L60">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091R70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method private preSplitSequenceTable(conn PhoenixConnection, nSaltBuckets int) : void in class org.apache.phoenix.util.UpgradeUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL288">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR299">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method private ensureViewIndexTableDropped(physicalTableName byte[], timestamp long) : boolean in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1324">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1314">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	table : HTableInterface to table : Table in method public testShutdownInterruptsAsExpected() : void in class org.apache.phoenix.hbase.index.write.TestIndexWriter</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-d8aeeed9d8b525beb3c7a049ca46113cL141">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-d8aeeed9d8b525beb3c7a049ca46113cR161">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR356">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetTTLForTableWithOnlyPKCols() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L737">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R752">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	htd : HTableDescriptor to htd : TableDescriptor in method public testReplayEditsWrittenViaHRegion() : void in class org.apache.hadoop.hbase.regionserver.wal.WALReplayWithIndexWritesAndCompressedWALIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8406444711af78ed861a3d5fcd519cffL165">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8406444711af78ed861a3d5fcd519cffR178">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionsOfUserTable : List&lt;HRegionInfo&gt; to regionsOfUserTable : List&lt;RegionInfo&gt; in method public testLocalIndexScanAfterRegionSplit() : void in class org.apache.phoenix.end2end.LocalIndexSplitMergeIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c137460e69b23ec3183f6c0c9a0c0753L86">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c137460e69b23ec3183f6c0c9a0c0753R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	colDef : HColumnDescriptor to colDefBuilder : ColumnFamilyDescriptorBuilder in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR361">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnUsingDefaultColumnFamilySpecifier() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L563">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R579">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testAddingPkColAndSettingProperties() : void in class org.apache.phoenix.end2end.AlterTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0L883">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0R942">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cf : HColumnDescriptor to cf : ColumnFamilyDescriptor in method public getNonLocalIndexColumnFamilies(desc TableDescriptor) : List&lt;byte[]&gt; in class org.apache.phoenix.util.MetaDataUtil</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L492">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R492">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs6() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL333">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR347">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnDesc : HColumnDescriptor to columnDescBuilder : ColumnFamilyDescriptorBuilder in method private generateColumnFamilyDescriptor(family Pair&lt;byte[],Map&lt;String,Object&gt;&gt;, tableType PTableType) : ColumnFamilyDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL703">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR708">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetHTableAndHColumnProperties() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L128">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R144">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	mockRegionInfo : HRegionInfo to mockRegionInfo : RegionInfo in method public setup() : void in class org.apache.phoenix.hbase.index.covered.NonTxIndexBuilderTest</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-85588e09efb2fa2563973fc5bcb58123L114">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-85588e09efb2fa2563973fc5bcb58123R142">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	value : ImmutableBytesWritable to value : Bytes in method private createPropertiesMap(htableProps Map&lt;Bytes,Bytes&gt;) : Map&lt;String,Object&gt; in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1649">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1637">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetTTLForTableWithOnlyPKCols() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L737">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R753">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForDefaultColumnFamily() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L593">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R606">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method private getParallelScans(startKey byte[], stopKey byte[]) : List&lt;List&lt;Scan&gt;&gt; in class org.apache.phoenix.iterate.BaseResultIterators</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8c3d3f644c66ef36d5bc604f017fabfcL688">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8c3d3f644c66ef36d5bc604f017fabfcR776">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForDifferentColumnFamilies() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L526">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R543">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public testStateBeforeAndAfterUpdateStatsCommand() : void in class org.apache.phoenix.coprocessor.StatisticsCollectionRunTrackerIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752L56">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	descriptor : HTableDescriptor to descriptor : TableDescriptor in method private sendHBaseMetaData(tableDescriptors Set&lt;TableDescriptor&gt;, pollingNeeded boolean) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1918">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1916">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForNewColumnFamily() : void in class org.apache.phoenix.end2end.AlterTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0L225">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0R236">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs7() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL356">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR369">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method private ensureLocalIndexTableDropped(physicalTableName byte[], timestamp long) : boolean in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1352">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1337">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	origTableDescriptor : HTableDescriptor to origTableDescriptor : TableDescriptor in method private separateAndValidateProperties(table PTable, properties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, tableProps Map&lt;String,Object&gt;) : Pair&lt;TableDescriptor,TableDescriptor&gt; in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1947">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR2091">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	htd : HTableDescriptor to htd : TableDescriptor in method public testLocalIndexTableRegionSplitPolicyAndSplitKeys() : void in class org.apache.phoenix.end2end.index.LocalIndexIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ba62019f476f706fd0b26ae0e6aa73e1L167">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ba62019f476f706fd0b26ae0e6aa73e1R179">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	hri1 : HRegionInfo to hri1 : RegionInfo in method private ensureTablesOnDifferentRegionServers(tableName1 String, tableName2 String) : void in class org.apache.phoenix.rpc.PhoenixServerRpcIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eL204">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eR221">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDescriptors : Set&lt;HTableDescriptor&gt; to tableDescriptors : Set&lt;TableDescriptor&gt; in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1711">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetHColumnPropertyForTableWithOnlyPKCols1() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L772">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R791">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method private testBuildingLocalIndexShouldHandleNoSuchColumnFamilyException(coveredIndex boolean) : void in class org.apache.phoenix.end2end.FlappingLocalIndexIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-064758f80da9609907cb24d7d64c3d8bL317">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-064758f80da9609907cb24d7d64c3d8bR331">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dataTable : HTableDescriptor to dataTable : TableDescriptor in method public testTableDescriptorPriority() : void in class org.apache.phoenix.end2end.index.BaseIndexIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958L1042">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958R1081">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cols : HColumnDescriptor[] to cols : ColumnFamilyDescriptor[] in method public testReplicationWithMutableIndexes() : void in class org.apache.phoenix.end2end.index.MutableIndexReplicationIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-dd4451f6bd05c67d62d1eb0c4d8a9118L173">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-dd4451f6bd05c67d62d1eb0c4d8a9118R210">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetHColumnPropertyForTableWithOnlyPKCols1() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L772">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R790">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testNewColumnFamilyInheritsTTLOfEmptyCF() : void in class org.apache.phoenix.end2end.FlappingAlterTableIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aL71">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aR88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tableDesc2 : HTableDescriptor to tableDesc2 : TableDescriptor in method public testAlteringViewConditionallyModifiesHTableMetadata() : void in class org.apache.phoenix.end2end.AlterMultiTenantTableWithViewsIT</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aL561">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aR576">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1241,517 +1752,6 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR267">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDescriptorPair : Pair&lt;HTableDescriptor,HTableDescriptor&gt; to tableDescriptorPair : Pair&lt;TableDescriptor,TableDescriptor&gt; in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1714">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	existingDesc : HTableDescriptor to existingDesc : TableDescriptor in method private ensureTableCreated(physicalTableName byte[], tableType PTableType, props Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], modifyExistingMetaData boolean, isNamespaceMapped boolean) : TableDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1015">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1011">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method public hasLocalIndexTable(connection PhoenixConnection, physicalTableName byte[]) : boolean in class org.apache.phoenix.util.MetaDataUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L473">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R473">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	newDesc : HTableDescriptor to newDesc : TableDescriptorBuilder in method private ensureTableCreated(physicalTableName byte[], tableType PTableType, props Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], modifyExistingMetaData boolean, isNamespaceMapped boolean) : TableDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1015">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1031">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	localIndexTables : HTableDescriptor[] to localIndexTables : TableDescriptor[] in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR351">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableRegions : List&lt;HRegionInfo&gt; to tableRegions : List&lt;RegionInfo&gt; in method private ensureTablesOnDifferentRegionServers(tableName1 String, tableName2 String) : void in class org.apache.phoenix.rpc.PhoenixServerRpcIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eL204">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eR219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionsOfUserTable : List&lt;HRegionInfo&gt; to regionsOfUserTable : List&lt;RegionInfo&gt; in method private splitDuringScan(conn1 Connection, tableName String, indexName String, strings String[], admin Admin, isReverse boolean) : List&lt;RegionInfo&gt; in class org.apache.phoenix.end2end.index.MutableIndexSplitIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-0cd50d3708f67d4077afed6eec9d602cL106">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-0cd50d3708f67d4077afed6eec9d602cR129">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForNewAndExistingColumnFamily() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L435">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R452">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetHTableProperties() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L106">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R122">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cf : HColumnDescriptor to cf : ColumnFamilyDescriptor in method public hasLocalIndexColumnFamily(desc TableDescriptor) : boolean in class org.apache.phoenix.util.MetaDataUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L483">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R482">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	indexRegions : List&lt;HRegionInfo&gt; to indexRegions : List&lt;RegionInfo&gt; in method public testIndexHalfStoreFileReader() : void in class org.apache.phoenix.end2end.index.MutableIndexIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-e7d8c6dbb60a11628ba9c676f60b9234L637">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-e7d8c6dbb60a11628ba9c676f60b9234R651">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs4() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL278">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR295">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	online : List&lt;Region&gt; to online : List&lt;HRegion&gt; in method private getRegionsFromServerForTable(cluster MiniHBaseCluster, server ServerName, table byte[]) : List&lt;HRegion&gt; in class org.apache.phoenix.hbase.index.write.TestWALRecoveryCaching</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12L265">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12R274">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	htableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method public testCreateTableToBeTransactional() : void in class org.apache.phoenix.tx.ParameterizedTransactionIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eL366">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a78d241beda3d00419962cdc21218f6eR396">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	colDesc : HColumnDescriptor to colDesc : ColumnFamilyDescriptor in method public testProperties() : void in class org.apache.phoenix.tx.TransactionIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-3f81c31b78da1c92c586534d1db65a67L158">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-3f81c31b78da1c92c586534d1db65a67R171">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	keyValue : Entry&lt;ImmutableBytesWritable,ImmutableBytesWritable&gt; to keyValue : Entry&lt;Bytes,Bytes&gt; in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR363">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionManifests : List&lt;SnapshotProtos.SnapshotRegionManifest&gt; to regionManifests : List&lt;SnapshotRegionManifest&gt; in method private getRegionLocationsFromManifest(manifest SnapshotManifest) : List&lt;HRegionLocation&gt; in class org.apache.phoenix.iterate.MapReduceParallelScanGrouper</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091L82">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091R84">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1715">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableColDescriptor : HColumnDescriptor to tableColDescriptor : ColumnFamilyDescriptor in method private setSharedIndexMaxVersion(table PTable, tableDescriptor TableDescriptor, indexDescriptorBuilder TableDescriptorBuilder) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1897">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1894">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method public getLocalIndexColumnFamilies(conn PhoenixConnection, physicalTableName byte[]) : List&lt;byte[]&gt; in class org.apache.phoenix.util.MetaDataUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L502">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R501">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testAddingPkColAndSettingProperties() : void in class org.apache.phoenix.end2end.AlterTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0L883">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0R941">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSettingPropertiesWhenTableHasDefaultColFamilySpecified() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L372">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R392">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	indexTable : HTableDescriptor to indexTable : TableDescriptor in method public testTableDescriptorPriority() : void in class org.apache.phoenix.end2end.index.BaseIndexIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958L1042">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958R1087">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tables : HTableDescriptor[] to tables : TableDescriptor[] in method private disableAndDropNonSystemTables() : void in class org.apache.phoenix.query.BaseTest</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1L1522">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1R1529">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	online : List&lt;Region&gt; to online : List&lt;HRegion&gt; in method private ensureTablesLiveOnSameServer(cluster MiniHBaseCluster, indexTable byte[], primaryTable byte[]) : ServerName in class org.apache.phoenix.hbase.index.write.TestWALRecoveryCaching</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12L284">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7c02e8f37409ca0ed08c030e3889de12R310">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnDescriptor : HColumnDescriptor to columnDescriptor : ColumnFamilyDescriptor in method private generateTableDescriptor(physicalTableName byte[], existingDesc TableDescriptor, tableType PTableType, tableProps Map&lt;String,Object&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, splits byte[][], isNamespaceMapped boolean) : TableDescriptorBuilder in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL752">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR775">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	htd : HTableDescriptor to htd : TableDescriptor in method public testTableDescriptorPriority() : void in class org.apache.phoenix.end2end.index.BaseIndexIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958L1042">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958R1062">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regions : List&lt;HRegionInfo&gt; to regions : List&lt;RegionInfo&gt; in method public testSplitDuringUpsertSelect() : void in class org.apache.phoenix.execute.UpsertSelectOverlappingBatchesIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7cbce4b16d04da174cebc0d9b7e7e778L189">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-7cbce4b16d04da174cebc0d9b7e7e778R215">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs5() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL306">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR322">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public testMajorCompactionPreventsUpdateStatsFromRunning() : void in class org.apache.phoenix.coprocessor.StatisticsCollectionRunTrackerIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752L99">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752R102">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	table : HTableDescriptor to table : TableDescriptor in method public upgradeSystemTables(url String, props Properties) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL2585">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR2638">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testAddColumnForNewColumnFamily() : void in class org.apache.phoenix.end2end.FlappingAlterTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aL47">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aR63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public testUpdateStatsPreventsAnotherUpdateStatsFromRunning() : void in class org.apache.phoenix.coprocessor.StatisticsCollectionRunTrackerIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752L112">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752R115">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cdC : HColumnDescriptor to cdC : ColumnFamilyDescriptor in method public testCreateOnExistingTable() : void in class org.apache.phoenix.end2end.QueryDatabaseMetaDataIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-67df1d6adde8cc14f80dc512af03c534L700">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-67df1d6adde8cc14f80dc512af03c534R742">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc3 : HTableDescriptor to tableDesc3 : TableDescriptor in method public testAlteringViewConditionallyModifiesHTableMetadata() : void in class org.apache.phoenix.end2end.AlterMultiTenantTableWithViewsIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aL561">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aR591">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	origTableDescriptor : HTableDescriptor to origTableDescriptor : TableDescriptor in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1716">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	snapshotDescription : HBaseProtos.SnapshotDescription to snapshotDescription : SnapshotDescription in method public getRegionBoundaries(context StatementContext, tableName byte[]) : List&lt;HRegionLocation&gt; in class org.apache.phoenix.iterate.MapReduceParallelScanGrouper</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091L60">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-46e669db183ff82a0f52e5bbedeed091R70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method private preSplitSequenceTable(conn PhoenixConnection, nSaltBuckets int) : void in class org.apache.phoenix.util.UpgradeUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL288">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR299">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method private ensureViewIndexTableDropped(physicalTableName byte[], timestamp long) : boolean in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1324">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1314">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	table : HTableInterface to table : Table in method public testShutdownInterruptsAsExpected() : void in class org.apache.phoenix.hbase.index.write.TestIndexWriter</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-d8aeeed9d8b525beb3c7a049ca46113cL141">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-d8aeeed9d8b525beb3c7a049ca46113cR161">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR356">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetTTLForTableWithOnlyPKCols() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L737">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R752">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	htd : HTableDescriptor to htd : TableDescriptor in method public testReplayEditsWrittenViaHRegion() : void in class org.apache.hadoop.hbase.regionserver.wal.WALReplayWithIndexWritesAndCompressedWALIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8406444711af78ed861a3d5fcd519cffL165">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8406444711af78ed861a3d5fcd519cffR178">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionsOfUserTable : List&lt;HRegionInfo&gt; to regionsOfUserTable : List&lt;RegionInfo&gt; in method public testLocalIndexScanAfterRegionSplit() : void in class org.apache.phoenix.end2end.LocalIndexSplitMergeIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c137460e69b23ec3183f6c0c9a0c0753L86">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-c137460e69b23ec3183f6c0c9a0c0753R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	colDef : HColumnDescriptor to colDefBuilder : ColumnFamilyDescriptorBuilder in method public upgradeLocalIndexes(metaConnection PhoenixConnection) : PhoenixConnection in class org.apache.phoenix.util.UpgradeUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fL328">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b77522494df195a9f616200fa343ef0fR361">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnUsingDefaultColumnFamilySpecifier() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L563">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R579">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testAddingPkColAndSettingProperties() : void in class org.apache.phoenix.end2end.AlterTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0L883">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0R942">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cf : HColumnDescriptor to cf : ColumnFamilyDescriptor in method public getNonLocalIndexColumnFamilies(desc TableDescriptor) : List&lt;byte[]&gt; in class org.apache.phoenix.util.MetaDataUtil</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285L492">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-fd006fdeebf07b0caee832cc4c877285R492">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs6() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL333">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR347">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnDesc : HColumnDescriptor to columnDescBuilder : ColumnFamilyDescriptorBuilder in method private generateColumnFamilyDescriptor(family Pair&lt;byte[],Map&lt;String,Object&gt;&gt;, tableType PTableType) : ColumnFamilyDescriptor in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL703">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR708">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetHTableAndHColumnProperties() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L128">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R144">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	mockRegionInfo : HRegionInfo to mockRegionInfo : RegionInfo in method public setup() : void in class org.apache.phoenix.hbase.index.covered.NonTxIndexBuilderTest</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-85588e09efb2fa2563973fc5bcb58123L114">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-85588e09efb2fa2563973fc5bcb58123R142">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	value : ImmutableBytesWritable to value : Bytes in method private createPropertiesMap(htableProps Map&lt;Bytes,Bytes&gt;) : Map&lt;String,Object&gt; in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1649">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1637">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetTTLForTableWithOnlyPKCols() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L737">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R753">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForDefaultColumnFamily() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L593">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R606">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method private getParallelScans(startKey byte[], stopKey byte[]) : List&lt;List&lt;Scan&gt;&gt; in class org.apache.phoenix.iterate.BaseResultIterators</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8c3d3f644c66ef36d5bc604f017fabfcL688">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8c3d3f644c66ef36d5bc604f017fabfcR776">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForDifferentColumnFamilies() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L526">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R543">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in method public testStateBeforeAndAfterUpdateStatsCommand() : void in class org.apache.phoenix.coprocessor.StatisticsCollectionRunTrackerIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752L56">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ef7ceccad873516dbc402dee0eaa8752R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	descriptor : HTableDescriptor to descriptor : TableDescriptor in method private sendHBaseMetaData(tableDescriptors Set&lt;TableDescriptor&gt;, pollingNeeded boolean) : void in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1918">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1916">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetPropertyAndAddColumnForNewColumnFamily() : void in class org.apache.phoenix.end2end.AlterTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0L225">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-610d008c2587521dc83896cec883fed0R236">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testCreateTableColumnFamilyHBaseAttribs7() : void in class org.apache.phoenix.end2end.CreateTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dL356">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-da31ed8d9148d3b9b0c8942e1a443f4dR369">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	desc : HTableDescriptor to desc : TableDescriptor in method private ensureLocalIndexTableDropped(physicalTableName byte[], timestamp long) : boolean in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1352">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1337">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	origTableDescriptor : HTableDescriptor to origTableDescriptor : TableDescriptor in method private separateAndValidateProperties(table PTable, properties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, families List&lt;Pair&lt;byte[],Map&lt;String,Object&gt;&gt;&gt;, tableProps Map&lt;String,Object&gt;) : Pair&lt;TableDescriptor,TableDescriptor&gt; in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1947">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR2091">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	htd : HTableDescriptor to htd : TableDescriptor in method public testLocalIndexTableRegionSplitPolicyAndSplitKeys() : void in class org.apache.phoenix.end2end.index.LocalIndexIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ba62019f476f706fd0b26ae0e6aa73e1L167">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-ba62019f476f706fd0b26ae0e6aa73e1R179">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	hri1 : HRegionInfo to hri1 : RegionInfo in method private ensureTablesOnDifferentRegionServers(tableName1 String, tableName2 String) : void in class org.apache.phoenix.rpc.PhoenixServerRpcIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eL204">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-8e37a388ced128e44d501fe558c2064eR221">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDescriptors : Set&lt;HTableDescriptor&gt; to tableDescriptors : Set&lt;TableDescriptor&gt; in method public addColumn(tableMetaData List&lt;Mutation&gt;, table PTable, stmtProperties Map&lt;String,List&lt;Pair&lt;String,Object&gt;&gt;&gt;, colFamiliesForPColumnsToBeAdded Set&lt;String&gt;, columns List&lt;PColumn&gt;) : MetaDataMutationResult in class org.apache.phoenix.query.ConnectionQueryServicesImpl</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcL1722">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b58df5056ab1580373df0d54dee2a3bcR1711">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testSetHColumnPropertyForTableWithOnlyPKCols1() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L772">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R791">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDescriptor : HTableDescriptor to tableDescriptor : TableDescriptor in method private testBuildingLocalIndexShouldHandleNoSuchColumnFamilyException(coveredIndex boolean) : void in class org.apache.phoenix.end2end.FlappingLocalIndexIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-064758f80da9609907cb24d7d64c3d8bL317">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-064758f80da9609907cb24d7d64c3d8bR331">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dataTable : HTableDescriptor to dataTable : TableDescriptor in method public testTableDescriptorPriority() : void in class org.apache.phoenix.end2end.index.BaseIndexIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958L1042">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-a67eb6216912e213790b93633757b958R1081">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cols : HColumnDescriptor[] to cols : ColumnFamilyDescriptor[] in method public testReplicationWithMutableIndexes() : void in class org.apache.phoenix.end2end.index.MutableIndexReplicationIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-dd4451f6bd05c67d62d1eb0c4d8a9118L173">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-dd4451f6bd05c67d62d1eb0c4d8a9118R210">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc : HTableDescriptor to tableDesc : TableDescriptor in method public testSetHColumnPropertyForTableWithOnlyPKCols1() : void in class org.apache.phoenix.end2end.SetPropertyIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6L772">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-569d32eb24de6c392001b799c4659ee6R790">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	columnFamilies : HColumnDescriptor[] to columnFamilies : ColumnFamilyDescriptor[] in method public testNewColumnFamilyInheritsTTLOfEmptyCF() : void in class org.apache.phoenix.end2end.FlappingAlterTableIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aL71">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-5db4fdd1b55e98eb180b89f31133e89aR88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tableDesc2 : HTableDescriptor to tableDesc2 : TableDescriptor in method public testAlteringViewConditionallyModifiesHTableMetadata() : void in class org.apache.phoenix.end2end.AlterMultiTenantTableWithViewsIT</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aL561">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-00f1e4bfe8e778884f507132194b847aR576">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1762,6 +1762,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	regions : ArrayList&lt;HRegionInfo&gt; to regions : ArrayList&lt;RegionInfo&gt; in class org.apache.phoenix.iterate.TableSnapshotResultIterator</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b959164bae10d0cdbbf3c87507a176f0L51">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b959164bae10d0cdbbf3c87507a176f0R51">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1789,13 +1796,6 @@
                                 <td><i>Change Attribute Type	regionInfo : HRegionInfo to regionInfo : RegionInfo in class org.apache.phoenix.schema.stats.StatisticsScannerTest</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-66b79a546c9b78b937fc00fb66b8785aL53">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-66b79a546c9b78b937fc00fb66b8785aR53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	regions : ArrayList&lt;HRegionInfo&gt; to regions : ArrayList&lt;RegionInfo&gt; in class org.apache.phoenix.iterate.TableSnapshotResultIterator</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b959164bae10d0cdbbf3c87507a176f0L51">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/c3ec80d3166d8b365ae39a69bd57d24d8971c63d?diff=split#diff-b959164bae10d0cdbbf3c87507a176f0R51">To</a></td>
                             </tr>
                             
                             </tbody>

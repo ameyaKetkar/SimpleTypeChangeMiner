@@ -154,16 +154,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getVersioned(key K) : VersionedValue&lt;V&gt; renamed to public getWithMetadataAsync(key K) : CompletableFuture&lt;MetadataValue&lt;V&gt;&gt; in class org.infinispan.client.hotrod.impl.InvalidatedNearRemoteCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccL33">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccR35">To</a></td>
+                                <td><i>Rename Method	private getWithMetadata(key K, dataFormat DataFormat) : MetadataValue&lt;V&gt; renamed to private getWithMetadataAsync(key K, dataFormat DataFormat) : CompletableFuture&lt;MetadataValue&lt;V&gt;&gt; in class org.infinispan.client.hotrod.impl.RemoteCacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-217698176336d8afd902b81580749bc5L207">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-217698176336d8afd902b81580749bc5R212">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private getWithMetadata(key K, dataFormat DataFormat) : MetadataValue&lt;V&gt; renamed to private getWithMetadataAsync(key K, dataFormat DataFormat) : CompletableFuture&lt;MetadataValue&lt;V&gt;&gt; in class org.infinispan.client.hotrod.impl.RemoteCacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-217698176336d8afd902b81580749bc5L207">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-217698176336d8afd902b81580749bc5R212">To</a></td>
+                                <td><i>Rename Method	public getVersioned(key K) : VersionedValue&lt;V&gt; renamed to public getWithMetadataAsync(key K) : CompletableFuture&lt;MetadataValue&lt;V&gt;&gt; in class org.infinispan.client.hotrod.impl.InvalidatedNearRemoteCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccL33">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccR35">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -176,6 +176,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	cache : ConcurrentMap&lt;K,VersionedValue&lt;V&gt;&gt; to cache : ConcurrentMap&lt;K,MetadataValue&lt;V&gt;&gt; in method private BoundedConcurrentMapNearCache(cache ConcurrentMap&lt;K,MetadataValue&lt;V&gt;&gt;) in class org.infinispan.client.hotrod.near.BoundedConcurrentMapNearCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaL18">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaR18">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	value : VersionedValue&lt;V&gt; to value : MetadataValue&lt;V&gt; in method package MockKeyValueEvent(key K, value MetadataValue&lt;V&gt;) in class org.infinispan.client.hotrod.near.MockNearCacheService.MockKeyValueEvent</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1bd0d887e6f70315d0c5cab591c61310L27">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1bd0d887e6f70315d0c5cab591c61310R27">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	cache : LinkedHashMap&lt;K,VersionedValue&lt;V&gt;&gt; to cache : LinkedHashMap&lt;K,MetadataValue&lt;V&gt;&gt; in method protected LinkedMapNearCache(cache LinkedHashMap&lt;K,MetadataValue&lt;V&gt;&gt;) in class org.infinispan.client.hotrod.near.LinkedMapNearCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-151fab3c57de26dff51f8a20912cb6c4L26">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-151fab3c57de26dff51f8a20912cb6c4R26">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -282,27 +303,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1bd0d887e6f70315d0c5cab591c61310R53">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	cache : ConcurrentMap&lt;K,VersionedValue&lt;V&gt;&gt; to cache : ConcurrentMap&lt;K,MetadataValue&lt;V&gt;&gt; in method private BoundedConcurrentMapNearCache(cache ConcurrentMap&lt;K,MetadataValue&lt;V&gt;&gt;) in class org.infinispan.client.hotrod.near.BoundedConcurrentMapNearCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaL18">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaR18">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	value : VersionedValue&lt;V&gt; to value : MetadataValue&lt;V&gt; in method package MockKeyValueEvent(key K, value MetadataValue&lt;V&gt;) in class org.infinispan.client.hotrod.near.MockNearCacheService.MockKeyValueEvent</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1bd0d887e6f70315d0c5cab591c61310L27">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1bd0d887e6f70315d0c5cab591c61310R27">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	cache : LinkedHashMap&lt;K,VersionedValue&lt;V&gt;&gt; to cache : LinkedHashMap&lt;K,MetadataValue&lt;V&gt;&gt; in method protected LinkedMapNearCache(cache LinkedHashMap&lt;K,MetadataValue&lt;V&gt;&gt;) in class org.infinispan.client.hotrod.near.LinkedMapNearCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-151fab3c57de26dff51f8a20912cb6c4L26">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-151fab3c57de26dff51f8a20912cb6c4R26">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -313,34 +313,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.NearCacheService</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddL109">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddR109">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key Object) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.ConcurrentMapNearCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-87547c54fc81e4c87de3ef69caea1508L33">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-87547c54fc81e4c87de3ef69caea1508R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.BoundedConcurrentMapNearCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaL42">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaR42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.NearCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-337e33a0ab8e50d4b330558e43c7509dL14">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-337e33a0ab8e50d4b330558e43c7509dR14">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -370,6 +342,34 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccR35">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.NearCacheService</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddL109">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddR109">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key Object) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.ConcurrentMapNearCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-87547c54fc81e4c87de3ef69caea1508L33">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-87547c54fc81e4c87de3ef69caea1508R33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.BoundedConcurrentMapNearCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaL42">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-8f05078aa4bca518bc8ef123f4f4edcaR42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	VersionedValue&lt;V&gt; to MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.NearCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-337e33a0ab8e50d4b330558e43c7509dL14">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-337e33a0ab8e50d4b330558e43c7509dR14">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -380,13 +380,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	value : VersionedValue&lt;V&gt; to value : MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.NearCacheService</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddL109">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddR113">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -414,6 +407,13 @@
                                 <td><i>Change Variable Type	remoteValue : VersionedValue&lt;V&gt; to remoteValue : CompletableFuture&lt;MetadataValue&lt;V&gt;&gt; in method public getWithMetadataAsync(key K) : CompletableFuture&lt;MetadataValue&lt;V&gt;&gt; in class org.infinispan.client.hotrod.impl.InvalidatedNearRemoteCache</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccL33">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-1e83cd54d577962f1b5e897a1d707eccR39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	value : VersionedValue&lt;V&gt; to value : MetadataValue&lt;V&gt; in method public get(key K) : MetadataValue&lt;V&gt; in class org.infinispan.client.hotrod.near.NearCacheService</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddL109">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/efff605a2359b5094e56c294b5ba96092e55091f?diff=split#diff-f1ab96c373b36e2ed5db8f83dd6c3dddR113">To</a></td>
                             </tr>
                             
                             </tbody>

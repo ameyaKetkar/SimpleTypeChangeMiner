@@ -234,6 +234,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	timeout : FiniteDuration to timeout : Time in method public RuntimeMonitorHandlerBase(retriever JobManagerRetriever, localJobManagerAddressFuture CompletableFuture&lt;String&gt;, timeout Time, httpsEnabled boolean) in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandlerBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cL60">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleJsonRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : String in class org.apache.flink.runtime.webmonitor.handlers.JobCancellationHandler</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-814adaee8f22fe5ef8312da225244845L41">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-814adaee8f22fe5ef8312da225244845R49">To</a></td>
@@ -554,13 +561,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4R56">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	timeout : FiniteDuration to timeout : Time in method public RuntimeMonitorHandlerBase(retriever JobManagerRetriever, localJobManagerAddressFuture CompletableFuture&lt;String&gt;, timeout Time, httpsEnabled boolean) in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandlerBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cL60">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cR63">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -747,6 +747,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	jobManager : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; to optJobManagerGateway : Optional&lt;JobManagerGateway&gt; in method protected channelRead0(ctx ChannelHandlerContext, routed Routed) : void in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandlerBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cL79">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cR86">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	gatewayPort : Tuple2&lt;ActorGateway,Integer&gt; to jobManagerGateway : JobManagerGateway in method protected channelRead0(ctx ChannelHandlerContext, routed Routed) : void in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandlerBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cL79">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cR89">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	jobManager : ActorGateway to jobManager : JobManagerGateway in method public testSavepointDirectoryConfiguration() : void in class org.apache.flink.runtime.webmonitor.handlers.JobCancellationWithSavepointHandlersTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-1816d85724caa4647d3703d695154b70L118">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-1816d85724caa4647d3703d695154b70R134">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	jobManagerGateway : ActorGateway to jobManagerGateway : JobManagerGateway in method public testUpdate() : void in class org.apache.flink.runtime.webmonitor.metrics.MetricFetcherTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-a79e8d4857114d3c98337eebb38b36d8L79">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-a79e8d4857114d3c98337eebb38b36d8R90">To</a></td>
@@ -850,27 +871,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-1816d85724caa4647d3703d695154b70R312">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	jobManager : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; to optJobManagerGateway : Optional&lt;JobManagerGateway&gt; in method protected channelRead0(ctx ChannelHandlerContext, routed Routed) : void in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandlerBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cL79">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cR86">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	gatewayPort : Tuple2&lt;ActorGateway,Integer&gt; to jobManagerGateway : JobManagerGateway in method protected channelRead0(ctx ChannelHandlerContext, routed Routed) : void in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandlerBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cL79">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-133d0042708663dd15efa9e66fe3b73cR89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	jobManager : ActorGateway to jobManager : JobManagerGateway in method public testSavepointDirectoryConfiguration() : void in class org.apache.flink.runtime.webmonitor.handlers.JobCancellationWithSavepointHandlersTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-1816d85724caa4647d3703d695154b70L118">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-1816d85724caa4647d3703d695154b70R134">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -881,41 +881,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.handlers.CurrentJobIdsHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4L46">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4R44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.files.StaticFileServerHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061L123">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061R120">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.metrics.MetricFetcher</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ceded6c8539ea9f835c5aa45dfd14f46L67">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ceded6c8539ea9f835c5aa45dfd14f46R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.handlers.ClusterOverviewHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-4ff49e2b1ed18ec5d4ae84fcb7e39477L49">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-4ff49e2b1ed18ec5d4ae84fcb7e39477R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.handlers.TaskManagersHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-c0e467d6c8e71de722d677f7f9b9e1a4L54">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-c0e467d6c8e71de722d677f7f9b9e1a4R52">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1001,6 +966,41 @@
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-1816d85724caa4647d3703d695154b70R65">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.handlers.CurrentJobIdsHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4L46">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4R44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.files.StaticFileServerHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061L123">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061R120">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.metrics.MetricFetcher</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ceded6c8539ea9f835c5aa45dfd14f46L67">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ceded6c8539ea9f835c5aa45dfd14f46R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.handlers.ClusterOverviewHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-4ff49e2b1ed18ec5d4ae84fcb7e39477L49">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-4ff49e2b1ed18ec5d4ae84fcb7e39477R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	timeout : FiniteDuration to timeout : Time in class org.apache.flink.runtime.webmonitor.handlers.TaskManagersHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-c0e467d6c8e71de722d677f7f9b9e1a4L54">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-c0e467d6c8e71de722d677f7f9b9e1a4R52">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1011,27 +1011,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-30" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : FullHttpResponse in class org.apache.flink.runtime.webmonitor.handlers.JobCancellationWithSavepointHandlers.TriggerHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ccb56440087565fa9ebafedaca2f6599L147">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ccb56440087565fa9ebafedaca2f6599R146">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleJsonRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : String in class org.apache.flink.runtime.webmonitor.handlers.CurrentJobIdsHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4L58">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4R56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleJsonRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : String in class org.apache.flink.runtime.webmonitor.handlers.JobManagerConfigHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-da54ada372658cd681feb37af212722fL48">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-da54ada372658cd681feb37af212722fR48">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1220,6 +1199,27 @@
                                 <td><i>Rename Parameter	ctx : ExecutionContext to executor : Executor in method public MetricFetcher(retriever JobManagerRetriever, queryServiceRetriever MetricQueryServiceRetriever, executor Executor, timeout Time) in class org.apache.flink.runtime.webmonitor.metrics.MetricFetcher</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ceded6c8539ea9f835c5aa45dfd14f46L74">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ceded6c8539ea9f835c5aa45dfd14f46R69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : FullHttpResponse in class org.apache.flink.runtime.webmonitor.handlers.JobCancellationWithSavepointHandlers.TriggerHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ccb56440087565fa9ebafedaca2f6599L147">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-ccb56440087565fa9ebafedaca2f6599R146">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleJsonRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : String in class org.apache.flink.runtime.webmonitor.handlers.CurrentJobIdsHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4L58">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-9978c594e40257dd47cc7485483ec2e4R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	jobManager : ActorGateway to jobManagerGateway : JobManagerGateway in method public handleJsonRequest(pathParams Map&lt;String,String&gt;, queryParams Map&lt;String,String&gt;, jobManagerGateway JobManagerGateway) : String in class org.apache.flink.runtime.webmonitor.handlers.JobManagerConfigHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-da54ada372658cd681feb37af212722fL48">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/9f790d3efe5e8267da05eb97bbe07ca8a0f859fe?diff=split#diff-da54ada372658cd681feb37af212722fR48">To</a></td>
                             </tr>
                             
                             </tbody>

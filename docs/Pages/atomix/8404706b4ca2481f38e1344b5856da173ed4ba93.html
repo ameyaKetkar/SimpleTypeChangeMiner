@@ -210,6 +210,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getStateMachine() : RaftServiceManager renamed to public getServiceManager() : RaftServiceManager in class io.atomix.protocols.raft.impl.RaftContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-2b7ee5642689e551130f883959f7174eL545">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-2b7ee5642689e551130f883959f7174eR544">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private restoreService(reader SnapshotReader) : RaftServiceContext renamed to private installService(reader SnapshotReader) : void in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L263">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R509">To</a></td>
@@ -220,13 +227,6 @@
                                 <td><i>Rename Method	public getSnapshotById(id PrimitiveId) : Snapshot renamed to public getSnapshot(index long) : Snapshot in class io.atomix.protocols.raft.storage.snapshot.SnapshotStore</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4caa6c1add601a137282050685847c67L128">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4caa6c1add601a137282050685847c67R101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getStateMachine() : RaftServiceManager renamed to public getServiceManager() : RaftServiceManager in class io.atomix.protocols.raft.impl.RaftContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-2b7ee5642689e551130f883959f7174eL545">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-2b7ee5642689e551130f883959f7174eR544">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -335,62 +335,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	void to OperationResult in method private sequenceCommand(index long, sequence long, session RaftSession) : OperationResult in class io.atomix.protocols.raft.service.RaftServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L647">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R442">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;long[]&gt; to long[] in method private applyKeepAlive(entry Indexed&lt;KeepAliveEntry&gt;) : long[] in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L359">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R569">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Long&gt; to CompletableFuture&lt;Snapshot&gt; in method private takeSnapshots(index long) : CompletableFuture&lt;Snapshot&gt; in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L318">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R207">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to void in method public closeSession(index long, timestamp long, session RaftSession, expired boolean) : void in class io.atomix.protocols.raft.service.RaftServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L553">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R372">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to void in method private applyCloseSession(entry Indexed&lt;CloseSessionEntry&gt;) : void in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L491">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R687">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;MetadataResult&gt; to MetadataResult in method private applyMetadata(entry Indexed&lt;MetadataEntry&gt;) : MetadataResult in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L507">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R703">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Long&gt; to long in method private applyOpenSession(entry Indexed&lt;OpenSessionEntry&gt;) : long in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L457">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R654">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to void in method public keepAliveSessions(index long, timestamp long) : void in class io.atomix.protocols.raft.service.RaftServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L531">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R355">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	CompletableFuture&lt;OperationResult&gt; to OperationResult in method private applyCommand(entry Indexed&lt;CommandEntry&gt;) : OperationResult in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L537">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R733">To</a></td>
@@ -445,6 +389,62 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R453">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to OperationResult in method private sequenceCommand(index long, sequence long, session RaftSession) : OperationResult in class io.atomix.protocols.raft.service.RaftServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L647">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R442">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;long[]&gt; to long[] in method private applyKeepAlive(entry Indexed&lt;KeepAliveEntry&gt;) : long[] in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L359">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R569">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Long&gt; to CompletableFuture&lt;Snapshot&gt; in method private takeSnapshots(index long) : CompletableFuture&lt;Snapshot&gt; in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L318">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R207">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to void in method public closeSession(index long, timestamp long, session RaftSession, expired boolean) : void in class io.atomix.protocols.raft.service.RaftServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L553">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R372">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to void in method private applyCloseSession(entry Indexed&lt;CloseSessionEntry&gt;) : void in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L491">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R687">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;MetadataResult&gt; to MetadataResult in method private applyMetadata(entry Indexed&lt;MetadataEntry&gt;) : MetadataResult in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L507">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R703">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Long&gt; to long in method private applyOpenSession(entry Indexed&lt;OpenSessionEntry&gt;) : long in class io.atomix.protocols.raft.impl.RaftServiceManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18L457">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4ee198e208b1d6ef0498322c9c93ce18R654">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to void in method public keepAliveSessions(index long, timestamp long) : void in class io.atomix.protocols.raft.service.RaftServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58L531">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-14537b7d63b580009fd0dae2c7267d58R355">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -476,14 +476,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	manager : RaftServiceManager in method private createSession(sessionId long) : RaftSession from class io.atomix.protocols.raft.service.RaftSessionsTest</i></td>
+                                <td><i>Extract Variable	manager : RaftServiceManager in method private createSession(sessionId long) : RaftSession from class io.atomix.protocols.raft.session.RaftSessionRegistryTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	manager : RaftServiceManager in method private createSession(sessionId long) : RaftSession from class io.atomix.protocols.raft.session.RaftSessionRegistryTest</i></td>
+                                <td><i>Extract Variable	manager : RaftServiceManager in method private createSession(sessionId long) : RaftSession from class io.atomix.protocols.raft.service.RaftSessionsTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -537,6 +537,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	serviceName : String to serverName : String in method package createSnapshotFile(directory File, serverName String, index long) : File in class io.atomix.protocols.raft.storage.snapshot.SnapshotFile</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-a3a56bd4de4be74d412460ef998584eaL96">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-a3a56bd4de4be74d412460ef998584eaR90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	id : PrimitiveId to index : long in method public getSnapshot(index long) : Snapshot in class io.atomix.protocols.raft.storage.snapshot.SnapshotStore</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4caa6c1add601a137282050685847c67L134">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-4caa6c1add601a137282050685847c67R107">To</a></td>
@@ -547,13 +554,6 @@
                                 <td><i>Rename Parameter	serviceName : String to serverName : String in method package createSnapshotFileName(serverName String, index long) : String in class io.atomix.protocols.raft.storage.snapshot.SnapshotFile</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-a3a56bd4de4be74d412460ef998584eaL104">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-a3a56bd4de4be74d412460ef998584eaR98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	serviceName : String to serverName : String in method package createSnapshotFile(directory File, serverName String, index long) : File in class io.atomix.protocols.raft.storage.snapshot.SnapshotFile</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-a3a56bd4de4be74d412460ef998584eaL96">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8404706b4ca2481f38e1344b5856da173ed4ba93?diff=split#diff-a3a56bd4de4be74d412460ef998584eaR90">To</a></td>
                             </tr>
                             
                             </tbody>

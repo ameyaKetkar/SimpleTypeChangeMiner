@@ -276,6 +276,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private locatePreviousInCache(tableCache TableCache, tableName TableName, startRowOfCurrentRegion byte[]) : HRegionLocation renamed to private locateRowBeforeInCache(tableCache TableCache, tableName TableName, row byte[]) : HRegionLocation in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L355">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R342">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private getRegionLocation(tableName TableName, row byte[], locateToPrevious boolean) : CompletableFuture&lt;HRegionLocation&gt; renamed to private getRegionLocationInternal(tableName TableName, row byte[], locateType RegionLocateType) : CompletableFuture&lt;HRegionLocation&gt; in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L416">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R393">To</a></td>
@@ -288,13 +295,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R324">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private locatePreviousInCache(tableCache TableCache, tableName TableName, startRowOfCurrentRegion byte[]) : HRegionLocation renamed to private locateRowBeforeInCache(tableCache TableCache, tableName TableName, row byte[]) : HRegionLocation in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L355">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R342">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -305,27 +305,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	locateToPreviousRegion : boolean to locateType : RegionLocateType in method public AsyncSingleRequestRpcRetryingCaller(retryTimer HashedWheelTimer, conn AsyncConnectionImpl, tableName TableName, row byte[], locateType RegionLocateType, callable Callable&lt;T&gt;, pauseNs long, maxRetries int, operationTimeoutNs long, rpcTimeoutNs long, startLogErrorsCnt int) in class org.apache.hadoop.hbase.client.AsyncSingleRequestRpcRetryingCaller</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-6d7f4691ff2eb632d5898f4ce63b2154L92">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-6d7f4691ff2eb632d5898f4ce63b2154R92">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	locateToPrevious : boolean to locateType : RegionLocateType in method private getRegionLocationInternal(tableName TableName, row byte[], locateType RegionLocateType) : CompletableFuture&lt;HRegionLocation&gt; in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L416">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R394">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	locateToPrevious : boolean to locateType : RegionLocateType in method public LocateRequest(row byte[], locateType RegionLocateType) in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.LocateRequest</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L82">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R83">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -348,6 +327,27 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-b834493e99e08b7812dfb27cc5e46eb3R155">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	locateToPreviousRegion : boolean to locateType : RegionLocateType in method public AsyncSingleRequestRpcRetryingCaller(retryTimer HashedWheelTimer, conn AsyncConnectionImpl, tableName TableName, row byte[], locateType RegionLocateType, callable Callable&lt;T&gt;, pauseNs long, maxRetries int, operationTimeoutNs long, rpcTimeoutNs long, startLogErrorsCnt int) in class org.apache.hadoop.hbase.client.AsyncSingleRequestRpcRetryingCaller</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-6d7f4691ff2eb632d5898f4ce63b2154L92">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-6d7f4691ff2eb632d5898f4ce63b2154R92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	locateToPrevious : boolean to locateType : RegionLocateType in method private getRegionLocationInternal(tableName TableName, row byte[], locateType RegionLocateType) : CompletableFuture&lt;HRegionLocation&gt; in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L416">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R394">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	locateToPrevious : boolean to locateType : RegionLocateType in method public LocateRequest(row byte[], locateType RegionLocateType) in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.LocateRequest</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L82">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R83">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -361,16 +361,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to CompletableFuture&lt;RegionLocateType&gt; in method public start() : CompletableFuture&lt;RegionLocateType&gt; in class org.apache.hadoop.hbase.client.AsyncRpcRetryingCallerFactory.ScanSingleRegionCallerBuilder</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-c14cade00217f5fd8fecdde28e07d7acL246">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-c14cade00217f5fd8fecdde28e07d7acR246">To</a></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to CompletableFuture&lt;RegionLocateType&gt; in method public start() : CompletableFuture&lt;RegionLocateType&gt; in class org.apache.hadoop.hbase.client.AsyncScanSingleRegionRpcRetryingCaller</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8bd9f6a686840f5fae50639f4b4bfc8eL344">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8bd9f6a686840f5fae50639f4b4bfc8eR345">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to CompletableFuture&lt;RegionLocateType&gt; in method public start() : CompletableFuture&lt;RegionLocateType&gt; in class org.apache.hadoop.hbase.client.AsyncScanSingleRegionRpcRetryingCaller</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8bd9f6a686840f5fae50639f4b4bfc8eL344">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8bd9f6a686840f5fae50639f4b4bfc8eR345">To</a></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to CompletableFuture&lt;RegionLocateType&gt; in method public start() : CompletableFuture&lt;RegionLocateType&gt; in class org.apache.hadoop.hbase.client.AsyncRpcRetryingCallerFactory.ScanSingleRegionCallerBuilder</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-c14cade00217f5fd8fecdde28e07d7acL246">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-c14cade00217f5fd8fecdde28e07d7acR246">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -411,6 +411,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	locateToPrevious : boolean to locateType : RegionLocateType in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.LocateRequest</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L80">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	future : CompletableFuture&lt;Boolean&gt; to future : CompletableFuture&lt;RegionLocateType&gt; in class org.apache.hadoop.hbase.client.AsyncScanSingleRegionRpcRetryingCaller</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8bd9f6a686840f5fae50639f4b4bfc8eL98">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8bd9f6a686840f5fae50639f4b4bfc8eR98">To</a></td>
@@ -423,13 +430,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-c14cade00217f5fd8fecdde28e07d7acR61">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	locateToPrevious : boolean to locateType : RegionLocateType in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator.LocateRequest</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L80">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R81">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -440,6 +440,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	locateToPreviousRegion : boolean to locateType : RegionLocateType in method private openScanner(locateType RegionLocateType) : void in class org.apache.hadoop.hbase.client.AsyncClientScanner</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8b936e09f5fbcfe920498c1484e61081L134">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8b936e09f5fbcfe920498c1484e61081R134">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	locateToPrevious : boolean to locateType : RegionLocateType in method private locateInCache(tableCache TableCache, tableName TableName, row byte[], locateType RegionLocateType) : HRegionLocation in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L408">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R384">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	locateToPreviousRegion : boolean to locateType : RegionLocateType in method private scan(locateType RegionLocateType) : void in class org.apache.hadoop.hbase.client.AsyncSmallScanRpcRetryingCaller</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-b834493e99e08b7812dfb27cc5e46eb3L155">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-b834493e99e08b7812dfb27cc5e46eb3R155">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -467,27 +488,6 @@
                                 <td><i>Rename Parameter	startRowOfCurrentRegion : byte[] to row : byte[] in method private locateRowBeforeInCache(tableCache TableCache, tableName TableName, row byte[]) : HRegionLocation in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L356">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R343">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	locateToPreviousRegion : boolean to locateType : RegionLocateType in method private openScanner(locateType RegionLocateType) : void in class org.apache.hadoop.hbase.client.AsyncClientScanner</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8b936e09f5fbcfe920498c1484e61081L134">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-8b936e09f5fbcfe920498c1484e61081R134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	locateToPrevious : boolean to locateType : RegionLocateType in method private locateInCache(tableCache TableCache, tableName TableName, row byte[], locateType RegionLocateType) : HRegionLocation in class org.apache.hadoop.hbase.client.AsyncNonMetaRegionLocator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74L408">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-484f9470034e0fa8641f386d5ed04d74R384">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	locateToPreviousRegion : boolean to locateType : RegionLocateType in method private scan(locateType RegionLocateType) : void in class org.apache.hadoop.hbase.client.AsyncSmallScanRpcRetryingCaller</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-b834493e99e08b7812dfb27cc5e46eb3L155">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/09bb4287631563df934cfe88b16fa6dc03e490e6?diff=split#diff-b834493e99e08b7812dfb27cc5e46eb3R155">To</a></td>
                             </tr>
                             
                             </tbody>

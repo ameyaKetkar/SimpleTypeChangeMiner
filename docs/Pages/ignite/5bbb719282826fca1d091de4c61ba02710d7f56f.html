@@ -156,20 +156,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public store(buf ByteBuffer, idx int, pageId Number) : void renamed to public storeByOffset(buf ByteBuffer, off int, pageId Number) : void in class org.apache.ignite.internal.processors.cache.database.tree.reuse.io.ReuseLeafIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-92b3b5d345e462fb55710c98b7ccefc0L43">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-92b3b5d345e462fb55710c98b7ccefc0R43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public store(buf ByteBuffer, idx int, row FreeItem) : void renamed to public storeByOffset(buf ByteBuffer, off int, row FreeItem) : void in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeLeafIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01L47">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public store(buf ByteBuffer, idx int, row SearchRow) : void renamed to public storeByOffset(buf ByteBuffer, off int, row SearchRow) : void in class org.apache.ignite.internal.processors.query.h2.database.io.H2InnerIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-9d43ef6f73bb48a53ca37adfaaf5f7b8L46">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-9d43ef6f73bb48a53ca37adfaaf5f7b8R46">To</a></td>
@@ -210,6 +196,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-4a2af00f9befb0fbd60348e7253920a3R46">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public store(buf ByteBuffer, idx int, pageId Number) : void renamed to public storeByOffset(buf ByteBuffer, off int, pageId Number) : void in class org.apache.ignite.internal.processors.cache.database.tree.reuse.io.ReuseLeafIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-92b3b5d345e462fb55710c98b7ccefc0L43">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-92b3b5d345e462fb55710c98b7ccefc0R43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public store(buf ByteBuffer, idx int, row FreeItem) : void renamed to public storeByOffset(buf ByteBuffer, off int, row FreeItem) : void in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeLeafIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01L47">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01R47">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -223,6 +223,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move And Rename Method	private setHash(buf ByteBuffer, idx int, hash int) : void from class org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.DataInnerIO to private store0(buf ByteBuffer, off int, link long, hash int) : void from class org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-ea0fe064e554b3cd03e7a8ba56f48da0L1028">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-ea0fe064e554b3cd03e7a8ba56f48da0R944">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move And Rename Method	private doRemove(io BPlusIO, buf ByteBuffer, cnt int, idx int) : void from class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree.Remove to public remove(buf ByteBuffer, idx int, cnt int, rmvId long) : void from class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-5dcfa4236a5720a52d5f61bb442cd7a8L2265">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-690f857141ae8a10a6c65666cc8fea3bR299">To</a></td>
@@ -232,13 +239,6 @@
                                 <td></td>
                                 <td><i>Move And Rename Method	private setHash(buf ByteBuffer, idx int, hash int) : void from class org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.DataLeafIO to private store0(buf ByteBuffer, off int, link long, hash int) : void from class org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-ea0fe064e554b3cd03e7a8ba56f48da0L1104">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-ea0fe064e554b3cd03e7a8ba56f48da0R944">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Method	private setHash(buf ByteBuffer, idx int, hash int) : void from class org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl.DataInnerIO to private store0(buf ByteBuffer, off int, link long, hash int) : void from class org.apache.ignite.internal.processors.cache.IgniteCacheOffheapManagerImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-ea0fe064e554b3cd03e7a8ba56f48da0L1028">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-ea0fe064e554b3cd03e7a8ba56f48da0R944">To</a></td>
                             </tr>
                             
@@ -373,13 +373,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	updateFirst : PageHandler&lt;Long,Void&gt; to cutRoot : PageHandler&lt;Void,Void&gt; in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-5dcfa4236a5720a52d5f61bb442cd7a8L514">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-5dcfa4236a5720a52d5f61bb442cd7a8R538">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	VERSIONS : IOVersions&lt;IndexInnerIO&gt; to VERSIONS : IOVersions&lt;MetaStoreInnerIO&gt; in class org.apache.ignite.internal.processors.cache.database.MetadataStorage.MetaStoreInnerIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cL380">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cR387">To</a></td>
@@ -390,6 +383,13 @@
                                 <td><i>Change Attribute Type	VERSIONS : IOVersions&lt;IndexLeafIO&gt; to VERSIONS : IOVersions&lt;MetaStoreLeafIO&gt; in class org.apache.ignite.internal.processors.cache.database.MetadataStorage.MetaStoreLeafIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cL422">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cR428">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	updateFirst : PageHandler&lt;Long,Void&gt; to cutRoot : PageHandler&lt;Void,Void&gt; in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-5dcfa4236a5720a52d5f61bb442cd7a8L514">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-5dcfa4236a5720a52d5f61bb442cd7a8R538">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -405,20 +405,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	public initNewRoot(newRootBuf ByteBuffer, newRootId long, leftChildId long, row L, rowBytes byte[], rightChildId long) : void extracted from private insertWithSplit(io BPlusIO&lt;L&gt;, buf ByteBuffer, idx int, lvl int) : L in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree.Put &amp; moved to class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusInnerIO</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public merge(prntIo BPlusIO&lt;L&gt;, prnt ByteBuffer, prntIdx int, left ByteBuffer, right ByteBuffer, emptyBranch boolean) : boolean extracted from private doMerge(prnt Tail&lt;L&gt;, left Tail&lt;L&gt;, right Tail&lt;L&gt;) : boolean in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree.Remove &amp; moved to class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusIO</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract And Move Method	public recycle(buf ByteBuffer, pageId long) : void extracted from private freePage(pageId long, page Page, buf ByteBuffer, io BPlusIO, lvl int, release boolean) : void in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree.Remove &amp; moved to class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusIO</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -427,6 +413,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public initNewPage(buf ByteBuffer, metaId long, rootId long) : void extracted from protected initNew() : void in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree &amp; moved to class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusMetaIO</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public initNewRoot(newRootBuf ByteBuffer, newRootId long, leftChildId long, row L, rowBytes byte[], rightChildId long) : void extracted from private insertWithSplit(io BPlusIO&lt;L&gt;, buf ByteBuffer, idx int, lvl int) : L in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree.Put &amp; moved to class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusInnerIO</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public merge(prntIo BPlusIO&lt;L&gt;, prnt ByteBuffer, prntIdx int, left ByteBuffer, right ByteBuffer, emptyBranch boolean) : boolean extracted from private doMerge(prnt Tail&lt;L&gt;, left Tail&lt;L&gt;, right Tail&lt;L&gt;) : boolean in class org.apache.ignite.internal.processors.cache.database.tree.BPlusTree.Remove &amp; moved to class org.apache.ignite.internal.processors.cache.database.tree.io.BPlusIO</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -441,6 +441,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row IndexItem) : void in class org.apache.ignite.internal.processors.cache.database.MetadataStorage.MetaStoreInnerIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cL393">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cR400">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row SearchRow) : void in class org.apache.ignite.internal.processors.query.h2.database.io.H2InnerIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-9d43ef6f73bb48a53ca37adfaaf5f7b8L47">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-9d43ef6f73bb48a53ca37adfaaf5f7b8R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row Long) : void in class org.apache.ignite.internal.processors.database.BPlusTreeSelfTest.LongInnerIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-44b075ffd2b72e5e9336c756563db0e3L632">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-44b075ffd2b72e5e9336c756563db0e3R632">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row FreeItem) : void in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeInnerIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-3e74d88035f120887a483456ef258bdcL47">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-3e74d88035f120887a483456ef258bdcR47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	idx : int to off : int in method private doStore(buf ByteBuffer, off int, pageIdx int) : void in class org.apache.ignite.internal.processors.cache.database.tree.reuse.io.ReuseInnerIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-23d69f1d5d4dbececa2731afb86f2c66L67">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-23d69f1d5d4dbececa2731afb86f2c66R67">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -482,41 +517,6 @@
                                 <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row IndexItem) : void in class org.apache.ignite.internal.processors.cache.database.MetadataStorage.MetaStoreLeafIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cL435">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cR441">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row IndexItem) : void in class org.apache.ignite.internal.processors.cache.database.MetadataStorage.MetaStoreInnerIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cL393">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-81392f971e4f449614bedc34a54e999cR400">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row SearchRow) : void in class org.apache.ignite.internal.processors.query.h2.database.io.H2InnerIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-9d43ef6f73bb48a53ca37adfaaf5f7b8L47">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-9d43ef6f73bb48a53ca37adfaaf5f7b8R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row Long) : void in class org.apache.ignite.internal.processors.database.BPlusTreeSelfTest.LongInnerIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-44b075ffd2b72e5e9336c756563db0e3L632">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-44b075ffd2b72e5e9336c756563db0e3R632">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	idx : int to off : int in method public storeByOffset(buf ByteBuffer, off int, row FreeItem) : void in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeInnerIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-3e74d88035f120887a483456ef258bdcL47">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-3e74d88035f120887a483456ef258bdcR47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	idx : int to off : int in method private doStore(buf ByteBuffer, off int, pageIdx int) : void in class org.apache.ignite.internal.processors.cache.database.tree.reuse.io.ReuseInnerIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-23d69f1d5d4dbececa2731afb86f2c66L67">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5bbb719282826fca1d091de4c61ba02710d7f56f?diff=split#diff-23d69f1d5d4dbececa2731afb86f2c66R67">To</a></td>
                             </tr>
                             
                             </tbody>

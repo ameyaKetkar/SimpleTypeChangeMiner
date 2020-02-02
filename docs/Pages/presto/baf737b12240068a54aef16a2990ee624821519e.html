@@ -398,16 +398,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private splitBatchSize : int from class com.facebook.presto.execution.SqlStageExecution to private splitBatchSize : int from class com.facebook.presto.execution.scheduler.SourcePartitionedScheduler</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L96">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-f6af3926dd546b7646811e76906170f6R43">To</a></td>
+                                <td><i>Move Attribute	private nodeSelector : NodeSelector from class com.facebook.presto.execution.SqlStageExecution to private nodeSelector : NodeSelector from class com.facebook.presto.execution.scheduler.SplitPlacementPolicy</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L110">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceR30">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private nodeSelector : NodeSelector from class com.facebook.presto.execution.SqlStageExecution to private nodeSelector : NodeSelector from class com.facebook.presto.execution.scheduler.SplitPlacementPolicy</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L110">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceR30">To</a></td>
+                                <td><i>Move Attribute	private splitBatchSize : int from class com.facebook.presto.execution.SqlStageExecution to private splitBatchSize : int from class com.facebook.presto.execution.scheduler.SourcePartitionedScheduler</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L96">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-f6af3926dd546b7646811e76906170f6R43">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -477,13 +477,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	tasks : ConcurrentMap&lt;TaskId,RemoteTask&gt; to tasks : Map&lt;Node,Set&lt;RemoteTask&gt;&gt; in class com.facebook.presto.execution.SqlStageExecution</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L91">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522R70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	stageChildren : Map&lt;StageId,Set&lt;StageId&gt;&gt; to stageSchedulers : Map&lt;StageId,StageScheduler&gt; in class com.facebook.presto.execution.scheduler.SqlQueryScheduler</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-5cffc1bea86a011bf263a6d6a736c93fL57">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-5cffc1bea86a011bf263a6d6a736c93fR74">To</a></td>
@@ -494,6 +487,13 @@
                                 <td><i>Change Attribute Type	exchangeLocations : AtomicReference&lt;Multimap&lt;PlanNodeId,URI&gt;&gt; to exchangeLocations : Multimap&lt;PlanNodeId,URI&gt; in class com.facebook.presto.execution.SqlStageExecution</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L118">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	tasks : ConcurrentMap&lt;TaskId,RemoteTask&gt; to tasks : Map&lt;Node,Set&lt;RemoteTask&gt;&gt; in class com.facebook.presto.execution.SqlStageExecution</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L91">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/baf737b12240068a54aef16a2990ee624821519e?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522R70">To</a></td>
                             </tr>
                             
                             </tbody>

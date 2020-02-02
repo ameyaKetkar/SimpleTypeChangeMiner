@@ -284,13 +284,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getTableOperation() : TableOperation renamed to public getQueryOperation() : QueryOperation in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L48">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getTableOperation() : TableOperation renamed to public getQueryOperation() : QueryOperation in class org.apache.flink.table.expressions.TableReferenceExpression</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddL49">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddR49">To</a></td>
@@ -303,6 +296,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-1154f7983ed50b75d74cbda916a82246R87">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getTableOperation() : TableOperation renamed to public getQueryOperation() : QueryOperation in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L48">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R48">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -313,6 +313,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-101" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	visitor : TableOperationVisitor&lt;T&gt; to visitor : QueryOperationVisitor&lt;T&gt; in method public accept(visitor QueryOperationVisitor&lt;T&gt;) : T in class org.apache.flink.table.operations.SortQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-3993b91948e973c3caca20431361548aL91">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-058842021c2042f8034143f2e482ca75R92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tableSourceTable : TableSourceTableOperation&lt;U&gt; to tableSourceTable : TableSourceQueryOperation&lt;U&gt; in method public visitTableSourceTable(tableSourceTable TableSourceQueryOperation&lt;U&gt;) : T in class org.apache.flink.table.operations.QueryOperationVisitor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a34b737d821d7a05f11ce0ce7774cf74L50">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-43647c5fb119e02ad19ce856cbb771d3R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	visitor : TableOperationVisitor&lt;T&gt; to visitor : QueryOperationVisitor&lt;T&gt; in method public accept(visitor QueryOperationVisitor&lt;T&gt;) : T in class org.apache.flink.table.operations.SetQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a2d52aa163974eb47ed62df6f2fc7a85L93">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-17b00021497a5bf7ca4c923e4843adb2R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tableOperations : TableOperation[] to queryOperations : QueryOperation[] in method private ExpressionResolverBuilder(queryOperations QueryOperation[], tableCatalog TableReferenceLookup, functionCatalog FunctionDefinitionCatalog) in class org.apache.flink.table.expressions.ExpressionResolver.ExpressionResolverBuilder</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2019d8795a5d3409b68dd8e6b017a2d7L315">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2019d8795a5d3409b68dd8e6b017a2d7R316">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	operationTree : TableOperation to operationTree : QueryOperation in method public create(operationTree QueryOperation, timeAttribute Expression, primaryKey Expression) : TemporalTableFunction in class org.apache.flink.table.functions.TemporalTableFunctionImpl</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-22789d7d95edfe7f1d4991a2de60cf4dL79">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-22789d7d95edfe7f1d4991a2de60cf4dR80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	left : TableOperation to left : QueryOperation in method private validateSetOperation(operationType SetQueryOperationType, left QueryOperation, right QueryOperation) : void in class org.apache.flink.table.operations.SetOperationFactory</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a03ab14f3ca14b5f808e09b66ffdcd5cL63">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a03ab14f3ca14b5f808e09b66ffdcd5cR65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	child : TableOperation to child : QueryOperation in method public AggregateQueryOperation(groupingExpressions List&lt;Expression&gt;, aggregateExpressions List&lt;Expression&gt;, child QueryOperation, tableSchema TableSchema) in class org.apache.flink.table.operations.AggregateQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-24fd714579b28a346e87a10837f4f638L42">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-15cc16c8629aa5f744f0ef0a4b86a4d1R45">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -972,55 +1021,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-4caab644d0d003767f7b032d0033e7d2R129">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	visitor : TableOperationVisitor&lt;T&gt; to visitor : QueryOperationVisitor&lt;T&gt; in method public accept(visitor QueryOperationVisitor&lt;T&gt;) : T in class org.apache.flink.table.operations.SortQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-3993b91948e973c3caca20431361548aL91">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-058842021c2042f8034143f2e482ca75R92">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tableSourceTable : TableSourceTableOperation&lt;U&gt; to tableSourceTable : TableSourceQueryOperation&lt;U&gt; in method public visitTableSourceTable(tableSourceTable TableSourceQueryOperation&lt;U&gt;) : T in class org.apache.flink.table.operations.QueryOperationVisitor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a34b737d821d7a05f11ce0ce7774cf74L50">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-43647c5fb119e02ad19ce856cbb771d3R50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	visitor : TableOperationVisitor&lt;T&gt; to visitor : QueryOperationVisitor&lt;T&gt; in method public accept(visitor QueryOperationVisitor&lt;T&gt;) : T in class org.apache.flink.table.operations.SetQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a2d52aa163974eb47ed62df6f2fc7a85L93">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-17b00021497a5bf7ca4c923e4843adb2R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tableOperations : TableOperation[] to queryOperations : QueryOperation[] in method private ExpressionResolverBuilder(queryOperations QueryOperation[], tableCatalog TableReferenceLookup, functionCatalog FunctionDefinitionCatalog) in class org.apache.flink.table.expressions.ExpressionResolver.ExpressionResolverBuilder</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2019d8795a5d3409b68dd8e6b017a2d7L315">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2019d8795a5d3409b68dd8e6b017a2d7R316">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operationTree : TableOperation to operationTree : QueryOperation in method public create(operationTree QueryOperation, timeAttribute Expression, primaryKey Expression) : TemporalTableFunction in class org.apache.flink.table.functions.TemporalTableFunctionImpl</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-22789d7d95edfe7f1d4991a2de60cf4dL79">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-22789d7d95edfe7f1d4991a2de60cf4dR80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	left : TableOperation to left : QueryOperation in method private validateSetOperation(operationType SetQueryOperationType, left QueryOperation, right QueryOperation) : void in class org.apache.flink.table.operations.SetOperationFactory</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a03ab14f3ca14b5f808e09b66ffdcd5cL63">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a03ab14f3ca14b5f808e09b66ffdcd5cR65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	child : TableOperation to child : QueryOperation in method public AggregateQueryOperation(groupingExpressions List&lt;Expression&gt;, aggregateExpressions List&lt;Expression&gt;, child QueryOperation, tableSchema TableSchema) in class org.apache.flink.table.operations.AggregateQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-24fd714579b28a346e87a10837f4f638L42">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-15cc16c8629aa5f744f0ef0a4b86a4d1R45">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1034,16 +1034,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	unionTableOperation : SetTableOperation to unionQueryOperation : SetQueryOperation in method public testSummaryString() : void in class org.apache.flink.table.operations.QueryOperationTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7102ec19a5547cbc42d13c5679af9443L51">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2398be4de85c479c99566abe340ce4cfR51">To</a></td>
+                                <td><i>Rename Variable	distinctTableOperation : DistinctTableOperation to distinctQueryOperation : DistinctQueryOperation in method public testWindowAggregationSummaryString() : void in class org.apache.flink.table.operations.QueryOperationTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7102ec19a5547cbc42d13c5679af9443L81">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2398be4de85c479c99566abe340ce4cfR81">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	distinctTableOperation : DistinctTableOperation to distinctQueryOperation : DistinctQueryOperation in method public testWindowAggregationSummaryString() : void in class org.apache.flink.table.operations.QueryOperationTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7102ec19a5547cbc42d13c5679af9443L81">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2398be4de85c479c99566abe340ce4cfR81">To</a></td>
+                                <td><i>Rename Variable	unionTableOperation : SetTableOperation to unionQueryOperation : SetQueryOperation in method public testSummaryString() : void in class org.apache.flink.table.operations.QueryOperationTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7102ec19a5547cbc42d13c5679af9443L51">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2398be4de85c479c99566abe340ce4cfR51">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1322,55 +1322,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.operations.TableOperation renamed to org.apache.flink.table.operations.QueryOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.operations.TableOperationVisitor renamed to org.apache.flink.table.operations.QueryOperationVisitor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.operations.ProjectTableOperation renamed to org.apache.flink.table.operations.ProjectQueryOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.plan.TableOperationConverter renamed to org.apache.flink.table.plan.QueryOperationConverter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.operations.AggregateTableOperation renamed to org.apache.flink.table.operations.AggregateQueryOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.operations.DataSetTableOperation renamed to org.apache.flink.table.operations.DataSetQueryOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.table.operations.FilterTableOperation renamed to org.apache.flink.table.operations.FilterQueryOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.flink.table.operations.TableOperationTest renamed to org.apache.flink.table.operations.QueryOperationTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -1467,6 +1418,55 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.operations.TableOperation renamed to org.apache.flink.table.operations.QueryOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.operations.TableOperationVisitor renamed to org.apache.flink.table.operations.QueryOperationVisitor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.operations.ProjectTableOperation renamed to org.apache.flink.table.operations.ProjectQueryOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.plan.TableOperationConverter renamed to org.apache.flink.table.plan.QueryOperationConverter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.operations.AggregateTableOperation renamed to org.apache.flink.table.operations.AggregateQueryOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.operations.DataSetTableOperation renamed to org.apache.flink.table.operations.DataSetQueryOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.table.operations.FilterTableOperation renamed to org.apache.flink.table.operations.FilterQueryOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1498,13 +1498,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.expressions.TableReferenceExpression</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddL38">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddR38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L32">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R32">To</a></td>
@@ -1517,6 +1510,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2019d8795a5d3409b68dd8e6b017a2d7R308">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.expressions.TableReferenceExpression</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddL38">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddR38">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1527,6 +1527,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	distinctTableOperation : DistinctTableOperation to distinctQueryOperation : DistinctQueryOperation in method public testWindowAggregationSummaryString() : void in class org.apache.flink.table.operations.QueryOperationTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7102ec19a5547cbc42d13c5679af9443L65">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2398be4de85c479c99566abe340ce4cfR81">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1570,13 +1577,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-bf6ea134b3807455c80659a3cc00b817R95">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	distinctTableOperation : DistinctTableOperation to distinctQueryOperation : DistinctQueryOperation in method public testWindowAggregationSummaryString() : void in class org.apache.flink.table.operations.QueryOperationTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7102ec19a5547cbc42d13c5679af9443L65">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-2398be4de85c479c99566abe340ce4cfR81">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1605,48 +1605,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	right : TableOperation to right : QueryOperation in class org.apache.flink.table.operations.JoinQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7b8d0b14bc276137f4aed1d16a803adaL37">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-055e9ee5c7e1183f86707b5c9ea9b0c3R37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L32">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R32">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	child : TableOperation to child : QueryOperation in class org.apache.flink.table.operations.AggregateQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-24fd714579b28a346e87a10837f4f638L39">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-15cc16c8629aa5f744f0ef0a4b86a4d1R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	child : TableOperation to child : QueryOperation in class org.apache.flink.table.operations.WindowAggregateQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-d63f605f3fec4b488a3b6d836c4ebc56L53">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-79c18006601c61f7b69e6a372f7a56deR53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	type : SetTableOperationType to type : SetQueryOperationType in class org.apache.flink.table.operations.SetQueryOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a2d52aa163974eb47ed62df6f2fc7a85L39">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-17b00021497a5bf7ca4c923e4843adb2R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.expressions.TableReferenceExpression</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddL38">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddR38">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1718,6 +1676,48 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-670a0d1df9474daaa6fdc14f112a090cR38">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	right : TableOperation to right : QueryOperation in class org.apache.flink.table.operations.JoinQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-7b8d0b14bc276137f4aed1d16a803adaL37">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-055e9ee5c7e1183f86707b5c9ea9b0c3R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L32">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R32">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	child : TableOperation to child : QueryOperation in class org.apache.flink.table.operations.AggregateQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-24fd714579b28a346e87a10837f4f638L39">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-15cc16c8629aa5f744f0ef0a4b86a4d1R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	child : TableOperation to child : QueryOperation in class org.apache.flink.table.operations.WindowAggregateQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-d63f605f3fec4b488a3b6d836c4ebc56L53">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-79c18006601c61f7b69e6a372f7a56deR53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	type : SetTableOperationType to type : SetQueryOperationType in class org.apache.flink.table.operations.SetQueryOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a2d52aa163974eb47ed62df6f2fc7a85L39">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-17b00021497a5bf7ca4c923e4843adb2R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	tableOperation : TableOperation to queryOperation : QueryOperation in class org.apache.flink.table.expressions.TableReferenceExpression</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddL38">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-aab938949f8c07acfdbf7a16c01057ddR38">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1728,6 +1728,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	tableOperation : TableOperation to queryOperation : QueryOperation in method public QueryOperationCatalogView(queryOperation QueryOperation, comment String) in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L38">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R38">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1762,13 +1769,6 @@
                                 <td><i>Rename Parameter	tableOperations : List&lt;TableOperation&gt; to queryOperations : List&lt;QueryOperation&gt; in method private prepareFieldReferences(queryOperations List&lt;QueryOperation&gt;) : List&lt;Map&lt;String,FieldReferenceExpression&gt;&gt; in class org.apache.flink.table.expressions.lookups.FieldReferenceLookup</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-6b6d1c36c7b9557f883854c36337bdfeL82">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-6b6d1c36c7b9557f883854c36337bdfeR82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	tableOperation : TableOperation to queryOperation : QueryOperation in method public QueryOperationCatalogView(queryOperation QueryOperation, comment String) in class org.apache.flink.table.catalog.QueryOperationCatalogView</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-a54d9d7dda3bd6354e6f49e354b43820L38">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3e8b083c7d2587b7acd1792ad0eee2357e8ccc63?diff=split#diff-e634475c45d85145982063c3044f0d81R38">To</a></td>
                             </tr>
                             
                             </tbody>

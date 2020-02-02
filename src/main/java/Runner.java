@@ -80,6 +80,7 @@ public class Runner {
     public static Date epochStart;
     public static Path outputFolder;
     public static ReadWriteAt readWriteProtos;
+    public static ReadWriteAt readWriteCleanProtos;
     public static String mavenHome;
 
     static{
@@ -96,6 +97,7 @@ public class Runner {
             epochStart = new SimpleDateFormat("YYYY-mm-dd").parse(prop.getProperty("epoch"));
             outputFolder = Paths.get(".").toAbsolutePath().resolve(prop.getProperty("output"));
             readWriteProtos = new ReadWriteAt(outputFolder.resolve("ProtosOut"));
+            readWriteCleanProtos = new ReadWriteAt(outputFolder.resolve("CleanProtos"));
             mavenHome = prop.getProperty("mavenHome");
         } catch (IOException e) {
             e.printStackTrace();
@@ -182,7 +184,7 @@ public class Runner {
 
 
 
-    private static Project getProject(Tuple2<String, String> pr, long n){
+    public static Project getProject(Tuple2<String, String> pr, long n){
         return Project.newBuilder().setName(pr._1()).setUrl(pr._2()).setTotalCommits(n).build();
     }
 

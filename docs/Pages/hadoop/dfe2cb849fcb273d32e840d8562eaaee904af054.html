@@ -356,6 +356,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	increaseRequests : List&lt;ContainerResourceIncreaseRequest&gt; to increaseRequests : List&lt;ContainerResourceChangeRequest&gt; in method public abstract setIncreaseRequests(increaseRequests List&lt;ContainerResourceChangeRequest&gt;) : void in class org.apache.hadoop.yarn.api.protocolrecords.AllocateRequest</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7L194">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7R215">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	increasedContainers : List&lt;ContainerResourceIncrease&gt; to containers : List&lt;Container&gt; in method public setIncreasedContainers(containers List&lt;Container&gt;) : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L341">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R267">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	increasedContainers : List&lt;ContainerResourceIncrease&gt; to increasedContainers : List&lt;Container&gt; in method public newInstance(responseId int, completedContainers List&lt;ContainerStatus&gt;, allocatedContainers List&lt;Container&gt;, updatedNodes List&lt;NodeReport&gt;, availResources Resource, command AMCommand, numClusterNodes int, preempt PreemptionMessage, nmTokens List&lt;NMToken&gt;, increasedContainers List&lt;Container&gt;, decreasedContainers List&lt;Container&gt;) : AllocateResponse in class org.apache.hadoop.yarn.api.protocolrecords.AllocateResponse</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-b3e507616648483a3adb111ba0cc59deL90">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-b3e507616648483a3adb111ba0cc59deR103">To</a></td>
@@ -424,20 +438,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-b3e507616648483a3adb111ba0cc59deR286">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	increaseRequests : List&lt;ContainerResourceIncreaseRequest&gt; to increaseRequests : List&lt;ContainerResourceChangeRequest&gt; in method public abstract setIncreaseRequests(increaseRequests List&lt;ContainerResourceChangeRequest&gt;) : void in class org.apache.hadoop.yarn.api.protocolrecords.AllocateRequest</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7L194">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7R215">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	increasedContainers : List&lt;ContainerResourceIncrease&gt; to containers : List&lt;Container&gt; in method public setIncreasedContainers(containers List&lt;Container&gt;) : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L341">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R267">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -448,6 +448,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private convertFromProtoFormat(p ResourceProto) : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceIncreasePBImpl to private convertFromProtoFormat(p ResourceProto) : ResourcePBImpl from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerStatusPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-47d5b491e941cab4cf6d5b0473e67fbbL128">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R213">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public getCapability() : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceIncreaseRequestPBImpl to public getCapability() : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerStatusPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-7e72426ad90e5ccd547701b9147a4cabL79">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R174">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private convertFromProtoFormat(p ResourceProto) : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceIncreaseRequestPBImpl to private convertFromProtoFormat(p ResourceProto) : ResourcePBImpl from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerStatusPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-7e72426ad90e5ccd547701b9147a4cabL109">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R213">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -484,27 +505,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R209">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private convertFromProtoFormat(p ResourceProto) : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceIncreasePBImpl to private convertFromProtoFormat(p ResourceProto) : ResourcePBImpl from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerStatusPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-47d5b491e941cab4cf6d5b0473e67fbbL128">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R213">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public getCapability() : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceIncreaseRequestPBImpl to public getCapability() : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerStatusPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-7e72426ad90e5ccd547701b9147a4cabL79">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R174">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private convertFromProtoFormat(p ResourceProto) : Resource from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceIncreaseRequestPBImpl to private convertFromProtoFormat(p ResourceProto) : ResourcePBImpl from class org.apache.hadoop.yarn.api.records.impl.pb.ContainerStatusPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-7e72426ad90e5ccd547701b9147a4cabL109">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-93ccd34aa294248c4333ba1e5a9a04a5R213">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -515,6 +515,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	List&lt;ContainerResourceIncreaseRequest&gt; to List&lt;ContainerResourceChangeRequest&gt; in method public abstract getIncreaseRequests() : List&lt;ContainerResourceChangeRequest&gt; in class org.apache.hadoop.yarn.api.protocolrecords.AllocateRequest</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7L186">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7R199">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	List&lt;ContainerResourceDecrease&gt; to List&lt;Container&gt; in method public getDecreasedContainers() : List&lt;Container&gt; in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L350">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R274">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ContainerResourceDecreaseProto to ContainerResourceChangeRequestProto in method public getProto() : ContainerResourceChangeRequestProto in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceChangeRequestPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-9a806948b4809793b11b412ece91b199L47">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-2ace239537034229eda96b4d6d27ad36R50">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -572,27 +593,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9R446">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	List&lt;ContainerResourceIncreaseRequest&gt; to List&lt;ContainerResourceChangeRequest&gt; in method public abstract getIncreaseRequests() : List&lt;ContainerResourceChangeRequest&gt; in class org.apache.hadoop.yarn.api.protocolrecords.AllocateRequest</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7L186">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-fd7cb5c4145a3994d116d105db88f2f7R199">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	List&lt;ContainerResourceDecrease&gt; to List&lt;Container&gt; in method public getDecreasedContainers() : List&lt;Container&gt; in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L350">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R274">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ContainerResourceDecreaseProto to ContainerResourceChangeRequestProto in method public getProto() : ContainerResourceChangeRequestProto in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceChangeRequestPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-9a806948b4809793b11b412ece91b199L47">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-2ace239537034229eda96b4d6d27ad36R50">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -628,6 +628,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	p : ContainerResourceDecreaseProtoOrBuilder to p : ContainerResourceChangeRequestProtoOrBuilder in method public getCapability() : Resource in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceChangeRequestPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-9a806948b4809793b11b412ece91b199L75">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-2ace239537034229eda96b4d6d27ad36R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	iterable : Iterable&lt;ContainerResourceDecreaseProto&gt; to iterable : Iterable&lt;ContainerProto&gt; in method private mergeLocalToBuilder() : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L118">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R150">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	c : ContainerResourceIncreaseRequestProto to c : ContainerResourceChangeRequestProto in method private initIncreaseRequests() : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateRequestPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9L250">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9R280">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	iterable : Iterable&lt;ContainerResourceIncreaseRequestProto&gt; to iterable : Iterable&lt;ContainerResourceChangeRequestProto&gt; in method private addIncreaseRequestsToProto() : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateRequestPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9L264">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9R305">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ctx : ContainerResourceDecrease to ctx : ContainerResourceChangeRequest in method public equals(other Object) : boolean in class org.apache.hadoop.yarn.api.records.ContainerResourceChangeRequest</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-0a4d2d1c5f68a6805c3ffd8cfde0a2d7L56">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-f3a2e6975ec9967daabde558beaa05beR97">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -692,41 +727,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R386">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	p : ContainerResourceDecreaseProtoOrBuilder to p : ContainerResourceChangeRequestProtoOrBuilder in method public getCapability() : Resource in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceChangeRequestPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-9a806948b4809793b11b412ece91b199L75">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-2ace239537034229eda96b4d6d27ad36R81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	iterable : Iterable&lt;ContainerResourceDecreaseProto&gt; to iterable : Iterable&lt;ContainerProto&gt; in method private mergeLocalToBuilder() : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L118">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	c : ContainerResourceIncreaseRequestProto to c : ContainerResourceChangeRequestProto in method private initIncreaseRequests() : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateRequestPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9L250">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9R280">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	iterable : Iterable&lt;ContainerResourceIncreaseRequestProto&gt; to iterable : Iterable&lt;ContainerResourceChangeRequestProto&gt; in method private addIncreaseRequestsToProto() : void in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateRequestPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9L264">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9R305">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	ctx : ContainerResourceDecrease to ctx : ContainerResourceChangeRequest in method public equals(other Object) : boolean in class org.apache.hadoop.yarn.api.records.ContainerResourceChangeRequest</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-0a4d2d1c5f68a6805c3ffd8cfde0a2d7L56">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-f3a2e6975ec9967daabde558beaa05beR97">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -737,6 +737,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	increasedContainers : List&lt;ContainerResourceIncrease&gt; to increasedContainers : List&lt;Container&gt; in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L75">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	builder : ContainerResourceDecreaseProto.Builder to builder : ContainerResourceChangeRequestProto.Builder in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceChangeRequestPBImpl</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-9a806948b4809793b11b412ece91b199L32">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-2ace239537034229eda96b4d6d27ad36R34">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -757,20 +771,6 @@
                                 <td><i>Change Attribute Type	increaseRequests : List&lt;ContainerResourceIncreaseRequest&gt; to increaseRequests : List&lt;ContainerResourceChangeRequest&gt; in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateRequestPBImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9L55">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-182e0920a0026b8c14969545692976f9R55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	increasedContainers : List&lt;ContainerResourceIncrease&gt; to increasedContainers : List&lt;Container&gt; in class org.apache.hadoop.yarn.api.protocolrecords.impl.pb.AllocateResponsePBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785L75">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-805421f53073aefec8618902f8eb9785R69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	builder : ContainerResourceDecreaseProto.Builder to builder : ContainerResourceChangeRequestProto.Builder in class org.apache.hadoop.yarn.api.records.impl.pb.ContainerResourceChangeRequestPBImpl</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-9a806948b4809793b11b412ece91b199L32">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/dfe2cb849fcb273d32e840d8562eaaee904af054?diff=split#diff-2ace239537034229eda96b4d6d27ad36R34">To</a></td>
                             </tr>
                             
                             </tbody>

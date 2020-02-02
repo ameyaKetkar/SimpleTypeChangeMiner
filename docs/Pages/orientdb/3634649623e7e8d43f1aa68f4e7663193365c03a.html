@@ -218,13 +218,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	public totalRequests : int from class com.orientechnologies.orient.server.network.protocol.ONetworkProtocolData to public totalRequests : int from class com.orientechnologies.orient.server.OClientConnectionStats</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-51d61b873c90ac861b22d42365e50012L31">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-a6cc3e867e5430109b0c962f156a4f90R8">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	public lastCommandExecutionTime : long from class com.orientechnologies.orient.server.network.protocol.ONetworkProtocolData to public lastCommandExecutionTime : long from class com.orientechnologies.orient.server.OClientConnectionStats</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-51d61b873c90ac861b22d42365e50012L36">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-a6cc3e867e5430109b0c962f156a4f90R11">To</a></td>
@@ -258,6 +251,13 @@
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-a6cc3e867e5430109b0c962f156a4f90R10">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public totalRequests : int from class com.orientechnologies.orient.server.network.protocol.ONetworkProtocolData to public totalRequests : int from class com.orientechnologies.orient.server.OClientConnectionStats</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-51d61b873c90ac861b22d42365e50012L31">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/3634649623e7e8d43f1aa68f4e7663193365c03a?diff=split#diff-a6cc3e867e5430109b0c962f156a4f90R8">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -289,14 +289,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public setDatabase(database ODatabaseDocumentTx) : void extracted from public close() : void in class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><i>Extract Method	public getId() : int extracted from public hashCode() : int in class com.orientechnologies.orient.server.OClientConnection</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public getId() : int extracted from public hashCode() : int in class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><i>Extract Method	public setDatabase(database ODatabaseDocumentTx) : void extracted from public close() : void in class com.orientechnologies.orient.server.OClientConnection</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -311,6 +311,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public getData() : ONetworkProtocolData extracted from private solveSession() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public setTokenBytes(tokenBytes byte[]) : void extracted from public connect(iProtocol ONetworkProtocol, connection OClientConnection, tokenBytes byte[], handler OTokenHandler) : OClientConnection in class com.orientechnologies.orient.server.OClientConnectionManager &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public setTokenBytes(tokenBytes byte[]) : void extracted from private solveSession() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public setDatabase(database ODatabaseDocumentTx) : void extracted from protected releaseDatabase() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public setProtocol(protocol ONetworkProtocol) : void extracted from public getConnection(iChannelId int, protocol ONetworkProtocol) : OClientConnection in class com.orientechnologies.orient.server.OClientConnectionManager &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public setServerUser(serverUser OServerUserConfiguration) : void extracted from protected connect() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -364,48 +406,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public setTokenBytes(tokenBytes byte[]) : void extracted from public reConnect(iProtocol ONetworkProtocol, tokenBytes byte[], token OToken) : OClientConnection in class com.orientechnologies.orient.server.OClientConnectionManager &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public getData() : ONetworkProtocolData extracted from private solveSession() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public setTokenBytes(tokenBytes byte[]) : void extracted from public connect(iProtocol ONetworkProtocol, connection OClientConnection, tokenBytes byte[], handler OTokenHandler) : OClientConnection in class com.orientechnologies.orient.server.OClientConnectionManager &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public setTokenBytes(tokenBytes byte[]) : void extracted from private solveSession() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public setDatabase(database ODatabaseDocumentTx) : void extracted from protected releaseDatabase() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public setProtocol(protocol ONetworkProtocol) : void extracted from public getConnection(iChannelId int, protocol ONetworkProtocol) : OClientConnection in class com.orientechnologies.orient.server.OClientConnectionManager &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public setServerUser(serverUser OServerUserConfiguration) : void extracted from protected connect() : void in class com.orientechnologies.orient.server.network.protocol.binary.ONetworkProtocolBinary &amp; moved to class com.orientechnologies.orient.server.OClientConnection</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

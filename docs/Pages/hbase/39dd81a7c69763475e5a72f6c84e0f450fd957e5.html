@@ -296,16 +296,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	state : PeerModificationState to state : TState in method protected rollbackState(env MasterProcedureEnv, state TState) : void in class org.apache.hadoop.hbase.master.replication.AbstractPeerProcedure</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-229182073f9394318aed5b9601719245L330">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3dfe048fab1ab3438dfaf636408b8de9R99">To</a></td>
+                                <td><i>Change Parameter Type	procedure : ModifyPeerProcedure to procedure : AbstractPeerProcedure&lt;?&gt; in method private executePeerProcedure(procedure AbstractPeerProcedure&lt;?&gt;) : long in class org.apache.hadoop.hbase.master.HMaster</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-910fe86f307ab33e4e946c666e739972L3496">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-910fe86f307ab33e4e946c666e739972R3496">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	procedure : ModifyPeerProcedure to procedure : AbstractPeerProcedure&lt;?&gt; in method private executePeerProcedure(procedure AbstractPeerProcedure&lt;?&gt;) : long in class org.apache.hadoop.hbase.master.HMaster</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-910fe86f307ab33e4e946c666e739972L3496">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-910fe86f307ab33e4e946c666e739972R3496">To</a></td>
+                                <td><i>Change Parameter Type	state : PeerModificationState to state : TState in method protected rollbackState(env MasterProcedureEnv, state TState) : void in class org.apache.hadoop.hbase.master.replication.AbstractPeerProcedure</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-229182073f9394318aed5b9601719245L330">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3dfe048fab1ab3438dfaf636408b8de9R99">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -411,6 +411,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	protected postPeerModification(env MasterProcedureEnv) : void renamed to private postTransit(env MasterProcedureEnv) : void in class org.apache.hadoop.hbase.master.replication.TransitPeerSyncReplicationStateProcedure</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aL77">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aR112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	protected prePeerModification(env MasterProcedureEnv) : void renamed to private preTransit(env MasterProcedureEnv) : void in class org.apache.hadoop.hbase.master.replication.TransitPeerSyncReplicationStateProcedure</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aL62">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aR104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setPeerSyncReplicationState(peerId String, state SyncReplicationState) : void renamed to public setPeerNewSyncReplicationState(peerId String, state SyncReplicationState) : void in class org.apache.hadoop.hbase.replication.ZKReplicationPeerStorage</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-9f85d96dcf4d4ea8e64188fbbb449d3fL183">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-9f85d96dcf4d4ea8e64188fbbb449d3fR193">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public peerRemoved(peerId String) : void renamed to public peerSyncReplicationStateChange(peerId String, from SyncReplicationState, to SyncReplicationState, stage int) : void in class org.apache.hadoop.hbase.replication.regionserver.PeerActionListener</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-93ad9d1841fff4867866f04a4d5329c6L31">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-93ad9d1841fff4867866f04a4d5329c6R33">To</a></td>
@@ -435,27 +456,6 @@
                                 <td><i>Rename Method	public setPeerSyncReplicationState(peerId String, state SyncReplicationState) : void renamed to public setPeerNewSyncReplicationState(peerId String, state SyncReplicationState) : void in class org.apache.hadoop.hbase.replication.ReplicationPeerStorage</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-a4382d2d6e8aa8a318ff1bde9931d43cL74">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-a4382d2d6e8aa8a318ff1bde9931d43cR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	protected postPeerModification(env MasterProcedureEnv) : void renamed to private postTransit(env MasterProcedureEnv) : void in class org.apache.hadoop.hbase.master.replication.TransitPeerSyncReplicationStateProcedure</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aL77">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aR112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	protected prePeerModification(env MasterProcedureEnv) : void renamed to private preTransit(env MasterProcedureEnv) : void in class org.apache.hadoop.hbase.master.replication.TransitPeerSyncReplicationStateProcedure</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aL62">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aR104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setPeerSyncReplicationState(peerId String, state SyncReplicationState) : void renamed to public setPeerNewSyncReplicationState(peerId String, state SyncReplicationState) : void in class org.apache.hadoop.hbase.replication.ZKReplicationPeerStorage</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-9f85d96dcf4d4ea8e64188fbbb449d3fL183">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-9f85d96dcf4d4ea8e64188fbbb449d3fR193">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -514,13 +514,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	void to ReplicationPeerImpl in method public removePeer(peerId String) : ReplicationPeerImpl in class org.apache.hadoop.hbase.replication.ReplicationPeers</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2aa3d5f711d5291422826f8855e9a0f6L83">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2aa3d5f711d5291422826f8855e9a0f6R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	void to List&lt;RegionInfo&gt; in method private getRegionsToReopen(env MasterProcedureEnv) : List&lt;RegionInfo&gt; in class org.apache.hadoop.hbase.master.replication.TransitPeerSyncReplicationStateProcedure</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aL72">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-3c34d9f927c7181d4ca4e3b38c64768aR123">To</a></td>
@@ -531,6 +524,13 @@
                                 <td><i>Change Return Type	void to SyncReplicationState in method public preTransitPeerSyncReplicationState(peerId String, state SyncReplicationState) : SyncReplicationState in class org.apache.hadoop.hbase.master.replication.ReplicationPeerManager</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-7bbf526f711a4b4eda4530e480cce0e7L183">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-7bbf526f711a4b4eda4530e480cce0e7R181">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to ReplicationPeerImpl in method public removePeer(peerId String) : ReplicationPeerImpl in class org.apache.hadoop.hbase.replication.ReplicationPeers</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2aa3d5f711d5291422826f8855e9a0f6L83">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2aa3d5f711d5291422826f8855e9a0f6R83">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -596,16 +596,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	clusterState : SyncReplicationState to state : SyncReplicationState in method public preTransitReplicationPeerSyncReplicationState(peerId String, state SyncReplicationState) : void in class org.apache.hadoop.hbase.master.MasterCoprocessorHost</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2666eb943a1b204985aac371603429c1L1611">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2666eb943a1b204985aac371603429c1R1611">To</a></td>
+                                <td><i>Rename Parameter	state : SyncReplicationState to newState : SyncReplicationState in method public transitPeerSyncReplicationState(peerId String, newState SyncReplicationState) : void in class org.apache.hadoop.hbase.master.replication.ReplicationPeerManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-7bbf526f711a4b4eda4530e480cce0e7L272">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-7bbf526f711a4b4eda4530e480cce0e7R279">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	state : SyncReplicationState to newState : SyncReplicationState in method public transitPeerSyncReplicationState(peerId String, newState SyncReplicationState) : void in class org.apache.hadoop.hbase.master.replication.ReplicationPeerManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-7bbf526f711a4b4eda4530e480cce0e7L272">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-7bbf526f711a4b4eda4530e480cce0e7R279">To</a></td>
+                                <td><i>Rename Parameter	clusterState : SyncReplicationState to state : SyncReplicationState in method public preTransitReplicationPeerSyncReplicationState(peerId String, state SyncReplicationState) : void in class org.apache.hadoop.hbase.master.MasterCoprocessorHost</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2666eb943a1b204985aac371603429c1L1611">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/39dd81a7c69763475e5a72f6c84e0f450fd957e5?diff=split#diff-2666eb943a1b204985aac371603429c1R1611">To</a></td>
                             </tr>
                             
                             </tbody>

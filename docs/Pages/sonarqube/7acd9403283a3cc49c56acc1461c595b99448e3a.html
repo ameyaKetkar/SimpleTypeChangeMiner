@@ -154,6 +154,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	authorizations : Collection&lt;PermissionIndexerDao.Dto&gt; to authorizations : Collection&lt;IndexPermissions&gt; in method private index(authorizations Collection&lt;IndexPermissions&gt;, scopes Stream&lt;AuthorizationScope&gt;, bulkSize Size) : void in class org.sonar.server.permission.index.PermissionIndexer</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-073a300c4da66a51cc1ea563498a4e0fL128">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-8b6a8f970d81e49fb6fc124eccea2ee5R127">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	dto : PermissionIndexerDao.Dto to dto : IndexPermissions in method private newIndexRequest(dto IndexPermissions, indexType IndexType) : IndexRequest in class org.sonar.server.permission.index.PermissionIndexer</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-073a300c4da66a51cc1ea563498a4e0fL183">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-8b6a8f970d81e49fb6fc124eccea2ee5R182">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in method public ProjectMeasuresIndex(client EsClient, authorizationTypeSupport WebAuthorizationTypeSupport, system2 System2) in class org.sonar.server.measure.index.ProjectMeasuresIndex</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-8975229f47a4a691da332a469ab161f3L161">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-8f7381cba5a56dae2f9134569ea9808cR159">To</a></td>
@@ -222,20 +236,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-b2ea9227eac1b1126579ded1ea46eb06R77">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	authorizations : Collection&lt;PermissionIndexerDao.Dto&gt; to authorizations : Collection&lt;IndexPermissions&gt; in method private index(authorizations Collection&lt;IndexPermissions&gt;, scopes Stream&lt;AuthorizationScope&gt;, bulkSize Size) : void in class org.sonar.server.permission.index.PermissionIndexer</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-073a300c4da66a51cc1ea563498a4e0fL128">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-8b6a8f970d81e49fb6fc124eccea2ee5R127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	dto : PermissionIndexerDao.Dto to dto : IndexPermissions in method private newIndexRequest(dto IndexPermissions, indexType IndexType) : IndexRequest in class org.sonar.server.permission.index.PermissionIndexer</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-073a300c4da66a51cc1ea563498a4e0fL183">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-8b6a8f970d81e49fb6fc124eccea2ee5R182">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -249,16 +249,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public getAuthorizationIndexType(indexType IndexType) : IndexType from class org.sonar.server.permission.index.AuthorizationTypeSupport to private getAuthorizationIndexType(indexType IndexType) : IndexType from class org.sonar.server.permission.index.AuthorizationScope</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L61">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-ed541fd8754e417d098e012c65408007R40">To</a></td>
+                                <td><i>Move Method	public enableProjectAuthorization(type NewIndex.NewIndexType) : NewIndex.NewIndexType from class org.sonar.server.permission.index.AuthorizationTypeSupport to private enableProjectAuthorization(type NewIndex.NewIndexType) : NewIndex.NewIndexType from class org.sonar.server.es.NewIndex.NewIndexType</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L71">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f14db8e21d9756b97ab799fb94d79071R191">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public enableProjectAuthorization(type NewIndex.NewIndexType) : NewIndex.NewIndexType from class org.sonar.server.permission.index.AuthorizationTypeSupport to private enableProjectAuthorization(type NewIndex.NewIndexType) : NewIndex.NewIndexType from class org.sonar.server.es.NewIndex.NewIndexType</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L71">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f14db8e21d9756b97ab799fb94d79071R191">To</a></td>
+                                <td><i>Move Method	public getAuthorizationIndexType(indexType IndexType) : IndexType from class org.sonar.server.permission.index.AuthorizationTypeSupport to private getAuthorizationIndexType(indexType IndexType) : IndexType from class org.sonar.server.permission.index.AuthorizationScope</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L61">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-ed541fd8754e417d098e012c65408007R40">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -366,20 +366,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	public TYPE_AUTHORIZATION : String from class org.sonar.server.permission.index.AuthorizationTypeSupport to public TYPE_AUTHORIZATION : String from class org.sonar.server.permission.index.IndexAuthorizationConstants</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L44">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-d5cbb1671f83cc8b244bcbe098a8ee9eR23">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	public FIELD_ALLOW_ANYONE : String from class org.sonar.server.permission.index.AuthorizationTypeSupport to public FIELD_ALLOW_ANYONE : String from class org.sonar.server.permission.index.IndexAuthorizationConstants</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L53">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-d5cbb1671f83cc8b244bcbe098a8ee9eR31">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private RISKY_CWE : Set&lt;String&gt; from class org.sonar.server.issue.index.IssueIteratorForSingleChunk to private RISKY_CWE : Set&lt;String&gt; from class org.sonar.server.issue.index.IssueIndexDefinition</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-9209718fb44b98adc2cadfb445039940L111">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-707ee8cc49531a43527257aab193cd0fR109">To</a></td>
@@ -418,6 +404,20 @@
                                 <td><i>Move Attribute	public FIELD_GROUP_IDS : String from class org.sonar.server.permission.index.AuthorizationTypeSupport to public FIELD_GROUP_IDS : String from class org.sonar.server.permission.index.IndexAuthorizationConstants</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L45">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-d5cbb1671f83cc8b244bcbe098a8ee9eR24">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public TYPE_AUTHORIZATION : String from class org.sonar.server.permission.index.AuthorizationTypeSupport to public TYPE_AUTHORIZATION : String from class org.sonar.server.permission.index.IndexAuthorizationConstants</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L44">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-d5cbb1671f83cc8b244bcbe098a8ee9eR23">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public FIELD_ALLOW_ANYONE : String from class org.sonar.server.permission.index.AuthorizationTypeSupport to public FIELD_ALLOW_ANYONE : String from class org.sonar.server.permission.index.IndexAuthorizationConstants</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-f9da75ee3fe07462f577abea84f5d370L53">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-d5cbb1671f83cc8b244bcbe098a8ee9eR31">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -530,41 +530,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-40" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dtos : Collection&lt;PermissionIndexerDao.Dto&gt; to dtos : Collection&lt;IndexPermissions&gt; in method public select_all() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L91">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dto : PermissionIndexerDao.Dto to dto : IndexPermissions in method public return_public_project_with_only_AllowAnyone_true_when_no_permission_in_DB() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L202">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR208">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	file : PermissionIndexerDao.Dto to file : IndexPermissions in method public test_getAuthorizationScope() : void in class org.sonar.server.issue.index.IssueIndexerTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-6b658b37371cde241695524e88925ce6L88">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-6b658b37371cde241695524e88925ce6R96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	view1Authorization : PermissionIndexerDao.Dto to view1Authorization : IndexPermissions in method public selectByUuids() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L123">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR137">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	dto : PermissionIndexerDao.Dto to dto : IndexPermissions in method public return_private_project_with_AllowAnyone_false_and_user_id_when_user_is_granted_USER_permission_directly() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L215">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR222">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -811,6 +776,41 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR191">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dtos : Collection&lt;PermissionIndexerDao.Dto&gt; to dtos : Collection&lt;IndexPermissions&gt; in method public select_all() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L91">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR96">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dto : PermissionIndexerDao.Dto to dto : IndexPermissions in method public return_public_project_with_only_AllowAnyone_true_when_no_permission_in_DB() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L202">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR208">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	file : PermissionIndexerDao.Dto to file : IndexPermissions in method public test_getAuthorizationScope() : void in class org.sonar.server.issue.index.IssueIndexerTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-6b658b37371cde241695524e88925ce6L88">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-6b658b37371cde241695524e88925ce6R96">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	view1Authorization : PermissionIndexerDao.Dto to view1Authorization : IndexPermissions in method public selectByUuids() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L123">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR137">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	dto : PermissionIndexerDao.Dto to dto : IndexPermissions in method public return_private_project_with_AllowAnyone_false_and_user_id_when_user_is_granted_USER_permission_directly() : void in class org.sonar.server.permission.index.PermissionIndexerDaoTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-11596715bba931f490d85b28f5350099L215">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-7c6674474b75e9543f15cc2ac38b5dbfR222">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -821,55 +821,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in class org.sonar.server.permission.index.FooIndex</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-279f0530c5facd078285bf58393b4564L35">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-08cd7c917bac84406e125f270c25d6e2R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	userSessionRule : LightUserSessionRule to userSessionRule : UserSessionRule in class org.sonar.server.issue.index.IssueIndexProjectStatisticsTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-000a58712fc0d61d7dcee9f594b7a2c8L55">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-3f533009eb60f6e4720f5d05f1945517R55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in class org.sonar.server.component.index.ComponentIndex</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-c5a6f3668e5d25f9e563d6e57728fc6fL74">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-b2ea9227eac1b1126579ded1ea46eb06R74">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	userSession : LightUserSessionRule to userSession : UserSessionRule in class org.sonar.server.component.index.ComponentIndexTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-76de425745f3ef54e019ab37bb1d6304L54">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-674caa5c1468e22ff9fb200ece5b4f2dR54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in class org.sonar.server.issue.index.IssueIndex</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-25f2749ac0fdb2a3363b19daeae38300L176">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-b9e709ea6d35cd4603e2dc0ea5100f87R175">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	userSessionRule : LightUserSessionRule to userSessionRule : UserSessionRule in class org.sonar.server.issue.index.IssueIndexTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-3ef283ca7203153e88f82dc481885d56L98">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-97b52b44526620f34f574b68dbcde034R97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	userSession : LightUserSessionRule to userSession : UserSessionRule in class org.sonar.server.permission.index.WebAuthorizationTypeSupportTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-1c98ad9ec28ddf1622293e6a1f03b824L37">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-160da49704eca1d83280bf6d9b9859f8R37">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -932,6 +883,55 @@
                                 <td><i>Change Attribute Type	userSessionRule : LightUserSessionRule to userSessionRule : UserSessionRule in class org.sonar.server.issue.index.IssueIndexDebtTest</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-2a6b7ed852c7debb0fbd0f828f228e1aL65">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-13607d99cdc980f2c97d610bd431fa11R64">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in class org.sonar.server.permission.index.FooIndex</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-279f0530c5facd078285bf58393b4564L35">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-08cd7c917bac84406e125f270c25d6e2R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	userSessionRule : LightUserSessionRule to userSessionRule : UserSessionRule in class org.sonar.server.issue.index.IssueIndexProjectStatisticsTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-000a58712fc0d61d7dcee9f594b7a2c8L55">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-3f533009eb60f6e4720f5d05f1945517R55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in class org.sonar.server.component.index.ComponentIndex</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-c5a6f3668e5d25f9e563d6e57728fc6fL74">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-b2ea9227eac1b1126579ded1ea46eb06R74">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	userSession : LightUserSessionRule to userSession : UserSessionRule in class org.sonar.server.component.index.ComponentIndexTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-76de425745f3ef54e019ab37bb1d6304L54">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-674caa5c1468e22ff9fb200ece5b4f2dR54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	authorizationTypeSupport : AuthorizationTypeSupport to authorizationTypeSupport : WebAuthorizationTypeSupport in class org.sonar.server.issue.index.IssueIndex</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-25f2749ac0fdb2a3363b19daeae38300L176">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-b9e709ea6d35cd4603e2dc0ea5100f87R175">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	userSessionRule : LightUserSessionRule to userSessionRule : UserSessionRule in class org.sonar.server.issue.index.IssueIndexTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-3ef283ca7203153e88f82dc481885d56L98">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-97b52b44526620f34f574b68dbcde034R97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	userSession : LightUserSessionRule to userSession : UserSessionRule in class org.sonar.server.permission.index.WebAuthorizationTypeSupportTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-1c98ad9ec28ddf1622293e6a1f03b824L37">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7acd9403283a3cc49c56acc1461c595b99448e3a?diff=split#diff-160da49704eca1d83280bf6d9b9859f8R37">To</a></td>
                             </tr>
                             
                             </tbody>

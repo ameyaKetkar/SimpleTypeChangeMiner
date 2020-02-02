@@ -254,13 +254,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public releaseSlot() : void renamed to public releaseInstanceSlot() : void in class org.apache.flink.runtime.instance.SharedSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-e62fd807403772b0ae36c6f611148933L190">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-e62fd807403772b0ae36c6f611148933R190">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getTerminationFuture() : CompletableFuture&lt;ExecutionState&gt; renamed to public getTerminalStateFuture() : CompletableFuture&lt;ExecutionState&gt; in class org.apache.flink.runtime.executiongraph.Execution</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-80737dbca5cba87886455334dea0a729L328">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-80737dbca5cba87886455334dea0a729R331">To</a></td>
@@ -271,6 +264,13 @@
                                 <td><i>Rename Method	public abstract releaseSlot() : void renamed to public abstract releaseInstanceSlot() : void in class org.apache.flink.runtime.instance.Slot</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6L337">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-bef8a92924ff0b4d2f9a5dfe6e8e8ae6R338">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public releaseSlot() : void renamed to public releaseInstanceSlot() : void in class org.apache.flink.runtime.instance.SharedSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-e62fd807403772b0ae36c6f611148933L190">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-e62fd807403772b0ae36c6f611148933R190">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -322,6 +322,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	boolean to CompletableFuture&lt;Boolean&gt; in method public returnAllocatedSlot(slot Slot) : CompletableFuture&lt;Boolean&gt; in class org.apache.flink.runtime.instance.SlotPool.ProviderAndOwner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L1083">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R1083">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	boolean to CompletableFuture&lt;Boolean&gt; in method public returnAllocatedSlot(slot Slot) : CompletableFuture&lt;Boolean&gt; in class org.apache.flink.runtime.executiongraph.utils.SimpleSlotProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aL98">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aR98">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;?&gt; in method public releaseSlot() : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL212">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR216">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;?&gt; in method public releaseSlot() : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.instance.LogicalSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-bc9bf84fcabaa65f9091391a771b6686L75">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-bc9bf84fcabaa65f9091391a771b6686R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	boolean to CompletableFuture&lt;Boolean&gt; in method public returnAllocatedSlot(slot Slot) : CompletableFuture&lt;Boolean&gt; in class org.apache.flink.runtime.executiongraph.ExecutionTest.SingleSlotTestingSlotOwner</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-9f9d43654125d72e122b5cd35523da73L282">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-9f9d43654125d72e122b5cd35523da73R345">To</a></td>
@@ -353,34 +381,6 @@
                                 <td><i>Change Return Type	boolean to CompletableFuture&lt;Boolean&gt; in method public returnAllocatedSlot(slot Slot) : CompletableFuture&lt;Boolean&gt; in class org.apache.flink.runtime.jobmanager.slots.SlotOwner</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-834d48cb1f1df10b65c577ac8b2f1548L28">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-834d48cb1f1df10b65c577ac8b2f1548R30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	boolean to CompletableFuture&lt;Boolean&gt; in method public returnAllocatedSlot(slot Slot) : CompletableFuture&lt;Boolean&gt; in class org.apache.flink.runtime.instance.SlotPool.ProviderAndOwner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L1083">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R1083">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	boolean to CompletableFuture&lt;Boolean&gt; in method public returnAllocatedSlot(slot Slot) : CompletableFuture&lt;Boolean&gt; in class org.apache.flink.runtime.executiongraph.utils.SimpleSlotProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aL98">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aR98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;?&gt; in method public releaseSlot() : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-f19edabbc14ec111a11e978ebf770abeL212">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-f19edabbc14ec111a11e978ebf770abeR216">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;?&gt; in method public releaseSlot() : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.instance.LogicalSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-bc9bf84fcabaa65f9091391a771b6686L75">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7bca9e4613ff30ab6a9c11e673a785f3f5c86e69?diff=split#diff-bc9bf84fcabaa65f9091391a771b6686R73">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -532,6 +532,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private releaseAssignedResource() : void extracted from package markFinished(userAccumulators Map&lt;String,Accumulator&lt;?,?&gt;&gt;, metrics IOMetrics) : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private releaseAssignedResource() : void extracted from private processFail(t Throwable, isCallback boolean, userAccumulators Map&lt;String,Accumulator&lt;?,?&gt;&gt;, metrics IOMetrics) : boolean in class org.apache.flink.runtime.executiongraph.Execution</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -551,13 +558,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private releaseAssignedResource() : void extracted from package markFinished(userAccumulators Map&lt;String,Accumulator&lt;?,?&gt;&gt;, metrics IOMetrics) : void in class org.apache.flink.runtime.executiongraph.Execution</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -568,6 +568,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public testAllocateAndReleaseTwoLevels() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public allocateAndReleaseInMixedOrder() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public testImmediateReleaseOneLevel() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public allocateSimpleSlotsAndReleaseFromLeaves() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public testSlotReleasedWhenScheduledQueued() : void in class org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public failAllocation(allocationID AllocationID, cause Exception) : void in class org.apache.flink.runtime.instance.SlotPool &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -642,48 +684,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from private scheduleTask(task ScheduledUnit, queueIfNoResource boolean, preferredLocations Iterable&lt;TaskManagerLocation&gt;) : Object in class org.apache.flink.runtime.jobmanager.scheduler.Scheduler &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public testAllocateAndReleaseTwoLevels() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public allocateAndReleaseInMixedOrder() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public testImmediateReleaseOneLevel() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public allocateSimpleSlotsAndReleaseFromLeaves() : void in class org.apache.flink.runtime.instance.SharedSlotsTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public testSlotReleasedWhenScheduledQueued() : void in class org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public releaseInstanceSlot() : void extracted from public failAllocation(allocationID AllocationID, cause Exception) : void in class org.apache.flink.runtime.instance.SlotPool &amp; moved to class org.apache.flink.runtime.instance.SimpleSlot</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

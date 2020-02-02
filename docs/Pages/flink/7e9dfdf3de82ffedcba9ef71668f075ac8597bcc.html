@@ -248,13 +248,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	taskExecutorGateway : TaskExecutorGateway to taskExecutorRegistration : TaskExecutorRegistration in method public ResourceSlot(slotId SlotID, resourceProfile ResourceProfile, taskExecutorRegistration TaskExecutorRegistration) in class org.apache.flink.runtime.clusterframework.types.ResourceSlot</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-26d0bc393c442394d0316e219bf396e4L40">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-26d0bc393c442394d0316e219bf396e4R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	slotManager : SlotManager to slotManagerFactory : SlotManagerFactory in method public StandaloneResourceManager(rpcService RpcService, highAvailabilityServices HighAvailabilityServices, slotManagerFactory SlotManagerFactory) in class org.apache.flink.runtime.resourcemanager.StandaloneResourceManager</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-6a6696a4b248fd4208f9c74a4e1286b4L36">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-6a6696a4b248fd4208f9c74a4e1286b4R38">To</a></td>
@@ -265,6 +258,13 @@
                                 <td><i>Change Parameter Type	slotManager : SlotManager to slotManagerFactory : SlotManagerFactory in method public ResourceManager(rpcService RpcService, highAvailabilityServices HighAvailabilityServices, slotManagerFactory SlotManagerFactory) in class org.apache.flink.runtime.resourcemanager.ResourceManager</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-7c5af443934ab38b37031331cad9f8e3L98">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-7c5af443934ab38b37031331cad9f8e3R120">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	taskExecutorGateway : TaskExecutorGateway to taskExecutorRegistration : TaskExecutorRegistration in method public ResourceSlot(slotId SlotID, resourceProfile ResourceProfile, taskExecutorRegistration TaskExecutorRegistration) in class org.apache.flink.runtime.clusterframework.types.ResourceSlot</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-26d0bc393c442394d0316e219bf396e4L40">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-26d0bc393c442394d0316e219bf396e4R40">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -348,20 +348,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Class	org.apache.flink.runtime.resourcemanager.SlotRequestRegistered moved and renamed to org.apache.flink.runtime.resourcemanager.messages.jobmanager.RMSlotRequestRegistered</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.flink.runtime.resourcemanager.SlotRequestRejected moved and renamed to org.apache.flink.runtime.resourcemanager.messages.jobmanager.RMSlotRequestRejected</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Rename Class	org.apache.flink.runtime.resourcemanager.slotmanager.SimpleSlotManager moved and renamed to org.apache.flink.runtime.resourcemanager.TestingSlotManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -370,6 +356,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Rename Class	org.apache.flink.runtime.resourcemanager.SlotRequestReply moved and renamed to org.apache.flink.runtime.resourcemanager.messages.jobmanager.RMSlotRequestReply</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.flink.runtime.resourcemanager.SlotRequestRegistered moved and renamed to org.apache.flink.runtime.resourcemanager.messages.jobmanager.RMSlotRequestRegistered</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.flink.runtime.resourcemanager.SlotRequestRejected moved and renamed to org.apache.flink.runtime.resourcemanager.messages.jobmanager.RMSlotRequestRejected</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -455,13 +455,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public updateSlotStatus(slotReport SlotReport) : void renamed to public registerTaskExecutor(resourceID ResourceID, registration TaskExecutorRegistration, slotReport SlotReport) : void in class org.apache.flink.runtime.resourcemanager.slotmanager.SlotManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-dc7da02de734637488ed5db5ad831367L170">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-dc7da02de734637488ed5db5ad831367R208">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public testExistingInUseSlotAdjustedToEmpty() : void renamed to public testMultipleSlotRequestsWithOneSlot() : void in class org.apache.flink.runtime.resourcemanager.slotmanager.SlotManagerTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-1ccbc9dbab6c818e9a7b1d45bb7db5aaL275">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-1ccbc9dbab6c818e9a7b1d45bb7db5aaR274">To</a></td>
@@ -486,6 +479,13 @@
                                 <td><i>Rename Method	public getExecutor() : Executor renamed to public getMainThreadExecutor() : Executor in class org.apache.flink.runtime.resourcemanager.ResourceManagerServices</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-391fb2bc8e8895ccd35779b5f94f507cL39">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-391fb2bc8e8895ccd35779b5f94f507cR39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public updateSlotStatus(slotReport SlotReport) : void renamed to public registerTaskExecutor(resourceID ResourceID, registration TaskExecutorRegistration, slotReport SlotReport) : void in class org.apache.flink.runtime.resourcemanager.slotmanager.SlotManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-dc7da02de734637488ed5db5ad831367L170">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7e9dfdf3de82ffedcba9ef71668f075ac8597bcc?diff=split#diff-dc7da02de734637488ed5db5ad831367R208">To</a></td>
                             </tr>
                             
                             </tbody>

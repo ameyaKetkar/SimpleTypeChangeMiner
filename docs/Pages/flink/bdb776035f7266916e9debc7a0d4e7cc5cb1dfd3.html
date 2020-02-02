@@ -303,6 +303,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	chainOpParallelStates : List&lt;OperatorStateHandle&gt; to chainOpParallelStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method public applyRepartitioner(operatorID OperatorID, opStateRepartitioner OperatorStateRepartitioner, chainOpParallelStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, oldParallelism int, newParallelism int) : Map&lt;OperatorInstanceID,List&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L575">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R576">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	previousParallelSubtaskStates : List&lt;OperatorStateHandle&gt; to previousParallelSubtaskStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method public repartitionState(previousParallelSubtaskStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, oldParallelism int, newParallelism int) : List&lt;List&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0L43">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	rawOperatorStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; to rawOperatorStates : List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt; in method private splitManagedAndRawOperatorStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;, rawOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L358">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R365">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	inputStates : List&lt;OperatorStateHandle&gt; to inputStates : OperatorSubtaskState in method private repartitionAndExecute(topic String, inputStates OperatorSubtaskState, oldParallelism int, newParallelism int, maxParallelism int, inputData Iterator&lt;Integer&gt;) : OperatorSubtaskState in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducer011ITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-8809e284559b8bbec0d59ea382b502ddL426">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-8809e284559b8bbec0d59ea382b502ddR431">To</a></td>
@@ -336,27 +357,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R364">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	chainOpParallelStates : List&lt;OperatorStateHandle&gt; to chainOpParallelStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method public applyRepartitioner(operatorID OperatorID, opStateRepartitioner OperatorStateRepartitioner, chainOpParallelStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, oldParallelism int, newParallelism int) : Map&lt;OperatorInstanceID,List&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L575">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R576">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	previousParallelSubtaskStates : List&lt;OperatorStateHandle&gt; to previousParallelSubtaskStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method public repartitionState(previousParallelSubtaskStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, oldParallelism int, newParallelism int) : List&lt;List&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0L43">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	rawOperatorStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; to rawOperatorStates : List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt; in method private splitManagedAndRawOperatorStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;, rawOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L358">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R365">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -367,27 +367,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	rawOperatorState : List&lt;OperatorStateHandle&gt; to rawOpStatePerSubtasks : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method private splitManagedAndRawOperatorStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;, rawOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L368">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R371">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	psh : OperatorStateHandle to operatorStateHandle : OperatorStateHandle in method private groupByStateMode(previousParallelSubtaskStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : GroupByStateNameResults in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0L90">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0R164">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	uniformBroadcastNameToState : Map&lt;String,List&lt;Tuple2&lt;StreamStateHandle,OperatorStateHandle.StateMetaInfo&gt;&gt;&gt; to nameToBroadcastState : Map&lt;String,List&lt;Tuple2&lt;StreamStateHandle,OperatorStateHandle.StateMetaInfo&gt;&gt;&gt; in method private repartition(nameToStateByMode GroupByStateNameResults, newParallelism int) : List&lt;Map&lt;StreamStateHandle,OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0L244">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0R220">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -415,6 +394,27 @@
                                 <td><i>Rename Variable	i : int to subTaskIndex : int in method private splitManagedAndRawOperatorStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;, rawOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L370">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R373">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	rawOperatorState : List&lt;OperatorStateHandle&gt; to rawOpStatePerSubtasks : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method private splitManagedAndRawOperatorStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;, rawOperatorStates List&lt;List&lt;List&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25L368">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-4bf9021270182f80836318d0f9d4af25R371">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	psh : OperatorStateHandle to operatorStateHandle : OperatorStateHandle in method private groupByStateMode(previousParallelSubtaskStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : GroupByStateNameResults in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0L90">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0R164">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	uniformBroadcastNameToState : Map&lt;String,List&lt;Tuple2&lt;StreamStateHandle,OperatorStateHandle.StateMetaInfo&gt;&gt;&gt; to nameToBroadcastState : Map&lt;String,List&lt;Tuple2&lt;StreamStateHandle,OperatorStateHandle.StateMetaInfo&gt;&gt;&gt; in method private repartition(nameToStateByMode GroupByStateNameResults, newParallelism int) : List&lt;Map&lt;StreamStateHandle,OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.RoundRobinOperatorStateRepartitioner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0L244">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-3e83ee402778c715041379849f55dab0R220">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -455,6 +455,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Attribute	private maxParallelism : int in class org.apache.flink.streaming.connectors.fs.RollingSinkITCase</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Attribute	package MAX_PARALLELISM : int in class org.apache.flink.streaming.api.functions.sink.filesystem.TestUtils</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Attribute	private maxParallelism : int in class org.apache.flink.streaming.runtime.operators.WriteAheadSinkTestBase</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -477,20 +491,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Attribute	private maxParallelism : int in class org.apache.flink.streaming.connectors.fs.bucketing.BucketingSinkTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Attribute	private maxParallelism : int in class org.apache.flink.streaming.connectors.fs.RollingSinkITCase</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Attribute	package MAX_PARALLELISM : int in class org.apache.flink.streaming.api.functions.sink.filesystem.TestUtils</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -526,14 +526,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	maxParallelsim : int in method public testCheckpointRestore() : void from class org.apache.flink.streaming.api.functions.StatefulSequenceSourceTest</i></td>
+                                <td><i>Extract Variable	operatorState : OperatorState in method package reDistributePartitionableStates(oldOperatorStates List&lt;OperatorState&gt;, newParallelism int, newOperatorIDs List&lt;OperatorID&gt;, newManagedOperatorStates Map&lt;OperatorInstanceID,List&lt;OperatorStateHandle&gt;&gt;, newRawOperatorStates Map&lt;OperatorInstanceID,List&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	operatorState : OperatorState in method package reDistributePartitionableStates(oldOperatorStates List&lt;OperatorState&gt;, newParallelism int, newOperatorIDs List&lt;OperatorID&gt;, newManagedOperatorStates Map&lt;OperatorInstanceID,List&lt;OperatorStateHandle&gt;&gt;, newRawOperatorStates Map&lt;OperatorInstanceID,List&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><i>Extract Variable	maxParallelsim : int in method public testCheckpointRestore() : void from class org.apache.flink.streaming.api.functions.StatefulSequenceSourceTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -548,13 +548,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	outputStates : List&lt;OperatorStateHandle&gt; to outputStates : List&lt;OperatorSubtaskState&gt; in method private repartitionAndExecute(topic String, inputStates OperatorSubtaskState, oldParallelism int, newParallelism int, maxParallelism int, inputData Iterator&lt;Integer&gt;) : OperatorSubtaskState in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducerITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-dc3455074f8d9de9e6a382f5b0f3884dL422">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-dc3455074f8d9de9e6a382f5b0f3884dR433">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -610,6 +603,13 @@
                                 <td><i>Change Variable Type	operatorSubtaskState : List&lt;OperatorStateHandle&gt; to operatorSubtaskState : OperatorSubtaskState in method public testScaleUpAfterScalingDown() : void in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducerITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-dc3455074f8d9de9e6a382f5b0f3884dL359">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-dc3455074f8d9de9e6a382f5b0f3884dR381">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	outputStates : List&lt;OperatorStateHandle&gt; to outputStates : List&lt;OperatorSubtaskState&gt; in method private repartitionAndExecute(topic String, inputStates OperatorSubtaskState, oldParallelism int, newParallelism int, maxParallelism int, inputData Iterator&lt;Integer&gt;) : OperatorSubtaskState in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaProducerITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-dc3455074f8d9de9e6a382f5b0f3884dL422">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bdb776035f7266916e9debc7a0d4e7cc5cb1dfd3?diff=split#diff-dc3455074f8d9de9e6a382f5b0f3884dR433">To</a></td>
                             </tr>
                             
                             </tbody>

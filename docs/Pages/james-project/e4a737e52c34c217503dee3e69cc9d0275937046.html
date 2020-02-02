@@ -462,13 +462,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	package twoConcurrentUpdatesWhenNoACEStoredShouldReturnACEWithTwoEntries(cassandra CassandraCluster) : void renamed to package twoConcurrentUpdatesWhenNoACLStoredShouldReturnACLWithTwoEntries(cassandra CassandraCluster) : void in class org.apache.james.mailbox.cassandra.mail.CassandraACLMapperTest</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-22a551cf4fd9caf263f2fdf9ce0a789dL161">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-22a551cf4fd9caf263f2fdf9ce0a789dR161">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	private toMailboxWithAclFuture(mailbox SimpleMailbox) : CompletableFuture&lt;SimpleMailbox&gt; renamed to private toMailboxWithAcl(mailbox SimpleMailbox) : Mono&lt;SimpleMailbox&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxMapper</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5L272">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5R258">To</a></td>
@@ -486,6 +479,13 @@
                                 <td><i>Rename Method	public deleteAsFuture(messageId MessageId, mailboxIds Collection&lt;MailboxId&gt;) : CompletableFuture&lt;Void&gt; renamed to public deleteAsMono(messageId MessageId, mailboxIds Collection&lt;MailboxId&gt;) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L188">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R180">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	package twoConcurrentUpdatesWhenNoACEStoredShouldReturnACEWithTwoEntries(cassandra CassandraCluster) : void renamed to package twoConcurrentUpdatesWhenNoACLStoredShouldReturnACLWithTwoEntries(cassandra CassandraCluster) : void in class org.apache.james.mailbox.cassandra.mail.CassandraACLMapperTest</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-22a551cf4fd9caf263f2fdf9ce0a789dL161">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-22a551cf4fd9caf263f2fdf9ce0a789dR161">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -572,14 +572,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public executeReturnAppliedReactor(statement Statement) : Mono&lt;Boolean&gt; inlined to public executeReturnApplied(statement Statement) : Mono&lt;Boolean&gt; in class org.apache.james.backends.cassandra.utils.CassandraAsyncExecutor</i></td>
+                                <td><i>Inline Method	public getAttachmentsAsFuture(attachmentIds Collection&lt;AttachmentId&gt;) : CompletableFuture&lt;ImmutableList&lt;Attachment&gt;&gt; inlined to public getAttachments(attachmentIds Collection&lt;AttachmentId&gt;) : List&lt;Attachment&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraAttachmentMapper</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public getAttachmentsAsFuture(attachmentIds Collection&lt;AttachmentId&gt;) : CompletableFuture&lt;ImmutableList&lt;Attachment&gt;&gt; inlined to public getAttachments(attachmentIds Collection&lt;AttachmentId&gt;) : List&lt;Attachment&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraAttachmentMapper</i></td>
+                                <td><i>Inline Method	public executeReturnAppliedReactor(statement Statement) : Mono&lt;Boolean&gt; inlined to public executeReturnApplied(statement Statement) : Mono&lt;Boolean&gt; in class org.apache.james.backends.cassandra.utils.CassandraAsyncExecutor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -594,6 +594,111 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-104" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;Attachment&gt;&gt; to Mono&lt;Attachment&gt; in method private getAttachmentInternal(id AttachmentId) : Mono&lt;Attachment&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraAttachmentMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-e1bfa544a5154e502c856bd10859f37fL110">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-e1bfa544a5154e502c856bd10859f37fR99">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public delete(mailboxPath MailboxPath) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathV2DAO</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9L177">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9R176">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;ModSeq&gt; to Mono&lt;ModSeq&gt; in method private successToModSeq(modSeq ModSeq, success Boolean) : Mono&lt;ModSeq&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraModSeqProvider</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ec96a9548465aaf8c8eedcb3c0c4d8d9L176">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ec96a9548465aaf8c8eedcb3c0c4d8d9R173">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;CassandraIdAndPath&gt;&gt; to Mono&lt;CassandraIdAndPath&gt; in method public retrieveId(mailboxPath MailboxPath) : Mono&lt;CassandraIdAndPath&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathDAOImpl</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8b20aff335a82d2d9a7263b2e43709e3L125">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8b20aff335a82d2d9a7263b2e43709e3R128">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to Mono&lt;Boolean&gt; in method public save(mailboxPath MailboxPath, mailboxId CassandraId) : Mono&lt;Boolean&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathV2DAO</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9L168">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9R167">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;Row&gt;&gt; to Mono&lt;Row&gt; in method private getScriptRow(user User, name ScriptName) : Mono&lt;Row&gt; in class org.apache.james.sieve.cassandra.CassandraSieveDAO</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-5d07cd95d17c5344b1a0ef95a58a1d5aL147">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-5d07cd95d17c5344b1a0ef95a58a1d5aR147">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public deleteAsMono(messageId MessageId, mailboxIds Collection&lt;MailboxId&gt;) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L188">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R180">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;SimpleMailboxMessage&gt;&gt; to Mono&lt;SimpleMailboxMessage&gt; in method private keepMessageIfMailboxExists(message SimpleMailboxMessage) : Mono&lt;SimpleMailboxMessage&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L122">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;MessageUid&gt;&gt; to Mono&lt;MessageUid&gt; in method public nextUid(cassandraId CassandraId) : Mono&lt;MessageUid&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraUidProvider</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-76ea740bada9de5b99a298581d2d317fL108">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-76ea740bada9de5b99a298581d2d317fR101">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;ResultSet&gt; to Mono&lt;Row&gt; in method private getStoredACLRow(cassandraId CassandraId) : Mono&lt;Row&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraACLMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-6ae7e028e251beb6221c1b21deb6612eL166">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-6ae7e028e251beb6221c1b21deb6612eR152">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public delete(mailboxPath MailboxPath) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathDAO</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-337527e63fb091976bb75d74513441c3L39">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-337527e63fb091976bb75d74513441c3R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to Mono&lt;Boolean&gt; in method public store(url MailRepositoryUrl, key MailKey) : Mono&lt;Boolean&gt; in class org.apache.james.mailrepository.cassandra.CassandraMailRepositoryKeysDAO</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ab6ca0e3a20317932d31c823275611ffL83">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ab6ca0e3a20317932d31c823275611ffR82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public storeAttachment(attachment DAOAttachment) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraAttachmentDAOV2</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8520e94db97249bb70d6e603063a2779L161">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8520e94db97249bb70d6e603063a2779R160">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	List&lt;Mailbox&gt; to List&lt;SimpleMailbox&gt; in method private toMailboxes(path MailboxPath, listUserMailboxes Flux&lt;CassandraIdAndPath&gt;) : List&lt;SimpleMailbox&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5L166">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5R154">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Stream&lt;MessageResult&gt;&gt; to Flux&lt;MessageResult&gt; in method public retrieveMessages(messageIds List&lt;ComposedMessageIdWithMetaData&gt;, fetchType FetchType, limit Limit) : Flux&lt;MessageResult&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageDAO</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d51d49f39b039e7479e23afb7d457e05L237">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d51d49f39b039e7479e23afb7d457e05R236">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1218,111 +1323,6 @@
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-dbdd08551f6ca0798fd3553f248039ecR39">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;Attachment&gt;&gt; to Mono&lt;Attachment&gt; in method private getAttachmentInternal(id AttachmentId) : Mono&lt;Attachment&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraAttachmentMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-e1bfa544a5154e502c856bd10859f37fL110">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-e1bfa544a5154e502c856bd10859f37fR99">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public delete(mailboxPath MailboxPath) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathV2DAO</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9L177">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9R176">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;ModSeq&gt; to Mono&lt;ModSeq&gt; in method private successToModSeq(modSeq ModSeq, success Boolean) : Mono&lt;ModSeq&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraModSeqProvider</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ec96a9548465aaf8c8eedcb3c0c4d8d9L176">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ec96a9548465aaf8c8eedcb3c0c4d8d9R173">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;CassandraIdAndPath&gt;&gt; to Mono&lt;CassandraIdAndPath&gt; in method public retrieveId(mailboxPath MailboxPath) : Mono&lt;CassandraIdAndPath&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathDAOImpl</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8b20aff335a82d2d9a7263b2e43709e3L125">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8b20aff335a82d2d9a7263b2e43709e3R128">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to Mono&lt;Boolean&gt; in method public save(mailboxPath MailboxPath, mailboxId CassandraId) : Mono&lt;Boolean&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathV2DAO</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9L168">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d0968b59177c4f2aba0dd89563c73bb9R167">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;Row&gt;&gt; to Mono&lt;Row&gt; in method private getScriptRow(user User, name ScriptName) : Mono&lt;Row&gt; in class org.apache.james.sieve.cassandra.CassandraSieveDAO</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-5d07cd95d17c5344b1a0ef95a58a1d5aL147">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-5d07cd95d17c5344b1a0ef95a58a1d5aR147">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public deleteAsMono(messageId MessageId, mailboxIds Collection&lt;MailboxId&gt;) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L188">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R180">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;SimpleMailboxMessage&gt;&gt; to Mono&lt;SimpleMailboxMessage&gt; in method private keepMessageIfMailboxExists(message SimpleMailboxMessage) : Mono&lt;SimpleMailboxMessage&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L122">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Optional&lt;MessageUid&gt;&gt; to Mono&lt;MessageUid&gt; in method public nextUid(cassandraId CassandraId) : Mono&lt;MessageUid&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraUidProvider</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-76ea740bada9de5b99a298581d2d317fL108">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-76ea740bada9de5b99a298581d2d317fR101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;ResultSet&gt; to Mono&lt;Row&gt; in method private getStoredACLRow(cassandraId CassandraId) : Mono&lt;Row&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraACLMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-6ae7e028e251beb6221c1b21deb6612eL166">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-6ae7e028e251beb6221c1b21deb6612eR152">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public delete(mailboxPath MailboxPath) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxPathDAO</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-337527e63fb091976bb75d74513441c3L39">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-337527e63fb091976bb75d74513441c3R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Boolean&gt; to Mono&lt;Boolean&gt; in method public store(url MailRepositoryUrl, key MailKey) : Mono&lt;Boolean&gt; in class org.apache.james.mailrepository.cassandra.CassandraMailRepositoryKeysDAO</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ab6ca0e3a20317932d31c823275611ffL83">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-ab6ca0e3a20317932d31c823275611ffR82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Void&gt; to Mono&lt;Void&gt; in method public storeAttachment(attachment DAOAttachment) : Mono&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraAttachmentDAOV2</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8520e94db97249bb70d6e603063a2779L161">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-8520e94db97249bb70d6e603063a2779R160">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	List&lt;Mailbox&gt; to List&lt;SimpleMailbox&gt; in method private toMailboxes(path MailboxPath, listUserMailboxes Flux&lt;CassandraIdAndPath&gt;) : List&lt;SimpleMailbox&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5L166">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5R154">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Stream&lt;MessageResult&gt;&gt; to Flux&lt;MessageResult&gt; in method public retrieveMessages(messageIds List&lt;ComposedMessageIdWithMetaData&gt;, fetchType FetchType, limit Limit) : Flux&lt;MessageResult&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageDAO</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d51d49f39b039e7479e23afb7d457e05L237">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-d51d49f39b039e7479e23afb7d457e05R236">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1369,20 +1369,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-24" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	mailboxesV1 : List&lt;Mailbox&gt; to mailboxesV1 : List&lt;SimpleMailbox&gt; in method public findMailboxWithPathLike(path MailboxPath) : List&lt;Mailbox&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5L149">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5R140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	messages : Stream&lt;ComposedMessageIdWithMetaData&gt; to messages : List&lt;ComposedMessageIdWithMetaData&gt; in method package updateShouldUpdateUserFlags() : void in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdToImapUidDAOTest</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-11614d071eeeab4b5ba54a7216ed7e95L375">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-11614d071eeeab4b5ba54a7216ed7e95R401">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1536,6 +1522,20 @@
                                 <td><i>Change Variable Type	messages : Stream&lt;ComposedMessageIdWithMetaData&gt; to messages : List&lt;ComposedMessageIdWithMetaData&gt; in method package updateShouldUpdateRecentFlag() : void in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdToImapUidDAOTest</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-11614d071eeeab4b5ba54a7216ed7e95L300">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-11614d071eeeab4b5ba54a7216ed7e95R323">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	mailboxesV1 : List&lt;Mailbox&gt; to mailboxesV1 : List&lt;SimpleMailbox&gt; in method public findMailboxWithPathLike(path MailboxPath) : List&lt;Mailbox&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMailboxMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5L149">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-4bd0acb04a0cd2a7c809eb49d56f4de5R140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	messages : Stream&lt;ComposedMessageIdWithMetaData&gt; to messages : List&lt;ComposedMessageIdWithMetaData&gt; in method package updateShouldUpdateUserFlags() : void in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdToImapUidDAOTest</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-11614d071eeeab4b5ba54a7216ed7e95L375">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/e4a737e52c34c217503dee3e69cc9d0275937046?diff=split#diff-11614d071eeeab4b5ba54a7216ed7e95R401">To</a></td>
                             </tr>
                             
                             </tbody>

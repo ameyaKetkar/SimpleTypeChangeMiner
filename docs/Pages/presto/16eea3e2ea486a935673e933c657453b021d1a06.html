@@ -519,16 +519,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	catalogProperties : Map&lt;String,Map&lt;String,String&gt;&gt; to unprocessedCatalogProperties : Map&lt;String,Map&lt;String,String&gt;&gt; in class com.facebook.presto.Session</i></td>
+                                <td><i>Rename Attribute	catalogProperties : Map&lt;String,Map&lt;String,String&gt;&gt; to connectorProperties : Map&lt;ConnectorId,Map&lt;String,String&gt;&gt; in class com.facebook.presto.Session</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9L57">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9R62">To</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9R61">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	catalogProperties : Map&lt;String,Map&lt;String,String&gt;&gt; to connectorProperties : Map&lt;ConnectorId,Map&lt;String,String&gt;&gt; in class com.facebook.presto.Session</i></td>
+                                <td><i>Rename Attribute	catalogProperties : Map&lt;String,Map&lt;String,String&gt;&gt; to unprocessedCatalogProperties : Map&lt;String,Map&lt;String,String&gt;&gt; in class com.facebook.presto.Session</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9L57">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9R61">To</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9R62">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -541,6 +541,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	catalogPropertiesBuilder : ImmutableMap.Builder&lt;String,Map&lt;String,String&gt;&gt; to catalogPropertiesBuilder : ImmutableMap.Builder&lt;ConnectorId,Map&lt;String,String&gt;&gt; in method public SessionRepresentation(queryId String, transactionId Optional&lt;TransactionId&gt;, clientTransactionSupport boolean, user String, principal Optional&lt;String&gt;, source Optional&lt;String&gt;, catalog Optional&lt;String&gt;, schema Optional&lt;String&gt;, timeZoneKey TimeZoneKey, locale Locale, remoteUserAddress Optional&lt;String&gt;, userAgent Optional&lt;String&gt;, startTime long, systemProperties Map&lt;String,String&gt;, catalogProperties Map&lt;ConnectorId,Map&lt;String,String&gt;&gt;, preparedStatements Map&lt;String,String&gt;) in class com.facebook.presto.SessionRepresentation</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-7548cf6a8aad41799294d24ec99a6614L51">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-7548cf6a8aad41799294d24ec99a6614R87">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -563,13 +570,6 @@
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c5017ef8fb73eb7ff3b06ee2fac61eb3R221">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	catalogPropertiesBuilder : ImmutableMap.Builder&lt;String,Map&lt;String,String&gt;&gt; to catalogPropertiesBuilder : ImmutableMap.Builder&lt;ConnectorId,Map&lt;String,String&gt;&gt; in method public SessionRepresentation(queryId String, transactionId Optional&lt;TransactionId&gt;, clientTransactionSupport boolean, user String, principal Optional&lt;String&gt;, source Optional&lt;String&gt;, catalog Optional&lt;String&gt;, schema Optional&lt;String&gt;, timeZoneKey TimeZoneKey, locale Locale, remoteUserAddress Optional&lt;String&gt;, userAgent Optional&lt;String&gt;, startTime long, systemProperties Map&lt;String,String&gt;, catalogProperties Map&lt;ConnectorId,Map&lt;String,String&gt;&gt;, preparedStatements Map&lt;String,String&gt;) in class com.facebook.presto.SessionRepresentation</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-7548cf6a8aad41799294d24ec99a6614L51">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-7548cf6a8aad41799294d24ec99a6614R87">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -583,13 +583,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	parts : List&lt;String&gt; in method public execute(statement SetSession, transactionManager TransactionManager, metadata Metadata, accessControl AccessControl, stateMachine QueryStateMachine, parameters List&lt;Expression&gt;) : CompletableFuture&lt;?&gt; from class com.facebook.presto.execution.SetSessionTask</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	parts : List&lt;String&gt; in method public execute(statement ResetSession, transactionManager TransactionManager, metadata Metadata, accessControl AccessControl, stateMachine QueryStateMachine, parameters List&lt;Expression&gt;) : CompletableFuture&lt;?&gt; from class com.facebook.presto.execution.ResetSessionTask</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -598,6 +591,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	optimizeHashSession : Session in method public createBenchmarks(localQueryRunner LocalQueryRunner) : List&lt;AbstractBenchmark&gt; from class com.facebook.presto.benchmark.BenchmarkSuite</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	parts : List&lt;String&gt; in method public execute(statement SetSession, transactionManager TransactionManager, metadata Metadata, accessControl AccessControl, stateMachine QueryStateMachine, parameters List&lt;Expression&gt;) : CompletableFuture&lt;?&gt; from class com.facebook.presto.execution.SetSessionTask</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -640,6 +640,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	name : String to propertyName : String in method public getProperty(propertyName String, type Class&lt;T&gt;) : T in class com.facebook.presto.FullConnectorSession</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-ba25cac1f4ac6eb34c6ebef99192d697L112">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-ba25cac1f4ac6eb34c6ebef99192d697R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	catalog : String to connectorId : ConnectorId in method public getConnectorProperties(connectorId ConnectorId) : Map&lt;String,String&gt; in class com.facebook.presto.Session</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9L185">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-c2352a9c68d1464e691afa85f038fad9R198">To</a></td>
@@ -671,13 +678,6 @@
                                 <td><i>Rename Parameter	value : String to propertyValue : String in method private decodePropertyValue(fullPropertyName String, propertyValue String, type Class&lt;T&gt;, metadata PropertyMetadata&lt;?&gt;) : T in class com.facebook.presto.metadata.SessionPropertyManager</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-e2c83259b222e66680e07ca9f02d3e37L160">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-e2c83259b222e66680e07ca9f02d3e37R198">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	name : String to propertyName : String in method public getProperty(propertyName String, type Class&lt;T&gt;) : T in class com.facebook.presto.FullConnectorSession</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-ba25cac1f4ac6eb34c6ebef99192d697L112">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/16eea3e2ea486a935673e933c657453b021d1a06?diff=split#diff-ba25cac1f4ac6eb34c6ebef99192d697R118">To</a></td>
                             </tr>
                             
                             </tbody>

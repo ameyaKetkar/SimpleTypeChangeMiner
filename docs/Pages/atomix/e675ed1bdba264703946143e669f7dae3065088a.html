@@ -304,15 +304,15 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : PrimaryBackupSessionClient.Builder from class io.atomix.protocols.backup.partition.PrimaryBackupPartition to public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : PrimaryBackupSessionClient.Builder from class io.atomix.protocols.backup.partition.impl.PrimaryBackupPartitionClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-d8a359f942accbadde7ff1e0138ea02cL102">From</a></td>
+                                <td><i>Move Method	public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : RaftSessionClient.Builder from class io.atomix.protocols.raft.partition.RaftPartition to public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : PrimaryBackupSessionClient.Builder from class io.atomix.protocols.backup.partition.impl.PrimaryBackupPartitionClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-da886b56b132f8f955180c1aeada1107L138">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-6080f377e5cfbdde82628f1e8c5b7a76R53">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : RaftSessionClient.Builder from class io.atomix.protocols.raft.partition.RaftPartition to public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : PrimaryBackupSessionClient.Builder from class io.atomix.protocols.backup.partition.impl.PrimaryBackupPartitionClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-da886b56b132f8f955180c1aeada1107L138">From</a></td>
+                                <td><i>Move Method	public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : PrimaryBackupSessionClient.Builder from class io.atomix.protocols.backup.partition.PrimaryBackupPartition to public sessionBuilder(primitiveName String, primitiveType PrimitiveType, serviceConfig ServiceConfig) : PrimaryBackupSessionClient.Builder from class io.atomix.protocols.backup.partition.impl.PrimaryBackupPartitionClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-d8a359f942accbadde7ff1e0138ea02cL102">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-6080f377e5cfbdde82628f1e8c5b7a76R53">To</a></td>
                             </tr>
                             
@@ -429,6 +429,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	delegate : SessionClient to session : SessionClient in method public RetryingSessionClient(session SessionClient, scheduler Scheduler, maxRetries int, delayBetweenRetries Duration) in class io.atomix.primitive.session.impl.RetryingSessionClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-0f7a01ea532e2abe5df56e8598f59962L57">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-9b4a46eb1a237ca5467697f56e4df870R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	proxyFactory : Supplier&lt;SessionClient&gt; to sessionFactory : Supplier&lt;SessionClient&gt; in method public RecoveringSessionClient(clientId String, partitionId PartitionId, name String, primitiveType PrimitiveType, sessionFactory Supplier&lt;SessionClient&gt;, context ThreadContext) in class io.atomix.primitive.session.impl.RecoveringSessionClient</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-a4bd7caa3cca7ab73cde4aa3dfe572fdL70">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-d10cbe30702c806ef2ad26f0241d6d74R70">To</a></td>
@@ -439,13 +446,6 @@
                                 <td><i>Rename Parameter	delegate : SessionClient to session : SessionClient in method public BlockingAwareSessionClient(session SessionClient, context ThreadContext) in class io.atomix.primitive.session.impl.BlockingAwareSessionClient</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-7893472b80bd72e3546a9710e9e40669L43">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-e63dabb3fa6febe402fdd7a68300078fR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	delegate : SessionClient to session : SessionClient in method public RetryingSessionClient(session SessionClient, scheduler Scheduler, maxRetries int, delayBetweenRetries Duration) in class io.atomix.primitive.session.impl.RetryingSessionClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-0f7a01ea532e2abe5df56e8598f59962L57">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/e675ed1bdba264703946143e669f7dae3065088a?diff=split#diff-9b4a46eb1a237ca5467697f56e4df870R57">To</a></td>
                             </tr>
                             
                             </tbody>

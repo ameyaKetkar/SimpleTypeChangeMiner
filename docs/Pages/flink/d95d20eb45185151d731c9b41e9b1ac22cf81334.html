@@ -234,6 +234,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	selfGateway : RpcGateway to selfGateway : RpcServer in method public stopServer(selfGateway RpcServer) : void in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fL242">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fR243">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	rpcEndpoint : S to rpcEndpoint : C in method public startServer(rpcEndpoint C) : RpcServer in class org.apache.flink.runtime.rpc.RpcService</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-ba56c67271f7578ee3def67558643390L66">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-ba56c67271f7578ee3def67558643390R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	rpcEndpoint : S to rpcEndpoint : C in method public startServer(rpcEndpoint C) : RpcServer in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fL190">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fR191">To</a></td>
@@ -251,20 +265,6 @@
                                 <td><i>Change Parameter Type	endpoint : RpcEndpoint&lt;?&gt; to endpoint : RpcEndpoint in method public MainThreadValidatorUtil(endpoint RpcEndpoint) in class org.apache.flink.runtime.rpc.MainThreadValidatorUtil</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-70f6f3c426bce6afd139fec7d6a3765aL34">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-70f6f3c426bce6afd139fec7d6a3765aR34">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	selfGateway : RpcGateway to selfGateway : RpcServer in method public stopServer(selfGateway RpcServer) : void in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fL242">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fR243">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	rpcEndpoint : S to rpcEndpoint : C in method public startServer(rpcEndpoint C) : RpcServer in class org.apache.flink.runtime.rpc.RpcService</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-ba56c67271f7578ee3def67558643390L66">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-ba56c67271f7578ee3def67558643390R73">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -295,83 +295,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-25" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	KvStateLocation to CompletableFuture&lt;KvStateLocation&gt; in method public lookupKvStateLocation(registrationName String) : CompletableFuture&lt;KvStateLocation&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L619">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R641">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Iterable&lt;SlotOffer&gt;&gt; to CompletableFuture&lt;Collection&lt;SlotOffer&gt;&gt; in method public offerSlots(taskManagerId ResourceID, slots Iterable&lt;SlotOffer&gt;, leaderId UUID, timeout Time) : CompletableFuture&lt;Collection&lt;SlotOffer&gt;&gt; in class org.apache.flink.runtime.jobmaster.JobMasterGateway</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-1463c1225bf5be0b453f3f141b2e5dd6L180">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-1463c1225bf5be0b453f3f141b2e5dd6R181">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public scheduleOrUpdateConsumers(leaderSessionID UUID, partitionID ResultPartitionID, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L536">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R554">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public stopTask(executionAttemptID ExecutionAttemptID, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL423">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR431">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public confirmCheckpoint(executionAttemptID ExecutionAttemptID, checkpointId long, checkpointTimestamp long) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL539">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR552">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public requestSlot(jobMasterLeaderID UUID, resourceManagerLeaderID UUID, slotRequest SlotRequest, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.resourcemanager.ResourceManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-7c5af443934ab38b37031331cad9f8e3L410">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-7c5af443934ab38b37031331cad9f8e3R413">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public updatePartitions(executionAttemptID ExecutionAttemptID, partitionInfos Iterable&lt;PartitionInfo&gt;, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL446">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR454">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public triggerCheckpoint(executionAttemptID ExecutionAttemptID, checkpointId long, checkpointTimestamp long, checkpointOptions CheckpointOptions) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL521">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR530">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ClassloadingProps to CompletableFuture&lt;ClassloadingProps&gt; in method public requestClassloadingProps() : CompletableFuture&lt;ClassloadingProps&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L675">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R697">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	C to RpcServer in method public startServer(rpcEndpoint C) : RpcServer in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fL190">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fR190">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public updateTaskExecutionState(leaderSessionID UUID, taskExecutionState TaskExecutionState) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L427">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R431">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -471,6 +394,83 @@
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-efed081196807a158b134e62b4f0a217R145">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	KvStateLocation to CompletableFuture&lt;KvStateLocation&gt; in method public lookupKvStateLocation(registrationName String) : CompletableFuture&lt;KvStateLocation&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L619">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R641">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Iterable&lt;SlotOffer&gt;&gt; to CompletableFuture&lt;Collection&lt;SlotOffer&gt;&gt; in method public offerSlots(taskManagerId ResourceID, slots Iterable&lt;SlotOffer&gt;, leaderId UUID, timeout Time) : CompletableFuture&lt;Collection&lt;SlotOffer&gt;&gt; in class org.apache.flink.runtime.jobmaster.JobMasterGateway</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-1463c1225bf5be0b453f3f141b2e5dd6L180">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-1463c1225bf5be0b453f3f141b2e5dd6R181">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public scheduleOrUpdateConsumers(leaderSessionID UUID, partitionID ResultPartitionID, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L536">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R554">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public stopTask(executionAttemptID ExecutionAttemptID, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL423">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR431">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public confirmCheckpoint(executionAttemptID ExecutionAttemptID, checkpointId long, checkpointTimestamp long) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL539">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR552">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public requestSlot(jobMasterLeaderID UUID, resourceManagerLeaderID UUID, slotRequest SlotRequest, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.resourcemanager.ResourceManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-7c5af443934ab38b37031331cad9f8e3L410">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-7c5af443934ab38b37031331cad9f8e3R413">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public updatePartitions(executionAttemptID ExecutionAttemptID, partitionInfos Iterable&lt;PartitionInfo&gt;, timeout Time) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL446">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR454">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public triggerCheckpoint(executionAttemptID ExecutionAttemptID, checkpointId long, checkpointTimestamp long, checkpointOptions CheckpointOptions) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.taskexecutor.TaskExecutor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bL521">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR530">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ClassloadingProps to CompletableFuture&lt;ClassloadingProps&gt; in method public requestClassloadingProps() : CompletableFuture&lt;ClassloadingProps&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L675">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R697">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	C to RpcServer in method public startServer(rpcEndpoint C) : RpcServer in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fL190">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-478958dcf7ec7b4c81bd4d49d964016fR190">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Acknowledge to CompletableFuture&lt;Acknowledge&gt; in method public updateTaskExecutionState(leaderSessionID UUID, taskExecutionState TaskExecutionState) : CompletableFuture&lt;Acknowledge&gt; in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5L427">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-25b66d647903625abd46ed702f50bec5R431">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -520,13 +520,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	offerResultFuture : CompletableFuture&lt;Iterable&lt;SlotOffer&gt;&gt; to offerResultFuture : CompletableFuture&lt;Collection&lt;SlotOffer&gt;&gt; in method public testSubmitTaskBeforeAcceptSlot() : void in class org.apache.flink.runtime.taskexecutor.TaskExecutorTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-026b558a14663cc4d2a50ee33e7e919eL1080">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-026b558a14663cc4d2a50ee33e7e919eR1243">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	self : C to rpcServer : RpcServer in method public startServer(rpcEndpoint S) : RpcServer in class org.apache.flink.runtime.rpc.TestingSerialRpcService</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-efed081196807a158b134e62b4f0a217L146">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-efed081196807a158b134e62b4f0a217R158">To</a></td>
@@ -546,6 +539,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-2139213090a3098a7bd8f6a9287d395bR791">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	offerResultFuture : CompletableFuture&lt;Iterable&lt;SlotOffer&gt;&gt; to offerResultFuture : CompletableFuture&lt;Collection&lt;SlotOffer&gt;&gt; in method public testSubmitTaskBeforeAcceptSlot() : void in class org.apache.flink.runtime.taskexecutor.TaskExecutorTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-026b558a14663cc4d2a50ee33e7e919eL1080">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-026b558a14663cc4d2a50ee33e7e919eR1243">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -559,16 +559,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	self : C to rpcServer : RpcServer in class org.apache.flink.runtime.rpc.RpcEndpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289L74">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289R69">To</a></td>
+                                <td><i>Change Attribute Type	endpoint : RpcEndpoint&lt;?&gt; to endpoint : RpcEndpoint in class org.apache.flink.runtime.rpc.MainThreadValidatorUtil</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-70f6f3c426bce6afd139fec7d6a3765aL32">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-70f6f3c426bce6afd139fec7d6a3765aR32">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	endpoint : RpcEndpoint&lt;?&gt; to endpoint : RpcEndpoint in class org.apache.flink.runtime.rpc.MainThreadValidatorUtil</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-70f6f3c426bce6afd139fec7d6a3765aL32">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-70f6f3c426bce6afd139fec7d6a3765aR32">To</a></td>
+                                <td><i>Change Attribute Type	self : C to rpcServer : RpcServer in class org.apache.flink.runtime.rpc.RpcEndpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289L74">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d95d20eb45185151d731c9b41e9b1ac22cf81334?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289R69">To</a></td>
                             </tr>
                             
                             </tbody>

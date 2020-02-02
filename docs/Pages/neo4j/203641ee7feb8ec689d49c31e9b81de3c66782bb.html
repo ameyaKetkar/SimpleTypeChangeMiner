@@ -298,20 +298,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	resource : Object to resource : LockResource in method public tryWriteLock(resource LockResource, tx Object) : boolean in class org.neo4j.kernel.impl.locking.community.LockManagerImpl</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-a13f1b317257fe4b1277bcc2be950a1bL58">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-a13f1b317257fe4b1277bcc2be950a1bR70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resource : Object to resource : LockResource in method protected createLock(resource LockResource) : RWLock in class org.neo4j.kernel.impl.locking.community.LockManagerImplTest.MockedLockLockManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-f148c07f47230b5aacda54323e63a48fL165">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-f148c07f47230b5aacda54323e63a48fR150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	resource : Object to resource : LockResource in method public getReadLock(resource LockResource, tx Object) : boolean in class org.neo4j.kernel.impl.locking.community.LockManagerImpl</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-a13f1b317257fe4b1277bcc2be950a1bL40">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-a13f1b317257fe4b1277bcc2be950a1bR52">To</a></td>
@@ -359,6 +345,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-151970d960daecacd0a150b82ba9d21aR270">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resource : Object to resource : LockResource in method public tryWriteLock(resource LockResource, tx Object) : boolean in class org.neo4j.kernel.impl.locking.community.LockManagerImpl</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-a13f1b317257fe4b1277bcc2be950a1bL58">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-a13f1b317257fe4b1277bcc2be950a1bR70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resource : Object to resource : LockResource in method protected createLock(resource LockResource) : RWLock in class org.neo4j.kernel.impl.locking.community.LockManagerImplTest.MockedLockLockManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-f148c07f47230b5aacda54323e63a48fL165">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/203641ee7feb8ec689d49c31e9b81de3c66782bb?diff=split#diff-f148c07f47230b5aacda54323e63a48fR150">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -401,6 +401,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private assertValid(waitStartMillis long, resourceType ResourceType, resourceId long) : void extracted from public acquireShared(resourceType ResourceType, resourceIds long...) : void in class org.neo4j.kernel.impl.enterprise.lock.forseti.ForsetiClient</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public assertWriteLockDoesNotLeakMemory() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public testLockCounters() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public testDeadlockDetection() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public testWaitingWriterLock() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createLockManager() : LockManagerImpl extracted from public shouldNotBePossibleReleaseNotExistingLock() : void in class org.neo4j.kernel.impl.locking.community.LockManagerImplTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -454,48 +496,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private assertValid(waitStartMillis long, resourceType ResourceType, resourceId long) : void extracted from public acquireExclusive(resourceType ResourceType, resourceIds long...) : void in class org.neo4j.kernel.impl.enterprise.lock.forseti.ForsetiClient</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private assertValid(waitStartMillis long, resourceType ResourceType, resourceId long) : void extracted from public acquireShared(resourceType ResourceType, resourceIds long...) : void in class org.neo4j.kernel.impl.enterprise.lock.forseti.ForsetiClient</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public assertWriteLockDoesNotLeakMemory() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public testLockCounters() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public testDeadlockDetection() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private createRWLock(ragManager RagManager, resource LockResource) : RWLock extracted from public testWaitingWriterLock() : void in class org.neo4j.kernel.impl.locking.community.RWLockTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private createLockManager() : LockManagerImpl extracted from public shouldNotBePossibleReleaseNotExistingLock() : void in class org.neo4j.kernel.impl.locking.community.LockManagerImplTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

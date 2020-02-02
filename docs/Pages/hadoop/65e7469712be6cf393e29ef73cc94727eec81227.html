@@ -218,20 +218,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	List&lt;RecoveredContainerState&gt; to RecoveryIterator&lt;RecoveredContainerState&gt; in method public abstract getContainerStateIterator() : RecoveryIterator&lt;RecoveredContainerState&gt; in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMStateStoreService</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666L402">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666R412">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	List&lt;RecoveredContainerState&gt; to RecoveredContainerState in method private getNextRecoveredContainer(it LeveldbIterator) : RecoveredContainerState in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-dade6f9112582c3d5a522fd11f5752f6L228">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-dade6f9112582c3d5a522fd11f5752f6R300">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	List&lt;RecoveredContainerState&gt; to RecoveryIterator&lt;RecoveredContainerState&gt; in method public getContainerStateIterator() : RecoveryIterator&lt;RecoveredContainerState&gt; in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMMemoryStateStoreService</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-47aef434238623587f01883c2283dd94L113">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-47aef434238623587f01883c2283dd94R141">To</a></td>
@@ -242,6 +228,20 @@
                                 <td><i>Change Return Type	List&lt;RecoveredContainerState&gt; to RecoveryIterator&lt;RecoveredContainerState&gt; in method public getContainerStateIterator() : RecoveryIterator&lt;RecoveredContainerState&gt; in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMNullStateStoreService</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-5c9d2c121cde426970cda1c4dd27e355L67">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-5c9d2c121cde426970cda1c4dd27e355R67">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	List&lt;RecoveredContainerState&gt; to RecoveryIterator&lt;RecoveredContainerState&gt; in method public abstract getContainerStateIterator() : RecoveryIterator&lt;RecoveredContainerState&gt; in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMStateStoreService</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666L402">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-a27a51da4db964d3d4c8ecaffcbca666R412">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	List&lt;RecoveredContainerState&gt; to RecoveredContainerState in method private getNextRecoveredContainer(it LeveldbIterator) : RecoveredContainerState in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-dade6f9112582c3d5a522fd11f5752f6L228">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/65e7469712be6cf393e29ef73cc94727eec81227?diff=split#diff-dade6f9112582c3d5a522fd11f5752f6R300">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -282,6 +282,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private getLevelDBIterator(startKey String) : LeveldbIterator extracted from public loadLocalizationState() : RecoveredLocalizationState in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private getMasterKey(dbKey String) : MasterKey extracted from public loadNMTokensState() : RecoveredNMTokensState in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -290,13 +297,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private getMasterKey(dbKey String) : MasterKey extracted from public loadContainerTokensState() : RecoveredContainerTokensState in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getLevelDBIterator(startKey String) : LeveldbIterator extracted from public loadLocalizationState() : RecoveredLocalizationState in class org.apache.hadoop.yarn.server.nodemanager.recovery.NMLeveldbStateStoreService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

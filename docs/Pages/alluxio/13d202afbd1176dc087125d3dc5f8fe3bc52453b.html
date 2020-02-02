@@ -184,6 +184,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public addLineage(inputFiles List&lt;TachyonFile&gt;, outputFiles List&lt;LineageFile&gt;, job Job) : long renamed to public createLineage(inputFiles List&lt;TachyonFile&gt;, outputFiles List&lt;LineageFile&gt;, job Job) : long in class tachyon.master.lineage.meta.LineageStore</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7L47">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public recordFileForAsyncWrite(fileId long, underFsPath String) : void renamed to public completeFileForAsyncWrite(fileId long, underFsPath String) : void in class tachyon.master.lineage.meta.LineageStore</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7L69">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7R69">To</a></td>
@@ -194,13 +201,6 @@
                                 <td><i>Rename Method	public getLineageByOutputFile(fileId long) : Lineage renamed to public reportLostFile(fileId long) : void in class tachyon.master.lineage.meta.LineageStore</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7L104">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7R104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public addLineage(inputFiles List&lt;TachyonFile&gt;, outputFiles List&lt;LineageFile&gt;, job Job) : long renamed to public createLineage(inputFiles List&lt;TachyonFile&gt;, outputFiles List&lt;LineageFile&gt;, job Job) : long in class tachyon.master.lineage.meta.LineageStore</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7L47">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-b733a75a5cd896fbdec51f6b8924f9e7R47">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -252,13 +252,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	file : CheckpointFileRecord to file : LineageFile in method public getFilesToCheckpoint(workerId long) : List&lt;CheckpointFile&gt; in class tachyon.master.lineage.checkpoint.CheckpointManager</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484L74">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484R88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	checkpointFilesOnWorker : List&lt;CheckpointFileRecord&gt; to checkpointFilesOnWorker : List&lt;LineageFile&gt; in method public commitCheckpointFiles(workerId long, persistedFiles List&lt;Long&gt;) : void in class tachyon.master.lineage.checkpoint.CheckpointManager</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484L106">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484R109">To</a></td>
@@ -269,6 +262,13 @@
                                 <td><i>Change Variable Type	checkpointFile : CheckpointFileRecord to lineageFile : LineageFile in method public commitCheckpointFiles(workerId long, persistedFiles List&lt;Long&gt;) : void in class tachyon.master.lineage.checkpoint.CheckpointManager</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484L106">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484R115">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	file : CheckpointFileRecord to file : LineageFile in method public getFilesToCheckpoint(workerId long) : List&lt;CheckpointFile&gt; in class tachyon.master.lineage.checkpoint.CheckpointManager</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484L74">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/13d202afbd1176dc087125d3dc5f8fe3bc52453b?diff=split#diff-694f2b3d28122487f69b5aa9b0448484R88">To</a></td>
                             </tr>
                             
                             </tbody>

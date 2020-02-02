@@ -304,20 +304,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Method	protected determineRecordSize() : int from class org.neo4j.kernel.impl.store.ComposableRecordStore to protected determineRecordSize() : int from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L56">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR747">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	protected readHeaderAndInitializeRecordFormat(cursor PageCursor) : void from class org.neo4j.kernel.impl.store.ComposableRecordStore to private readHeaderAndInitializeRecordFormat(cursor PageCursor) : void from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L110">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR318">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Pull Up Method	public prepareForCommit(record RECORD) : void from class org.neo4j.kernel.impl.store.ComposableRecordStore to public prepareForCommit(record RECORD) : void from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L80">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR1042">To</a></td>
@@ -335,6 +321,20 @@
                                 <td><i>Pull Up Method	protected isInUse(cursor PageCursor) : boolean from class org.neo4j.kernel.impl.store.ComposableRecordStore to private isInUse(cursor PageCursor) : boolean from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L116">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR764">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	protected determineRecordSize() : int from class org.neo4j.kernel.impl.store.ComposableRecordStore to protected determineRecordSize() : int from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L56">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR747">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	protected readHeaderAndInitializeRecordFormat(cursor PageCursor) : void from class org.neo4j.kernel.impl.store.ComposableRecordStore to private readHeaderAndInitializeRecordFormat(cursor PageCursor) : void from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L110">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR318">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -375,6 +375,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	recordFormat : RecordFormat&lt;NeoStoreActualRecord&gt; to recordFormat : RecordFormat&lt;MetaDataRecord&gt; in method package MetaDataStore(fileName File, conf Config, idGeneratorFactory IdGeneratorFactory, pageCache PageCache, logProvider LogProvider, recordFormat RecordFormat&lt;MetaDataRecord&gt;, storeVersion String) in class org.neo4j.kernel.impl.store.MetaDataStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbL138">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbR145">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	record : NeoStoreActualRecord to record : MetaDataRecord in method public write(record MetaDataRecord, cursor PageCursor, recordSize int, storeFile PagedFile) : void in class org.neo4j.kernel.impl.store.format.lowlimit.MetaDataRecordFormat</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbL542">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-16fca38e39c785ad4431d2e853a2310dR68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	visitor : Visitor&lt;CommonAbstractStore&lt;RECORD&gt;,RuntimeException&gt; to visitor : Visitor&lt;CommonAbstractStore&lt;RECORD,HEADER&gt;,RuntimeException&gt; in method public visitStore(visitor Visitor&lt;CommonAbstractStore&lt;RECORD,HEADER&gt;,RuntimeException&gt;) : void in class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cL904">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR929">To</a></td>
@@ -408,20 +422,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-16fca38e39c785ad4431d2e853a2310dR48">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordFormat : RecordFormat&lt;NeoStoreActualRecord&gt; to recordFormat : RecordFormat&lt;MetaDataRecord&gt; in method package MetaDataStore(fileName File, conf Config, idGeneratorFactory IdGeneratorFactory, pageCache PageCache, logProvider LogProvider, recordFormat RecordFormat&lt;MetaDataRecord&gt;, storeVersion String) in class org.neo4j.kernel.impl.store.MetaDataStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbL138">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbR145">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	record : NeoStoreActualRecord to record : MetaDataRecord in method public write(record MetaDataRecord, cursor PageCursor, recordSize int, storeFile PagedFile) : void in class org.neo4j.kernel.impl.store.format.lowlimit.MetaDataRecordFormat</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbL542">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-16fca38e39c785ad4431d2e853a2310dR68">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -435,16 +435,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Attribute	protected storeHeaderFormat : StoreHeaderFormat&lt;HEADER&gt; from class org.neo4j.kernel.impl.store.ComposableRecordStore to private storeHeaderFormat : StoreHeaderFormat&lt;HEADER&gt; from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L38">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR81">To</a></td>
+                                <td><i>Pull Up Attribute	protected storeHeader : HEADER from class org.neo4j.kernel.impl.store.ComposableRecordStore to private storeHeader : HEADER from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L39">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR82">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Attribute	protected storeHeader : HEADER from class org.neo4j.kernel.impl.store.ComposableRecordStore to private storeHeader : HEADER from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L39">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR82">To</a></td>
+                                <td><i>Pull Up Attribute	protected storeHeaderFormat : StoreHeaderFormat&lt;HEADER&gt; from class org.neo4j.kernel.impl.store.ComposableRecordStore to private storeHeaderFormat : StoreHeaderFormat&lt;HEADER&gt; from class org.neo4j.kernel.impl.store.CommonAbstractStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8367ae3c3cc95c2e7b2345544cd78700L38">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-68e874f818d330dfecece4535224458cR81">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -460,16 +460,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	NeoStoreActualRecord to MetaDataRecord in method public newRecord() : MetaDataRecord in class org.neo4j.kernel.impl.store.MetaDataStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbL801">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbR797">To</a></td>
+                                <td><i>Change Return Type	NeoStoreActualRecord to MetaDataRecord in method public initialize(inUse boolean, value long) : MetaDataRecord in class org.neo4j.kernel.impl.store.record.MetaDataRecord</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8ddd340014d85a6caba02f71acb4efbcL31">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-c84345acfa58457fb95fa985fd940eb6R31">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	NeoStoreActualRecord to MetaDataRecord in method public initialize(inUse boolean, value long) : MetaDataRecord in class org.neo4j.kernel.impl.store.record.MetaDataRecord</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-8ddd340014d85a6caba02f71acb4efbcL31">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-c84345acfa58457fb95fa985fd940eb6R31">To</a></td>
+                                <td><i>Change Return Type	NeoStoreActualRecord to MetaDataRecord in method public newRecord() : MetaDataRecord in class org.neo4j.kernel.impl.store.MetaDataStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbL801">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/9be6016c963a45f890711f90bf353b7a644285a2?diff=split#diff-7a6484c83d1080bdee412e9cf307b8fbR797">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -336,6 +336,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private isSufficientlyReplicated(block BlockInfoContiguous, bc BlockCollection, numberReplicas NumberReplicas) : boolean renamed to private isSufficient(block BlockInfo, bc BlockCollection, numberReplicas NumberReplicas) : boolean in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL246">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR246">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private pruneSufficientlyReplicated(datanode DatanodeDescriptor, blocks AbstractList&lt;BlockInfoContiguous&gt;) : void renamed to private pruneReliableBlocks(datanode DatanodeDescriptor, blocks AbstractList&lt;BlockInfo&gt;) : void in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.Monitor</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL493">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR494">To</a></td>
@@ -360,13 +367,6 @@
                                 <td><i>Rename Method	public checkMinStorage(block BlockInfo) : boolean renamed to public hasMinStorage(block BlockInfo) : boolean in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL597">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR601">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private isSufficientlyReplicated(block BlockInfoContiguous, bc BlockCollection, numberReplicas NumberReplicas) : boolean renamed to private isSufficient(block BlockInfo, bc BlockCollection, numberReplicas NumberReplicas) : boolean in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL246">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR246">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -506,41 +506,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	excessBlocks : LightWeightLinkedSet&lt;Block&gt; to excessBlocks : LightWeightLinkedSet&lt;BlockInfo&gt; in method package chooseSourceDatanodes(block BlockInfo, containingNodes List&lt;DatanodeDescriptor&gt;, nodesContainingLiveReplicas List&lt;DatanodeStorageInfo&gt;, numReplicas NumberReplicas, missingBlockIndices List&lt;Short&gt;, numSourceNodes int, priority int) : DatanodeDescriptor[] in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1656">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1731">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	blocksExcess : LightWeightLinkedSet&lt;Block&gt; to blocksExcess : LightWeightLinkedSet&lt;BlockInfo&gt; in method public countNodes(b BlockInfo) : NumberReplicas in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL3375">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3410">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	excessBlocks : LightWeightLinkedSet&lt;Block&gt; to excessBlocks : LightWeightLinkedSet&lt;BlockInfo&gt; in method public removeStoredBlock(storedBlock BlockInfo, node DatanodeDescriptor) : void in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL3168">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3211">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	block : Block to block : BlockInfo in method package removeBlocksAssociatedTo(storageInfo DatanodeStorageInfo) : void in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1113">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1123">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	insufficient : AbstractList&lt;BlockInfoContiguous&gt; to insufficient : AbstractList&lt;BlockInfo&gt; in method private handleInsufficientlyStored(datanode DatanodeDescriptor) : AbstractList&lt;BlockInfo&gt; in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.Monitor</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL502">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR513">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	blocks : Collection&lt;Block&gt; to blocks : Collection&lt;BlockInfo&gt; in method public testNodeCount() : void in class org.apache.hadoop.hdfs.server.blockmanagement.TestNodeCount</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-d7fbd677489fbd1689d1e57ec3bfa0f2L53">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-d7fbd677489fbd1689d1e57ec3bfa0f2R103">To</a></td>
@@ -616,6 +581,41 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3039">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	excessBlocks : LightWeightLinkedSet&lt;Block&gt; to excessBlocks : LightWeightLinkedSet&lt;BlockInfo&gt; in method package chooseSourceDatanodes(block BlockInfo, containingNodes List&lt;DatanodeDescriptor&gt;, nodesContainingLiveReplicas List&lt;DatanodeStorageInfo&gt;, numReplicas NumberReplicas, missingBlockIndices List&lt;Short&gt;, numSourceNodes int, priority int) : DatanodeDescriptor[] in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1656">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1731">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	blocksExcess : LightWeightLinkedSet&lt;Block&gt; to blocksExcess : LightWeightLinkedSet&lt;BlockInfo&gt; in method public countNodes(b BlockInfo) : NumberReplicas in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL3375">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3410">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	excessBlocks : LightWeightLinkedSet&lt;Block&gt; to excessBlocks : LightWeightLinkedSet&lt;BlockInfo&gt; in method public removeStoredBlock(storedBlock BlockInfo, node DatanodeDescriptor) : void in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL3168">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3211">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	block : Block to block : BlockInfo in method package removeBlocksAssociatedTo(storageInfo DatanodeStorageInfo) : void in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1113">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1123">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	insufficient : AbstractList&lt;BlockInfoContiguous&gt; to insufficient : AbstractList&lt;BlockInfo&gt; in method private handleInsufficientlyStored(datanode DatanodeDescriptor) : AbstractList&lt;BlockInfo&gt; in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.Monitor</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL502">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR513">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -629,6 +629,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	decomNodeBlocks : TreeMap&lt;DatanodeDescriptor,AbstractList&lt;BlockInfoContiguous&gt;&gt; to decomNodeBlocks : TreeMap&lt;DatanodeDescriptor,AbstractList&lt;BlockInfo&gt;&gt; in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL104">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	excessReplicateMap : Map&lt;String,LightWeightLinkedSet&lt;Block&gt;&gt; to excessReplicateMap : Map&lt;String,LightWeightLinkedSet&lt;BlockInfo&gt;&gt; in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL198">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR202">To</a></td>
@@ -639,13 +646,6 @@
                                 <td><i>Change Attribute Type	corrupted : BlockInfo to corrupted : Block in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.BlockToMarkCorrupt</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1851">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1871">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	decomNodeBlocks : TreeMap&lt;DatanodeDescriptor,AbstractList&lt;BlockInfoContiguous&gt;&gt; to decomNodeBlocks : TreeMap&lt;DatanodeDescriptor,AbstractList&lt;BlockInfo&gt;&gt; in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL104">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/abf833a7b228fff2bca4f69cd9df99d532380038?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR104">To</a></td>
                             </tr>
                             
                             </tbody>

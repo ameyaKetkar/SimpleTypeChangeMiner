@@ -454,13 +454,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	create : Map&lt;CreationMessageId,CreationMessage&gt; to create : List&lt;CreationMessageEntry&gt; in method package SetMessagesRequest(accountId Optional&lt;String&gt;, ifInState Optional&lt;String&gt;, create List&lt;CreationMessageEntry&gt;, update Map&lt;MessageId,Function&lt;UpdateMessagePatchConverter,UpdateMessagePatch&gt;&gt;, destroy List&lt;MessageId&gt;) in class org.apache.james.jmap.model.SetMessagesRequest</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9L102">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	creationMessageEntry : MessageWithId.CreationMessageEntry to creationMessageEntry : ValueWithId.CreationMessageEntry in method public convert(creationMessageEntry ValueWithId.CreationMessageEntry) : byte[] in class org.apache.james.jmap.methods.MIMEMessageConverter</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-36c937d8492b5b3282370c67ff6d0a16L71">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-36c937d8492b5b3282370c67ff6d0a16R71">To</a></td>
@@ -478,6 +471,13 @@
                                 <td><i>Change Parameter Type	creationMessageEntry : MessageWithId.CreationMessageEntry to creationMessageEntry : ValueWithId.CreationMessageEntry in method package convertToMime(creationMessageEntry ValueWithId.CreationMessageEntry) : Message in class org.apache.james.jmap.methods.MIMEMessageConverter</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-36c937d8492b5b3282370c67ff6d0a16L83">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-36c937d8492b5b3282370c67ff6d0a16R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	create : Map&lt;CreationMessageId,CreationMessage&gt; to create : List&lt;CreationMessageEntry&gt; in method package SetMessagesRequest(accountId Optional&lt;String&gt;, ifInState Optional&lt;String&gt;, create List&lt;CreationMessageEntry&gt;, update Map&lt;MessageId,Function&lt;UpdateMessagePatchConverter,UpdateMessagePatch&gt;&gt;, destroy List&lt;MessageId&gt;) in class org.apache.james.jmap.model.SetMessagesRequest</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9L102">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9R117">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -608,13 +608,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private collectMessageProperties(validationErrors List&lt;ValidationResult&gt;) : Set&lt;MessageProperties.MessageProperty&gt; extracted from private buildSetErrorFromValidationResult(validationErrors List&lt;ValidationResult&gt;) : SetError in class org.apache.james.jmap.methods.SetMessagesCreationProcessor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private formatValidationErrorMessge(validationErrors List&lt;ValidationResult&gt;) : String extracted from private buildSetErrorFromValidationResult(validationErrors List&lt;ValidationResult&gt;) : SetError in class org.apache.james.jmap.methods.SetMessagesCreationProcessor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -623,6 +616,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private buildMessage(mailboxMessage MailboxMessage, jmapMessage Message) : Mail extracted from private sendMessage(mailboxMessage MailboxMessage, jmapMessage Message, session MailboxSession) : void in class org.apache.james.jmap.methods.SetMessagesCreationProcessor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private collectMessageProperties(validationErrors List&lt;ValidationResult&gt;) : Set&lt;MessageProperties.MessageProperty&gt; extracted from private buildSetErrorFromValidationResult(validationErrors List&lt;ValidationResult&gt;) : SetError in class org.apache.james.jmap.methods.SetMessagesCreationProcessor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -719,6 +719,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	mailboxManager : MailboxManager to systemMailboxesProvider : SystemMailboxesProvider in class org.apache.james.jmap.methods.SetMessagesCreationProcessor</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-db1feec6e379a4cb9fe35151dea8f2c0L85">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-db1feec6e379a4cb9fe35151dea8f2c0R82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	create : Map&lt;CreationMessageId,CreationMessage&gt; to create : List&lt;CreationMessageEntry&gt; in class org.apache.james.jmap.model.SetMessagesRequest</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9L98">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9R113">To</a></td>
@@ -729,13 +736,6 @@
                                 <td><i>Change Attribute Type	create : ImmutableMap.Builder&lt;CreationMessageId,CreationMessage&gt; to create : HashMap&lt;CreationMessageId,CreationMessage&gt; in class org.apache.james.jmap.model.SetMessagesRequest.Builder</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9L51">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-862c0bb0b12647fd241d8caf0397b8c9R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	mailboxManager : MailboxManager to systemMailboxesProvider : SystemMailboxesProvider in class org.apache.james.jmap.methods.SetMessagesCreationProcessor</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-db1feec6e379a4cb9fe35151dea8f2c0L85">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/d59881815c9c5fcee73addb2a2562c28f3491e16?diff=split#diff-db1feec6e379a4cb9fe35151dea8f2c0R82">To</a></td>
                             </tr>
                             
                             </tbody>

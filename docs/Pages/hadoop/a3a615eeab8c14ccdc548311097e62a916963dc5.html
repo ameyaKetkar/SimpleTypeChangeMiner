@@ -425,13 +425,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	planLoads : Map&lt;Long,Resource&gt; to planLoads : RLESparseResourceAllocation in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.IterativePlanner</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672L63">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672R60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	algStageEarliestStart : StageEarliestStart to algStageExecutionInterval : StageExecutionInterval in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.IterativePlanner</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672L73">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672R70">To</a></td>
@@ -442,6 +435,13 @@
                                 <td><i>Change Attribute Type	maxLoad : Resource to gangsCanFit : int in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageAllocatorLowCostAligned.DurationInterval</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40L292">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40R417">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	planLoads : Map&lt;Long,Resource&gt; to planLoads : RLESparseResourceAllocation in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.IterativePlanner</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672L63">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672R60">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -475,6 +475,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	plan : Plan to s : Long in method protected getRoundedDuration(stage ReservationRequest, s Long) : long in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageExecutionIntervalByDemand</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-721afada0c2d115fe034e8e1e1abc228L95">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-689f3376b1824e8bdcd00016390529ecR133">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	stageEarliestStart : long to stageArrival : long in method public computeStageAllocation(plan Plan, planLoads RLESparseResourceAllocation, planModifications RLESparseResourceAllocation, rr ReservationRequest, stageArrival long, stageDeadline long, user String, oldId ReservationId) : Map&lt;ReservationInterval,Resource&gt; in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageAllocatorLowCostAligned</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40L64">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	maxLoad : Resource to gangsCanfit : int in method public DurationInterval(startTime long, endTime long, cost double, gangsCanfit int) in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageAllocatorLowCostAligned.DurationInterval</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40L296">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40R421">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	step : long to s : long in method protected stepRoundDown(t long, s long) : long in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageExecutionIntervalByDemand</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-721afada0c2d115fe034e8e1e1abc228L99">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-689f3376b1824e8bdcd00016390529ecR137">To</a></td>
@@ -499,27 +520,6 @@
                                 <td><i>Rename Parameter	algEarliestStartTime : StageEarliestStart to algStageExecutionInterval : StageExecutionInterval in method public IterativePlanner(algStageExecutionInterval StageExecutionInterval, algStageAllocator StageAllocator, allocateLeft boolean) in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.IterativePlanner</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672L78">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-f9f9bfdfd67376b7ac6d0bdd216d9672R75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	plan : Plan to s : Long in method protected getRoundedDuration(stage ReservationRequest, s Long) : long in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageExecutionIntervalByDemand</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-721afada0c2d115fe034e8e1e1abc228L95">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-689f3376b1824e8bdcd00016390529ecR133">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	stageEarliestStart : long to stageArrival : long in method public computeStageAllocation(plan Plan, planLoads RLESparseResourceAllocation, planModifications RLESparseResourceAllocation, rr ReservationRequest, stageArrival long, stageDeadline long, user String, oldId ReservationId) : Map&lt;ReservationInterval,Resource&gt; in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageAllocatorLowCostAligned</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40L64">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	maxLoad : Resource to gangsCanfit : int in method public DurationInterval(startTime long, endTime long, cost double, gangsCanfit int) in class org.apache.hadoop.yarn.server.resourcemanager.reservation.planning.StageAllocatorLowCostAligned.DurationInterval</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40L296">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/a3a615eeab8c14ccdc548311097e62a916963dc5?diff=split#diff-d81af5a801bd38f6e67307c10eb5ff40R421">To</a></td>
                             </tr>
                             
                             </tbody>

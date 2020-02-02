@@ -156,6 +156,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public dispersedFreeSpace(buf ByteBuffer, idx int) : int renamed to public getFreeSpace(buf ByteBuffer, idx int) : short in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-9916ec64c5ce34f8542ad32508f8ba61L26">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-9916ec64c5ce34f8542ad32508f8ba61R26">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public dispersedFreeSpace(buf ByteBuffer, idx int) : int renamed to public getFreeSpace(buf ByteBuffer, idx int) : short in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeLeafIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01L50">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01R53">To</a></td>
@@ -196,13 +203,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aR491">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public dispersedFreeSpace(buf ByteBuffer, idx int) : int renamed to public getFreeSpace(buf ByteBuffer, idx int) : short in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-9916ec64c5ce34f8542ad32508f8ba61L26">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-9916ec64c5ce34f8542ad32508f8ba61R26">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -216,16 +216,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	neededSpace : short to lookupItem : FreeItem in method private take(tree FreeTree, lookupItem FreeItem) : FreeItem in class org.apache.ignite.internal.processors.cache.database.freelist.FreeList</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-042db0c27b23793619e9cf429dafd4bbL84">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-042db0c27b23793619e9cf429dafd4bbR124">To</a></td>
+                                <td><i>Change Parameter Type	freeSpace : short to freeSpace : int in method public FreeItem(freeSpace int, pageId long, cacheId int) in class org.apache.ignite.internal.processors.cache.database.freelist.FreeItem</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-aef94676f5925e7fc873cbd5c2f30293L32">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-aef94676f5925e7fc873cbd5c2f30293R34">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	freeSpace : short to freeSpace : int in method public FreeItem(freeSpace int, pageId long, cacheId int) in class org.apache.ignite.internal.processors.cache.database.freelist.FreeItem</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-aef94676f5925e7fc873cbd5c2f30293L32">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-aef94676f5925e7fc873cbd5c2f30293R34">To</a></td>
+                                <td><i>Change Parameter Type	neededSpace : short to lookupItem : FreeItem in method private take(tree FreeTree, lookupItem FreeItem) : FreeItem in class org.apache.ignite.internal.processors.cache.database.freelist.FreeList</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-042db0c27b23793619e9cf429dafd4bbL84">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-042db0c27b23793619e9cf429dafd4bbR124">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -238,13 +238,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	int to short in method public getFreeSpace(buf ByteBuffer, idx int) : short in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeLeafIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01L50">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01R53">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -267,6 +260,13 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-3e74d88035f120887a483456ef258bdcR59">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	int to short in method public getFreeSpace(buf ByteBuffer, idx int) : short in class org.apache.ignite.internal.processors.cache.database.freelist.io.FreeLeafIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01L50">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-15a22a1eb4c9a8ba2395035b274c3f01R53">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -277,6 +277,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	firstOff : int to firstEntryOff : int in method public isEnoughSpace(newEntrySizeWithItem int, firstEntryOff int, directCnt int, indirectCnt int) : boolean in class org.apache.ignite.internal.processors.cache.database.tree.io.DataPageIO</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aL491">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aR498">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -302,13 +309,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Parameter	entrySize : int to newEntrySizeWithItem : int in method public isEnoughSpace(newEntrySizeWithItem int, firstEntryOff int, directCnt int, indirectCnt int) : boolean in class org.apache.ignite.internal.processors.cache.database.tree.io.DataPageIO</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aL491">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aR498">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	firstOff : int to firstEntryOff : int in method public isEnoughSpace(newEntrySizeWithItem int, firstEntryOff int, directCnt int, indirectCnt int) : boolean in class org.apache.ignite.internal.processors.cache.database.tree.io.DataPageIO</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aL491">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e7d7e2cfad67c28ec448803239fd13ae8fbfa26e?diff=split#diff-4692e93c43365fbfa01f5803a769f43aR498">To</a></td>
                             </tr>

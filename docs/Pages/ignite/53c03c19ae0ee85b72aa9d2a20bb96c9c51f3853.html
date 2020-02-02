@@ -158,13 +158,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public querySqlFieldsNoCache(qry SqlFieldsQuery, keepBinary boolean) : FieldsQueryCursor&lt;List&lt;?&gt;&gt; renamed to public querySqlFields(qry SqlFieldsQuery, keepBinary boolean) : FieldsQueryCursor&lt;List&lt;?&gt;&gt; in class org.apache.ignite.internal.processors.query.GridQueryProcessor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-f2ea8768167d96ca9f3737314729f0c3L2060">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-f2ea8768167d96ca9f3737314729f0c3R1986">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public testLocalQuery() : void renamed to private doTestLocalQuery(loc boolean) : void in class org.apache.ignite.internal.processors.cache.distributed.replicated.IgniteCacheReplicatedQuerySelfTest</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-c86a66e50e87ad7e3f5b12aa697956aeL196">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-c86a66e50e87ad7e3f5b12aa697956aeR210">To</a></td>
@@ -210,6 +203,13 @@
                                 <td><i>Rename Method	public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; renamed to public querySqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, failOnMultipleStmts boolean, cancel GridQueryCancel) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.GridQueryIndexing</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-0c96d5dff23623ae1f1744f7b351148eL76">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-0c96d5dff23623ae1f1744f7b351148eR75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public querySqlFieldsNoCache(qry SqlFieldsQuery, keepBinary boolean) : FieldsQueryCursor&lt;List&lt;?&gt;&gt; renamed to public querySqlFields(qry SqlFieldsQuery, keepBinary boolean) : FieldsQueryCursor&lt;List&lt;?&gt;&gt; in class org.apache.ignite.internal.processors.query.GridQueryProcessor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-f2ea8768167d96ca9f3737314729f0c3L2060">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/53c03c19ae0ee85b72aa9d2a20bb96c9c51f3853?diff=split#diff-f2ea8768167d96ca9f3737314729f0c3R1986">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -339,6 +339,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Inline Variable	sqlQry : String in method public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; from class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Inline Variable	grpByCollocated : boolean in method public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; from class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -365,13 +372,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Variable	sqlQry : String in method public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; from class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -382,6 +382,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private cachedStatement(c Connection, sql String) : PreparedStatement extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private parseAndSplit(schemaName String, qry SqlFieldsQuery, firstArg int) : ParsingResult extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private prepareStatementAndCaches(c Connection, sqlQry String) : PreparedStatement extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -407,27 +428,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private doRunPrepared(schemaName String, prepared Prepared, qry SqlFieldsQuery, twoStepQry GridCacheTwoStepQuery, meta List&lt;GridQueryFieldMetadata&gt;, keepBinary boolean, cancel GridQueryCancel) : List&lt;? extends FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private cachedStatement(c Connection, sql String) : PreparedStatement extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private parseAndSplit(schemaName String, qry SqlFieldsQuery, firstArg int) : ParsingResult extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private prepareStatementAndCaches(c Connection, sqlQry String) : PreparedStatement extracted from public queryDistributedSqlFields(schemaName String, qry SqlFieldsQuery, keepBinary boolean, cancel GridQueryCancel, mainCacheId Integer, failOnMultipleStmts boolean) : List&lt;FieldsQueryCursor&lt;List&lt;?&gt;&gt;&gt; in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

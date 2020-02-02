@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	httpHeadersAuthenticator : HttpHeadersAuthenticator to httpHeadersAuthentication : HttpHeadersAuthentication in method public RequestAuthenticatorImpl(jwtHttpHandler JwtHttpHandler, basicAuthentication BasicAuthentication, httpHeadersAuthentication HttpHeadersAuthentication, userSessionFactory UserSessionFactory) in class org.sonar.server.authentication.RequestAuthenticatorImpl</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12L37">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in method public CredentialsAuthentication(dbClient DbClient, authenticationEvent AuthenticationEvent, externalAuthentication CredentialsExternalAuthentication, localAuthentication CredentialsLocalAuthentication) in class org.sonar.server.authentication.CredentialsAuthentication</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-1004e3307741ee4f59ad40456efc48faL40">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-9fc062e5af299955b1e124c704c3ea62R45">To</a></td>
@@ -208,13 +215,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR56">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	httpHeadersAuthenticator : HttpHeadersAuthenticator to httpHeadersAuthentication : HttpHeadersAuthentication in method public RequestAuthenticatorImpl(jwtHttpHandler JwtHttpHandler, basicAuthentication BasicAuthentication, httpHeadersAuthentication HttpHeadersAuthentication, userSessionFactory UserSessionFactory) in class org.sonar.server.authentication.RequestAuthenticatorImpl</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12L37">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12R37">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -243,27 +243,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.sonar.server.authentication.CredentialsAuthenticator renamed to org.sonar.server.authentication.CredentialsAuthentication</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.sonar.server.authentication.LocalAuthentication renamed to org.sonar.server.authentication.CredentialsLocalAuthentication</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.sonar.server.authentication.HttpHeadersAuthenticatorTest renamed to org.sonar.server.authentication.HttpHeadersAuthenticationTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -328,6 +307,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.sonar.server.authentication.CredentialsAuthenticator renamed to org.sonar.server.authentication.CredentialsAuthentication</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.sonar.server.authentication.LocalAuthentication renamed to org.sonar.server.authentication.CredentialsLocalAuthentication</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.sonar.server.authentication.HttpHeadersAuthenticatorTest renamed to org.sonar.server.authentication.HttpHeadersAuthenticationTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -338,6 +338,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in class org.sonar.server.authentication.BasicAuthenticationTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-5954da122f5c61f64a64ff37d50432e8L68">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-375312851d17bde6c5722a45069495e1R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	userTokenAuthenticator : UserTokenAuthenticator to userTokenAuthentication : UserTokenAuthentication in class org.sonar.server.authentication.BasicAuthentication</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-7140da2dbb81f10cdbf852f54fdf4d2fL46">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in class org.sonar.server.authentication.ws.LoginActionTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-ad4e5a6ecb0e5c2851cf36809349c4a5L73">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-ad4e5a6ecb0e5c2851cf36809349c4a5R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	basicAuthenticator : BasicAuthenticator to basicAuthentication : BasicAuthentication in class org.sonar.server.authentication.ws.ValidateAction</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8955096a3ce3e97643ce2ccf70b9426bL52">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8955096a3ce3e97643ce2ccf70b9426bR52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	userTokenAuthenticator : UserTokenAuthenticator to userTokenAuthentication : UserTokenAuthentication in class org.sonar.server.authentication.BasicAuthenticationTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-5954da122f5c61f64a64ff37d50432e8L69">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-375312851d17bde6c5722a45069495e1R69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	basicAuthenticator : BasicAuthenticator to basicAuthentication : BasicAuthentication in class org.sonar.server.authentication.ws.ValidateActionTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-058a67efa645999b2c37d73dff668f60L51">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-058a67efa645999b2c37d73dff668f60R51">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -402,48 +444,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR52">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in class org.sonar.server.authentication.BasicAuthenticationTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-5954da122f5c61f64a64ff37d50432e8L68">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-375312851d17bde6c5722a45069495e1R68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	userTokenAuthenticator : UserTokenAuthenticator to userTokenAuthentication : UserTokenAuthentication in class org.sonar.server.authentication.BasicAuthentication</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-7140da2dbb81f10cdbf852f54fdf4d2fL46">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in class org.sonar.server.authentication.ws.LoginActionTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-ad4e5a6ecb0e5c2851cf36809349c4a5L73">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-ad4e5a6ecb0e5c2851cf36809349c4a5R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	basicAuthenticator : BasicAuthenticator to basicAuthentication : BasicAuthentication in class org.sonar.server.authentication.ws.ValidateAction</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8955096a3ce3e97643ce2ccf70b9426bL52">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8955096a3ce3e97643ce2ccf70b9426bR52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	userTokenAuthenticator : UserTokenAuthenticator to userTokenAuthentication : UserTokenAuthentication in class org.sonar.server.authentication.BasicAuthenticationTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-5954da122f5c61f64a64ff37d50432e8L69">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-375312851d17bde6c5722a45069495e1R69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	basicAuthenticator : BasicAuthenticator to basicAuthentication : BasicAuthentication in class org.sonar.server.authentication.ws.ValidateActionTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-058a67efa645999b2c37d73dff668f60L51">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-058a67efa645999b2c37d73dff668f60R51">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -454,69 +454,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-33" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.user.ws.CreateActionTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-4ba8c497a1cc216cec082b09c471fc07L91">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-4ba8c497a1cc216cec082b09c471fc07R91">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	externalAuthenticator : RealmAuthenticator to externalAuthentication : CredentialsExternalAuthentication in class org.sonar.server.authentication.CredentialsAuthentication</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-1004e3307741ee4f59ad40456efc48faL36">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-9fc062e5af299955b1e124c704c3ea62R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.user.ws.UsersWsTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-82229d36ae58578a869a2e1a380eb4b4L45">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-82229d36ae58578a869a2e1a380eb4b4R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.authentication.HttpHeadersAuthenticationTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-ea6fc88bbb23131ecd85801b04bf8a7fL103">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-d49ef819a3256786af2593f23a23810fR103">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.user.ws.UpdateActionTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-86f1b6bf58dd462d3f095b9e02e6c391L74">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-86f1b6bf58dd462d3f095b9e02e6c391R74">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	httpHeadersAuthenticator : HttpHeadersAuthenticator to httpHeadersAuthentication : HttpHeadersAuthentication in class org.sonar.server.authentication.RequestAuthenticatorImpl</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12L34">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12R34">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in class org.sonar.server.authentication.BasicAuthentication</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-7140da2dbb81f10cdbf852f54fdf4d2fL45">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	underTest : UserTokenAuthenticator to underTest : UserTokenAuthentication in class org.sonar.server.usertoken.UserTokenAuthenticationTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-a09e6066dd0190e2a632fe487d901ca8L44">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-e1f24a79effadf607f36eefb0be0b37fR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.authentication.CredentialsAuthentication</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-1004e3307741ee4f59ad40456efc48faL38">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-9fc062e5af299955b1e124c704c3ea62R42">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -686,6 +623,69 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-3c4334e00c4d8a46eced8f8d3e38fed5R49">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.user.ws.CreateActionTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-4ba8c497a1cc216cec082b09c471fc07L91">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-4ba8c497a1cc216cec082b09c471fc07R91">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	externalAuthenticator : RealmAuthenticator to externalAuthentication : CredentialsExternalAuthentication in class org.sonar.server.authentication.CredentialsAuthentication</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-1004e3307741ee4f59ad40456efc48faL36">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-9fc062e5af299955b1e124c704c3ea62R41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.user.ws.UsersWsTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-82229d36ae58578a869a2e1a380eb4b4L45">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-82229d36ae58578a869a2e1a380eb4b4R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.authentication.HttpHeadersAuthenticationTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-ea6fc88bbb23131ecd85801b04bf8a7fL103">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-d49ef819a3256786af2593f23a23810fR103">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.user.ws.UpdateActionTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-86f1b6bf58dd462d3f095b9e02e6c391L74">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-86f1b6bf58dd462d3f095b9e02e6c391R74">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	httpHeadersAuthenticator : HttpHeadersAuthenticator to httpHeadersAuthentication : HttpHeadersAuthentication in class org.sonar.server.authentication.RequestAuthenticatorImpl</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12L34">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12R34">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in class org.sonar.server.authentication.BasicAuthentication</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-7140da2dbb81f10cdbf852f54fdf4d2fL45">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	underTest : UserTokenAuthenticator to underTest : UserTokenAuthentication in class org.sonar.server.usertoken.UserTokenAuthenticationTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-a09e6066dd0190e2a632fe487d901ca8L44">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-e1f24a79effadf607f36eefb0be0b37fR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	localAuthentication : LocalAuthentication to localAuthentication : CredentialsLocalAuthentication in class org.sonar.server.authentication.CredentialsAuthentication</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-1004e3307741ee4f59ad40456efc48faL38">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-9fc062e5af299955b1e124c704c3ea62R42">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -696,20 +696,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in method public BasicAuthentication(dbClient DbClient, credentialsAuthentication CredentialsAuthentication, userTokenAuthentication UserTokenAuthentication, authenticationEvent AuthenticationEvent) in class org.sonar.server.authentication.BasicAuthentication</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-7140da2dbb81f10cdbf852f54fdf4d2fL49">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in method public LoginAction(credentialsAuthentication CredentialsAuthentication, jwtHttpHandler JwtHttpHandler, threadLocalUserSession ThreadLocalUserSession, authenticationEvent AuthenticationEvent, userSessionFactory UserSessionFactory) in class org.sonar.server.authentication.ws.LoginAction</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8ea9d319e704a496d0d6420b1af90851L60">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8ea9d319e704a496d0d6420b1af90851R60">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -737,6 +723,20 @@
                                 <td><i>Rename Parameter	basicAuthenticator : BasicAuthenticator to basicAuthentication : BasicAuthentication in method public RequestAuthenticatorImpl(jwtHttpHandler JwtHttpHandler, basicAuthentication BasicAuthentication, httpHeadersAuthentication HttpHeadersAuthentication, userSessionFactory UserSessionFactory) in class org.sonar.server.authentication.RequestAuthenticatorImpl</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12L37">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-40e46d6509eca86a7b09cc5500385e12R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in method public BasicAuthentication(dbClient DbClient, credentialsAuthentication CredentialsAuthentication, userTokenAuthentication UserTokenAuthentication, authenticationEvent AuthenticationEvent) in class org.sonar.server.authentication.BasicAuthentication</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-7140da2dbb81f10cdbf852f54fdf4d2fL49">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-0c54550688f147ba3d8f6738d764afffR56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	credentialsAuthenticator : CredentialsAuthenticator to credentialsAuthentication : CredentialsAuthentication in method public LoginAction(credentialsAuthentication CredentialsAuthentication, jwtHttpHandler JwtHttpHandler, threadLocalUserSession ThreadLocalUserSession, authenticationEvent AuthenticationEvent, userSessionFactory UserSessionFactory) in class org.sonar.server.authentication.ws.LoginAction</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8ea9d319e704a496d0d6420b1af90851L60">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/7f5c9a6291638ad0f81facc0913d8240f253a702?diff=split#diff-8ea9d319e704a496d0d6420b1af90851R60">To</a></td>
                             </tr>
                             
                             </tbody>

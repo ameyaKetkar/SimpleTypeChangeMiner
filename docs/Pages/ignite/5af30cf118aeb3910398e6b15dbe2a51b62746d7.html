@@ -249,20 +249,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	tx : IgniteInternalTx to tx : IgniteTxLocalAdapter in method public localTx() : IgniteTxLocalAdapter in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L721">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R641">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	e : Map.Entry&lt;Long,IgniteInternalTx&gt; to tx : IgniteInternalTx in method public onDisconnected(reconnectFut IgniteFuture) : void in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L315">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R319">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	fut : GridNearTxFinishFuture to fut : NearTxFinishFuture in method private rollbackNearTxLocalAsync(onTimeout boolean) : IgniteInternalFuture&lt;IgniteInternalTx&gt; in class org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-38c0353493d638e29f3d2eb23102e359L3268">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-38c0353493d638e29f3d2eb23102e359R3282">To</a></td>
@@ -273,6 +259,20 @@
                                 <td><i>Change Variable Type	fut : GridNearTxFinishFuture to fut : NearTxFinishFuture in method public commitNearTxLocalAsync() : IgniteInternalFuture&lt;IgniteInternalTx&gt; in class org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-38c0353493d638e29f3d2eb23102e359L3198">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-38c0353493d638e29f3d2eb23102e359R3200">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tx : IgniteInternalTx to tx : IgniteTxLocalAdapter in method public localTx() : IgniteTxLocalAdapter in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L721">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R641">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	e : Map.Entry&lt;Long,IgniteInternalTx&gt; to tx : IgniteInternalTx in method public onDisconnected(reconnectFut IgniteFuture) : void in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L315">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5af30cf118aeb3910398e6b15dbe2a51b62746d7?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R319">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -288,14 +288,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private rollbackNearTxLocalAsync(onTimeout boolean) : IgniteInternalFuture&lt;IgniteInternalTx&gt; extracted from public rollbackNearTxLocalAsync() : IgniteInternalFuture&lt;IgniteInternalTx&gt; in class org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal</i></td>
+                                <td><i>Extract Method	private chainFinishFuture(fut NearTxFinishFuture, commit boolean) : IgniteInternalFuture&lt;IgniteInternalTx&gt; extracted from public rollbackNearTxLocalAsync() : IgniteInternalFuture&lt;IgniteInternalTx&gt; in class org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private chainFinishFuture(fut NearTxFinishFuture, commit boolean) : IgniteInternalFuture&lt;IgniteInternalTx&gt; extracted from public rollbackNearTxLocalAsync() : IgniteInternalFuture&lt;IgniteInternalTx&gt; in class org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal</i></td>
+                                <td><i>Extract Method	private rollbackNearTxLocalAsync(onTimeout boolean) : IgniteInternalFuture&lt;IgniteInternalTx&gt; extracted from public rollbackNearTxLocalAsync() : IgniteInternalFuture&lt;IgniteInternalTx&gt; in class org.apache.ignite.internal.processors.cache.distributed.near.GridNearTxLocal</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

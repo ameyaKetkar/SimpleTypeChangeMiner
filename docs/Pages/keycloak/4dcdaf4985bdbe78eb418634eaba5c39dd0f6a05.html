@@ -890,14 +890,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public getRoles() : Map&lt;String,String&gt; moved from class org.keycloak.models.cache.infinispan.entities.CachedClient to class org.keycloak.models.cache.infinispan.ClientAdapter &amp; inlined to public getRole(name String) : RoleModel</i></td>
+                                <td><i>Move And Inline Method	public getRealmRoles() : Map&lt;String,String&gt; moved from class org.keycloak.models.cache.infinispan.entities.CachedRealm to class org.keycloak.models.cache.infinispan.RealmAdapter &amp; inlined to public getRole(name String) : RoleModel</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public getRealmRoles() : Map&lt;String,String&gt; moved from class org.keycloak.models.cache.infinispan.entities.CachedRealm to class org.keycloak.models.cache.infinispan.RealmAdapter &amp; inlined to public getRole(name String) : RoleModel</i></td>
+                                <td><i>Move And Inline Method	public getRoles() : Map&lt;String,String&gt; moved from class org.keycloak.models.cache.infinispan.entities.CachedClient to class org.keycloak.models.cache.infinispan.ClientAdapter &amp; inlined to public getRole(name String) : RoleModel</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -912,6 +912,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RoleAdapter to RoleModel in method public getRole(name String) : RoleModel in class org.keycloak.models.mongo.keycloak.adapters.RealmAdapter</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/4dcdaf4985bdbe78eb418634eaba5c39dd0f6a05?diff=split#diff-ad356330c14d1721d2ed0a56d69dad39L597">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/4dcdaf4985bdbe78eb418634eaba5c39dd0f6a05?diff=split#diff-ad356330c14d1721d2ed0a56d69dad39R597">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -932,13 +939,6 @@
                                 <td><i>Change Return Type	RoleAdapter to RoleModel in method public addRole(name String) : RoleModel in class org.keycloak.models.mongo.keycloak.adapters.ClientAdapter</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/4dcdaf4985bdbe78eb418634eaba5c39dd0f6a05?diff=split#diff-52b6f016f571bb65e67b76f583501f87L583">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/4dcdaf4985bdbe78eb418634eaba5c39dd0f6a05?diff=split#diff-52b6f016f571bb65e67b76f583501f87R574">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	RoleAdapter to RoleModel in method public getRole(name String) : RoleModel in class org.keycloak.models.mongo.keycloak.adapters.RealmAdapter</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/4dcdaf4985bdbe78eb418634eaba5c39dd0f6a05?diff=split#diff-ad356330c14d1721d2ed0a56d69dad39L597">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/4dcdaf4985bdbe78eb418634eaba5c39dd0f6a05?diff=split#diff-ad356330c14d1721d2ed0a56d69dad39R597">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -969,6 +969,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public removeRole(realm RealmModel, role RoleModel) : boolean extracted from public removeRole(role RoleModel) : boolean in class org.keycloak.models.jpa.RealmAdapter &amp; moved to class org.keycloak.models.jpa.JpaRealmProvider</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public addRealmRole(realm RealmModel, id String, name String) : RoleModel extracted from public addRole(id String, name String) : RoleModel in class org.keycloak.models.jpa.RealmAdapter &amp; moved to class org.keycloak.models.jpa.JpaRealmProvider</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1029,20 +1043,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public getClientRole(realm RealmModel, client ClientModel, name String) : RoleModel extracted from public getRole(name String) : RoleModel in class org.keycloak.models.jpa.ClientAdapter &amp; moved to class org.keycloak.models.jpa.JpaRealmProvider</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public removeRole(realm RealmModel, role RoleModel) : boolean extracted from public removeRole(role RoleModel) : boolean in class org.keycloak.models.jpa.RealmAdapter &amp; moved to class org.keycloak.models.jpa.JpaRealmProvider</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public addRealmRole(realm RealmModel, id String, name String) : RoleModel extracted from public addRole(id String, name String) : RoleModel in class org.keycloak.models.jpa.RealmAdapter &amp; moved to class org.keycloak.models.jpa.JpaRealmProvider</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -158,6 +158,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	iter : Iterator&lt;TruthWithPrediction&lt;L&gt;&gt; to iter : Iterator&lt;LabelPair&lt;L&gt;&gt; in method public score(iter Iterator&lt;LabelPair&lt;L&gt;&gt;) : double in class org.apache.ignite.ml.selection.scoring.metric.Accuracy</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-5271480f1abbae5d8818a8b86c91dff2L28">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-13c46b418383f9ea928bccac1c785c05R30">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	scoreCalculator : ScoreCalculator&lt;L&gt; to scoreCalculator : Metric&lt;L&gt; in method public score(trainer DatasetTrainer&lt;M,L&gt;, scoreCalculator Metric&lt;L&gt;, upstreamMap Map&lt;K,V&gt;, parts int, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL136">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	testDataIterSupplier : BiFunction&lt;IgniteBiPredicate&lt;K,V&gt;,M,TruthWithPredictionCursor&lt;L&gt;&gt; to testDataIterSupplier : BiFunction&lt;IgniteBiPredicate&lt;K,V&gt;,M,LabelPairCursor&lt;L&gt;&gt; in method private score(trainer DatasetTrainer&lt;M,L&gt;, datasetBuilderSupplier Function&lt;IgniteBiPredicate&lt;K,V&gt;,DatasetBuilder&lt;K,V&gt;&gt;, testDataIterSupplier BiFunction&lt;IgniteBiPredicate&lt;K,V&gt;,M,LabelPairCursor&lt;L&gt;&gt;, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, scoreCalculator Metric&lt;L&gt;, mapper UniformMapper&lt;K,V&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL213">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R228">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	scoreCalculator : ScoreCalculator&lt;L&gt; to scoreCalculator : Metric&lt;L&gt; in method public score(trainer DatasetTrainer&lt;M,L&gt;, scoreCalculator Metric&lt;L&gt;, upstreamMap Map&lt;K,V&gt;, filter IgniteBiPredicate&lt;K,V&gt;, parts int, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, mapper UniformMapper&lt;K,V&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL174">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R188">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	scoreCalculator : ScoreCalculator&lt;L&gt; to scoreCalculator : Metric&lt;L&gt; in method public score(trainer DatasetTrainer&lt;M,L&gt;, scoreCalculator Metric&lt;L&gt;, ignite Ignite, upstreamCache IgniteCache&lt;K,V&gt;, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL56">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R68">To</a></td>
@@ -196,34 +224,6 @@
                                 <td><i>Change Parameter Type	scoreCalculator : ScoreCalculator&lt;L&gt; to scoreCalculator : Metric&lt;L&gt; in method public score(trainer DatasetTrainer&lt;M,L&gt;, scoreCalculator Metric&lt;L&gt;, ignite Ignite, upstreamCache IgniteCache&lt;K,V&gt;, filter IgniteBiPredicate&lt;K,V&gt;, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, mapper UniformMapper&lt;K,V&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL95">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R109">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	iter : Iterator&lt;TruthWithPrediction&lt;L&gt;&gt; to iter : Iterator&lt;LabelPair&lt;L&gt;&gt; in method public score(iter Iterator&lt;LabelPair&lt;L&gt;&gt;) : double in class org.apache.ignite.ml.selection.scoring.metric.Accuracy</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-5271480f1abbae5d8818a8b86c91dff2L28">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-13c46b418383f9ea928bccac1c785c05R30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	scoreCalculator : ScoreCalculator&lt;L&gt; to scoreCalculator : Metric&lt;L&gt; in method public score(trainer DatasetTrainer&lt;M,L&gt;, scoreCalculator Metric&lt;L&gt;, upstreamMap Map&lt;K,V&gt;, parts int, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL136">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	testDataIterSupplier : BiFunction&lt;IgniteBiPredicate&lt;K,V&gt;,M,TruthWithPredictionCursor&lt;L&gt;&gt; to testDataIterSupplier : BiFunction&lt;IgniteBiPredicate&lt;K,V&gt;,M,LabelPairCursor&lt;L&gt;&gt; in method private score(trainer DatasetTrainer&lt;M,L&gt;, datasetBuilderSupplier Function&lt;IgniteBiPredicate&lt;K,V&gt;,DatasetBuilder&lt;K,V&gt;&gt;, testDataIterSupplier BiFunction&lt;IgniteBiPredicate&lt;K,V&gt;,M,LabelPairCursor&lt;L&gt;&gt;, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, scoreCalculator Metric&lt;L&gt;, mapper UniformMapper&lt;K,V&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL213">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R228">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	scoreCalculator : ScoreCalculator&lt;L&gt; to scoreCalculator : Metric&lt;L&gt; in method public score(trainer DatasetTrainer&lt;M,L&gt;, scoreCalculator Metric&lt;L&gt;, upstreamMap Map&lt;K,V&gt;, filter IgniteBiPredicate&lt;K,V&gt;, parts int, featureExtractor IgniteBiFunction&lt;K,V,double[]&gt;, lbExtractor IgniteBiFunction&lt;K,V,L&gt;, mapper UniformMapper&lt;K,V&gt;, cv int) : double[] in class org.apache.ignite.ml.selection.cv.CrossValidation</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-f466cd6e24cd062819ba9f8b5d2d31aeL174">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-8e3cc7c5df306861b866eda11641a141R188">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -292,13 +292,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.ignite.examples.ml.selection.cv.CrossValidationScoreCalculatorExample renamed to org.apache.ignite.examples.ml.selection.cv.CrossValidationExample</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.ignite.ml.selection.cv.CrossValidationScoreCalculatorTest renamed to org.apache.ignite.ml.selection.cv.CrossValidationTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -318,6 +311,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.ignite.examples.ml.selection.cv.CrossValidationScoreCalculatorExample renamed to org.apache.ignite.examples.ml.selection.cv.CrossValidationExample</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -328,41 +328,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.AccuracyScoreCalculator moved and renamed to org.apache.ignite.ml.selection.scoring.metric.Accuracy</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.util.CacheBasedTruthWithPredictionCursorTest moved and renamed to org.apache.ignite.ml.selection.scoring.cursor.CacheBasedLabelPairCursorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.util.LocalTruthWithPredictionCursor moved and renamed to org.apache.ignite.ml.selection.scoring.cursor.LocalLabelPairCursor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.TestTruthWithPredictionCursor moved and renamed to org.apache.ignite.ml.selection.scoring.TestLabelPairCursor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.ScoreCalculator moved and renamed to org.apache.ignite.ml.selection.scoring.metric.Metric</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -399,6 +364,41 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.AccuracyScoreCalculator moved and renamed to org.apache.ignite.ml.selection.scoring.metric.Accuracy</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.util.CacheBasedTruthWithPredictionCursorTest moved and renamed to org.apache.ignite.ml.selection.scoring.cursor.CacheBasedLabelPairCursorTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.util.LocalTruthWithPredictionCursor moved and renamed to org.apache.ignite.ml.selection.scoring.cursor.LocalLabelPairCursor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.TestTruthWithPredictionCursor moved and renamed to org.apache.ignite.ml.selection.scoring.TestLabelPairCursor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.ml.selection.score.ScoreCalculator moved and renamed to org.apache.ignite.ml.selection.scoring.metric.Metric</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -409,6 +409,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	scoreCalculator : CrossValidationScoreCalculator&lt;DecisionTreeNode,Double,Integer,Object[]&gt; to scoreCalculator : CrossValidation&lt;DecisionTreeNode,Double,Integer,Object[]&gt; in method public main(args String[]) : void in class org.apache.ignite.examples.ml.tutorial.Step_8_CV</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-58fee1664e3024fab0c24d62a2b1c0f2L57">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-58fee1664e3024fab0c24d62a2b1c0f2R112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cursor : TruthWithPredictionCursor&lt;Integer&gt; to cursor : LabelPairCursor&lt;Integer&gt; in method public testIterate() : void in class org.apache.ignite.ml.selection.scoring.cursor.CacheBasedLabelPairCursorTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-6d77bd8ea37034d7a26749261c388516L56">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-12c9cfa3b6aa0203c776372537950b94R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cursor : TruthWithPredictionCursor&lt;Integer&gt; to cursor : LabelPairCursor&lt;Integer&gt; in method public testIterate() : void in class org.apache.ignite.ml.selection.scoring.cursor.LocalLabelPairCursorTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-e7c134cb3d1131e546520c682eb8b108L31">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-7a45961b22be772b6d90b9ca2c32da7eR39">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -478,27 +499,6 @@
                                 <td><i>Change Variable Type	scoreCalculator : CrossValidationScoreCalculator&lt;DecisionTreeNode,Double,Integer,Double&gt; to scoreCalculator : CrossValidation&lt;DecisionTreeNode,Double,Integer,Double&gt; in method public testScoreWithGoodDataset() : void in class org.apache.ignite.ml.selection.cv.CrossValidationTest</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-b461ebdcd74a58efb9f9648c60948d51L34">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-e5bc8d7206cbfd9ff7db3370134fbe3eR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	scoreCalculator : CrossValidationScoreCalculator&lt;DecisionTreeNode,Double,Integer,Object[]&gt; to scoreCalculator : CrossValidation&lt;DecisionTreeNode,Double,Integer,Object[]&gt; in method public main(args String[]) : void in class org.apache.ignite.examples.ml.tutorial.Step_8_CV</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-58fee1664e3024fab0c24d62a2b1c0f2L57">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-58fee1664e3024fab0c24d62a2b1c0f2R112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cursor : TruthWithPredictionCursor&lt;Integer&gt; to cursor : LabelPairCursor&lt;Integer&gt; in method public testIterate() : void in class org.apache.ignite.ml.selection.scoring.cursor.CacheBasedLabelPairCursorTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-6d77bd8ea37034d7a26749261c388516L56">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-12c9cfa3b6aa0203c776372537950b94R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cursor : TruthWithPredictionCursor&lt;Integer&gt; to cursor : LabelPairCursor&lt;Integer&gt; in method public testIterate() : void in class org.apache.ignite.ml.selection.scoring.cursor.LocalLabelPairCursorTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-e7c134cb3d1131e546520c682eb8b108L31">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/fe41474484245508ce49b78e10458496e3647006?diff=split#diff-7a45961b22be772b6d90b9ca2c32da7eR39">To</a></td>
                             </tr>
                             
                             </tbody>

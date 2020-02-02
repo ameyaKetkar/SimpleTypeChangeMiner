@@ -245,27 +245,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	mf : MessagingFunction&lt;VertexKey,VertexValue,Message,EdgeValue&gt; to mf : MessagingFunction&lt;K,VV,Message,EV&gt; in method private VertexCentricIteration(uf VertexUpdateFunction&lt;K,VV,Message&gt;, mf MessagingFunction&lt;K,VV,Message,EV&gt;, edgesWithValue DataSet&lt;Edge&lt;K,EV&gt;&gt;, maximumNumberOfIterations int) in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL100">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	resultType : TypeInformation&lt;Vertex&lt;VertexKey,VV&gt;&gt; to resultType : TypeInformation&lt;Vertex&lt;K,VVWithDegrees&gt;&gt; in method private VertexUpdateUdf(vertexUpdateFunction VertexUpdateFunction&lt;K,VVWithDegrees,Message&gt;, resultType TypeInformation&lt;Vertex&lt;K,VVWithDegrees&gt;&gt;) in class org.apache.flink.graph.spargel.VertexCentricIteration.VertexUpdateUdf</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL247">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR244">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	input : Iterator&lt;Edge&lt;VertexKey,EdgeValue&gt;&gt; to input : Iterator&lt;Edge&lt;K,EV&gt;&gt; in method package set(input Iterator&lt;Edge&lt;K,EV&gt;&gt;) : void in class org.apache.flink.graph.spargel.MessagingFunction.EdgesIterator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L245">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R250">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	messageTypeInfo : TypeInformation&lt;Tuple2&lt;VertexKey,Message&gt;&gt; to messageTypeInfo : TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR603">To</a></td>
@@ -453,6 +432,27 @@
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR464">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	mf : MessagingFunction&lt;VertexKey,VertexValue,Message,EdgeValue&gt; to mf : MessagingFunction&lt;K,VV,Message,EV&gt; in method private VertexCentricIteration(uf VertexUpdateFunction&lt;K,VV,Message&gt;, mf MessagingFunction&lt;K,VV,Message,EV&gt;, edgesWithValue DataSet&lt;Edge&lt;K,EV&gt;&gt;, maximumNumberOfIterations int) in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL100">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	resultType : TypeInformation&lt;Vertex&lt;VertexKey,VV&gt;&gt; to resultType : TypeInformation&lt;Vertex&lt;K,VVWithDegrees&gt;&gt; in method private VertexUpdateUdf(vertexUpdateFunction VertexUpdateFunction&lt;K,VVWithDegrees,Message&gt;, resultType TypeInformation&lt;Vertex&lt;K,VVWithDegrees&gt;&gt;) in class org.apache.flink.graph.spargel.VertexCentricIteration.VertexUpdateUdf</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL247">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR244">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	input : Iterator&lt;Edge&lt;VertexKey,EdgeValue&gt;&gt; to input : Iterator&lt;Edge&lt;K,EV&gt;&gt; in method package set(input Iterator&lt;Edge&lt;K,EV&gt;&gt;) : void in class org.apache.flink.graph.spargel.MessagingFunction.EdgesIterator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L245">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R250">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -466,16 +466,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public setInDegree(inDegree Long) : void from class org.apache.flink.graph.VertexWithDegrees to package setInDegree(inDegree long) : void from class org.apache.flink.graph.spargel.MessagingFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d8de1689c1430e18b091c7fa9a6ae5adL57">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R287">To</a></td>
+                                <td><i>Move Method	public setOutDegree(outDegree Long) : void from class org.apache.flink.graph.VertexWithDegrees to package setOutDegree(outDegree long) : void from class org.apache.flink.graph.spargel.MessagingFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d8de1689c1430e18b091c7fa9a6ae5adL69">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R300">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public setOutDegree(outDegree Long) : void from class org.apache.flink.graph.VertexWithDegrees to package setOutDegree(outDegree long) : void from class org.apache.flink.graph.spargel.MessagingFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d8de1689c1430e18b091c7fa9a6ae5adL69">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R300">To</a></td>
+                                <td><i>Move Method	public setInDegree(inDegree Long) : void from class org.apache.flink.graph.VertexWithDegrees to package setInDegree(inDegree long) : void from class org.apache.flink.graph.spargel.MessagingFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d8de1689c1430e18b091c7fa9a6ae5adL57">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R287">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -513,34 +513,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CoGroupOperator&lt;?,?,Tuple2&lt;VertexKey,Message&gt;&gt; to CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in method private buildMessagingFunctionVerticesWithDegrees(iteration DeltaIteration&lt;Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;,Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;&gt;, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;, whereArg int, equalToArg int) : CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL481">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterable&lt;Edge&lt;VertexKey,EdgeValue&gt;&gt; to Iterable&lt;Edge&lt;K,EV&gt;&gt; in method public getEdges() : Iterable&lt;Edge&lt;K,EV&gt;&gt; in class org.apache.flink.graph.spargel.MessagingFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L113">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R115">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	TypeInformation&lt;Tuple2&lt;VertexKey,Message&gt;&gt; to TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt; in method public getProducedType() : TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration.MessagingUdfWithEdgeValues</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL388">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR386">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	VertexCentricIteration&lt;VertexKey,VertexValue,Message,EdgeValue&gt; to VertexCentricIteration&lt;K,VV,Message,EV&gt; in method public withEdges(edgesWithValue DataSet&lt;Edge&lt;K,EV&gt;&gt;, uf VertexUpdateFunction&lt;K,VV,Message&gt;, mf MessagingFunction&lt;K,VV,Message,EV&gt;, maximumNumberOfIterations int) : VertexCentricIteration&lt;K,VV,Message,EV&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL189">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR185">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -598,6 +570,34 @@
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR263">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CoGroupOperator&lt;?,?,Tuple2&lt;VertexKey,Message&gt;&gt; to CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in method private buildMessagingFunctionVerticesWithDegrees(iteration DeltaIteration&lt;Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;,Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;&gt;, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;, whereArg int, equalToArg int) : CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL481">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterable&lt;Edge&lt;VertexKey,EdgeValue&gt;&gt; to Iterable&lt;Edge&lt;K,EV&gt;&gt; in method public getEdges() : Iterable&lt;Edge&lt;K,EV&gt;&gt; in class org.apache.flink.graph.spargel.MessagingFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L113">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R115">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	TypeInformation&lt;Tuple2&lt;VertexKey,Message&gt;&gt; to TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt; in method public getProducedType() : TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration.MessagingUdfWithEdgeValues</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL388">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR386">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	VertexCentricIteration&lt;VertexKey,VertexValue,Message,EdgeValue&gt; to VertexCentricIteration&lt;K,VV,Message,EV&gt; in method public withEdges(edgesWithValue DataSet&lt;Edge&lt;K,EV&gt;&gt;, uf VertexUpdateFunction&lt;K,VV,Message&gt;, mf MessagingFunction&lt;K,VV,Message,EV&gt;, maximumNumberOfIterations int) : VertexCentricIteration&lt;K,VV,Message,EV&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL189">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR185">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -650,6 +650,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	org.apache.flink.graph.test.VertexCentricConfigurationITCase.UpdateFunctionInDegree renamed to org.apache.flink.graph.test.VertexCentricConfigurationITCase.UpdateFunctionInDegrees</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	org.apache.flink.graph.test.VertexCentricConfigurationITCase.UpdateFunctionOutDegree renamed to org.apache.flink.graph.test.VertexCentricConfigurationITCase.UpdateFunctionOutDegrees</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -658,13 +665,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	org.apache.flink.graph.test.VertexCentricConfigurationITCase.DegreeMessageFunction renamed to org.apache.flink.graph.test.VertexCentricConfigurationITCase.DegreesMessageFunction</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.graph.test.VertexCentricConfigurationITCase.UpdateFunctionInDegree renamed to org.apache.flink.graph.test.VertexCentricConfigurationITCase.UpdateFunctionInDegrees</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -697,111 +697,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-30" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	outDegrees : DataSet&lt;Tuple2&lt;VertexKey,Long&gt;&gt; to outDegrees : DataSet&lt;Tuple2&lt;K,Long&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR610">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	inDegrees : DataSet&lt;Tuple2&lt;VertexKey,Long&gt;&gt; to inDegrees : DataSet&lt;Tuple2&lt;K,Long&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR609">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	parameters : IterationConfiguration to parameters : VertexCentricConfiguration in method public testIterationINDirection() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L165">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R201">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	messages : DataSet&lt;Tuple2&lt;VertexKey,Message&gt;&gt; to messages : DataSet&lt;Tuple2&lt;K,Message&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR605">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	messages : CoGroupOperator&lt;?,?,Tuple2&lt;VertexKey,Message&gt;&gt; to messages : CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in method private buildMessagingFunctionVerticesWithDegrees(iteration DeltaIteration&lt;Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;,Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;&gt;, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;, whereArg int, equalToArg int) : CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL481">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR502">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	graph : Graph&lt;Long,Tuple3&lt;Long,Long,Boolean&gt;,Long&gt; to graph : Graph&lt;Long,Long,Long&gt; in method public testInDegreesNotSet() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L319">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R314">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	degrees : DataSet&lt;Tuple3&lt;VertexKey,Long,Long&gt;&gt; to degrees : DataSet&lt;Tuple3&lt;K,Long,Long&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR612">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	verticesWithDegrees : DataSet&lt;Vertex&lt;VertexKey,Tuple3&lt;VertexValue,Long,Long&gt;&gt;&gt; to verticesWithDegrees : DataSet&lt;Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR621">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	updateUdf : VertexUpdateUdf&lt;VertexKey,Tuple3&lt;VertexValue,Long,Long&gt;,VertexValue,Message&gt; to updateUdf : VertexUpdateUdf&lt;K,Tuple3&lt;VV,Long,Long&gt;,Message&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR656">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	updateUdf : VertexUpdateUdf&lt;VertexKey,VertexValue,VertexValue,Message&gt; to updateUdf : VertexUpdateUdf&lt;K,VV,Message&gt; in method private createResultSimpleVertex(messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL553">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR580">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	parameters : IterationConfiguration to parameters : VertexCentricConfiguration in method public testIncrementalSSSPNonSPEdge() : void in class org.apache.flink.graph.test.example.IncrementalSSSPITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-f62a4b9b195d99136328a538099a08bbL88">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-f62a4b9b195d99136328a538099a08bbR104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	graph : Graph&lt;VertexKey,VertexValue,EdgeValue&gt; to graph : Graph&lt;K,VV,EV&gt; in method public createResult() : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL139">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR151">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	parameters : IterationConfiguration to parameters : VertexCentricConfiguration in method public testIterationALLDirection() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L197">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R233">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	verticesWithDegrees : DataSet&lt;Vertex&lt;Long,Tuple3&lt;Long,Long,Boolean&gt;&gt;&gt; to verticesWithDegrees : DataSet&lt;Vertex&lt;Long,Long&gt;&gt; in method public testInDegreesNotSet() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L319">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R317">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	updates : CoGroupOperator&lt;?,?,Vertex&lt;VertexKey,VertexValue&gt;&gt; to updates : CoGroupOperator&lt;?,?,Vertex&lt;K,VV&gt;&gt; in method private createResultSimpleVertex(messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL553">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR584">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -908,6 +803,111 @@
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR634">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	outDegrees : DataSet&lt;Tuple2&lt;VertexKey,Long&gt;&gt; to outDegrees : DataSet&lt;Tuple2&lt;K,Long&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR610">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	inDegrees : DataSet&lt;Tuple2&lt;VertexKey,Long&gt;&gt; to inDegrees : DataSet&lt;Tuple2&lt;K,Long&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR609">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	parameters : IterationConfiguration to parameters : VertexCentricConfiguration in method public testIterationINDirection() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L165">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R201">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	messages : DataSet&lt;Tuple2&lt;VertexKey,Message&gt;&gt; to messages : DataSet&lt;Tuple2&lt;K,Message&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR605">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	messages : CoGroupOperator&lt;?,?,Tuple2&lt;VertexKey,Message&gt;&gt; to messages : CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in method private buildMessagingFunctionVerticesWithDegrees(iteration DeltaIteration&lt;Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;,Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;&gt;, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;, whereArg int, equalToArg int) : CoGroupOperator&lt;?,?,Tuple2&lt;K,Message&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL481">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR502">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	graph : Graph&lt;Long,Tuple3&lt;Long,Long,Boolean&gt;,Long&gt; to graph : Graph&lt;Long,Long,Long&gt; in method public testInDegreesNotSet() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L319">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R314">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	degrees : DataSet&lt;Tuple3&lt;VertexKey,Long,Long&gt;&gt; to degrees : DataSet&lt;Tuple3&lt;K,Long,Long&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR612">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	verticesWithDegrees : DataSet&lt;Vertex&lt;VertexKey,Tuple3&lt;VertexValue,Long,Long&gt;&gt;&gt; to verticesWithDegrees : DataSet&lt;Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt;&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR621">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	updateUdf : VertexUpdateUdf&lt;VertexKey,Tuple3&lt;VertexValue,Long,Long&gt;,VertexValue,Message&gt; to updateUdf : VertexUpdateUdf&lt;K,Tuple3&lt;VV,Long,Long&gt;,Message&gt; in method private createResultVerticesWithDegrees(graph Graph&lt;K,VV,EV&gt;, messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL596">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR656">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	updateUdf : VertexUpdateUdf&lt;VertexKey,VertexValue,VertexValue,Message&gt; to updateUdf : VertexUpdateUdf&lt;K,VV,Message&gt; in method private createResultSimpleVertex(messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL553">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR580">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	parameters : IterationConfiguration to parameters : VertexCentricConfiguration in method public testIncrementalSSSPNonSPEdge() : void in class org.apache.flink.graph.test.example.IncrementalSSSPITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-f62a4b9b195d99136328a538099a08bbL88">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-f62a4b9b195d99136328a538099a08bbR104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	graph : Graph&lt;VertexKey,VertexValue,EdgeValue&gt; to graph : Graph&lt;K,VV,EV&gt; in method public createResult() : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL139">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	parameters : IterationConfiguration to parameters : VertexCentricConfiguration in method public testIterationALLDirection() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L197">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R233">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	verticesWithDegrees : DataSet&lt;Vertex&lt;Long,Tuple3&lt;Long,Long,Boolean&gt;&gt;&gt; to verticesWithDegrees : DataSet&lt;Vertex&lt;Long,Long&gt;&gt; in method public testInDegreesNotSet() : void in class org.apache.flink.graph.test.VertexCentricConfigurationITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2L319">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-d92629f293333c5fff93da679a10b2c2R317">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	updates : CoGroupOperator&lt;?,?,Vertex&lt;VertexKey,VertexValue&gt;&gt; to updates : CoGroupOperator&lt;?,?,Vertex&lt;K,VV&gt;&gt; in method private createResultSimpleVertex(messagingDirection EdgeDirection, messageTypeInfo TypeInformation&lt;Tuple2&lt;K,Message&gt;&gt;) : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL553">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR584">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -918,55 +918,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	input : Iterator&lt;Edge&lt;VertexKey,EdgeValue&gt;&gt; to input : Iterator&lt;Edge&lt;K,EV&gt;&gt; in class org.apache.flink.graph.spargel.MessagingFunction.EdgesIterator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L241">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R246">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	edgeIterator : EdgesIterator&lt;VertexKey,EdgeValue&gt; to edgeIterator : EdgesIterator&lt;K,EV&gt; in class org.apache.flink.graph.spargel.MessagingFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L221">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R223">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	updateFunction : VertexUpdateFunction&lt;VertexKey,VertexValue,Message&gt; to updateFunction : VertexUpdateFunction&lt;K,VV,Message&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL83">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	initialVertices : DataSet&lt;Vertex&lt;VertexKey,VertexValue&gt;&gt; to initialVertices : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL93">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	messagingFunction : MessagingFunction&lt;VertexKey,VertexValue,Message,EdgeValue&gt; to messagingFunction : MessagingFunction&lt;K,VV,Message,EV&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL85">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	resultType : TypeInformation&lt;Vertex&lt;VertexKey,VV&gt;&gt; to resultType : TypeInformation&lt;Vertex&lt;K,VVWithDegrees&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration.VertexUpdateUdf</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL244">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR240">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	outValue : Tuple2&lt;VertexKey,Message&gt; to outValue : Tuple2&lt;K,Message&gt; in class org.apache.flink.graph.spargel.MessagingFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L213">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R215">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1036,6 +987,55 @@
                                 <td><i>Change Attribute Type	outValWithDegrees : Vertex&lt;VertexKey,Tuple3&lt;VertexValue,Long,Long&gt;&gt; to outValWithDegrees : Vertex&lt;K,Tuple3&lt;VV,Long,Long&gt;&gt; in class org.apache.flink.graph.spargel.VertexUpdateFunction</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-55710efb80bc26c45e8940ec373c91d0L176">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-55710efb80bc26c45e8940ec373c91d0R175">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	input : Iterator&lt;Edge&lt;VertexKey,EdgeValue&gt;&gt; to input : Iterator&lt;Edge&lt;K,EV&gt;&gt; in class org.apache.flink.graph.spargel.MessagingFunction.EdgesIterator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L241">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R246">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	edgeIterator : EdgesIterator&lt;VertexKey,EdgeValue&gt; to edgeIterator : EdgesIterator&lt;K,EV&gt; in class org.apache.flink.graph.spargel.MessagingFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L221">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R223">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	updateFunction : VertexUpdateFunction&lt;VertexKey,VertexValue,Message&gt; to updateFunction : VertexUpdateFunction&lt;K,VV,Message&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL83">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	initialVertices : DataSet&lt;Vertex&lt;VertexKey,VertexValue&gt;&gt; to initialVertices : DataSet&lt;Vertex&lt;K,VV&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL93">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	messagingFunction : MessagingFunction&lt;VertexKey,VertexValue,Message,EdgeValue&gt; to messagingFunction : MessagingFunction&lt;K,VV,Message,EV&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL85">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	resultType : TypeInformation&lt;Vertex&lt;VertexKey,VV&gt;&gt; to resultType : TypeInformation&lt;Vertex&lt;K,VVWithDegrees&gt;&gt; in class org.apache.flink.graph.spargel.VertexCentricIteration.VertexUpdateUdf</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cL244">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-5653c07afd6fedbc4025ff38742a079cR240">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	outValue : Tuple2&lt;VertexKey,Message&gt; to outValue : Tuple2&lt;K,Message&gt; in class org.apache.flink.graph.spargel.MessagingFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90L213">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e2f28d47f6108c49c02ccba8ded7c70d39bab4bb?diff=split#diff-4c9775db642ebea0d77a49616fd11b90R215">To</a></td>
                             </tr>
                             
                             </tbody>

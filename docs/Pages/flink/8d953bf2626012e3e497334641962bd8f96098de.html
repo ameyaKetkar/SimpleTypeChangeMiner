@@ -220,20 +220,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public testSavepointRescalingFailureWithNonPartitionedState() : void renamed to public testSavepointRescalingNonPartitionedStateCausesException() : void in class org.apache.flink.test.checkpointing.RescalingITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL209">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR226">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private createNonPartitionedStateJobGraph(parallelism int, maxParallelism int, checkpointInterval long) : JobGraph renamed to private createJobGraphWithOperatorState(parallelism int, maxParallelism int, partitionedOperatorState boolean) : JobGraph in class org.apache.flink.test.checkpointing.RescalingITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL426">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR554">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	private createPartitionedStateJobGraph(parallelism int, maxParallelism int, numberKeys int, numberElements int, terminateAfterEmission boolean, checkpointingInterval int) : JobGraph renamed to private createJobGraphWithKeyedState(parallelism int, maxParallelism int, numberKeys int, numberElements int, terminateAfterEmission boolean, checkpointingInterval int) : JobGraph in class org.apache.flink.test.checkpointing.RescalingITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL442">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR573">To</a></td>
@@ -258,6 +244,20 @@
                                 <td><i>Rename Method	private createPartitionedNonPartitionedStateJobGraph(parallelism int, maxParallelism int, fixedParallelism int, numberKeys int, numberElements int, terminateAfterEmission boolean, checkpointingInterval int) : JobGraph renamed to private createJobGraphWithKeyedAndNonPartitionedOperatorState(parallelism int, maxParallelism int, fixedParallelism int, numberKeys int, numberElements int, terminateAfterEmission boolean, checkpointingInterval int) : JobGraph in class org.apache.flink.test.checkpointing.RescalingITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL478">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR609">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public testSavepointRescalingFailureWithNonPartitionedState() : void renamed to public testSavepointRescalingNonPartitionedStateCausesException() : void in class org.apache.flink.test.checkpointing.RescalingITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL209">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR226">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private createNonPartitionedStateJobGraph(parallelism int, maxParallelism int, checkpointInterval long) : JobGraph renamed to private createJobGraphWithOperatorState(parallelism int, maxParallelism int, partitionedOperatorState boolean) : JobGraph in class org.apache.flink.test.checkpointing.RescalingITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL426">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR554">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -334,6 +334,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Pull Up Attribute	private counter : int from class org.apache.flink.test.checkpointing.RescalingITCase.NonPartitionedStateSource to protected counter : int from class org.apache.flink.test.checkpointing.RescalingITCase.StateSourceBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL654">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR784">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Pull Up Attribute	private running : boolean from class org.apache.flink.test.checkpointing.RescalingITCase.NonPartitionedStateSource to protected running : boolean from class org.apache.flink.test.checkpointing.RescalingITCase.StateSourceBase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL655">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR785">To</a></td>
@@ -344,13 +351,6 @@
                                 <td><i>Pull Up Attribute	private workStartedLatch : CountDownLatch from class org.apache.flink.test.checkpointing.RescalingITCase.NonPartitionedStateSource to private workStartedLatch : CountDownLatch from class org.apache.flink.test.checkpointing.RescalingITCase.StateSourceBase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL652">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR782">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Attribute	private counter : int from class org.apache.flink.test.checkpointing.RescalingITCase.NonPartitionedStateSource to protected counter : int from class org.apache.flink.test.checkpointing.RescalingITCase.StateSourceBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bL654">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-c5d46b0775225a48f46e7c5929ffdd2bR784">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -381,34 +381,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	namespace : Map.Entry&lt;?,? extends Map&lt;K,?&gt;&gt; to namespace : Map.Entry&lt;N,Map&lt;K,S&gt;&gt; in method private writeStateTableForKeyGroup(outView DataOutputView, stateTable StateTable&lt;K,N,S&gt;, keyGroupIndex int) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L163">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R235">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	namespaceMap : Map to namespaceMap : Map&lt;N,Map&lt;K,S&gt;&gt; in method private readStateTableForKeyGroup(inView DataInputView, stateTable StateTable&lt;K,N,S&gt;, keyGroupIndex int) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R329">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateSerializer : TypeSerializer to stateSerializer : TypeSerializer&lt;?&gt; in method private restorePartitionedState(state List&lt;KeyGroupsStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R278">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	namespaceSerializer : TypeSerializer to namespaceSerializer : TypeSerializer&lt;?&gt; in method private restorePartitionedState(state List&lt;KeyGroupsStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R276">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -499,6 +471,34 @@
                                 <td><i>Change Variable Type	entryMap : Map to entryMap : Map&lt;K,S&gt; in method private readStateTableForKeyGroup(inView DataInputView, stateTable StateTable&lt;K,N,S&gt;, keyGroupIndex int) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R335">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	namespace : Map.Entry&lt;?,? extends Map&lt;K,?&gt;&gt; to namespace : Map.Entry&lt;N,Map&lt;K,S&gt;&gt; in method private writeStateTableForKeyGroup(outView DataOutputView, stateTable StateTable&lt;K,N,S&gt;, keyGroupIndex int) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L163">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R235">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	namespaceMap : Map to namespaceMap : Map&lt;N,Map&lt;K,S&gt;&gt; in method private readStateTableForKeyGroup(inView DataInputView, stateTable StateTable&lt;K,N,S&gt;, keyGroupIndex int) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R329">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateSerializer : TypeSerializer to stateSerializer : TypeSerializer&lt;?&gt; in method private restorePartitionedState(state List&lt;KeyGroupsStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R278">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	namespaceSerializer : TypeSerializer to namespaceSerializer : TypeSerializer&lt;?&gt; in method private restorePartitionedState(state List&lt;KeyGroupsStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62L249">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/8d953bf2626012e3e497334641962bd8f96098de?diff=split#diff-166333601cc781668209538cca90dd62R276">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -192,13 +192,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getRegistry(type Class&lt;?&gt;, name String) : EventLog&lt;T&gt; renamed to public getEventLog(type Class&lt;?&gt;, name String) : EventLog&lt;L,E&gt; in class io.atomix.rest.impl.EventManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-f5eca3375a2110f9c22255b802c9b668L27">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-f5eca3375a2110f9c22255b802c9b668R28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	package register() : boolean renamed to public open() : boolean in class io.atomix.rest.impl.EventLog</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-81acfbbc5f6f465883059f09a4d519b3L34">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-81acfbbc5f6f465883059f09a4d519b3R37">To</a></td>
@@ -216,6 +209,13 @@
                                 <td><i>Rename Method	public deleteRegistry(type Class&lt;?&gt;, name String) : void renamed to public getOrCreateEventLog(type Class&lt;?&gt;, name String, listenerFactory Function&lt;EventLog&lt;L,E&gt;,L&gt;) : EventLog&lt;L,E&gt; in class io.atomix.rest.impl.EventManager</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-f5eca3375a2110f9c22255b802c9b668L54">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-f5eca3375a2110f9c22255b802c9b668R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getRegistry(type Class&lt;?&gt;, name String) : EventLog&lt;T&gt; renamed to public getEventLog(type Class&lt;?&gt;, name String) : EventLog&lt;L,E&gt; in class io.atomix.rest.impl.EventManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-f5eca3375a2110f9c22255b802c9b668L27">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-f5eca3375a2110f9c22255b802c9b668R28">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -317,20 +317,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	eventLog : EventLog&lt;String&gt; to eventLog : EventLog&lt;Consumer&lt;String&gt;,String&gt; in method public subscribe(subject String, eventService ClusterEventService, events EventManager, response AsyncResponse) : void in class io.atomix.rest.impl.EventsResource</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843L99">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843R106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	eventLog : EventLog&lt;String&gt; to eventLog : EventLog&lt;Consumer&lt;String&gt;,String&gt; in method public testEventLog() : void in class io.atomix.rest.impl.EventLogTest</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-dfa09f78078308c601b148c3125fcaa9L30">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-dfa09f78078308c601b148c3125fcaa9R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	eventLog : EventLog&lt;String&gt; to eventLog : EventLog&lt;Consumer&lt;String&gt;,String&gt; in method public delete(subject String, eventService ClusterEventService, events EventManager) : Response in class io.atomix.rest.impl.EventsResource</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843L85">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843R95">To</a></td>
@@ -341,6 +327,20 @@
                                 <td><i>Change Variable Type	eventLog : EventLog&lt;String&gt; to eventLog : EventLog&lt;Consumer&lt;String&gt;,String&gt; in method public next(subject String, eventService ClusterEventService, events EventManager, response AsyncResponse) : void in class io.atomix.rest.impl.EventsResource</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843L54">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	eventLog : EventLog&lt;String&gt; to eventLog : EventLog&lt;Consumer&lt;String&gt;,String&gt; in method public subscribe(subject String, eventService ClusterEventService, events EventManager, response AsyncResponse) : void in class io.atomix.rest.impl.EventsResource</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843L99">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-1a7c57c0fd9c847c8fda70855c77a843R106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	eventLog : EventLog&lt;String&gt; to eventLog : EventLog&lt;Consumer&lt;String&gt;,String&gt; in method public testEventLog() : void in class io.atomix.rest.impl.EventLogTest</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-dfa09f78078308c601b148c3125fcaa9L30">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b81b28ec1d5ce6d921a48c10951b867337786cee?diff=split#diff-dfa09f78078308c601b148c3125fcaa9R33">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -356,14 +356,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	globalFuture : CompletableFuture&lt;String&gt; in method public testEventLog() : void from class io.atomix.rest.impl.EventLogTest</i></td>
+                                <td><i>Inline Variable	nextSessionEvent1 : CompletableFuture&lt;String&gt; in method public testEventLog() : void from class io.atomix.rest.impl.EventLogTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	nextSessionEvent1 : CompletableFuture&lt;String&gt; in method public testEventLog() : void from class io.atomix.rest.impl.EventLogTest</i></td>
+                                <td><i>Inline Variable	globalFuture : CompletableFuture&lt;String&gt; in method public testEventLog() : void from class io.atomix.rest.impl.EventLogTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

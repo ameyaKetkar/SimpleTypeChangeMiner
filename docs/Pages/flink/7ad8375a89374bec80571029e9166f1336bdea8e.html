@@ -216,15 +216,15 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public generateName(name String, scope List&lt;String&gt;) : String from class org.apache.flink.metrics.statsd.StatsDReporter to public concat(components String...) : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-f4d723a167bc21b3c00d7ce946d7880dL86">From</a></td>
+                                <td><i>Move And Rename Method	public generateName(name String, scope List&lt;String&gt;) : String from class org.apache.flink.dropwizard.ScheduledDropwizardReporter to public concat(components String...) : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-0ee8b4deb6c5f9107b847b5574247e0bL79">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R368">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public generateName(name String, scope List&lt;String&gt;) : String from class org.apache.flink.dropwizard.ScheduledDropwizardReporter to public concat(components String...) : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-0ee8b4deb6c5f9107b847b5574247e0bL79">From</a></td>
+                                <td><i>Move And Rename Method	public generateName(name String, scope List&lt;String&gt;) : String from class org.apache.flink.metrics.statsd.StatsDReporter to public concat(components String...) : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-f4d723a167bc21b3c00d7ce946d7880dL86">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R368">To</a></td>
                             </tr>
                             
@@ -259,16 +259,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	scopeFormat : String to scopeFormat : TaskManagerJobScopeFormat in method public JobMetricGroup(registry MetricRegistry, parent TaskManagerMetricGroup, scopeFormat TaskManagerJobScopeFormat, jobId JobID, jobName String) in class org.apache.flink.metrics.groups.JobMetricGroup</i></td>
+                                <td><i>Change Parameter Type	scopeFormat : String to scopeFormat : OperatorScopeFormat in method public OperatorMetricGroup(registry MetricRegistry, parent TaskMetricGroup, scopeFormat OperatorScopeFormat, operatorName String) in class org.apache.flink.metrics.groups.OperatorMetricGroup</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-6644dfd80a0e3f734cc857f8e83b0139L52">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-3c86dd51a1f6ea413faab310632d7b19R69">To</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7313758cb4ca301daf8ab083c7512776R45">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	scopeFormat : String to scopeFormat : OperatorScopeFormat in method public OperatorMetricGroup(registry MetricRegistry, parent TaskMetricGroup, scopeFormat OperatorScopeFormat, operatorName String) in class org.apache.flink.metrics.groups.OperatorMetricGroup</i></td>
+                                <td><i>Change Parameter Type	scopeFormat : String to scopeFormat : TaskManagerJobScopeFormat in method public JobMetricGroup(registry MetricRegistry, parent TaskManagerMetricGroup, scopeFormat TaskManagerJobScopeFormat, jobId JobID, jobName String) in class org.apache.flink.metrics.groups.JobMetricGroup</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-6644dfd80a0e3f734cc857f8e83b0139L52">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7313758cb4ca301daf8ab083c7512776R45">To</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-3c86dd51a1f6ea413faab310632d7b19R69">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -281,6 +281,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public SCOPE_JOB_ID : String from class org.apache.flink.metrics.groups.JobMetricGroup to public SCOPE_JOB_ID : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-3c86dd51a1f6ea413faab310632d7b19L41">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public DEFAULT_SCOPE_OPERATOR_COMPONENT : String from class org.apache.flink.metrics.groups.OperatorMetricGroup to public DEFAULT_SCOPE_OPERATOR_COMPONENT : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7313758cb4ca301daf8ab083c7512776L36">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R115">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -331,20 +345,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R262">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	public SCOPE_JOB_ID : String from class org.apache.flink.metrics.groups.JobMetricGroup to public SCOPE_JOB_ID : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-3c86dd51a1f6ea413faab310632d7b19L41">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	public DEFAULT_SCOPE_OPERATOR_COMPONENT : String from class org.apache.flink.metrics.groups.OperatorMetricGroup to public DEFAULT_SCOPE_OPERATOR_COMPONENT : String from class org.apache.flink.metrics.groups.scope.ScopeFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7313758cb4ca301daf8ab083c7512776L36">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-b9b90bb3d202078dfd9e68e3484fa7b6R115">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -358,6 +358,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Class	org.apache.flink.metrics.groups.scope.ScopeFormat from class org.apache.flink.metrics.groups.JobMetricGroup</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Class	org.apache.flink.metrics.groups.scope.ScopeFormat from class org.apache.flink.metrics.groups.TaskMetricGroup</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -366,13 +373,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	org.apache.flink.metrics.groups.scope.ScopeFormat from class org.apache.flink.metrics.groups.OperatorMetricGroup</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Class	org.apache.flink.metrics.groups.scope.ScopeFormat from class org.apache.flink.metrics.groups.JobMetricGroup</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -390,6 +390,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move And Rename Class	org.apache.flink.metrics.util.DummyJobMetricGroup moved and renamed to org.apache.flink.metrics.groups.MetricGroupTest.DummyAbstractMetricGroup</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move And Rename Class	org.apache.flink.metrics.util.DummyMetricRegistry moved and renamed to org.apache.flink.runtime.operators.testutils.UnregisteredTaskMetricsGroup.DummyJobMetricGroup</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -398,13 +405,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Rename Class	org.apache.flink.metrics.util.DummyOperatorMetricGroup moved and renamed to org.apache.flink.runtime.operators.testutils.UnregisteredTaskMetricsGroup</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.flink.metrics.util.DummyJobMetricGroup moved and renamed to org.apache.flink.metrics.groups.MetricGroupTest.DummyAbstractMetricGroup</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -476,6 +476,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public notifyOfAddedMetric(metric Metric, name String) : void renamed to public notifyOfRemovedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.MetricRegistryTest.TestReporter6</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-4a66b14de68ec1c71b86bd9ddd9548d9L176">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-4a66b14de68ec1c71b86bd9ddd9548d9R150">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public notifyOfAddedMetric(metric Metric, name String) : void renamed to public notifyOfRemovedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.reporter.MetricReporter</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dL50">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dR67">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public generateName(name String, origin List&lt;String&gt;) : String renamed to package generateJmxName(metricName String, scopeComponents String[]) : String in class org.apache.flink.metrics.reporter.JMXReporter</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-813d974502684517209379d0e64283eaL107">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-813d974502684517209379d0e64283eaR146">To</a></td>
@@ -500,20 +514,6 @@
                                 <td><i>Rename Method	public notifyOfRemovedMetric(metric Metric, name String) : void renamed to public notifyOfAddedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.reporter.MetricReporter</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dL58">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public notifyOfAddedMetric(metric Metric, name String) : void renamed to public notifyOfRemovedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.MetricRegistryTest.TestReporter6</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-4a66b14de68ec1c71b86bd9ddd9548d9L176">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-4a66b14de68ec1c71b86bd9ddd9548d9R150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public notifyOfAddedMetric(metric Metric, name String) : void renamed to public notifyOfRemovedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.reporter.MetricReporter</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dL50">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dR67">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -554,6 +554,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	operator : TaskManagerMetricGroup to group : TaskManagerMetricGroup in method public testGenerateScopeCustom() : void in class org.apache.flink.metrics.groups.TaskManagerGroupTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7dd3fe6bd63e0a7dd6473379f6e558aeL155">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7dd3fe6bd63e0a7dd6473379f6e558aeR140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	operator : TaskManagerMetricGroup to group : TaskManagerMetricGroup in method public testGenerateScopeDefault() : void in class org.apache.flink.metrics.groups.TaskManagerGroupTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7dd3fe6bd63e0a7dd6473379f6e558aeL129">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7dd3fe6bd63e0a7dd6473379f6e558aeR130">To</a></td>
@@ -564,13 +571,6 @@
                                 <td><i>Rename Variable	fullName : StringBuilder to nameBuilder : StringBuilder in method package generateJmxName(metricName String, scopeComponents String[]) : String in class org.apache.flink.metrics.reporter.JMXReporter</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-813d974502684517209379d0e64283eaL109">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-813d974502684517209379d0e64283eaR147">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	operator : TaskManagerMetricGroup to group : TaskManagerMetricGroup in method public testGenerateScopeCustom() : void in class org.apache.flink.metrics.groups.TaskManagerGroupTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7dd3fe6bd63e0a7dd6473379f6e558aeL155">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-7dd3fe6bd63e0a7dd6473379f6e558aeR140">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -626,13 +626,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	name : String to metricName : String in method public notifyOfAddedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.groups.MetricGroupRegistrationTest.TestReporter1</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-8098fa592e9efcd1440db73d689280eaL65">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-8098fa592e9efcd1440db73d689280eaR65">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -730,6 +723,13 @@
                                 <td><i>Rename Parameter	name : String to metricName : String in method public notifyOfRemovedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.reporter.MetricReporter</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dL56">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-65a5b9c7e8285519ef6d1eabcc9ece1dR74">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	name : String to metricName : String in method public notifyOfAddedMetric(metric Metric, metricName String, group AbstractMetricGroup) : void in class org.apache.flink.metrics.groups.MetricGroupRegistrationTest.TestReporter1</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-8098fa592e9efcd1440db73d689280eaL65">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/7ad8375a89374bec80571029e9166f1336bdea8e?diff=split#diff-8098fa592e9efcd1440db73d689280eaR65">To</a></td>
                             </tr>
                             
                             </tbody>

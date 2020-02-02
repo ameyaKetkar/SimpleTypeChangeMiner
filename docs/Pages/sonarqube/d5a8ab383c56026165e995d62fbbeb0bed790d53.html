@@ -308,14 +308,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public enableDebug(b boolean) : LogTester moved from class org.sonar.api.utils.log.LogTester to class org.sonar.api.utils.log.LogTesterTest &amp; inlined to public debugLevel() : void</i></td>
+                                <td><i>Move And Inline Method	protected enableDebug(b boolean) : void moved from class org.sonar.api.utils.log.ConsoleLoggers to class org.sonar.api.utils.log.LogTester &amp; inlined to protected before() : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	protected enableDebug(b boolean) : void moved from class org.sonar.api.utils.log.ConsoleLoggers to class org.sonar.api.utils.log.LogTester &amp; inlined to protected before() : void</i></td>
+                                <td><i>Move And Inline Method	public enableDebug(b boolean) : LogTester moved from class org.sonar.api.utils.log.LogTester to class org.sonar.api.utils.log.LogTesterTest &amp; inlined to public debugLevel() : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -333,16 +333,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	logger : Logger to logger : org.slf4j.Logger in method public TimeProfiler(logger org.slf4j.Logger) in class org.sonar.api.utils.TimeProfiler</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dL38">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dR38">To</a></td>
+                                <td><i>Change Parameter Type	logger : Logger to logger : org.slf4j.Logger in method public setLogger(logger org.slf4j.Logger) : TimeProfiler in class org.sonar.api.utils.TimeProfiler</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dL73">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dR64">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	logger : Logger to logger : org.slf4j.Logger in method public setLogger(logger org.slf4j.Logger) : TimeProfiler in class org.sonar.api.utils.TimeProfiler</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dL73">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dR64">To</a></td>
+                                <td><i>Change Parameter Type	logger : Logger to logger : org.slf4j.Logger in method public TimeProfiler(logger org.slf4j.Logger) in class org.sonar.api.utils.TimeProfiler</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dL38">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dR38">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -462,14 +462,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private testBulk() : void extracted from private testBulk(profilingLevel Profiling.Level) : void in class org.sonar.server.es.request.ProxyBulkRequestBuilderTest</i></td>
+                                <td><i>Extract Method	public setLevel(level LoggerLevel) : LogTester extracted from protected before() : void in class org.sonar.api.utils.log.LogTester</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public setLevel(level LoggerLevel) : LogTester extracted from protected before() : void in class org.sonar.api.utils.log.LogTester</i></td>
+                                <td><i>Extract Method	private testBulk() : void extracted from private testBulk(profilingLevel Profiling.Level) : void in class org.sonar.server.es.request.ProxyBulkRequestBuilderTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -484,6 +484,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	protected abstract isDebugEnabled() : boolean renamed to protected abstract getLevel() : LoggerLevel in class org.sonar.api.utils.log.Loggers</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-30d6a33175dab184ba5fd58e6b7c3564L53">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-30d6a33175dab184ba5fd58e6b7c3564R53">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -518,13 +525,6 @@
                                 <td><i>Rename Method	public with_profiling_full() : void renamed to public trace_logs() : void in class org.sonar.server.es.request.ProxyClusterHealthRequestBuilderTest</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-0c3734f2adcea2b8db3a91885ec1e8dbL59">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-0c3734f2adcea2b8db3a91885ec1e8dbR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	protected abstract isDebugEnabled() : boolean renamed to protected abstract getLevel() : LoggerLevel in class org.sonar.api.utils.log.Loggers</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-30d6a33175dab184ba5fd58e6b7c3564L53">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-30d6a33175dab184ba5fd58e6b7c3564R53">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -583,13 +583,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	Logger to org.slf4j.Logger in method public getLogger() : org.slf4j.Logger in class org.sonar.api.utils.TimeProfiler</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dL78">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dR69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	boolean to LoggerLevel in method protected abstract getLevel() : LoggerLevel in class org.sonar.api.utils.log.Loggers</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-30d6a33175dab184ba5fd58e6b7c3564L53">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-30d6a33175dab184ba5fd58e6b7c3564R53">To</a></td>
@@ -600,6 +593,13 @@
                                 <td><i>Change Return Type	boolean to LoggerLevel in method protected getLevel() : LoggerLevel in class org.sonar.api.utils.log.LogTester</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-9c3f150e38c9605aded287ddac4ea250L78">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-9c3f150e38c9605aded287ddac4ea250R78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Logger to org.slf4j.Logger in method public getLogger() : org.slf4j.Logger in class org.sonar.api.utils.TimeProfiler</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dL78">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/d5a8ab383c56026165e995d62fbbeb0bed790d53?diff=split#diff-6b6d91760f215e18ed208d4b0501649dR69">To</a></td>
                             </tr>
                             
                             </tbody>

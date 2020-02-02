@@ -312,16 +312,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	protected createNodeLookup() : NodeProxy.NodeLookup renamed to protected createNodeActions() : NodeActions in class org.neo4j.kernel.InternalAbstractGraphDatabase</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839L790">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839R806">To</a></td>
+                                <td><i>Rename Method	protected createRelationshipLookups() : RelationshipProxy.RelationshipLookups renamed to protected createRelationshipActions() : RelationshipActions in class org.neo4j.kernel.InternalAbstractGraphDatabase</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839L743">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839R741">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	protected createRelationshipLookups() : RelationshipProxy.RelationshipLookups renamed to protected createRelationshipActions() : RelationshipActions in class org.neo4j.kernel.InternalAbstractGraphDatabase</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839L743">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839R741">To</a></td>
+                                <td><i>Rename Method	protected createNodeLookup() : NodeProxy.NodeLookup renamed to protected createNodeActions() : NodeActions in class org.neo4j.kernel.InternalAbstractGraphDatabase</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839L790">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-af31f64d35f8926cc7c52a61578eb839R806">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -334,6 +334,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in method public NodeManager(nodeActions NodeProxy.NodeActions, relationshipActions RelationshipProxy.RelationshipActions, threadToTransactionBridge ThreadToStatementContextBridge) in class org.neo4j.kernel.impl.core.NodeManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bL42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bR42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in method public TransactionEventHandlers(nodeActions NodeProxy.NodeActions, relationshipActions RelationshipProxy.RelationshipActions, bridge ThreadToStatementContextBridge) in class org.neo4j.kernel.TransactionEventHandlers</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aL59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aR59">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -354,20 +368,6 @@
                                 <td><i>Change Parameter Type	nodeLookup : NodeProxy.NodeLookup to nodeActions : NodeProxy.NodeActions in method public TxStateTransactionDataSnapshot(state ReadableTxState, nodeActions NodeProxy.NodeActions, storeReadLayer StoreReadLayer) in class org.neo4j.kernel.impl.coreapi.TxStateTransactionDataSnapshot</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-d659bcf92a5e59097b254d26f32ba5fdL69">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-d659bcf92a5e59097b254d26f32ba5fdR66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in method public NodeManager(nodeActions NodeProxy.NodeActions, relationshipActions RelationshipProxy.RelationshipActions, threadToTransactionBridge ThreadToStatementContextBridge) in class org.neo4j.kernel.impl.core.NodeManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bL42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bR42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in method public TransactionEventHandlers(nodeActions NodeProxy.NodeActions, relationshipActions RelationshipProxy.RelationshipActions, bridge ThreadToStatementContextBridge) in class org.neo4j.kernel.TransactionEventHandlers</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aL59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aR59">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -451,13 +451,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in class org.neo4j.kernel.TransactionEventHandlers</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aL56">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in class org.neo4j.kernel.impl.core.NodeManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bL36">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bR36">To</a></td>
@@ -475,6 +468,13 @@
                                 <td><i>Rename Attribute	nodeLookup : NodeProxy.NodeLookup to nodeActions : NodeProxy.NodeActions in class org.neo4j.kernel.impl.core.NodeManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bL35">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in class org.neo4j.kernel.TransactionEventHandlers</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aL56">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aR56">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -540,13 +540,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in class org.neo4j.kernel.TransactionEventHandlers</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aL56">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in class org.neo4j.kernel.impl.core.NodeManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bL36">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bR36">To</a></td>
@@ -564,6 +557,13 @@
                                 <td><i>Change Attribute Type	nodeLookup : NodeProxy.NodeLookup to nodeActions : NodeProxy.NodeActions in class org.neo4j.kernel.impl.core.NodeManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bL35">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-25736887d3f765b1fa148243acbc4e4bR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	relationshipLookups : RelationshipProxy.RelationshipLookups to relationshipActions : RelationshipProxy.RelationshipActions in class org.neo4j.kernel.TransactionEventHandlers</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aL56">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/27806d669324d09511e3b657c4d20661d84bca57?diff=split#diff-b0eac6101b8f570752716eb40fa0ae1aR56">To</a></td>
                             </tr>
                             
                             </tbody>

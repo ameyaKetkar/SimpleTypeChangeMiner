@@ -250,6 +250,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	futureList : List&lt;CompletableFuture&lt;?&gt;&gt; to remoteKeys : List&lt;Object&gt; in method private checkRemoteGetIfNeeded(ctx InvocationContext, command C, keys Set&lt;Object&gt;, cacheTopology LocalizedCacheTopology, needsPreviousValue boolean) : CompletionStage&lt;?&gt; in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L541">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R542">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	delay : CompletableFuture&lt;Void&gt; to delay : CompletionStage&lt;Void&gt; in method private handleRemoteReadWriteManyCommand(ctx InvocationContext, command C, helper WriteManyCommandHelper&lt;C,?,Item&gt;) : Object in class org.infinispan.interceptors.distribution.NonTxDistributionInterceptor</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-e8990846a04616d3a99ba4468ebc42faL385">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-e8990846a04616d3a99ba4468ebc42faR411">To</a></td>
@@ -276,13 +283,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-e82d8c3460dda205aac1ddef3152328eR880">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	futureList : List&lt;CompletableFuture&lt;?&gt;&gt; to remoteKeys : List&lt;Object&gt; in method private checkRemoteGetIfNeeded(ctx InvocationContext, command C, keys Set&lt;Object&gt;, cacheTopology LocalizedCacheTopology, needsPreviousValue boolean) : CompletionStage&lt;?&gt; in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L541">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R542">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -293,13 +293,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public expectCommandAsync(expectedCommandClass Class&lt;T&gt;) : CompletableFuture&lt;BlockedRequest&gt; extracted from public expectCommand(expectedCommandClass Class&lt;T&gt;, checker Consumer&lt;T&gt;) : BlockedRequest in class org.infinispan.util.ControlledRpcManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -325,6 +318,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	public expectResponseAsync(sender Address) : CompletionStage&lt;BlockedResponse&gt; extracted from public expectResponse(sender Address, checker Consumer&lt;Response&gt;) : BlockedResponse in class org.infinispan.util.ControlledRpcManager.SentRequest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public expectCommandAsync(expectedCommandClass Class&lt;T&gt;) : CompletableFuture&lt;BlockedRequest&gt; extracted from public expectCommand(expectedCommandClass Class&lt;T&gt;, checker Consumer&lt;T&gt;) : BlockedRequest in class org.infinispan.util.ControlledRpcManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -502,16 +502,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	queuedRequests : BlockingQueue&lt;InternalRequest&gt; to waiters : BlockingQueue&lt;CompletableFuture&lt;ControlledRequest&gt;&gt; in class org.infinispan.util.ControlledRpcManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L68">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R71">To</a></td>
+                                <td><i>Rename Attribute	lock : Lock to collectLock : Lock in class org.infinispan.util.ControlledRpcManager.ControlledRequest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L190">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R282">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	lock : Lock to collectLock : Lock in class org.infinispan.util.ControlledRpcManager.ControlledRequest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L190">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R282">To</a></td>
+                                <td><i>Rename Attribute	queuedRequests : BlockingQueue&lt;InternalRequest&gt; to waiters : BlockingQueue&lt;CompletableFuture&lt;ControlledRequest&gt;&gt; in class org.infinispan.util.ControlledRpcManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L68">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R71">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -524,13 +524,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	request : InternalRequest&lt;?&gt; to request : ControlledRequest&lt;?&gt; in class org.infinispan.util.ControlledRpcManager.BlockedRequest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L467">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R462">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -572,6 +565,13 @@
                                 <td><i>Change Attribute Type	queuedRequests : BlockingQueue&lt;InternalRequest&gt; to waiters : BlockingQueue&lt;CompletableFuture&lt;ControlledRequest&gt;&gt; in class org.infinispan.util.ControlledRpcManager</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L68">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	request : InternalRequest&lt;?&gt; to request : ControlledRequest&lt;?&gt; in class org.infinispan.util.ControlledRpcManager.BlockedRequest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546L467">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/f153dbc88873834c2147cd7c4150bf40b0b94a41?diff=split#diff-10d1e708ea1448460b4b4d953d95b546R462">To</a></td>
                             </tr>
                             
                             </tbody>

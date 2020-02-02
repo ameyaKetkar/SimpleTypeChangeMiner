@@ -208,16 +208,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Push Down Method	public CsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, typeInformation CompositeType&lt;OUT&gt;) from class org.apache.flink.api.java.io.CsvInputFormat to public TupleCsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, tupleTypeInfo TupleTypeInfoBase&lt;OUT&gt;, includedFieldsMask boolean[]) from class org.apache.flink.api.java.io.TupleCsvInputFormat</i></td>
+                                <td><i>Push Down Method	public CsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, typeInformation CompositeType&lt;OUT&gt;) from class org.apache.flink.api.java.io.CsvInputFormat to public PojoCsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, pojoTypeInfo PojoTypeInfo&lt;OUT&gt;, fieldNames String[], includedFieldsMask boolean[]) from class org.apache.flink.api.java.io.PojoCsvInputFormat</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8L35">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-038acaf88af3837f7ecd46b2a75851a0R56">To</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-b8ffd61f1d50828b9b4cc1688caf1867R90">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Push Down Method	public CsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, typeInformation CompositeType&lt;OUT&gt;) from class org.apache.flink.api.java.io.CsvInputFormat to public PojoCsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, pojoTypeInfo PojoTypeInfo&lt;OUT&gt;, fieldNames String[], includedFieldsMask boolean[]) from class org.apache.flink.api.java.io.PojoCsvInputFormat</i></td>
+                                <td><i>Push Down Method	public CsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, typeInformation CompositeType&lt;OUT&gt;) from class org.apache.flink.api.java.io.CsvInputFormat to public TupleCsvInputFormat(filePath Path, lineDelimiter String, fieldDelimiter String, tupleTypeInfo TupleTypeInfoBase&lt;OUT&gt;, includedFieldsMask boolean[]) from class org.apache.flink.api.java.io.TupleCsvInputFormat</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8L35">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-b8ffd61f1d50828b9b4cc1688caf1867R90">To</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-038acaf88af3837f7ecd46b2a75851a0R56">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -233,20 +233,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public readRecord(reuse OUT, bytes byte[], offset int, numBytes int) : OUT from class org.apache.flink.api.java.io.CommonCsvInputFormat to public readRecord(reuse OUT, bytes byte[], offset int, numBytes int) : OUT from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL209">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public getFieldTypes() : Class&lt;?&gt;[] from class org.apache.flink.api.java.io.CommonCsvInputFormat to public getFieldTypes() : Class&lt;?&gt;[] from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL132">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R119">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Method	public nextRecord(record OUT) : OUT from class org.apache.flink.api.java.io.CommonCsvInputFormat to public nextRecord(record OUT) : OUT from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL199">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R73">To</a></td>
@@ -257,6 +243,20 @@
                                 <td><i>Move Method	public open(split FileInputSplit) : void from class org.apache.flink.api.java.io.CommonCsvInputFormat to public open(split FileInputSplit) : void from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL136">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public readRecord(reuse OUT, bytes byte[], offset int, numBytes int) : OUT from class org.apache.flink.api.java.io.CommonCsvInputFormat to public readRecord(reuse OUT, bytes byte[], offset int, numBytes int) : OUT from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL209">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public getFieldTypes() : Class&lt;?&gt;[] from class org.apache.flink.api.java.io.CommonCsvInputFormat to public getFieldTypes() : Class&lt;?&gt;[] from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL132">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R119">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -272,6 +272,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Attribute	public DEFAULT_LINE_DELIMITER : String from class org.apache.flink.api.java.io.CommonCsvInputFormat to public DEFAULT_LINE_DELIMITER : String from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL39">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Attribute	protected parsedValues : Object[] from class org.apache.flink.api.java.io.CommonCsvInputFormat to protected parsedValues : Object[] from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL43">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R39">To</a></td>
@@ -282,13 +289,6 @@
                                 <td><i>Move Attribute	public DEFAULT_FIELD_DELIMITER : String from class org.apache.flink.api.java.io.CommonCsvInputFormat to public DEFAULT_FIELD_DELIMITER : String from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL41">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	public DEFAULT_LINE_DELIMITER : String from class org.apache.flink.api.java.io.CommonCsvInputFormat to public DEFAULT_LINE_DELIMITER : String from class org.apache.flink.api.java.io.CsvInputFormat</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-9feaac0f287b6a86a3978218fcc0baceL39">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/bd61f2dbdf1a0215363ffa8416329e1dbf277593?diff=split#diff-0a0a0ef241bc03d15962877cf4e6dcf8R35">To</a></td>
                             </tr>
                             
                             </tbody>

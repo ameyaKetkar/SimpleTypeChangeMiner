@@ -403,16 +403,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Replace Variable With Attribute	windowState : ListState&lt;StreamRecord&lt;IN&gt;&gt; to evictingWindowState : InternalListState&lt;W,StreamRecord&lt;IN&gt;&gt; in method public processElement(element StreamRecord&lt;IN&gt;) : void in class org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-e01b009e6e24d5cf38b5df2a4f824143L140">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-e01b009e6e24d5cf38b5df2a4f824143R77">To</a></td>
+                                <td><i>Replace Variable With Attribute	mergeState : ListState&lt;Tuple2&lt;W,W&gt;&gt; to mergingSetsState : InternalListState&lt;VoidNamespace,Tuple2&lt;W,W&gt;&gt; in method protected getMergingWindowSet() : MergingWindowSet&lt;W&gt; in class org.apache.flink.streaming.runtime.operators.windowing.WindowOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-408a499e1a35840c52e29b7ccab866b1L510">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-408a499e1a35840c52e29b7ccab866b1R147">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Replace Variable With Attribute	mergeState : ListState&lt;Tuple2&lt;W,W&gt;&gt; to mergingSetsState : InternalListState&lt;VoidNamespace,Tuple2&lt;W,W&gt;&gt; in method protected getMergingWindowSet() : MergingWindowSet&lt;W&gt; in class org.apache.flink.streaming.runtime.operators.windowing.WindowOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-408a499e1a35840c52e29b7ccab866b1L510">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-408a499e1a35840c52e29b7ccab866b1R147">To</a></td>
+                                <td><i>Replace Variable With Attribute	windowState : ListState&lt;StreamRecord&lt;IN&gt;&gt; to evictingWindowState : InternalListState&lt;W,StreamRecord&lt;IN&gt;&gt; in method public processElement(element StreamRecord&lt;IN&gt;) : void in class org.apache.flink.streaming.runtime.operators.windowing.EvictingWindowOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-e01b009e6e24d5cf38b5df2a4f824143L140">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-e01b009e6e24d5cf38b5df2a4f824143R77">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -443,20 +443,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	previous : KvState&lt;?&gt; to previous : InternalKvState&lt;?&gt; in method public getPartitionedState(namespace N, namespaceSerializer TypeSerializer&lt;N&gt;, stateDescriptor StateDescriptor&lt;S,?&gt;) : S in class org.apache.flink.runtime.state.AbstractKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-9f4f78185bc3d238c5762b00dd0cb4c3L212">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-9f4f78185bc3d238c5762b00dd0cb4c3R317">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	restoredKvState2 : KvState&lt;VoidNamespace&gt; to restoredKvState2 : InternalKvState&lt;VoidNamespace&gt; in method public testListState() : void in class org.apache.flink.runtime.state.StateBackendTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cL483">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR564">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -605,6 +591,20 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR600">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	previous : KvState&lt;?&gt; to previous : InternalKvState&lt;?&gt; in method public getPartitionedState(namespace N, namespaceSerializer TypeSerializer&lt;N&gt;, stateDescriptor StateDescriptor&lt;S,?&gt;) : S in class org.apache.flink.runtime.state.AbstractKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-9f4f78185bc3d238c5762b00dd0cb4c3L212">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-9f4f78185bc3d238c5762b00dd0cb4c3R317">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	restoredKvState2 : KvState&lt;VoidNamespace&gt; to restoredKvState2 : InternalKvState&lt;VoidNamespace&gt; in method public testListState() : void in class org.apache.flink.runtime.state.StateBackendTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cL483">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3b97128f05bacfb80afe4a2a49741c31ff306cd2?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR564">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -615,6 +615,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Interface	org.apache.flink.runtime.state.internal.InternalReducingState from classes [org.apache.flink.contrib.streaming.state.RocksDBReducingState, org.apache.flink.runtime.state.heap.HeapReducingState]</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -633,13 +640,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Interface	org.apache.flink.runtime.state.internal.InternalValueState from classes [org.apache.flink.contrib.streaming.state.RocksDBValueState, org.apache.flink.runtime.state.heap.HeapValueState]</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Interface	org.apache.flink.runtime.state.internal.InternalReducingState from classes [org.apache.flink.contrib.streaming.state.RocksDBReducingState, org.apache.flink.runtime.state.heap.HeapReducingState]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

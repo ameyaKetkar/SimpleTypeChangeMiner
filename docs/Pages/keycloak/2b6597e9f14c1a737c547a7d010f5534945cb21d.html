@@ -154,14 +154,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.keycloak.authorization.policy.provider.scope.ScopePolicyProviderFactory moved to org.keycloak.authorization.policy.provider.permission.ScopePolicyProviderFactory</i></td>
+                                <td><i>Move Class	org.keycloak.authorization.policy.provider.resource.ResourcePolicyProviderFactory moved to org.keycloak.authorization.policy.provider.permission.ResourcePolicyProviderFactory</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.keycloak.authorization.policy.provider.resource.ResourcePolicyProviderFactory moved to org.keycloak.authorization.policy.provider.permission.ResourcePolicyProviderFactory</i></td>
+                                <td><i>Move Class	org.keycloak.authorization.policy.provider.scope.ScopePolicyProviderFactory moved to org.keycloak.authorization.policy.provider.permission.ScopePolicyProviderFactory</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -215,6 +215,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Variable	resource : Resource in method public permits(evaluation List&lt;Result&gt;, metadata Metadata, authorizationProvider AuthorizationProvider, resourceServer ResourceServer) : List&lt;Permission&gt; from class org.keycloak.authorization.util.Permissions</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	ticket : PermissionTicket in method public findByScope(scopeId String, resourceServerId String) : List&lt;PermissionTicket&gt; from class org.keycloak.authorization.jpa.store.JPAPermissionTicketStore</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	resources : List&lt;PermissionTicketToken.ResourcePermission&gt; in method public onComplete() : void from class org.keycloak.authorization.policy.evaluation.PermissionTicketAwareDecisionResultCollector</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	authorizationProvider : AuthorizationProvider in method public evaluate(evaluation Evaluation) : void from class org.keycloak.authorization.policy.provider.group.GroupPolicyProvider</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Variable	ticket : PermissionTicket in method public findByResource(resourceId String, resourceServerId String) : List&lt;PermissionTicket&gt; from class org.keycloak.authorization.jpa.store.JPAPermissionTicketStore</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -251,34 +279,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	ticket : PermissionTicket in method public findByResourceServer(resourceServerId String) : List&lt;PermissionTicket&gt; from class org.keycloak.authorization.jpa.store.JPAPermissionTicketStore</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	resource : Resource in method public permits(evaluation List&lt;Result&gt;, metadata Metadata, authorizationProvider AuthorizationProvider, resourceServer ResourceServer) : List&lt;Permission&gt; from class org.keycloak.authorization.util.Permissions</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	ticket : PermissionTicket in method public findByScope(scopeId String, resourceServerId String) : List&lt;PermissionTicket&gt; from class org.keycloak.authorization.jpa.store.JPAPermissionTicketStore</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	resources : List&lt;PermissionTicketToken.ResourcePermission&gt; in method public onComplete() : void from class org.keycloak.authorization.policy.evaluation.PermissionTicketAwareDecisionResultCollector</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	authorizationProvider : AuthorizationProvider in method public evaluate(evaluation Evaluation) : void from class org.keycloak.authorization.policy.provider.group.GroupPolicyProvider</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

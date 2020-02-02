@@ -220,6 +220,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public commitSpecificOffsetsToKafka(offsets Map&lt;KafkaTopicPartition,Long&gt;) : void renamed to public commitInternalOffsetsToKafka(offsets Map&lt;KafkaTopicPartition,Long&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internals.Kafka08Fetcher</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-ff080c317dcb910910cdf7941ea6f55dL326">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-ff080c317dcb910910cdf7941ea6f55dR328">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public commitSpecificOffsetsToKafka(offsets Map&lt;KafkaTopicPartition,Long&gt;) : void renamed to public commitInternalOffsetsToKafka(offsets Map&lt;KafkaTopicPartition,Long&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internal.Kafka09Fetcher</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-442ef6f9084b8ba39a8d6d78b22c3140L302">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-442ef6f9084b8ba39a8d6d78b22c3140R302">To</a></td>
@@ -251,13 +258,6 @@
                                 <td><i>Rename Method	public getOffsets(partitions List&lt;KafkaTopicPartition&gt;) : Map&lt;KafkaTopicPartition,Long&gt; renamed to public getCommittedOffsets(partitions List&lt;KafkaTopicPartition&gt;) : Map&lt;KafkaTopicPartition,Long&gt; in class org.apache.flink.streaming.connectors.kafka.internals.ZookeeperOffsetHandler</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-4e83cee973b7b5b9fb33e0e8f72fc5b1L96">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-4e83cee973b7b5b9fb33e0e8f72fc5b1R98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public commitSpecificOffsetsToKafka(offsets Map&lt;KafkaTopicPartition,Long&gt;) : void renamed to public commitInternalOffsetsToKafka(offsets Map&lt;KafkaTopicPartition,Long&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internals.Kafka08Fetcher</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-ff080c317dcb910910cdf7941ea6f55dL326">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-ff080c317dcb910910cdf7941ea6f55dR328">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -398,16 +398,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	pendingCheckpoints : LinkedMap to pendingOffsetsToCommit : LinkedMap in method private getConsumer(fetcher AbstractFetcher&lt;T,?&gt;, pendingOffsetsToCommit LinkedMap, running boolean) : FlinkKafkaConsumerBase&lt;T&gt; in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBaseTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-19fbdd292fda65e8ea8bd8cd0e5ad0c0L280">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-19fbdd292fda65e8ea8bd8cd0e5ad0c0R290">To</a></td>
+                                <td><i>Rename Parameter	offsetsToWrite : Map&lt;KafkaTopicPartition,Long&gt; to internalOffsets : Map&lt;KafkaTopicPartition,Long&gt; in method public prepareAndCommitOffsets(internalOffsets Map&lt;KafkaTopicPartition,Long&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internals.ZookeeperOffsetHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-4e83cee973b7b5b9fb33e0e8f72fc5b1L85">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-4e83cee973b7b5b9fb33e0e8f72fc5b1R87">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	offsetsToWrite : Map&lt;KafkaTopicPartition,Long&gt; to internalOffsets : Map&lt;KafkaTopicPartition,Long&gt; in method public prepareAndCommitOffsets(internalOffsets Map&lt;KafkaTopicPartition,Long&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internals.ZookeeperOffsetHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-4e83cee973b7b5b9fb33e0e8f72fc5b1L85">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-4e83cee973b7b5b9fb33e0e8f72fc5b1R87">To</a></td>
+                                <td><i>Rename Parameter	pendingCheckpoints : LinkedMap to pendingOffsetsToCommit : LinkedMap in method private getConsumer(fetcher AbstractFetcher&lt;T,?&gt;, pendingOffsetsToCommit LinkedMap, running boolean) : FlinkKafkaConsumerBase&lt;T&gt; in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumerBaseTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-19fbdd292fda65e8ea8bd8cd0e5ad0c0L280">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f46ca39188dce1764ee6615eb6697588fdc04a2a?diff=split#diff-19fbdd292fda65e8ea8bd8cd0e5ad0c0R290">To</a></td>
                             </tr>
                             
                             </tbody>

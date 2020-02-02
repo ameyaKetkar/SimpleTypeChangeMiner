@@ -320,14 +320,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.unsafe.batchinsert.internal.BatchInserterImpl.IndexPopulatorWithSchema &amp; inlined to public add(update IndexEntryUpdate&lt;?&gt;) : void</i></td>
+                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation &amp; inlined to private onUpdate(update IndexEntryUpdate) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation &amp; inlined to private onUpdate(update IndexEntryUpdate) : void</i></td>
+                                <td><i>Move And Inline Method	public add(update IndexEntryUpdate&lt;?&gt;) : void moved from class org.neo4j.kernel.impl.index.schema.fusion.FusionIndexPopulator to class org.neo4j.unsafe.batchinsert.internal.BatchInserterImpl.IndexPopulatorWithSchema &amp; inlined to public add(update IndexEntryUpdate&lt;?&gt;) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -342,6 +342,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	provider : SchemaIndexProvider to providers : SchemaIndexProviderMap in method public IndexAccessors(providers SchemaIndexProviderMap, schemaStore RecordStore&lt;DynamicRecord&gt;, samplingConfig IndexSamplingConfig) in class org.neo4j.consistency.checking.index.IndexAccessors</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-5d5a3874923943536b821231ab4d73d4L46">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-5d5a3874923943536b821231ab4d73d4R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	schemaIndexProvider : SchemaIndexProvider to schemaIndexProviderMap : SchemaIndexProviderMap in method public DatabaseMigrator(progressMonitor MigrationProgressMonitor, fs FileSystemAbstraction, config Config, logService LogService, schemaIndexProviderMap SchemaIndexProviderMap, indexProviders Map&lt;String,IndexImplementation&gt;, pageCache PageCache, format RecordFormats) in class org.neo4j.kernel.impl.storemigration.DatabaseMigrator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51L57">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51R59">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -362,20 +376,6 @@
                                 <td><i>Change Parameter Type	update : IndexEntryUpdate to update : IndexEntryUpdate&lt;?&gt; in method public batch(update IndexEntryUpdate&lt;?&gt;) : boolean in class org.neo4j.kernel.impl.api.index.MultipleIndexPopulator.IndexPopulation</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-faaa337b66b27c8ff63b764e7197d06cL500">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-faaa337b66b27c8ff63b764e7197d06cR525">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	provider : SchemaIndexProvider to providers : SchemaIndexProviderMap in method public IndexAccessors(providers SchemaIndexProviderMap, schemaStore RecordStore&lt;DynamicRecord&gt;, samplingConfig IndexSamplingConfig) in class org.neo4j.consistency.checking.index.IndexAccessors</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-5d5a3874923943536b821231ab4d73d4L46">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-5d5a3874923943536b821231ab4d73d4R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	schemaIndexProvider : SchemaIndexProvider to schemaIndexProviderMap : SchemaIndexProviderMap in method public DatabaseMigrator(progressMonitor MigrationProgressMonitor, fs FileSystemAbstraction, config Config, logService LogService, schemaIndexProviderMap SchemaIndexProviderMap, indexProviders Map&lt;String,IndexImplementation&gt;, pageCache PageCache, format RecordFormats) in class org.neo4j.kernel.impl.storemigration.DatabaseMigrator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51L57">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51R59">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -484,14 +484,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	logging : LogService in method public newInstance(context KernelContext, dependencies Dependencies) : LuceneSchemaIndexProvider from class org.neo4j.kernel.api.impl.schema.LuceneSchemaIndexProviderFactory</i></td>
+                                <td><i>Extract Variable	currentPageId : long in method private cursorIsAtExpectedLocation(cursor PageCursor) : boolean from class org.neo4j.index.internal.gbptree.InternalTreeLogic</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	currentPageId : long in method private cursorIsAtExpectedLocation(cursor PageCursor) : boolean from class org.neo4j.index.internal.gbptree.InternalTreeLogic</i></td>
+                                <td><i>Extract Variable	logging : LogService in method public newInstance(context KernelContext, dependencies Dependencies) : LuceneSchemaIndexProvider from class org.neo4j.kernel.api.impl.schema.LuceneSchemaIndexProviderFactory</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -506,48 +506,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private createIndex(gds GraphDatabaseService, label Label, propKey String) : void extracted from public shouldReportMissingSchemaIndex() : void in class org.neo4j.consistency.ConsistencyCheckServiceIntegrationTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private initFromForRange(rangePredicate NumberRangePredicate) : void extracted from public query(predicates IndexQuery...) : PrimitiveLongIterator in class org.neo4j.kernel.impl.index.schema.NativeSchemaNumberIndexReader</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	package itemsMatches(expected Iterable&lt;T&gt;, actual Iterable&lt;T&gt;) : boolean extracted from protected matchesSafely(objects Iterable&lt;T&gt;) : boolean in class org.neo4j.test.mockito.matcher.IterableMatcher</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private immediateExecutor() : ExecutorService extracted from private sameThreadExecutor() : ExecutorService in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulatorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getGraphDatabaseService(storeDir File, settings String...) : GraphDatabaseService extracted from private getGraphDatabaseService(storeDir File) : GraphDatabaseService in class org.neo4j.consistency.ConsistencyCheckServiceIntegrationTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private immediateExecutor() : ExecutorService extracted from public executorForcefullyShutdownIfStoreScanFails() : void in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulatorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -587,6 +545,48 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private initToForRange(rangePredicate NumberRangePredicate) : void extracted from public query(predicates IndexQuery...) : PrimitiveLongIterator in class org.neo4j.kernel.impl.index.schema.NativeSchemaNumberIndexReader</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private createIndex(gds GraphDatabaseService, label Label, propKey String) : void extracted from public shouldReportMissingSchemaIndex() : void in class org.neo4j.consistency.ConsistencyCheckServiceIntegrationTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private initFromForRange(rangePredicate NumberRangePredicate) : void extracted from public query(predicates IndexQuery...) : PrimitiveLongIterator in class org.neo4j.kernel.impl.index.schema.NativeSchemaNumberIndexReader</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	package itemsMatches(expected Iterable&lt;T&gt;, actual Iterable&lt;T&gt;) : boolean extracted from protected matchesSafely(objects Iterable&lt;T&gt;) : boolean in class org.neo4j.test.mockito.matcher.IterableMatcher</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private immediateExecutor() : ExecutorService extracted from private sameThreadExecutor() : ExecutorService in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulatorTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private getGraphDatabaseService(storeDir File, settings String...) : GraphDatabaseService extracted from private getGraphDatabaseService(storeDir File) : GraphDatabaseService in class org.neo4j.consistency.ConsistencyCheckServiceIntegrationTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private immediateExecutor() : ExecutorService extracted from public executorForcefullyShutdownIfStoreScanFails() : void in class org.neo4j.kernel.impl.api.index.BatchingMultipleIndexPopulatorTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -832,6 +832,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	schemaIndexProvider : SchemaIndexProvider to schemaIndexProviderMap : SchemaIndexProviderMap in method public DatabaseMigrator(progressMonitor MigrationProgressMonitor, fs FileSystemAbstraction, config Config, logService LogService, schemaIndexProviderMap SchemaIndexProviderMap, indexProviders Map&lt;String,IndexImplementation&gt;, pageCache PageCache, format RecordFormats) in class org.neo4j.kernel.impl.storemigration.DatabaseMigrator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51L59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	indexProvider : SchemaIndexProvider to defaultIndexProvider : SchemaIndexProvider in method public DefaultSchemaIndexProviderMap(defaultIndexProvider SchemaIndexProvider) in class org.neo4j.kernel.impl.transaction.state.DefaultSchemaIndexProviderMap</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-deedce0297accf5f1aaa29b22e09698dL29">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-deedce0297accf5f1aaa29b22e09698dR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	indexProvider : SchemaIndexProvider to indexProviderMap : SchemaIndexProviderMap in method public RecordStorageEngine(storeDir File, config Config, pageCache PageCache, fs FileSystemAbstraction, logProvider LogProvider, propertyKeyTokenHolder PropertyKeyTokenHolder, labelTokens LabelTokenHolder, relationshipTypeTokens RelationshipTypeTokenHolder, schemaState SchemaState, constraintSemantics ConstraintSemantics, scheduler JobScheduler, tokenNameLookup TokenNameLookup, lockService LockService, indexProviderMap SchemaIndexProviderMap, indexingServiceMonitor IndexingService.Monitor, databaseHealth DatabaseHealth, legacyIndexProviderLookup LegacyIndexProviderLookup, indexConfigStore IndexConfigStore, legacyIndexTransactionOrdering IdOrderingQueue, idGeneratorFactory IdGeneratorFactory, idController IdController, monitors Monitors, recoveryCleanupWorkCollector RecoveryCleanupWorkCollector, operationalMode OperationalMode) in class org.neo4j.kernel.impl.storageengine.impl.recordstorage.RecordStorageEngine</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-f28d560e2f2b5485c550d6ae2e62a67eL184">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-f28d560e2f2b5485c550d6ae2e62a67eR183">To</a></td>
@@ -863,20 +877,6 @@
                                 <td><i>Rename Parameter	provider : SchemaIndexProvider to providers : SchemaIndexProviderMap in method public IndexAccessors(providers SchemaIndexProviderMap, schemaStore RecordStore&lt;DynamicRecord&gt;, samplingConfig IndexSamplingConfig) in class org.neo4j.consistency.checking.index.IndexAccessors</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-5d5a3874923943536b821231ab4d73d4L46">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-5d5a3874923943536b821231ab4d73d4R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	schemaIndexProvider : SchemaIndexProvider to schemaIndexProviderMap : SchemaIndexProviderMap in method public DatabaseMigrator(progressMonitor MigrationProgressMonitor, fs FileSystemAbstraction, config Config, logService LogService, schemaIndexProviderMap SchemaIndexProviderMap, indexProviders Map&lt;String,IndexImplementation&gt;, pageCache PageCache, format RecordFormats) in class org.neo4j.kernel.impl.storemigration.DatabaseMigrator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51L59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-91f2053df1055433e74afea1ea33aa51R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	indexProvider : SchemaIndexProvider to defaultIndexProvider : SchemaIndexProvider in method public DefaultSchemaIndexProviderMap(defaultIndexProvider SchemaIndexProvider) in class org.neo4j.kernel.impl.transaction.state.DefaultSchemaIndexProviderMap</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-deedce0297accf5f1aaa29b22e09698dL29">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/20987c70673ff8cfd1d1148bff8bc432b4a09b02?diff=split#diff-deedce0297accf5f1aaa29b22e09698dR36">To</a></td>
                             </tr>
                             
                             </tbody>

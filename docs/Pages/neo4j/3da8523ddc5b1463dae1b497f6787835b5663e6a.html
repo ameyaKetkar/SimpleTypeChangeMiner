@@ -320,6 +320,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	consumer : Consumer&lt;SingleRelationshipCursor&gt; to consumer : Consumer&lt;StoreSingleRelationshipCursor&gt; in method package StoreSingleRelationshipCursor(relationshipStore RelationshipStore, consumer Consumer&lt;StoreSingleRelationshipCursor&gt;, lockService LockService) in class org.neo4j.kernel.impl.api.store.StoreSingleRelationshipCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-6c127bf5ccb9c9ca400ab77d86907829L42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in method public StorePropertyCursor(propertyStore PropertyStore, instanceCache Consumer&lt;StorePropertyCursor&gt;) in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	clock : Clock to clock : LongSupplier in method public TimeoutCheckStrategy(interval long, clock LongSupplier) in class org.neo4j.collection.pool.LinkedQueuePool.CheckStrategy.TimeoutCheckStrategy</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-b9882603439b65712c7ff855170a4a09L35">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3fe0c3c8df3922fd22c20a13857ff50cR85">To</a></td>
@@ -374,20 +388,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-aa498858ec07b65f6dc6dab4ef4cfb1aR34">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	consumer : Consumer&lt;SingleRelationshipCursor&gt; to consumer : Consumer&lt;StoreSingleRelationshipCursor&gt; in method package StoreSingleRelationshipCursor(relationshipStore RelationshipStore, consumer Consumer&lt;StoreSingleRelationshipCursor&gt;, lockService LockService) in class org.neo4j.kernel.impl.api.store.StoreSingleRelationshipCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-6c127bf5ccb9c9ca400ab77d86907829L42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in method public StorePropertyCursor(propertyStore PropertyStore, instanceCache Consumer&lt;StorePropertyCursor&gt;) in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR42">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -398,6 +398,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	propertyCursor : PropertyCursor to storePropertyCursor : StorePropertyCursor in method public shouldReuseCorrectlyCursor() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.CursorReuse</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL487">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	propertyCursor : PropertyCursor to storePropertyCursor : StorePropertyCursor in method public shouldReturnTheCursorToTheCacheOnClose() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.CloseDisposeTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL247">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR246">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	propertyCursor : PropertyCursor to storePropertyCursor : StorePropertyCursor in method public shouldReturnTwoProperties() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.TwoValueProperties</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL440">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR439">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -427,27 +448,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR266">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	propertyCursor : PropertyCursor to storePropertyCursor : StorePropertyCursor in method public shouldReuseCorrectlyCursor() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.CursorReuse</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL487">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	propertyCursor : PropertyCursor to storePropertyCursor : StorePropertyCursor in method public shouldReturnTheCursorToTheCacheOnClose() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.CloseDisposeTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL247">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR246">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	propertyCursor : PropertyCursor to storePropertyCursor : StorePropertyCursor in method public shouldReturnTwoProperties() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.TwoValueProperties</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL440">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR439">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -458,27 +458,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	PropertyCursor to StorePropertyCursor in method private newStorePropertyCursor(propertyStore PropertyStore) : StorePropertyCursor in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL766">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR765">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	PropertyPayloadCursor to StorePropertyPayloadCursor in method private singleProperty(keyId int, input Params) : StorePropertyPayloadCursor in class org.neo4j.kernel.impl.api.store.StorePropertyPayloadCursorTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8ee7f3b4ab26bd3dddb8b571d2fda518L493">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c2f8ebee67771699e30477c42da1c63dR494">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	NodeRelationshipCursor to StoreNodeRelationshipCursor in method private nodeRelationshipCursor() : StoreNodeRelationshipCursor in class org.neo4j.kernel.impl.api.store.StoreNodeRelationshipCursorTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-bc1fe679f823696b142a4df16fbfe25dL530">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2b93d252f6cb86cf96677c8ddd4fafc9R531">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -557,6 +536,27 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-9912f2062e502640cf1bae901235d9cfR113">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	PropertyCursor to StorePropertyCursor in method private newStorePropertyCursor(propertyStore PropertyStore) : StorePropertyCursor in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL766">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR765">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	PropertyPayloadCursor to StorePropertyPayloadCursor in method private singleProperty(keyId int, input Params) : StorePropertyPayloadCursor in class org.neo4j.kernel.impl.api.store.StorePropertyPayloadCursorTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8ee7f3b4ab26bd3dddb8b571d2fda518L493">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c2f8ebee67771699e30477c42da1c63dR494">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	NodeRelationshipCursor to StoreNodeRelationshipCursor in method private nodeRelationshipCursor() : StoreNodeRelationshipCursor in class org.neo4j.kernel.impl.api.store.StoreNodeRelationshipCursorTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-bc1fe679f823696b142a4df16fbfe25dL530">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2b93d252f6cb86cf96677c8ddd4fafc9R531">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -567,27 +567,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.kernel.impl.api.store.PropertyCursor renamed to org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.kernel.impl.api.store.PropertyPayloadCursorTest renamed to org.neo4j.kernel.impl.api.store.StorePropertyPayloadCursorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.kernel.impl.api.store.PropertyCursorTest renamed to org.neo4j.kernel.impl.api.store.StorePropertyCursorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -666,6 +645,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.kernel.impl.api.store.PropertyCursor renamed to org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.kernel.impl.api.store.PropertyPayloadCursorTest renamed to org.neo4j.kernel.impl.api.store.StorePropertyPayloadCursorTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.kernel.impl.api.store.PropertyCursorTest renamed to org.neo4j.kernel.impl.api.store.StorePropertyCursorTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -722,16 +722,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L38">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR38">To</a></td>
+                                <td><i>Rename Attribute	consumer : Consumer&lt;SinglePropertyCursor&gt; to instanceCache : Consumer&lt;StoreSinglePropertyCursor&gt; in class org.neo4j.kernel.impl.api.store.StoreSinglePropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c2cd47d41615c806b748b0e578de3d8dL31">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-aa498858ec07b65f6dc6dab4ef4cfb1aR31">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	consumer : Consumer&lt;SinglePropertyCursor&gt; to instanceCache : Consumer&lt;StoreSinglePropertyCursor&gt; in class org.neo4j.kernel.impl.api.store.StoreSinglePropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c2cd47d41615c806b748b0e578de3d8dL31">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-aa498858ec07b65f6dc6dab4ef4cfb1aR31">To</a></td>
+                                <td><i>Rename Attribute	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L38">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR38">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -744,27 +744,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-43" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cursor : PropertyCursor to cursor : StorePropertyCursor in method public readPropertyChainWithLongStringDynamicRecordsNotInUse() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.PropertyChains</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL611">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR620">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cursor : PropertyCursor to cursor : StorePropertyCursor in method public skipAllRecordsWhenWholeChainNotInUse() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.PropertyChains</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL591">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR601">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cursor : NodeRelationshipCursor to cursor : StoreNodeRelationshipCursor in method public retrieveUsedRelationshipChain() : void in class org.neo4j.kernel.impl.api.store.StoreNodeRelationshipCursorTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-bc1fe679f823696b142a4df16fbfe25dL159">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2b93d252f6cb86cf96677c8ddd4fafc9R165">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1046,6 +1025,27 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2b93d252f6cb86cf96677c8ddd4fafc9R147">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cursor : PropertyCursor to cursor : StorePropertyCursor in method public readPropertyChainWithLongStringDynamicRecordsNotInUse() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.PropertyChains</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL611">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR620">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cursor : PropertyCursor to cursor : StorePropertyCursor in method public skipAllRecordsWhenWholeChainNotInUse() : void in class org.neo4j.kernel.impl.api.store.StorePropertyCursorTest.PropertyChains</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-212d7aba5e2c32b126302370f7f5367fL591">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-65e46aec2b289b8e15d531349e7d90abR601">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cursor : NodeRelationshipCursor to cursor : StoreNodeRelationshipCursor in method public retrieveUsedRelationshipChain() : void in class org.neo4j.kernel.impl.api.store.StoreNodeRelationshipCursorTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-bc1fe679f823696b142a4df16fbfe25dL159">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2b93d252f6cb86cf96677c8ddd4fafc9R165">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1056,48 +1056,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L38">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	nodeRelationshipsCursor : CursorPool&lt;NodeRelationshipCursor&gt; to nodeRelationshipsCursor : CursorPool&lt;StoreNodeRelationshipCursor&gt; in class org.neo4j.kernel.impl.api.store.GlobalCursorPools</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36L42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36R42">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	payload : PropertyPayloadCursor to payload : StorePropertyPayloadCursor in class org.neo4j.kernel.impl.api.store.StoreAbstractPropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2c08fe587b4245b3ae4133e2b76ff774L40">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-4d7889026ffdb49dc27482932c60b722R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	singleRelationshipCursor : CursorPool&lt;SingleRelationshipCursor&gt; to singleRelationshipCursor : CursorPool&lt;StoreSingleRelationshipCursor&gt; in class org.neo4j.kernel.impl.api.store.GlobalCursorPools</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36L40">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	clock : Clock to clock : LongSupplier in class org.neo4j.collection.pool.LinkedQueuePool.CheckStrategy.TimeoutCheckStrategy</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-b9882603439b65712c7ff855170a4a09L28">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3fe0c3c8df3922fd22c20a13857ff50cR78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	instanceCache : Consumer&lt;IteratorRelationshipCursor&gt; to instanceCache : Consumer&lt;StoreIteratorRelationshipCursor&gt; in class org.neo4j.kernel.impl.api.store.StoreIteratorRelationshipCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-454ce963514bfd0d02752c32c62a9b5dL37">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c5ba7986f43692ed276f4ebb7efac650R37">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1155,6 +1113,48 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-962abdeb972f25d4dc93b35378804fdeR52">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L38">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	nodeRelationshipsCursor : CursorPool&lt;NodeRelationshipCursor&gt; to nodeRelationshipsCursor : CursorPool&lt;StoreNodeRelationshipCursor&gt; in class org.neo4j.kernel.impl.api.store.GlobalCursorPools</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36L42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36R42">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	payload : PropertyPayloadCursor to payload : StorePropertyPayloadCursor in class org.neo4j.kernel.impl.api.store.StoreAbstractPropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-2c08fe587b4245b3ae4133e2b76ff774L40">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-4d7889026ffdb49dc27482932c60b722R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	singleRelationshipCursor : CursorPool&lt;SingleRelationshipCursor&gt; to singleRelationshipCursor : CursorPool&lt;StoreSingleRelationshipCursor&gt; in class org.neo4j.kernel.impl.api.store.GlobalCursorPools</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36L40">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-55f9cb46136e515a3cfc73b5b892df36R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	clock : Clock to clock : LongSupplier in class org.neo4j.collection.pool.LinkedQueuePool.CheckStrategy.TimeoutCheckStrategy</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-b9882603439b65712c7ff855170a4a09L28">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3fe0c3c8df3922fd22c20a13857ff50cR78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	instanceCache : Consumer&lt;IteratorRelationshipCursor&gt; to instanceCache : Consumer&lt;StoreIteratorRelationshipCursor&gt; in class org.neo4j.kernel.impl.api.store.StoreIteratorRelationshipCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-454ce963514bfd0d02752c32c62a9b5dL37">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c5ba7986f43692ed276f4ebb7efac650R37">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1168,16 +1168,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in method public StorePropertyCursor(propertyStore PropertyStore, instanceCache Consumer&lt;StorePropertyCursor&gt;) in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR42">To</a></td>
+                                <td><i>Rename Parameter	consumer : Consumer&lt;SinglePropertyCursor&gt; to instanceCache : Consumer&lt;StoreSinglePropertyCursor&gt; in method package StoreSinglePropertyCursor(propertyStore PropertyStore, instanceCache Consumer&lt;StoreSinglePropertyCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSinglePropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c2cd47d41615c806b748b0e578de3d8dL34">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-aa498858ec07b65f6dc6dab4ef4cfb1aR34">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	consumer : Consumer&lt;SinglePropertyCursor&gt; to instanceCache : Consumer&lt;StoreSinglePropertyCursor&gt; in method package StoreSinglePropertyCursor(propertyStore PropertyStore, instanceCache Consumer&lt;StoreSinglePropertyCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSinglePropertyCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-c2cd47d41615c806b748b0e578de3d8dL34">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-aa498858ec07b65f6dc6dab4ef4cfb1aR34">To</a></td>
+                                <td><i>Rename Parameter	consumer : Consumer&lt;PropertyCursor&gt; to instanceCache : Consumer&lt;StorePropertyCursor&gt; in method public StorePropertyCursor(propertyStore PropertyStore, instanceCache Consumer&lt;StorePropertyCursor&gt;) in class org.neo4j.kernel.impl.api.store.StorePropertyCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-3998be431ce1ab54fce0a883053f2358L42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3da8523ddc5b1463dae1b497f6787835b5663e6a?diff=split#diff-8619a635f35f555ec4b0a6aa27ce2f5eR42">To</a></td>
                             </tr>
                             
                             </tbody>

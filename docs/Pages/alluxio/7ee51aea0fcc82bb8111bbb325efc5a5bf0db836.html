@@ -211,6 +211,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	other : remove_args to other : deleteFile_args in method public deleteFile_args(other deleteFile_args) in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15232">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5969">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	usedBytesOnTiers : List&lt;Long&gt; to usedBytesOnTiers : Map&lt;String,Long&gt; in method public send_workerRegister(workerId long, storageTiers List&lt;String&gt;, totalBytesOnTiers Map&lt;String,Long&gt;, usedBytesOnTiers Map&lt;String,Long&gt;, currentBlocksOnTiers Map&lt;String,List&lt;Long&gt;&gt;) : void in class tachyon.thrift.BlockMasterService.Client</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL277">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR277">To</a></td>
@@ -1770,13 +1777,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0d3b5a0de4414bf92cf17a7e452c9995R3364">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	other : remove_args to other : deleteFile_args in method public deleteFile_args(other deleteFile_args) in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15232">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5969">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1833,6 +1833,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	tachyon.thrift.FileSystemMasterService.rename_result renamed to tachyon.thrift.FileSystemMasterService.reportLostFile_result</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1921,13 +1928,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	tachyon.thrift.FileSystemMasterService.AsyncClient.rename_call renamed to tachyon.thrift.FileSystemMasterService.AsyncClient.renameFile_call</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	tachyon.thrift.FileSystemMasterService.rename_result renamed to tachyon.thrift.FileSystemMasterService.reportLostFile_result</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -2065,202 +2065,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-77" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.Processor moved to tachyon.thrift.LineageMasterService.AsyncClient.Processor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.deleteLineage_result.deleteLineage_resultStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.deleteLineage_result.deleteLineage_resultStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_result.workerLineageHeartbeat_resultTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_result.workerLineageHeartbeat_resultTupleScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_result.reinitializeFile_resultStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_result.reinitializeFile_resultStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_result._Fields moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_result._Fields</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.deleteLineage_result.deleteLineage_resultTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.deleteLineage_result.deleteLineage_resultTupleScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_args._Fields moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_args._Fields</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_args.reportLostFile_argsStandardScheme moved to tachyon.thrift.FileSystemMasterService.reportLostFile_args.reportLostFile_argsStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_args.getLineageInfoList_argsTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_args.getLineageInfoList_argsTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_args.reinitializeFile_argsStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_args.reinitializeFile_argsStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_result.workerLineageHeartbeat_resultStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_result.workerLineageHeartbeat_resultStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_result.reportLostFile_resultTupleSchemeFactory moved to tachyon.thrift.FileSystemMasterService.reportLostFile_result.reportLostFile_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.asyncCompleteFile_result.asyncCompleteFile_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.asyncCompleteFile_result.asyncCompleteFile_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_result.reinitializeFile_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_result.reinitializeFile_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.asyncCompleteFile_args.asyncCompleteFile_argsStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.asyncCompleteFile_args.asyncCompleteFile_argsStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.deleteLineage_args.deleteLineage_argsStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.deleteLineage_args.deleteLineage_argsStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_args.reinitializeFile_argsTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_args.reinitializeFile_argsTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_args.workerLineageHeartbeat_argsTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_args.workerLineageHeartbeat_argsTupleScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_result.getLineageInfoList_resultTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultTupleScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.createLineage_result.createLineage_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_result.createLineage_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_args._Fields moved to tachyon.thrift.FileSystemMasterService.reportLostFile_args._Fields</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_result.reportLostFile_resultStandardSchemeFactory moved to tachyon.thrift.FileSystemMasterService.reportLostFile_result.reportLostFile_resultStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.createLineage_args.createLineage_argsStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.FileSystemMasterService.remove_result._Fields moved to tachyon.thrift.FileSystemMasterService.deleteFile_result._Fields</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_result.getLineageInfoList_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultTupleSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_args._Fields moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_args._Fields</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_result.getLineageInfoList_resultStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultStandardScheme</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_result.reinitializeFile_resultStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_result.reinitializeFile_resultStandardSchemeFactory</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -2605,6 +2409,202 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.Processor moved to tachyon.thrift.LineageMasterService.AsyncClient.Processor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.deleteLineage_result.deleteLineage_resultStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.deleteLineage_result.deleteLineage_resultStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_result.workerLineageHeartbeat_resultTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_result.workerLineageHeartbeat_resultTupleScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_result.reinitializeFile_resultStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_result.reinitializeFile_resultStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_result._Fields moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_result._Fields</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.deleteLineage_result.deleteLineage_resultTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.deleteLineage_result.deleteLineage_resultTupleScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_args._Fields moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_args._Fields</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_args.reportLostFile_argsStandardScheme moved to tachyon.thrift.FileSystemMasterService.reportLostFile_args.reportLostFile_argsStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_args.getLineageInfoList_argsTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_args.getLineageInfoList_argsTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_args.reinitializeFile_argsStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_args.reinitializeFile_argsStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_result.workerLineageHeartbeat_resultStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_result.workerLineageHeartbeat_resultStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_result.reportLostFile_resultTupleSchemeFactory moved to tachyon.thrift.FileSystemMasterService.reportLostFile_result.reportLostFile_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.asyncCompleteFile_result.asyncCompleteFile_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.asyncCompleteFile_result.asyncCompleteFile_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_result.reinitializeFile_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_result.reinitializeFile_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.asyncCompleteFile_args.asyncCompleteFile_argsStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.asyncCompleteFile_args.asyncCompleteFile_argsStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.deleteLineage_args.deleteLineage_argsStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.deleteLineage_args.deleteLineage_argsStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_args.reinitializeFile_argsTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_args.reinitializeFile_argsTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_args.workerLineageHeartbeat_argsTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_args.workerLineageHeartbeat_argsTupleScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_result.getLineageInfoList_resultTupleScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultTupleScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.createLineage_result.createLineage_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_result.createLineage_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_args._Fields moved to tachyon.thrift.FileSystemMasterService.reportLostFile_args._Fields</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reportLostFile_result.reportLostFile_resultStandardSchemeFactory moved to tachyon.thrift.FileSystemMasterService.reportLostFile_result.reportLostFile_resultStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.createLineage_args.createLineage_argsStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.FileSystemMasterService.remove_result._Fields moved to tachyon.thrift.FileSystemMasterService.deleteFile_result._Fields</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_result.getLineageInfoList_resultTupleSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultTupleSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.workerLineageHeartbeat_args._Fields moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_args._Fields</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.getLineageInfoList_result.getLineageInfoList_resultStandardScheme moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultStandardScheme</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	tachyon.thrift.LineageMasterService.reinitializeFile_result.reinitializeFile_resultStandardSchemeFactory moved to tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.reinitializeFile_result.reinitializeFile_resultStandardSchemeFactory</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -2651,6 +2651,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-75" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	__this__currentBlocksOnTiers : Map&lt;Long,List&lt;Long&gt;&gt; to __this__currentBlocksOnTiers : Map&lt;String,List&lt;Long&gt;&gt; in method public workerRegister_args(other workerRegister_args) in class tachyon.thrift.BlockMasterService.workerRegister_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7279">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR7323">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	other_element_key : Long to other_element_key : String in method public workerRegister_args(other workerRegister_args) in class tachyon.thrift.BlockMasterService.workerRegister_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7279">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR7326">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	_iter12 : tachyon.thrift.FileBlockInfo to _iter174 : FileBlockInfo in method public write(prot org.apache.thrift.protocol.TProtocol, struct getFileBlockInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileBlockInfoList_result.getFileBlockInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL7258">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR9486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	o : Boolean to o : Void in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;Void&gt; in class tachyon.thrift.FileSystemMasterService.AsyncProcessor.reportLostFile</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL2691">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR2879">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -3149,34 +3177,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR2880">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	__this__currentBlocksOnTiers : Map&lt;Long,List&lt;Long&gt;&gt; to __this__currentBlocksOnTiers : Map&lt;String,List&lt;Long&gt;&gt; in method public workerRegister_args(other workerRegister_args) in class tachyon.thrift.BlockMasterService.workerRegister_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7279">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR7323">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	other_element_key : Long to other_element_key : String in method public workerRegister_args(other workerRegister_args) in class tachyon.thrift.BlockMasterService.workerRegister_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7279">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR7326">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	_iter12 : tachyon.thrift.FileBlockInfo to _iter174 : FileBlockInfo in method public write(prot org.apache.thrift.protocol.TProtocol, struct getFileBlockInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileBlockInfoList_result.getFileBlockInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL7258">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR9486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	o : Boolean to o : Void in method public getResultHandler(fb AsyncFrameBuffer, seqid int) : AsyncMethodCallback&lt;Void&gt; in class tachyon.thrift.FileSystemMasterService.AsyncProcessor.reportLostFile</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL2691">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR2879">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -3223,6 +3223,69 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-30" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public unsetId() : void renamed to public unsetFileId() : void in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15263">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5997">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public addToUsedBytesOnTiers(elem long) : void renamed to public putToUsedBytesOnTiers(key String, val long) : void in class tachyon.thrift.BlockMasterService.workerRegister_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7393">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR7454">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setIdIsSet(value boolean) : void renamed to public setFileIdIsSet(value boolean) : void in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15272">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16439">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getId() : long renamed to public getFileId() : long in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15253">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5987">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public remove(id long, recursive boolean, resultHandler AsyncMethodCallback) : void renamed to public deleteFile(fileId long, recursive boolean, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterService.AsyncIface</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL112">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR116">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public isSetId() : boolean renamed to public isSetFileId() : boolean in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15267">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16434">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public isSetTier() : boolean renamed to public isSetTierAlias() : boolean in class tachyon.thrift.BlockMasterService.workerCommitBlock_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL4195">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR4197">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public unsetTier() : void renamed to public unsetTierAlias() : void in class tachyon.thrift.BlockLocation</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ff2f6dc43efac7c3cd786841de6cc5cfL234">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ff2f6dc43efac7c3cd786841de6cc5cfR232">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public recv_remove() : boolean renamed to public recv_renameFile() : boolean in class tachyon.thrift.FileSystemMasterService.Client</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL525">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR578">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -3371,69 +3434,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5991">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public unsetId() : void renamed to public unsetFileId() : void in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15263">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5997">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public addToUsedBytesOnTiers(elem long) : void renamed to public putToUsedBytesOnTiers(key String, val long) : void in class tachyon.thrift.BlockMasterService.workerRegister_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7393">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR7454">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setIdIsSet(value boolean) : void renamed to public setFileIdIsSet(value boolean) : void in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15272">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16439">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getId() : long renamed to public getFileId() : long in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15253">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5987">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public remove(id long, recursive boolean, resultHandler AsyncMethodCallback) : void renamed to public deleteFile(fileId long, recursive boolean, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterService.AsyncIface</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL112">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR116">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public isSetId() : boolean renamed to public isSetFileId() : boolean in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15267">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16434">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public isSetTier() : boolean renamed to public isSetTierAlias() : boolean in class tachyon.thrift.BlockMasterService.workerCommitBlock_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL4195">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR4197">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public unsetTier() : void renamed to public unsetTierAlias() : void in class tachyon.thrift.BlockLocation</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ff2f6dc43efac7c3cd786841de6cc5cfL234">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ff2f6dc43efac7c3cd786841de6cc5cfR232">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public recv_remove() : boolean renamed to public recv_renameFile() : boolean in class tachyon.thrift.FileSystemMasterService.Client</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL525">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR578">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -3444,6 +3444,195 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-200" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i50 : int to _i196 : int in method public read(iprot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2349">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1634">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_iter11 : CheckpointFile to _iter35 : CheckpointFile in method public write(oprot TProtocol, struct LineageCommand) : void in class tachyon.thrift.LineageCommand.LineageCommandStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2L500">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2R500">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_iter12 : CheckpointFile to _iter36 : CheckpointFile in method public write(prot TProtocol, struct LineageCommand) : void in class tachyon.thrift.LineageCommand.LineageCommandTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2L539">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2R539">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_elem6 : WorkerInfo to _elem86 : WorkerInfo in method public read(prot TProtocol, struct getWorkerInfoList_result) : void in class tachyon.thrift.BlockMasterService.getWorkerInfoList_result.getWorkerInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL3952">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3956">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i10 : int to _i172 : int in method public read(iprot TProtocol, struct getFileBlockInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileBlockInfoList_result.getFileBlockInfoList_resultStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL7190">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR9404">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_elem25 : long to _elem187 : long in method public read(iprot TProtocol, struct workerGetPinIdList_result) : void in class tachyon.thrift.FileSystemMasterService.workerGetPinIdList_result.workerGetPinIdList_resultStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL19305">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR20272">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_list36 : TList to _list68 : TList in method public read(prot TProtocol, struct LineageInfo) : void in class tachyon.thrift.LineageInfo.LineageInfoTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL1162">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR1162">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i7 : int to _i87 : int in method public read(prot TProtocol, struct getWorkerInfoList_result) : void in class tachyon.thrift.BlockMasterService.getWorkerInfoList_result.getWorkerInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL3953">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3957">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_elem59 : String to _elem205 : String in method public read(prot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2491">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1776">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_iter32 : long to _iter64 : long in method public write(prot TProtocol, struct LineageInfo) : void in class tachyon.thrift.LineageInfo.LineageInfoTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL1111">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR1111">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_list73 : TList to _list152 : TList in method public read(prot TProtocol, struct workerRegister_args) : void in class tachyon.thrift.BlockMasterService.workerRegister_args.workerRegister_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL8002">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR8124">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	dirIdToBlockIds : Map&lt;Long,List&lt;Long&gt;&gt; to tierAliasToBlockIds : Map&lt;String,List&lt;Long&gt;&gt; in method public getBlockListTest() : void in class tachyon.worker.block.BlockStoreMetaTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-93f70a328439ec582e7b365c9ca3a5f1L65">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-93f70a328439ec582e7b365c9ca3a5f1R65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	level : int to tierOrdinal : int in method private initBlockMetadataManager() : void in class tachyon.worker.block.BlockMetadataManager</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ed9bca560287f4908db1fefd61c27701L87">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ed9bca560287f4908db1fefd61c27701R89">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i65 : int to _i169 : int in method public read(prot TProtocol, struct workerRegister_args) : void in class tachyon.thrift.BlockMasterService.workerRegister_args.workerRegister_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7971">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR8178">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i60 : int to _i206 : int in method public read(prot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2492">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1777">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_elem1 : long to _elem17 : long in method public read(iprot TProtocol, struct FileInfo) : void in class tachyon.thrift.FileInfo.FileInfoStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3c694f65016232d936003db57cdb6ae3L1635">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3c694f65016232d936003db57cdb6ae3R1635">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_list61 : TList to _list207 : TList in method public read(prot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2502">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1787">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_list0 : TList to _list40 : TList in method public read(iprot TProtocol, struct CheckpointFile) : void in class tachyon.thrift.CheckpointFile.CheckpointFileStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L441">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R441">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	oldTier : int to oldTierOrdinal : int in method public onMoveBlockByWorker(sessionId long, blockId long, oldLocation BlockStoreLocation, newLocation BlockStoreLocation) : void in class tachyon.worker.block.BlockMetricsReporter</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0ef09f5bd10802620521a285ebe68973L56">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0ef09f5bd10802620521a285ebe68973R62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i23 : int to _i185 : int in method public read(prot TProtocol, struct getFileInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileInfoList_result.getFileInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL9727">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR11941">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i71 : int to _i217 : int in method public read(prot TProtocol, struct getLineageInfoList_result) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL4566">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR3851">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	idx : int to ordinal : int in method public SpaceReserver(blockManager BlockDataManager) in class tachyon.worker.block.SpaceReserver</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5b23a1740f06be2092dccf3eb2cd1487L55">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5b23a1740f06be2092dccf3eb2cd1487R58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_iter4 : WorkerInfo to _iter84 : WorkerInfo in method public write(prot TProtocol, struct getWorkerInfoList_result) : void in class tachyon.thrift.BlockMasterService.getWorkerInfoList_result.getWorkerInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL3936">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3940">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_list66 : TList to _map155 : TMap in method public read(prot TProtocol, struct workerRegister_args) : void in class tachyon.thrift.BlockMasterService.workerRegister_args.workerRegister_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7981">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR8137">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_i79 : int to _i225 : int in method public read(prot TProtocol, struct workerLineageHeartbeat_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_args.workerLineageHeartbeat_argsTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL6835">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR6842">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_iter20 : FileInfo to _iter182 : FileInfo in method public write(prot TProtocol, struct getFileInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileInfoList_result.getFileInfoList_resultTupleScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL9707">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR11921">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	_elem9 : long to _elem93 : long in method public read(iprot TProtocol, struct workerHeartbeat_args) : void in class tachyon.thrift.BlockMasterService.workerHeartbeat_args.workerHeartbeat_argsStandardScheme</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL6424">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR6451">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -4656,195 +4845,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1774">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i50 : int to _i196 : int in method public read(iprot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2349">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1634">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_iter11 : CheckpointFile to _iter35 : CheckpointFile in method public write(oprot TProtocol, struct LineageCommand) : void in class tachyon.thrift.LineageCommand.LineageCommandStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2L500">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2R500">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_iter12 : CheckpointFile to _iter36 : CheckpointFile in method public write(prot TProtocol, struct LineageCommand) : void in class tachyon.thrift.LineageCommand.LineageCommandTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2L539">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7facba5ccba20360c2486340487f77f2R539">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_elem6 : WorkerInfo to _elem86 : WorkerInfo in method public read(prot TProtocol, struct getWorkerInfoList_result) : void in class tachyon.thrift.BlockMasterService.getWorkerInfoList_result.getWorkerInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL3952">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3956">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i10 : int to _i172 : int in method public read(iprot TProtocol, struct getFileBlockInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileBlockInfoList_result.getFileBlockInfoList_resultStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL7190">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR9404">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_elem25 : long to _elem187 : long in method public read(iprot TProtocol, struct workerGetPinIdList_result) : void in class tachyon.thrift.FileSystemMasterService.workerGetPinIdList_result.workerGetPinIdList_resultStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL19305">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR20272">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_list36 : TList to _list68 : TList in method public read(prot TProtocol, struct LineageInfo) : void in class tachyon.thrift.LineageInfo.LineageInfoTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL1162">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR1162">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i7 : int to _i87 : int in method public read(prot TProtocol, struct getWorkerInfoList_result) : void in class tachyon.thrift.BlockMasterService.getWorkerInfoList_result.getWorkerInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL3953">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3957">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_elem59 : String to _elem205 : String in method public read(prot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2491">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1776">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_iter32 : long to _iter64 : long in method public write(prot TProtocol, struct LineageInfo) : void in class tachyon.thrift.LineageInfo.LineageInfoTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eL1111">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ccbc6ea2d3d9f6c88d8760e6ab30259eR1111">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_list73 : TList to _list152 : TList in method public read(prot TProtocol, struct workerRegister_args) : void in class tachyon.thrift.BlockMasterService.workerRegister_args.workerRegister_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL8002">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR8124">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	dirIdToBlockIds : Map&lt;Long,List&lt;Long&gt;&gt; to tierAliasToBlockIds : Map&lt;String,List&lt;Long&gt;&gt; in method public getBlockListTest() : void in class tachyon.worker.block.BlockStoreMetaTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-93f70a328439ec582e7b365c9ca3a5f1L65">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-93f70a328439ec582e7b365c9ca3a5f1R65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	level : int to tierOrdinal : int in method private initBlockMetadataManager() : void in class tachyon.worker.block.BlockMetadataManager</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ed9bca560287f4908db1fefd61c27701L87">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-ed9bca560287f4908db1fefd61c27701R89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i65 : int to _i169 : int in method public read(prot TProtocol, struct workerRegister_args) : void in class tachyon.thrift.BlockMasterService.workerRegister_args.workerRegister_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7971">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR8178">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i60 : int to _i206 : int in method public read(prot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2492">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1777">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_elem1 : long to _elem17 : long in method public read(iprot TProtocol, struct FileInfo) : void in class tachyon.thrift.FileInfo.FileInfoStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3c694f65016232d936003db57cdb6ae3L1635">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3c694f65016232d936003db57cdb6ae3R1635">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_list61 : TList to _list207 : TList in method public read(prot TProtocol, struct createLineage_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.createLineage_args.createLineage_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL2502">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR1787">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_list0 : TList to _list40 : TList in method public read(iprot TProtocol, struct CheckpointFile) : void in class tachyon.thrift.CheckpointFile.CheckpointFileStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396L441">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-3205f59cd9a2bc05d580d9aed8f5e396R441">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	oldTier : int to oldTierOrdinal : int in method public onMoveBlockByWorker(sessionId long, blockId long, oldLocation BlockStoreLocation, newLocation BlockStoreLocation) : void in class tachyon.worker.block.BlockMetricsReporter</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0ef09f5bd10802620521a285ebe68973L56">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0ef09f5bd10802620521a285ebe68973R62">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i23 : int to _i185 : int in method public read(prot TProtocol, struct getFileInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileInfoList_result.getFileInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL9727">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR11941">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i71 : int to _i217 : int in method public read(prot TProtocol, struct getLineageInfoList_result) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.getLineageInfoList_result.getLineageInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL4566">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR3851">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	idx : int to ordinal : int in method public SpaceReserver(blockManager BlockDataManager) in class tachyon.worker.block.SpaceReserver</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5b23a1740f06be2092dccf3eb2cd1487L55">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5b23a1740f06be2092dccf3eb2cd1487R58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_iter4 : WorkerInfo to _iter84 : WorkerInfo in method public write(prot TProtocol, struct getWorkerInfoList_result) : void in class tachyon.thrift.BlockMasterService.getWorkerInfoList_result.getWorkerInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL3936">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3940">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_list66 : TList to _map155 : TMap in method public read(prot TProtocol, struct workerRegister_args) : void in class tachyon.thrift.BlockMasterService.workerRegister_args.workerRegister_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL7981">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR8137">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_i79 : int to _i225 : int in method public read(prot TProtocol, struct workerLineageHeartbeat_args) : void in class tachyon.thrift.LineageMasterService.AsyncClient.AsyncProcessor.workerLineageHeartbeat.workerLineageHeartbeat_args.workerLineageHeartbeat_argsTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dL6835">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-b8bd3c751e5c36bdeb2c74afd856222dR6842">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_iter20 : FileInfo to _iter182 : FileInfo in method public write(prot TProtocol, struct getFileInfoList_result) : void in class tachyon.thrift.FileSystemMasterService.getFileInfoList_result.getFileInfoList_resultTupleScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL9707">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR11921">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	_elem9 : long to _elem93 : long in method public read(iprot TProtocol, struct workerHeartbeat_args) : void in class tachyon.thrift.BlockMasterService.workerHeartbeat_args.workerHeartbeat_argsStandardScheme</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL6424">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR6451">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -4855,13 +4855,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-104" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	rename_result to renameFile_result in method public setE(e TachyonTException) : renameFile_result in class tachyon.thrift.FileSystemMasterService.renameFile_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL16669">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16911">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -5584,6 +5577,13 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR5204">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	rename_result to renameFile_result in method public setE(e TachyonTException) : renameFile_result in class tachyon.thrift.FileSystemMasterService.renameFile_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL16669">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16911">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -5630,48 +5630,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-20" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	WORKER_TIERED_STORAGE_LEVEL_MAX : String to WORKER_TIERED_STORAGE_LEVELS : String in class tachyon.Constants</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e1f168d496029608a5f4a145489ff9f6L225">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e1f168d496029608a5f4a145489ff9f6R229">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	TIER_LEVEL : int[] to TIER_ORDINAL : int[] in class tachyon.worker.block.BlockMetadataManagerTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-09507799a3be750ca4894c801ea42c3dL48">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-09507799a3be750ca4894c801ea42c3dR48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	TEST_TIER_LEVEL : int to TEST_TIER_ORDINAL : int in class tachyon.worker.block.meta.StorageTierTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-c6caa36cd7569e22b2e8b094d6f64ab6L36">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-c6caa36cd7569e22b2e8b094d6f64ab6R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	recursive : boolean to dstPath : String in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15140">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16308">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	mStorageLevelAlias : StorageLevelAlias to mStorageTierAlias : String in class tachyon.web.WebInterfaceGeneralServlet.StorageTierInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-302d4d4b64a5768e2b565a02adadff53L43">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-302d4d4b64a5768e2b565a02adadff53R44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	mTierLevel : int to mTierOrdinal : int in class tachyon.worker.block.meta.StorageTier</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-1fa5e66f1338fae72a93a703b1e1c6b2L42">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-1fa5e66f1338fae72a93a703b1e1c6b2R42">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -5771,6 +5729,48 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR3988">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	WORKER_TIERED_STORAGE_LEVEL_MAX : String to WORKER_TIERED_STORAGE_LEVELS : String in class tachyon.Constants</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e1f168d496029608a5f4a145489ff9f6L225">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e1f168d496029608a5f4a145489ff9f6R229">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	TIER_LEVEL : int[] to TIER_ORDINAL : int[] in class tachyon.worker.block.BlockMetadataManagerTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-09507799a3be750ca4894c801ea42c3dL48">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-09507799a3be750ca4894c801ea42c3dR48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	TEST_TIER_LEVEL : int to TEST_TIER_ORDINAL : int in class tachyon.worker.block.meta.StorageTierTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-c6caa36cd7569e22b2e8b094d6f64ab6L36">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-c6caa36cd7569e22b2e8b094d6f64ab6R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	recursive : boolean to dstPath : String in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15140">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16308">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	mStorageLevelAlias : StorageLevelAlias to mStorageTierAlias : String in class tachyon.web.WebInterfaceGeneralServlet.StorageTierInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-302d4d4b64a5768e2b565a02adadff53L43">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-302d4d4b64a5768e2b565a02adadff53R44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	mTierLevel : int to mTierOrdinal : int in class tachyon.worker.block.meta.StorageTier</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-1fa5e66f1338fae72a93a703b1e1c6b2L42">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-1fa5e66f1338fae72a93a703b1e1c6b2R42">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -5781,6 +5781,90 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-78" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.FileSystemMasterService.persistFile_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL14672">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR15840">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	success : tachyon.thrift.BlockInfo to success : BlockInfo in class tachyon.thrift.BlockMasterService.getBlockInfo_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL1625">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR1629">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.FileSystemMasterService.unmount_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL18181">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR19148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	mWorkerIdToAlias : Map&lt;Long,Integer&gt; to mWorkerIdToAlias : Map&lt;Long,String&gt; in class tachyon.master.block.meta.MasterBlockInfo</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-137fbc8e17e28a2400aa4294d81a3c9cL37">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-137fbc8e17e28a2400aa4294d81a3c9cR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.RawTableMasterService.updateRawTableMetadata_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0d3b5a0de4414bf92cf17a7e452c9995L5001">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0d3b5a0de4414bf92cf17a7e452c9995R5001">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	TIER_ALIAS : StorageLevelAlias[] to TIER_ALIAS : String[] in class tachyon.worker.block.SpaceReserverTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5e045562505bd33acc9f27ad3756a03fL46">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5e045562505bd33acc9f27ad3756a03fR45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	TEST_TIER_ALIAS : StorageLevelAlias to TEST_TIER_ALIAS : String in class tachyon.worker.block.meta.BlockMetaBaseTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-927440ae8c54bd20d61f12bb74bc9e4eL51">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-927440ae8c54bd20d61f12bb74bc9e4eR50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.BlockMasterService.workerCommitBlock_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL4733">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR4743">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.FileSystemMasterService.getFileInfoList_result</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL9237">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR11451">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	workerNetAddress : tachyon.thrift.NetAddress to workerNetAddress : NetAddress in class tachyon.thrift.BlockMasterService.workerGetWorkerId_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL5096">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR5106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	TEST_TIER_ALIAS : StorageLevelAlias to TEST_TIER_ALIAS : String in class tachyon.worker.block.meta.BlockMetaTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-2f4e12ca541ff4eb727e953525014ee3L36">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-2f4e12ca541ff4eb727e953525014ee3R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	SECOND_TIER_ALIAS : StorageLevelAlias to SECOND_TIER_ALIAS : String in class tachyon.worker.block.TieredBlockStoreTests</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7332fdb1d95b81852823dda9dec454cfL51">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7332fdb1d95b81852823dda9dec454cfR50">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -6244,90 +6328,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-6f7d02f0a9c45a058481f5946364892cR47">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.FileSystemMasterService.persistFile_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL14672">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR15840">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	success : tachyon.thrift.BlockInfo to success : BlockInfo in class tachyon.thrift.BlockMasterService.getBlockInfo_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL1625">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR1629">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.FileSystemMasterService.unmount_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL18181">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR19148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	mWorkerIdToAlias : Map&lt;Long,Integer&gt; to mWorkerIdToAlias : Map&lt;Long,String&gt; in class tachyon.master.block.meta.MasterBlockInfo</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-137fbc8e17e28a2400aa4294d81a3c9cL37">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-137fbc8e17e28a2400aa4294d81a3c9cR35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.RawTableMasterService.updateRawTableMetadata_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0d3b5a0de4414bf92cf17a7e452c9995L5001">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-0d3b5a0de4414bf92cf17a7e452c9995R5001">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	TIER_ALIAS : StorageLevelAlias[] to TIER_ALIAS : String[] in class tachyon.worker.block.SpaceReserverTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5e045562505bd33acc9f27ad3756a03fL46">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-5e045562505bd33acc9f27ad3756a03fR45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	TEST_TIER_ALIAS : StorageLevelAlias to TEST_TIER_ALIAS : String in class tachyon.worker.block.meta.BlockMetaBaseTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-927440ae8c54bd20d61f12bb74bc9e4eL51">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-927440ae8c54bd20d61f12bb74bc9e4eR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.BlockMasterService.workerCommitBlock_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL4733">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR4743">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	e : tachyon.thrift.TachyonTException to e : TachyonTException in class tachyon.thrift.FileSystemMasterService.getFileInfoList_result</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL9237">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR11451">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	workerNetAddress : tachyon.thrift.NetAddress to workerNetAddress : NetAddress in class tachyon.thrift.BlockMasterService.workerGetWorkerId_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bL5096">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-aa336364ef6e15064afecb1d4cd1cc2bR5106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	TEST_TIER_ALIAS : StorageLevelAlias to TEST_TIER_ALIAS : String in class tachyon.worker.block.meta.BlockMetaTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-2f4e12ca541ff4eb727e953525014ee3L36">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-2f4e12ca541ff4eb727e953525014ee3R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	SECOND_TIER_ALIAS : StorageLevelAlias to SECOND_TIER_ALIAS : String in class tachyon.worker.block.TieredBlockStoreTests</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7332fdb1d95b81852823dda9dec454cfL51">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-7332fdb1d95b81852823dda9dec454cfR50">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -6338,48 +6338,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-30" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	storageDirId : long to tierAlias : String in method private addBlockToAddedBlocks(blockId long, tierAlias String) : void in class tachyon.worker.block.BlockHeartbeatReporter</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8601293fe0188f6859946d4a52aa168aL122">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8601293fe0188f6859946d4a52aa168aR120">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	id : long to fileId : long in method public deleteFile(fileId long, recursive boolean, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterService.AsyncClient</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL1124">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR813">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	id : long to fileId : long in method public setFileId(fileId long) : renameFile_args in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15257">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16424">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	tierLevel : int[] to tierOrdinal : int[] in method public setupTachyonConfWithMultiTier(baseDir String, tierOrdinal int[], tierAlias String[], tierPath String[][], tierCapacity long[][], workerDataFolder String) : void in class tachyon.worker.block.TieredBlockStoreTestUtils</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e21348108229598e2a8d08fc1ba9001cL76">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e21348108229598e2a8d08fc1ba9001cR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	id : long to fileId : long in method public deleteFile_call(fileId long, recursive boolean, resultHandler AsyncMethodCallback, client TAsyncClient, protocolFactory TProtocolFactory, transport TNonblockingTransport) in class tachyon.thrift.FileSystemMasterService.AsyncClient.deleteFile_call</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL1134">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR823">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	id : long to fileId : long in method public setFileId(fileId long) : deleteFile_args in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15257">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5991">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -6547,6 +6505,48 @@
                                 <td><i>Rename Parameter	storageLevelAliasValue : int to storageTierAlias : String in method private StorageTierInfo(storageTierAlias String, capacityBytes long, usedBytes long) in class tachyon.web.WebInterfaceGeneralServlet.StorageTierInfo</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-302d4d4b64a5768e2b565a02adadff53L50">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-302d4d4b64a5768e2b565a02adadff53R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	storageDirId : long to tierAlias : String in method private addBlockToAddedBlocks(blockId long, tierAlias String) : void in class tachyon.worker.block.BlockHeartbeatReporter</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8601293fe0188f6859946d4a52aa168aL122">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8601293fe0188f6859946d4a52aa168aR120">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	id : long to fileId : long in method public deleteFile(fileId long, recursive boolean, resultHandler AsyncMethodCallback) : void in class tachyon.thrift.FileSystemMasterService.AsyncClient</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL1124">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR813">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	id : long to fileId : long in method public setFileId(fileId long) : renameFile_args in class tachyon.thrift.FileSystemMasterService.renameFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15257">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR16424">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	tierLevel : int[] to tierOrdinal : int[] in method public setupTachyonConfWithMultiTier(baseDir String, tierOrdinal int[], tierAlias String[], tierPath String[][], tierCapacity long[][], workerDataFolder String) : void in class tachyon.worker.block.TieredBlockStoreTestUtils</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e21348108229598e2a8d08fc1ba9001cL76">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-e21348108229598e2a8d08fc1ba9001cR73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	id : long to fileId : long in method public deleteFile_call(fileId long, recursive boolean, resultHandler AsyncMethodCallback, client TAsyncClient, protocolFactory TProtocolFactory, transport TNonblockingTransport) in class tachyon.thrift.FileSystemMasterService.AsyncClient.deleteFile_call</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL1134">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR823">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	id : long to fileId : long in method public setFileId(fileId long) : deleteFile_args in class tachyon.thrift.FileSystemMasterService.deleteFile_args</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfL15257">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/7ee51aea0fcc82bb8111bbb325efc5a5bf0db836?diff=split#diff-8b5322b28e0b8e8a8d591ae1fa7b2adfR5991">To</a></td>
                             </tr>
                             
                             </tbody>

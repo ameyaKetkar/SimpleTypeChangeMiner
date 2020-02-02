@@ -424,27 +424,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.flink.contrib.streaming.state.LazyDbKvState.StateCache moved to org.apache.flink.contrib.streaming.state.LazyDbValueState.StateCache</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.contrib.streaming.state.LazyDbKvState.BatchInserter moved to org.apache.flink.contrib.streaming.state.LazyDbValueState.BatchInserter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.runtime.state.StateBackend.CheckpointStateOutputStream moved to org.apache.flink.runtime.state.AbstractStateBackend.CheckpointStateOutputStream</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Class	org.apache.flink.runtime.state.StateBackend.DataInputViewHandle moved to org.apache.flink.runtime.state.AbstractStateBackend.DataInputViewHandle</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -464,6 +443,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.contrib.streaming.state.LazyDbKvState.StateCache moved to org.apache.flink.contrib.streaming.state.LazyDbValueState.StateCache</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.contrib.streaming.state.LazyDbKvState.BatchInserter moved to org.apache.flink.contrib.streaming.state.LazyDbValueState.BatchInserter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.runtime.state.StateBackend.CheckpointStateOutputStream moved to org.apache.flink.runtime.state.AbstractStateBackend.CheckpointStateOutputStream</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -474,6 +474,69 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-36" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	values : Iterator&lt;KvStateSnapshot&lt;?,?,?&gt;&gt; to values : Iterator&lt;KvStateSnapshot&lt;?,?,?,?,?&gt;&gt; in method public discardState() : void in class org.apache.flink.streaming.runtime.tasks.StreamTaskState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-43bd1753dddffe550913ab66b6cd8689L86">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-43bd1753dddffe550913ab66b6cd8689R106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stream4 : StateBackend.CheckpointStateOutputStream to stream4 : AbstractStateBackend.CheckpointStateOutputStream in method public testStateOutputStream() : void in class org.apache.flink.hdfstests.FileStateBackendTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5dd5d1d0883863d0db05cb5a67c25b75L183">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5dd5d1d0883863d0db05cb5a67c25b75R237">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	kvState : KvStateSnapshot&lt;?,?,?&gt; to kvState : KvStateSnapshot&lt;?,?,?,?,?&gt; in method public StreamTaskStateList(states StreamTaskState[]) in class org.apache.flink.streaming.runtime.tasks.StreamTaskStateList</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-04acdd10475366cd9f0bcaa3db75c0e7L38">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-04acdd10475366cd9f0bcaa3db75c0e7R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	next : Entry&lt;K,Optional&lt;V&gt;&gt; to next : Entry&lt;Tuple2&lt;K,N&gt;,Optional&lt;V&gt;&gt; in method private evictIfFull() : void in class org.apache.flink.contrib.streaming.state.LazyDbValueState.StateCache</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-b22230c8d9a7204190f04b6e6a76018aL487">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-76c350f177d33698e0fb694bd3d2057aR557">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	out : StateBackend.CheckpointStateOutputView to out : AbstractStateBackend.CheckpointStateOutputView in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.runtime.operators.windowing.AbstractAlignedProcessingTimeWindowOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-586694d9c6c8bf6d7d6ff853b36e3dc4L244">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-586694d9c6c8bf6d7d6ff853b36e3dc4R250">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	out : StateBackend.CheckpointStateOutputView to out : AbstractStateBackend.CheckpointStateOutputView in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.runtime.operators.windowing.WindowOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1L586">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1R596">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	restored2 : KvState&lt;Integer,String,DbStateBackend&gt; to restored2 : KvState&lt;Integer,Integer,ValueState&lt;String&gt;,ValueStateDescriptor&lt;String&gt;,DbStateBackend&gt; in method public testKeyValueState() : void in class org.apache.flink.contrib.streaming.state.DbStateBackendTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-dccf77517f7e240d513bb8926d8fa2b0L181">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-dccf77517f7e240d513bb8926d8fa2b0R252">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	entryIterator : Iterator&lt;Entry&lt;K,Optional&lt;V&gt;&gt;&gt; to entryIterator : Iterator&lt;Entry&lt;Tuple2&lt;K,N&gt;,Optional&lt;V&gt;&gt;&gt; in method private evictIfFull() : void in class org.apache.flink.contrib.streaming.state.LazyDbValueState.StateCache</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-b22230c8d9a7204190f04b6e6a76018aL487">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-76c350f177d33698e0fb694bd3d2057aR554">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateBackend : StateBackend&lt;?&gt; to stateBackend : AbstractStateBackend in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-67729e731653f594715321e2dd724cb7L116">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-67729e731653f594715321e2dd724cb7R135">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -664,69 +727,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-dccf77517f7e240d513bb8926d8fa2b0R645">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	values : Iterator&lt;KvStateSnapshot&lt;?,?,?&gt;&gt; to values : Iterator&lt;KvStateSnapshot&lt;?,?,?,?,?&gt;&gt; in method public discardState() : void in class org.apache.flink.streaming.runtime.tasks.StreamTaskState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-43bd1753dddffe550913ab66b6cd8689L86">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-43bd1753dddffe550913ab66b6cd8689R106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stream4 : StateBackend.CheckpointStateOutputStream to stream4 : AbstractStateBackend.CheckpointStateOutputStream in method public testStateOutputStream() : void in class org.apache.flink.hdfstests.FileStateBackendTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5dd5d1d0883863d0db05cb5a67c25b75L183">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5dd5d1d0883863d0db05cb5a67c25b75R237">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	kvState : KvStateSnapshot&lt;?,?,?&gt; to kvState : KvStateSnapshot&lt;?,?,?,?,?&gt; in method public StreamTaskStateList(states StreamTaskState[]) in class org.apache.flink.streaming.runtime.tasks.StreamTaskStateList</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-04acdd10475366cd9f0bcaa3db75c0e7L38">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-04acdd10475366cd9f0bcaa3db75c0e7R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	next : Entry&lt;K,Optional&lt;V&gt;&gt; to next : Entry&lt;Tuple2&lt;K,N&gt;,Optional&lt;V&gt;&gt; in method private evictIfFull() : void in class org.apache.flink.contrib.streaming.state.LazyDbValueState.StateCache</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-b22230c8d9a7204190f04b6e6a76018aL487">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-76c350f177d33698e0fb694bd3d2057aR557">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	out : StateBackend.CheckpointStateOutputView to out : AbstractStateBackend.CheckpointStateOutputView in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.runtime.operators.windowing.AbstractAlignedProcessingTimeWindowOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-586694d9c6c8bf6d7d6ff853b36e3dc4L244">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-586694d9c6c8bf6d7d6ff853b36e3dc4R250">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	out : StateBackend.CheckpointStateOutputView to out : AbstractStateBackend.CheckpointStateOutputView in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.runtime.operators.windowing.WindowOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1L586">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1R596">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	restored2 : KvState&lt;Integer,String,DbStateBackend&gt; to restored2 : KvState&lt;Integer,Integer,ValueState&lt;String&gt;,ValueStateDescriptor&lt;String&gt;,DbStateBackend&gt; in method public testKeyValueState() : void in class org.apache.flink.contrib.streaming.state.DbStateBackendTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-dccf77517f7e240d513bb8926d8fa2b0L181">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-dccf77517f7e240d513bb8926d8fa2b0R252">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	entryIterator : Iterator&lt;Entry&lt;K,Optional&lt;V&gt;&gt;&gt; to entryIterator : Iterator&lt;Entry&lt;Tuple2&lt;K,N&gt;,Optional&lt;V&gt;&gt;&gt; in method private evictIfFull() : void in class org.apache.flink.contrib.streaming.state.LazyDbValueState.StateCache</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-b22230c8d9a7204190f04b6e6a76018aL487">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-76c350f177d33698e0fb694bd3d2057aR554">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateBackend : StateBackend&lt;?&gt; to stateBackend : AbstractStateBackend in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-67729e731653f594715321e2dd724cb7L116">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-67729e731653f594715321e2dd724cb7R135">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -758,20 +758,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public setStatePartitioner(statePartitioner KeySelector&lt;?,?&gt;) : void renamed to public setStatePartitioner1(statePartitioner KeySelector&lt;?,?&gt;) : void in class org.apache.flink.streaming.api.graph.StreamNode</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3L235">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3R240">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getStatePartitioner() : KeySelector&lt;?,?&gt; renamed to public getStatePartitioner1() : KeySelector&lt;?,?&gt; in class org.apache.flink.streaming.api.graph.StreamNode</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3L231">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3R232">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public createKvState(stateId String, stateName String, keySerializer TypeSerializer&lt;K&gt;, valueSerializer TypeSerializer&lt;V&gt;, defaultValue V) : KvState&lt;K,V,FailingStateBackend&gt; renamed to protected createListState(namespaceSerializer TypeSerializer&lt;N&gt;, stateDesc ListStateDescriptor&lt;T&gt;) : ListState&lt;T&gt; in class org.apache.flink.streaming.runtime.state.StateBackendITCase.FailingStateBackend</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-0c93c28dfdd2f4a4f335ee9b30ad1e10L106">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-0c93c28dfdd2f4a4f335ee9b30ad1e10R112">To</a></td>
@@ -789,6 +775,20 @@
                                 <td><i>Rename Method	public setKey(vertexID Integer, keySelector KeySelector&lt;?,?&gt;, keySerializer TypeSerializer&lt;?&gt;) : void renamed to public setOneInputStateKey(vertexID Integer, keySelector KeySelector&lt;?,?&gt;, keySerializer TypeSerializer&lt;?&gt;) : void in class org.apache.flink.streaming.api.graph.StreamGraph</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d5aa7fc170c92100d9744407da2c2d6cL366">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d5aa7fc170c92100d9744407da2c2d6cR366">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setStatePartitioner(statePartitioner KeySelector&lt;?,?&gt;) : void renamed to public setStatePartitioner1(statePartitioner KeySelector&lt;?,?&gt;) : void in class org.apache.flink.streaming.api.graph.StreamNode</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3L235">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3R240">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getStatePartitioner() : KeySelector&lt;?,?&gt; renamed to public getStatePartitioner1() : KeySelector&lt;?,?&gt; in class org.apache.flink.streaming.api.graph.StreamNode</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3L231">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-900062f2b59b45a66377e9228f54a9e3R232">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -836,6 +836,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	snapshots : HashMap&lt;String,KvStateSnapshot&lt;?,?,?&gt;&gt; to partitionedSnapshots : HashMap&lt;String,KvStateSnapshot&lt;?,?,?,?,?&gt;&gt; in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.api.operators.AbstractStreamOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-58ea61305d2647ce3570afe8ce3733fcL164">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-58ea61305d2647ce3570afe8ce3733fcR173">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	numBytesRead : int to pos : int in method private validateBytesInStream(is InputStream, data byte[]) : void in class org.apache.flink.runtime.state.FileStateBackendTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9b3521738ba6bec3750221101e1b3f2dL450">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9b3521738ba6bec3750221101e1b3f2dR260">To</a></td>
@@ -855,13 +862,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9437cb4899bb946f234c272be6724770R564">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	snapshots : HashMap&lt;String,KvStateSnapshot&lt;?,?,?&gt;&gt; to partitionedSnapshots : HashMap&lt;String,KvStateSnapshot&lt;?,?,?,?,?&gt;&gt; in method public snapshotOperatorState(checkpointId long, timestamp long) : StreamTaskState in class org.apache.flink.streaming.api.operators.AbstractStreamOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-58ea61305d2647ce3570afe8ce3733fcL164">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-58ea61305d2647ce3570afe8ce3733fcR173">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -872,6 +872,62 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-21" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, stateType Class&lt;S&gt;, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.api.common.functions.RuntimeContext</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-220a24cf9ec66e8ff23c91bb12c09724L189">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-220a24cf9ec66e8ff23c91bb12c09724R241">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	StateBackend&lt;?&gt; to AbstractStateBackend in method public getStateBackend() : AbstractStateBackend in class org.apache.flink.streaming.api.graph.StreamGraph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d5aa7fc170c92100d9744407da2c2d6cL139">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d5aa7fc170c92100d9744407da2c2d6cR139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	StateBackend&lt;?&gt; to AbstractStateBackend in method public createStateBackend(operatorIdentifier String, keySerializer TypeSerializer&lt;?&gt;) : AbstractStateBackend in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9437cb4899bb946f234c272be6724770L591">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9437cb4899bb946f234c272be6724770R563">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Context</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1L481">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1R481">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	KvStateSnapshot&lt;K,V,Backend&gt; to KvStateSnapshot&lt;K,N,S,SD,Backend&gt; in method public snapshot(checkpointId long, timestamp long) : KvStateSnapshot&lt;K,N,S,SD,Backend&gt; in class org.apache.flink.runtime.state.KvState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-e1f4df0ca566d5d8e80160ead698aae8L44">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-e1f4df0ca566d5d8e80160ead698aae8R54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.runtime.operators.windowing.NonKeyedWindowOperator.Context</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-360001e7322fae75cf1cc750bab04397L416">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-360001e7322fae75cf1cc750bab04397R416">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, stateType TypeInformation&lt;S&gt;, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.api.operators.StreamingRuntimeContext</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-f7ea87d9317e47c8ba6ba0e191e03752L131">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-f7ea87d9317e47c8ba6ba0e191e03752R135">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, stateType TypeInformation&lt;S&gt;, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.connectors.kafka.testutils.MockRuntimeContext</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5ebdbd243573ea69f6fff7bbbaf2bab0L153">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5ebdbd243573ea69f6fff7bbbaf2bab0R155">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -964,62 +1020,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d0967e79e5ab1d53ef71ff8005345db3R31">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, stateType Class&lt;S&gt;, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.api.common.functions.RuntimeContext</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-220a24cf9ec66e8ff23c91bb12c09724L189">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-220a24cf9ec66e8ff23c91bb12c09724R241">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	StateBackend&lt;?&gt; to AbstractStateBackend in method public getStateBackend() : AbstractStateBackend in class org.apache.flink.streaming.api.graph.StreamGraph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d5aa7fc170c92100d9744407da2c2d6cL139">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-d5aa7fc170c92100d9744407da2c2d6cR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	StateBackend&lt;?&gt; to AbstractStateBackend in method public createStateBackend(operatorIdentifier String, keySerializer TypeSerializer&lt;?&gt;) : AbstractStateBackend in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9437cb4899bb946f234c272be6724770L591">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-9437cb4899bb946f234c272be6724770R563">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.runtime.operators.windowing.WindowOperator.Context</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1L481">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-408a499e1a35840c52e29b7ccab866b1R481">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	KvStateSnapshot&lt;K,V,Backend&gt; to KvStateSnapshot&lt;K,N,S,SD,Backend&gt; in method public snapshot(checkpointId long, timestamp long) : KvStateSnapshot&lt;K,N,S,SD,Backend&gt; in class org.apache.flink.runtime.state.KvState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-e1f4df0ca566d5d8e80160ead698aae8L44">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-e1f4df0ca566d5d8e80160ead698aae8R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.runtime.operators.windowing.NonKeyedWindowOperator.Context</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-360001e7322fae75cf1cc750bab04397L416">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-360001e7322fae75cf1cc750bab04397R416">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, stateType TypeInformation&lt;S&gt;, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.api.operators.StreamingRuntimeContext</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-f7ea87d9317e47c8ba6ba0e191e03752L131">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-f7ea87d9317e47c8ba6ba0e191e03752R135">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	OperatorState&lt;S&gt; to ValueState&lt;S&gt; in method public getKeyValueState(name String, stateType TypeInformation&lt;S&gt;, defaultState S) : ValueState&lt;S&gt; in class org.apache.flink.streaming.connectors.kafka.testutils.MockRuntimeContext</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5ebdbd243573ea69f6fff7bbbaf2bab0L153">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/caf46728045c0b886e6d4ec0aa429a830740a391?diff=split#diff-5ebdbd243573ea69f6fff7bbbaf2bab0R155">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1033,14 +1033,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Superclass	org.apache.flink.runtime.state.AbstractStateBackend from classes [org.apache.flink.contrib.streaming.state.DbStateBackend, org.apache.flink.runtime.state.filesystem.FsStateBackend, org.apache.flink.runtime.state.memory.MemoryStateBackend, org.apache.flink.streaming.runtime.state.StateBackendITCase.FailingStateBackend]</i></td>
+                                <td><i>Extract Superclass	org.apache.flink.runtime.state.StateBackendTestBase from classes [org.apache.flink.hdfstests.FileStateBackendTest, org.apache.flink.runtime.state.FileStateBackendTest, org.apache.flink.runtime.state.MemoryStateBackendTest]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Superclass	org.apache.flink.runtime.state.StateBackendTestBase from classes [org.apache.flink.hdfstests.FileStateBackendTest, org.apache.flink.runtime.state.FileStateBackendTest, org.apache.flink.runtime.state.MemoryStateBackendTest]</i></td>
+                                <td><i>Extract Superclass	org.apache.flink.runtime.state.AbstractStateBackend from classes [org.apache.flink.contrib.streaming.state.DbStateBackend, org.apache.flink.runtime.state.filesystem.FsStateBackend, org.apache.flink.runtime.state.memory.MemoryStateBackend, org.apache.flink.streaming.runtime.state.StateBackendITCase.FailingStateBackend]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -280,6 +280,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getUfsPath() : String renamed to public getUnderFileSystemPath() : String in class alluxio.worker.block.meta.UnderFileSystemBlockMeta</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b45c9d13b2bd85da83b6dfaf902956c8L82">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-ae3ea371e02882f9d08ba7490abddb73R82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public handleUfsBlockReadRequest(ctx ChannelHandlerContext, req RPCUfsBlockReadRequest) : void renamed to public handleUnderFileSystemBlockReadRequest(ctx ChannelHandlerContext, req RPCUnderFileSystemBlockReadRequest) : void in class alluxio.worker.netty.BlockDataServerHandler</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7b86c312fa342f870b68f7e25d6aea86L118">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7b86c312fa342f870b68f7e25d6aea86R118">To</a></td>
@@ -320,13 +327,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-dc71e3fa1c3b97f2731258bf623cff1bR51">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getUfsPath() : String renamed to public getUnderFileSystemPath() : String in class alluxio.worker.block.meta.UnderFileSystemBlockMeta</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b45c9d13b2bd85da83b6dfaf902956c8L82">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-ae3ea371e02882f9d08ba7490abddb73R82">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -337,6 +337,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : RPCUfsBlockReadRequest to request : RPCUnderFileSystemBlockReadRequest in method public createErrorResponse(request RPCUnderFileSystemBlockReadRequest, status Status) : RPCBlockReadResponse in class alluxio.network.protocol.RPCBlockReadResponse</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b318eca2300c207f31a146dbe3625f98L78">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b318eca2300c207f31a146dbe3625f98R88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	blockMeta : UfsBlockMeta to blockMeta : UnderFileSystemBlockMeta in method private UnderFileSystemBlockReader(blockMeta UnderFileSystemBlockMeta, noCache boolean, alluxioBlockStore BlockStore) in class alluxio.worker.block.UnderFileSystemBlockReader</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-84354b2721a61e279d3551035e4c1fcfL85">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	req : RPCUfsBlockReadRequest to req : RPCUnderFileSystemBlockReadRequest in method public handleUnderFileSystemBlockReadRequest(ctx ChannelHandlerContext, req RPCUnderFileSystemBlockReadRequest) : void in class alluxio.worker.netty.BlockDataServerHandler</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7b86c312fa342f870b68f7e25d6aea86L118">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7b86c312fa342f870b68f7e25d6aea86R128">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -366,27 +387,6 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R78">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : RPCUfsBlockReadRequest to request : RPCUnderFileSystemBlockReadRequest in method public createErrorResponse(request RPCUnderFileSystemBlockReadRequest, status Status) : RPCBlockReadResponse in class alluxio.network.protocol.RPCBlockReadResponse</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b318eca2300c207f31a146dbe3625f98L78">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b318eca2300c207f31a146dbe3625f98R88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	blockMeta : UfsBlockMeta to blockMeta : UnderFileSystemBlockMeta in method private UnderFileSystemBlockReader(blockMeta UnderFileSystemBlockMeta, noCache boolean, alluxioBlockStore BlockStore) in class alluxio.worker.block.UnderFileSystemBlockReader</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-84354b2721a61e279d3551035e4c1fcfL85">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	req : RPCUfsBlockReadRequest to req : RPCUnderFileSystemBlockReadRequest in method public handleUnderFileSystemBlockReadRequest(ctx ChannelHandlerContext, req RPCUnderFileSystemBlockReadRequest) : void in class alluxio.worker.netty.BlockDataServerHandler</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7b86c312fa342f870b68f7e25d6aea86L118">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7b86c312fa342f870b68f7e25d6aea86R128">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -397,20 +397,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	RPCUfsBlockReadRequest to RPCUnderFileSystemBlockReadRequest in method public decode(in ByteBuf) : RPCUnderFileSystemBlockReadRequest in class alluxio.network.protocol.RPCUnderFileSystemBlockReadRequest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-112958cc6a874cdc5d9d67128c14c134L55">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-2ce573501511fdcf6c7ac32ba4c48d2fR55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	UfsBlockReader to UnderFileSystemBlockReader in method public create(context FileSystemContext) : UnderFileSystemBlockReader in class alluxio.client.UnderFileSystemBlockReader.Factory</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-abcaab5e070a156fded30e3614d779acL34">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b1e74091000000ce02ba0361286629b7R34">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -426,6 +412,20 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R66">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RPCUfsBlockReadRequest to RPCUnderFileSystemBlockReadRequest in method public decode(in ByteBuf) : RPCUnderFileSystemBlockReadRequest in class alluxio.network.protocol.RPCUnderFileSystemBlockReadRequest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-112958cc6a874cdc5d9d67128c14c134L55">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-2ce573501511fdcf6c7ac32ba4c48d2fR55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	UfsBlockReader to UnderFileSystemBlockReader in method public create(context FileSystemContext) : UnderFileSystemBlockReader in class alluxio.client.UnderFileSystemBlockReader.Factory</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-abcaab5e070a156fded30e3614d779acL34">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-b1e74091000000ce02ba0361286629b7R34">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -436,13 +436,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	alluxio.client.block.UfsBlockInStream renamed to alluxio.client.block.UnderFileSystemBlockInStream</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -507,6 +500,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	alluxio.client.block.UfsBlockInStream renamed to alluxio.client.block.UnderFileSystemBlockInStream</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -556,27 +556,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	ufsBlockReader : UfsBlockReader to ufsBlockReader : UnderFileSystemBlockReader in method public create(blockMeta UnderFileSystemBlockMeta, offset long, noCache boolean, alluxioBlockStore BlockStore) : UnderFileSystemBlockReader in class alluxio.worker.block.UnderFileSystemBlockReader</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-84354b2721a61e279d3551035e4c1fcfL66">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	blockMeta : UfsBlockMeta to blockMeta : UnderFileSystemBlockMeta in method public acquireAccess(blockMetaConst UnderFileSystemBlockMeta.ConstMeta, maxConcurrency int) : void in class alluxio.worker.block.UnderFileSystemBlockStore</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-a74da985a20b998fd209d1d91aa9e8d1L68">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-51762840177a3b79ccbda52a5d6e83ddR82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	blockMeta : UfsBlockMeta to blockMeta : UnderFileSystemBlockMeta in method public getBlockReader(sessionId long, blockId long, offset long, noCache boolean) : BlockReader in class alluxio.worker.block.UnderFileSystemBlockStore</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-a74da985a20b998fd209d1d91aa9e8d1L196">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-51762840177a3b79ccbda52a5d6e83ddR214">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -641,6 +620,27 @@
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-34202540c11c39440bced29f7d115148R49">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ufsBlockReader : UfsBlockReader to ufsBlockReader : UnderFileSystemBlockReader in method public create(blockMeta UnderFileSystemBlockMeta, offset long, noCache boolean, alluxioBlockStore BlockStore) : UnderFileSystemBlockReader in class alluxio.worker.block.UnderFileSystemBlockReader</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-84354b2721a61e279d3551035e4c1fcfL66">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	blockMeta : UfsBlockMeta to blockMeta : UnderFileSystemBlockMeta in method public acquireAccess(blockMetaConst UnderFileSystemBlockMeta.ConstMeta, maxConcurrency int) : void in class alluxio.worker.block.UnderFileSystemBlockStore</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-a74da985a20b998fd209d1d91aa9e8d1L68">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-51762840177a3b79ccbda52a5d6e83ddR82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	blockMeta : UfsBlockMeta to blockMeta : UnderFileSystemBlockMeta in method public getBlockReader(sessionId long, blockId long, offset long, noCache boolean) : BlockReader in class alluxio.worker.block.UnderFileSystemBlockStore</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-a74da985a20b998fd209d1d91aa9e8d1L196">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-51762840177a3b79ccbda52a5d6e83ddR214">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -651,27 +651,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	mBlocks : Map&lt;Key,UfsBlockMeta&gt; to mBlocks : Map&lt;Key,UnderFileSystemBlockMeta&gt; in class alluxio.worker.block.UnderFileSystemBlockStore</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-a74da985a20b998fd209d1d91aa9e8d1L48">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-51762840177a3b79ccbda52a5d6e83ddR49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	mUfsBlockMeta : UfsBlockMeta to mUnderFileSystemBlockMeta : UnderFileSystemBlockMeta in class alluxio.worker.block.UnderFileSystemBlockReaderTest</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7a0047df92d824c9dcc11f00dc1a1c00L45">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-9e960c28f25c377d1ea2be79165a6b30R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	mUfsBlockStore : UfsBlockStore to mUnderFileSystemBlockStore : UnderFileSystemBlockStore in class alluxio.worker.block.DefaultBlockWorker</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-afac1f71ac0c445388822f89d7557c64L103">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-afac1f71ac0c445388822f89d7557c64R103">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -692,6 +671,27 @@
                                 <td><i>Change Attribute Type	mBlockMeta : UfsBlockMeta to mBlockMeta : UnderFileSystemBlockMeta in class alluxio.worker.block.UnderFileSystemBlockReader</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-84354b2721a61e279d3551035e4c1fcfL53">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-487fe8b60ebfd84ff7127d4357f19d34R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	mBlocks : Map&lt;Key,UfsBlockMeta&gt; to mBlocks : Map&lt;Key,UnderFileSystemBlockMeta&gt; in class alluxio.worker.block.UnderFileSystemBlockStore</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-a74da985a20b998fd209d1d91aa9e8d1L48">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-51762840177a3b79ccbda52a5d6e83ddR49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	mUfsBlockMeta : UfsBlockMeta to mUnderFileSystemBlockMeta : UnderFileSystemBlockMeta in class alluxio.worker.block.UnderFileSystemBlockReaderTest</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-7a0047df92d824c9dcc11f00dc1a1c00L45">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-9e960c28f25c377d1ea2be79165a6b30R46">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	mUfsBlockStore : UfsBlockStore to mUnderFileSystemBlockStore : UnderFileSystemBlockStore in class alluxio.worker.block.DefaultBlockWorker</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-afac1f71ac0c445388822f89d7557c64L103">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/6114bde95325b9e57d82d53acca5dbc5632f9574?diff=split#diff-afac1f71ac0c445388822f89d7557c64R103">To</a></td>
                             </tr>
                             
                             </tbody>

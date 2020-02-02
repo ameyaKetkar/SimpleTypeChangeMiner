@@ -451,6 +451,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Method	public compareKeyBasedOnColHint(nextIndexedCell Cell, currentCell Cell, foff int, flen int, colHint byte[], coff int, clen int, ts long, type byte) : int from class org.apache.hadoop.hbase.CellComparator to public compareKeyBasedOnColHint(comparator CellComparator, nextIndexedCell Cell, currentCell Cell, foff int, flen int, colHint byte[], coff int, clen int, ts long, type byte) : int from class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L433">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2617">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private compareColumns(left Cell, right byte[], rfoffset int, rflength int, rqoffset int, rqlength int) : int from class org.apache.hadoop.hbase.CellComparator to public compareColumns(left Cell, right byte[], rfoffset int, rflength int, rqoffset int, rqlength int) : int from class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L147">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2888">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Method	public compare(left Cell, key byte[], offset int, length int) : int from class org.apache.hadoop.hbase.CellComparator to public compare(comparator CellComparator, left Cell, key byte[], offset int, length int) : int from class org.apache.hadoop.hbase.CellUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L83">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2765">To</a></td>
@@ -510,20 +524,6 @@
                                 <td><i>Move Method	private compareFamilies(left Cell, right byte[], roffset int, rlength int) : int from class org.apache.hadoop.hbase.CellComparator to public compareFamilies(left Cell, right byte[], roffset int, rlength int) : int from class org.apache.hadoop.hbase.CellUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L187">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2869">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public compareKeyBasedOnColHint(nextIndexedCell Cell, currentCell Cell, foff int, flen int, colHint byte[], coff int, clen int, ts long, type byte) : int from class org.apache.hadoop.hbase.CellComparator to public compareKeyBasedOnColHint(comparator CellComparator, nextIndexedCell Cell, currentCell Cell, foff int, flen int, colHint byte[], coff int, clen int, ts long, type byte) : int from class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L433">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2617">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private compareColumns(left Cell, right byte[], rfoffset int, rflength int, rqoffset int, rqlength int) : int from class org.apache.hadoop.hbase.CellComparator to public compareColumns(left Cell, right byte[], rfoffset int, rflength int, rqoffset int, rqlength int) : int from class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L147">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2888">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -650,6 +650,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	comparator : CellComparator to comparator : CellComparatorImpl in class org.apache.hadoop.hbase.TestCellComparator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-104965af957ca3d24327317ae1ae9c6bL34">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-104965af957ca3d24327317ae1ae9c6bR34">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	delegate : CellComparator to delegate : CellComparatorImpl in class org.apache.hadoop.hbase.client.TestClientNoCluster.MetaRowsComparator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-c084441fd4afe988a2c065588386c2a9L680">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-c084441fd4afe988a2c065588386c2a9R680">To</a></td>
@@ -662,13 +669,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-e8b5b3712bb3d6e9f9f48cb034116726R48">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	comparator : CellComparator to comparator : CellComparatorImpl in class org.apache.hadoop.hbase.TestCellComparator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-104965af957ca3d24327317ae1ae9c6bL34">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-104965af957ca3d24327317ae1ae9c6bR34">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -679,13 +679,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	right : byte[] to bytes : byte[] in method public compareRows(cell Cell, bytes byte[], offset int, length int) : int in class org.apache.hadoop.hbase.CellComparator</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L371">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039R62">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -790,6 +783,13 @@
                                 <td><i>Rename Parameter	left : Cell to leftCell : Cell in method public compareFamilies(leftCell Cell, rightCell Cell) : int in class org.apache.hadoop.hbase.CellComparator</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L161">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	right : byte[] to bytes : byte[] in method public compareRows(cell Cell, bytes byte[], offset int, length int) : int in class org.apache.hadoop.hbase.CellComparator</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039L371">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/70f4c5da475a221b28e3516a23f35fc6098d4044?diff=split#diff-bdd18243b5cc783d0f639b250214e039R62">To</a></td>
                             </tr>
                             
                             </tbody>

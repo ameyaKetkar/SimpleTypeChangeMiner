@@ -348,6 +348,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	java.util.Optional&lt;Date&gt; to Optional&lt;Date&gt; in method public getAnalysisDate() : Optional&lt;Date&gt; in class org.sonar.server.computation.task.projectanalysis.webhook.ProjectAnalysis</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL237">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-195b2b21bc241e26d849ab0f9b401751R78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	String to Optional&lt;String&gt; in method public getAnalysisUuid() : Optional&lt;String&gt; in class org.sonar.server.webhook.Webhook</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-25770071073bf99be81d96e29fe2c5dbL61">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-25770071073bf99be81d96e29fe2c5dbR62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	ProjectAnalysis to ProjectAnalysisImpl in method private createProjectAnalysis(status CeTask.Status) : ProjectAnalysisImpl in class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL113">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccR117">To</a></td>
@@ -367,20 +381,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-25770071073bf99be81d96e29fe2c5dbR50">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	java.util.Optional&lt;Date&gt; to Optional&lt;Date&gt; in method public getAnalysisDate() : Optional&lt;Date&gt; in class org.sonar.server.computation.task.projectanalysis.webhook.ProjectAnalysis</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL237">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-195b2b21bc241e26d849ab0f9b401751R78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	String to Optional&lt;String&gt; in method public getAnalysisUuid() : Optional&lt;String&gt; in class org.sonar.server.webhook.Webhook</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-25770071073bf99be81d96e29fe2c5dbL61">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-25770071073bf99be81d96e29fe2c5dbR62">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -394,14 +394,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.sonar.server.computation.task.projectanalysis.webhook.Analysis from class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor.ProjectAnalysis</i></td>
+                                <td><i>Extract Class	org.sonar.server.webhook.Analysis from class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor.ProjectAnalysis</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.sonar.server.webhook.Analysis from class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor.ProjectAnalysis</i></td>
+                                <td><i>Extract Class	org.sonar.server.computation.task.projectanalysis.webhook.Analysis from class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor.ProjectAnalysis</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -437,6 +437,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	qualityGateOptional : Optional&lt;org.sonar.server.computation.task.projectanalysis.qualitygate.QualityGate&gt; to qualityGateOptional : com.google.common.base.Optional&lt;org.sonar.server.computation.task.projectanalysis.qualitygate.QualityGate&gt; in method private createQualityGate() : QualityGateImpl in class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL141">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccR155">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	projectAnalysis : ProjectAnalysis to projectAnalysis : ProjectAnalysisImpl in method public finished(allStepsExecuted boolean) : void in class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL93">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccR103">To</a></td>
@@ -447,13 +454,6 @@
                                 <td><i>Change Variable Type	analysisBranchOpt : java.util.Optional&lt;org.sonar.server.computation.task.projectanalysis.analysis.Branch&gt; to analysisBranchOpt : Optional&lt;org.sonar.server.computation.task.projectanalysis.analysis.Branch&gt; in method private createBranch() : BranchImpl in class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL156">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccR170">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	qualityGateOptional : Optional&lt;org.sonar.server.computation.task.projectanalysis.qualitygate.QualityGate&gt; to qualityGateOptional : com.google.common.base.Optional&lt;org.sonar.server.computation.task.projectanalysis.qualitygate.QualityGate&gt; in method private createQualityGate() : QualityGateImpl in class org.sonar.server.computation.task.projectanalysis.api.posttask.PostProjectAnalysisTasksExecutor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccL141">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/80645fca839ea97ee472f01ebb81f40af0f179f5?diff=split#diff-788d415ce50afba962f2c43d40af2fccR155">To</a></td>
                             </tr>
                             
                             </tbody>

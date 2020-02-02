@@ -396,6 +396,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Push Down Method	public computeAssignments(splits Set&lt;Split&gt;) : Multimap&lt;Node,Split&gt; from class com.facebook.presto.execution.scheduler.SplitPlacementPolicy to public computeAssignments(splits Set&lt;Split&gt;) : Multimap&lt;Node,Split&gt; from class com.facebook.presto.execution.scheduler.DynamicSplitPlacementPolicy</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceL38">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-f7f05fc7c0f1f5b2bd1d9793cd3f80a5R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Push Down Method	public SplitPlacementPolicy(nodeSelector NodeSelector, remoteTasks Supplier&lt;List&lt;RemoteTask&gt;&gt;) from class com.facebook.presto.execution.scheduler.SplitPlacementPolicy to public DynamicSplitPlacementPolicy(nodeSelector NodeSelector, remoteTasks Supplier&lt;? extends List&lt;RemoteTask&gt;&gt;) from class com.facebook.presto.execution.scheduler.DynamicSplitPlacementPolicy</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceL32">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-f7f05fc7c0f1f5b2bd1d9793cd3f80a5R33">To</a></td>
@@ -413,13 +420,6 @@
                                 <td><i>Push Down Method	public lockDownNodes() : void from class com.facebook.presto.execution.scheduler.SplitPlacementPolicy to public lockDownNodes() : void from class com.facebook.presto.execution.scheduler.DynamicSplitPlacementPolicy</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceL43">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-f7f05fc7c0f1f5b2bd1d9793cd3f80a5R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public computeAssignments(splits Set&lt;Split&gt;) : Multimap&lt;Node,Split&gt; from class com.facebook.presto.execution.scheduler.SplitPlacementPolicy to public computeAssignments(splits Set&lt;Split&gt;) : Multimap&lt;Node,Split&gt; from class com.facebook.presto.execution.scheduler.DynamicSplitPlacementPolicy</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceL38">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-f7f05fc7c0f1f5b2bd1d9793cd3f80a5R39">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -453,16 +453,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	remoteTasks : Supplier&lt;List&lt;RemoteTask&gt;&gt; to remoteTasks : Supplier&lt;? extends List&lt;RemoteTask&gt;&gt; in method public DynamicSplitPlacementPolicy(nodeSelector NodeSelector, remoteTasks Supplier&lt;? extends List&lt;RemoteTask&gt;&gt;) in class com.facebook.presto.execution.scheduler.DynamicSplitPlacementPolicy</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceL32">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-f7f05fc7c0f1f5b2bd1d9793cd3f80a5R33">To</a></td>
+                                <td><i>Change Parameter Type	nodePartitioningManager : NodePartitioningManager to partitioningCache : Function&lt;PartitioningHandle,NodePartitionMap&gt; in method private createStages(parent Optional&lt;SqlStageExecution&gt;, nextStageId AtomicInteger, locationFactory LocationFactory, plan StageExecutionPlan, nodeScheduler NodeScheduler, remoteTaskFactory RemoteTaskFactory, session Session, splitBatchSize int, partitioningCache Function&lt;PartitioningHandle,NodePartitionMap&gt;, executor ExecutorService, nodeTaskMap NodeTaskMap, stageSchedulers ImmutableMap.Builder&lt;StageId,StageScheduler&gt;, stageLinkages ImmutableMap.Builder&lt;StageId,StageLinkage&gt;) : List&lt;SqlStageExecution&gt; in class com.facebook.presto.execution.scheduler.SqlQueryScheduler</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-5cffc1bea86a011bf263a6d6a736c93fL166">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-5cffc1bea86a011bf263a6d6a736c93fR180">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	nodePartitioningManager : NodePartitioningManager to partitioningCache : Function&lt;PartitioningHandle,NodePartitionMap&gt; in method private createStages(parent Optional&lt;SqlStageExecution&gt;, nextStageId AtomicInteger, locationFactory LocationFactory, plan StageExecutionPlan, nodeScheduler NodeScheduler, remoteTaskFactory RemoteTaskFactory, session Session, splitBatchSize int, partitioningCache Function&lt;PartitioningHandle,NodePartitionMap&gt;, executor ExecutorService, nodeTaskMap NodeTaskMap, stageSchedulers ImmutableMap.Builder&lt;StageId,StageScheduler&gt;, stageLinkages ImmutableMap.Builder&lt;StageId,StageLinkage&gt;) : List&lt;SqlStageExecution&gt; in class com.facebook.presto.execution.scheduler.SqlQueryScheduler</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-5cffc1bea86a011bf263a6d6a736c93fL166">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-5cffc1bea86a011bf263a6d6a736c93fR180">To</a></td>
+                                <td><i>Change Parameter Type	remoteTasks : Supplier&lt;List&lt;RemoteTask&gt;&gt; to remoteTasks : Supplier&lt;? extends List&lt;RemoteTask&gt;&gt; in method public DynamicSplitPlacementPolicy(nodeSelector NodeSelector, remoteTasks Supplier&lt;? extends List&lt;RemoteTask&gt;&gt;) in class com.facebook.presto.execution.scheduler.DynamicSplitPlacementPolicy</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-00ab16d8b6a42bbf50ff31164957d9ceL32">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/fc0648d1c178ae4407e7a727d5a3bfd95af151ed?diff=split#diff-f7f05fc7c0f1f5b2bd1d9793cd3f80a5R33">To</a></td>
                             </tr>
                             
                             </tbody>

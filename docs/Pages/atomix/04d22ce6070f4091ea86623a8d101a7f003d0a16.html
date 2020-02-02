@@ -186,6 +186,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	communicationService : ClusterCommunicationService to sessionIdService : SessionIdService in method public withSessionIdProvider(sessionIdService SessionIdService) : Builder in class io.atomix.protocols.backup.PrimaryBackupClient.Builder</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeL219">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeR244">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	request : OpenSessionRequest to request : RestoreRequest in method public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R454">To</a></td>
@@ -196,13 +203,6 @@
                                 <td><i>Change Parameter Type	request : CloseSessionRequest to request : BackupRequest in method public backup(request BackupRequest) : CompletableFuture&lt;BackupResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL301">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R440">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	communicationService : ClusterCommunicationService to sessionIdService : SessionIdService in method public withSessionIdProvider(sessionIdService SessionIdService) : Builder in class io.atomix.protocols.backup.PrimaryBackupClient.Builder</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeL219">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeR244">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -240,41 +240,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private executeSubject : MessageSubject from class io.atomix.protocols.backup.impl.PrimaryBackupServiceContext to package executeSubject : MessageSubject from class io.atomix.protocols.backup.partition.impl.PrimaryBackupMessageContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL118">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-173087fd2f02ce109bc728c0bf72d21cR25">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private restoreSubject : MessageSubject from class io.atomix.protocols.backup.impl.PrimaryBackupServiceContext to package restoreSubject : MessageSubject from class io.atomix.protocols.backup.partition.impl.PrimaryBackupMessageContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL120">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-173087fd2f02ce109bc728c0bf72d21cR28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private metadataSubject : MessageSubject from class io.atomix.protocols.backup.PrimaryBackupServer to package metadataSubject : MessageSubject from class io.atomix.protocols.backup.partition.impl.PrimaryBackupMessageContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2969b3e651b232c208f165b3039b0729L75">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-173087fd2f02ce109bc728c0bf72d21cR26">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private serverName : String from class io.atomix.protocols.backup.impl.PrimaryBackupSession to private serverName : String from class io.atomix.protocols.backup.impl.PrimaryBackupServerContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-c0b360130f148d3337a4fec2043b127cL40">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-18462409bdc8e9f4ce7a20bd6cb6020bR44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private threadContextFactory : ThreadContextFactory from class io.atomix.protocols.backup.PrimaryBackupServer to private threadContextFactory : ThreadContextFactory from class io.atomix.protocols.backup.impl.PrimaryBackupServerContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2969b3e651b232c208f165b3039b0729L69">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-18462409bdc8e9f4ce7a20bd6cb6020bR47">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -332,6 +297,41 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-18462409bdc8e9f4ce7a20bd6cb6020bR48">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private executeSubject : MessageSubject from class io.atomix.protocols.backup.impl.PrimaryBackupServiceContext to package executeSubject : MessageSubject from class io.atomix.protocols.backup.partition.impl.PrimaryBackupMessageContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL118">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-173087fd2f02ce109bc728c0bf72d21cR25">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private restoreSubject : MessageSubject from class io.atomix.protocols.backup.impl.PrimaryBackupServiceContext to package restoreSubject : MessageSubject from class io.atomix.protocols.backup.partition.impl.PrimaryBackupMessageContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL120">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-173087fd2f02ce109bc728c0bf72d21cR28">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private metadataSubject : MessageSubject from class io.atomix.protocols.backup.PrimaryBackupServer to package metadataSubject : MessageSubject from class io.atomix.protocols.backup.partition.impl.PrimaryBackupMessageContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2969b3e651b232c208f165b3039b0729L75">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-173087fd2f02ce109bc728c0bf72d21cR26">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private serverName : String from class io.atomix.protocols.backup.impl.PrimaryBackupSession to private serverName : String from class io.atomix.protocols.backup.impl.PrimaryBackupServerContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-c0b360130f148d3337a4fec2043b127cL40">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-18462409bdc8e9f4ce7a20bd6cb6020bR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private threadContextFactory : ThreadContextFactory from class io.atomix.protocols.backup.PrimaryBackupServer to private threadContextFactory : ThreadContextFactory from class io.atomix.protocols.backup.impl.PrimaryBackupServerContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2969b3e651b232c208f165b3039b0729L69">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-18462409bdc8e9f4ce7a20bd6cb6020bR47">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -342,13 +342,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Class	io.atomix.protocols.backup.impl.PrimaryBackupServerContext from class io.atomix.protocols.backup.impl.PrimaryBackupSession</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -367,6 +360,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	io.atomix.protocols.backup.roles.PrimaryBackupRole from class io.atomix.protocols.backup.impl.PrimaryBackupServiceContext</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	io.atomix.protocols.backup.impl.PrimaryBackupServerContext from class io.atomix.protocols.backup.impl.PrimaryBackupSession</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -402,14 +402,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	io.atomix.protocols.backup.impl.PrimaryBackupServiceContext moved to io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
+                                <td><i>Move Class	io.atomix.protocols.backup.impl.PrimaryBackupServiceContext.Role moved to io.atomix.protocols.backup.PrimaryBackupServer.Role</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	io.atomix.protocols.backup.impl.PrimaryBackupServiceContext.Role moved to io.atomix.protocols.backup.PrimaryBackupServer.Role</i></td>
+                                <td><i>Move Class	io.atomix.protocols.backup.impl.PrimaryBackupServiceContext moved to io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -445,13 +445,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	future : ComposableFuture&lt;OpenSessionResponse&gt; to future : ComposableFuture&lt;RestoreResponse&gt; in method public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R455">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	future : ComposableFuture&lt;CloseSessionResponse&gt; to future : ComposableFuture&lt;ExecuteResponse&gt; in method public execute(request ExecuteRequest) : CompletableFuture&lt;ExecuteResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL301">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R427">To</a></td>
@@ -469,6 +462,13 @@
                                 <td><i>Change Variable Type	future : ComposableFuture&lt;OpenSessionResponse&gt; to future : ComposableFuture&lt;ExecuteResponse&gt; in method public execute(request ExecuteRequest) : CompletableFuture&lt;ExecuteResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R427">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : ComposableFuture&lt;OpenSessionResponse&gt; to future : ComposableFuture&lt;RestoreResponse&gt; in method public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R455">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -527,13 +527,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public openSession(request OpenSessionRequest) : CompletableFuture&lt;OpenSessionResponse&gt; renamed to public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R448">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public withCommunicationService(communicationService ClusterCommunicationService) : Builder renamed to public withSessionIdProvider(sessionIdService SessionIdService) : Builder in class io.atomix.protocols.backup.PrimaryBackupClient.Builder</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeL219">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeR238">To</a></td>
@@ -553,6 +546,13 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R434">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public openSession(request OpenSessionRequest) : CompletableFuture&lt;OpenSessionResponse&gt; renamed to public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R448">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -566,6 +566,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;OpenSessionResponse&gt; to CompletableFuture&lt;RestoreResponse&gt; in method public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R448">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	Session to PrimaryBackupSession in method public getSession(sessionId long) : PrimaryBackupSession in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceSessions</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-a5d6aef408f953506c3967d70b7c2ef9L69">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-758f02d5d7f0aa7debd0d308306c4608R70">To</a></td>
@@ -576,13 +583,6 @@
                                 <td><i>Change Return Type	CompletableFuture&lt;CloseSessionResponse&gt; to CompletableFuture&lt;BackupResponse&gt; in method public backup(request BackupRequest) : CompletableFuture&lt;BackupResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL301">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R434">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;OpenSessionResponse&gt; to CompletableFuture&lt;RestoreResponse&gt; in method public restore(request RestoreRequest) : CompletableFuture&lt;RestoreResponse&gt; in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL287">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R448">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -680,27 +680,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	serviceName : String to protocol : PrimaryBackupServerProtocol in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL91">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	communicationService : ClusterCommunicationService to descriptor : PrimitiveDescriptor in class io.atomix.protocols.backup.proxy.PrimaryBackupProxy</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-a0f4aa55288751f71af6b2c0c4300fffL64">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-a0f4aa55288751f71af6b2c0c4300fffR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	serverName : String to protocol : PrimaryBackupServerProtocol in class io.atomix.protocols.backup.impl.PrimaryBackupSession</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-c0b360130f148d3337a4fec2043b127cL40">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-c0b360130f148d3337a4fec2043b127cR39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	sessions : DefaultServiceSessions to sessions : PrimaryBackupServiceSessions in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL94">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R80">To</a></td>
@@ -718,6 +697,27 @@
                                 <td><i>Change Attribute Type	communicationService : ClusterCommunicationService to sessionIdService : SessionIdService in class io.atomix.protocols.backup.PrimaryBackupClient</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeL69">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-2341aad327e4fc0a4b02e6d1ab4b7edeR71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	serviceName : String to protocol : PrimaryBackupServerProtocol in class io.atomix.protocols.backup.service.impl.PrimaryBackupServiceContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-4a2ec6811be68b6386cc13194fef036dL91">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-0a5fed6917c6bdbf8745824b899ed999R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	communicationService : ClusterCommunicationService to descriptor : PrimitiveDescriptor in class io.atomix.protocols.backup.proxy.PrimaryBackupProxy</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-a0f4aa55288751f71af6b2c0c4300fffL64">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-a0f4aa55288751f71af6b2c0c4300fffR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	serverName : String to protocol : PrimaryBackupServerProtocol in class io.atomix.protocols.backup.impl.PrimaryBackupSession</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-c0b360130f148d3337a4fec2043b127cL40">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/04d22ce6070f4091ea86623a8d101a7f003d0a16?diff=split#diff-c0b360130f148d3337a4fec2043b127cR39">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -172,6 +172,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public testExpiredOnBackupOwner() : void renamed to public testLifespanExpiredOnBackupOwner() : void in class org.infinispan.expiration.impl.ClusterExpirationFunctionalTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-371ccf645bc8ccd2973fc07876879543L70">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-371ccf645bc8ccd2973fc07876879543R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public removeExpired(key K, value V, lifespan Long) : void renamed to public removeLifespanExpired(key K, value V, lifespan Long) : CompletableFuture&lt;Void&gt; in class org.infinispan.AdvancedCache</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-03ced0d4913c8b2a9b31125503014726L771">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-03ced0d4913c8b2a9b31125503014726R771">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public testRemoveExpired_Object_Object_Long(cache SecureCache&lt;String,String&gt;) : void renamed to public testRemoveLifespanExpired_Object_Object_Long(cache SecureCache&lt;String,String&gt;) : void in class org.infinispan.security.SecureCacheTestDriver</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-c83e1d3dc20430d05070b123d4d9809dL712">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-c83e1d3dc20430d05070b123d4d9809dR712">To</a></td>
@@ -245,20 +259,6 @@
                                 <td><i>Rename Method	public handleInMemoryExpiration(entry InternalCacheEntry&lt;K,V&gt;, currentTime long) : void renamed to public entryExpiredInMemory(entry InternalCacheEntry&lt;K,V&gt;, currentTime long) : CompletableFuture&lt;Boolean&gt; in class org.infinispan.expiration.impl.ClusterExpirationManager</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-a3098505167aeedeccbaf511fdf6f73fL163">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-a3098505167aeedeccbaf511fdf6f73fR182">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public testExpiredOnBackupOwner() : void renamed to public testLifespanExpiredOnBackupOwner() : void in class org.infinispan.expiration.impl.ClusterExpirationFunctionalTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-371ccf645bc8ccd2973fc07876879543L70">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-371ccf645bc8ccd2973fc07876879543R81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public removeExpired(key K, value V, lifespan Long) : void renamed to public removeLifespanExpired(key K, value V, lifespan Long) : CompletableFuture&lt;Void&gt; in class org.infinispan.AdvancedCache</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-03ced0d4913c8b2a9b31125503014726L771">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/a044e5f87ebef11997a5cd169d56dd7144690d2f?diff=split#diff-03ced0d4913c8b2a9b31125503014726R771">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -352,20 +352,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	expirationManager : ExpirationManager in method protected createContainer() : DataContainer&lt;String,String&gt; from class org.infinispan.container.SimpleDataContainerTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	expiringKey : Object in method public testEntryExpiration(maxIdle boolean, readInTx boolean) : void from class org.infinispan.eviction.impl.ExceptionEvictionTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	maxIdle : long in method public processExpiration() : void from class org.infinispan.expiration.impl.ClusterExpirationManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -374,6 +360,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	key : Object in method public entryExpired(event CacheEntryExpiredEvent) : void from class org.infinispan.interceptors.impl.TransactionalExceptionEvictionInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	expirationManager : ExpirationManager in method protected createContainer() : DataContainer&lt;String,String&gt; from class org.infinispan.container.SimpleDataContainerTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	expiringKey : Object in method public testEntryExpiration(maxIdle boolean, readInTx boolean) : void from class org.infinispan.eviction.impl.ExceptionEvictionTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

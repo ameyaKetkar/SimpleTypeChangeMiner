@@ -304,13 +304,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	checkPointFinder : LatestCheckPointFinder to logTailScanner : LogTailScanner in method public DefaultRecoverySPI(storageEngine StorageEngine, logFiles PhysicalLogFiles, fs FileSystemAbstraction, logVersionRepository LogVersionRepository, logTailScanner LogTailScanner, transactionIdStore TransactionIdStore, logicalTransactionStore LogicalTransactionStore, monitor PositionToRecoverFrom.Monitor) in class org.neo4j.kernel.recovery.DefaultRecoverySPI</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b96dc6329972aa0ca417b3bb86976beaL52">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b96dc6329972aa0ca417b3bb86976beaR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method private assertLatestCheckPoint(hasCheckPointEntry boolean, commitsAfterLastCheckPoint boolean, firstTxIdAfterLastCheckPoint long, logVersion long, logTailInformation LogTailScanner.LogTailInformation) : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL536">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR531">To</a></td>
@@ -323,6 +316,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-d77fe7a979849e752be8591ca28e8ccfR73">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	checkPointFinder : LatestCheckPointFinder to logTailScanner : LogTailScanner in method public DefaultRecoverySPI(storageEngine StorageEngine, logFiles PhysicalLogFiles, fs FileSystemAbstraction, logVersionRepository LogVersionRepository, logTailScanner LogTailScanner, transactionIdStore TransactionIdStore, logicalTransactionStore LogicalTransactionStore, monitor PositionToRecoverFrom.Monitor) in class org.neo4j.kernel.recovery.DefaultRecoverySPI</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b96dc6329972aa0ca417b3bb86976beaL52">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b96dc6329972aa0ca417b3bb86976beaR56">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -333,6 +333,69 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-27" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsOneStartWithoutCommit() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL172">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR166">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method private checkCleanShutDownByCheckPoint(storeDirectory File) : Result in class org.neo4j.kernel.impl.storemigration.UpgradableDatabase</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-1de2f1a2a5004be9e23c637e74b3cb2bL146">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-1de2f1a2a5004be9e23c637e74b3cb2bR145">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsOneStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL159">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR153">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPoints() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL145">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public oneLogFileNoCheckPointsOneStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL132">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public noLogFilesFound() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL103">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogFileContainingACheckPointAndAStartBefore() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL230">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR224">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public olderLogFileContainingACheckPointAndNewerFileContainingAStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL318">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR312">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsTwoCommits() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL186">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR180">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -460,69 +523,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR384">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsOneStartWithoutCommit() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL172">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR166">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method private checkCleanShutDownByCheckPoint(storeDirectory File) : Result in class org.neo4j.kernel.impl.storemigration.UpgradableDatabase</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-1de2f1a2a5004be9e23c637e74b3cb2bL146">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-1de2f1a2a5004be9e23c637e74b3cb2bR145">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsOneStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL159">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR153">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPoints() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL145">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public oneLogFileNoCheckPointsOneStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL132">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR126">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public noLogFilesFound() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL103">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogFileContainingACheckPointAndAStartBefore() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL230">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR224">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public olderLogFileContainingACheckPointAndNewerFileContainingAStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL318">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR312">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsTwoCommits() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL186">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR180">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -629,104 +629,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-36" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public olderLogFileContainingACheckPointAndNewerFileIsEmpty() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL324">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR326">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public olderLogFileContainingAStartAndNewerFileContainingACheckPointPointingToAPreviousPositionThanStartWithoutCommit() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL353">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR356">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPointFinder.LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public removeCheckPointFromTxLog(fileSystem FileSystemAbstraction, workingDirectory File) : void in class org.neo4j.kernel.impl.storemigration.MigrationTestUtils</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7L182">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7R188">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public olderLogFileContainingAStartAndNewerFileContainingACheckPointPointingToAPreviousPositionThanStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL338">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR341">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogEmptyStartEntryBeforeAndAfterCheckPointInTheLastButOneLog() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL382">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR384">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public isRecoveryRequiredAt(dataDir File) : boolean in class org.neo4j.kernel.impl.recovery.RecoveryRequiredChecker</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fc34449b268b2c3f402281acce8a315dL53">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fc34449b268b2c3f402281acce8a315dR70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public bigFileLatestCheckpointFindsStartAfter() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL236">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR241">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsOneStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL151">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR153">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public noLogFilesFound() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL94">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogFileContainingMultipleCheckPointsOneStartInBetween() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL282">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR283">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public removeCheckPointFromTxLog(fileSystem FileSystemAbstraction, workingDirectory File) : void in class org.neo4j.kernel.impl.storemigration.MigrationTestUtils</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7L182">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7R187">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public shouldSeeThatACleanDatabaseShouldNotRequireRecovery() : void in class org.neo4j.kernel.RecoveryTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b28fe34c11d5c8672b074447401a094bL214">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b28fe34c11d5c8672b074447401a094bR244">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPoints() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL138">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogFileContainingACheckPointAndAStartWithoutCommitAfter() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL268">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR270">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -882,6 +784,104 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR312">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public olderLogFileContainingACheckPointAndNewerFileIsEmpty() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL324">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR326">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public olderLogFileContainingAStartAndNewerFileContainingACheckPointPointingToAPreviousPositionThanStartWithoutCommit() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL353">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR356">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPointFinder.LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public removeCheckPointFromTxLog(fileSystem FileSystemAbstraction, workingDirectory File) : void in class org.neo4j.kernel.impl.storemigration.MigrationTestUtils</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7L182">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7R188">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public olderLogFileContainingAStartAndNewerFileContainingACheckPointPointingToAPreviousPositionThanStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL338">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR341">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogEmptyStartEntryBeforeAndAfterCheckPointInTheLastButOneLog() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL382">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR384">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public isRecoveryRequiredAt(dataDir File) : boolean in class org.neo4j.kernel.impl.recovery.RecoveryRequiredChecker</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fc34449b268b2c3f402281acce8a315dL53">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fc34449b268b2c3f402281acce8a315dR70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailInformation in method public bigFileLatestCheckpointFindsStartAfter() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL236">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR241">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPointsOneStart() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL151">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR153">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public noLogFilesFound() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL94">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogFileContainingMultipleCheckPointsOneStartInBetween() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL282">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR283">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public removeCheckPointFromTxLog(fileSystem FileSystemAbstraction, workingDirectory File) : void in class org.neo4j.kernel.impl.storemigration.MigrationTestUtils</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7L182">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-aeedc72e9370f1db6006fff62ed044b7R187">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	finder : LatestCheckPointFinder to finder : LogTailScanner in method public shouldSeeThatACleanDatabaseShouldNotRequireRecovery() : void in class org.neo4j.kernel.RecoveryTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b28fe34c11d5c8672b074447401a094bL214">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-b28fe34c11d5c8672b074447401a094bR244">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public twoLogFilesNoCheckPoints() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL138">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	latestCheckPoint : LatestCheckPoint to logTailInformation : LogTailScanner.LogTailInformation in method public latestLogFileContainingACheckPointAndAStartWithoutCommitAfter() : void in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL268">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR270">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -895,13 +895,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	checkPointFinder : LatestCheckPointFinder to logTailScanner : LogTailScanner in class org.neo4j.kernel.recovery.PositionToRecoverFrom</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-d77fe7a979849e752be8591ca28e8ccfL69">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-d77fe7a979849e752be8591ca28e8ccfR70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	finder : LatestCheckPointFinder to finder : LogTailScanner in class org.neo4j.kernel.recovery.PositionToRecoverFromTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-7292118c4dec9da0953d0b886819ab39L40">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-7292118c4dec9da0953d0b886819ab39R42">To</a></td>
@@ -912,6 +905,13 @@
                                 <td><i>Change Attribute Type	finder : LatestCheckPointFinder to finder : LogTailScanner in class org.neo4j.kernel.impl.transaction.log.LogTailScannerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-e632f7493cfdbf3367bfdf203302c4beL69">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-fad3fff247812509f0f557d2537def8cR62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	checkPointFinder : LatestCheckPointFinder to logTailScanner : LogTailScanner in class org.neo4j.kernel.recovery.PositionToRecoverFrom</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-d77fe7a979849e752be8591ca28e8ccfL69">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/8ba01f9e798c251ee8d8964bbd2dc5e59f5e1ab5?diff=split#diff-d77fe7a979849e752be8591ca28e8ccfR70">To</a></td>
                             </tr>
                             
                             </tbody>

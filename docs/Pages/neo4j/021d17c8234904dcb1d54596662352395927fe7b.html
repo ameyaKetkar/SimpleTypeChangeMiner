@@ -338,6 +338,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move And Inline Method	public nodeExists(state KernelStatement, nodeId long) : boolean moved from class org.neo4j.kernel.impl.api.StateHandlingStatementOperations to class org.neo4j.kernel.impl.api.OperationsFacade &amp; inlined to public nodeExists(nodeId long) : boolean</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Inline Method	public acquireNodeRelationshipCursor(dense boolean, nextRel long, id long, direction Direction, relTypes int[]) : Cursor&lt;RelationshipItem&gt; moved from class org.neo4j.kernel.impl.api.store.StoreStatement to class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor &amp; inlined to public relationships(direction Direction, relTypes int...) : Cursor&lt;RelationshipItem&gt;</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Inline Method	public acquirePropertyCursor(firstPropertyRecordId long) : Cursor&lt;PropertyItem&gt; moved from class org.neo4j.kernel.impl.api.store.StoreStatement to class org.neo4j.kernel.impl.api.store.StoreAbstractRelationshipCursor &amp; inlined to public properties() : Cursor&lt;PropertyItem&gt;</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move And Inline Method	public relationshipExists(state KernelStatement, relId long) : boolean moved from class org.neo4j.kernel.impl.api.StateHandlingStatementOperations to class org.neo4j.kernel.impl.api.OperationsFacade &amp; inlined to public relationshipExists(relId long) : boolean</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -371,27 +392,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Inline Method	public nodeExists(state KernelStatement, nodeId long) : boolean moved from class org.neo4j.kernel.impl.api.StateHandlingStatementOperations to class org.neo4j.kernel.impl.api.OperationsFacade &amp; inlined to public nodeExists(nodeId long) : boolean</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Inline Method	public acquireNodeRelationshipCursor(dense boolean, nextRel long, id long, direction Direction, relTypes int[]) : Cursor&lt;RelationshipItem&gt; moved from class org.neo4j.kernel.impl.api.store.StoreStatement to class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor &amp; inlined to public relationships(direction Direction, relTypes int...) : Cursor&lt;RelationshipItem&gt;</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Inline Method	public acquirePropertyCursor(firstPropertyRecordId long) : Cursor&lt;PropertyItem&gt; moved from class org.neo4j.kernel.impl.api.store.StoreStatement to class org.neo4j.kernel.impl.api.store.StoreAbstractRelationshipCursor &amp; inlined to public properties() : Cursor&lt;PropertyItem&gt;</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -402,48 +402,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	relationshipStore : RelationshipStore to neoStore : NeoStore in method public StoreAbstractRelationshipCursor(relationshipRecord RelationshipRecord, neoStore NeoStore, storeStatement StoreStatement) in class org.neo4j.kernel.impl.api.store.StoreAbstractRelationshipCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0698b24bd3a584f2b72b73c02369a4e7L38">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0698b24bd3a584f2b72b73c02369a4e7R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	endNodeId : long to endNodeId : NodeItem in method public relationshipCreate(statement KernelStatement, relationshipTypeId int, startNodeId NodeItem, endNodeId NodeItem) : long in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0694c9de7c6c3b2738144757b771b751L189">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0694c9de7c6c3b2738144757b771b751R192">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	incoming : int to incoming : long in method private updateRelationshipsCountsFromDegrees(type int, label int, outgoing long, incoming long) : void in class org.neo4j.kernel.impl.api.KernelTransactionImplementation</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-e846f0ece315673d2137c213a8b1c823L1022">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-e846f0ece315673d2137c213a8b1c823R1042">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	nodeStore : NodeStore to neoStore : NeoStore in method public StoreIteratorNodeCursor(nodeRecord NodeRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache Consumer&lt;StoreIteratorNodeCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreIteratorNodeCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-9840c590be3da9c3ad13946f318a661cL37">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-9840c590be3da9c3ad13946f318a661cR38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	relationshipStore : RelationshipStore to neoStore : NeoStore in method public StoreSingleRelationshipCursor(relationshipRecord RelationshipRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache InstanceCache&lt;StoreSingleRelationshipCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSingleRelationshipCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adL36">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adR36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	endNodeId : long to endNodeId : NodeItem in method public relationshipCreate(statement KernelStatement, relationshipTypeId int, startNodeId NodeItem, endNodeId NodeItem) : long in class org.neo4j.kernel.impl.api.GuardingStatementOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-ff6ec52da07116b4e069402552331aecL60">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-ff6ec52da07116b4e069402552331aecR63">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -522,6 +480,48 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aR36">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	relationshipStore : RelationshipStore to neoStore : NeoStore in method public StoreAbstractRelationshipCursor(relationshipRecord RelationshipRecord, neoStore NeoStore, storeStatement StoreStatement) in class org.neo4j.kernel.impl.api.store.StoreAbstractRelationshipCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0698b24bd3a584f2b72b73c02369a4e7L38">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0698b24bd3a584f2b72b73c02369a4e7R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	endNodeId : long to endNodeId : NodeItem in method public relationshipCreate(statement KernelStatement, relationshipTypeId int, startNodeId NodeItem, endNodeId NodeItem) : long in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0694c9de7c6c3b2738144757b771b751L189">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-0694c9de7c6c3b2738144757b771b751R192">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	incoming : int to incoming : long in method private updateRelationshipsCountsFromDegrees(type int, label int, outgoing long, incoming long) : void in class org.neo4j.kernel.impl.api.KernelTransactionImplementation</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-e846f0ece315673d2137c213a8b1c823L1022">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-e846f0ece315673d2137c213a8b1c823R1042">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	nodeStore : NodeStore to neoStore : NeoStore in method public StoreIteratorNodeCursor(nodeRecord NodeRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache Consumer&lt;StoreIteratorNodeCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreIteratorNodeCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-9840c590be3da9c3ad13946f318a661cL37">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-9840c590be3da9c3ad13946f318a661cR38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	relationshipStore : RelationshipStore to neoStore : NeoStore in method public StoreSingleRelationshipCursor(relationshipRecord RelationshipRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache InstanceCache&lt;StoreSingleRelationshipCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSingleRelationshipCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adL36">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	endNodeId : long to endNodeId : NodeItem in method public relationshipCreate(statement KernelStatement, relationshipTypeId int, startNodeId NodeItem, endNodeId NodeItem) : long in class org.neo4j.kernel.impl.api.GuardingStatementOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-ff6ec52da07116b4e069402552331aecL60">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-ff6ec52da07116b4e069402552331aecR63">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -532,13 +532,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private nodeDegreeByDirection(nodeId long, group RelationshipGroupRecord, direction Direction) : long from class org.neo4j.kernel.impl.api.store.DiskLayer to private nodeDegreeByDirection(group RelationshipGroupRecord, direction Direction) : long from class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-39e7628da35070b1a2aefbddafd53585L297">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-99399908a4ac886aea6563e0a228210fR338">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -566,6 +559,13 @@
                                 <td><i>Move Method	private directionOf(nodeId long, relationshipId long, startNode long, endNode long) : Direction from class org.neo4j.kernel.impl.api.store.DiskLayer to private directionOf(nodeId long, relationshipId long, startNode long, endNode long) : Direction from class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-39e7628da35070b1a2aefbddafd53585L379">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-99399908a4ac886aea6563e0a228210fR373">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private nodeDegreeByDirection(nodeId long, group RelationshipGroupRecord, direction Direction) : long from class org.neo4j.kernel.impl.api.store.DiskLayer to private nodeDegreeByDirection(group RelationshipGroupRecord, direction Direction) : long from class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-39e7628da35070b1a2aefbddafd53585L297">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-99399908a4ac886aea6563e0a228210fR338">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -752,13 +752,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	nodeStore : NodeStore to neoStore : NeoStore in method public StoreSingleNodeCursor(nodeRecord NodeRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache Consumer&lt;StoreSingleNodeCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSingleNodeCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aL36">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aR36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	nodeStore : NodeStore to neoStore : NeoStore in method public StoreAbstractNodeCursor(nodeRecord NodeRecord, neoStore NeoStore, storeStatement StoreStatement) in class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-99399908a4ac886aea6563e0a228210fL42">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-99399908a4ac886aea6563e0a228210fR61">To</a></td>
@@ -811,6 +804,13 @@
                                 <td><i>Rename Parameter	relationshipStore : RelationshipStore to neoStore : NeoStore in method public StoreSingleRelationshipCursor(relationshipRecord RelationshipRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache InstanceCache&lt;StoreSingleRelationshipCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSingleRelationshipCursor</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adL36">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-19cd2b1a03daae9c1f0c88180673c5adR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	nodeStore : NodeStore to neoStore : NeoStore in method public StoreSingleNodeCursor(nodeRecord NodeRecord, neoStore NeoStore, storeStatement StoreStatement, instanceCache Consumer&lt;StoreSingleNodeCursor&gt;) in class org.neo4j.kernel.impl.api.store.StoreSingleNodeCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aL36">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/021d17c8234904dcb1d54596662352395927fe7b?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aR36">To</a></td>
                             </tr>
                             
                             </tbody>

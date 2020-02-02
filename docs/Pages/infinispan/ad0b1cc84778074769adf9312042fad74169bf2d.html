@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public perform(ctx InvocationContext) : Object renamed to public invokeAsync() : CompletableFuture&lt;Object&gt; in class org.infinispan.commands.ReplicableCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebL18">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	package invokePerform(cmd CacheRpcCommand) : Response renamed to package invokeCommand(cmd CacheRpcCommand) : CompletableFuture&lt;Response&gt; in class org.infinispan.remoting.inboundhandler.BasePerCacheInboundInvocationHandler</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-997ba76d541b1d113f8aa1e9838e49faL71">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-997ba76d541b1d113f8aa1e9838e49faR74">To</a></td>
@@ -171,13 +178,6 @@
                                 <td><i>Rename Method	public abstract perform(ctx InvocationContext) : Object renamed to public abstract invokeAsync() : CompletableFuture&lt;Object&gt; in class org.infinispan.query.indexmanager.AbstractUpdateCommand</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6d4d241fe370375290363f811950dc70L47">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6d4d241fe370375290363f811950dc70R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public perform(ctx InvocationContext) : Object renamed to public invokeAsync() : CompletableFuture&lt;Object&gt; in class org.infinispan.commands.ReplicableCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebL18">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebR43">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -313,6 +313,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	Object to CompletableFuture&lt;Object&gt; in method public invokeAsync() : CompletableFuture&lt;Object&gt; in class org.infinispan.commands.ReplicableCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebL18">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	V to Object in method public perform(ctx InvocationContext) : Object in class org.infinispan.commands.read.DistributedExecuteCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-343bbb96369bcc6358de6ba84fccedd7L89">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-343bbb96369bcc6358de6ba84fccedd7R90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;Object&gt; in method protected prepareOnAffectedNodes(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.distribution.VersionedDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1bcb358b9af4545c4159d2ebc98596d9L33">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1bcb358b9af4545c4159d2ebc98596d9R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	Map&lt;Address,Response&gt; to CompletableFuture&lt;Object&gt; in method protected totalOrderPrepare(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;, responseFilter TimeoutValidationResponseFilter) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.impl.BaseRpcInterceptor</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bL122">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bR124">To</a></td>
@@ -374,27 +395,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-82c2e25b4aaa396484f3b53123b646b2R80">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Object to CompletableFuture&lt;Object&gt; in method public invokeAsync() : CompletableFuture&lt;Object&gt; in class org.infinispan.commands.ReplicableCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebL18">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	V to Object in method public perform(ctx InvocationContext) : Object in class org.infinispan.commands.read.DistributedExecuteCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-343bbb96369bcc6358de6ba84fccedd7L89">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-343bbb96369bcc6358de6ba84fccedd7R90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;Object&gt; in method protected prepareOnAffectedNodes(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.distribution.VersionedDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1bcb358b9af4545c4159d2ebc98596d9L33">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1bcb358b9af4545c4159d2ebc98596d9R35">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -405,6 +405,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	responseMap : Map&lt;Address,Response&gt; to remoteInvocation : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in method private internalTotalOrderPrepare(recipients Collection&lt;Address&gt;, prepareCommand PrepareCommand, responseFilter TimeoutValidationResponseFilter) : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in class org.infinispan.interceptors.impl.BaseRpcInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bL133">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bR155">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	responseMap : Map&lt;Address,Response&gt; to remoteInvocation : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in method public visitCommitCommand(ctx TxInvocationContext, command CommitCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TxDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eL156">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eR167">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	responseMap : Map&lt;Address,Response&gt; to remoteInvocation : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in method protected prepareOnAffectedNodes(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.distribution.TxDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eL183">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eR203">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -441,27 +462,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R394">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	responseMap : Map&lt;Address,Response&gt; to remoteInvocation : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in method private internalTotalOrderPrepare(recipients Collection&lt;Address&gt;, prepareCommand PrepareCommand, responseFilter TimeoutValidationResponseFilter) : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in class org.infinispan.interceptors.impl.BaseRpcInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bL133">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bR155">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	responseMap : Map&lt;Address,Response&gt; to remoteInvocation : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in method public visitCommitCommand(ctx TxInvocationContext, command CommitCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TxDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eL156">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eR167">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	responseMap : Map&lt;Address,Response&gt; to remoteInvocation : CompletableFuture&lt;Map&lt;Address,Response&gt;&gt; in method protected prepareOnAffectedNodes(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.distribution.TxDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eL183">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-1f89fae5cdc8e35ed85504c05f20d66eR203">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -493,6 +493,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private doSubmit(futureTask QueueingTask) : Future&lt;T&gt; extracted from public submit(task Runnable, result T) : Future&lt;T&gt; in class org.infinispan.executors.SemaphoreCompletionService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private afterCommandException(throwable Throwable) : void extracted from public run() : void in class org.infinispan.remoting.inboundhandler.BaseBlockingRunnable</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private invokeGetAll() : CompletableFuture&lt;Object&gt; extracted from public perform(ctx InvocationContext) : Object in class org.infinispan.commands.remote.ClusteredGetAllCommand</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -519,20 +533,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private doSubmit(futureTask QueueingTask) : Future&lt;T&gt; extracted from public submit(task Runnable, result T) : Future&lt;T&gt; in class org.infinispan.executors.SemaphoreCompletionService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private afterCommandException(throwable Throwable) : void extracted from public run() : void in class org.infinispan.remoting.inboundhandler.BaseBlockingRunnable</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -543,20 +543,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	interceptorChain : InterceptorChain to interceptorChain : AsyncInterceptorChain in class org.infinispan.commands.CommandsFactoryImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-c3f1d183521e803935bcf1c80882c942L144">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-c3f1d183521e803935bcf1c80882c942R144">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	invoker : InterceptorChain to invoker : AsyncInterceptorChain in class org.infinispan.commands.tx.AbstractTransactionBoundaryCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6786830247a258ad7a4038a107c7a94bL34">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6786830247a258ad7a4038a107c7a94bR35">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -577,6 +563,20 @@
                                 <td><i>Change Attribute Type	interceptorChain : InterceptorChain to interceptorChain : AsyncInterceptorChain in class org.infinispan.commands.remote.BaseRpcInvokingCommand</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6b8c2578edb3dee1905cedd145585631L20">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6b8c2578edb3dee1905cedd145585631R25">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	interceptorChain : InterceptorChain to interceptorChain : AsyncInterceptorChain in class org.infinispan.commands.CommandsFactoryImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-c3f1d183521e803935bcf1c80882c942L144">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-c3f1d183521e803935bcf1c80882c942R144">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	invoker : InterceptorChain to invoker : AsyncInterceptorChain in class org.infinispan.commands.tx.AbstractTransactionBoundaryCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6786830247a258ad7a4038a107c7a94bL34">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-6786830247a258ad7a4038a107c7a94bR35">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -610,6 +610,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	prepareCommand : PrepareCommand to command : PrepareCommand in method protected totalOrderPrepare(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;, responseFilter TimeoutValidationResponseFilter) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.impl.BaseRpcInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bL123">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bR124">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	context : InvocationContext to ctx : InvocationContext in method public perform(ctx InvocationContext) : Object in class org.infinispan.commands.read.DistributedExecuteCommand</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-343bbb96369bcc6358de6ba84fccedd7L97">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-343bbb96369bcc6358de6ba84fccedd7R91">To</a></td>
@@ -620,13 +627,6 @@
                                 <td><i>Rename Parameter	ctx : InvocationContext to ignored : InvocationContext in method public perform(ignored InvocationContext) : Object in class org.infinispan.commands.ReplicableCommand</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebL27">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-00402a50c7064b51a6b083f26f0c49ebR32">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	prepareCommand : PrepareCommand to command : PrepareCommand in method protected totalOrderPrepare(ctx TxInvocationContext&lt;?&gt;, command PrepareCommand, recipients Collection&lt;Address&gt;, responseFilter TimeoutValidationResponseFilter) : CompletableFuture&lt;Object&gt; in class org.infinispan.interceptors.impl.BaseRpcInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bL123">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ad0b1cc84778074769adf9312042fad74169bf2d?diff=split#diff-cc509ceb7ef6f935b3c6577e214f7d3bR124">To</a></td>
                             </tr>
                             
                             </tbody>

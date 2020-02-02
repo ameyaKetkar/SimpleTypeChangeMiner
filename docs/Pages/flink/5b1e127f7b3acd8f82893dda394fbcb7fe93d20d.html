@@ -401,13 +401,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	numBuffersAvailable : AtomicLong to dataAvailableNotification : AtomicBoolean in class org.apache.flink.runtime.io.network.util.TestSubpartitionConsumer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-4913ecf25e45b11530935127a5f31293L65">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-4913ecf25e45b11530935127a5f31293R65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	bufferConsumers : Optional&lt;BufferConsumer&gt;[] to bufferBuilders : Optional&lt;BufferBuilder&gt;[] in class org.apache.flink.runtime.io.network.api.writer.RecordWriter</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-3a841a8398d539527cde607c580874a3L64">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-3a841a8398d539527cde607c580874a3R64">To</a></td>
@@ -418,6 +411,13 @@
                                 <td><i>Rename Attribute	numBuffersAvailable : AtomicLong to buffersAvailable : AtomicBoolean in class org.apache.flink.runtime.io.network.netty.CreditBasedSequenceNumberingViewReader</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-58a3ec20ce410acb352ac36afe31e618L47">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-58a3ec20ce410acb352ac36afe31e618R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	numBuffersAvailable : AtomicLong to dataAvailableNotification : AtomicBoolean in class org.apache.flink.runtime.io.network.util.TestSubpartitionConsumer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-4913ecf25e45b11530935127a5f31293L65">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/5b1e127f7b3acd8f82893dda394fbcb7fe93d20d?diff=split#diff-4913ecf25e45b11530935127a5f31293R65">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -518,6 +518,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private notifyDataAvailable() : void extracted from private add(bufferConsumer BufferConsumer, finish boolean) : boolean in class org.apache.flink.runtime.io.network.partition.PipelinedSubpartition</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private requestNewBufferBuilder(targetChannel int) : BufferBuilder extracted from private sendToTarget(record T, targetChannel int) : void in class org.apache.flink.runtime.io.network.api.writer.RecordWriter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private pollAvailableReader() : NetworkSequenceViewReader extracted from public userEventTriggered(ctx ChannelHandlerContext, msg Object) : void in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private notifyDataAvailable() : void extracted from public createReadView(availabilityListener BufferAvailabilityListener) : PipelinedSubpartitionView in class org.apache.flink.runtime.io.network.partition.PipelinedSubpartition</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -554,27 +575,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private registerAvailableReader(reader NetworkSequenceViewReader) : void extracted from public userEventTriggered(ctx ChannelHandlerContext, msg Object) : void in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private notifyDataAvailable() : void extracted from private add(bufferConsumer BufferConsumer, finish boolean) : boolean in class org.apache.flink.runtime.io.network.partition.PipelinedSubpartition</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private requestNewBufferBuilder(targetChannel int) : BufferBuilder extracted from private sendToTarget(record T, targetChannel int) : void in class org.apache.flink.runtime.io.network.api.writer.RecordWriter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private pollAvailableReader() : NetworkSequenceViewReader extracted from public userEventTriggered(ctx ChannelHandlerContext, msg Object) : void in class org.apache.flink.runtime.io.network.netty.PartitionRequestQueue</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

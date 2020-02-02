@@ -336,6 +336,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private readBuffer(blockReader BlockReader, currentNode DatanodeInfo, readerStrategy ByteBufferStrategy, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : int renamed to private readToBuffer(blockReader BlockReader, currentNode DatanodeInfo, readerStrategy ByteBufferStrategy, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.DFSStripedInputStream</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL437">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR372">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public testWritePreadWithDNFailure1() : void renamed to public testReadWithDNFailure1() : void in class org.apache.hadoop.hdfs.TestReadStripedFileWithDecoding</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-f3478e4ec4afa94632c6e865de7a6847L60">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-f3478e4ec4afa94632c6e865de7a6847R61">To</a></td>
@@ -369,13 +376,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR480">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private readBuffer(blockReader BlockReader, currentNode DatanodeInfo, readerStrategy ByteBufferStrategy, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : int renamed to private readToBuffer(blockReader BlockReader, currentNode DatanodeInfo, readerStrategy ByteBufferStrategy, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.DFSStripedInputStream</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL437">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR372">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -389,16 +389,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private fetchOneStripe(blockGroup LocatedStripedBlock, buf byte[], alignedStripe AlignedStripe, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream to package readStripe(blocks LocatedBlock[], corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream.StripeReader</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL527">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR610">To</a></td>
+                                <td><i>Move And Rename Method	private fetchOneStripingChunk(futures Map&lt;Future&lt;Void&gt;,Integer&gt;, service CompletionService&lt;Void&gt;, block LocatedBlock, alignedStripe AlignedStripe, index int, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream to package readChunk(service CompletionService&lt;Void&gt;, block LocatedBlock, chunkIndex int, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream.PositionStripeReader</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL604">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR688">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private fetchOneStripingChunk(futures Map&lt;Future&lt;Void&gt;,Integer&gt;, service CompletionService&lt;Void&gt;, block LocatedBlock, alignedStripe AlignedStripe, index int, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream to package readChunk(service CompletionService&lt;Void&gt;, block LocatedBlock, chunkIndex int, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream.PositionStripeReader</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL604">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR688">To</a></td>
+                                <td><i>Move And Rename Method	private fetchOneStripe(blockGroup LocatedStripedBlock, buf byte[], alignedStripe AlignedStripe, corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream to package readStripe(blocks LocatedBlock[], corruptedBlockMap Map&lt;ExtendedBlock,Set&lt;DatanodeInfo&gt;&gt;) : void from class org.apache.hadoop.hdfs.DFSStripedInputStream.StripeReader</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL527">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR610">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -414,16 +414,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public getOffsets() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.StripingChunk to public getOffsets() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.ChunkByteArray</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6L821">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6R878">To</a></td>
+                                <td><i>Move Method	public getLengths() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.StripingChunk to public getLengths() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.ChunkByteArray</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6L829">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6R886">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public getLengths() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.StripingChunk to public getLengths() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.ChunkByteArray</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6L829">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6R886">To</a></td>
+                                <td><i>Move Method	public getOffsets() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.StripingChunk to public getOffsets() : int[] from class org.apache.hadoop.hdfs.util.StripedBlockUtil.ChunkByteArray</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6L821">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6R878">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -568,6 +568,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	buf : byte[] to byteBuffer : ByteBuffer in class org.apache.hadoop.hdfs.util.StripedBlockUtil.StripingChunk</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6L811">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6R832">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	groupSize : short to groupSize : int in class org.apache.hadoop.hdfs.DFSStripedInputStream</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL120">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR128">To</a></td>
@@ -578,13 +585,6 @@
                                 <td><i>Change Attribute Type	readingService : CompletionService&lt;Integer&gt; to readingService : CompletionService&lt;Void&gt; in class org.apache.hadoop.hdfs.DFSStripedInputStream</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cL131">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-e0b60716f36d04cb56e47d83f6674e3cR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	buf : byte[] to byteBuffer : ByteBuffer in class org.apache.hadoop.hdfs.util.StripedBlockUtil.StripingChunk</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6L811">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/c0929ab3c2de76e2d514b7dec11354fea40ea089?diff=split#diff-366c3a669553ff6399b5c875953b93b6R832">To</a></td>
                             </tr>
                             
                             </tbody>

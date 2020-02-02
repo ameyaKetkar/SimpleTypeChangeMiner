@@ -296,6 +296,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	reportFileSourcesByKey : Map&lt;String,File&gt; to reportFileSourcesByKey : Map&lt;String,FileSimilarity.File&gt; in method public ScoreMatrix(dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,FileSimilarity.File&gt;, scores int[][], maxScore int) in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L293">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR32">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method private electMatches(dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;, matchesByScore MatchesByScore) : ElectedMatches in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L248">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R249">To</a></td>
@@ -322,13 +329,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR32">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	reportFileSourcesByKey : Map&lt;String,File&gt; to reportFileSourcesByKey : Map&lt;String,FileSimilarity.File&gt; in method public ScoreMatrix(dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,FileSimilarity.File&gt;, scores int[][], maxScore int) in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L293">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR32">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -342,16 +342,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	dbFileSourceAndKey : Map.Entry&lt;String,File&gt; to removedFileKey : String in method private computeScoreMatrix(dtosByKey Map&lt;String,DbComponent&gt;, dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;) : ScoreMatrix in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L224">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R211">To</a></td>
+                                <td><i>Rename Variable	dbFileSourceAndKey : Map.Entry&lt;String,File&gt; to dbFileKey : String in method public accept(visitor ScoreMatrixVisitor) : void in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L303">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR41">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	dbFileSourceAndKey : Map.Entry&lt;String,File&gt; to dbFileKey : String in method public accept(visitor ScoreMatrixVisitor) : void in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L303">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR41">To</a></td>
+                                <td><i>Rename Variable	dbFileSourceAndKey : Map.Entry&lt;String,File&gt; to removedFileKey : String in method private computeScoreMatrix(dtosByKey Map&lt;String,DbComponent&gt;, dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;) : ScoreMatrix in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L224">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R211">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -385,13 +385,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.sonar.server.computation.filemove.FileMoveDetectionStep.MatchesByScore moved to org.sonar.server.computation.filemove.MatchesByScore</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Class	org.sonar.server.computation.filemove.FileMoveDetectionStep.ScoreMatrix moved to org.sonar.server.computation.filemove.ScoreMatrix</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -400,6 +393,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.sonar.server.computation.filemove.FileMoveDetectionStep.Match moved to org.sonar.server.computation.filemove.Match</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.sonar.server.computation.filemove.FileMoveDetectionStep.MatchesByScore moved to org.sonar.server.computation.filemove.MatchesByScore</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -481,16 +481,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L288">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR27">To</a></td>
+                                <td><i>Change Attribute Type	reportFileSourcesByKey : Map&lt;String,File&gt; to reportFileSourcesByKey : Map&lt;String,FileSimilarity.File&gt; in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L289">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR28">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	reportFileSourcesByKey : Map&lt;String,File&gt; to reportFileSourcesByKey : Map&lt;String,FileSimilarity.File&gt; in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L289">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR28">To</a></td>
+                                <td><i>Change Attribute Type	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L288">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR27">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -524,20 +524,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method private electMatches(dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;, matchesByScore MatchesByScore) : ElectedMatches in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L248">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R249">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method private computeScoreMatrix(dtosByKey Map&lt;String,DbComponent&gt;, dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;) : ScoreMatrix in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L219">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R205">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method public ScoreMatrix(dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,FileSimilarity.File&gt;, scores int[][], maxScore int) in class org.sonar.server.computation.filemove.ScoreMatrix</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L293">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-df64886ea5f18a73eb3a973d5bb19f3dR32">To</a></td>
@@ -548,6 +534,20 @@
                                 <td><i>Rename Parameter	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method public ElectedMatches(matchesByScore MatchesByScore, dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;) in class org.sonar.server.computation.filemove.FileMoveDetectionStep.ElectedMatches</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L443">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R329">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method private electMatches(dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;, matchesByScore MatchesByScore) : ElectedMatches in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L248">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R249">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	dbFileSourcesByKey : Map&lt;String,File&gt; to dbFileKeys : Set&lt;String&gt; in method private computeScoreMatrix(dtosByKey Map&lt;String,DbComponent&gt;, dbFileKeys Set&lt;String&gt;, reportFileSourcesByKey Map&lt;String,File&gt;) : ScoreMatrix in class org.sonar.server.computation.filemove.FileMoveDetectionStep</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458L219">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/620dd3cebf99c2497f00523541c3eb7268e2758d?diff=split#diff-5bf8e6e074ab76b659a76c926ccc7458R205">To</a></td>
                             </tr>
                             
                             </tbody>

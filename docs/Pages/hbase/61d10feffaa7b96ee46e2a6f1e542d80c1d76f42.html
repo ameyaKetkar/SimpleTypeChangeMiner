@@ -288,6 +288,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getHStore(column byte[]) : HStore renamed to private getStore(cell Cell) : HStore in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5318">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5288">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public requestSystemCompaction(r Region, why String) : void renamed to public requestCompaction(region HRegion, store HStore, why String, priority int, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL286">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR239">To</a></td>
@@ -300,13 +307,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR244">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getHStore(column byte[]) : HStore renamed to private getStore(cell Cell) : HStore in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5318">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5288">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -317,118 +317,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-61" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverInterface.EvenOnlyCompactor</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28L457">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28R459">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	storesToFlush : Collection&lt;Store&gt; to storesToFlush : Collection&lt;HStore&gt; in method private logFatLineOnFlush(storesToFlush Collection&lt;HStore&gt;, sequenceId long) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2555">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2532">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	result : FlushResult to result : FlushResultImpl in method private PrepareFlushResult(result FlushResultImpl, storeFlushCtxs TreeMap&lt;byte[],StoreFlushContext&gt;, committedFiles TreeMap&lt;byte[],List&lt;Path&gt;&gt;, storeFlushableSize TreeMap&lt;byte[],MemstoreSize&gt;, startTime long, flushSeqId long, flushedSeqId long, totalFlushableSize MemstoreSize) in class org.apache.hadoop.hbase.regionserver.HRegion.PrepareFlushResult</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL540">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR544">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.RegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504L259">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504R267">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	store : Store to store : HStore in method public compact(compaction CompactionContext, store HStore, throughputController ThroughputController) : boolean in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverScannerOpenHook.CompactionCompletionNotifyingRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8aad3437e3d665012d1c41ea0fbd5a74L254">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8aad3437e3d665012d1c41ea0fbd5a74R257">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	store : Store to store : HStore in method public compact(compaction CompactionContext, store HStore, throughputController ThroughputController) : boolean in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2038">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2020">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.RegionCoprocessorHost</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1L581">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1R584">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	region : Region to region : HRegion in method public CompactionRunner(store HStore, region HRegion, compaction Optional&lt;CompactionContext&gt;, parent ThreadPoolExecutor, user User) in class org.apache.hadoop.hbase.regionserver.CompactSplit.CompactionRunner</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL490">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR451">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.RegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504L205">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504R228">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactSelection(store Store, candidates List&lt;StoreFile&gt;, tracker CompactionLifeCycleTracker, user User) : boolean in class org.apache.hadoop.hbase.regionserver.RegionCoprocessorHost</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1L518">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1R529">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L217">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	storesToFlush : Collection&lt;Store&gt; to storesToFlush : Collection&lt;HStore&gt; in method protected internalPrepareFlushCache(wal WAL, myseqid long, storesToFlush Collection&lt;HStore&gt;, status MonitoredTask, writeFlushWalMarker boolean) : PrepareFlushResult in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2416">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2394">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompactSelection(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, selected ImmutableList&lt;StoreFile&gt;, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L210">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R213">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	r : Region to region : HRegion in method public requestCompaction(region HRegion, store HStore, why String, priority int, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL286">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR239">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	column : byte[] to cell : Cell in method private getStore(cell Cell) : HStore in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5318">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5292">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	forMemStore : Map&lt;Store,List&lt;Cell&gt;&gt; to forMemStore : Map&lt;HStore,List&lt;Cell&gt;&gt; in method private reckonDeltas(op Operation, mutation Mutation, effectiveDurability Durability, forMemStore Map&lt;HStore,List&lt;Cell&gt;&gt;, results List&lt;Cell&gt;) : WALEdit in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL7412">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR7383">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -745,6 +633,118 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR529">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverInterface.EvenOnlyCompactor</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28L457">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28R459">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	storesToFlush : Collection&lt;Store&gt; to storesToFlush : Collection&lt;HStore&gt; in method private logFatLineOnFlush(storesToFlush Collection&lt;HStore&gt;, sequenceId long) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2555">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2532">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	result : FlushResult to result : FlushResultImpl in method private PrepareFlushResult(result FlushResultImpl, storeFlushCtxs TreeMap&lt;byte[],StoreFlushContext&gt;, committedFiles TreeMap&lt;byte[],List&lt;Path&gt;&gt;, storeFlushableSize TreeMap&lt;byte[],MemstoreSize&gt;, startTime long, flushSeqId long, flushedSeqId long, totalFlushableSize MemstoreSize) in class org.apache.hadoop.hbase.regionserver.HRegion.PrepareFlushResult</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL540">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR544">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.RegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504L259">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504R267">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	store : Store to store : HStore in method public compact(compaction CompactionContext, store HStore, throughputController ThroughputController) : boolean in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverScannerOpenHook.CompactionCompletionNotifyingRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8aad3437e3d665012d1c41ea0fbd5a74L254">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8aad3437e3d665012d1c41ea0fbd5a74R257">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	store : Store to store : HStore in method public compact(compaction CompactionContext, store HStore, throughputController ThroughputController) : boolean in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2038">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2020">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.RegionCoprocessorHost</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1L581">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1R584">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	region : Region to region : HRegion in method public CompactionRunner(store HStore, region HRegion, compaction Optional&lt;CompactionContext&gt;, parent ThreadPoolExecutor, user User) in class org.apache.hadoop.hbase.regionserver.CompactSplit.CompactionRunner</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL490">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR451">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.RegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504L205">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5db44c03b858b40b9d875eecab8a8504R228">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactSelection(store Store, candidates List&lt;StoreFile&gt;, tracker CompactionLifeCycleTracker, user User) : boolean in class org.apache.hadoop.hbase.regionserver.RegionCoprocessorHost</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1L518">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1R529">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L217">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R219">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	storesToFlush : Collection&lt;Store&gt; to storesToFlush : Collection&lt;HStore&gt; in method protected internalPrepareFlushCache(wal WAL, myseqid long, storesToFlush Collection&lt;HStore&gt;, status MonitoredTask, writeFlushWalMarker boolean) : PrepareFlushResult in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2416">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2394">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompactSelection(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, selected ImmutableList&lt;StoreFile&gt;, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L210">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R213">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	r : Region to region : HRegion in method public requestCompaction(region HRegion, store HStore, why String, priority int, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL286">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR239">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	column : byte[] to cell : Cell in method private getStore(cell Cell) : HStore in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5318">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5292">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	forMemStore : Map&lt;Store,List&lt;Cell&gt;&gt; to forMemStore : Map&lt;HStore,List&lt;Cell&gt;&gt; in method private reckonDeltas(op Operation, mutation Mutation, effectiveDurability Durability, forMemStore Map&lt;HStore,List&lt;Cell&gt;&gt;, results List&lt;Cell&gt;) : WALEdit in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL7412">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR7383">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -780,27 +780,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-24" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompactionContext to Optional&lt;CompactionContext&gt; in method public requestCompaction(priority int, tracker CompactionLifeCycleTracker, user User) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.Store</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9L265">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9R263">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	FlushResult to FlushResultImpl in method private internalFlushcache(storesToFlush Collection&lt;HStore&gt;, status MonitoredTask, writeFlushWalMarker boolean) : FlushResultImpl in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2372">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2352">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompactionContext to Optional&lt;CompactionContext&gt; in method public answer(invocation InvocationOnMock) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.StatefulStoreMockMaker.SelectAnswer</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-3a4df1663f617daa94bd9f905d8e1d3cL41">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-3a4df1663f617daa94bd9f905d8e1d3cR53">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -949,6 +928,27 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5dfbd27ca12d1ed95b17b9338b4cebbcR109">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompactionContext to Optional&lt;CompactionContext&gt; in method public requestCompaction(priority int, tracker CompactionLifeCycleTracker, user User) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.Store</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9L265">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9R263">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	FlushResult to FlushResultImpl in method private internalFlushcache(storesToFlush Collection&lt;HStore&gt;, status MonitoredTask, writeFlushWalMarker boolean) : FlushResultImpl in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2372">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2352">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompactionContext to Optional&lt;CompactionContext&gt; in method public answer(invocation InvocationOnMock) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.StatefulStoreMockMaker.SelectAnswer</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-3a4df1663f617daa94bd9f905d8e1d3cL41">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-3a4df1663f617daa94bd9f905d8e1d3cR53">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -977,6 +977,104 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-68" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	compaction : CompactionContext to compaction : Optional&lt;CompactionContext&gt; in method public compactStores() : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL1992">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1984">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method protected initializeScanners(scan Scan, additionalScanners List&lt;KeyValueScanner&gt;) : void in class org.apache.hadoop.hbase.regionserver.HRegion.RegionScannerImpl</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5899">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5875">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method protected configureForRegion(region HRegion) : void in class org.apache.hadoop.hbase.regionserver.FlushNonSloppyStoresFirstPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abL58">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abR67">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	request : TrackableCompactionRequest to tracker : Tracker in method public testCompactionFailure() : void in class org.apache.hadoop.hbase.regionserver.TestCompaction</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935L316">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935R341">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method private replayFlushInStores(flush FlushDescriptor, prepareFlushResult PrepareFlushResult, dropMemstoreSnapshot boolean) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL4797">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR4781">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	s : Store to s : HStore in method package throwException(title String, regionName String) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL8171">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR8114">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method public testCompactionFailure() : void in class org.apache.hadoop.hbase.regionserver.TestCompaction</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935L316">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935R326">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method private logFatLineOnFlush(storesToFlush Collection&lt;HStore&gt;, sequenceId long) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2555">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2540">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	compaction : CompactionContext to compaction : Optional&lt;CompactionContext&gt; in method public compact(majorCompaction boolean) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL1972">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1962">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	s : Store to s : HStore in method protected refreshStoreFiles(force boolean) : boolean in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5149">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5182">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method private doClose(abort boolean, status MonitoredTask) : Map&lt;byte[],List&lt;StoreFile&gt;&gt; in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL1563">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1658">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	s : Store to s : HStore in method public createStoreMock(priority int, name String) : HStore in class org.apache.hadoop.hbase.regionserver.TestCompaction.BlockingStoreMockMaker</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935L534">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935R534">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	specificStoresToFlush : Collection&lt;Store&gt; to specificStoresToFlush : Collection&lt;HStore&gt; in method public selectStoresToFlush() : Collection&lt;HStore&gt; in class org.apache.hadoop.hbase.regionserver.FlushNonSloppyStoresFirstPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abL38">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : Store to store : HStore in method public selectStoresToFlush() : Collection&lt;HStore&gt; in class org.apache.hadoop.hbase.regionserver.FlushAllLargeStoresPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-684740b937fb9d4d90bb6a770e1717ffL50">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-684740b937fb9d4d90bb6a770e1717ffR59">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1356,104 +1454,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1998">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	compaction : CompactionContext to compaction : Optional&lt;CompactionContext&gt; in method public compactStores() : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL1992">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1984">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method protected initializeScanners(scan Scan, additionalScanners List&lt;KeyValueScanner&gt;) : void in class org.apache.hadoop.hbase.regionserver.HRegion.RegionScannerImpl</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5899">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5875">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method protected configureForRegion(region HRegion) : void in class org.apache.hadoop.hbase.regionserver.FlushNonSloppyStoresFirstPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abL58">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abR67">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	request : TrackableCompactionRequest to tracker : Tracker in method public testCompactionFailure() : void in class org.apache.hadoop.hbase.regionserver.TestCompaction</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935L316">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935R341">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method private replayFlushInStores(flush FlushDescriptor, prepareFlushResult PrepareFlushResult, dropMemstoreSnapshot boolean) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL4797">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR4781">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	s : Store to s : HStore in method package throwException(title String, regionName String) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL8171">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR8114">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method public testCompactionFailure() : void in class org.apache.hadoop.hbase.regionserver.TestCompaction</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935L316">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935R326">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method private logFatLineOnFlush(storesToFlush Collection&lt;HStore&gt;, sequenceId long) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL2555">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR2540">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	compaction : CompactionContext to compaction : Optional&lt;CompactionContext&gt; in method public compact(majorCompaction boolean) : void in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL1972">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1962">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	s : Store to s : HStore in method protected refreshStoreFiles(force boolean) : boolean in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL5149">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR5182">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method private doClose(abort boolean, status MonitoredTask) : Map&lt;byte[],List&lt;StoreFile&gt;&gt; in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL1563">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR1658">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	s : Store to s : HStore in method public createStoreMock(priority int, name String) : HStore in class org.apache.hadoop.hbase.regionserver.TestCompaction.BlockingStoreMockMaker</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935L534">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ab30997071c0695b9c7ec697e1923935R534">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	specificStoresToFlush : Collection&lt;Store&gt; to specificStoresToFlush : Collection&lt;HStore&gt; in method public selectStoresToFlush() : Collection&lt;HStore&gt; in class org.apache.hadoop.hbase.regionserver.FlushNonSloppyStoresFirstPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abL38">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : Store to store : HStore in method public selectStoresToFlush() : Collection&lt;HStore&gt; in class org.apache.hadoop.hbase.regionserver.FlushAllLargeStoresPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-684740b937fb9d4d90bb6a770e1717ffL50">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-684740b937fb9d4d90bb6a770e1717ffR59">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1485,27 +1485,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	stores : Map&lt;byte[],Store&gt; to stores : Map&lt;byte[],HStore&gt; in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL259">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR261">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	regularStores : Collection&lt;Store&gt; to regularStores : Collection&lt;HStore&gt; in class org.apache.hadoop.hbase.regionserver.FlushNonSloppyStoresFirstPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abL35">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abR35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	result : FlushResult to result : FlushResultImpl in class org.apache.hadoop.hbase.regionserver.HRegion.PrepareFlushResult</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL516">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR519">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	compaction : CompactionContext to compaction : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.CompactSplit.CompactionRunner</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL484">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR445">To</a></td>
@@ -1530,6 +1509,27 @@
                                 <td><i>Change Attribute Type	lastStoreFlushTimeMap : ConcurrentMap&lt;Store,Long&gt; to lastStoreFlushTimeMap : ConcurrentMap&lt;HStore,Long&gt; in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL619">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR622">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	stores : Map&lt;byte[],Store&gt; to stores : Map&lt;byte[],HStore&gt; in class org.apache.hadoop.hbase.regionserver.HRegion</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL259">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR261">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	regularStores : Collection&lt;Store&gt; to regularStores : Collection&lt;HStore&gt; in class org.apache.hadoop.hbase.regionserver.FlushNonSloppyStoresFirstPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abL35">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b186350bc1832658076e52b2431ef0abR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	result : FlushResult to result : FlushResultImpl in class org.apache.hadoop.hbase.regionserver.HRegion.PrepareFlushResult</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cL516">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-6205e907851ed4f650499f7111cbd91cR519">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1560,118 +1560,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-36" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.TestCoprocessorInterface.CoprocessorImpl</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065L197">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065R198">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L234">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R235">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactScannerOpen(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanners List&lt;? extends KeyValueScanner&gt;, scanType ScanType, earliestPutTs long, s InternalScanner, tracker CompactionLifeCycleTracker, readPoint long) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.example.ZooKeeperScanPolicyObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ff36f241deaac4678d1ca0c31ac51fbaL206">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ff36f241deaac4678d1ca0c31ac51fbaR207">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	baseRequest : CompactionRequest to tracker : CompactionLifeCycleTracker in method public requestCompaction(priority int, tracker CompactionLifeCycleTracker, user User) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.Store</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9L265">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9R263">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	r : Region to region : HRegion in method private requestCompactionInternal(region HRegion, store HStore, why String, priority int, selectNow boolean, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL304">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR252">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.RegionCoprocessorHost</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1L589">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1R584">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverInterface.EvenOnlyCompactor</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28L420">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28R420">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.namespace.TestNamespaceAuditor.CustomObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-4a4bbfc79d1c45efbef7600e5d96d56cL464">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-4a4bbfc79d1c45efbef7600e5d96d56cR465">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactScannerOpen(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanners List&lt;? extends KeyValueScanner&gt;, scanType ScanType, earliestPutTs long, s InternalScanner, tracker CompactionLifeCycleTracker, readPoint long) : InternalScanner in class org.apache.hadoop.hbase.regionserver.NoOpScanPolicyObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b27ddf059bb975aed1661bc4cd69db61L64">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b27ddf059bb975aed1661bc4cd69db61R65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverInterface.EvenOnlyCompactor</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28L459">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28R459">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L219">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	requests : List&lt;Pair&lt;CompactionRequest,Store&gt;&gt; to selectNow : boolean in method private requestCompactionInternal(region HRegion, why String, priority int, selectNow boolean, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL256">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR245">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	s : Store to store : HStore in method private requestCompactionInternal(region HRegion, store HStore, why String, priority int, selectNow boolean, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL304">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR252">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.TestCoprocessorInterface.CoprocessorImpl</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065L203">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065R204">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactScannerOpen(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanners List&lt;? extends KeyValueScanner&gt;, scanType ScanType, earliestPutTs long, s InternalScanner, tracker CompactionLifeCycleTracker, readPoint long) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L227">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R228">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactSelection(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, candidates List&lt;StoreFile&gt;, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L206">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R207">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1811,6 +1699,118 @@
                                 <td><i>Rename Parameter	baseRequest : CompactionRequest to tracker : CompactionLifeCycleTracker in method public requestCompaction(priority int, tracker CompactionLifeCycleTracker, user User) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.HStore</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5c916e1ed87e11030d802c1931fc0c97L1649">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-5c916e1ed87e11030d802c1931fc0c97R1640">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.TestCoprocessorInterface.CoprocessorImpl</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065L197">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065R198">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L234">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R235">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactScannerOpen(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanners List&lt;? extends KeyValueScanner&gt;, scanType ScanType, earliestPutTs long, s InternalScanner, tracker CompactionLifeCycleTracker, readPoint long) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.example.ZooKeeperScanPolicyObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ff36f241deaac4678d1ca0c31ac51fbaL206">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-ff36f241deaac4678d1ca0c31ac51fbaR207">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	baseRequest : CompactionRequest to tracker : CompactionLifeCycleTracker in method public requestCompaction(priority int, tracker CompactionLifeCycleTracker, user User) : Optional&lt;CompactionContext&gt; in class org.apache.hadoop.hbase.regionserver.Store</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9L265">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-671174b3a1138492235c1666993666a9R263">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	r : Region to region : HRegion in method private requestCompactionInternal(region HRegion, store HStore, why String, priority int, selectNow boolean, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL304">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR252">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.RegionCoprocessorHost</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1L589">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-8d4a75200e5f08f08f070eedde7279f1R584">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverInterface.EvenOnlyCompactor</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28L420">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28R420">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.namespace.TestNamespaceAuditor.CustomObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-4a4bbfc79d1c45efbef7600e5d96d56cL464">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-4a4bbfc79d1c45efbef7600e5d96d56cR465">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactScannerOpen(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanners List&lt;? extends KeyValueScanner&gt;, scanType ScanType, earliestPutTs long, s InternalScanner, tracker CompactionLifeCycleTracker, readPoint long) : InternalScanner in class org.apache.hadoop.hbase.regionserver.NoOpScanPolicyObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b27ddf059bb975aed1661bc4cd69db61L64">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b27ddf059bb975aed1661bc4cd69db61R65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.TestRegionObserverInterface.EvenOnlyCompactor</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28L459">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-b7c824dfe98bd948e5f77f87fddcaf28R459">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompact(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanner InternalScanner, scanType ScanType, tracker CompactionLifeCycleTracker) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L219">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R219">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	requests : List&lt;Pair&lt;CompactionRequest,Store&gt;&gt; to selectNow : boolean in method private requestCompactionInternal(region HRegion, why String, priority int, selectNow boolean, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL256">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR245">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	s : Store to store : HStore in method private requestCompactionInternal(region HRegion, store HStore, why String, priority int, selectNow boolean, tracker CompactionLifeCycleTracker, user User) : void in class org.apache.hadoop.hbase.regionserver.CompactSplit</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fL304">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-fa92cc407308942d205f31e578c64a1fR252">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public postCompact(e ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, resultFile StoreFile, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.TestCoprocessorInterface.CoprocessorImpl</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065L203">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-07035893460996926a55c2f12ad5f065R204">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactScannerOpen(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, scanners List&lt;? extends KeyValueScanner&gt;, scanType ScanType, earliestPutTs long, s InternalScanner, tracker CompactionLifeCycleTracker, readPoint long) : InternalScanner in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L227">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R228">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	request : CompactionRequest to tracker : CompactionLifeCycleTracker in method public preCompactSelection(c ObserverContext&lt;RegionCoprocessorEnvironment&gt;, store Store, candidates List&lt;StoreFile&gt;, tracker CompactionLifeCycleTracker) : void in class org.apache.hadoop.hbase.coprocessor.SimpleRegionObserver</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71L206">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/61d10feffaa7b96ee46e2a6f1e542d80c1d76f42?diff=split#diff-87af787d0b664abf3404377efd964a71R207">To</a></td>
                             </tr>
                             
                             </tbody>

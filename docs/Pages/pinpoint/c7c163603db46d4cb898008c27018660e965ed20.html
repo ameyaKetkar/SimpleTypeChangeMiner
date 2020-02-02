@@ -380,6 +380,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public handleStreamData(clientStreamChannel ClientStreamChannel, packet StreamResponsePacket) : void renamed to public handleStreamResponsePacket(streamChannel ClientStreamChannel, packet StreamResponsePacket) : void in class com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.EventHandler</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-23f0abdb3c1dc160536118d6ce32ad1fL204">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-23f0abdb3c1dc160536118d6ce32ad1fR198">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public handleStreamCreate(serverStreamChannel ServerStreamChannel, packet StreamCreatePacket) : StreamCode renamed to public handleStreamCreatePacket(streamChannel ServerStreamChannel, packet StreamCreatePacket) : StreamCode in class com.navercorp.pinpoint.profiler.receiver.CommandDispatcher</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-e7a357e1821407a14d9e0b67ee05031eL100">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-e7a357e1821407a14d9e0b67ee05031eR99">To</a></td>
@@ -483,13 +490,6 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-4b22be2b985c6d1523ef528e2f3d862bR295">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public handleStreamData(clientStreamChannel ClientStreamChannel, packet StreamResponsePacket) : void renamed to public handleStreamResponsePacket(streamChannel ClientStreamChannel, packet StreamResponsePacket) : void in class com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.EventHandler</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-23f0abdb3c1dc160536118d6ce32ad1fL204">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-23f0abdb3c1dc160536118d6ce32ad1fR198">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -518,69 +518,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-25" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method private createStreamChannel(clusterPoint PinpointServerClusterPoint, payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.collector.cluster.route.StreamRouteHandler</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ad47a1a023ff3cd7bedd66773124b66dL136">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ad47a1a023ff3cd7bedd66773124b66dR135">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	packet : StreamResponsePacket to packet : StreamClosePacket in method public handleStreamClosePacket(streamChannel ClientStreamChannel, packet StreamClosePacket) : void in class com.navercorp.pinpoint.rpc.RecordedStreamChannelMessageListener</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fL48">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fR60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientHandler</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-9d003bfbb78f538d2ae2e54716d8f3fdL366">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-9d003bfbb78f538d2ae2e54716d8f3fdR361">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(agentInfo AgentInfo, payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.web.service.AgentService</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-75cb1d2f61badacd56006c345569a86cL62">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-75cb1d2f61badacd56006c345569a86cR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.rpc.server.DefaultPinpointServer</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cL244">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cR238">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.rpc.client.PinpointClientHandler</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739L54">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	routeStreamMessageHandler : ServerStreamChannelMessageListener to routeStreamMessageHandler : ServerStreamChannelMessageHandler in method public CollectorClusterConnectionFactory(clusterId String, routeMessageHandler MessageListener, routeStreamMessageHandler ServerStreamChannelMessageHandler) in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionFactory</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aL37">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aR37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	packet : StreamClosePacket to packet : StreamResponsePacket in method public handleStreamResponsePacket(streamChannel ClientStreamChannel, packet StreamResponsePacket) : void in class com.navercorp.pinpoint.rpc.RecordedStreamChannelMessageListener</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fL55">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fR53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(agentInfo AgentInfo, tBase TBase&lt;?,?&gt;, streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.web.service.AgentServiceImpl</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-c738722e060b9953de4d9a77d516984cL252">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-c738722e060b9953de4d9a77d516984cR252">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -694,6 +631,69 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-c738722e060b9953de4d9a77d516984cR258">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method private createStreamChannel(clusterPoint PinpointServerClusterPoint, payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.collector.cluster.route.StreamRouteHandler</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ad47a1a023ff3cd7bedd66773124b66dL136">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ad47a1a023ff3cd7bedd66773124b66dR135">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	packet : StreamResponsePacket to packet : StreamClosePacket in method public handleStreamClosePacket(streamChannel ClientStreamChannel, packet StreamClosePacket) : void in class com.navercorp.pinpoint.rpc.RecordedStreamChannelMessageListener</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fL48">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fR60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientHandler</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-9d003bfbb78f538d2ae2e54716d8f3fdL366">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-9d003bfbb78f538d2ae2e54716d8f3fdR361">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(agentInfo AgentInfo, payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.web.service.AgentService</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-75cb1d2f61badacd56006c345569a86cL62">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-75cb1d2f61badacd56006c345569a86cR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.rpc.server.DefaultPinpointServer</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cL244">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cR238">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.rpc.client.PinpointClientHandler</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739L54">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	routeStreamMessageHandler : ServerStreamChannelMessageListener to routeStreamMessageHandler : ServerStreamChannelMessageHandler in method public CollectorClusterConnectionFactory(clusterId String, routeMessageHandler MessageListener, routeStreamMessageHandler ServerStreamChannelMessageHandler) in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionFactory</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aL37">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aR37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	packet : StreamClosePacket to packet : StreamResponsePacket in method public handleStreamResponsePacket(streamChannel ClientStreamChannel, packet StreamResponsePacket) : void in class com.navercorp.pinpoint.rpc.RecordedStreamChannelMessageListener</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fL55">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fR53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(agentInfo AgentInfo, tBase TBase&lt;?,?&gt;, streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.web.service.AgentServiceImpl</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-c738722e060b9953de4d9a77d516984cL252">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-c738722e060b9953de4d9a77d516984cR252">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -707,16 +707,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	serverStreamChannelMessageListener : ServerStreamChannelMessageListener to serverStreamChannelMessageHandler : ServerStreamChannelMessageHandler in method private createConnectionFactory() : ConnectionFactory in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientFactory</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-4b22be2b985c6d1523ef528e2f3d862bL191">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-4b22be2b985c6d1523ef528e2f3d862bR191">To</a></td>
+                                <td><i>Rename Variable	serverStreamChannelMessageListener : ServerListener to serverStreamChannelMessageHandler : ServerListener in method public streamClosedTest3() : void in class com.navercorp.pinpoint.rpc.stream.StreamChannelManagerTest</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-3e506b8da9279831f42f8a928eccae19L221">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-3e506b8da9279831f42f8a928eccae19R221">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	serverStreamChannelMessageListener : ServerListener to serverStreamChannelMessageHandler : ServerListener in method public streamClosedTest3() : void in class com.navercorp.pinpoint.rpc.stream.StreamChannelManagerTest</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-3e506b8da9279831f42f8a928eccae19L221">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-3e506b8da9279831f42f8a928eccae19R221">To</a></td>
+                                <td><i>Rename Variable	serverStreamChannelMessageListener : ServerStreamChannelMessageListener to serverStreamChannelMessageHandler : ServerStreamChannelMessageHandler in method private createConnectionFactory() : ConnectionFactory in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientFactory</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-4b22be2b985c6d1523ef528e2f3d862bL191">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-4b22be2b985c6d1523ef528e2f3d862bR191">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -729,13 +729,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ServerStreamChannelMessageListener to ServerStreamChannelMessageHandler in method public getRouteStreamMessageHandler() : ServerStreamChannelMessageHandler in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionOption</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5e57b78e8bf02ddb9debc037f411a8f7L32">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5e57b78e8bf02ddb9debc037f411a8f7R32">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -772,6 +765,13 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-71d1200104ba00a380e6548629f565ceR39">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ServerStreamChannelMessageListener to ServerStreamChannelMessageHandler in method public getRouteStreamMessageHandler() : ServerStreamChannelMessageHandler in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionOption</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5e57b78e8bf02ddb9debc037f411a8f7L32">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5e57b78e8bf02ddb9debc037f411a8f7R32">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -785,6 +785,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	com.navercorp.pinpoint.rpc.stream.ClientStreamChannelMessageListener renamed to com.navercorp.pinpoint.rpc.stream.ClientStreamChannelEventHandler</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.MessageListener renamed to com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.EventHandler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -793,13 +800,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	com.navercorp.pinpoint.rpc.stream.ServerStreamChannelMessageListener renamed to com.navercorp.pinpoint.rpc.stream.ServerStreamChannelMessageHandler</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	com.navercorp.pinpoint.rpc.stream.ClientStreamChannelMessageListener renamed to com.navercorp.pinpoint.rpc.stream.ClientStreamChannelEventHandler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -924,13 +924,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	routeStreamMessageHandler : ServerStreamChannelMessageListener to routeStreamMessageHandler : ServerStreamChannelMessageHandler in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionFactory</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aL35">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aR35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	serverStreamChannelMessageListener : ServerStreamChannelMessageListener to serverStreamChannelMessageHandler : ServerStreamChannelMessageHandler in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientHandlerFactory</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-44730fdc3c7da04bdb1c71dee461bc9cL38">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-44730fdc3c7da04bdb1c71dee461bc9cR39">To</a></td>
@@ -964,6 +957,13 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-9d003bfbb78f538d2ae2e54716d8f3fdR92">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	routeStreamMessageHandler : ServerStreamChannelMessageListener to routeStreamMessageHandler : ServerStreamChannelMessageHandler in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionFactory</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aL35">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-5ff60c02961ea9ebba98ad533aae802aR35">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -974,6 +974,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-32" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.test.client.TestPinpointClient</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-f1c95f75aaab7e99279fa68e222381d3L92">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-f1c95f75aaab7e99279fa68e222381d3R92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	clientStreamChannel : ClientStreamChannel to streamChannel : ClientStreamChannel in method public handleStreamClosePacket(streamChannel ClientStreamChannel, packet StreamClosePacket) : void in class com.navercorp.pinpoint.rpc.RecordedStreamChannelMessageListener</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fL49">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fR60">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1183,20 +1197,6 @@
                                 <td><i>Rename Parameter	serverStreamChannelMessageListener : ServerStreamChannelMessageListener to serverStreamChannelMessageHandler : ServerStreamChannelMessageHandler in method public DefaultPinpointClientHandlerFactory(clientOption ClientOption, clusterOption ClusterOption, handshakerFactory HandshakerFactory, messageListener MessageListener, serverStreamChannelMessageHandler ServerStreamChannelMessageHandler, stateChangeEventListeners List&lt;StateChangeEventListener&gt;) in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientHandlerFactory</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-44730fdc3c7da04bdb1c71dee461bc9cL44">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-44730fdc3c7da04bdb1c71dee461bc9cR45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	messageListener : ClientStreamChannelMessageListener to streamChannelEventHandler : ClientStreamChannelEventHandler in method public openStream(payload byte[], streamChannelEventHandler ClientStreamChannelEventHandler) : ClientStreamChannel in class com.navercorp.pinpoint.test.client.TestPinpointClient</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-f1c95f75aaab7e99279fa68e222381d3L92">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-f1c95f75aaab7e99279fa68e222381d3R92">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	clientStreamChannel : ClientStreamChannel to streamChannel : ClientStreamChannel in method public handleStreamClosePacket(streamChannel ClientStreamChannel, packet StreamClosePacket) : void in class com.navercorp.pinpoint.rpc.RecordedStreamChannelMessageListener</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fL49">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/c7c163603db46d4cb898008c27018660e965ed20?diff=split#diff-ac72ea0e153bd416a8e23b02b3b0cd2fR60">To</a></td>
                             </tr>
                             
                             </tbody>

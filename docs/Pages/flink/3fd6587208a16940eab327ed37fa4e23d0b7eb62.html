@@ -266,6 +266,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	keySerializationStream : ByteArrayDataOutputView to keySerializationStream : DataOutputSerializer in method private getPreMergedValue(values List&lt;V&gt;, elementSerializer TypeSerializer&lt;V&gt;, keySerializationStream DataOutputSerializer) : byte[] in class org.apache.flink.contrib.streaming.state.RocksDBListState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-3edf108a5fadd40bc3d9bb8c28b83504L246">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-3edf108a5fadd40bc3d9bb8c28b83504R248">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	dataInputView : ByteArrayDataInputView to dataInputView : DataInputDeserializer in method private deserializeUserKey(dataInputView DataInputDeserializer, userKeyOffset int, rawKeyBytes byte[], keySerializer TypeSerializer&lt;UK&gt;) : UK in class org.apache.flink.contrib.streaming.state.RocksDBMapState</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-31190f51b4dd9038abd33e1445846c1fL335">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-31190f51b4dd9038abd33e1445846c1fR336">To</a></td>
@@ -383,13 +390,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R186">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	keySerializationStream : ByteArrayDataOutputView to keySerializationStream : DataOutputSerializer in method private getPreMergedValue(values List&lt;V&gt;, elementSerializer TypeSerializer&lt;V&gt;, keySerializationStream DataOutputSerializer) : byte[] in class org.apache.flink.contrib.streaming.state.RocksDBListState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-3edf108a5fadd40bc3d9bb8c28b83504L246">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-3edf108a5fadd40bc3d9bb8c28b83504R248">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -400,41 +400,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	outputView : ByteArrayDataOutputView to outputView : DataOutputSerializer in method public getSerializedValue(serializedKeyAndNamespace byte[], safeKeySerializer TypeSerializer&lt;K&gt;, safeNamespaceSerializer TypeSerializer&lt;N&gt;, safeValueSerializer TypeSerializer&lt;Map&lt;UK,UV&gt;&gt;) : byte[] in class org.apache.flink.contrib.streaming.state.RocksDBMapState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-31190f51b4dd9038abd33e1445846c1fL243">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-31190f51b4dd9038abd33e1445846c1fR262">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	outputView : ByteArrayDataOutputView to outputView : DataOutputSerializer in method public testKeySerializationAndDeserialization() : void in class org.apache.flink.contrib.streaming.state.RocksDBKeySerializationUtilsTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-648b3bb5f368d55afc4c005e1e7248deL64">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-648b3bb5f368d55afc4c005e1e7248deR66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tmpKeySerializationView : ByteArrayDataOutputView to tmpKeySerializationView : DataOutputSerializer in method public getSerializedValue(serializedKeyAndNamespace byte[], safeKeySerializer TypeSerializer&lt;K&gt;, safeNamespaceSerializer TypeSerializer&lt;N&gt;, safeValueSerializer TypeSerializer&lt;V&gt;) : byte[] in class org.apache.flink.contrib.streaming.state.AbstractRocksDBState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48L124">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R144">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	outputStream : ByteArrayDataOutputView to outputStream : DataOutputSerializer in method package testIteratorHelper(keySerializer TypeSerializer&lt;K&gt;, namespaceSerializer TypeSerializer, maxKeyGroupNumber int, getKeyFunc Function&lt;Integer,K&gt;) : void in class org.apache.flink.contrib.streaming.state.RocksDBRocksStateKeysIteratorTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-478769972d1de4700d4295a6fd3f2ceeL71">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-478769972d1de4700d4295a6fd3f2ceeR108">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	namespaceOutputView : ByteArrayDataOutputView to namespaceOutputView : DataOutputSerializer in method public getKeys(state String, namespace N) : Stream&lt;K&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-4585546df289e14ed098ed06400303c2L319">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-4585546df289e14ed098ed06400303c2R331">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -478,6 +443,41 @@
                                 <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-b1bc586d487c7d4eb70b61263b586e21R115">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	outputView : ByteArrayDataOutputView to outputView : DataOutputSerializer in method public getSerializedValue(serializedKeyAndNamespace byte[], safeKeySerializer TypeSerializer&lt;K&gt;, safeNamespaceSerializer TypeSerializer&lt;N&gt;, safeValueSerializer TypeSerializer&lt;Map&lt;UK,UV&gt;&gt;) : byte[] in class org.apache.flink.contrib.streaming.state.RocksDBMapState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-31190f51b4dd9038abd33e1445846c1fL243">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-31190f51b4dd9038abd33e1445846c1fR262">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	outputView : ByteArrayDataOutputView to outputView : DataOutputSerializer in method public testKeySerializationAndDeserialization() : void in class org.apache.flink.contrib.streaming.state.RocksDBKeySerializationUtilsTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-648b3bb5f368d55afc4c005e1e7248deL64">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-648b3bb5f368d55afc4c005e1e7248deR66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tmpKeySerializationView : ByteArrayDataOutputView to tmpKeySerializationView : DataOutputSerializer in method public getSerializedValue(serializedKeyAndNamespace byte[], safeKeySerializer TypeSerializer&lt;K&gt;, safeNamespaceSerializer TypeSerializer&lt;N&gt;, safeValueSerializer TypeSerializer&lt;V&gt;) : byte[] in class org.apache.flink.contrib.streaming.state.AbstractRocksDBState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48L124">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R144">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	outputStream : ByteArrayDataOutputView to outputStream : DataOutputSerializer in method package testIteratorHelper(keySerializer TypeSerializer&lt;K&gt;, namespaceSerializer TypeSerializer, maxKeyGroupNumber int, getKeyFunc Function&lt;Integer,K&gt;) : void in class org.apache.flink.contrib.streaming.state.RocksDBRocksStateKeysIteratorTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-478769972d1de4700d4295a6fd3f2ceeL71">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-478769972d1de4700d4295a6fd3f2ceeR108">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	namespaceOutputView : ByteArrayDataOutputView to namespaceOutputView : DataOutputSerializer in method public getKeys(state String, namespace N) : Stream&lt;K&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-4585546df289e14ed098ed06400303c2L319">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-4585546df289e14ed098ed06400303c2R331">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -488,27 +488,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	inputView : ByteArrayDataInputView to inputView : DataInputDeserializer in class org.apache.flink.contrib.streaming.state.RocksDBCachingPriorityQueueSet</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-7893b3e7fc70dcec52678aa7ff3cfb59L91">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-7893b3e7fc70dcec52678aa7ff3cfb59R91">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dataOutputView : ByteArrayDataOutputView to dataOutputView : DataOutputSerializer in class org.apache.flink.contrib.streaming.state.AbstractRocksDBState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48L69">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	dataInputView : ByteArrayDataInputView to dataInputView : DataInputDeserializer in class org.apache.flink.contrib.streaming.state.AbstractRocksDBState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48L71">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R71">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -578,6 +557,27 @@
                                 <td><i>Change Attribute Type	sharedElementInView : ByteArrayDataInputView to sharedElementInView : DataInputDeserializer in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBPriorityQueueSetFactory</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-4585546df289e14ed098ed06400303c2L1508">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-4585546df289e14ed098ed06400303c2R1508">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	inputView : ByteArrayDataInputView to inputView : DataInputDeserializer in class org.apache.flink.contrib.streaming.state.RocksDBCachingPriorityQueueSet</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-7893b3e7fc70dcec52678aa7ff3cfb59L91">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-7893b3e7fc70dcec52678aa7ff3cfb59R91">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dataOutputView : ByteArrayDataOutputView to dataOutputView : DataOutputSerializer in class org.apache.flink.contrib.streaming.state.AbstractRocksDBState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48L69">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	dataInputView : ByteArrayDataInputView to dataInputView : DataInputDeserializer in class org.apache.flink.contrib.streaming.state.AbstractRocksDBState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48L71">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/3fd6587208a16940eab327ed37fa4e23d0b7eb62?diff=split#diff-aba1a7c9cd5807fa58a5cce57b283e48R71">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -176,16 +176,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	private applyPartitionsUpdatesCounters(counters Iterable&lt;PartitionUpdateCountersMessage&gt;) : void from class org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxRemoteAdapter to public applyPartitionsUpdatesCounters(counters Iterable&lt;PartitionUpdateCountersMessage&gt;) : void from class org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-df1926be697ef42e2afe27eddd50e549L999">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-72d6cb57ef77909b53482e57262b6068R2211">To</a></td>
+                                <td><i>Move Method	public filterUpdateCountersForBackupNode(node ClusterNode) : List&lt;PartitionUpdateCountersMessage&gt; from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter to public filterUpdateCountersForBackupNode(tx IgniteInternalTx, node ClusterNode) : List&lt;PartitionUpdateCountersMessage&gt; from class org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-1141bbb842fbfc20cc7a621bf1cada1dL947">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-72d6cb57ef77909b53482e57262b6068R2244">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public filterUpdateCountersForBackupNode(node ClusterNode) : List&lt;PartitionUpdateCountersMessage&gt; from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter to public filterUpdateCountersForBackupNode(tx IgniteInternalTx, node ClusterNode) : List&lt;PartitionUpdateCountersMessage&gt; from class org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-1141bbb842fbfc20cc7a621bf1cada1dL947">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-72d6cb57ef77909b53482e57262b6068R2244">To</a></td>
+                                <td><i>Move Method	private applyPartitionsUpdatesCounters(counters Iterable&lt;PartitionUpdateCountersMessage&gt;) : void from class org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxRemoteAdapter to public applyPartitionsUpdatesCounters(counters Iterable&lt;PartitionUpdateCountersMessage&gt;) : void from class org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-df1926be697ef42e2afe27eddd50e549L999">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-72d6cb57ef77909b53482e57262b6068R2211">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -294,13 +294,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	activeTxs : Map&lt;Long,Long&gt; to activeTxs : Map&lt;Long,ActiveTx&gt; in class org.apache.ignite.internal.processors.cache.mvcc.MvccProcessorImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068L193">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068R200">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	queue : Queue&lt;Item&gt; to queue : TreeSet&lt;Item&gt; in class org.apache.ignite.internal.processors.cache.PartitionUpdateCounter</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-114670444a10d79ed6e569a0e518f277L34">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-114670444a10d79ed6e569a0e518f277R33">To</a></td>
@@ -311,6 +304,13 @@
                                 <td><i>Change Attribute Type	evtNodeId : UUID to node : ClusterNode in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.NodeFailureTimeoutObject</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L2431">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R2447">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	activeTxs : Map&lt;Long,Long&gt; to activeTxs : Map&lt;Long,ActiveTx&gt; in class org.apache.ignite.internal.processors.cache.mvcc.MvccProcessorImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068L193">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068R200">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -326,16 +326,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	evtNodeId : UUID to node : ClusterNode in method private NodeFailureTimeoutObject(node ClusterNode, mvccCrd MvccCoordinator) in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.NodeFailureTimeoutObject</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L2436">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R2455">To</a></td>
+                                <td><i>Rename Parameter	committed : boolean to increaseCommittedCntr : boolean in method private onTxDone(txCntr Long, increaseCommittedCntr boolean) : void in class org.apache.ignite.internal.processors.cache.mvcc.MvccProcessorImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068L956">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068R991">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	committed : boolean to increaseCommittedCntr : boolean in method private onTxDone(txCntr Long, increaseCommittedCntr boolean) : void in class org.apache.ignite.internal.processors.cache.mvcc.MvccProcessorImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068L956">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-e26b3e36731834503497be77cc6cd068R991">To</a></td>
+                                <td><i>Rename Parameter	evtNodeId : UUID to node : ClusterNode in method private NodeFailureTimeoutObject(node ClusterNode, mvccCrd MvccCoordinator) in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager.NodeFailureTimeoutObject</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L2436">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/5939a94763c8a3e92b66b3f591a816dd6c49f35a?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R2455">To</a></td>
                             </tr>
                             
                             </tbody>

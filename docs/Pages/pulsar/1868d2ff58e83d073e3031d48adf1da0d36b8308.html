@@ -285,6 +285,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getOwnedServiceUnits() : Map&lt;String,OwnedServiceUnit&gt; renamed to public getOwnedBundles() : Map&lt;String,OwnedBundle&gt; in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L268">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R298">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public lookupDestination(property String, cluster String, namespace String, dest String, authoritative boolean) : LookupData renamed to public lookupDestinationAsync(property String, cluster String, namespace String, dest String, authoritative boolean, asyncResponse AsyncResponse) : void in class com.yahoo.pulsar.broker.lookup.DestinationLookup</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-013a8db97a929ab1e82d40d694be703eL44">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-013a8db97a929ab1e82d40d694be703eR45">To</a></td>
@@ -302,13 +309,6 @@
                                 <td><i>Rename Method	public suIdFromPath(path String, factory NamespaceBundleFactory) : ServiceUnitId renamed to public suBundleFromPath(path String, factory NamespaceBundleFactory) : NamespaceBundle in class com.yahoo.pulsar.broker.namespace.ServiceUnitZkUtils</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-a2ef80817c363d3b0a254a24cf9e999bL71">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-a2ef80817c363d3b0a254a24cf9e999bR71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getOwnedServiceUnits() : Map&lt;String,OwnedServiceUnit&gt; renamed to public getOwnedBundles() : Map&lt;String,OwnedBundle&gt; in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L268">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R298">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -469,6 +469,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	Map&lt;String,OwnedServiceUnit&gt; to Map&lt;String,OwnedBundle&gt; in method public getOwnedBundles() : Map&lt;String,OwnedBundle&gt; in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L268">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R298">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	void to CompletableFuture&lt;Optional&lt;LocalPolicies&gt;&gt; in method public createPolicies(path String, readFromGlobal boolean) : CompletableFuture&lt;Optional&lt;LocalPolicies&gt;&gt; in class com.yahoo.pulsar.broker.cache.LocalZooKeeperCacheService</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-34217dbf58911afb45c8a108b87d0c82L117">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-34217dbf58911afb45c8a108b87d0c82R134">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to Optional&lt;T&gt; in method public get(path String) : Optional&lt;T&gt; in class com.yahoo.pulsar.zookeeper.ZooKeeperDataCache</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcL49">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcR62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Entry&lt;T,Stat&gt; to Optional&lt;Entry&lt;T,Stat&gt;&gt; in method public getWithStat(path String) : Optional&lt;Entry&lt;T,Stat&gt;&gt; in class com.yahoo.pulsar.zookeeper.ZooKeeperDataCache</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcL53">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcR75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	ServiceUnitId to NamespaceBundle in method public suBundleFromPath(path String, factory NamespaceBundleFactory) : NamespaceBundle in class com.yahoo.pulsar.broker.namespace.ServiceUnitZkUtils</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-a2ef80817c363d3b0a254a24cf9e999bL71">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-a2ef80817c363d3b0a254a24cf9e999bR71">To</a></td>
@@ -514,34 +542,6 @@
                                 <td><i>Change Return Type	Entry&lt;T,Stat&gt; to Optional&lt;Entry&lt;T,Stat&gt;&gt; in method public getData(path String, watcher Watcher, deserializer Deserializer&lt;T&gt;) : Optional&lt;Entry&lt;T,Stat&gt;&gt; in class com.yahoo.pulsar.zookeeper.ZooKeeperCache</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-974da5e66c09b74a329c6a10c8aae1b4L199">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-974da5e66c09b74a329c6a10c8aae1b4R207">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;String,OwnedServiceUnit&gt; to Map&lt;String,OwnedBundle&gt; in method public getOwnedBundles() : Map&lt;String,OwnedBundle&gt; in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L268">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R298">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to CompletableFuture&lt;Optional&lt;LocalPolicies&gt;&gt; in method public createPolicies(path String, readFromGlobal boolean) : CompletableFuture&lt;Optional&lt;LocalPolicies&gt;&gt; in class com.yahoo.pulsar.broker.cache.LocalZooKeeperCacheService</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-34217dbf58911afb45c8a108b87d0c82L117">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-34217dbf58911afb45c8a108b87d0c82R134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to Optional&lt;T&gt; in method public get(path String) : Optional&lt;T&gt; in class com.yahoo.pulsar.zookeeper.ZooKeeperDataCache</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcL49">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcR62">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Entry&lt;T,Stat&gt; to Optional&lt;Entry&lt;T,Stat&gt;&gt; in method public getWithStat(path String) : Optional&lt;Entry&lt;T,Stat&gt;&gt; in class com.yahoo.pulsar.zookeeper.ZooKeeperDataCache</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcL53">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7860168f31f0d35de4f1b8cd92ad61fcR75">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -615,6 +615,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	serviceUnitId : ServiceUnitId to namespaceBundle : NamespaceBundle in method private addTopicToStatsMaps(topicName DestinationName, topic PersistentTopic) : void in class com.yahoo.pulsar.broker.service.BrokerService</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edL522">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edR529">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	serviceUnits : Set&lt;ServiceUnitId&gt; to serviceUnits : Set&lt;NamespaceBundle&gt; in method public unloadNamespaceBundlesGracefully() : void in class com.yahoo.pulsar.broker.service.BrokerService</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edL301">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edR320">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	testNs : NamespaceName to testBundle : NamespaceBundle in method public testGetOwner() : void in class com.yahoo.pulsar.broker.namespace.OwnershipCacheTest</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23L156">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23R150">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	testNs : NamespaceName to testBundle : NamespaceBundle in method public testDisableOwnership() : void in class com.yahoo.pulsar.broker.namespace.OwnershipCacheTest</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23L98">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23R104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	nsFullBundle : ServiceUnitId to nsFullBundle : NamespaceBundle in method public unloadSLANamespace() : void in class com.yahoo.pulsar.broker.namespace.NamespaceService</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-922f83c6f2bf6f0af00ef70a2c6dd70fL684">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-922f83c6f2bf6f0af00ef70a2c6dd70fR707">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -693,41 +728,6 @@
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-62460c717cc830ad298b1d4da105fe9cR106">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	serviceUnitId : ServiceUnitId to namespaceBundle : NamespaceBundle in method private addTopicToStatsMaps(topicName DestinationName, topic PersistentTopic) : void in class com.yahoo.pulsar.broker.service.BrokerService</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edL522">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edR529">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	serviceUnits : Set&lt;ServiceUnitId&gt; to serviceUnits : Set&lt;NamespaceBundle&gt; in method public unloadNamespaceBundlesGracefully() : void in class com.yahoo.pulsar.broker.service.BrokerService</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edL301">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-483f002e2db69883012f75649177d1edR320">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	testNs : NamespaceName to testBundle : NamespaceBundle in method public testGetOwner() : void in class com.yahoo.pulsar.broker.namespace.OwnershipCacheTest</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23L156">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23R150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	testNs : NamespaceName to testBundle : NamespaceBundle in method public testDisableOwnership() : void in class com.yahoo.pulsar.broker.namespace.OwnershipCacheTest</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23L98">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-2ff4aaf2c378c4a6c59f9d13e455ec23R104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	nsFullBundle : ServiceUnitId to nsFullBundle : NamespaceBundle in method public unloadSLANamespace() : void in class com.yahoo.pulsar.broker.namespace.NamespaceService</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-922f83c6f2bf6f0af00ef70a2c6dd70fL684">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-922f83c6f2bf6f0af00ef70a2c6dd70fR707">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -759,20 +759,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	ownedServiceUnitsCache : LoadingCache&lt;String,OwnedServiceUnit&gt; to ownedBundlesCache : AsyncLoadingCache&lt;String,OwnedBundle&gt; in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L79">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	suName : ServiceUnitId to bundle : NamespaceBundle in class com.yahoo.pulsar.broker.namespace.OwnedBundle</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-bd5e85972b158853ac90353095ad0671L31">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7817a378214ade9035fb09c6cfab1f72R31">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	bundlesCache : LoadingCache&lt;NamespaceName,NamespaceBundles&gt; to bundlesCache : AsyncLoadingCache&lt;NamespaceName,NamespaceBundles&gt; in class com.yahoo.pulsar.common.naming.NamespaceBundleFactory</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-65271b0f10f0d42e756dfd1662951878L57">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-65271b0f10f0d42e756dfd1662951878R57">To</a></td>
@@ -783,6 +769,20 @@
                                 <td><i>Change Attribute Type	dataCache : Cache&lt;String,Entry&lt;Object,Stat&gt;&gt; to dataCache : AsyncLoadingCache&lt;String,Entry&lt;Object,Stat&gt;&gt; in class com.yahoo.pulsar.zookeeper.ZooKeeperCache</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-974da5e66c09b74a329c6a10c8aae1b4L67">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-974da5e66c09b74a329c6a10c8aae1b4R72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	ownedServiceUnitsCache : LoadingCache&lt;String,OwnedServiceUnit&gt; to ownedBundlesCache : AsyncLoadingCache&lt;String,OwnedBundle&gt; in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L79">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	suName : ServiceUnitId to bundle : NamespaceBundle in class com.yahoo.pulsar.broker.namespace.OwnedBundle</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-bd5e85972b158853ac90353095ad0671L31">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-7817a378214ade9035fb09c6cfab1f72R31">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -798,13 +798,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	suname : ServiceUnitId to bundle : NamespaceBundle in method public removeOwnership(bundle NamespaceBundle) : void in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L241">From</a></td>
-                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R271">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	nsBundle : NamespaceBundle to bundle : NamespaceBundle in method public unloadNamespaceBundle(bundle NamespaceBundle) : void in class com.yahoo.pulsar.broker.namespace.NamespaceService</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-922f83c6f2bf6f0af00ef70a2c6dd70fL419">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-922f83c6f2bf6f0af00ef70a2c6dd70fR444">To</a></td>
@@ -815,6 +808,13 @@
                                 <td><i>Rename Parameter	suName : ServiceUnitId to bundle : NamespaceBundle in method public validateBundleOwnership(bundle NamespaceBundle, authoritative boolean, readOnly boolean) : void in class com.yahoo.pulsar.broker.web.PulsarWebResource</i></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-38f06a5ed0927eac619d05be62fc0e13L435">From</a></td>
                                 <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-38f06a5ed0927eac619d05be62fc0e13R330">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	suname : ServiceUnitId to bundle : NamespaceBundle in method public removeOwnership(bundle NamespaceBundle) : void in class com.yahoo.pulsar.broker.namespace.OwnershipCache</i></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20L241">From</a></td>
+                                <td><a href = "https://github.com/apache/pulsar/commit/1868d2ff58e83d073e3031d48adf1da0d36b8308?diff=split#diff-5ef0ddc3732804ac801c14888affda20R271">To</a></td>
                             </tr>
                             
                             </tbody>

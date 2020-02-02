@@ -336,13 +336,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	package chooseSourceDatanode(block Block, containingNodes List&lt;DatanodeDescriptor&gt;, nodesContainingLiveReplicas List&lt;DatanodeStorageInfo&gt;, numReplicas NumberReplicas, priority int) : DatanodeDescriptor renamed to package chooseSourceDatanodes(block BlockInfo, containingNodes List&lt;DatanodeDescriptor&gt;, nodesContainingLiveReplicas List&lt;DatanodeStorageInfo&gt;, numReplicas NumberReplicas, missingBlockIndices List&lt;Short&gt;, numSourceNodes int, priority int) : DatanodeDescriptor[] in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1621">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1654">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	package computeReplicationWorkForBlocks(blocksToReplicate List&lt;List&lt;BlockInfo&gt;&gt;) : int renamed to package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1361">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1362">To</a></td>
@@ -353,6 +346,13 @@
                                 <td><i>Rename Method	package computeReplicationWork(blocksToProcess int) : int renamed to package computeBlockRecoveryWork(blocksToProcess int) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1339">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1340">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	package chooseSourceDatanode(block Block, containingNodes List&lt;DatanodeDescriptor&gt;, nodesContainingLiveReplicas List&lt;DatanodeStorageInfo&gt;, numReplicas NumberReplicas, priority int) : DatanodeDescriptor renamed to package chooseSourceDatanodes(block BlockInfo, containingNodes List&lt;DatanodeDescriptor&gt;, nodesContainingLiveReplicas List&lt;DatanodeStorageInfo&gt;, numReplicas NumberReplicas, missingBlockIndices List&lt;Short&gt;, numSourceNodes int, priority int) : DatanodeDescriptor[] in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1621">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1654">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -411,16 +411,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	work : List&lt;ReplicationWork&gt; to recovWork : List&lt;BlockRecoveryWork&gt; in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1375">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1377">To</a></td>
+                                <td><i>Rename Variable	srcNode : DatanodeDescriptor to srcNodes : DatanodeDescriptor[] in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1370">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1402">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	srcNode : DatanodeDescriptor to srcNodes : DatanodeDescriptor[] in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1370">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1402">To</a></td>
+                                <td><i>Rename Variable	work : List&lt;ReplicationWork&gt; to recovWork : List&lt;BlockRecoveryWork&gt; in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1375">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1377">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -532,13 +532,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	work : List&lt;ReplicationWork&gt; to recovWork : List&lt;BlockRecoveryWork&gt; in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1361">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1377">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	rw : ReplicationWork to rw : BlockRecoveryWork in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1361">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1463">To</a></td>
@@ -549,6 +542,13 @@
                                 <td><i>Change Variable Type	srcNode : DatanodeDescriptor to srcNodes : DatanodeDescriptor[] in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1361">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1402">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	work : List&lt;ReplicationWork&gt; to recovWork : List&lt;BlockRecoveryWork&gt; in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1361">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1377">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -582,16 +582,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	srcNode : DatanodeDescriptor to srcNodes : DatanodeDescriptor[] in method public BlockRecoveryWork(block BlockInfo, bc BlockCollection, srcNodes DatanodeDescriptor[], containingNodes List&lt;DatanodeDescriptor&gt;, liveReplicaStorages List&lt;DatanodeStorageInfo&gt;, additionalReplRequired int, priority int) in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.BlockRecoveryWork</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL3832">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3899">To</a></td>
+                                <td><i>Rename Parameter	blocksToReplicate : List&lt;List&lt;BlockInfo&gt;&gt; to blocksToRecover : List&lt;List&lt;BlockInfo&gt;&gt; in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1367">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1370">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	blocksToReplicate : List&lt;List&lt;BlockInfo&gt;&gt; to blocksToRecover : List&lt;List&lt;BlockInfo&gt;&gt; in method package computeRecoveryWorkForBlocks(blocksToRecover List&lt;List&lt;BlockInfo&gt;&gt;) : int in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL1367">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR1370">To</a></td>
+                                <td><i>Rename Parameter	srcNode : DatanodeDescriptor to srcNodes : DatanodeDescriptor[] in method public BlockRecoveryWork(block BlockInfo, bc BlockCollection, srcNodes DatanodeDescriptor[], containingNodes List&lt;DatanodeDescriptor&gt;, liveReplicaStorages List&lt;DatanodeStorageInfo&gt;, additionalReplRequired int, priority int) in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.BlockRecoveryWork</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cL3832">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/57a84c0d149b693c913416975cafe6de4e23c321?diff=split#diff-16931a24ba0a37d2a674a983b57f250cR3899">To</a></td>
                             </tr>
                             
                             </tbody>

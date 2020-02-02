@@ -312,16 +312,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private CallRecord(method String, ref Integer, key String, current int, parent Integer, root int, path List&lt;Integer&gt;) from class org.sonar.server.computation.component.CallRecord to private PathAwareCallRecord(method String, ref Integer, key String, current int, parent Integer, root int, path List&lt;Integer&gt;) from class org.sonar.server.computation.component.PathAwareCallRecord</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-cf5b3b37cdfc2f86d595559515836204L39">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-039cbdfde0bc55e42189c64f4eccbe9dR39">To</a></td>
+                                <td><i>Move And Rename Method	protected DepthTraversalTypeAwareCrawler(maxDepth Component.Type, order ComponentVisitor.Order) from class org.sonar.server.computation.component.DepthTraversalTypeAwareCrawler to public CallRecorderTypeAwareVisitor(maxDepth Component.Type, order Order) from class org.sonar.server.computation.component.CallRecorderTypeAwareVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-d85f96276f05e687ddd6746557010f8eL30">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-c26ff0fc6ff2edf2d67683fc22e281deR28">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	protected DepthTraversalTypeAwareCrawler(maxDepth Component.Type, order ComponentVisitor.Order) from class org.sonar.server.computation.component.DepthTraversalTypeAwareCrawler to public CallRecorderTypeAwareVisitor(maxDepth Component.Type, order Order) from class org.sonar.server.computation.component.CallRecorderTypeAwareVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-d85f96276f05e687ddd6746557010f8eL30">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-c26ff0fc6ff2edf2d67683fc22e281deR28">To</a></td>
+                                <td><i>Move And Rename Method	private CallRecord(method String, ref Integer, key String, current int, parent Integer, root int, path List&lt;Integer&gt;) from class org.sonar.server.computation.component.CallRecord to private PathAwareCallRecord(method String, ref Integer, key String, current int, parent Integer, root int, path List&lt;Integer&gt;) from class org.sonar.server.computation.component.PathAwareCallRecord</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-cf5b3b37cdfc2f86d595559515836204L39">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-039cbdfde0bc55e42189c64f4eccbe9dR39">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -334,6 +334,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	path : Path&lt;FormulaExecutorComponentCrawler.Counters&gt; to path : Path&lt;FormulaExecutorComponentVisitor.Counters&gt; in method private aggregateToParent(path Path&lt;FormulaExecutorComponentVisitor.Counters&gt;, formula Formula, currentCounter Counter) : void in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-e4ef10f9b723bd931b3ae08e0b3cccffL151">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-5850757419ed1c9407105ac87972bbc5R151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	actual : Iterator&lt;CallRecord&gt; to actual : Iterator&lt;PathAwareCallRecord&gt; in method private verifyCallRecords(expected Iterator&lt;PathAwareCallRecord&gt;, actual Iterator&lt;PathAwareCallRecord&gt;) : void in class org.sonar.server.computation.component.ReportVisitorsCrawlerWithPathAwareVisitorTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-f17fb531ec062ea19b5addb9792a438bL250">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-f17fb531ec062ea19b5addb9792a438bR250">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	path : Path&lt;FormulaExecutorComponentCrawler.Counters&gt; to path : Path&lt;FormulaExecutorComponentVisitor.Counters&gt; in method public visitProject(project Component, path Path&lt;FormulaExecutorComponentVisitor.Counters&gt;) : void in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-e4ef10f9b723bd931b3ae08e0b3cccffL98">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-5850757419ed1c9407105ac87972bbc5R99">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	expected : Iterator&lt;CallRecord&gt; to expected : Iterator&lt;PathAwareCallRecord&gt; in method private verifyCallRecords(expected Iterator&lt;PathAwareCallRecord&gt;, actual Iterator&lt;PathAwareCallRecord&gt;) : void in class org.sonar.server.computation.component.ViewsVisitorsCrawlerWithPathAwareVisitorTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aL211">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR211">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	actual : Iterator&lt;CallRecord&gt; to actual : Iterator&lt;PathAwareCallRecord&gt; in method private verifyCallRecords(expected Iterator&lt;PathAwareCallRecord&gt;, actual Iterator&lt;PathAwareCallRecord&gt;) : void in class org.sonar.server.computation.component.ReportPathAwareVisitorTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-ab4c1b59362aa04cd211ed4ddfeff86fL240">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-41f487020a672802c0f4ddc256c713c8R240">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	path : Path&lt;FormulaExecutorComponentCrawler.Counters&gt; to path : Path&lt;FormulaExecutorComponentVisitor.Counters&gt; in method public visitModule(module Component, path Path&lt;FormulaExecutorComponentVisitor.Counters&gt;) : void in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-e4ef10f9b723bd931b3ae08e0b3cccffL103">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-5850757419ed1c9407105ac87972bbc5R104">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -405,48 +447,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-c26ff0fc6ff2edf2d67683fc22e281deR28">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	path : Path&lt;FormulaExecutorComponentCrawler.Counters&gt; to path : Path&lt;FormulaExecutorComponentVisitor.Counters&gt; in method private aggregateToParent(path Path&lt;FormulaExecutorComponentVisitor.Counters&gt;, formula Formula, currentCounter Counter) : void in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-e4ef10f9b723bd931b3ae08e0b3cccffL151">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-5850757419ed1c9407105ac87972bbc5R151">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	actual : Iterator&lt;CallRecord&gt; to actual : Iterator&lt;PathAwareCallRecord&gt; in method private verifyCallRecords(expected Iterator&lt;PathAwareCallRecord&gt;, actual Iterator&lt;PathAwareCallRecord&gt;) : void in class org.sonar.server.computation.component.ReportVisitorsCrawlerWithPathAwareVisitorTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-f17fb531ec062ea19b5addb9792a438bL250">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-f17fb531ec062ea19b5addb9792a438bR250">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	path : Path&lt;FormulaExecutorComponentCrawler.Counters&gt; to path : Path&lt;FormulaExecutorComponentVisitor.Counters&gt; in method public visitProject(project Component, path Path&lt;FormulaExecutorComponentVisitor.Counters&gt;) : void in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-e4ef10f9b723bd931b3ae08e0b3cccffL98">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-5850757419ed1c9407105ac87972bbc5R99">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	expected : Iterator&lt;CallRecord&gt; to expected : Iterator&lt;PathAwareCallRecord&gt; in method private verifyCallRecords(expected Iterator&lt;PathAwareCallRecord&gt;, actual Iterator&lt;PathAwareCallRecord&gt;) : void in class org.sonar.server.computation.component.ViewsVisitorsCrawlerWithPathAwareVisitorTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aL211">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR211">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	actual : Iterator&lt;CallRecord&gt; to actual : Iterator&lt;PathAwareCallRecord&gt; in method private verifyCallRecords(expected Iterator&lt;PathAwareCallRecord&gt;, actual Iterator&lt;PathAwareCallRecord&gt;) : void in class org.sonar.server.computation.component.ReportPathAwareVisitorTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-ab4c1b59362aa04cd211ed4ddfeff86fL240">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-41f487020a672802c0f4ddc256c713c8R240">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	path : Path&lt;FormulaExecutorComponentCrawler.Counters&gt; to path : Path&lt;FormulaExecutorComponentVisitor.Counters&gt; in method public visitModule(module Component, path Path&lt;FormulaExecutorComponentVisitor.Counters&gt;) : void in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-e4ef10f9b723bd931b3ae08e0b3cccffL103">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-5850757419ed1c9407105ac87972bbc5R104">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -457,27 +457,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.ViewsPreOrderDepthTraversalTypeAwareCrawlerTest to public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.TypeAwareVisitorAdapterTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901L50">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-4df57b891b88cf629fb2b7b8f1692925R27">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.ReportPreOrderDepthTraversalTypeAwareCrawlerTest to public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.TypeAwareVisitorAdapterTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-b3a1f93187db2ba319137f497f9beb51L53">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-4df57b891b88cf629fb2b7b8f1692925R27">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.ReportPostOrderDepthTraversalTypeAwareCrawlerTest to public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.TypeAwareVisitorAdapterTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-cfba31b13f9193cd47176cbd175f6957L53">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-4df57b891b88cf629fb2b7b8f1692925R27">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -500,6 +479,27 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-cfba31b13f9193cd47176cbd175f6957R263">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.ViewsPreOrderDepthTraversalTypeAwareCrawlerTest to public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.TypeAwareVisitorAdapterTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901L50">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-4df57b891b88cf629fb2b7b8f1692925R27">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.ReportPreOrderDepthTraversalTypeAwareCrawlerTest to public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.TypeAwareVisitorAdapterTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-b3a1f93187db2ba319137f497f9beb51L53">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-4df57b891b88cf629fb2b7b8f1692925R27">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.ReportPostOrderDepthTraversalTypeAwareCrawlerTest to public non_null_max_depth_fast_fail() : void from class org.sonar.server.computation.component.TypeAwareVisitorAdapterTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-cfba31b13f9193cd47176cbd175f6957L53">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-4df57b891b88cf629fb2b7b8f1692925R27">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -510,6 +510,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CallRecord to PathAwareCallRecord in method private viewsCallRecord(method String, currentRef int, parentRef Integer, path List&lt;Integer&gt;) : PathAwareCallRecord in class org.sonar.server.computation.component.ViewsPathAwareVisitorTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-fbd7466e636a1659a0542f51ddc43ca0L212">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-06e8ede7526b9ef6bda98d8e7f0af1aaR212">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -551,13 +558,6 @@
                                 <td><i>Change Return Type	CallRecord to PathAwareCallRecord in method private newCallRecord(method String, currentRef int, parentRef Integer, path List&lt;Integer&gt;) : PathAwareCallRecord in class org.sonar.server.computation.component.ReportPathAwareVisitorTest</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-ab4c1b59362aa04cd211ed4ddfeff86fL247">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-41f487020a672802c0f4ddc256c713c8R247">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CallRecord to PathAwareCallRecord in method private viewsCallRecord(method String, currentRef int, parentRef Integer, path List&lt;Integer&gt;) : PathAwareCallRecord in class org.sonar.server.computation.component.ViewsPathAwareVisitorTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-fbd7466e636a1659a0542f51ddc43ca0L212">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-06e8ede7526b9ef6bda98d8e7f0af1aaR212">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -630,20 +630,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.sonar.server.computation.formula.FormulaExecutorComponentCrawler renamed to org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.sonar.server.computation.component.ReportPathAwareCrawlerTest renamed to org.sonar.server.computation.component.ReportPathAwareVisitorTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.sonar.server.computation.component.ViewsPathAwareCrawlerTest renamed to org.sonar.server.computation.component.ViewsPathAwareVisitorTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -670,6 +656,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.sonar.server.computation.formula.FormulaExecutorComponentCrawler renamed to org.sonar.server.computation.formula.FormulaExecutorComponentVisitor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.sonar.server.computation.component.ReportPathAwareCrawlerTest renamed to org.sonar.server.computation.component.ReportPathAwareVisitorTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -680,27 +680,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	spyModuleVisitor : DepthTraversalTypeAwareCrawler to moduleCrawler : DepthTraversalTypeAwareCrawler in class org.sonar.server.computation.component.ReportPreOrderDepthTraversalTypeAwareCrawlerTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-b3a1f93187db2ba319137f497f9beb51L45">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-b3a1f93187db2ba319137f497f9beb51R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	spySubViewVisitor : DepthTraversalTypeAwareCrawler to subViewCrawler : DepthTraversalTypeAwareCrawler in class org.sonar.server.computation.component.ViewsPreOrderDepthTraversalTypeAwareCrawlerTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901L44">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	spyViewVisitor : DepthTraversalTypeAwareCrawler to viewCrawler : DepthTraversalTypeAwareCrawler in class org.sonar.server.computation.component.ViewsPreOrderDepthTraversalTypeAwareCrawlerTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901L42">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901R44">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -779,6 +758,27 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901R46">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	spyModuleVisitor : DepthTraversalTypeAwareCrawler to moduleCrawler : DepthTraversalTypeAwareCrawler in class org.sonar.server.computation.component.ReportPreOrderDepthTraversalTypeAwareCrawlerTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-b3a1f93187db2ba319137f497f9beb51L45">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-b3a1f93187db2ba319137f497f9beb51R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	spySubViewVisitor : DepthTraversalTypeAwareCrawler to subViewCrawler : DepthTraversalTypeAwareCrawler in class org.sonar.server.computation.component.ViewsPreOrderDepthTraversalTypeAwareCrawlerTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901L44">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	spyViewVisitor : DepthTraversalTypeAwareCrawler to viewCrawler : DepthTraversalTypeAwareCrawler in class org.sonar.server.computation.component.ViewsPreOrderDepthTraversalTypeAwareCrawlerTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901L42">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-78fe0db8e2f7c7efe87b5d70bfbf0901R44">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -789,6 +789,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-57" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	expected : Iterator&lt;CallRecord&gt; to expected : Iterator&lt;PathAwareCallRecord&gt; in method public verify_postOrder_visit_call_when_visit_tree_with_depth_PROJECT_VIEW() : void in class org.sonar.server.computation.component.ViewsVisitorsCrawlerWithPathAwareVisitorTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aL140">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR146">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	visitor : TestPathAwareVisitor to visitor : CallRecorderPathAwareVisitor in method public verify_postOrder_visit_call_when_visit_tree_with_depth_SUBVIEW() : void in class org.sonar.server.computation.component.ViewsVisitorsCrawlerWithPathAwareVisitorTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aL173">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR175">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1175,20 +1189,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR75">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	expected : Iterator&lt;CallRecord&gt; to expected : Iterator&lt;PathAwareCallRecord&gt; in method public verify_postOrder_visit_call_when_visit_tree_with_depth_PROJECT_VIEW() : void in class org.sonar.server.computation.component.ViewsVisitorsCrawlerWithPathAwareVisitorTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aL140">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR146">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	visitor : TestPathAwareVisitor to visitor : CallRecorderPathAwareVisitor in method public verify_postOrder_visit_call_when_visit_tree_with_depth_SUBVIEW() : void in class org.sonar.server.computation.component.ViewsVisitorsCrawlerWithPathAwareVisitorTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aL173">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-98b3f144ba6820b5c15adecd92160e1aR175">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1199,20 +1199,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	callsRecords : List&lt;CallRecord&gt; to callsRecords : List&lt;PathAwareCallRecord&gt; in class org.sonar.server.computation.component.CallRecorderPathAwareVisitor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-de7f662aaeec4db5def3205eeaf96d24L32">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-2aa6f6791dfdcca9943aafd4b764b152R32">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	underTest : FormulaExecutorComponentCrawler to underTest : FormulaExecutorComponentVisitor in class org.sonar.server.computation.formula.SumFormulaExecutionTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-d21eecdc716197a172ccafd6a3b5f4f0L54">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-d21eecdc716197a172ccafd6a3b5f4f0R55">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1240,6 +1226,20 @@
                                 <td><i>Change Attribute Type	underTest : FormulaExecutorComponentCrawler to underTest : FormulaExecutorComponentVisitor in class org.sonar.server.computation.formula.FormulaExecutorComponentVisitorTest</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-7d711aa9d277427656ed6fdaf5689323L87">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-a28347846cc13266805feb9e52334352R88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	callsRecords : List&lt;CallRecord&gt; to callsRecords : List&lt;PathAwareCallRecord&gt; in class org.sonar.server.computation.component.CallRecorderPathAwareVisitor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-de7f662aaeec4db5def3205eeaf96d24L32">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-2aa6f6791dfdcca9943aafd4b764b152R32">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	underTest : FormulaExecutorComponentCrawler to underTest : FormulaExecutorComponentVisitor in class org.sonar.server.computation.formula.SumFormulaExecutionTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-d21eecdc716197a172ccafd6a3b5f4f0L54">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/b9807f7322174929bb681dc9734e38c8245d54b8?diff=split#diff-d21eecdc716197a172ccafd6a3b5f4f0R55">To</a></td>
                             </tr>
                             
                             </tbody>

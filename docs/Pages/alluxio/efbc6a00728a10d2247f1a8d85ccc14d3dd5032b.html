@@ -196,13 +196,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public requestSpaceInPlace(userId long, storageDirId long, requestBytes long) : boolean renamed to public requestSpace(userId long, blockId long, requestBytes long) : boolean in class tachyon.worker.WorkerServiceHandler</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9L128">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9R105">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public returnSpace(userId long, storageDirId long, returnedBytes long) : void renamed to public cancelBlock(userId long, blockId long, unusedBytes long) : void in class tachyon.worker.WorkerServiceHandler</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9L134">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9R111">To</a></td>
@@ -213,6 +206,13 @@
                                 <td><i>Rename Method	public getLocalBlockLocation(blockId long) : ClientLocationInfo renamed to public cancelBlock(blockId long, unusedBytes long) : void in class tachyon.worker.WorkerClient</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fL253">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fR170">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public requestSpaceInPlace(userId long, storageDirId long, requestBytes long) : boolean renamed to public requestSpace(userId long, blockId long, requestBytes long) : boolean in class tachyon.worker.WorkerServiceHandler</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9L128">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9R105">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -303,34 +303,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	storageDirId : long to blockId : long in method public cancelBlock(userId long, blockId long, unusedBytes long) : void in class tachyon.worker.WorkerServiceHandler</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9L135">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9R112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	storageDirId : long to unusedBytes : long in method public cacheBlock(blockId long, unusedBytes long) : void in class tachyon.worker.WorkerClient</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fL153">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fR153">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	userId : long to blockId : long in method public requestSpace(blockId long, requestBytes long) : boolean in class tachyon.worker.WorkerClient</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fL394">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fR395">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	storageDirId : long to unusedBytes : long in method public cacheBlock(userId long, blockId long, unusedBytes long) : void in class tachyon.worker.WorkerStorage</i></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-a44203d80ca20a0031d7401743acc62eL470">From</a></td>
-                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-a44203d80ca20a0031d7401743acc62eR482">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	storageDirId : long to unusedBytes : long in method public cacheBlock(blockId long, unusedBytes long) : void in class tachyon.client.TachyonFS</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-dd9e3b638f58ca4b173149a7a7b764dcL210">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-dd9e3b638f58ca4b173149a7a7b764dcR205">To</a></td>
@@ -376,6 +348,34 @@
                                 <td><i>Rename Parameter	storageDirId : long to blockId : long in method public requestSpace(userId long, blockId long, requestBytes long) : boolean in class tachyon.worker.WorkerServiceHandler</i></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9L129">From</a></td>
                                 <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9R106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	storageDirId : long to blockId : long in method public cancelBlock(userId long, blockId long, unusedBytes long) : void in class tachyon.worker.WorkerServiceHandler</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9L135">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-e080d6dfcc4e2755b9da99e75602a3e9R112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	storageDirId : long to unusedBytes : long in method public cacheBlock(blockId long, unusedBytes long) : void in class tachyon.worker.WorkerClient</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fL153">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fR153">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	userId : long to blockId : long in method public requestSpace(blockId long, requestBytes long) : boolean in class tachyon.worker.WorkerClient</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fL394">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-938c8634577b5ba0698faff45985be2fR395">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	storageDirId : long to unusedBytes : long in method public cacheBlock(userId long, blockId long, unusedBytes long) : void in class tachyon.worker.WorkerStorage</i></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-a44203d80ca20a0031d7401743acc62eL470">From</a></td>
+                                <td><a href = "https://github.com/Alluxio/alluxio/commit/efbc6a00728a10d2247f1a8d85ccc14d3dd5032b?diff=split#diff-a44203d80ca20a0031d7401743acc62eR482">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -330,14 +330,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public hasParentLock(proc Procedure&lt;?&gt;) : boolean inlined to public hasLockAccess(proc Procedure&lt;?&gt;) : boolean in class org.apache.hadoop.hbase.procedure2.LockAndQueue</i></td>
+                                <td><i>Inline Method	public isLockOwner(procId long) : boolean inlined to public hasLockAccess(proc Procedure&lt;?&gt;) : boolean in class org.apache.hadoop.hbase.procedure2.LockAndQueue</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public isLockOwner(procId long) : boolean inlined to public hasLockAccess(proc Procedure&lt;?&gt;) : boolean in class org.apache.hadoop.hbase.procedure2.LockAndQueue</i></td>
+                                <td><i>Inline Method	public hasParentLock(proc Procedure&lt;?&gt;) : boolean inlined to public hasLockAccess(proc Procedure&lt;?&gt;) : boolean in class org.apache.hadoop.hbase.procedure2.LockAndQueue</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -355,6 +355,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	HRegionInfo[] to RegionInfo[] in method private generateRegionInfo(tableName TableName) : RegionInfo[] in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L597">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R606">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	ProcedureEvent to ProcedureEvent&lt;?&gt; in method public getEvent() : ProcedureEvent&lt;?&gt; in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler.TestTableProcedureWithEvent</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L840">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R847">To</a></td>
@@ -365,13 +372,6 @@
                                 <td><i>Change Return Type	Procedure[] to Procedure&lt;TEnv&gt;[] in method protected execute(env TEnv) : Procedure&lt;TEnv&gt;[] in class org.apache.hadoop.hbase.procedure2.ProcedureTestingUtility.NoopProcedure</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-5bc37bb61f802fcf8a8a0e3dfce408eeL405">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-5bc37bb61f802fcf8a8a0e3dfce408eeR405">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	HRegionInfo[] to RegionInfo[] in method private generateRegionInfo(tableName TableName) : RegionInfo[] in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L597">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R606">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -402,41 +402,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-32" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	procA : Procedure to procA : Procedure&lt;?&gt; in method public testVerifyRegionLocks() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L393">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R436">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	proc : Procedure to proc : Procedure&lt;?&gt; in method public testCreateDeleteTableOperationsWithWriteLock() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L128">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R145">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	proc : Procedure to proc : Procedure&lt;?&gt; in method private testInheritedXLockAndChildrenSharedLock(tableName TableName, rootProc TestTableProcedure, childProcs TestRegionProcedure[]) : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L635">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R677">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	rootProc : Procedure to rootProc : Procedure&lt;?&gt; in method public testVerifySubProcRegionLocks() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L466">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	parentProc : Procedure to parentProc : Procedure&lt;?&gt; in method private testInheritedXLockAndChildrenSharedLock(tableName TableName, rootProc TestTableProcedure, childProcs TestRegionProcedure[]) : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L635">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R649">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -625,6 +590,41 @@
                                 <td><i>Change Variable Type	proc : Procedure to proc : Procedure&lt;?&gt; in method public testVerifyRegionLocks() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L393">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R418">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	procA : Procedure to procA : Procedure&lt;?&gt; in method public testVerifyRegionLocks() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L393">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R436">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	proc : Procedure to proc : Procedure&lt;?&gt; in method public testCreateDeleteTableOperationsWithWriteLock() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L128">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R145">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	proc : Procedure to proc : Procedure&lt;?&gt; in method private testInheritedXLockAndChildrenSharedLock(tableName TableName, rootProc TestTableProcedure, childProcs TestRegionProcedure[]) : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L635">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R677">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	rootProc : Procedure to rootProc : Procedure&lt;?&gt; in method public testVerifySubProcRegionLocks() : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L466">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	parentProc : Procedure to parentProc : Procedure&lt;?&gt; in method private testInheritedXLockAndChildrenSharedLock(tableName TableName, rootProc TestTableProcedure, childProcs TestRegionProcedure[]) : void in class org.apache.hadoop.hbase.master.procedure.TestMasterProcedureScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55L635">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/d5e4faacc354c1bc4d93efa71ca97ee3a056123e?diff=split#diff-9a0e49a7fbd1798688688dbb29c2ce55R649">To</a></td>
                             </tr>
                             
                             </tbody>

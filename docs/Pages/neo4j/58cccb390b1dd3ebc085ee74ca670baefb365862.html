@@ -300,13 +300,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	store : VoteStore&lt;CoreMember&gt; to store : VoteState&lt;CoreMember&gt; in method private verifyCurrentLogAndNewLogLoadedFromFileSystem(store VoteState&lt;CoreMember&gt;, fileSystem FileSystemAbstraction, voteVerifier VoteVerifier) : void in class org.neo4j.coreedge.raft.state.VoteStateAdversarialTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-e4db4ec4d155e90a9d49ba1b34291f35L84">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-76d4b1c598159c99405320ed553c21b8R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method private verifyCurrentLogAndNewLogLoadedFromFileSystem(voteState VoteState&lt;CoreMember&gt;, fileSystem EphemeralFileSystemAbstraction, voteVerifier VoteVerifier) : void in class org.neo4j.coreedge.raft.state.VoteStateDurabilityTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-e95f1ac04c3c7c56ad5e21850f49a6e3L69">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-9578258f40dc597410d39f520b80fa04R69">To</a></td>
@@ -380,6 +373,13 @@
                                 <td><i>Change Parameter Type	voteStore : VoteStore&lt;MEMBER&gt; to voteState : VoteState&lt;MEMBER&gt; in method public RaftInstance(myself MEMBER, termState TermState, voteState VoteState&lt;MEMBER&gt;, entryLog RaftLog, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, clock Clock) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L100">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R100">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	store : VoteStore&lt;CoreMember&gt; to store : VoteState&lt;CoreMember&gt; in method private verifyCurrentLogAndNewLogLoadedFromFileSystem(store VoteState&lt;CoreMember&gt;, fileSystem FileSystemAbstraction, voteVerifier VoteVerifier) : void in class org.neo4j.coreedge.raft.state.VoteStateAdversarialTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-e4db4ec4d155e90a9d49ba1b34291f35L84">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-76d4b1c598159c99405320ed553c21b8R85">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -483,6 +483,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	TermStore to TermState in method public createTermStore() : TermState in class org.neo4j.coreedge.raft.state.OnDiskTermStateContractTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-15f359958709db7c62c7edd7e590a528L31">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-3f24c6bcb8ebaa48e7d0070aedbbaa12R31">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	TermStore to TermState in method public abstract createTermStore() : TermState in class org.neo4j.coreedge.raft.state.TermStoreContractTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-06961359e6c8de5cc6bd8cc3be7acfdaL30">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-06961359e6c8de5cc6bd8cc3be7acfdaR30">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	TermStore to TermState in method public createTermStore(fileSystem EphemeralFileSystemAbstraction) : TermState in class org.neo4j.coreedge.raft.state.TermStateDurabilityTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-b1259b503e40fcf3281061f283b64c79L35">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c41082b95978d22cbf042a61b9c6be0bR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	TermStore to TermState in method public createTermStore(fileSystem FileSystemAbstraction) : TermState in class org.neo4j.coreedge.raft.state.TermStateAdversarialTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-a96cddf4561231ef7e1ec64bb9c3fdd6L41">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c3e9d51ef23fa71dd708533b52634937R41">To</a></td>
@@ -523,27 +544,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-0c7b045c984412fe076de98f8e2e76efR28">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	TermStore to TermState in method public createTermStore() : TermState in class org.neo4j.coreedge.raft.state.OnDiskTermStateContractTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-15f359958709db7c62c7edd7e590a528L31">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-3f24c6bcb8ebaa48e7d0070aedbbaa12R31">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	TermStore to TermState in method public abstract createTermStore() : TermState in class org.neo4j.coreedge.raft.state.TermStoreContractTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-06961359e6c8de5cc6bd8cc3be7acfdaL30">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-06961359e6c8de5cc6bd8cc3be7acfdaR30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	TermStore to TermState in method public createTermStore(fileSystem EphemeralFileSystemAbstraction) : TermState in class org.neo4j.coreedge.raft.state.TermStateDurabilityTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-b1259b503e40fcf3281061f283b64c79L35">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c41082b95978d22cbf042a61b9c6be0bR35">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -554,6 +554,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.VoteStoreDurabilityTest renamed to org.neo4j.coreedge.raft.state.VoteStateDurabilityTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.vote.VoteStore renamed to org.neo4j.coreedge.raft.state.vote.VoteState</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.TermStoreAdversarialTest renamed to org.neo4j.coreedge.raft.state.TermStateAdversarialTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -618,27 +639,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.VoteStoreDurabilityTest renamed to org.neo4j.coreedge.raft.state.VoteStateDurabilityTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.vote.VoteStore renamed to org.neo4j.coreedge.raft.state.vote.VoteState</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.TermStoreAdversarialTest renamed to org.neo4j.coreedge.raft.state.TermStateAdversarialTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -688,69 +688,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-20" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method public shouldStartWithNoVote() : void in class org.neo4j.coreedge.raft.state.VoteStoreContractTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009L50">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	voteStore : DurableVoteStore to voteStore : OnDiskVoteState in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL135">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR179">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	termStore : DurableTermStore to termStore : OnDiskTermState in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL135">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR178">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method public shouldStoreVote() : void in class org.neo4j.coreedge.raft.state.VoteStoreContractTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009L35">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	termStore : TermStore to termState : TermState in method public shouldDiscardTermIfChannelFails() : void in class org.neo4j.coreedge.raft.state.TermStateAdversarialTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-a96cddf4561231ef7e1ec64bb9c3fdd6L48">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c3e9d51ef23fa71dd708533b52634937R75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method public shouldStoreVote() : void in class org.neo4j.coreedge.raft.state.VoteStateDurabilityTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-e95f1ac04c3c7c56ad5e21850f49a6e3L45">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-9578258f40dc597410d39f520b80fa04R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	voteStore : InMemoryVoteStore&lt;RaftTestMember&gt; to voteStore : InMemoryVoteState&lt;RaftTestMember&gt; in method public build() : RaftState&lt;RaftTestMember&gt; in class org.neo4j.coreedge.raft.state.RaftStateBuilder</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-eb86196a35c2222613db8f656758ef02L115">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-eb86196a35c2222613db8f656758ef02R118">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	termStore : TermStore to termState : TermState in method public shouldStoreTerm() : void in class org.neo4j.coreedge.raft.state.TermStateDurabilityTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-b1259b503e40fcf3281061f283b64c79L42">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c41082b95978d22cbf042a61b9c6be0bR46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	store : DurableTermStore to store : OnDiskTermState in method public shouldCallWriteAllAndForceOnVoteUpdate() : void in class org.neo4j.coreedge.raft.state.OnDiskTermStateTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-34d8ea98678a305875a1ec4823d90b4aL45">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-d62b9a4b428ccd5b8a0c02499821b64aR53">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -827,6 +764,69 @@
                                 <td><i>Change Variable Type	termStore : TermStore to termState : TermState in method public shouldStoreCurrentTerm() : void in class org.neo4j.coreedge.raft.state.TermStoreContractTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-06961359e6c8de5cc6bd8cc3be7acfdaL32">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-06961359e6c8de5cc6bd8cc3be7acfdaR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method public shouldStartWithNoVote() : void in class org.neo4j.coreedge.raft.state.VoteStoreContractTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009L50">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009R54">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	voteStore : DurableVoteStore to voteStore : OnDiskVoteState in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL135">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR179">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	termStore : DurableTermStore to termStore : OnDiskTermState in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL135">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR178">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method public shouldStoreVote() : void in class org.neo4j.coreedge.raft.state.VoteStoreContractTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009L35">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-cffb1788355f2ead68f254f285e44009R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	termStore : TermStore to termState : TermState in method public shouldDiscardTermIfChannelFails() : void in class org.neo4j.coreedge.raft.state.TermStateAdversarialTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-a96cddf4561231ef7e1ec64bb9c3fdd6L48">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c3e9d51ef23fa71dd708533b52634937R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	voteStore : VoteStore&lt;CoreMember&gt; to voteState : VoteState&lt;CoreMember&gt; in method public shouldStoreVote() : void in class org.neo4j.coreedge.raft.state.VoteStateDurabilityTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-e95f1ac04c3c7c56ad5e21850f49a6e3L45">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-9578258f40dc597410d39f520b80fa04R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	voteStore : InMemoryVoteStore&lt;RaftTestMember&gt; to voteStore : InMemoryVoteState&lt;RaftTestMember&gt; in method public build() : RaftState&lt;RaftTestMember&gt; in class org.neo4j.coreedge.raft.state.RaftStateBuilder</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-eb86196a35c2222613db8f656758ef02L115">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-eb86196a35c2222613db8f656758ef02R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	termStore : TermStore to termState : TermState in method public shouldStoreTerm() : void in class org.neo4j.coreedge.raft.state.TermStateDurabilityTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-b1259b503e40fcf3281061f283b64c79L42">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-c41082b95978d22cbf042a61b9c6be0bR46">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	store : DurableTermStore to store : OnDiskTermState in method public shouldCallWriteAllAndForceOnVoteUpdate() : void in class org.neo4j.coreedge.raft.state.OnDiskTermStateTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-34d8ea98678a305875a1ec4823d90b4aL45">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/58cccb390b1dd3ebc085ee74ca670baefb365862?diff=split#diff-d62b9a4b428ccd5b8a0c02499821b64aR53">To</a></td>
                             </tr>
                             
                             </tbody>

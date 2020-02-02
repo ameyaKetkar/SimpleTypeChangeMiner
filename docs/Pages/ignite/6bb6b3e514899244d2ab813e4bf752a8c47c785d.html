@@ -158,16 +158,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public withSyncRate(syncRate int) : MLPGroupUpdateTrainer&lt;U&gt; renamed to public withSyncPeriod(syncPeriod int) : MLPGroupUpdateTrainer&lt;U&gt; in class org.apache.ignite.ml.nn.trainers.distributed.MLPGroupUpdateTrainer</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-53814ce74228cca44dd5f4e0fc0d8806L340">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-53814ce74228cca44dd5f4e0fc0d8806R341">To</a></td>
+                                <td><i>Rename Method	public testXOR() : void renamed to private doTestXOR(stgy UpdatesStrategy&lt;? super MultilayerPerceptron,U&gt;) : void in class org.apache.ignite.ml.nn.MLPGroupTrainerTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-273c9faa22415f4b610647a6bc6a6c46L66">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-273c9faa22415f4b610647a6bc6a6c46R87">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public testXOR() : void renamed to private doTestXOR(stgy UpdatesStrategy&lt;? super MultilayerPerceptron,U&gt;) : void in class org.apache.ignite.ml.nn.MLPGroupTrainerTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-273c9faa22415f4b610647a6bc6a6c46L66">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-273c9faa22415f4b610647a6bc6a6c46R87">To</a></td>
+                                <td><i>Rename Method	public withSyncRate(syncRate int) : MLPGroupUpdateTrainer&lt;U&gt; renamed to public withSyncPeriod(syncPeriod int) : MLPGroupUpdateTrainer&lt;U&gt; in class org.apache.ignite.ml.nn.trainers.distributed.MLPGroupUpdateTrainer</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-53814ce74228cca44dd5f4e0fc0d8806L340">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-53814ce74228cca44dd5f4e0fc0d8806R341">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -180,6 +180,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	updaterSupplier : IgniteSupplier&lt;ParameterUpdateCalculator&lt;M,P&gt;&gt; to updaterSupplier : IgniteSupplier&lt;ParameterUpdateCalculator&lt;? super M,P&gt;&gt; in method public withUpdater(updaterSupplier IgniteSupplier&lt;ParameterUpdateCalculator&lt;? super M,P&gt;&gt;) : LocalBatchTrainer in class org.apache.ignite.ml.trainers.local.LocalBatchTrainer</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-b689adcac47d218832b1252090f21817L127">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-b689adcac47d218832b1252090f21817R133">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -235,13 +242,6 @@
                                 <td><i>Change Parameter Type	updateCalculator : ParameterUpdateCalculator&lt;MultilayerPerceptron,U&gt; to updateCalculator : ParameterUpdateCalculator&lt;? super MultilayerPerceptron,U&gt; in method public MLPGroupUpdateTrainingData(updateCalculator ParameterUpdateCalculator&lt;? super MultilayerPerceptron,U&gt;, stepsCnt int, updateReducer IgniteFunction&lt;List&lt;U&gt;,U&gt;, batchSupplier IgniteSupplier&lt;IgniteBiTuple&lt;Matrix,Matrix&gt;&gt;, loss IgniteFunction&lt;Vector,IgniteDifferentiableVectorToDoubleFunction&gt;, tolerance double) in class org.apache.ignite.ml.nn.trainers.distributed.MLPGroupUpdateTrainingData</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-c0e4acc63380b2263a888593a8fde40dL60">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-c0e4acc63380b2263a888593a8fde40dR62">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	updaterSupplier : IgniteSupplier&lt;ParameterUpdateCalculator&lt;M,P&gt;&gt; to updaterSupplier : IgniteSupplier&lt;ParameterUpdateCalculator&lt;? super M,P&gt;&gt; in method public withUpdater(updaterSupplier IgniteSupplier&lt;ParameterUpdateCalculator&lt;? super M,P&gt;&gt;) : LocalBatchTrainer in class org.apache.ignite.ml.trainers.local.LocalBatchTrainer</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-b689adcac47d218832b1252090f21817L127">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-b689adcac47d218832b1252090f21817R133">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -343,6 +343,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	updateCalculator : ParameterUpdateCalculator&lt;MultilayerPerceptron,U&gt; to updateCalculator : ParameterUpdateCalculator&lt;? super MultilayerPerceptron,U&gt; in class org.apache.ignite.ml.nn.trainers.distributed.MLPGroupUpdateTrainingData</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-c0e4acc63380b2263a888593a8fde40dL33">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-c0e4acc63380b2263a888593a8fde40dR33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	updateCalculator : ParameterUpdateCalculator&lt;MultilayerPerceptron,U&gt; to updateCalculator : ParameterUpdateCalculator&lt;? super MultilayerPerceptron,U&gt; in class org.apache.ignite.ml.nn.trainers.distributed.MLPGroupUpdateTrainer</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-53814ce74228cca44dd5f4e0fc0d8806L99">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-53814ce74228cca44dd5f4e0fc0d8806R101">To</a></td>
@@ -367,13 +374,6 @@
                                 <td><i>Change Attribute Type	updaterSupplier : IgniteSupplier&lt;ParameterUpdateCalculator&lt;M,P&gt;&gt; to updaterSupplier : IgniteSupplier&lt;ParameterUpdateCalculator&lt;? super M,P&gt;&gt; in class org.apache.ignite.ml.trainers.local.LocalBatchTrainer</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-b689adcac47d218832b1252090f21817L41">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-b689adcac47d218832b1252090f21817R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	updateCalculator : ParameterUpdateCalculator&lt;MultilayerPerceptron,U&gt; to updateCalculator : ParameterUpdateCalculator&lt;? super MultilayerPerceptron,U&gt; in class org.apache.ignite.ml.nn.trainers.distributed.MLPGroupUpdateTrainingData</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-c0e4acc63380b2263a888593a8fde40dL33">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6bb6b3e514899244d2ab813e4bf752a8c47c785d?diff=split#diff-c0e4acc63380b2263a888593a8fde40dR33">To</a></td>
                             </tr>
                             
                             </tbody>

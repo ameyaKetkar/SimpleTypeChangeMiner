@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public adjustDefaultSchema(catalogName Identifier, schemaName Identifier) : Schema renamed to public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L131">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R131">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public locateSchema(catalogName Identifier, schemaName Identifier) : Schema renamed to public locateNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L118">From</a></td>
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R118">To</a></td>
@@ -173,13 +180,6 @@
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R110">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public adjustDefaultSchema(catalogName Identifier, schemaName Identifier) : Schema renamed to public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L131">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R131">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -190,6 +190,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-22" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	schemaName : Schema.Name to schemaName : Namespace.Name in method public getTableInformation(schemaName Namespace.Name, tableName Identifier) : TableInformation in class org.hibernate.tool.schema.extract.internal.legacy.DatabaseInformationImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-209399aa195d510ca9a377cded96aeeeL100">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-209399aa195d510ca9a377cded96aeeeR102">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	schemaName : Schema.Name to schemaName : Namespace.Name in method public getTableInformation(schemaName Namespace.Name, tableName Identifier) : TableInformation in class org.hibernate.tool.schema.extract.spi.DatabaseInformation</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-256d523060c09a484f31111b84320a55L42">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-256d523060c09a484f31111b84320a55R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	schema : Schema.Name to schema : Namespace.Name in method public schemaExists(schema Namespace.Name) : boolean in class org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-33feb456ef3cf7afdede424bc7c50693L34">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-33feb456ef3cf7afdede424bc7c50693R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	schemaName : Schema.Name to schemaName : Namespace.Name in method public prepareCatalogAndSchema(schemaName Namespace.Name) : DatabaseInformationBuilder in class org.hibernate.tool.schema.extract.spi.DatabaseInformationBuilder</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-10f163e1c1c2fcf4a50e271caa236e81L85">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-10f163e1c1c2fcf4a50e271caa236e81R85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	schema : Schema to namespace : Namespace in method public DenormalizedTable(namespace Namespace, physicalTableName Identifier, isAbstract boolean, includedTable Table) in class org.hibernate.mapping.DenormalizedTable</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0L30">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0R30">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -310,41 +345,6 @@
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180R99">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	schemaName : Schema.Name to schemaName : Namespace.Name in method public getTableInformation(schemaName Namespace.Name, tableName Identifier) : TableInformation in class org.hibernate.tool.schema.extract.internal.legacy.DatabaseInformationImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-209399aa195d510ca9a377cded96aeeeL100">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-209399aa195d510ca9a377cded96aeeeR102">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	schemaName : Schema.Name to schemaName : Namespace.Name in method public getTableInformation(schemaName Namespace.Name, tableName Identifier) : TableInformation in class org.hibernate.tool.schema.extract.spi.DatabaseInformation</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-256d523060c09a484f31111b84320a55L42">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-256d523060c09a484f31111b84320a55R50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	schema : Schema.Name to schema : Namespace.Name in method public schemaExists(schema Namespace.Name) : boolean in class org.hibernate.tool.schema.extract.internal.DatabaseInformationImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-33feb456ef3cf7afdede424bc7c50693L34">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-33feb456ef3cf7afdede424bc7c50693R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	schemaName : Schema.Name to schemaName : Namespace.Name in method public prepareCatalogAndSchema(schemaName Namespace.Name) : DatabaseInformationBuilder in class org.hibernate.tool.schema.extract.spi.DatabaseInformationBuilder</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-10f163e1c1c2fcf4a50e271caa236e81L85">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-10f163e1c1c2fcf4a50e271caa236e81R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	schema : Schema to namespace : Namespace in method public DenormalizedTable(namespace Namespace, physicalTableName Identifier, isAbstract boolean, includedTable Table) in class org.hibernate.mapping.DenormalizedTable</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0L30">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0R30">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -355,34 +355,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-19" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method protected doMigrationToTargets(metadata Metadata, existingDatabase DatabaseInformation, createSchemas boolean, targets List&lt;Target&gt;) : void in class org.hibernate.tool.schema.internal.SchemaMigratorImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969L76">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969R76">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.enhanced.TableGenerator</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0L666">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0R666">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method public doCreation(metadata Metadata, createSchemas boolean, dialect Dialect, targets Target...) : void in class org.hibernate.tool.schema.internal.SchemaCreatorImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeL148">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeR148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L137">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R137">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -489,6 +461,34 @@
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-9327de42de59383ab5a66ac8a6e1a577R726">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method protected doMigrationToTargets(metadata Metadata, existingDatabase DatabaseInformation, createSchemas boolean, targets List&lt;Target&gt;) : void in class org.hibernate.tool.schema.internal.SchemaMigratorImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969L76">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969R76">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.enhanced.TableGenerator</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0L666">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0R666">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method public doCreation(metadata Metadata, createSchemas boolean, dialect Dialect, targets Target...) : void in class org.hibernate.tool.schema.internal.SchemaCreatorImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeL148">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeR148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	schema : Schema to namespace : Namespace in method public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L137">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R137">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -584,69 +584,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method protected doMigrationToTargets(metadata Metadata, existingDatabase DatabaseInformation, createSchemas boolean, targets List&lt;Target&gt;) : void in class org.hibernate.tool.schema.internal.SchemaMigratorImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969L67">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969R76">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public doCreation(metadata Metadata, createSchemas boolean, dialect Dialect, targets Target...) : void in class org.hibernate.tool.schema.internal.SchemaCreatorImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeL135">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeR148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.enhanced.TableGenerator</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0L662">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0R666">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L131">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R137">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.SequenceGenerator</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e05d3bfb194dd9705ad2afd07dc35822L165">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e05d3bfb194dd9705ad2afd07dc35822R170">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.enhanced.TableStructure</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-a2846f08cfaf5306016cf42433e56bc4L249">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-a2846f08cfaf5306016cf42433e56bc4R254">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	name : Schema.Name to name : Namespace.Name in method public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L131">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R132">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public collectTableMappings() : Collection&lt;Table&gt; in class org.hibernate.boot.internal.InFlightMetadataCollectorImpl</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-9327de42de59383ab5a66ac8a6e1a577L461">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-9327de42de59383ab5a66ac8a6e1a577R464">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public testConstraintNameLength() : void in class org.hibernate.test.constraint.ConstraintTest</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e080b9b267d2b5fe390d56e06e980dc2L68">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e080b9b267d2b5fe390d56e06e980dc2R72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	name : Schema.Name to name : Namespace.Name in method public locateNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L118">From</a></td>
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R123">To</a></td>
@@ -736,6 +673,69 @@
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-9327de42de59383ab5a66ac8a6e1a577R726">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method protected doMigrationToTargets(metadata Metadata, existingDatabase DatabaseInformation, createSchemas boolean, targets List&lt;Target&gt;) : void in class org.hibernate.tool.schema.internal.SchemaMigratorImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969L67">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-0857cf962e595451338e126dd8026969R76">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public doCreation(metadata Metadata, createSchemas boolean, dialect Dialect, targets Target...) : void in class org.hibernate.tool.schema.internal.SchemaCreatorImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeL135">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-96c75df441c61768e416da3347b85cdeR148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.enhanced.TableGenerator</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0L662">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-936141a440957cd8a9c4a93a744e92a0R666">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L131">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R137">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.SequenceGenerator</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e05d3bfb194dd9705ad2afd07dc35822L165">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e05d3bfb194dd9705ad2afd07dc35822R170">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public registerExportables(database Database) : void in class org.hibernate.id.enhanced.TableStructure</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-a2846f08cfaf5306016cf42433e56bc4L249">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-a2846f08cfaf5306016cf42433e56bc4R254">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	name : Schema.Name to name : Namespace.Name in method public adjustDefaultNamespace(catalogName Identifier, schemaName Identifier) : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L131">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R132">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public collectTableMappings() : Collection&lt;Table&gt; in class org.hibernate.boot.internal.InFlightMetadataCollectorImpl</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-9327de42de59383ab5a66ac8a6e1a577L461">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-9327de42de59383ab5a66ac8a6e1a577R464">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	schema : Schema to namespace : Namespace in method public testConstraintNameLength() : void in class org.hibernate.test.constraint.ConstraintTest</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e080b9b267d2b5fe390d56e06e980dc2L68">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e080b9b267d2b5fe390d56e06e980dc2R72">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -774,16 +774,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	implicitSchema : Schema to implicitNamespace : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L32">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R32">To</a></td>
+                                <td><i>Change Attribute Type	schemaMap : Map&lt;Schema.Name,Schema&gt; to namespaceMap : Map&lt;Namespace.Name,Namespace&gt; in class org.hibernate.boot.model.relational.Database</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L34">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R34">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	schemaMap : Map&lt;Schema.Name,Schema&gt; to namespaceMap : Map&lt;Namespace.Name,Namespace&gt; in class org.hibernate.boot.model.relational.Database</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L34">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R34">To</a></td>
+                                <td><i>Change Attribute Type	implicitSchema : Schema to implicitNamespace : Namespace in class org.hibernate.boot.model.relational.Database</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6L32">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-6dd1782b84cba636caa435daf68cbdc6R32">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -796,34 +796,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public DenormalizedTable(namespace Namespace, physicalTableName Identifier, subselectFragment String, isAbstract boolean, includedTable Table) in class org.hibernate.mapping.DenormalizedTable</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0L37">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0R37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public Table(namespace Namespace, subselect String, isAbstract boolean) in class org.hibernate.mapping.Table</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180L99">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180R99">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public Table(namespace Namespace, physicalTableName Identifier, subselect String, isAbstract boolean) in class org.hibernate.mapping.Table</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180L91">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180R91">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public SimpleAuxiliaryDatabaseObject(namespace Namespace, createString String, dropString String, dialectScopes Set&lt;String&gt;) in class org.hibernate.boot.model.relational.SimpleAuxiliaryDatabaseObject</i></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-bcb2f451fd56e056981f7e56f9e69d2fL35">From</a></td>
-                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-bcb2f451fd56e056981f7e56f9e69d2fR35">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -858,6 +830,34 @@
                                 <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public Table(namespace Namespace, physicalTableName Identifier, isAbstract boolean) in class org.hibernate.mapping.Table</i></td>
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180L71">From</a></td>
                                 <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public DenormalizedTable(namespace Namespace, physicalTableName Identifier, subselectFragment String, isAbstract boolean, includedTable Table) in class org.hibernate.mapping.DenormalizedTable</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0L37">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-d20d945721240005630365f816d178f0R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public Table(namespace Namespace, subselect String, isAbstract boolean) in class org.hibernate.mapping.Table</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180L99">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180R99">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public Table(namespace Namespace, physicalTableName Identifier, subselect String, isAbstract boolean) in class org.hibernate.mapping.Table</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180L91">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-e8c70e2e6de13c83c15fa1b97d873180R91">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	schema : Schema to namespace : Namespace in method public SimpleAuxiliaryDatabaseObject(namespace Namespace, createString String, dropString String, dialectScopes Set&lt;String&gt;) in class org.hibernate.boot.model.relational.SimpleAuxiliaryDatabaseObject</i></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-bcb2f451fd56e056981f7e56f9e69d2fL35">From</a></td>
+                                <td><a href = "https://github.com/hibernate/hibernate-orm/commit/ff4774ad7ef488ce7505784f9591684d096bdb99?diff=split#diff-bcb2f451fd56e056981f7e56f9e69d2fR35">To</a></td>
                             </tr>
                             
                             </tbody>

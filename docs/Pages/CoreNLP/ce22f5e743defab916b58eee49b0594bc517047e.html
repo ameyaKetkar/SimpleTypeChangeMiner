@@ -226,14 +226,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.trees.conllu.CoNLLUDocumentReader.SentenceProcessor moved to edu.stanford.nlp.trees.CoNLLUDocumentReader.SentenceProcessor</i></td>
+                                <td><i>Move Class	edu.stanford.nlp.trees.conllu.CoNLLUDocumentReader.WordProcessor moved to edu.stanford.nlp.trees.CoNLLUDocumentReader.WordProcessor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.trees.conllu.CoNLLUDocumentReader.WordProcessor moved to edu.stanford.nlp.trees.CoNLLUDocumentReader.WordProcessor</i></td>
+                                <td><i>Move Class	edu.stanford.nlp.trees.conllu.CoNLLUDocumentReader.SentenceProcessor moved to edu.stanford.nlp.trees.CoNLLUDocumentReader.SentenceProcessor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -251,6 +251,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	chunked : List&lt;List&lt;Tree&gt;&gt; to chunked : List&lt;Collection&lt;Tree&gt;&gt; in method private fixMultiWordTokens(trees List&lt;Tree&gt;) : List&lt;Tree&gt; in class edu.stanford.nlp.international.spanish.pipeline.AnCoraProcessor</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-c1cdcd0980fa52e167c95ceebe58d253L376">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-c1cdcd0980fa52e167c95ceebe58d253R402">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	folds : List&lt;List&lt;T&gt;&gt; to folds : List&lt;Collection&lt;T&gt;&gt; in method public trainTestFoldsForCV(values List&lt;T&gt;, numFolds int) : Collection&lt;Pair&lt;Collection&lt;T&gt;,Collection&lt;T&gt;&gt;&gt; in class edu.stanford.nlp.util.CollectionUtils</i></td>
                                 <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-4a945bba6956224eb758656fc81b89f3L778">From</a></td>
                                 <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-4a945bba6956224eb758656fc81b89f3R782">To</a></td>
@@ -261,13 +268,6 @@
                                 <td><i>Change Variable Type	chunks : List&lt;List&lt;Example&gt;&gt; to chunks : List&lt;Collection&lt;Example&gt;&gt; in method public computeCostFunction(batchSize int, regParameter double, dropOutProb double) : Cost in class edu.stanford.nlp.parser.nndep.Classifier</i></td>
                                 <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-8bf82f5c9c844aa986878127bcb6f927L489">From</a></td>
                                 <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-8bf82f5c9c844aa986878127bcb6f927R525">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	chunked : List&lt;List&lt;Tree&gt;&gt; to chunked : List&lt;Collection&lt;Tree&gt;&gt; in method private fixMultiWordTokens(trees List&lt;Tree&gt;) : List&lt;Tree&gt; in class edu.stanford.nlp.international.spanish.pipeline.AnCoraProcessor</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-c1cdcd0980fa52e167c95ceebe58d253L376">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-c1cdcd0980fa52e167c95ceebe58d253R402">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -315,16 +315,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	dFunction : DiffFunction to dfunction : DiffFunction in method public minimize(dfunction DiffFunction, functionTolerance double, initial double[], maxFunctionEvaluations int) : double[] in class edu.stanford.nlp.optimization.QNMinimizer</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0L888">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0R889">To</a></td>
+                                <td><i>Rename Parameter	dFunction : DiffFunction to dfunction : DiffFunction in method public minimize(dfunction DiffFunction, functionTolerance double, initial double[], maxFunctionEvaluations int, qn QNInfo) : double[] in class edu.stanford.nlp.optimization.QNMinimizer</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0L894">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0R895">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	dFunction : DiffFunction to dfunction : DiffFunction in method public minimize(dfunction DiffFunction, functionTolerance double, initial double[], maxFunctionEvaluations int, qn QNInfo) : double[] in class edu.stanford.nlp.optimization.QNMinimizer</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0L894">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0R895">To</a></td>
+                                <td><i>Rename Parameter	dFunction : DiffFunction to dfunction : DiffFunction in method public minimize(dfunction DiffFunction, functionTolerance double, initial double[], maxFunctionEvaluations int) : double[] in class edu.stanford.nlp.optimization.QNMinimizer</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0L888">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/ce22f5e743defab916b58eee49b0594bc517047e?diff=split#diff-2554c492cf71be3536f6a703e19e29b0R889">To</a></td>
                             </tr>
                             
                             </tbody>

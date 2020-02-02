@@ -238,15 +238,15 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public deserializeKvStateRequest(buf ByteBuf) : KvStateRequest from class org.apache.flink.queryablestate.network.messages.MessageSerializer to public deserializeMessage(buf ByteBuf) : KvStateInternalRequest from class org.apache.flink.queryablestate.messages.KvStateInternalRequest.KvStateInternalRequestDeserializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L238">From</a></td>
+                                <td><i>Move And Rename Method	public deserializeKvStateRequestResult(buf ByteBuf) : KvStateRequestResult from class org.apache.flink.queryablestate.network.messages.MessageSerializer to public deserializeMessage(buf ByteBuf) : KvStateInternalRequest from class org.apache.flink.queryablestate.messages.KvStateInternalRequest.KvStateInternalRequestDeserializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L269">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-6e1074a792693c034912a4f3e17a8048R77">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public deserializeKvStateRequestResult(buf ByteBuf) : KvStateRequestResult from class org.apache.flink.queryablestate.network.messages.MessageSerializer to public deserializeMessage(buf ByteBuf) : KvStateInternalRequest from class org.apache.flink.queryablestate.messages.KvStateInternalRequest.KvStateInternalRequestDeserializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L269">From</a></td>
+                                <td><i>Move And Rename Method	public deserializeKvStateRequest(buf ByteBuf) : KvStateRequest from class org.apache.flink.queryablestate.network.messages.MessageSerializer to public deserializeMessage(buf ByteBuf) : KvStateInternalRequest from class org.apache.flink.queryablestate.messages.KvStateInternalRequest.KvStateInternalRequestDeserializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L238">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-6e1074a792693c034912a4f3e17a8048R77">To</a></td>
                             </tr>
                             
@@ -263,16 +263,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	serializedValue : byte[] to response : RESP in method public onRequestResult(requestId long, response RESP) : void in class org.apache.flink.queryablestate.network.Client.EstablishedConnection</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9de4a50daf3d76096afb3e1cde0a343L530">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-878c77376047e71abc5eaff1f4f3c762R485">To</a></td>
+                                <td><i>Change Parameter Type	serializedResult : byte[] to request : REQ in method public serializeRequest(alloc ByteBufAllocator, requestId long, request REQ) : ByteBuf in class org.apache.flink.queryablestate.network.messages.MessageSerializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L105">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4R94">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	serializedResult : byte[] to request : REQ in method public serializeRequest(alloc ByteBufAllocator, requestId long, request REQ) : ByteBuf in class org.apache.flink.queryablestate.network.messages.MessageSerializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L105">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4R94">To</a></td>
+                                <td><i>Change Parameter Type	serializedValue : byte[] to response : RESP in method public onRequestResult(requestId long, response RESP) : void in class org.apache.flink.queryablestate.network.Client.EstablishedConnection</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9de4a50daf3d76096afb3e1cde0a343L530">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-878c77376047e71abc5eaff1f4f3c762R485">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -409,6 +409,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	org.apache.flink.queryablestate.network.KvStateRequestSerializerTest renamed to org.apache.flink.queryablestate.network.MessageSerializerTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.queryablestate.network.KvStateClientTest renamed to org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	org.apache.flink.queryablestate.UnknownKeyOrNamespace renamed to org.apache.flink.queryablestate.UnknownKeyOrNamespaceException</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -435,20 +449,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.queryablestate.network.KvStateRequestSerializerTest renamed to org.apache.flink.queryablestate.network.MessageSerializerTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.flink.queryablestate.network.KvStateClientTest renamed to org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -459,13 +459,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.flink.queryablestate.client.KvStateClient.EstablishedConnection.PromiseAndTimestamp moved and renamed to org.apache.flink.queryablestate.network.Client.EstablishedConnection.TimestampedCompletableFuture</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -484,6 +477,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Rename Class	org.apache.flink.queryablestate.client.KvStateClient moved and renamed to org.apache.flink.queryablestate.network.Client</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.flink.queryablestate.client.KvStateClient.EstablishedConnection.PromiseAndTimestamp moved and renamed to org.apache.flink.queryablestate.network.Client.EstablishedConnection.TimestampedCompletableFuture</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -530,111 +530,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-49" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testFailureClosesChannel() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L361">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R389">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : Future&lt;Tuple2&lt;Integer,Long&gt;&gt; to result : CompletableFuture&lt;Tuple2&lt;Integer,Long&gt;&gt; in method public testQueryableState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L124">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R213">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testServerClosesChannel() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L454">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R494">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	response : KvStateRequestFailure to response : RequestFailure in method public testQueryUnknownKvStateID() : void in class org.apache.flink.queryablestate.network.KvStateServerHandlerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2L176">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2R223">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testConcurrentQueries() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L260">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R288">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	future : java.util.concurrent.Future&lt;Void&gt; to future : Future&lt;Void&gt; in method public testClientServerIntegration() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L529">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R706">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testSimpleRequests() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L112">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R122">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	numElements : int to numElements : long in method public testQueryNonStartedJobState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L419">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R434">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cancellation : Future&lt;CancellationSuccess&gt; to cancellation : CompletableFuture&lt;CancellationSuccess&gt; in method public testQueryableState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L124">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R248">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	expectedRequests : int to expectedRequests : long in method public testSimpleRequests() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L112">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R210">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cancellation : Future&lt;CancellationSuccess&gt; to cancellation : CompletableFuture&lt;CancellationSuccess&gt; in method public testValueState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L351">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R413">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	numElements : int to numElements : long in method public testValueStateDefault() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L574">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R599">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	response : KvStateRequestFailure to response : RequestFailure in method public testFailureOnGetSerializedValue() : void in class org.apache.flink.queryablestate.network.KvStateServerHandlerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2L281">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2R338">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	response : KvStateRequestFailure to response : RequestFailure in method public testSerializerMismatch() : void in class org.apache.flink.queryablestate.network.KvStateServerHandlerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2L498">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2R598">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	numQueries : int to numQueries : long in method public testSimpleRequests() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L112">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R149">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -874,6 +769,111 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-878c77376047e71abc5eaff1f4f3c762R429">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testFailureClosesChannel() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L361">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R389">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : Future&lt;Tuple2&lt;Integer,Long&gt;&gt; to result : CompletableFuture&lt;Tuple2&lt;Integer,Long&gt;&gt; in method public testQueryableState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L124">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R213">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testServerClosesChannel() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L454">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R494">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	response : KvStateRequestFailure to response : RequestFailure in method public testQueryUnknownKvStateID() : void in class org.apache.flink.queryablestate.network.KvStateServerHandlerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2L176">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2R223">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testConcurrentQueries() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L260">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R288">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : java.util.concurrent.Future&lt;Void&gt; to future : Future&lt;Void&gt; in method public testClientServerIntegration() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L529">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R706">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : KvStateClient to client : Client&lt;KvStateInternalRequest,KvStateResponse&gt; in method public testSimpleRequests() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L112">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R122">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	numElements : int to numElements : long in method public testQueryNonStartedJobState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L419">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R434">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cancellation : Future&lt;CancellationSuccess&gt; to cancellation : CompletableFuture&lt;CancellationSuccess&gt; in method public testQueryableState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L124">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R248">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	expectedRequests : int to expectedRequests : long in method public testSimpleRequests() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L112">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R210">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cancellation : Future&lt;CancellationSuccess&gt; to cancellation : CompletableFuture&lt;CancellationSuccess&gt; in method public testValueState() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L351">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R413">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	numElements : int to numElements : long in method public testValueStateDefault() : void in class org.apache.flink.queryablestate.itcases.AbstractQueryableStateITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74L574">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7598d59f17f754f16fe3eaa1d2de2c74R599">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	response : KvStateRequestFailure to response : RequestFailure in method public testFailureOnGetSerializedValue() : void in class org.apache.flink.queryablestate.network.KvStateServerHandlerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2L281">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2R338">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	response : KvStateRequestFailure to response : RequestFailure in method public testSerializerMismatch() : void in class org.apache.flink.queryablestate.network.KvStateServerHandlerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2L498">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9294c176d556a55b1ddac18040d75d2R598">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	numQueries : int to numQueries : long in method public testSimpleRequests() : void in class org.apache.flink.queryablestate.network.ClientTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-7fc5f20c17b6a5c2eb220b72747ec1d1L112">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a3e641ac88e77463d43ac76d21a6d479R149">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -902,34 +902,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public serializeKvStateRequestFailure(alloc ByteBufAllocator, requestId long, cause Throwable) : ByteBuf renamed to public serializeRequestFailure(alloc ByteBufAllocator, requestId long, cause Throwable) : ByteBuf in class org.apache.flink.queryablestate.network.messages.MessageSerializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L136">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4R116">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public shutDown() : void renamed to public shutdown() : void in class org.apache.flink.queryablestate.server.KvStateServerImpl</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4250654091e68593162b43823816da36L170">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4250654091e68593162b43823816da36R106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public testKvStateRequestResultSerialization() : void renamed to public testResponseSerialization() : void in class org.apache.flink.queryablestate.network.MessageSerializerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-2b65593dbd302b13728916b3bc99f5efL115">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4654ea51829be772cae2e72482c61344R121">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public shutDown() : void renamed to public shutdown() : void in class org.apache.flink.runtime.query.KvStateServer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-5de387a92b76cdfc0f82e1e04f5438f6L39">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-5de387a92b76cdfc0f82e1e04f5438f6R38">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -973,6 +945,34 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4R82">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public serializeKvStateRequestFailure(alloc ByteBufAllocator, requestId long, cause Throwable) : ByteBuf renamed to public serializeRequestFailure(alloc ByteBufAllocator, requestId long, cause Throwable) : ByteBuf in class org.apache.flink.queryablestate.network.messages.MessageSerializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4L136">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-8f0aef4cb5e11959d389710fd5a68bc4R116">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public shutDown() : void renamed to public shutdown() : void in class org.apache.flink.queryablestate.server.KvStateServerImpl</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4250654091e68593162b43823816da36L170">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4250654091e68593162b43823816da36R106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public testKvStateRequestResultSerialization() : void renamed to public testResponseSerialization() : void in class org.apache.flink.queryablestate.network.MessageSerializerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-2b65593dbd302b13728916b3bc99f5efL115">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4654ea51829be772cae2e72482c61344R121">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public shutDown() : void renamed to public shutdown() : void in class org.apache.flink.runtime.query.KvStateServer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-5de387a92b76cdfc0f82e1e04f5438f6L39">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-5de387a92b76cdfc0f82e1e04f5438f6R38">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -983,20 +983,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public channelInactive(ctx ChannelHandlerContext) : void from class org.apache.flink.queryablestate.server.KvStateServerHandler to public channelInactive(ctx ChannelHandlerContext) : void from class org.apache.flink.queryablestate.network.AbstractServerHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-05f31b23d4d224e78357bada60ac8c58L91">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-1b305b4d7d1c9557af3775c92fc462f1R97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	private createQueryExecutor(numQueryThreads int) : ExecutorService from class org.apache.flink.queryablestate.server.KvStateServerImpl to private createQueryExecutor(numQueryThreads int) : ExecutorService from class org.apache.flink.queryablestate.network.AbstractServerBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4250654091e68593162b43823816da36L186">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a492b557227fc3172a7318a1a53dae54R131">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1019,6 +1005,20 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-1b305b4d7d1c9557af3775c92fc462f1R92">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public channelInactive(ctx ChannelHandlerContext) : void from class org.apache.flink.queryablestate.server.KvStateServerHandler to public channelInactive(ctx ChannelHandlerContext) : void from class org.apache.flink.queryablestate.network.AbstractServerHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-05f31b23d4d224e78357bada60ac8c58L91">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-1b305b4d7d1c9557af3775c92fc462f1R97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	private createQueryExecutor(numQueryThreads int) : ExecutorService from class org.apache.flink.queryablestate.server.KvStateServerImpl to private createQueryExecutor(numQueryThreads int) : ExecutorService from class org.apache.flink.queryablestate.network.AbstractServerBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4250654091e68593162b43823816da36L186">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-a492b557227fc3172a7318a1a53dae54R131">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1029,13 +1029,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	request : KvStateRequestFailure to requestFailure : RequestFailure in method public testKvStateRequestFailureSerialization() : void in class org.apache.flink.queryablestate.network.MessageSerializerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-2b65593dbd302b13728916b3bc99f5efL183">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4654ea51829be772cae2e72482c61344R189">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1058,6 +1051,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4654ea51829be772cae2e72482c61344R77">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	request : KvStateRequestFailure to requestFailure : RequestFailure in method public testKvStateRequestFailureSerialization() : void in class org.apache.flink.queryablestate.network.MessageSerializerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-2b65593dbd302b13728916b3bc99f5efL183">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-4654ea51829be772cae2e72482c61344R189">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1068,6 +1068,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Future&lt;V&gt; to CompletableFuture&lt;V&gt; in method public getKvState(jobId JobID, queryableStateName String, key K, keyTypeInfo TypeInformation&lt;K&gt;, stateDescriptor StateDescriptor&lt;?,V&gt;) : CompletableFuture&lt;V&gt; in class org.apache.flink.queryablestate.client.QueryableStateClient</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fL349">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fR160">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Future&lt;V&gt; to CompletableFuture&lt;V&gt; in method public getKvState(jobId JobID, queryableStateName String, key K, namespace N, keyTypeInfo TypeInformation&lt;K&gt;, namespaceTypeInfo TypeInformation&lt;N&gt;, stateSerializer TypeSerializer&lt;V&gt;) : CompletableFuture&lt;V&gt; in class org.apache.flink.queryablestate.client.QueryableStateClient</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fL421">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fR212">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Future&lt;byte[]&gt; to CompletableFuture&lt;RESP&gt; in method public sendRequest(serverAddress KvStateServerAddress, request REQ) : CompletableFuture&lt;RESP&gt; in class org.apache.flink.queryablestate.network.Client</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9de4a50daf3d76096afb3e1cde0a343L131">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-878c77376047e71abc5eaff1f4f3c762R135">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1109,27 +1130,6 @@
                                 <td><i>Change Return Type	void to ExecutionConfig in method public setExecutionConfig(config ExecutionConfig) : ExecutionConfig in class org.apache.flink.queryablestate.client.QueryableStateClient</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fL207">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fR126">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Future&lt;V&gt; to CompletableFuture&lt;V&gt; in method public getKvState(jobId JobID, queryableStateName String, key K, keyTypeInfo TypeInformation&lt;K&gt;, stateDescriptor StateDescriptor&lt;?,V&gt;) : CompletableFuture&lt;V&gt; in class org.apache.flink.queryablestate.client.QueryableStateClient</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fL349">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fR160">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Future&lt;V&gt; to CompletableFuture&lt;V&gt; in method public getKvState(jobId JobID, queryableStateName String, key K, namespace N, keyTypeInfo TypeInformation&lt;K&gt;, namespaceTypeInfo TypeInformation&lt;N&gt;, stateSerializer TypeSerializer&lt;V&gt;) : CompletableFuture&lt;V&gt; in class org.apache.flink.queryablestate.client.QueryableStateClient</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fL421">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fR212">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Future&lt;byte[]&gt; to CompletableFuture&lt;RESP&gt; in method public sendRequest(serverAddress KvStateServerAddress, request REQ) : CompletableFuture&lt;RESP&gt; in class org.apache.flink.queryablestate.network.Client</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-d9de4a50daf3d76096afb3e1cde0a343L131">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-878c77376047e71abc5eaff1f4f3c762R135">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1184,13 +1184,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	kvStateId : KvStateID to stateName : String in class org.apache.flink.queryablestate.messages.KvStateRequest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-b403cef7e9150c91e484b68889366d2dL34">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-b403cef7e9150c91e484b68889366d2dR41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	requestId : long to keyHashCode : int in class org.apache.flink.queryablestate.messages.KvStateRequest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-b403cef7e9150c91e484b68889366d2dL31">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-b403cef7e9150c91e484b68889366d2dR42">To</a></td>
@@ -1201,6 +1194,13 @@
                                 <td><i>Rename Attribute	actorSystem : ActorSystem to client : Client&lt;KvStateRequest,KvStateResponse&gt; in class org.apache.flink.queryablestate.client.QueryableStateClient</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fL112">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-fc6557dbeb8395fff45c2dcaa49b6d9fR72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	kvStateId : KvStateID to stateName : String in class org.apache.flink.queryablestate.messages.KvStateRequest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-b403cef7e9150c91e484b68889366d2dL34">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f48f5340a871ac58a649766e434218b67e9322ac?diff=split#diff-b403cef7e9150c91e484b68889366d2dR41">To</a></td>
                             </tr>
                             
                             </tbody>

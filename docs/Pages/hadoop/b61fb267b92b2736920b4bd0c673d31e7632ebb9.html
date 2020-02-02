@@ -437,6 +437,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	decommissionOnlyReplicas : int to outOfServiceOnlyReplicas : int in method private processBlocksInternal(datanode DatanodeDescriptor, it Iterator&lt;BlockInfo&gt;, insufficientList List&lt;BlockInfo&gt;, pruneReliableBlocks boolean) : void in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.Monitor</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL583">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR638">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	file1 : Path to file : Path in method public testTransitionFromDecommissioned() : void in class org.apache.hadoop.hdfs.TestMaintenanceState</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-5a2e75b68ecc0246ecab9b27250ff97bL208">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-5a2e75b68ecc0246ecab9b27250ff97bR221">To</a></td>
@@ -517,13 +524,6 @@
                                 <td><i>Rename Variable	decommissioned : boolean to outOfService : boolean in method private shouldIgnore(dn DatanodeInfo) : boolean in class org.apache.hadoop.hdfs.server.balancer.Dispatcher</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-d98d8d8ce97b387cbc7a9bef674a1f19L993">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-d98d8d8ce97b387cbc7a9bef674a1f19R993">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	decommissionOnlyReplicas : int to outOfServiceOnlyReplicas : int in method private processBlocksInternal(datanode DatanodeDescriptor, it Iterator&lt;BlockInfo&gt;, insufficientList List&lt;BlockInfo&gt;, pruneReliableBlocks boolean) : void in class org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager.Monitor</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eL583">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-fc9a89f8c76853d4537588166ead0f9eR638">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -661,34 +661,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	package isNeededReconstruction(storedBlock BlockInfo, numberReplicas NumberReplicas) : boolean extracted from private processMisReplicatedBlock(block BlockInfo) : MisReplicationResult in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private startDecommissionOrMaintenance(dnm DatanodeManager, dnd DatanodeDescriptor, decomm boolean) : void extracted from public testXceiverCount() : void in class org.apache.hadoop.hdfs.server.namenode.TestNamenodeCapacityReport</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public getExpectedLiveRedundancyNum(block BlockInfo, numberReplicas NumberReplicas) : short extracted from private scheduleReconstruction(block BlockInfo, priority int) : BlockReconstructionWork in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private removeDatanode(nodeInfo DatanodeDescriptor, removeBlocksFromBlocksMap boolean) : void extracted from private removeDatanode(nodeInfo DatanodeDescriptor) : void in class org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public getExpectedLiveRedundancyNum(block BlockInfo, numberReplicas NumberReplicas) : short extracted from private validateReconstructionWork(rw BlockReconstructionWork) : boolean in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -718,6 +690,34 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	package isNeededReconstruction(storedBlock BlockInfo, numberReplicas NumberReplicas) : boolean extracted from private processPendingReconstructions() : void in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	package isNeededReconstruction(storedBlock BlockInfo, numberReplicas NumberReplicas) : boolean extracted from private processMisReplicatedBlock(block BlockInfo) : MisReplicationResult in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private startDecommissionOrMaintenance(dnm DatanodeManager, dnd DatanodeDescriptor, decomm boolean) : void extracted from public testXceiverCount() : void in class org.apache.hadoop.hdfs.server.namenode.TestNamenodeCapacityReport</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public getExpectedLiveRedundancyNum(block BlockInfo, numberReplicas NumberReplicas) : short extracted from private scheduleReconstruction(block BlockInfo, priority int) : BlockReconstructionWork in class org.apache.hadoop.hdfs.server.blockmanagement.BlockManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private removeDatanode(nodeInfo DatanodeDescriptor, removeBlocksFromBlocksMap boolean) : void extracted from private removeDatanode(nodeInfo DatanodeDescriptor) : void in class org.apache.hadoop.hdfs.server.blockmanagement.DatanodeManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -753,27 +753,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	decomissionedReplicas : int to outOfServiceReplicas : int in method package add(block BlockInfo, curReplicas int, readOnlyReplicas int, outOfServiceReplicas int, expectedReplicas int) : boolean in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L237">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R236">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	decommissionedReplicas : int to outOfServiceReplicas : int in method private getPriorityStriped(curReplicas int, outOfServiceReplicas int, dataBlkNum short, parityBlkNum short) : int in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L204">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R204">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	decommissionedReplicas : int to outOfServiceReplicas : int in method private getPriority(block BlockInfo, curReplicas int, readOnlyReplicas int, outOfServiceReplicas int, expectedReplicas int) : int in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L158">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R158">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	decommissionedReplicas : int to outOfServiceReplicas : int in method private getPriorityContiguous(curReplicas int, readOnlyReplicas int, outOfServiceReplicas int, expectedReplicas int) : int in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L176">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R176">To</a></td>
@@ -805,6 +784,27 @@
                                 <td><i>Rename Parameter	decommissionedReplicas : int to outOfServiceReplicas : int in method package update(block BlockInfo, curReplicas int, readOnlyReplicas int, outOfServiceReplicas int, curExpectedReplicas int, curReplicasDelta int, expectedReplicasDelta int) : void in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L335">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R330">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	decomissionedReplicas : int to outOfServiceReplicas : int in method package add(block BlockInfo, curReplicas int, readOnlyReplicas int, outOfServiceReplicas int, expectedReplicas int) : boolean in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L237">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R236">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	decommissionedReplicas : int to outOfServiceReplicas : int in method private getPriorityStriped(curReplicas int, outOfServiceReplicas int, dataBlkNum short, parityBlkNum short) : int in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L204">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R204">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	decommissionedReplicas : int to outOfServiceReplicas : int in method private getPriority(block BlockInfo, curReplicas int, readOnlyReplicas int, outOfServiceReplicas int, expectedReplicas int) : int in class org.apache.hadoop.hdfs.server.blockmanagement.LowRedundancyBlocks</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3L158">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/b61fb267b92b2736920b4bd0c673d31e7632ebb9?diff=split#diff-bfa0e432065b3afc424dfceff77217c3R158">To</a></td>
                             </tr>
                             
                             </tbody>

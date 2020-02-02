@@ -232,6 +232,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	request : Future&lt;Void&gt; to request : Future&lt;BlockReadStats&gt; in method package readChunk(block LocatedBlock, chunkIndex int) : boolean in class org.apache.hadoop.hdfs.StripeReader</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60L285">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60R318">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : Future&lt;Void&gt; to future : Future&lt;BlockReadStats&gt; in method public getNextCompletedStripedRead(readService CompletionService&lt;BlockReadStats&gt;, futures Map&lt;Future&lt;BlockReadStats&gt;,Integer&gt;, timeoutMillis long) : StripingChunkReadResult in class org.apache.hadoop.hdfs.util.StripedBlockUtil</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-f8d9ce161f564a30b0334387c95171a6L238">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-f8d9ce161f564a30b0334387c95171a6R294">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	future : Future&lt;Void&gt; to future : Future in method package clearFutures() : void in class org.apache.hadoop.hdfs.StripeReader</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60L462">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60R470">To</a></td>
@@ -279,20 +293,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249R415">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	request : Future&lt;Void&gt; to request : Future&lt;BlockReadStats&gt; in method package readChunk(block LocatedBlock, chunkIndex int) : boolean in class org.apache.hadoop.hdfs.StripeReader</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60L285">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60R318">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	future : Future&lt;Void&gt; to future : Future&lt;BlockReadStats&gt; in method public getNextCompletedStripedRead(readService CompletionService&lt;BlockReadStats&gt;, futures Map&lt;Future&lt;BlockReadStats&gt;,Integer&gt;, timeoutMillis long) : StripingChunkReadResult in class org.apache.hadoop.hdfs.util.StripedBlockUtil</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-f8d9ce161f564a30b0334387c95171a6L238">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-f8d9ce161f564a30b0334387c95171a6R294">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -324,13 +324,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	readService : CompletionService&lt;Void&gt; to readService : CompletionService&lt;BlockReadStats&gt; in class org.apache.hadoop.hdfs.server.datanode.erasurecode.StripedReader</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249L84">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	futures : Map&lt;Future&lt;Void&gt;,Integer&gt; to futures : Map&lt;Future&lt;BlockReadStats&gt;,Integer&gt; in class org.apache.hadoop.hdfs.server.datanode.erasurecode.StripedReader</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249L83">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249R84">To</a></td>
@@ -348,6 +341,13 @@
                                 <td><i>Change Attribute Type	futures : Map&lt;Future&lt;Void&gt;,Integer&gt; to futures : Map&lt;Future&lt;BlockReadStats&gt;,Integer&gt; in class org.apache.hadoop.hdfs.StripeReader</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60L108">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-04d183f3cdc7ed7b2a235d73eacfea60R109">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	readService : CompletionService&lt;Void&gt; to readService : CompletionService&lt;BlockReadStats&gt; in class org.apache.hadoop.hdfs.server.datanode.erasurecode.StripedReader</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249L84">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/08bb6c49a5aec32b7d9f29238560f947420405d6?diff=split#diff-fb5705f1ab00a5c043b47d19bd68d249R85">To</a></td>
                             </tr>
                             
                             </tbody>

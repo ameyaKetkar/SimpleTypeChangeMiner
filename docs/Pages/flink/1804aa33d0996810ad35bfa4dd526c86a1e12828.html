@@ -279,13 +279,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.flink.runtime.rpc.akka.messages.CallAsync moved to org.apache.flink.runtime.rpc.messages.CallAsync</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Class	org.apache.flink.runtime.rpc.akka.messages.LocalRpcInvocation moved to org.apache.flink.runtime.rpc.messages.LocalRpcInvocation</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -319,6 +312,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.runtime.rpc.akka.messages.CallAsync moved to org.apache.flink.runtime.rpc.messages.CallAsync</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -332,13 +332,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Parameterize Variable	futureTimeout : Time to timeout : Time in method protected ask(message Object, timeout Time) : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adL119">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adR326">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Parameterize Variable	rpcInvocation : RpcInvocation to message : Object in method protected ask(message Object, timeout Time) : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adL121">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adR326">To</a></td>
@@ -349,6 +342,13 @@
                                 <td><i>Parameterize Variable	rpcInvocation : RpcInvocation to message : Object in method protected tell(message Object) : void in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adL121">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adR314">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Parameterize Variable	futureTimeout : Time to timeout : Time in method protected ask(message Object, timeout Time) : CompletableFuture&lt;?&gt; in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adL119">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1804aa33d0996810ad35bfa4dd526c86a1e12828?diff=split#diff-89e8cbb480162aae303ff229d512b6adR326">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -421,6 +421,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	protected ask(message Object, timeout Time) : CompletableFuture&lt;?&gt; extracted from public callAsync(callable Callable&lt;V&gt;, callTimeout Time) : CompletableFuture&lt;V&gt; in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private extractAddressHostname(actorRef ActorRef) : Tuple2&lt;String,String&gt; extracted from public connect(address String, clazz Class&lt;C&gt;) : CompletableFuture&lt;C&gt; in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private connectInternal(address String, clazz Class&lt;C&gt;, invocationHandlerFactory Function&lt;ActorRef,InvocationHandler&gt;) : CompletableFuture&lt;C&gt; extracted from public connect(address String, clazz Class&lt;C&gt;) : CompletableFuture&lt;C&gt; in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	protected tell(message Object) : void extracted from public scheduleRunAsync(runnable Runnable, delayMillis long) : void in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -457,27 +478,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	protected ask(message Object, timeout Time) : CompletableFuture&lt;?&gt; extracted from public invoke(proxy Object, method Method, args Object[]) : Object in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	protected ask(message Object, timeout Time) : CompletableFuture&lt;?&gt; extracted from public callAsync(callable Callable&lt;V&gt;, callTimeout Time) : CompletableFuture&lt;V&gt; in class org.apache.flink.runtime.rpc.akka.AkkaInvocationHandler</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private extractAddressHostname(actorRef ActorRef) : Tuple2&lt;String,String&gt; extracted from public connect(address String, clazz Class&lt;C&gt;) : CompletableFuture&lt;C&gt; in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private connectInternal(address String, clazz Class&lt;C&gt;, invocationHandlerFactory Function&lt;ActorRef,InvocationHandler&gt;) : CompletableFuture&lt;C&gt; extracted from public connect(address String, clazz Class&lt;C&gt;) : CompletableFuture&lt;C&gt; in class org.apache.flink.runtime.rpc.akka.AkkaRpcService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

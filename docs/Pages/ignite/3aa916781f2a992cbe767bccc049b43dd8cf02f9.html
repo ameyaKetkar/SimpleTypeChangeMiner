@@ -190,13 +190,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	data : DiscoveryDataBag.GridDiscoveryData to data : GridDiscoveryData in method public onGridDataReceived(data GridDiscoveryData) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L874">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R1063">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	discoData : DiscoveryDataBag.JoiningNodeDiscoveryData to discoData : JoiningNodeDiscoveryData in method public onJoiningNodeDataReceived(discoData JoiningNodeDiscoveryData) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L630">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R754">To</a></td>
@@ -228,6 +221,13 @@
                                 <td><i>Change Parameter Type	discoData : DiscoveryDataBag.JoiningNodeDiscoveryData to discoData : JoiningNodeDiscoveryData in method private getJoiningNodeData(discoData JoiningNodeDiscoveryData) : DistributedMetaStorageJoiningNodeData in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L760">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R910">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	data : DiscoveryDataBag.GridDiscoveryData to data : GridDiscoveryData in method public onGridDataReceived(data GridDiscoveryData) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L874">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R1063">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -385,6 +385,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	item : DistributedMetaStorageHistoryItem to item : DistributedMetaStorageKeyValuePair in method public iterate(globalKeyPrefix String, cb BiConsumer&lt;String,? super Serializable&gt;, unmarshal boolean) : void in class org.apache.ignite.internal.processors.metastorage.persistence.ReadOnlyDistributedMetaStorageBridge</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dL75">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dR98">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	fullData : DistributedMetaStorageHistoryItem[] to fullData : DistributedMetaStorageKeyValuePair[] in method public collectGridNodeData(dataBag DiscoveryDataBag) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L669">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R855">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	locFullData : List&lt;DistributedMetaStorageHistoryItem&gt; to locFullData : List&lt;DistributedMetaStorageKeyValuePair&gt; in method public localFullData() : DistributedMetaStorageKeyValuePair[] in class org.apache.ignite.internal.processors.metastorage.persistence.WritableDistributedMetaStorageBridge</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e3af0f0a4244b090206e8d8bcc64adf0L103">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e3af0f0a4244b090206e8d8bcc64adf0R100">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	locFullData : DistributedMetaStorageHistoryItem[] to locFullData : DistributedMetaStorageKeyValuePair[] in method public onDeActivate(kctx GridKernalContext) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L274">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R331">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	newData : DistributedMetaStorageHistoryItem[] to newData : DistributedMetaStorageKeyValuePair[] in method private notifyListenersBeforeReadyForWrite(bridge DistributedMetaStorageBridge) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L1197">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R1460">To</a></td>
@@ -418,34 +446,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-3f5f59eea255d13043fd0579bcf9f396R92">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	item : DistributedMetaStorageHistoryItem to item : DistributedMetaStorageKeyValuePair in method public iterate(globalKeyPrefix String, cb BiConsumer&lt;String,? super Serializable&gt;, unmarshal boolean) : void in class org.apache.ignite.internal.processors.metastorage.persistence.ReadOnlyDistributedMetaStorageBridge</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dL75">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dR98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	fullData : DistributedMetaStorageHistoryItem[] to fullData : DistributedMetaStorageKeyValuePair[] in method public collectGridNodeData(dataBag DiscoveryDataBag) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L669">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R855">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	locFullData : List&lt;DistributedMetaStorageHistoryItem&gt; to locFullData : List&lt;DistributedMetaStorageKeyValuePair&gt; in method public localFullData() : DistributedMetaStorageKeyValuePair[] in class org.apache.ignite.internal.processors.metastorage.persistence.WritableDistributedMetaStorageBridge</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e3af0f0a4244b090206e8d8bcc64adf0L103">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e3af0f0a4244b090206e8d8bcc64adf0R100">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	locFullData : DistributedMetaStorageHistoryItem[] to locFullData : DistributedMetaStorageKeyValuePair[] in method public onDeActivate(kctx GridKernalContext) : void in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L274">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R331">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -456,20 +456,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	HISTORY_ITEM_KEY_COMPARATOR : Comparator&lt;DistributedMetaStorageHistoryItem&gt; to KEY_COMPARATOR : Comparator&lt;DistributedMetaStorageKeyValuePair&gt; in class org.apache.ignite.internal.processors.metastorage.persistence.ReadOnlyDistributedMetaStorageBridge</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dL41">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	histCache : Map&lt;Long,DistributedMetaStorageHistoryItem&gt; to histCache : DistributedMetaStorageHistoryCache in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L125">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R164">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -499,6 +485,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R157">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	HISTORY_ITEM_KEY_COMPARATOR : Comparator&lt;DistributedMetaStorageHistoryItem&gt; to KEY_COMPARATOR : Comparator&lt;DistributedMetaStorageKeyValuePair&gt; in class org.apache.ignite.internal.processors.metastorage.persistence.ReadOnlyDistributedMetaStorageBridge</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dL41">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-5e35bda7246e993135e6cc816e7c4f3dR43">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	histCache : Map&lt;Long,DistributedMetaStorageHistoryItem&gt; to histCache : DistributedMetaStorageHistoryCache in class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116L125">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/3aa916781f2a992cbe767bccc049b43dd8cf02f9?diff=split#diff-e0db03de5eb49ca5b3ef91c6b2d16116R164">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -512,14 +512,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	public setVer(ver DistributedMetaStorageVersion) : void extracted from public restore(startupExtras StartupExtras) : void in class org.apache.ignite.internal.processors.metastorage.persistence.InMemoryCachedDistributedMetaStorageBridge &amp; moved to class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
+                                <td><i>Extract And Move Method	public setVer(ver DistributedMetaStorageVersion) : void extracted from public restore(startupExtras StartupExtras) : void in class org.apache.ignite.internal.processors.metastorage.persistence.WritableDistributedMetaStorageBridge &amp; moved to class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	public setVer(ver DistributedMetaStorageVersion) : void extracted from public restore(startupExtras StartupExtras) : void in class org.apache.ignite.internal.processors.metastorage.persistence.WritableDistributedMetaStorageBridge &amp; moved to class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
+                                <td><i>Extract And Move Method	public setVer(ver DistributedMetaStorageVersion) : void extracted from public restore(startupExtras StartupExtras) : void in class org.apache.ignite.internal.processors.metastorage.persistence.InMemoryCachedDistributedMetaStorageBridge &amp; moved to class org.apache.ignite.internal.processors.metastorage.persistence.DistributedMetaStorageImpl</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -300,6 +300,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public register(proc Class&lt;?&gt;, overrideCurrentImplementation boolean) : void renamed to public registerFunction(func Class&lt;?&gt;, overrideCurrentImplementation boolean) : void in class org.neo4j.kernel.impl.proc.Procedures</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cL114">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cR135">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public register(proc Class&lt;?&gt;) : void renamed to public registerProcedure(proc Class&lt;?&gt;, overrideCurrentImplementation boolean) : void in class org.neo4j.kernel.impl.proc.Procedures</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cL105">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cR114">To</a></td>
@@ -310,13 +317,6 @@
                                 <td><i>Rename Method	public compile(procDefinition Class&lt;?&gt;) : List&lt;CallableProcedure&gt; renamed to public compileProcedure(procDefinition Class&lt;?&gt;) : List&lt;CallableProcedure&gt; in class org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-1093ccdb2ce7b572eba3a14db2ba5783L73">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-1093ccdb2ce7b572eba3a14db2ba5783R113">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public register(proc Class&lt;?&gt;, overrideCurrentImplementation boolean) : void renamed to public registerFunction(func Class&lt;?&gt;, overrideCurrentImplementation boolean) : void in class org.neo4j.kernel.impl.proc.Procedures</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cL114">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cR135">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -514,14 +514,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private mode(incoming Mode) : Mode extracted from private compileProcedure(procDefinition Class&lt;?&gt;, constructor MethodHandle, method Method) : ReflectiveProcedure in class org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler</i></td>
+                                <td><i>Extract Method	private deprecated(method Method, supplier Supplier&lt;String&gt;, warning String) : Optional&lt;String&gt; extracted from private compileProcedure(procDefinition Class&lt;?&gt;, constructor MethodHandle, method Method) : ReflectiveProcedure in class org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private deprecated(method Method, supplier Supplier&lt;String&gt;, warning String) : Optional&lt;String&gt; extracted from private compileProcedure(procDefinition Class&lt;?&gt;, constructor MethodHandle, method Method) : ReflectiveProcedure in class org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler</i></td>
+                                <td><i>Extract Method	private mode(incoming Mode) : Mode extracted from private compileProcedure(procDefinition Class&lt;?&gt;, constructor MethodHandle, method Method) : ReflectiveProcedure in class org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -578,16 +578,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	outputSignature : FieldSignature to type : Neo4jTypes.AnyType in method public FunctionSignature(name QualifiedName, inputSignature List&lt;Neo4jTypes.AnyType&gt;, type Neo4jTypes.AnyType, mode Mode, deprecated Optional&lt;String&gt;, allowed String[], description Optional&lt;String&gt;) in class org.neo4j.kernel.api.proc.FunctionSignature</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-2ce40efb80d329310463ca0938d64d1dL49">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-2ce40efb80d329310463ca0938d64d1dR48">To</a></td>
+                                <td><i>Rename Parameter	proc : Class&lt;?&gt; to func : Class&lt;?&gt; in method public registerFunction(func Class&lt;?&gt;, overrideCurrentImplementation boolean) : void in class org.neo4j.kernel.impl.proc.Procedures</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cL118">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cR139">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	proc : Class&lt;?&gt; to func : Class&lt;?&gt; in method public registerFunction(func Class&lt;?&gt;, overrideCurrentImplementation boolean) : void in class org.neo4j.kernel.impl.proc.Procedures</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cL118">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-532359458676827e229a3df4e86e4e9cR139">To</a></td>
+                                <td><i>Rename Parameter	outputSignature : FieldSignature to type : Neo4jTypes.AnyType in method public FunctionSignature(name QualifiedName, inputSignature List&lt;Neo4jTypes.AnyType&gt;, type Neo4jTypes.AnyType, mode Mode, deprecated Optional&lt;String&gt;, allowed String[], description Optional&lt;String&gt;) in class org.neo4j.kernel.api.proc.FunctionSignature</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-2ce40efb80d329310463ca0938d64d1dL49">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/ab33af1e877cbeffdb81fdeab7200155902ba4cd?diff=split#diff-2ce40efb80d329310463ca0938d64d1dR48">To</a></td>
                             </tr>
                             
                             </tbody>

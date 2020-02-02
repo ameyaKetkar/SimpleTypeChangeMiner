@@ -401,16 +401,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private getPagesInternal(maxSize DataSize, sequenceId long) : List&lt;Page&gt; from class com.facebook.presto.execution.SharedBuffer to public getPages(maxSize DataSize, sequenceId long) : List&lt;Page&gt; from class com.facebook.presto.execution.PartitionBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-8cb6848dcc17f1c455f32e8fb4d1d5daL286">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-40bc792c679d741860824ecb5a6b2f94R84">To</a></td>
+                                <td><i>Move And Rename Method	private addInternal(page Page) : void from class com.facebook.presto.execution.SharedBuffer to private addToMasterBuffer(page Page) : void from class com.facebook.presto.execution.PartitionBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-8cb6848dcc17f1c455f32e8fb4d1d5daL256">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-40bc792c679d741860824ecb5a6b2f94R72">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private addInternal(page Page) : void from class com.facebook.presto.execution.SharedBuffer to private addToMasterBuffer(page Page) : void from class com.facebook.presto.execution.PartitionBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-8cb6848dcc17f1c455f32e8fb4d1d5daL256">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-40bc792c679d741860824ecb5a6b2f94R72">To</a></td>
+                                <td><i>Move And Rename Method	private getPagesInternal(maxSize DataSize, sequenceId long) : List&lt;Page&gt; from class com.facebook.presto.execution.SharedBuffer to public getPages(maxSize DataSize, sequenceId long) : List&lt;Page&gt; from class com.facebook.presto.execution.PartitionBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-8cb6848dcc17f1c455f32e8fb4d1d5daL286">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-40bc792c679d741860824ecb5a6b2f94R84">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -600,13 +600,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private enqueuePage(sharedBuffer SharedBuffer, page Page, partition int) : ListenableFuture&lt;?&gt; extracted from private enqueuePage(sharedBuffer SharedBuffer, page Page) : ListenableFuture&lt;?&gt; in class com.facebook.presto.execution.TestSharedBuffer</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public enqueue(partition int, page Page) : ListenableFuture&lt;?&gt; extracted from public enqueue(page Page) : ListenableFuture&lt;?&gt; in class com.facebook.presto.execution.SharedBuffer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -615,6 +608,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private addPage(sharedBuffer SharedBuffer, page Page, partition int) : void extracted from private addPage(sharedBuffer SharedBuffer, page Page) : void in class com.facebook.presto.execution.TestSharedBuffer</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private enqueuePage(sharedBuffer SharedBuffer, page Page, partition int) : ListenableFuture&lt;?&gt; extracted from private enqueuePage(sharedBuffer SharedBuffer, page Page) : ListenableFuture&lt;?&gt; in class com.facebook.presto.execution.TestSharedBuffer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -629,6 +629,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	masterSequenceId : long to canAddBuffers : boolean in method public SharedBufferInfo(state BufferState, canAddBuffers boolean, canAddPages boolean, totalBufferedBytes long, totalBufferedPages long, totalQueuedPages long, totalPagesSent long, buffers List&lt;BufferInfo&gt;) in class com.facebook.presto.execution.SharedBufferInfo</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-bb14c7bcb6ed4d7dd716b293d210dc36L36">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-bb14c7bcb6ed4d7dd716b293d210dc36R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	obj : Object to o : Object in method public equals(o Object) : boolean in class com.facebook.presto.execution.BufferResult</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-22e970d0548eef37d1564255cf55957cL91">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-22e970d0548eef37d1564255cf55957cR76">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -656,20 +670,6 @@
                                 <td><i>Rename Parameter	pagesAdded : long to canAddPages : boolean in method public SharedBufferInfo(state BufferState, canAddBuffers boolean, canAddPages boolean, totalBufferedBytes long, totalBufferedPages long, totalQueuedPages long, totalPagesSent long, buffers List&lt;BufferInfo&gt;) in class com.facebook.presto.execution.SharedBufferInfo</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-bb14c7bcb6ed4d7dd716b293d210dc36L37">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-bb14c7bcb6ed4d7dd716b293d210dc36R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	masterSequenceId : long to canAddBuffers : boolean in method public SharedBufferInfo(state BufferState, canAddBuffers boolean, canAddPages boolean, totalBufferedBytes long, totalBufferedPages long, totalQueuedPages long, totalPagesSent long, buffers List&lt;BufferInfo&gt;) in class com.facebook.presto.execution.SharedBufferInfo</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-bb14c7bcb6ed4d7dd716b293d210dc36L36">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-bb14c7bcb6ed4d7dd716b293d210dc36R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	obj : Object to o : Object in method public equals(o Object) : boolean in class com.facebook.presto.execution.BufferResult</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-22e970d0548eef37d1564255cf55957cL91">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/58bfad51c928934aa952b9027ddc9764a363a3e0?diff=split#diff-22e970d0548eef37d1564255cf55957cR76">To</a></td>
                             </tr>
                             
                             </tbody>

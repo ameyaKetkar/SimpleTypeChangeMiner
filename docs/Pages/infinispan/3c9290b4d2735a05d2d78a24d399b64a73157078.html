@@ -172,13 +172,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	lockedKeys : Collection&lt;Object&gt; to keys : Collection&lt;?&gt; in method public unlockAll(keys Collection&lt;?&gt;, lockOwner Object) : void in class org.infinispan.util.concurrent.locks.LockManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eL32">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eR60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	lockIntention : Object to lockIntention : Collection&lt;Object&gt; in method public setLockIntention(lockIntention Collection&lt;Object&gt;) : void in class org.infinispan.transaction.xa.DldGlobalTransaction</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-41279e655318ad6f0b5801ae95f2bc1eL93">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-41279e655318ad6f0b5801ae95f2bc1eR92">To</a></td>
@@ -231,6 +224,13 @@
                                 <td><i>Change Parameter Type	map : Map&lt;Lock,Integer&gt; to map : Map&lt;InfinispanLock,Integer&gt; in method private addToDistribution(lock InfinispanLock, map Map&lt;InfinispanLock,Integer&gt;) : void in class org.infinispan.api.tree.TreeStructureHashCodeTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e5658fe18980bacbed08ab2ce6da8da4L54">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e5658fe18980bacbed08ab2ce6da8da4R55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	lockedKeys : Collection&lt;Object&gt; to keys : Collection&lt;?&gt; in method public unlockAll(keys Collection&lt;?&gt;, lockOwner Object) : void in class org.infinispan.util.concurrent.locks.LockManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eL32">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eR60">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -325,6 +325,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	lockManager : LockManagerImpl to lockManager : DefaultLockManager in method protected executeRuntimeStep(context OperationContext, operation ModelNode) : void in class org.jboss.as.clustering.infinispan.subsystem.CacheMetricsHandler</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-ff93de2e222b8be41a50e06e78a53566L133">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-ff93de2e222b8be41a50e06e78a53566R150">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	affectedKeys : Object[] to keysToLock : Collection&lt;Object&gt; in method public visitPrepareCommand(ctx TxInvocationContext, command PrepareCommand) : Object in class org.infinispan.interceptors.locking.OptimisticLockingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861L59">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	distribution : Map&lt;Lock,Integer&gt; to distribution : Map&lt;InfinispanLock,Integer&gt; in method private doTest(fqns List&lt;Fqn&gt;) : void in class org.infinispan.api.tree.TreeStructureHashCodeTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e5658fe18980bacbed08ab2ce6da8da4L36">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e5658fe18980bacbed08ab2ce6da8da4R39">To</a></td>
@@ -363,20 +377,6 @@
                                 <td><i>Change Variable Type	lockContainer : LockContainer&lt;?&gt; to lockContainer : LockContainer in method private doTest(cacheName CacheName) : void in class org.infinispan.lock.KeyLockTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-3a0989346ce808ae07fc25d69eab49b6L62">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-3a0989346ce808ae07fc25d69eab49b6R61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	lockManager : LockManagerImpl to lockManager : DefaultLockManager in method protected executeRuntimeStep(context OperationContext, operation ModelNode) : void in class org.jboss.as.clustering.infinispan.subsystem.CacheMetricsHandler</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-ff93de2e222b8be41a50e06e78a53566L133">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-ff93de2e222b8be41a50e06e78a53566R150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	affectedKeys : Object[] to keysToLock : Collection&lt;Object&gt; in method public visitPrepareCommand(ctx TxInvocationContext, command PrepareCommand) : Object in class org.infinispan.interceptors.locking.OptimisticLockingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861L59">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R60">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -498,13 +498,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	lock : Lock to segmentIndex : int in method public testHashingDistribution() : void in class org.infinispan.lock.StripedHashFunctionTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-2dfe0a038a26b050c0939be6944c94d4L32">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-c4dc700673d258bc65c9018b231c186eR30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	l : Lock to lock : InfinispanLock in method public getOwner(key Object) : Object in class org.infinispan.util.concurrent.locks.impl.DefaultLockManager</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-53b7d622553323838b52fccd6f3d2cedL108">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-3dd458f5dc588a46056b874525f05102R169">To</a></td>
@@ -517,6 +510,13 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-e4dd3b40b893da009151ba5ff3ab2861R60">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	lock : Lock to segmentIndex : int in method public testHashingDistribution() : void in class org.infinispan.lock.StripedHashFunctionTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-2dfe0a038a26b050c0939be6944c94d4L32">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-c4dc700673d258bc65c9018b231c186eR30">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -527,6 +527,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Object to Collection&lt;Object&gt; in method public getLockIntention() : Collection&lt;Object&gt; in class org.infinispan.transaction.xa.DldGlobalTransaction</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-41279e655318ad6f0b5801ae95f2bc1eL86">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-41279e655318ad6f0b5801ae95f2bc1eR85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	int to InfinispanLock in method public getLock(key Object) : InfinispanLock in class org.infinispan.util.concurrent.locks.LockManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eL96">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eR105">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	int to InfinispanLock in method public getLock(key Object) : InfinispanLock in class org.infinispan.stats.wrappers.TopKeyLockManager</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-dfb6b35a32f5fe80ef115368cd562df9L84">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-dfb6b35a32f5fe80ef115368cd562df9R95">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -561,27 +582,6 @@
                                 <td><i>Change Return Type	void to Void in method public call() : Void in class org.infinispan.util.concurrent.locks.impl.DefaultPendingLockManager.PendingLockPromiseImpl</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-4e1b68b341130bf2a5c7e2780b749451L351">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-4e1b68b341130bf2a5c7e2780b749451R352">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Object to Collection&lt;Object&gt; in method public getLockIntention() : Collection&lt;Object&gt; in class org.infinispan.transaction.xa.DldGlobalTransaction</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-41279e655318ad6f0b5801ae95f2bc1eL86">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-41279e655318ad6f0b5801ae95f2bc1eR85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	int to InfinispanLock in method public getLock(key Object) : InfinispanLock in class org.infinispan.util.concurrent.locks.LockManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eL96">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-529edb4c04a82b1814901ad9e299427eR105">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	int to InfinispanLock in method public getLock(key Object) : InfinispanLock in class org.infinispan.stats.wrappers.TopKeyLockManager</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-dfb6b35a32f5fe80ef115368cd562df9L84">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/3c9290b4d2735a05d2d78a24d399b64a73157078?diff=split#diff-dfb6b35a32f5fe80ef115368cd562df9R95">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -300,6 +300,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public writeUniquePropertyConstraint(ruleId long, descriptor NodePropertyDescriptor, indexId long) : ConstraintRule renamed to public createUniquenessConstraintRule(ruleId long, descriptor ConstraintDescriptor, indexId long) : ConstraintRule in class org.neo4j.kernel.impl.constraints.ConstraintSemantics</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264L49">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public visitRemovedUniquePropertyConstraint(element UniquenessConstraint) : void renamed to public visitRemovedConstraint(constraint ConstraintDescriptor) : void in class org.neo4j.storageengine.api.txstate.TxStateVisitor.Delegator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474L284">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474R249">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public constraintsGetForLabelAndPropertyKey(state KernelStatement, descriptor NodePropertyDescriptor) : Iterator&lt;NodePropertyConstraint&gt; renamed to public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90L506">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R512">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public constraintsGetForRelationshipTypeAndPropertyKey(descriptor RelationTypeSchemaDescriptor) : Iterator&lt;RelationshipPropertyConstraint&gt; renamed to public constraintExists(descriptor ConstraintDescriptor) : boolean in class org.neo4j.storageengine.api.StoreReadLayer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56L126">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public constraintsGetForLabelAndPropertyKey(state KernelStatement, descriptor NodePropertyDescriptor) : Iterator&lt;NodePropertyConstraint&gt; renamed to public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.operations.SchemaReadOperations</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7L90">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7R92">To</a></td>
@@ -487,34 +515,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a882911a68abd9241066a955b67eaf58R274">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public writeUniquePropertyConstraint(ruleId long, descriptor NodePropertyDescriptor, indexId long) : ConstraintRule renamed to public createUniquenessConstraintRule(ruleId long, descriptor ConstraintDescriptor, indexId long) : ConstraintRule in class org.neo4j.kernel.impl.constraints.ConstraintSemantics</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264L49">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264R50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public visitRemovedUniquePropertyConstraint(element UniquenessConstraint) : void renamed to public visitRemovedConstraint(constraint ConstraintDescriptor) : void in class org.neo4j.storageengine.api.txstate.TxStateVisitor.Delegator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474L284">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474R249">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public constraintsGetForLabelAndPropertyKey(state KernelStatement, descriptor NodePropertyDescriptor) : Iterator&lt;NodePropertyConstraint&gt; renamed to public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90L506">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R512">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public constraintsGetForRelationshipTypeAndPropertyKey(descriptor RelationTypeSchemaDescriptor) : Iterator&lt;RelationshipPropertyConstraint&gt; renamed to public constraintExists(descriptor ConstraintDescriptor) : boolean in class org.neo4j.storageengine.api.StoreReadLayer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56L126">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R118">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -525,118 +525,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-41" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : SchemaDescriptor in method public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90L506">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R513">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : ConstraintDescriptor in method public constraintExists(state KernelStatement, descriptor ConstraintDescriptor) : boolean in class org.neo4j.kernel.impl.api.LockingStatementOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59L389">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59R383">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : SchemaDescriptor in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.api.ReadOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50L262">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50R266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	element : UniquenessConstraint to constraint : ConstraintDescriptor in method public visitRemovedConstraint(constraint ConstraintDescriptor) : void in class org.neo4j.storageengine.api.txstate.TxStateVisitor.Delegator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474L284">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474R250">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : ConstraintDescriptor in method public createExistenceConstraint(ruleId long, descriptor ConstraintDescriptor) : ConstraintRule in class org.neo4j.kernel.impl.constraints.ConstraintSemantics</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264L54">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	constraint : NodePropertyConstraint to constraint : ConstraintDescriptor in method public constraintDoDrop(constraint ConstraintDescriptor) : void in class org.neo4j.kernel.impl.api.state.TxState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eL1033">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eR961">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : ConstraintDescriptor in method public constraintExists(state KernelStatement, descriptor ConstraintDescriptor) : boolean in class org.neo4j.kernel.impl.api.operations.SchemaReadOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7L103">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7R101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : RelationTypeSchemaDescriptor to descriptor : ConstraintDescriptor in method public constraintExists(descriptor ConstraintDescriptor) : boolean in class org.neo4j.storageengine.api.StoreReadLayer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56L126">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R118">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : RelationTypeSchemaDescriptor in method public validateExistenceConstraint(allRels Cursor&lt;RelationshipItem&gt;, descriptor RelationTypeSchemaDescriptor) : void in class org.neo4j.kernel.impl.enterprise.EnterpriseConstraintSemantics</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04L112">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04R95">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : LabelSchemaDescriptor in method private validateNodePropertyExistenceConstraint(node NodeItem, propertyKey int, descriptor LabelSchemaDescriptor) : void in class org.neo4j.kernel.impl.enterprise.EnterpriseConstraintSemantics</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04L100">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04R82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	constraint : NodePropertyConstraint to constraint : ConstraintDescriptor in method public constraintDoDrop(constraint ConstraintDescriptor) : void in class org.neo4j.kernel.api.txstate.TransactionState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-d7e5458b903e905bea429cc7fca2b29aL92">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-d7e5458b903e905bea429cc7fca2b29aR88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : LabelSchemaDescriptor in method public createUniquenessConstraintIndex(state KernelStatement, schema SchemaReadOperations, descriptor LabelSchemaDescriptor) : long in class org.neo4j.kernel.impl.api.state.ConstraintIndexCreator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-eadc26d49c253dab7152be2dbe7fd72dL68">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-eadc26d49c253dab7152be2dbe7fd72dR89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	constraint : UniquenessConstraint to constraint : ConstraintDescriptor in method private validateNoExistingNodeWithLabelAndProperty(state KernelStatement, constraint ConstraintDescriptor, value Object, modifiedNode long) : void in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751L145">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751R151">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : LabelSchemaDescriptor in method public validateExistenceConstraint(allNodes Iterator&lt;Cursor&lt;NodeItem&gt;&gt;, descriptor LabelSchemaDescriptor) : void in class org.neo4j.kernel.impl.constraints.StandardConstraintSemantics</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2L48">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : ConstraintDescriptor in method public createUniquenessConstraintRule(ruleId long, descriptor ConstraintDescriptor, indexId long) : ConstraintRule in class org.neo4j.kernel.impl.constraints.StandardConstraintSemantics</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2L85">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	constraint : UniquenessConstraint to constraint : ConstraintDescriptor in method public visitAdded(constraint ConstraintDescriptor) : void in class org.neo4j.kernel.impl.api.state.TxState.ConstraintDiffSetsVisitor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eL375">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eR358">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -813,6 +701,118 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R524">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : SchemaDescriptor in method public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90L506">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R513">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : ConstraintDescriptor in method public constraintExists(state KernelStatement, descriptor ConstraintDescriptor) : boolean in class org.neo4j.kernel.impl.api.LockingStatementOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59L389">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59R383">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : SchemaDescriptor in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.api.ReadOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50L262">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50R266">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	element : UniquenessConstraint to constraint : ConstraintDescriptor in method public visitRemovedConstraint(constraint ConstraintDescriptor) : void in class org.neo4j.storageengine.api.txstate.TxStateVisitor.Delegator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474L284">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474R250">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : ConstraintDescriptor in method public createExistenceConstraint(ruleId long, descriptor ConstraintDescriptor) : ConstraintRule in class org.neo4j.kernel.impl.constraints.ConstraintSemantics</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264L54">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ad4d909fabc8b533f6461f9b0df37264R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	constraint : NodePropertyConstraint to constraint : ConstraintDescriptor in method public constraintDoDrop(constraint ConstraintDescriptor) : void in class org.neo4j.kernel.impl.api.state.TxState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eL1033">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eR961">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : ConstraintDescriptor in method public constraintExists(state KernelStatement, descriptor ConstraintDescriptor) : boolean in class org.neo4j.kernel.impl.api.operations.SchemaReadOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7L103">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7R101">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : RelationTypeSchemaDescriptor to descriptor : ConstraintDescriptor in method public constraintExists(descriptor ConstraintDescriptor) : boolean in class org.neo4j.storageengine.api.StoreReadLayer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56L126">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : RelationshipPropertyDescriptor to descriptor : RelationTypeSchemaDescriptor in method public validateExistenceConstraint(allRels Cursor&lt;RelationshipItem&gt;, descriptor RelationTypeSchemaDescriptor) : void in class org.neo4j.kernel.impl.enterprise.EnterpriseConstraintSemantics</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04L112">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04R95">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : LabelSchemaDescriptor in method private validateNodePropertyExistenceConstraint(node NodeItem, propertyKey int, descriptor LabelSchemaDescriptor) : void in class org.neo4j.kernel.impl.enterprise.EnterpriseConstraintSemantics</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04L100">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-56b48cf402819079714724d19538ce04R82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	constraint : NodePropertyConstraint to constraint : ConstraintDescriptor in method public constraintDoDrop(constraint ConstraintDescriptor) : void in class org.neo4j.kernel.api.txstate.TransactionState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-d7e5458b903e905bea429cc7fca2b29aL92">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-d7e5458b903e905bea429cc7fca2b29aR88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : LabelSchemaDescriptor in method public createUniquenessConstraintIndex(state KernelStatement, schema SchemaReadOperations, descriptor LabelSchemaDescriptor) : long in class org.neo4j.kernel.impl.api.state.ConstraintIndexCreator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-eadc26d49c253dab7152be2dbe7fd72dL68">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-eadc26d49c253dab7152be2dbe7fd72dR89">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	constraint : UniquenessConstraint to constraint : ConstraintDescriptor in method private validateNoExistingNodeWithLabelAndProperty(state KernelStatement, constraint ConstraintDescriptor, value Object, modifiedNode long) : void in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751L145">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751R151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : LabelSchemaDescriptor in method public validateExistenceConstraint(allNodes Iterator&lt;Cursor&lt;NodeItem&gt;&gt;, descriptor LabelSchemaDescriptor) : void in class org.neo4j.kernel.impl.constraints.StandardConstraintSemantics</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2L48">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	descriptor : NodePropertyDescriptor to descriptor : ConstraintDescriptor in method public createUniquenessConstraintRule(ruleId long, descriptor ConstraintDescriptor, indexId long) : ConstraintRule in class org.neo4j.kernel.impl.constraints.StandardConstraintSemantics</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2L85">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-474b4241fe2284b85cbf45b8281200c2R85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	constraint : UniquenessConstraint to constraint : ConstraintDescriptor in method public visitAdded(constraint ConstraintDescriptor) : void in class org.neo4j.kernel.impl.api.state.TxState.ConstraintDiffSetsVisitor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eL375">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a57268ea99b659fe815634ce2660672eR358">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -823,20 +823,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	expectedConstraints : Set&lt;RelationshipPropertyConstraint&gt; to propKeyId : int in method private relationshipPropertyExistenceDescriptor(relType RelationshipType, propertyKey String) : ConstraintDescriptor in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaWithPECTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dL147">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dR195">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	constraintIterator : Iterator&lt;UniquenessConstraint&gt; to constraints : Iterator&lt;ConstraintDescriptor&gt; in method public nodeSetProperty(state KernelStatement, nodeId long, property DefinedProperty) : Property in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751L130">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751R134">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -852,6 +838,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dR128">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	expectedConstraints : Set&lt;RelationshipPropertyConstraint&gt; to propKeyId : int in method private relationshipPropertyExistenceDescriptor(relType RelationshipType, propertyKey String) : ConstraintDescriptor in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaWithPECTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dL147">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dR195">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	constraintIterator : Iterator&lt;UniquenessConstraint&gt; to constraints : Iterator&lt;ConstraintDescriptor&gt; in method public nodeSetProperty(state KernelStatement, nodeId long, property DefinedProperty) : Property in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751L130">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751R134">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -862,76 +862,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-47" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.store.StorageLayer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a882911a68abd9241066a955b67eaf58L273">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a882911a68abd9241066a955b67eaf58R274">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForLabel(state KernelStatement, labelId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90L519">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R536">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.operations.SchemaReadOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7L90">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7R92">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;RelationshipPropertyConstraint&gt; to boolean in method public constraintExists(state KernelStatement, descriptor ConstraintDescriptor) : boolean in class org.neo4j.kernel.impl.api.LockingStatementOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59L389">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59R382">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;RelationshipPropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForRelationshipType(typeId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411L689">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411R691">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;PropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetAll() : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.api.ReadOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50L287">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50R278">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;PropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraints() : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.store.SchemaCache</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddL114">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddR111">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.api.ReadOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50L262">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50R263">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.storageengine.api.StoreReadLayer</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56L114">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForLabel(labelId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411L682">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411R684">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1192,6 +1122,76 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R120">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.store.StorageLayer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a882911a68abd9241066a955b67eaf58L273">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-a882911a68abd9241066a955b67eaf58R274">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForLabel(state KernelStatement, labelId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90L519">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-94e898a8535f13220449b217db75fd90R536">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(state KernelStatement, descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.operations.SchemaReadOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7L90">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-324c701c80ca6c33ddb077f1ea29dde7R92">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;RelationshipPropertyConstraint&gt; to boolean in method public constraintExists(state KernelStatement, descriptor ConstraintDescriptor) : boolean in class org.neo4j.kernel.impl.api.LockingStatementOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59L389">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ef8294d17dfd1efcc44aa879573c8d59R382">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;RelationshipPropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForRelationshipType(typeId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411L689">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411R691">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;PropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetAll() : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.api.ReadOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50L287">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50R278">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;PropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraints() : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.store.SchemaCache</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddL114">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddR111">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.api.ReadOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50L262">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-8f548b0aae7189a5c4e5df1ae0781c50R263">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForSchema(descriptor SchemaDescriptor) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.storageengine.api.StoreReadLayer</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56L114">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3324eb251d25ae956303e8e6e3ef5e56R112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Iterator&lt;NodePropertyConstraint&gt; to Iterator&lt;ConstraintDescriptor&gt; in method public constraintsGetForLabel(labelId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.OperationsFacade</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411L682">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-bbd60e184e49134eae2bc29adb472411R684">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1220,6 +1220,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-37" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	constraintIterator : Iterator&lt;UniquenessConstraint&gt; to constraints : Iterator&lt;ConstraintDescriptor&gt; in method public nodeSetProperty(state KernelStatement, nodeId long, property DefinedProperty) : Property in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751L120">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751R134">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	constraint : PropertyConstraint to constraint : ConstraintDescriptor in method private asConstraintDefinitions(constraints Iterator&lt;? extends ConstraintDescriptor&gt;, readOperations ReadOperations) : Iterable&lt;ConstraintDefinition&gt; in class org.neo4j.kernel.impl.coreapi.schema.SchemaImpl</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0L352">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0R362">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	constraints : Iterator&lt;RelationshipPropertyConstraint&gt; to constraints : Iterator&lt;ConstraintDescriptor&gt; in method public getConstraints(type RelationshipType) : Iterable&lt;ConstraintDefinition&gt; in class org.neo4j.kernel.impl.coreapi.schema.SchemaImpl</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0L304">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0R317">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	listed : Set&lt;NodePropertyConstraint&gt; to listed : Set&lt;ConstraintDescriptor&gt; in method public shouldListConstraintsForLabel() : void in class org.neo4j.kernel.impl.api.store.SchemaCacheTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-912c78564cb44cb83878dc120426a494L209">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-912c78564cb44cb83878dc120426a494R214">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : Iterator&lt;PropertyConstraint&gt; to result : Iterator&lt;ConstraintDescriptor&gt; in method public shouldAcquireSchemaReadLockBeforeGettingAllConstraints() : void in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321L318">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321R326">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	expectedConstraints : Set&lt;NodePropertyConstraint&gt; to expectedConstraints : Set&lt;ConstraintDescriptor&gt; in method public shouldListAllConstraintsForLabel() : void in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaWithPECTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dL84">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dR104">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1438,48 +1480,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321R311">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	constraintIterator : Iterator&lt;UniquenessConstraint&gt; to constraints : Iterator&lt;ConstraintDescriptor&gt; in method public nodeSetProperty(state KernelStatement, nodeId long, property DefinedProperty) : Property in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751L120">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-0694c9de7c6c3b2738144757b771b751R134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	constraint : PropertyConstraint to constraint : ConstraintDescriptor in method private asConstraintDefinitions(constraints Iterator&lt;? extends ConstraintDescriptor&gt;, readOperations ReadOperations) : Iterable&lt;ConstraintDefinition&gt; in class org.neo4j.kernel.impl.coreapi.schema.SchemaImpl</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0L352">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0R362">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	constraints : Iterator&lt;RelationshipPropertyConstraint&gt; to constraints : Iterator&lt;ConstraintDescriptor&gt; in method public getConstraints(type RelationshipType) : Iterable&lt;ConstraintDefinition&gt; in class org.neo4j.kernel.impl.coreapi.schema.SchemaImpl</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0L304">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-601453139bf157a946eb78ef84cbfbf0R317">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	listed : Set&lt;NodePropertyConstraint&gt; to listed : Set&lt;ConstraintDescriptor&gt; in method public shouldListConstraintsForLabel() : void in class org.neo4j.kernel.impl.api.store.SchemaCacheTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-912c78564cb44cb83878dc120426a494L209">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-912c78564cb44cb83878dc120426a494R214">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : Iterator&lt;PropertyConstraint&gt; to result : Iterator&lt;ConstraintDescriptor&gt; in method public shouldAcquireSchemaReadLockBeforeGettingAllConstraints() : void in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321L318">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3d3634ec49f8da73d56e3f8afc261321R326">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	expectedConstraints : Set&lt;NodePropertyConstraint&gt; to expectedConstraints : Set&lt;ConstraintDescriptor&gt; in method public shouldListAllConstraintsForLabel() : void in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaWithPECTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dL84">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-3cd8c3023e7c95260999fecef9e0189dR104">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1511,14 +1511,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private relationshipPropertyExistenceDescriptor(relType RelationshipType, propertyKey String) : ConstraintDescriptor extracted from public shouldListAllConstraintsForRelationshipType() : void in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaWithPECTest</i></td>
+                                <td><i>Extract Method	private uniqueConstraintDescriptor(label Label, propertyKey String) : ConstraintDescriptor extracted from public shouldListAllConstraints() : void in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private uniqueConstraintDescriptor(label Label, propertyKey String) : ConstraintDescriptor extracted from public shouldListAllConstraints() : void in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaTest</i></td>
+                                <td><i>Extract Method	private relationshipPropertyExistenceDescriptor(relType RelationshipType, propertyKey String) : ConstraintDescriptor extracted from public shouldListAllConstraintsForRelationshipType() : void in class org.neo4j.kernel.impl.api.store.StorageLayerSchemaWithPECTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -1593,13 +1593,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	typeId : int to relTypeId : int in method public constraintsForRelationshipType(relTypeId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.store.SchemaCache</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddL133">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddR121">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	element : UniquenessConstraint to constraint : ConstraintDescriptor in method public visitRemovedConstraint(constraint ConstraintDescriptor) : void in class org.neo4j.storageengine.api.txstate.TxStateVisitor.Delegator</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474L285">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-ee2930984ce39e76b15c84e49d924474R250">To</a></td>
@@ -1617,6 +1610,13 @@
                                 <td><i>Rename Parameter	constraint : UniquenessConstraint to schema : LabelSchemaDescriptor in method public createConstraintIndex(schema LabelSchemaDescriptor) : NewIndexDescriptor in class org.neo4j.kernel.impl.api.state.ConstraintIndexCreator</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-eadc26d49c253dab7152be2dbe7fd72dL210">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-eadc26d49c253dab7152be2dbe7fd72dR211">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	typeId : int to relTypeId : int in method public constraintsForRelationshipType(relTypeId int) : Iterator&lt;ConstraintDescriptor&gt; in class org.neo4j.kernel.impl.api.store.SchemaCache</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddL133">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/52a293c23a0849d718057233a2303b434a57ff57?diff=split#diff-9f22c6cb67ad8909dd1dda6caeec1cddR121">To</a></td>
                             </tr>
                             
                             </tbody>

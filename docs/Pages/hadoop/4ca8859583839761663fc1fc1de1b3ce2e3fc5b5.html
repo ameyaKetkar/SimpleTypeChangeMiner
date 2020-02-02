@@ -340,16 +340,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private getAndIncrement(identity Object) : long renamed to private getAndIncrementCallCounts(identity Object) : long in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L440">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R452">To</a></td>
+                                <td><i>Rename Method	private addTotalCallVolume(rb MetricsRecordBuilder) : void renamed to private addRawCallVolume(rb MetricsRecordBuilder) : void in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L797">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R828">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private addTotalCallVolume(rb MetricsRecordBuilder) : void renamed to private addRawCallVolume(rb MetricsRecordBuilder) : void in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L797">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R828">To</a></td>
+                                <td><i>Rename Method	private getAndIncrement(identity Object) : long renamed to private getAndIncrementCallCounts(identity Object) : long in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L440">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R452">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -408,6 +408,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	otherCount : AtomicLong to otherCount : List&lt;AtomicLong&gt; in method private getAndIncrementCallCounts(identity Object) : long in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L440">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R470">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	it : Iterator&lt;Map.Entry&lt;Object,AtomicLong&gt;&gt; to it : Iterator&lt;Map.Entry&lt;Object,List&lt;AtomicLong&gt;&gt;&gt; in method private getTopCallers(n int) : TopN in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L842">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R874">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	entry : Map.Entry&lt;Object,AtomicLong&gt; to entry : Map.Entry&lt;Object,List&lt;AtomicLong&gt;&gt; in method private getTopCallers(n int) : TopN in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L842">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R877">To</a></td>
@@ -446,20 +460,6 @@
                                 <td><i>Change Variable Type	entry : Map.Entry&lt;Object,AtomicLong&gt; to entry : Map.Entry&lt;Object,List&lt;AtomicLong&gt;&gt; in method private decayCurrentCounts() : void in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L376">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R396">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	otherCount : AtomicLong to otherCount : List&lt;AtomicLong&gt; in method private getAndIncrementCallCounts(identity Object) : long in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L440">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R470">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	it : Iterator&lt;Map.Entry&lt;Object,AtomicLong&gt;&gt; to it : Iterator&lt;Map.Entry&lt;Object,List&lt;AtomicLong&gt;&gt;&gt; in method private getTopCallers(n int) : TopN in class org.apache.hadoop.ipc.DecayRpcScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0L842">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/4ca8859583839761663fc1fc1de1b3ce2e3fc5b5?diff=split#diff-daada2414354d8b0c5483289bee9bdc0R874">To</a></td>
                             </tr>
                             
                             </tbody>

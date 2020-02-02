@@ -210,13 +210,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	reuse : Object to reuse : StreamRecord&lt;T&gt; in method public deserialize(reuse StreamRecord&lt;T&gt;, source DataInputView) : StreamRecord&lt;T&gt; in class org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-4aabc8916eaf462902f0bc078bcd8398L109">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-4aabc8916eaf462902f0bc078bcd8398R115">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	value : Object to value : StreamRecord&lt;T&gt; in method public serialize(value StreamRecord&lt;T&gt;, target DataOutputView) : void in class org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializer</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-4aabc8916eaf462902f0bc078bcd8398L96">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-4aabc8916eaf462902f0bc078bcd8398R104">To</a></td>
@@ -227,6 +220,13 @@
                                 <td><i>Change Parameter Type	recordWriter : RecordWriter&lt;SerializationDelegate&lt;StreamRecord&lt;OUT&gt;&gt;&gt; to recordWriter : RecordWriter&lt;?&gt; in method public RecordWriterOutput(recordWriter RecordWriter&lt;?&gt;, outSerializer TypeSerializer&lt;OUT&gt;, enableWatermarkMultiplexing boolean) in class org.apache.flink.streaming.runtime.io.RecordWriterOutput</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-6387b26055c3cdc3dd239ccba2a966d8L45">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-6387b26055c3cdc3dd239ccba2a966d8R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	reuse : Object to reuse : StreamRecord&lt;T&gt; in method public deserialize(reuse StreamRecord&lt;T&gt;, source DataInputView) : StreamRecord&lt;T&gt; in class org.apache.flink.streaming.runtime.streamrecord.StreamRecordSerializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-4aabc8916eaf462902f0bc078bcd8398L109">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-4aabc8916eaf462902f0bc078bcd8398R115">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -242,16 +242,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	inputRecordSerializer : StreamRecordSerializer&lt;IN&gt; to ser : MultiplexingStreamRecordSerializer&lt;IN&gt; in method public StreamInputProcessor(inputGates InputGate[], inputSerializer TypeSerializer&lt;IN&gt;, enableWatermarkMultiplexing boolean) in class org.apache.flink.streaming.runtime.io.StreamInputProcessor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-afb21271c4adf94614df9d78e9d05729L83">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-afb21271c4adf94614df9d78e9d05729R83">To</a></td>
+                                <td><i>Rename Variable	serializerIn1 : StreamRecordSerializer to inSerializer : TypeSerializer&lt;StreamRecord&lt;X&gt;&gt; in method private createChainedCollector(chainedTaskConfig StreamConfig, accumulatorMap Map&lt;String,Accumulator&lt;?,?&gt;&gt;) : Output&lt;StreamRecord&lt;X&gt;&gt; in class org.apache.flink.streaming.runtime.tasks.OutputHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eL181">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eR185">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	serializerIn1 : StreamRecordSerializer to inSerializer : TypeSerializer&lt;StreamRecord&lt;X&gt;&gt; in method private createChainedCollector(chainedTaskConfig StreamConfig, accumulatorMap Map&lt;String,Accumulator&lt;?,?&gt;&gt;) : Output&lt;StreamRecord&lt;X&gt;&gt; in class org.apache.flink.streaming.runtime.tasks.OutputHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eL181">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eR185">To</a></td>
+                                <td><i>Rename Variable	inputRecordSerializer : StreamRecordSerializer&lt;IN&gt; to ser : MultiplexingStreamRecordSerializer&lt;IN&gt; in method public StreamInputProcessor(inputGates InputGate[], inputSerializer TypeSerializer&lt;IN&gt;, enableWatermarkMultiplexing boolean) in class org.apache.flink.streaming.runtime.io.StreamInputProcessor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-afb21271c4adf94614df9d78e9d05729L83">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/acae9ff2583384dada84b40a89d3a068e3b2a00c?diff=split#diff-afb21271c4adf94614df9d78e9d05729R83">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -290,6 +290,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	eventLoop : EventLoop to eventLoopGroup : EventLoopGroup in method public createOutput(dfs DistributedFileSystem, f Path, overwrite boolean, createParent boolean, replication short, blockSize long, eventLoopGroup EventLoopGroup, channelClass Class&lt;? extends Channel&gt;) : FanOutOneBlockAsyncDFSOutput in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutputHelper</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-eb78eeaaa7b250761104624dd3f7d624L797">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-eb78eeaaa7b250761104624dd3f7d624R804">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	eventLoop : EventLoop to eventLoopGroup : EventLoopGroup in method private connectToDataNodes(conf Configuration, client DFSClient, clientName String, locatedBlock LocatedBlock, maxBytesRcvd long, latestGS long, stage BlockConstructionStage, summer DataChecksum, eventLoopGroup EventLoopGroup, channelClass Class&lt;? extends Channel&gt;) : List&lt;Future&lt;Channel&gt;&gt; in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutputHelper</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-eb78eeaaa7b250761104624dd3f7d624L667">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-eb78eeaaa7b250761104624dd3f7d624R671">To</a></td>
@@ -314,13 +321,6 @@
                                 <td><i>Change Parameter Type	eventLoop : EventLoop to eventLoopGroup : EventLoopGroup in method public createOutput(fs FileSystem, f Path, overwrite boolean, createParent boolean, replication short, blockSize long, eventLoopGroup EventLoopGroup, channelClass Class&lt;? extends Channel&gt;) : AsyncFSOutput in class org.apache.hadoop.hbase.io.asyncfs.AsyncFSOutputHelper</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-fbe4d40b494094190e8811d1d040537cL54">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-fbe4d40b494094190e8811d1d040537cR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	eventLoop : EventLoop to eventLoopGroup : EventLoopGroup in method public createOutput(dfs DistributedFileSystem, f Path, overwrite boolean, createParent boolean, replication short, blockSize long, eventLoopGroup EventLoopGroup, channelClass Class&lt;? extends Channel&gt;) : FanOutOneBlockAsyncDFSOutput in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutputHelper</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-eb78eeaaa7b250761104624dd3f7d624L797">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-eb78eeaaa7b250761104624dd3f7d624R804">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -483,16 +483,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	locatedBlock : LocatedBlock to block : ExtendedBlock in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL127">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR121">To</a></td>
+                                <td><i>Rename Attribute	promise : Promise&lt;Void&gt; to future : CompletableFuture&lt;Long&gt; in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput.Callback</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL143">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR137">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	promise : Promise&lt;Void&gt; to future : CompletableFuture&lt;Long&gt; in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput.Callback</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL143">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR137">To</a></td>
+                                <td><i>Rename Attribute	locatedBlock : LocatedBlock to block : ExtendedBlock in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL127">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR121">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -526,6 +526,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	promise : Promise&lt;Void&gt; to future : CompletableFuture&lt;Long&gt; in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput.Callback</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL143">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR137">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	locatedBlock : LocatedBlock to block : ExtendedBlock in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL127">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR121">To</a></td>
@@ -543,13 +550,6 @@
                                 <td><i>Change Attribute Type	unfinishedReplicas : Set&lt;Channel&gt; to unfinishedReplicas : Set&lt;ChannelId&gt; in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput.Callback</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL147">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR142">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	promise : Promise&lt;Void&gt; to future : CompletableFuture&lt;Long&gt; in class org.apache.hadoop.hbase.io.asyncfs.FanOutOneBlockAsyncDFSOutput.Callback</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dL143">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/9434d52c190386f15188e0473ce005e96bf78413?diff=split#diff-293d20231aaf0b0461d03875779ce47dR137">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -316,13 +316,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	raftInstance : RaftInstance to handler : MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in method public BatchingMessageHandler(handler MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt;, queueSize int, maxBatch int, logProvider LogProvider) in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL50">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	listener : BatchingMessageHandler.MismatchedStoreListener to listener : MismatchedStoreListener in method public addMismatchedStoreListener(listener MismatchedStoreListener) : void in class org.neo4j.coreedge.raft.state.CoreState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL164">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8R115">To</a></td>
@@ -342,6 +335,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR99">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	raftInstance : RaftInstance to handler : MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in method public BatchingMessageHandler(handler MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt;, queueSize int, maxBatch int, logProvider LogProvider) in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL50">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR45">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -352,6 +352,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private operation(tx CoreReplicatedContent) : ReplicatedContent from class org.neo4j.coreedge.raft.state.CoreStateTest to private operation(tx CoreReplicatedContent) : ReplicatedContent from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL106">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private tx(dataValue byte) : ReplicatedTransaction from class org.neo4j.coreedge.raft.state.CoreStateTest to private tx(dataValue byte) : ReplicatedTransaction from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL98">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR98">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public shouldApplyCommittedCommand() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public shouldApplyCommittedCommand() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL111">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR111">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public shouldFailWhenCacheAndLogMiss() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public shouldFailWhenCacheAndLogMiss() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL349">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR349">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public entriesThatAreNotStateMachineCommandsShouldStillIncreaseCommandIndex() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public entriesThatAreNotStateMachineCommandsShouldStillIncreaseCommandIndex() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL154">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR154">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public shouldPanicIfUnableToApply() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public shouldPanicIfUnableToApply() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL256">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR256">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private submitApplyJob(lastToApply long) : void from class org.neo4j.coreedge.raft.state.CoreState to private submitApplyJob(lastToApply long) : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L116">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R104">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -465,55 +514,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR314">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private operation(tx CoreReplicatedContent) : ReplicatedContent from class org.neo4j.coreedge.raft.state.CoreStateTest to private operation(tx CoreReplicatedContent) : ReplicatedContent from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL106">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private tx(dataValue byte) : ReplicatedTransaction from class org.neo4j.coreedge.raft.state.CoreStateTest to private tx(dataValue byte) : ReplicatedTransaction from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL98">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR98">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public shouldApplyCommittedCommand() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public shouldApplyCommittedCommand() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL111">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR111">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public shouldFailWhenCacheAndLogMiss() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public shouldFailWhenCacheAndLogMiss() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL349">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR349">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public entriesThatAreNotStateMachineCommandsShouldStillIncreaseCommandIndex() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public entriesThatAreNotStateMachineCommandsShouldStillIncreaseCommandIndex() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL154">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR154">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public shouldPanicIfUnableToApply() : void from class org.neo4j.coreedge.raft.state.CoreStateTest to public shouldPanicIfUnableToApply() : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL256">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR256">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private submitApplyJob(lastToApply long) : void from class org.neo4j.coreedge.raft.state.CoreState to private submitApplyJob(lastToApply long) : void from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L116">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R104">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -524,6 +524,97 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-31" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private flushEvery : int from class org.neo4j.coreedge.raft.state.CoreState to private flushEvery : int from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L55">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private dbHealth : Supplier&lt;DatabaseHealth&gt; from class org.neo4j.coreedge.raft.state.CoreState to private dbHealth : Supplier&lt;DatabaseHealth&gt; from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L58">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private commitIndexMonitor : RaftLogCommitIndexMonitor from class org.neo4j.coreedge.raft.state.CoreState to private commitIndexMonitor : RaftLogCommitIndexMonitor from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L64">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CoreState to private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CoreStateTest to private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL82">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private lastApplied : long from class org.neo4j.coreedge.raft.state.CoreState to private lastApplied : long from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L69">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R61">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private lastFlushed : long from class org.neo4j.coreedge.raft.state.CoreState to private lastFlushed : long from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L71">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private NOTHING : long from class org.neo4j.coreedge.raft.state.CoreState to private NOTHING : long from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L52">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R46">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private dbHealth : DatabaseHealth from class org.neo4j.coreedge.raft.state.CoreStateTest to private dbHealth : DatabaseHealth from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL74">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private sequenceNumber : int from class org.neo4j.coreedge.raft.state.CoreStateTest to private sequenceNumber : int from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL105">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR105">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private coreStateMachines : CoreStateMachines from class org.neo4j.coreedge.raft.state.CoreState to private coreStateMachines : CoreStateMachines from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L67">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private raftInstance : RaftInstance from class org.neo4j.coreedge.raft.BatchingMessageHandler to private raftInstance : RaftInstance from class org.neo4j.coreedge.raft.state.CoreState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL40">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8R44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private flushEvery : int from class org.neo4j.coreedge.raft.state.CoreStateTest to private flushEvery : int from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL78">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R49">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -651,97 +742,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R57">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private flushEvery : int from class org.neo4j.coreedge.raft.state.CoreState to private flushEvery : int from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L55">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private dbHealth : Supplier&lt;DatabaseHealth&gt; from class org.neo4j.coreedge.raft.state.CoreState to private dbHealth : Supplier&lt;DatabaseHealth&gt; from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L58">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private commitIndexMonitor : RaftLogCommitIndexMonitor from class org.neo4j.coreedge.raft.state.CoreState to private commitIndexMonitor : RaftLogCommitIndexMonitor from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L64">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CoreState to private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CoreStateTest to private inFlightMap : InFlightMap&lt;Long,RaftLogEntry&gt; from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL82">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private lastApplied : long from class org.neo4j.coreedge.raft.state.CoreState to private lastApplied : long from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L69">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private lastFlushed : long from class org.neo4j.coreedge.raft.state.CoreState to private lastFlushed : long from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L71">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private NOTHING : long from class org.neo4j.coreedge.raft.state.CoreState to private NOTHING : long from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L52">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private dbHealth : DatabaseHealth from class org.neo4j.coreedge.raft.state.CoreStateTest to private dbHealth : DatabaseHealth from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL74">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private sequenceNumber : int from class org.neo4j.coreedge.raft.state.CoreStateTest to private sequenceNumber : int from class org.neo4j.coreedge.raft.state.CommandApplicationProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL105">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-15c6d96793aed6b6ca0389de558ba60dR105">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private coreStateMachines : CoreStateMachines from class org.neo4j.coreedge.raft.state.CoreState to private coreStateMachines : CoreStateMachines from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L67">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private raftInstance : RaftInstance from class org.neo4j.coreedge.raft.BatchingMessageHandler to private raftInstance : RaftInstance from class org.neo4j.coreedge.raft.state.CoreState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL40">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8R44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private flushEvery : int from class org.neo4j.coreedge.raft.state.CoreStateTest to private flushEvery : int from class org.neo4j.coreedge.raft.state.CommandApplicationProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-00d249f9408e35a3c88eebc71ab9c9ccL78">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-850cbefa8db13cf0fea84c1ab2f0d366R49">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -755,13 +755,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.neo4j.coreedge.raft.state.CommandApplicationProcess from class org.neo4j.coreedge.raft.state.CoreStateTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Class	org.neo4j.coreedge.raft.state.CommandApplicationProcessTest from class org.neo4j.coreedge.raft.state.CoreStateTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -770,6 +763,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	org.neo4j.coreedge.raft.state.CommandApplicationProcess from class org.neo4j.coreedge.raft.state.CoreState</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	org.neo4j.coreedge.raft.state.CommandApplicationProcess from class org.neo4j.coreedge.raft.state.CoreStateTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -823,6 +823,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	raftStateMachine : RaftStateMachine to raftStateMachine : MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in class org.neo4j.coreedge.raft.BatchingMessageHandlerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-27f86287117b5500992dd669c312e2e5L49">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-27f86287117b5500992dd669c312e2e5R44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	batch : List&lt;RaftMessages.RaftMessage&gt; to batch : List&lt;RaftMessages.StoreIdAwareMessage&gt; in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL44">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR41">To</a></td>
@@ -833,13 +840,6 @@
                                 <td><i>Change Attribute Type	raftInstance : RaftInstance to handler : MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in class org.neo4j.coreedge.raft.BatchingMessageHandler</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beL40">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-0e99426fc3f33846e9ba3c0c92c543beR43">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	raftStateMachine : RaftStateMachine to raftStateMachine : MessageHandler&lt;RaftMessages.StoreIdAwareMessage&gt; in class org.neo4j.coreedge.raft.BatchingMessageHandlerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-27f86287117b5500992dd669c312e2e5L49">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/05200ceed501120f86fdfea2f31b1121d2a7e28f?diff=split#diff-27f86287117b5500992dd669c312e2e5R44">To</a></td>
                             </tr>
                             
                             </tbody>

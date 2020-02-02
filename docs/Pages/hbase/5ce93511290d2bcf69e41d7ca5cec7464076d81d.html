@@ -290,13 +290,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public requireAccess(user User, request String, tableName TableName, permissions Action...) : void from class org.apache.hadoop.hbase.security.access.AccessChecker to private requireAccess(user User, request String, tableName TableName, permissions Action...) : void from class org.apache.hadoop.hbase.security.access.AccessController</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-eea0482b3d638f320f6a43beb4da5fa1L81">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-86d2430350220bb2a0131da811ba77c5R500">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Method	public requireNamespacePermission(user User, request String, namespace String, tableName TableName, familyMap Map&lt;byte[],? extends Collection&lt;byte[]&gt;&gt;, permissions Action...) : void from class org.apache.hadoop.hbase.security.access.AccessChecker to public requireNamespacePermission(user User, request String, namespace String, tableName TableName, familyMap Map&lt;byte[],? extends Collection&lt;byte[]&gt;&gt;, permissions Action...) : void from class org.apache.hadoop.hbase.security.access.AccessController</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-eea0482b3d638f320f6a43beb4da5fa1L210">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-86d2430350220bb2a0131da811ba77c5R619">To</a></td>
@@ -358,6 +351,13 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-86d2430350220bb2a0131da811ba77c5R438">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public requireAccess(user User, request String, tableName TableName, permissions Action...) : void from class org.apache.hadoop.hbase.security.access.AccessChecker to private requireAccess(user User, request String, tableName TableName, permissions Action...) : void from class org.apache.hadoop.hbase.security.access.AccessController</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-eea0482b3d638f320f6a43beb4da5fa1L81">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/5ce93511290d2bcf69e41d7ca5cec7464076d81d?diff=split#diff-86d2430350220bb2a0131da811ba77c5R500">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -371,14 +371,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public requirePermission(ctx ObserverContext&lt;?&gt;, request String, tableName TableName, family byte[], qualifier byte[], permissions Action...) : void inlined to public preEndpointInvocation(ctx ObserverContext&lt;RegionCoprocessorEnvironment&gt;, service Service, methodName String, request Message) : Message in class org.apache.hadoop.hbase.security.access.AccessController</i></td>
+                                <td><i>Inline Method	public checkLockPermissions(ctx ObserverContext&lt;?&gt;, namespace String, tableName TableName, regionInfos RegionInfo[], reason String) : void inlined to public preRequestLock(ctx ObserverContext&lt;MasterCoprocessorEnvironment&gt;, namespace String, tableName TableName, regionInfos RegionInfo[], description String) : void in class org.apache.hadoop.hbase.security.access.AccessController</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public checkLockPermissions(ctx ObserverContext&lt;?&gt;, namespace String, tableName TableName, regionInfos RegionInfo[], reason String) : void inlined to public preRequestLock(ctx ObserverContext&lt;MasterCoprocessorEnvironment&gt;, namespace String, tableName TableName, regionInfos RegionInfo[], description String) : void in class org.apache.hadoop.hbase.security.access.AccessController</i></td>
+                                <td><i>Inline Method	public requirePermission(ctx ObserverContext&lt;?&gt;, request String, tableName TableName, family byte[], qualifier byte[], permissions Action...) : void inlined to public preEndpointInvocation(ctx ObserverContext&lt;RegionCoprocessorEnvironment&gt;, service Service, methodName String, request Message) : Message in class org.apache.hadoop.hbase.security.access.AccessController</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

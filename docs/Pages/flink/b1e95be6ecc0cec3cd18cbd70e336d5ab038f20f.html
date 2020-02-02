@@ -222,6 +222,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	vertices : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to vertices : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public Graph(vertices DataSet&lt;Tuple2&lt;K,VV&gt;&gt;, edges DataSet&lt;Tuple3&lt;K,K,EV&gt;&gt;) in class flink.graphs.Graph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL38">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	cog : CoGroupFunction&lt;Vertex&lt;K,VV&gt;,Edge&lt;K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt; to cog : CoGroupFunction&lt;Tuple2&lt;K,VV&gt;,Tuple3&lt;K,K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt; in method public pga(cog CoGroupFunction&lt;Tuple2&lt;K,VV&gt;,Tuple3&lt;K,K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt;, gred GroupReduceFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,MsgT&gt;&gt;, fjoin FlatJoinFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,VV&gt;,Tuple2&lt;K,VV&gt;&gt;, maxIterations int) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL110">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR153">To</a></td>
@@ -237,13 +244,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Change Parameter Type	edges : DataSet&lt;Edge&lt;K,EV&gt;&gt; to edges : DataSet&lt;Tuple3&lt;K,K,EV&gt;&gt; in method public Graph(vertices DataSet&lt;Tuple2&lt;K,VV&gt;&gt;, edges DataSet&lt;Tuple3&lt;K,K,EV&gt;&gt;) in class flink.graphs.Graph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL38">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	vertices : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to vertices : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public Graph(vertices DataSet&lt;Tuple2&lt;K,VV&gt;&gt;, edges DataSet&lt;Tuple3&lt;K,K,EV&gt;&gt;) in class flink.graphs.Graph</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL38">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR49">To</a></td>
                             </tr>
@@ -283,6 +283,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	filteredEdges : DataSet&lt;Edge&lt;K,EV&gt;&gt; to filteredEdges : DataSet&lt;Tuple3&lt;K,K,EV&gt;&gt; in method public subgraph(Tuple2Filter FilterFunction&lt;VV&gt;, edgeFilter FilterFunction&lt;EV&gt;) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL66">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR106">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	a : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to a : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public pga(cog CoGroupFunction&lt;Tuple2&lt;K,VV&gt;,Tuple3&lt;K,K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt;, gred GroupReduceFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,MsgT&gt;&gt;, fjoin FlatJoinFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,VV&gt;,Tuple2&lt;K,VV&gt;&gt;, maxIterations int) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL110">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR165">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	result : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to result : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public pga(cog CoGroupFunction&lt;Tuple2&lt;K,VV&gt;,Tuple3&lt;K,K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt;, gred GroupReduceFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,MsgT&gt;&gt;, fjoin FlatJoinFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,VV&gt;,Tuple2&lt;K,VV&gt;&gt;, maxIterations int) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL110">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR167">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -331,27 +352,6 @@
                                 <td><i>Change Variable Type	filteredVertices : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to filteredVertices : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public subgraph(Tuple2Filter FilterFunction&lt;VV&gt;, edgeFilter FilterFunction&lt;EV&gt;) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL66">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	filteredEdges : DataSet&lt;Edge&lt;K,EV&gt;&gt; to filteredEdges : DataSet&lt;Tuple3&lt;K,K,EV&gt;&gt; in method public subgraph(Tuple2Filter FilterFunction&lt;VV&gt;, edgeFilter FilterFunction&lt;EV&gt;) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL66">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR106">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	a : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to a : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public pga(cog CoGroupFunction&lt;Tuple2&lt;K,VV&gt;,Tuple3&lt;K,K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt;, gred GroupReduceFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,MsgT&gt;&gt;, fjoin FlatJoinFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,VV&gt;,Tuple2&lt;K,VV&gt;&gt;, maxIterations int) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL110">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR165">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	result : DataSet&lt;Vertex&lt;K,VV&gt;&gt; to result : DataSet&lt;Tuple2&lt;K,VV&gt;&gt; in method public pga(cog CoGroupFunction&lt;Tuple2&lt;K,VV&gt;,Tuple3&lt;K,K,EV&gt;,Tuple2&lt;K,MsgT&gt;&gt;, gred GroupReduceFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,MsgT&gt;&gt;, fjoin FlatJoinFunction&lt;Tuple2&lt;K,MsgT&gt;,Tuple2&lt;K,VV&gt;,Tuple2&lt;K,VV&gt;&gt;, maxIterations int) : Graph&lt;K,VV,EV&gt; in class flink.graphs.Graph</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafL110">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/b1e95be6ecc0cec3cd18cbd70e336d5ab038f20f?diff=split#diff-19570aa5ebce595f3e5cf16541c2dfafR167">To</a></td>
                             </tr>
                             
                             </tbody>

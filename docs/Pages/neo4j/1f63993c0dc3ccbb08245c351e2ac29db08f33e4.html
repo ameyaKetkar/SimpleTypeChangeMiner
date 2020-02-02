@@ -377,13 +377,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Class	org.neo4j.coreedge.catchup.tx.edge.RaftStateSnapshotListener moved and renamed to org.neo4j.coreedge.catchup.storecopy.core.CoreSnapshotListener</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Rename Class	org.neo4j.coreedge.catchup.storecopy.edge.GetRaftStateRequestDecoder moved and renamed to org.neo4j.coreedge.catchup.storecopy.core.CoreSnapshotRequestDecoder</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -417,6 +410,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.neo4j.coreedge.catchup.tx.edge.RaftStateSnapshotListener moved and renamed to org.neo4j.coreedge.catchup.storecopy.core.CoreSnapshotListener</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -430,13 +430,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.neo4j.coreedge.catchup.storecopy.core.RaftStateSnapshot.Marshal moved to org.neo4j.coreedge.raft.state.CoreSnapshot.Marshal</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Class	org.neo4j.coreedge.server.core.CoreToCoreClient moved to org.neo4j.coreedge.catchup.storecopy.core.CoreToCoreClient</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -445,6 +438,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.neo4j.coreedge.catchup.storecopy.edge.CoreClient moved to org.neo4j.coreedge.catchup.storecopy.CoreClient</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.neo4j.coreedge.catchup.storecopy.core.RaftStateSnapshot.Marshal moved to org.neo4j.coreedge.raft.state.CoreSnapshot.Marshal</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -487,14 +487,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	localSessionId : long in method public unmarshal(source ReadableChannel) : GlobalSessionTrackerState&lt;MEMBER&gt; from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
+                                <td><i>Extract Variable	sequenceNumber : long in method public unmarshal(source ReadableChannel) : GlobalSessionTrackerState&lt;MEMBER&gt; from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	sequenceNumber : long in method public unmarshal(source ReadableChannel) : GlobalSessionTrackerState&lt;MEMBER&gt; from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
+                                <td><i>Extract Variable	localSessionId : long in method public unmarshal(source ReadableChannel) : GlobalSessionTrackerState&lt;MEMBER&gt; from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -537,13 +537,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	getRaftStateRequest : GetRaftStateRequest to coreSnapshotRequest : CoreSnapshotRequest in method public requestCoreSnapshot(serverAddress AdvertisedSocketAddress) : CompletableFuture&lt;CoreSnapshot&gt; in class org.neo4j.coreedge.catchup.storecopy.CoreClient</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-e75793552739f0c5303bd8084601267aL74">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-5d87466d6fa3e5081d57fe80c6bec662R81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	notSureAboutTheName : HashMap&lt;Long,Long&gt; to lastSequenceNumberPerSession : Map&lt;Long,Long&gt; in method public unmarshal(source ReadableChannel) : GlobalSessionTrackerState&lt;MEMBER&gt; in class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1L164">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R171">To</a></td>
@@ -556,6 +549,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R156">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	getRaftStateRequest : GetRaftStateRequest to coreSnapshotRequest : CoreSnapshotRequest in method public requestCoreSnapshot(serverAddress AdvertisedSocketAddress) : CompletableFuture&lt;CoreSnapshot&gt; in class org.neo4j.coreedge.catchup.storecopy.CoreClient</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-e75793552739f0c5303bd8084601267aL74">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-5d87466d6fa3e5081d57fe80c6bec662R81">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -566,6 +566,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Map&lt;RaftStateType,Object&gt; to CoreSnapshot in method public snapshot() : CoreSnapshot in class org.neo4j.coreedge.raft.state.CoreState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L241">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8R240">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -586,13 +593,6 @@
                                 <td><i>Change Return Type	Object to long in method public prevTerm() : long in class org.neo4j.coreedge.raft.state.CoreSnapshot</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-c73ad206ed3bc6064b21ec2824a9a248L44">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-e10d15318514cc2c03d7060483eff933R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;RaftStateType,Object&gt; to CoreSnapshot in method public snapshot() : CoreSnapshot in class org.neo4j.coreedge.raft.state.CoreState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8L241">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1f63993c0dc3ccbb08245c351e2ac29db08f33e4?diff=split#diff-fa7ee0f5b82a7a983ababb0ac93a89b8R240">To</a></td>
                             </tr>
                             
                             </tbody>

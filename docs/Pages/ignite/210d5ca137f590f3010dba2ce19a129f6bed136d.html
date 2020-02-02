@@ -188,14 +188,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	private findCache(cacheName String) : IgniteCache&lt;K,V&gt; inlined to public getCache(cacheName String) : Cache&lt;K,V&gt; in class org.apache.ignite.cache.CacheManager</i></td>
+                                <td><i>Inline Method	private findCache(cacheName String) : IgniteCache&lt;K,V&gt; inlined to public getCache(cacheName String, keyType Class&lt;K&gt;, valType Class&lt;V&gt;) : Cache&lt;K,V&gt; in class org.apache.ignite.cache.CacheManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	private findCache(cacheName String) : IgniteCache&lt;K,V&gt; inlined to public getCache(cacheName String, keyType Class&lt;K&gt;, valType Class&lt;V&gt;) : Cache&lt;K,V&gt; in class org.apache.ignite.cache.CacheManager</i></td>
+                                <td><i>Inline Method	private findCache(cacheName String) : IgniteCache&lt;K,V&gt; inlined to public getCache(cacheName String) : Cache&lt;K,V&gt; in class org.apache.ignite.cache.CacheManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -249,20 +249,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	uriMap : Map&lt;URI,CacheManager&gt; to uriMap : Map&lt;URI,GridFutureAdapter&lt;CacheManager&gt;&gt; in method public close(uri URI, clsLdr ClassLoader) : void in class org.apache.ignite.cache.CachingProvider</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-828bfb3ac605633bbb1b119d985be0d1L168">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-828bfb3ac605633bbb1b119d985be0d1R253">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	ignite : Ignite to cache : IgniteCache&lt;?,?&gt; in method public destroyCache(cacheName String) : void in class org.apache.ignite.cache.CacheManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eL237">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR215">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	mgrs : Collection&lt;CacheManager&gt; to futs : Collection&lt;GridFutureAdapter&lt;CacheManager&gt;&gt; in method public close() : void in class org.apache.ignite.cache.CachingProvider</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-828bfb3ac605633bbb1b119d985be0d1L136">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-828bfb3ac605633bbb1b119d985be0d1R183">To</a></td>
@@ -282,6 +268,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR264">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	uriMap : Map&lt;URI,CacheManager&gt; to uriMap : Map&lt;URI,GridFutureAdapter&lt;CacheManager&gt;&gt; in method public close(uri URI, clsLdr ClassLoader) : void in class org.apache.ignite.cache.CachingProvider</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-828bfb3ac605633bbb1b119d985be0d1L168">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-828bfb3ac605633bbb1b119d985be0d1R253">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ignite : Ignite to cache : IgniteCache&lt;?,?&gt; in method public destroyCache(cacheName String) : void in class org.apache.ignite.cache.CacheManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eL237">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR215">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -295,14 +295,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private closeManagers(futs Collection&lt;GridFutureAdapter&lt;CacheManager&gt;&gt;) : void extracted from public close() : void in class org.apache.ignite.cache.CachingProvider</i></td>
+                                <td><i>Extract Method	private closeManagers(futs Collection&lt;GridFutureAdapter&lt;CacheManager&gt;&gt;) : void extracted from public close(clsLdr ClassLoader) : void in class org.apache.ignite.cache.CachingProvider</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private closeManagers(futs Collection&lt;GridFutureAdapter&lt;CacheManager&gt;&gt;) : void extracted from public close(clsLdr ClassLoader) : void in class org.apache.ignite.cache.CachingProvider</i></td>
+                                <td><i>Extract Method	private closeManagers(futs Collection&lt;GridFutureAdapter&lt;CacheManager&gt;&gt;) : void extracted from public close() : void in class org.apache.ignite.cache.CachingProvider</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -374,13 +374,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	objectName : String to objName : String in method private getObjectName(cacheName String, objName String) : ObjectName in class org.apache.ignite.cache.CacheManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eL269">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR224">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	objectName : String to beanType : String in method public registerCacheObject(mxbean Object, name String, beanType String) : void in class org.apache.ignite.cache.CacheManager</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eL345">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR283">To</a></td>
@@ -391,6 +384,13 @@
                                 <td><i>Rename Parameter	objectName : String to beanType : String in method private unregisterCacheObject(name String, beanType String) : void in class org.apache.ignite.cache.CacheManager</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eL377">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR308">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	objectName : String to objName : String in method private getObjectName(cacheName String, objName String) : ObjectName in class org.apache.ignite.cache.CacheManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eL269">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/210d5ca137f590f3010dba2ce19a129f6bed136d?diff=split#diff-8c83ab2f8ec971368725b87d33a67c7eR224">To</a></td>
                             </tr>
                             
                             </tbody>

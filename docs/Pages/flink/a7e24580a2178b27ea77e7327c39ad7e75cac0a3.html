@@ -224,20 +224,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	state : Serializable to state : R in method public createStateHandle(state R) : LocalStateHandle&lt;R&gt; in class org.apache.flink.runtime.state.LocalStateHandle.LocalStateHandleProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL53">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	state : Serializable to state : T in method public LocalStateHandle(state T) in class org.apache.flink.runtime.state.LocalStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL32">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR32">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	runtimeContext : RuntimeContext to runtimeContext : StreamingRuntimeContext in method public setup(output Output&lt;OUT&gt;, runtimeContext StreamingRuntimeContext) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L46">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R52">To</a></td>
@@ -257,6 +243,20 @@
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-f200cf4b50ebf7bdbe027d1abd290020R40">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	state : Serializable to state : R in method public createStateHandle(state R) : LocalStateHandle&lt;R&gt; in class org.apache.flink.runtime.state.LocalStateHandle.LocalStateHandleProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL53">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	state : Serializable to state : T in method public LocalStateHandle(state T) in class org.apache.flink.runtime.state.LocalStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL32">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR32">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -270,16 +270,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	typedFunction : Checkpointed&lt;T&gt; to operatorState : StreamOperatorState&lt;?,Serializable&gt; in method public restoreInitialState(state Serializable) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L102">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R75">To</a></td>
+                                <td><i>Rename Variable	typedState : T to snapshots : Map&lt;Serializable,StateHandle&lt;Serializable&gt;&gt; in method public restoreInitialState(state Serializable) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L100">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R73">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	typedState : T to snapshots : Map&lt;Serializable,StateHandle&lt;Serializable&gt;&gt; in method public restoreInitialState(state Serializable) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L100">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R73">To</a></td>
+                                <td><i>Rename Variable	typedFunction : Checkpointed&lt;T&gt; to operatorState : StreamOperatorState&lt;?,Serializable&gt; in method public restoreInitialState(state Serializable) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L102">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R75">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -313,6 +313,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	Serializable to Integer in method public snapshotState(state Integer, checkpointId long, checkpointTimestamp long) : Integer in class org.apache.flink.streaming.runtime.tasks.SourceStreamTaskTest.MockSource</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-e96fe0da3817110661ffb22376634013L193">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-e96fe0da3817110661ffb22376634013R200">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	Serializable to T in method public getState() : T in class org.apache.flink.runtime.state.LocalStateHandle</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL36">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR36">To</a></td>
@@ -323,13 +330,6 @@
                                 <td><i>Change Return Type	LocalStateHandle to LocalStateHandle&lt;R&gt; in method public createStateHandle(state R) : LocalStateHandle&lt;R&gt; in class org.apache.flink.runtime.state.LocalStateHandle.LocalStateHandleProvider</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL53">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Serializable to Integer in method public snapshotState(state Integer, checkpointId long, checkpointTimestamp long) : Integer in class org.apache.flink.streaming.runtime.tasks.SourceStreamTaskTest.MockSource</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-e96fe0da3817110661ffb22376634013L193">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-e96fe0da3817110661ffb22376634013R200">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -402,27 +402,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	count : long to count : OperatorState&lt;Long&gt; in class org.apache.flink.test.checkpointing.StreamCheckpointingITCase.StringPrefixCountRichMapFunction</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-b0ff09858fda682affb636098001877fL395">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-b0ff09858fda682affb636098001877fR361">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	collected : long to collected : OperatorState&lt;Long&gt; in class org.apache.flink.test.recovery.ProcessFailureStreamingRecoveryITCase.CheckpointedSink</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-51d63d77560258f7e539b51637d662cdL216">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-51d63d77560258f7e539b51637d662cdR190">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	state : Serializable to state : T in class org.apache.flink.runtime.state.LocalStateHandle</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL30">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	runtimeContext : RuntimeContext to runtimeContext : StreamingRuntimeContext in class org.apache.flink.streaming.api.operators.AbstractStreamOperator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-013a12aad14fc26acbc6797fe4e5eea4L34">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-013a12aad14fc26acbc6797fe4e5eea4R34">To</a></td>
@@ -454,6 +433,27 @@
                                 <td><i>Change Attribute Type	count : long to count : OperatorState&lt;Long&gt; in class org.apache.flink.test.checkpointing.StreamCheckpointingITCase.StatefulCounterFunction</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-b0ff09858fda682affb636098001877fL279">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-b0ff09858fda682affb636098001877fR257">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	count : long to count : OperatorState&lt;Long&gt; in class org.apache.flink.test.checkpointing.StreamCheckpointingITCase.StringPrefixCountRichMapFunction</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-b0ff09858fda682affb636098001877fL395">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-b0ff09858fda682affb636098001877fR361">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	collected : long to collected : OperatorState&lt;Long&gt; in class org.apache.flink.test.recovery.ProcessFailureStreamingRecoveryITCase.CheckpointedSink</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-51d63d77560258f7e539b51637d662cdL216">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-51d63d77560258f7e539b51637d662cdR190">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	state : Serializable to state : T in class org.apache.flink.runtime.state.LocalStateHandle</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bL30">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a7e24580a2178b27ea77e7327c39ad7e75cac0a3?diff=split#diff-1213dd6c8e8415c8603383ba3d0f377bR30">To</a></td>
                             </tr>
                             
                             </tbody>

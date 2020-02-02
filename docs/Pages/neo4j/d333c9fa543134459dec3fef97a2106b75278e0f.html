@@ -294,14 +294,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.log.segmented.ConcurrentStressIT renamed to org.neo4j.coreedge.raft.log.segmented.SegmentedConcurrentStressIT</i></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.log.inmemory.ConcurrentStressIT renamed to org.neo4j.coreedge.raft.log.inmemory.InMemoryConcurrentStressIT</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.log.inmemory.ConcurrentStressIT renamed to org.neo4j.coreedge.raft.log.inmemory.InMemoryConcurrentStressIT</i></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.log.segmented.ConcurrentStressIT renamed to org.neo4j.coreedge.raft.log.segmented.SegmentedConcurrentStressIT</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -319,16 +319,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	reader : ReadAheadChannel&lt;StoreChannel&gt; to reader : Reader in method package getReader(logIndex long) : IOCursor&lt;EntryRecord&gt; in class org.neo4j.coreedge.raft.log.segmented.SegmentFile</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-8848d8f1912508b6b0a156b67b7a0cecL98">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-8848d8f1912508b6b0a156b67b7a0cecR111">To</a></td>
+                                <td><i>Change Variable Type	limitOptional : Optional&lt;Long&gt; to optionalFile : Optional&lt;SegmentFile&gt; in method private nextSegment() : boolean in class org.neo4j.coreedge.raft.log.segmented.EntryCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-29b45835f010585682e8b0224d5f1c2dL74">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-29b45835f010585682e8b0224d5f1c2dR76">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	limitOptional : Optional&lt;Long&gt; to optionalFile : Optional&lt;SegmentFile&gt; in method private nextSegment() : boolean in class org.neo4j.coreedge.raft.log.segmented.EntryCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-29b45835f010585682e8b0224d5f1c2dL74">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-29b45835f010585682e8b0224d5f1c2dR76">To</a></td>
+                                <td><i>Change Variable Type	reader : ReadAheadChannel&lt;StoreChannel&gt; to reader : Reader in method package getReader(logIndex long) : IOCursor&lt;EntryRecord&gt; in class org.neo4j.coreedge.raft.log.segmented.SegmentFile</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-8848d8f1912508b6b0a156b67b7a0cecL98">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-8848d8f1912508b6b0a156b67b7a0cecR111">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -344,13 +344,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	oldReader : IOCursor&lt;EntryRecord&gt; in method private nextSegment() : boolean from class org.neo4j.coreedge.raft.log.segmented.EntryCursor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	indexToKeep : long in method public indexToKeepTest() : void from class org.neo4j.coreedge.raft.log.segmented.SizeBasedLogPruningStrategyTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -359,6 +352,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	file : SegmentFile in method private nextSegment() : boolean from class org.neo4j.coreedge.raft.log.segmented.EntryCursor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	oldReader : IOCursor&lt;EntryRecord&gt; in method private nextSegment() : boolean from class org.neo4j.coreedge.raft.log.segmented.EntryCursor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -412,6 +412,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Pull Up Method	private testSegmentFiles(size int) : ListIterator&lt;SegmentFile&gt; from class org.neo4j.coreedge.raft.log.segmented.SizeBasedLogPruningStrategyTest to package createSegmentFiles(size int) : ArrayList&lt;SegmentFile&gt; from class org.neo4j.coreedge.raft.log.segmented.PruningStrategyTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-629eeec54e344a0e358448a152a38485L46">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-e6c85241b6d45ad4104ca25614377843R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Pull Up Method	private testSegmentHeader(value long) : SegmentHeader from class org.neo4j.coreedge.raft.log.segmented.EntryBasedLogPruningStrategyTest to private testSegmentHeader(value long) : SegmentHeader from class org.neo4j.coreedge.raft.log.segmented.PruningStrategyTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-fb66c92eebce719e98b174ebf0d34462L143">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-e6c85241b6d45ad4104ca25614377843R68">To</a></td>
@@ -428,13 +435,6 @@
                                 <td></td>
                                 <td><i>Pull Up Method	private testSegmentFiles(size int) : ArrayList&lt;SegmentFile&gt; from class org.neo4j.coreedge.raft.log.segmented.EntryBasedLogPruningStrategyTest to package createSegmentFiles(size int) : ArrayList&lt;SegmentFile&gt; from class org.neo4j.coreedge.raft.log.segmented.PruningStrategyTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-fb66c92eebce719e98b174ebf0d34462L131">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-e6c85241b6d45ad4104ca25614377843R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	private testSegmentFiles(size int) : ListIterator&lt;SegmentFile&gt; from class org.neo4j.coreedge.raft.log.segmented.SizeBasedLogPruningStrategyTest to package createSegmentFiles(size int) : ArrayList&lt;SegmentFile&gt; from class org.neo4j.coreedge.raft.log.segmented.PruningStrategyTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-629eeec54e344a0e358448a152a38485L46">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/d333c9fa543134459dec3fef97a2106b75278e0f?diff=split#diff-e6c85241b6d45ad4104ca25614377843R40">To</a></td>
                             </tr>
                             

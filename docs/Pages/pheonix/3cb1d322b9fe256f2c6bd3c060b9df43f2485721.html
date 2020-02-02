@@ -292,6 +292,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public applyPostFilters(statement SelectStatement, postFilters List&lt;ParseNode&gt;, subqueryAlias String) : SelectStatement renamed to public applyPreFiltersForSubselect(statement SelectStatement, preFilterParseNodes List&lt;ParseNode&gt;, subqueryAlias String) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL60">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private isOrderByPrefix(selectStatement SelectStatement, rewrittenNewOrderByNodes List&lt;OrderByNode&gt;) : boolean renamed to private isOuterOrderByNodesPrefixOfInner(innerOrderByNodes List&lt;OrderByNode&gt;, outerOrderByNodes List&lt;OrderByNode&gt;) : boolean in class org.apache.phoenix.compile.SubselectRewriter</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL359">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR267">To</a></td>
@@ -309,13 +316,6 @@
                                 <td><i>Rename Method	public applyOrderBy(statement SelectStatement, orderBy List&lt;OrderByNode&gt;, subqueryAlias String, tableNode TableNode) : SelectStatement renamed to public applyOrderByAndPostFilters(subselectStatement SelectStatement, orderByNodes List&lt;OrderByNode&gt;, subselectTableAliasName String, postFilterParseNodes List&lt;ParseNode&gt;) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL73">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public applyPostFilters(statement SelectStatement, postFilters List&lt;ParseNode&gt;, subqueryAlias String) : SelectStatement renamed to public applyPreFiltersForSubselect(statement SelectStatement, preFilterParseNodes List&lt;ParseNode&gt;, subqueryAlias String) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL60">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR59">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -431,13 +431,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	subqueryAlias : String to subselectTableAliasName : String in method public applyOrderByAndPostFilters(subselectStatement SelectStatement, orderByNodes List&lt;OrderByNode&gt;, subselectTableAliasName String, postFilterParseNodes List&lt;ParseNode&gt;) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL73">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR93">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	postFilters : List&lt;ParseNode&gt; to preFilterParseNodes : List&lt;ParseNode&gt; in method private applyPreFilters(statement SelectStatement, preFilterParseNodes List&lt;ParseNode&gt;) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL241">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR424">To</a></td>
@@ -462,6 +455,13 @@
                                 <td><i>Rename Parameter	postFilters : List&lt;ParseNode&gt; to preFilterParseNodes : List&lt;ParseNode&gt; in method public applyPreFiltersForSubselect(statement SelectStatement, preFilterParseNodes List&lt;ParseNode&gt;, subqueryAlias String) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL60">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	subqueryAlias : String to subselectTableAliasName : String in method public applyOrderByAndPostFilters(subselectStatement SelectStatement, orderByNodes List&lt;OrderByNode&gt;, subselectTableAliasName String, postFilterParseNodes List&lt;ParseNode&gt;) : SelectStatement in class org.apache.phoenix.compile.SubselectRewriter</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bL73">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3cb1d322b9fe256f2c6bd3c060b9df43f2485721?diff=split#diff-7871458aeced8ddab71f9abf71aeae2bR93">To</a></td>
                             </tr>
                             
                             </tbody>

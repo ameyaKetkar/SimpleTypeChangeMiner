@@ -496,16 +496,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	cassandraMailboxCounterDAO : CassandraMailboxCounterDAO to indexTableHandler : CassandraIndexTableHandler in method public CassandraMessageIdMapper(mailboxMapper MailboxMapper, attachmentMapper AttachmentMapper, imapUidDAO CassandraMessageIdToImapUidDAO, messageIdDAO CassandraMessageIdDAO, messageDAO CassandraMessageDAO, indexTableHandler CassandraIndexTableHandler, modSeqProvider ModSeqProvider, mailboxSession MailboxSession) in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L76">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R77">To</a></td>
+                                <td><i>Change Parameter Type	mailbox : Mailbox to mailboxId : CassandraId in method public updateIndexOnFlagsUpdate(mailboxId CassandraId, updatedFlags UpdatedFlags) : CompletableFuture&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L300">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR58">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	mailbox : Mailbox to mailboxId : CassandraId in method public updateIndexOnFlagsUpdate(mailboxId CassandraId, updatedFlags UpdatedFlags) : CompletableFuture&lt;Void&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L300">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR58">To</a></td>
+                                <td><i>Change Parameter Type	cassandraMailboxCounterDAO : CassandraMailboxCounterDAO to indexTableHandler : CassandraIndexTableHandler in method public CassandraMessageIdMapper(mailboxMapper MailboxMapper, attachmentMapper AttachmentMapper, imapUidDAO CassandraMessageIdToImapUidDAO, messageIdDAO CassandraMessageIdDAO, messageDAO CassandraMessageDAO, indexTableHandler CassandraIndexTableHandler, modSeqProvider ModSeqProvider, mailboxSession MailboxSession) in class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L76">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-d2c94329d1a24592de915aee96c43bf6R77">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -518,6 +518,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private incrementUnseenOnSave(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper to private incrementUnseenOnSave(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L242">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private decrementUnseenOnDelete(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper to private decrementUnseenOnDelete(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L206">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR63">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -538,20 +552,6 @@
                                 <td><i>Move Method	private addRecentOnSave(mailboxId CassandraId, message MailboxMessage) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper to private addRecentOnSave(mailboxId CassandraId, message MailboxMessage) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L249">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR77">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private incrementUnseenOnSave(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper to private incrementUnseenOnSave(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L242">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private decrementUnseenOnDelete(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraMessageIdMapper to private decrementUnseenOnDelete(mailboxId CassandraId, flags Flags) : CompletableFuture&lt;Void&gt; from class org.apache.james.mailbox.cassandra.mail.CassandraIndexTableHandler</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-d2c94329d1a24592de915aee96c43bf6L206">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/948b58f8a34345f5231d985d63c179cbf0cdc97f?diff=split#diff-86d10a1aedcc2e056c599b557faa0d5dR63">To</a></td>
                             </tr>
                             
                             </tbody>

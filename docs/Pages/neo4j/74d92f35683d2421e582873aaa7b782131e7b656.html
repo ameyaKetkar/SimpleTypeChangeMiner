@@ -302,20 +302,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Method	public set(currentToken ReplicatedLockTokenRequest&lt;MEMBER&gt;, logIndex long) : void from class org.neo4j.coreedge.server.core.locks.InMemoryReplicatedLockTokenState to public set(currentToken ReplicatedLockTokenRequest&lt;MEMBER&gt;, ordinal long) : void from class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L52">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public get() : ReplicatedLockTokenRequest&lt;MEMBER&gt; from class org.neo4j.coreedge.server.core.locks.InMemoryReplicatedLockTokenState to public get() : ReplicatedLockTokenRequest&lt;MEMBER&gt; from class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Pull Up Method	package logIndex() : long from class org.neo4j.coreedge.server.core.locks.InMemoryReplicatedLockTokenState to package ordinal() : long from class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L65">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR58">To</a></td>
@@ -326,6 +312,20 @@
                                 <td><i>Pull Up Method	public InMemoryReplicatedLockTokenState(logIndex long, candidateId int, member MEMBER) from class org.neo4j.coreedge.server.core.locks.InMemoryReplicatedLockTokenState to public ReplicatedLockTokenState(ordinal long, candidateId int, member MEMBER) from class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L46">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public set(currentToken ReplicatedLockTokenRequest&lt;MEMBER&gt;, logIndex long) : void from class org.neo4j.coreedge.server.core.locks.InMemoryReplicatedLockTokenState to public set(currentToken ReplicatedLockTokenRequest&lt;MEMBER&gt;, ordinal long) : void from class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L52">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public get() : ReplicatedLockTokenRequest&lt;MEMBER&gt; from class org.neo4j.coreedge.server.core.locks.InMemoryReplicatedLockTokenState to public get() : ReplicatedLockTokenRequest&lt;MEMBER&gt; from class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR53">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -341,6 +341,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	storage : StateStorage&lt;InMemoryReplicatedLockTokenState&lt;MEMBER&gt;&gt; to storage : StateStorage&lt;ReplicatedLockTokenState&lt;MEMBER&gt;&gt; in method public ReplicatedLockTokenStateMachine(storage StateStorage&lt;ReplicatedLockTokenState&lt;MEMBER&gt;&gt;) in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenStateMachine</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-47878db8ba2e2bda1a936d96a98381e4L37">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-47878db8ba2e2bda1a936d96a98381e4R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	state : InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to state : ReplicatedLockTokenState&lt;MEMBER&gt; in method public ordinal(state ReplicatedLockTokenState&lt;MEMBER&gt;) : long in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState.Marshal</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L113">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR107">To</a></td>
@@ -351,13 +358,6 @@
                                 <td><i>Change Parameter Type	state : InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to state : ReplicatedLockTokenState&lt;MEMBER&gt; in method public marshal(state ReplicatedLockTokenState&lt;MEMBER&gt;, channel WritableChannel) : void in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState.Marshal</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L80">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR74">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	storage : StateStorage&lt;InMemoryReplicatedLockTokenState&lt;MEMBER&gt;&gt; to storage : StateStorage&lt;ReplicatedLockTokenState&lt;MEMBER&gt;&gt; in method public ReplicatedLockTokenStateMachine(storage StateStorage&lt;ReplicatedLockTokenState&lt;MEMBER&gt;&gt;) in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenStateMachine</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-47878db8ba2e2bda1a936d96a98381e4L37">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-47878db8ba2e2bda1a936d96a98381e4R37">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -391,16 +391,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to ReplicatedLockTokenState&lt;MEMBER&gt; in method public startState() : ReplicatedLockTokenState&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState.Marshal</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L107">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR100">To</a></td>
+                                <td><i>Change Return Type	InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to ReplicatedLockTokenState&lt;MEMBER&gt; in method public unmarshal(source ReadableChannel) : ReplicatedLockTokenState&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState.Marshal</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L89">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR82">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to ReplicatedLockTokenState&lt;MEMBER&gt; in method public unmarshal(source ReadableChannel) : ReplicatedLockTokenState&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState.Marshal</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L89">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR82">To</a></td>
+                                <td><i>Change Return Type	InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to ReplicatedLockTokenState&lt;MEMBER&gt; in method public startState() : ReplicatedLockTokenState&lt;MEMBER&gt; in class org.neo4j.coreedge.server.core.locks.ReplicatedLockTokenState.Marshal</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-6417674d893390f034a6dd216ab59551L107">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/74d92f35683d2421e582873aaa7b782131e7b656?diff=split#diff-b475d958e3215a4148a5430539dbd6aaR100">To</a></td>
                             </tr>
                             
                             </tbody>

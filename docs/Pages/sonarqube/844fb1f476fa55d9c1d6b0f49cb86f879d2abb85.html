@@ -312,15 +312,15 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private hash(line String) : String from class org.sonar.core.issue.tracking.LineHashSequence to private computeHash(line String) : String from class org.sonar.core.hash.SourceLinesHashesComputer</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-9434ef9af0a50109466d44284b679ceaL112">From</a></td>
+                                <td><i>Move And Rename Method	private computeLineChecksum(line String) : String from class org.sonar.server.computation.source.ComputeFileSourceData to private computeHash(line String) : String from class org.sonar.core.hash.SourceLinesHashesComputer</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-339b324cd08d3ea562cfc5094266ab4dL79">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-ce511836b2f31de7a2952cae9010837dR58">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private computeLineChecksum(line String) : String from class org.sonar.server.computation.source.ComputeFileSourceData to private computeHash(line String) : String from class org.sonar.core.hash.SourceLinesHashesComputer</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-339b324cd08d3ea562cfc5094266ab4dL79">From</a></td>
+                                <td><i>Move And Rename Method	private hash(line String) : String from class org.sonar.core.issue.tracking.LineHashSequence to private computeHash(line String) : String from class org.sonar.core.hash.SourceLinesHashesComputer</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-9434ef9af0a50109466d44284b679ceaL112">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-ce511836b2f31de7a2952cae9010837dR58">To</a></td>
                             </tr>
                             
@@ -398,14 +398,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Attribute	private DATE_2 : long in class org.sonar.server.computation.scm.ScmInfoRepositoryImplTest</i></td>
+                                <td><i>Extract Attribute	private DATE_1 : long in class org.sonar.server.computation.scm.ScmInfoRepositoryImplTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Attribute	private DATE_1 : long in class org.sonar.server.computation.scm.ScmInfoRepositoryImplTest</i></td>
+                                <td><i>Extract Attribute	private DATE_2 : long in class org.sonar.server.computation.scm.ScmInfoRepositoryImplTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -527,6 +527,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	sourceService : SourceService to sourceHashRepository : SourceHashRepository in method public ScmInfoRepositoryImpl(batchReportReader BatchReportReader, analysisMetadataHolder AnalysisMetadataHolder, dbClient DbClient, sourceHashRepository SourceHashRepository) in class org.sonar.server.computation.scm.ScmInfoRepositoryImpl</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bL49">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bR49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	component : Component to file : Component in method private getScmInfoFromDb(file Component) : Optional&lt;ScmInfo&gt; in class org.sonar.server.computation.scm.ScmInfoRepositoryImpl</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bL83">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bR83">To</a></td>
@@ -537,13 +544,6 @@
                                 <td><i>Rename Parameter	component : Component to file : Component in method private getScmInfoFromReport(file Component, changesets BatchReport.Changesets) : Optional&lt;ScmInfo&gt; in class org.sonar.server.computation.scm.ScmInfoRepositoryImpl</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bL101">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bR101">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	sourceService : SourceService to sourceHashRepository : SourceHashRepository in method public ScmInfoRepositoryImpl(batchReportReader BatchReportReader, analysisMetadataHolder AnalysisMetadataHolder, dbClient DbClient, sourceHashRepository SourceHashRepository) in class org.sonar.server.computation.scm.ScmInfoRepositoryImpl</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bL49">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/844fb1f476fa55d9c1d6b0f49cb86f879d2abb85?diff=split#diff-fdf4dbdb1e90453eeb58cf190708e35bR49">To</a></td>
                             </tr>
                             
                             </tbody>

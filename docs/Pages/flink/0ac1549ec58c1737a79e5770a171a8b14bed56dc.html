@@ -216,6 +216,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	initialPartitionsToRead : Map&lt;KafkaTopicPartition,Long&gt; to initialPartitionsToRead : Map&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public LegacyFetcher(owner FlinkKafkaConsumer08&lt;T&gt;, initialPartitionsToRead Map&lt;KafkaTopicPartition,KafkaPartitionState&gt;, props Properties, taskName String, userCodeClassloader ClassLoader) in class org.apache.flink.streaming.connectors.kafka.internals.LegacyFetcher</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05L97">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05R109">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	lastOffsets : HashMap&lt;KafkaTopicPartition,Long&gt; to partitionState : HashMap&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public run(sourceContext SourceFunction.SourceContext&lt;T&gt;, deserializer KeyedDeserializationSchema&lt;T&gt;, partitionState HashMap&lt;KafkaTopicPartition,KafkaPartitionState&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internals.LegacyFetcher</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05L141">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05R149">To</a></td>
@@ -226,13 +233,6 @@
                                 <td><i>Change Parameter Type	lastOffsets : HashMap&lt;KafkaTopicPartition,Long&gt; to lastOffsets : HashMap&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public run(sourceContext SourceFunction.SourceContext&lt;T&gt;, valueDeserializer KeyedDeserializationSchema&lt;T&gt;, lastOffsets HashMap&lt;KafkaTopicPartition,KafkaPartitionState&gt;) : void in class org.apache.flink.streaming.connectors.kafka.internals.Fetcher</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-e707beb9b663aae79b1035688b2cf2bdL39">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-e707beb9b663aae79b1035688b2cf2bdR64">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	initialPartitionsToRead : Map&lt;KafkaTopicPartition,Long&gt; to initialPartitionsToRead : Map&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public LegacyFetcher(owner FlinkKafkaConsumer08&lt;T&gt;, initialPartitionsToRead Map&lt;KafkaTopicPartition,KafkaPartitionState&gt;, props Properties, taskName String, userCodeClassloader ClassLoader) in class org.apache.flink.streaming.connectors.kafka.internals.LegacyFetcher</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05L97">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05R109">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -320,16 +320,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	subscribedPartitionsWithOffsets : Map&lt;KafkaTopicPartition,Long&gt; to subscribedPartitionsWithOffsets : Map&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public open(parameters Configuration) : void in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer08</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-ab377625501d8b8d7f3cbcb0d01fe0d3L234">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-ab377625501d8b8d7f3cbcb0d01fe0d3R259">To</a></td>
+                                <td><i>Change Variable Type	partitionToRead : Map.Entry&lt;KafkaTopicPartition,Long&gt; to partitionToRead : Map.Entry&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public LegacyFetcher(owner FlinkKafkaConsumer08&lt;T&gt;, initialPartitionsToRead Map&lt;KafkaTopicPartition,KafkaPartitionState&gt;, props Properties, taskName String, userCodeClassloader ClassLoader) in class org.apache.flink.streaming.connectors.kafka.internals.LegacyFetcher</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05L97">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05R120">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	partitionToRead : Map.Entry&lt;KafkaTopicPartition,Long&gt; to partitionToRead : Map.Entry&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public LegacyFetcher(owner FlinkKafkaConsumer08&lt;T&gt;, initialPartitionsToRead Map&lt;KafkaTopicPartition,KafkaPartitionState&gt;, props Properties, taskName String, userCodeClassloader ClassLoader) in class org.apache.flink.streaming.connectors.kafka.internals.LegacyFetcher</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05L97">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-7394f404baf7a03aa841c63548e5db05R120">To</a></td>
+                                <td><i>Change Variable Type	subscribedPartitionsWithOffsets : Map&lt;KafkaTopicPartition,Long&gt; to subscribedPartitionsWithOffsets : Map&lt;KafkaTopicPartition,KafkaPartitionState&gt; in method public open(parameters Configuration) : void in class org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer08</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-ab377625501d8b8d7f3cbcb0d01fe0d3L234">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0ac1549ec58c1737a79e5770a171a8b14bed56dc?diff=split#diff-ab377625501d8b8d7f3cbcb0d01fe0d3R259">To</a></td>
                             </tr>
                             
                             </tbody>

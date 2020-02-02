@@ -407,6 +407,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Class	com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.StateChangeListener from class com.navercorp.pinpoint.web.websocket.ActiveThreadCountStreamListener</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Class	com.navercorp.pinpoint.web.websocket.StreamConnectionManager from class com.navercorp.pinpoint.web.websocket.WebSocketResponseAggregator</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -415,13 +422,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.MessageListener from class com.navercorp.pinpoint.web.websocket.ActiveThreadCountStreamListener</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Class	com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker.StateChangeListener from class com.navercorp.pinpoint.web.websocket.ActiveThreadCountStreamListener</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -457,14 +457,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	com.navercorp.pinpoint.web.websocket.ActiveThreadCountStreamListener renamed to com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker</i></td>
+                                <td><i>Rename Class	com.navercorp.pinpoint.web.websocket.WebSocketResponseAggregator renamed to com.navercorp.pinpoint.web.websocket.ActiveThreadCountResponseAggregator</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	com.navercorp.pinpoint.web.websocket.WebSocketResponseAggregator renamed to com.navercorp.pinpoint.web.websocket.ActiveThreadCountResponseAggregator</i></td>
+                                <td><i>Rename Class	com.navercorp.pinpoint.web.websocket.ActiveThreadCountStreamListener renamed to com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -482,6 +482,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Attribute	streamMessageListenerRepository : ClientStreamChannelMessageListenerRepository&lt;ActiveThreadCountStreamListener&gt; to activeThreadCountWorkerRepository : ConcurrentHashMap&lt;String,ActiveThreadCountWorker&gt; in class com.navercorp.pinpoint.web.websocket.ActiveThreadCountResponseAggregator</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-36371fcf03c8201892709ffe9890de2fL50">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-9e0cc0e54b09de9bc9f26517c36073adR56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Attribute	lock : Object to aggregatorLock : Object in class com.navercorp.pinpoint.web.websocket.ActiveThreadCountResponseAggregator</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-36371fcf03c8201892709ffe9890de2fL45">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-9e0cc0e54b09de9bc9f26517c36073adR46">To</a></td>
@@ -492,13 +499,6 @@
                                 <td><i>Rename Attribute	streamchannel : StreamChannel to streamChannel : StreamChannel in class com.navercorp.pinpoint.web.websocket.ActiveThreadCountWorker</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-d703a1818ea3f3641d15f4fca7e58ce3L53">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-23f0abdb3c1dc160536118d6ce32ad1fR64">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	streamMessageListenerRepository : ClientStreamChannelMessageListenerRepository&lt;ActiveThreadCountStreamListener&gt; to activeThreadCountWorkerRepository : ConcurrentHashMap&lt;String,ActiveThreadCountWorker&gt; in class com.navercorp.pinpoint.web.websocket.ActiveThreadCountResponseAggregator</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-36371fcf03c8201892709ffe9890de2fL50">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-9e0cc0e54b09de9bc9f26517c36073adR56">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -610,27 +610,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.stream.StreamChannelManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public openStream(agentInfo AgentInfo, payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(agentInfo AgentInfo, payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.web.service.AgentServiceImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.server.DefaultPinpointServer</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.client.PinpointClientHandlerContext</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -650,6 +629,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.stream.StreamChannelManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public openStream(agentInfo AgentInfo, payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(agentInfo AgentInfo, payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.web.service.AgentServiceImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext extracted from public openStream(payload byte[], clientStreamChannelMessageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.server.DefaultPinpointServer</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -660,34 +660,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.client.PinpointClient</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-7410948149f86f299742ff9b33ee6788L139">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-7410948149f86f299742ff9b33ee6788R141">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.server.DefaultPinpointServer</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cL220">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cR217">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(agentInfo AgentInfo, payload byte[], messageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.web.service.AgentService</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-75cb1d2f61badacd56006c345569a86cL54">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-75cb1d2f61badacd56006c345569a86cR60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.client.PinpointClientHandler</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739L55">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739R53">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -778,6 +750,34 @@
                                 <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.stream.StreamChannelManager</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-5e117991dcd307b898ad57e645aa1245L70">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-5e117991dcd307b898ad57e645aa1245R76">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener, stateChangeListener StreamChannelStateChangeEventHandler&lt;ClientStreamChannel&gt;) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.client.PinpointClient</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-7410948149f86f299742ff9b33ee6788L139">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-7410948149f86f299742ff9b33ee6788R141">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.server.DefaultPinpointServer</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cL220">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-5f1e3dad16b93c1ed01700ac03d83a4cR217">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(agentInfo AgentInfo, payload byte[], messageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.web.service.AgentService</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-75cb1d2f61badacd56006c345569a86cL54">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-75cb1d2f61badacd56006c345569a86cR60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	clientStreamChannelMessageListener : ClientStreamChannelMessageListener to messageListener : ClientStreamChannelMessageListener in method public openStream(payload byte[], messageListener ClientStreamChannelMessageListener) : ClientStreamChannelContext in class com.navercorp.pinpoint.rpc.client.PinpointClientHandler</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739L55">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/710edb12ece92b6d8ef7400b9127f57f5f427b8b?diff=split#diff-a4d752917d20a48b1bcdf0dee0e36739R53">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -262,6 +262,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public assumeUncompressed() : void renamed to public sanityCheckUncompressedSize() : void in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL672">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR654">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public serializeExtraInfo(destination ByteBuffer) : void renamed to private addMetaData(destination ByteBuffer) : ByteBuffer in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL1838">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR1807">To</a></td>
@@ -272,13 +279,6 @@
                                 <td><i>Rename Method	package HFileBlock(blockType BlockType, onDiskSizeWithoutHeader int, uncompressedSizeWithoutHeader int, prevBlockOffset long, buf ByteBuff, fillHeader boolean, offset long, onDiskDataSizeWithHeader int, fileContext HFileContext) renamed to private init(blockType BlockType, onDiskSizeWithoutHeader int, uncompressedSizeWithoutHeader int, prevBlockOffset long, offset long, onDiskDataSizeWithHeader int, nextBlockOnDiskSize int, fileContext HFileContext) : void in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL253">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR369">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public assumeUncompressed() : void renamed to public sanityCheckUncompressedSize() : void in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL672">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR654">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -294,16 +294,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	extraInfoBuffer : ByteBuffer to metadata : ByteBuffer in method public writeToCache(ioEngine IOEngine, bucketAllocator BucketAllocator, deserialiserMap UniqueIndexMap&lt;Integer&gt;, realCacheSize AtomicLong) : BucketEntry in class org.apache.hadoop.hbase.io.hfile.bucket.BucketCache.RAMQueueEntry</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-cd86405c69df05d07f540a0f78cdcd72L1332">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-cd86405c69df05d07f540a0f78cdcd72R1330">To</a></td>
+                                <td><i>Rename Variable	contextBuilder : HFileContextBuilder to fileContextBuilder : HFileContextBuilder in method package HFileBlock(buf ByteBuff, usesHBaseChecksum boolean, memType MemoryType, offset long, nextBlockOnDiskSize int, fileContext HFileContext) in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL334">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR346">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	contextBuilder : HFileContextBuilder to fileContextBuilder : HFileContextBuilder in method package HFileBlock(buf ByteBuff, usesHBaseChecksum boolean, memType MemoryType, offset long, nextBlockOnDiskSize int, fileContext HFileContext) in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL334">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR346">To</a></td>
+                                <td><i>Rename Variable	extraInfoBuffer : ByteBuffer to metadata : ByteBuffer in method public writeToCache(ioEngine IOEngine, bucketAllocator BucketAllocator, deserialiserMap UniqueIndexMap&lt;Integer&gt;, realCacheSize AtomicLong) : BucketEntry in class org.apache.hadoop.hbase.io.hfile.bucket.BucketCache.RAMQueueEntry</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-cd86405c69df05d07f540a0f78cdcd72L1332">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-cd86405c69df05d07f540a0f78cdcd72R1330">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -337,13 +337,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	EXTRA_SERIALIZATION_SPACE : int to BLOCK_METADATA_SPACE : int in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL124">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR210">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	nextBlockOnDiskSizeWithHeader : int to nextBlockOnDiskSize : int in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL249">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR182">To</a></td>
@@ -370,6 +363,13 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR845">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	EXTRA_SERIALIZATION_SPACE : int to BLOCK_METADATA_SPACE : int in class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eL124">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/000117ad9fd7eb59074c9bb0da2cf1f9544d4bed?diff=split#diff-f69b54495309f563e3ddec168185bf0eR210">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -383,14 +383,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	checksumType : byte in method package HFileBlock(buf ByteBuff, usesHBaseChecksum boolean, memType MemoryType, offset long, nextBlockOnDiskSize int, fileContext HFileContext) from class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
+                                <td><i>Extract Variable	bytesPerChecksum : int in method package HFileBlock(buf ByteBuff, usesHBaseChecksum boolean, memType MemoryType, offset long, nextBlockOnDiskSize int, fileContext HFileContext) from class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	bytesPerChecksum : int in method package HFileBlock(buf ByteBuff, usesHBaseChecksum boolean, memType MemoryType, offset long, nextBlockOnDiskSize int, fileContext HFileContext) from class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
+                                <td><i>Extract Variable	checksumType : byte in method package HFileBlock(buf ByteBuff, usesHBaseChecksum boolean, memType MemoryType, offset long, nextBlockOnDiskSize int, fileContext HFileContext) from class org.apache.hadoop.hbase.io.hfile.HFileBlock</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

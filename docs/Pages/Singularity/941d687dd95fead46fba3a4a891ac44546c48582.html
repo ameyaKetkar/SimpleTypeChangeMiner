@@ -677,13 +677,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Push Down Method	private applyTaskIdHistoryBaseQuery(sqlBuilder StringBuilder, binds Map&lt;String,Object&gt;, requestId Optional&lt;String&gt;, deployId Optional&lt;String&gt;, runId Optional&lt;String&gt;, host Optional&lt;String&gt;, lastTaskStatus Optional&lt;ExtendedTaskState&gt;, startedBefore Optional&lt;Long&gt;, startedAfter Optional&lt;Long&gt;, updatedBefore Optional&lt;Long&gt;, updatedAfter Optional&lt;Long&gt;) : void from class com.hubspot.singularity.data.history.HistoryJDBI to protected applyTaskIdHistoryBaseQuery(sqlBuilder StringBuilder, binds Map&lt;String,Object&gt;, requestId Optional&lt;String&gt;, deployId Optional&lt;String&gt;, runId Optional&lt;String&gt;, host Optional&lt;String&gt;, lastTaskStatus Optional&lt;ExtendedTaskState&gt;, startedBefore Optional&lt;Long&gt;, startedAfter Optional&lt;Long&gt;, updatedBefore Optional&lt;Long&gt;, updatedAfter Optional&lt;Long&gt;) : void from class com.hubspot.singularity.data.history.AbstractHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL98">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-cec37924f7f0bbc2b46e1176fcea3fb6R32">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Push Down Method	private addWhereOrAnd(sqlBuilder StringBuilder, shouldUseWhere boolean) : void from class com.hubspot.singularity.data.history.HistoryJDBI to protected addWhereOrAnd(sqlBuilder StringBuilder, shouldUseWhere boolean) : void from class com.hubspot.singularity.data.history.AbstractHistoryJDBI</i></td>
                                 <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL90">From</a></td>
                                 <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-cec37924f7f0bbc2b46e1176fcea3fb6R24">To</a></td>
@@ -701,6 +694,13 @@
                                 <td><i>Push Down Method	public getTaskIdHistoryCount(requestId Optional&lt;String&gt;, deployId Optional&lt;String&gt;, runId Optional&lt;String&gt;, host Optional&lt;String&gt;, lastTaskStatus Optional&lt;ExtendedTaskState&gt;, startedBefore Optional&lt;Long&gt;, startedAfter Optional&lt;Long&gt;, updatedBefore Optional&lt;Long&gt;, updatedAfter Optional&lt;Long&gt;) : int from class com.hubspot.singularity.data.history.HistoryJDBI to public getTaskIdHistoryCount(requestId Optional&lt;String&gt;, deployId Optional&lt;String&gt;, runId Optional&lt;String&gt;, host Optional&lt;String&gt;, lastTaskStatus Optional&lt;ExtendedTaskState&gt;, startedBefore Optional&lt;Long&gt;, startedAfter Optional&lt;Long&gt;, updatedBefore Optional&lt;Long&gt;, updatedAfter Optional&lt;Long&gt;) : int from class com.hubspot.singularity.data.history.AbstractHistoryJDBI</i></td>
                                 <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL195">From</a></td>
                                 <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-cec37924f7f0bbc2b46e1176fcea3fb6R131">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	private applyTaskIdHistoryBaseQuery(sqlBuilder StringBuilder, binds Map&lt;String,Object&gt;, requestId Optional&lt;String&gt;, deployId Optional&lt;String&gt;, runId Optional&lt;String&gt;, host Optional&lt;String&gt;, lastTaskStatus Optional&lt;ExtendedTaskState&gt;, startedBefore Optional&lt;Long&gt;, startedAfter Optional&lt;Long&gt;, updatedBefore Optional&lt;Long&gt;, updatedAfter Optional&lt;Long&gt;) : void from class com.hubspot.singularity.data.history.HistoryJDBI to protected applyTaskIdHistoryBaseQuery(sqlBuilder StringBuilder, binds Map&lt;String,Object&gt;, requestId Optional&lt;String&gt;, deployId Optional&lt;String&gt;, runId Optional&lt;String&gt;, host Optional&lt;String&gt;, lastTaskStatus Optional&lt;ExtendedTaskState&gt;, startedBefore Optional&lt;Long&gt;, startedAfter Optional&lt;Long&gt;, updatedBefore Optional&lt;Long&gt;, updatedAfter Optional&lt;Long&gt;) : void from class com.hubspot.singularity.data.history.AbstractHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL98">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-cec37924f7f0bbc2b46e1176fcea3fb6R32">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -731,6 +731,62 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract insertDeployHistory(requestId String, deployId String, createdAt Date, user String, message String, deployStateAt Date, deployState String, bytes byte[]) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract insertDeployHistory(requestId String, deployId String, createdAt Date, user String, message String, deployStateAt Date, deployState String, bytes byte[]) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL33">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R22">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract insertRequestHistory(requestId String, request byte[], createdAt Date, requestState String, user String, message String) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract insertRequestHistory(requestId String, request byte[], createdAt Date, requestState String, user String, message String) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL30">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R19">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract getRequestHistoryCount(requestId String) : int from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getRequestHistoryCount(requestId String) : int from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL59">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract close() : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract close() : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL84">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract updateTaskHistoryNullBytesForRequestBefore(requestId String, updatedAtBefore Date, purgeLimitPerQuery Integer) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract updateTaskHistoryNullBytesForRequestBefore(requestId String, updatedAtBefore Date, purgeLimitPerQuery Integer) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL71">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R60">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract insertTaskHistory(requestId String, taskId String, bytes byte[], updatedAt Date, lastTaskStatus String, runId String, deployId String, host String, startedAt Date) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract insertTaskHistory(requestId String, taskId String, bytes byte[], updatedAt Date, lastTaskStatus String, runId String, deployId String, host String, startedAt Date) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL36">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R25">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract getTaskHistoryForTask(taskId String) : byte[] from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getTaskHistoryForTask(taskId String) : byte[] from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL41">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R30">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	package abstract getDeployHistoryForRequestCount(requestId String) : int from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getDeployHistoryForRequestCount(requestId String) : int from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL53">From</a></td>
+                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R42">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -800,62 +856,6 @@
                                 <td><i>Move Method	package abstract getRequestIdCounts(updatedAt Date) : List&lt;SingularityRequestIdCount&gt; from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getRequestIdCounts(updatedAt Date) : List&lt;SingularityRequestIdCount&gt; from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
                                 <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL65">From</a></td>
                                 <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R54">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract insertDeployHistory(requestId String, deployId String, createdAt Date, user String, message String, deployStateAt Date, deployState String, bytes byte[]) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract insertDeployHistory(requestId String, deployId String, createdAt Date, user String, message String, deployStateAt Date, deployState String, bytes byte[]) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL33">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R22">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract insertRequestHistory(requestId String, request byte[], createdAt Date, requestState String, user String, message String) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract insertRequestHistory(requestId String, request byte[], createdAt Date, requestState String, user String, message String) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL30">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R19">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract getRequestHistoryCount(requestId String) : int from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getRequestHistoryCount(requestId String) : int from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL59">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract close() : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract close() : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL84">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract updateTaskHistoryNullBytesForRequestBefore(requestId String, updatedAtBefore Date, purgeLimitPerQuery Integer) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract updateTaskHistoryNullBytesForRequestBefore(requestId String, updatedAtBefore Date, purgeLimitPerQuery Integer) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL71">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R60">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract insertTaskHistory(requestId String, taskId String, bytes byte[], updatedAt Date, lastTaskStatus String, runId String, deployId String, host String, startedAt Date) : void from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract insertTaskHistory(requestId String, taskId String, bytes byte[], updatedAt Date, lastTaskStatus String, runId String, deployId String, host String, startedAt Date) : void from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL36">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R25">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract getTaskHistoryForTask(taskId String) : byte[] from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getTaskHistoryForTask(taskId String) : byte[] from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL41">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	package abstract getDeployHistoryForRequestCount(requestId String) : int from class com.hubspot.singularity.data.history.HistoryJDBI to public abstract getDeployHistoryForRequestCount(requestId String) : int from class com.hubspot.singularity.data.history.MySQLHistoryJDBI</i></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-3595fa5e24cb38b73e9aa9259590eb4fL53">From</a></td>
-                                <td><a href = "https://github.com/HubSpot/Singularity/commit/941d687dd95fead46fba3a4a891ac44546c48582?diff=split#diff-e156acd715ded16d14eb5b1945810751R42">To</a></td>
                             </tr>
                             
                             </tbody>

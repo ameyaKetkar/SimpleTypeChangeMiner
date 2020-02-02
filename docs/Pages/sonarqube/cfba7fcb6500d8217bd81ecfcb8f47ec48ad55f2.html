@@ -154,6 +154,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private toExternalRule(reportIssue ScannerReport.ExternalIssue) : NewExternalRule renamed to private toAdHocRule(reportIssue ScannerReport.ExternalIssue) : NewAddHocRule in class org.sonar.ce.task.projectanalysis.issue.TrackerRawInputFactory.RawLazyInput</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bL225">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bR224">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public persistNewExternalRules(dbSession DbSession) : void renamed to public persistNewAddHocRules(dbSession DbSession) : void in class org.sonar.ce.task.projectanalysis.issue.RuleRepository</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f1d600b2eb3365eb612baac520e89bd8L53">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f1d600b2eb3365eb612baac520e89bd8R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public insertNewExternalRuleIfAbsent(ruleKey RuleKey, ruleSupplier Supplier&lt;NewExternalRule&gt;) : void renamed to public addNewAddHocRuleIfAbsent(ruleKey RuleKey, ruleSupplier Supplier&lt;NewAddHocRule&gt;) : void in class org.sonar.ce.task.projectanalysis.issue.RuleRepository</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f1d600b2eb3365eb612baac520e89bd8L51">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f1d600b2eb3365eb612baac520e89bd8R51">To</a></td>
@@ -178,20 +192,6 @@
                                 <td><i>Rename Method	public insertNewExternalRuleIfAbsent(ruleKey RuleKey, ruleSupplier Supplier&lt;NewExternalRule&gt;) : void renamed to public addNewAddHocRuleIfAbsent(ruleKey RuleKey, ruleSupplier Supplier&lt;NewAddHocRule&gt;) : void in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryRule</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-3104d71076be109e144ec8f63f7d8001L89">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-3104d71076be109e144ec8f63f7d8001R89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private toExternalRule(reportIssue ScannerReport.ExternalIssue) : NewExternalRule renamed to private toAdHocRule(reportIssue ScannerReport.ExternalIssue) : NewAddHocRule in class org.sonar.ce.task.projectanalysis.issue.TrackerRawInputFactory.RawLazyInput</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bL225">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bR224">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public persistNewExternalRules(dbSession DbSession) : void renamed to public persistNewAddHocRules(dbSession DbSession) : void in class org.sonar.ce.task.projectanalysis.issue.RuleRepository</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f1d600b2eb3365eb612baac520e89bd8L53">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f1d600b2eb3365eb612baac520e89bd8R53">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -229,6 +229,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	external : ExternalRuleWrapper to external : AdHocRuleWrapper in method private persistAndIndex(dbSession DbSession, external AdHocRuleWrapper) : void in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImpl</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eL80">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eR80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	issue : ExternalIssue to issue : DefaultExternalIssue in method public store(issue DefaultExternalIssue) : void in class org.sonar.api.batch.sensor.internal.SensorStorage</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f706e89f9256ff28169250b2f1a46819L44">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f706e89f9256ff28169250b2f1a46819R45">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -279,20 +293,6 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-8429400ec022f2ffc2792a7512a27082R131">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	external : ExternalRuleWrapper to external : AdHocRuleWrapper in method private persistAndIndex(dbSession DbSession, external AdHocRuleWrapper) : void in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImpl</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eL80">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eR80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	issue : ExternalIssue to issue : DefaultExternalIssue in method public store(issue DefaultExternalIssue) : void in class org.sonar.api.batch.sensor.internal.SensorStorage</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f706e89f9256ff28169250b2f1a46819L44">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-f706e89f9256ff28169250b2f1a46819R45">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -331,13 +331,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	NewExternalRule to NewAddHocRule in method private toAdHocRule(reportIssue ScannerReport.ExternalIssue) : NewAddHocRule in class org.sonar.ce.task.projectanalysis.issue.TrackerRawInputFactory.RawLazyInput</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bL225">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bR224">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	T to DefaultIssue in method public forRule(ruleKey RuleKey) : DefaultIssue in class org.sonar.api.batch.sensor.issue.internal.DefaultIssue</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-8f7c00bcf3080cdb87058dfcf4336c60L51">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-bb8e895e4428dbcec7e412a613b9274cR48">To</a></td>
@@ -355,6 +348,13 @@
                                 <td><i>Change Return Type	NewExternalRule to NewAddHocRule in method public build() : NewAddHocRule in class org.sonar.server.rule.NewAddHocRule.Builder</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-0544a0fdc74a644fec31e53ab261feebL70">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-c8526c584a4e5aae2bfa73e7ed474e74R70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	NewExternalRule to NewAddHocRule in method private toAdHocRule(reportIssue ScannerReport.ExternalIssue) : NewAddHocRule in class org.sonar.ce.task.projectanalysis.issue.TrackerRawInputFactory.RawLazyInput</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bL225">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-2072444526a7cada0c4de3b6a1251b6bR224">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -441,13 +441,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	ACTIVATE_EXTERNAL_ISSUES : String to ACTIVATE : String in class org.sonar.xoo.rule.OnePredefinedRuleExternalIssuePerLineSensor</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-3cdadd8cd1e1ef788dac787fab0de602L42">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-5bc94c162ddc0c7b9d05da66e3b2c2f3R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	externalRuleCreator : ExternalRuleCreator to addHocRuleCreator : AddHocRuleCreator in class org.sonar.ce.task.projectanalysis.step.PersistIssuesStepTest</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-ce0b4408a162e557cff94592d737b49fL88">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-ce0b4408a162e557cff94592d737b49fR88">To</a></td>
@@ -479,6 +472,13 @@
                                 <td><i>Rename Attribute	externalRuleCreator : ExternalRuleCreator to addHocRuleCreator : AddHocRuleCreator in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImplTest</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-555732e245f73ae3dd4cd09161ac84ccL81">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-555732e245f73ae3dd4cd09161ac84ccR81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	ACTIVATE_EXTERNAL_ISSUES : String to ACTIVATE : String in class org.sonar.xoo.rule.OnePredefinedRuleExternalIssuePerLineSensor</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-3cdadd8cd1e1ef788dac787fab0de602L42">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-5bc94c162ddc0c7b9d05da66e3b2c2f3R40">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -533,13 +533,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	externalRuleCreator : ExternalRuleCreator to addHocRuleCreator : AddHocRuleCreator in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImplTest</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-555732e245f73ae3dd4cd09161ac84ccL81">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-555732e245f73ae3dd4cd09161ac84ccR81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	newExternalRulesById : Map&lt;RuleKey,NewExternalRule&gt; to newExternalRulesById : Map&lt;RuleKey,NewAddHocRule&gt; in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryRule</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-3104d71076be109e144ec8f63f7d8001L38">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-3104d71076be109e144ec8f63f7d8001R38">To</a></td>
@@ -580,6 +573,13 @@
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eR53">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	externalRuleCreator : ExternalRuleCreator to addHocRuleCreator : AddHocRuleCreator in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImplTest</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-555732e245f73ae3dd4cd09161ac84ccL81">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-555732e245f73ae3dd4cd09161ac84ccR81">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -590,6 +590,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	externalRule : NewExternalRule to addHocRule : NewAddHocRule in method private AdHocRuleWrapper(addHocRule NewAddHocRule) in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImpl.AdHocRuleWrapper</i></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eL151">From</a></td>
+                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eR151">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -610,13 +617,6 @@
                                 <td><i>Rename Parameter	key : String to engineId : String in method public createExternalRepository(engineId String, language String) : NewRepository in class org.sonar.api.server.rule.RulesDefinition.Context</i></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-e1d2a4fb24ac8959f8af4cf90d0a1ea5L410">From</a></td>
                                 <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-e1d2a4fb24ac8959f8af4cf90d0a1ea5R410">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	externalRule : NewExternalRule to addHocRule : NewAddHocRule in method private AdHocRuleWrapper(addHocRule NewAddHocRule) in class org.sonar.ce.task.projectanalysis.issue.RuleRepositoryImpl.AdHocRuleWrapper</i></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eL151">From</a></td>
-                                <td><a href = "https://github.com/SonarSource/sonarqube/commit/cfba7fcb6500d8217bd81ecfcb8f47ec48ad55f2?diff=split#diff-6b8151213a23454a2b90c0111959be6eR151">To</a></td>
                             </tr>
                             
                             </tbody>

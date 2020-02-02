@@ -276,13 +276,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public checkForClusterFreeMemoryLimit(conf Configuration) : void renamed to public checkForClusterFreeHeapMemoryLimit(conf Configuration) : void in class org.apache.hadoop.hbase.io.util.MemorySizeUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-84adcdc2c881765993b46b2f58e80d71L48">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-27a874c60abe66162e004c879ca643c7R58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getGlobalMemStorePercent(c Configuration, logInvalid boolean) : float renamed to public getGlobalMemStoreHeapPercent(c Configuration, logInvalid boolean) : float in class org.apache.hadoop.hbase.io.util.MemorySizeUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-84adcdc2c881765993b46b2f58e80d71L74">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-27a874c60abe66162e004c879ca643c7R84">To</a></td>
@@ -293,6 +286,13 @@
                                 <td><i>Rename Method	public getGlobalMemStoreLowerMark(conf Configuration, globalMemStorePercent float) : float renamed to public getGlobalMemStoreHeapLowerMark(conf Configuration, honorOldConfig boolean) : float in class org.apache.hadoop.hbase.io.util.MemorySizeUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-84adcdc2c881765993b46b2f58e80d71L92">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-27a874c60abe66162e004c879ca643c7R103">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public checkForClusterFreeMemoryLimit(conf Configuration) : void renamed to public checkForClusterFreeHeapMemoryLimit(conf Configuration) : void in class org.apache.hadoop.hbase.io.util.MemorySizeUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-84adcdc2c881765993b46b2f58e80d71L48">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-27a874c60abe66162e004c879ca643c7R58">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -351,6 +351,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	mslab : HeapMemStoreLAB to mslab : MemStoreLABImpl in method private getChunkQueueTestThread(mslab MemStoreLABImpl, threadName String, cellToCopyInto Cell) : Thread in class org.apache.hadoop.hbase.regionserver.TestMemStoreLAB</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f1bfda1af3243b20a02b2250a12542baL217">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f1bfda1af3243b20a02b2250a12542baR230">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method public copyCellTo(cell Cell, buf ByteBuffer, offset int, len int) : Cell in class org.apache.hadoop.hbase.CellUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-0cb69816ea423ac222e57c87de7dce91L664">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2671">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method public write(buf ByteBuffer, offset int) : void in class org.apache.hadoop.hbase.ExtendedCell</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-4b78c6675fac69610e7a71cdc200890eL63">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-4b78c6675fac69610e7a71cdc200890eR69">To</a></td>
@@ -396,20 +410,6 @@
                                 <td><i>Change Parameter Type	c : ByteBufferedCell to c : ByteBufferCell in method public KeyOnlyByteBufferCell(c ByteBufferCell, lenAsVal boolean) in class org.apache.hadoop.hbase.filter.KeyOnlyFilter.KeyOnlyByteBufferCell</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-c76b678591ea144ab11565cc44d5bee2L239">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-c76b678591ea144ab11565cc44d5bee2R239">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	mslab : HeapMemStoreLAB to mslab : MemStoreLABImpl in method private getChunkQueueTestThread(mslab MemStoreLABImpl, threadName String, cellToCopyInto Cell) : Thread in class org.apache.hadoop.hbase.regionserver.TestMemStoreLAB</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f1bfda1af3243b20a02b2250a12542baL217">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f1bfda1af3243b20a02b2250a12542baR230">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	buf : byte[] to buf : ByteBuffer in method public copyCellTo(cell Cell, buf ByteBuffer, offset int, len int) : Cell in class org.apache.hadoop.hbase.CellUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-0cb69816ea423ac222e57c87de7dce91L664">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2671">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -461,6 +461,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	BlockingQueue&lt;PooledChunk&gt; to BlockingQueue&lt;Chunk&gt; in method package getPooledChunks() : BlockingQueue&lt;Chunk&gt; in class org.apache.hadoop.hbase.regionserver.MemStoreLABImpl</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f63ab416231ed641aba5f88045d039b1L242">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-30d1c56ed22a07e2b2e58d16d9a3bd71R240">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	byte[] to ByteBuffer in method package getData() : ByteBuffer in class org.apache.hadoop.hbase.regionserver.Chunk</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-8c41ff1f443c1c8168a65c6e0a9ad13cL126">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-8c41ff1f443c1c8168a65c6e0a9ad13cR110">To</a></td>
@@ -478,13 +485,6 @@
                                 <td><i>Change Return Type	KeyValue to Cell in method public copyCellTo(cell Cell, buf ByteBuffer, offset int, len int) : Cell in class org.apache.hadoop.hbase.CellUtil</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-0cb69816ea423ac222e57c87de7dce91L664">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-0eaee8e67633d795de5ddd1ed877bcb3R2668">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	BlockingQueue&lt;PooledChunk&gt; to BlockingQueue&lt;Chunk&gt; in method package getPooledChunks() : BlockingQueue&lt;Chunk&gt; in class org.apache.hadoop.hbase.regionserver.MemStoreLABImpl</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f63ab416231ed641aba5f88045d039b1L242">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-30d1c56ed22a07e2b2e58d16d9a3bd71R240">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -543,20 +543,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.hbase.TestCellUtil.ByteBufferedCellImpl renamed to org.apache.hadoop.hbase.TestCellUtil.ByteBufferCellImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.hbase.CellUtil.FirstOnRowColTSByteBufferedCell renamed to org.apache.hadoop.hbase.CellUtil.FirstOnRowColTSByteBufferCell</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -628,6 +614,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.hadoop.hbase.TestCellUtil.ByteBufferedCellImpl renamed to org.apache.hadoop.hbase.TestCellUtil.ByteBufferCellImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.hadoop.hbase.CellUtil.FirstOnRowColTSByteBufferedCell renamed to org.apache.hadoop.hbase.CellUtil.FirstOnRowColTSByteBufferCell</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -656,20 +656,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	kv2 : ByteBufferedCell to kv2 : ByteBufferCell in method public testCompressUncompressTagsWithOffheapKeyValue1() : void in class org.apache.hadoop.hbase.io.TestTagCompressionContext</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236L78">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236R86">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	kv1 : ByteBufferedCell to kv1 : ByteBufferCell in method public testCompressUncompressTagsWithOffheapKeyValue1() : void in class org.apache.hadoop.hbase.io.TestTagCompressionContext</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236L78">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236R83">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -762,6 +748,20 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-ada58d00b6903af511ac92d89de1be7eR135">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	kv2 : ByteBufferedCell to kv2 : ByteBufferCell in method public testCompressUncompressTagsWithOffheapKeyValue1() : void in class org.apache.hadoop.hbase.io.TestTagCompressionContext</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236L78">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236R86">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	kv1 : ByteBufferedCell to kv1 : ByteBufferCell in method public testCompressUncompressTagsWithOffheapKeyValue1() : void in class org.apache.hadoop.hbase.io.TestTagCompressionContext</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236L78">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-2fd300d4462a0e353135def79db4c236R83">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -772,20 +772,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	pooledChunkQueue : BlockingQueue&lt;PooledChunk&gt; to pooledChunkQueue : BlockingQueue&lt;Chunk&gt; in class org.apache.hadoop.hbase.regionserver.MemStoreLABImpl</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f63ab416231ed641aba5f88045d039b1L75">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-30d1c56ed22a07e2b2e58d16d9a3bd71R73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	cell : ByteBufferedCell to cell : ByteBufferCell in class org.apache.hadoop.hbase.filter.KeyOnlyFilter.KeyOnlyByteBufferCell</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-c76b678591ea144ab11565cc44d5bee2L236">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-c76b678591ea144ab11565cc44d5bee2R236">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -813,6 +799,20 @@
                                 <td><i>Change Attribute Type	data : byte[] to data : ByteBuffer in class org.apache.hadoop.hbase.regionserver.Chunk</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-8c41ff1f443c1c8168a65c6e0a9ad13cL33">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-8c41ff1f443c1c8168a65c6e0a9ad13cR33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	pooledChunkQueue : BlockingQueue&lt;PooledChunk&gt; to pooledChunkQueue : BlockingQueue&lt;Chunk&gt; in class org.apache.hadoop.hbase.regionserver.MemStoreLABImpl</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-f63ab416231ed641aba5f88045d039b1L75">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-30d1c56ed22a07e2b2e58d16d9a3bd71R73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	cell : ByteBufferedCell to cell : ByteBufferCell in class org.apache.hadoop.hbase.filter.KeyOnlyFilter.KeyOnlyByteBufferCell</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-c76b678591ea144ab11565cc44d5bee2L236">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/86e17858f73e742970e59936d34bfdb31fa286e1?diff=split#diff-c76b678591ea144ab11565cc44d5bee2R236">To</a></td>
                             </tr>
                             
                             </tbody>

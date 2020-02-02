@@ -218,15 +218,15 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Parameterize Variable	maxIdleSecs : int to maxIdleTimeUnit : TimeUnit in method public putAll(map Map&lt;? extends K,? extends V&gt;, lifespan long, lifespanUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) : void in class org.infinispan.client.hotrod.impl.RemoteCacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-217698176336d8afd902b81580749bc5L172">From</a></td>
+                                <td><i>Parameterize Variable	lifespanSecs : int to lifespanUnit : TimeUnit in method public putAll(map Map&lt;? extends K,? extends V&gt;, lifespan long, lifespanUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) : void in class org.infinispan.client.hotrod.impl.RemoteCacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-217698176336d8afd902b81580749bc5L171">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-217698176336d8afd902b81580749bc5R171">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Parameterize Variable	lifespanSecs : int to lifespanUnit : TimeUnit in method public putAll(map Map&lt;? extends K,? extends V&gt;, lifespan long, lifespanUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) : void in class org.infinispan.client.hotrod.impl.RemoteCacheImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-217698176336d8afd902b81580749bc5L171">From</a></td>
+                                <td><i>Parameterize Variable	maxIdleSecs : int to maxIdleTimeUnit : TimeUnit in method public putAll(map Map&lt;? extends K,? extends V&gt;, lifespan long, lifespanUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) : void in class org.infinispan.client.hotrod.impl.RemoteCacheImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-217698176336d8afd902b81580749bc5L172">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-217698176336d8afd902b81580749bc5R171">To</a></td>
                             </tr>
                             
@@ -286,16 +286,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	lifespan : int to lifespan : long in class org.infinispan.client.hotrod.impl.operations.PutAllOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207L37">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207R40">To</a></td>
+                                <td><i>Change Attribute Type	maxIdle : int to maxIdle : long in class org.infinispan.client.hotrod.impl.operations.PutAllOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207L38">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207R42">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	maxIdle : int to maxIdle : long in class org.infinispan.client.hotrod.impl.operations.PutAllOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207L38">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207R42">To</a></td>
+                                <td><i>Change Attribute Type	lifespan : int to lifespan : long in class org.infinispan.client.hotrod.impl.operations.PutAllOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207L37">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-331c36cfd07c51cef351339ecbb91207R40">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -311,6 +311,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	maxIdle : long to lifespanTimeUnit : TimeUnit in method public PutIfAbsentOperation(codec Codec, transportFactory TransportFactory, key byte[], cacheName byte[], topologyId AtomicInteger, flags Flag[], value byte[], lifespan long, lifespanTimeUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) in class org.infinispan.client.hotrod.impl.operations.PutIfAbsentOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-77ae53aaf7d034852257b69f5cc60184L30">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-77ae53aaf7d034852257b69f5cc60184R30">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	maxIdle : long to maxIdleTime : long in method public newPutIfAbsentOperation(key byte[], value byte[], lifespan long, lifespanUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) : PutIfAbsentOperation in class org.infinispan.client.hotrod.impl.operations.OperationsFactory</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-5bd2eab4a7bf061c9727c8811416342cL126">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-5bd2eab4a7bf061c9727c8811416342cR127">To</a></td>
@@ -319,13 +326,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Parameter	maxIdle : long to maxIdleTime : long in method public PutIfAbsentOperation(codec Codec, transportFactory TransportFactory, key byte[], cacheName byte[], topologyId AtomicInteger, flags Flag[], value byte[], lifespan long, lifespanTimeUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) in class org.infinispan.client.hotrod.impl.operations.PutIfAbsentOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-77ae53aaf7d034852257b69f5cc60184L30">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-77ae53aaf7d034852257b69f5cc60184R30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	maxIdle : long to lifespanTimeUnit : TimeUnit in method public PutIfAbsentOperation(codec Codec, transportFactory TransportFactory, key byte[], cacheName byte[], topologyId AtomicInteger, flags Flag[], value byte[], lifespan long, lifespanTimeUnit TimeUnit, maxIdleTime long, maxIdleTimeUnit TimeUnit) in class org.infinispan.client.hotrod.impl.operations.PutIfAbsentOperation</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-77ae53aaf7d034852257b69f5cc60184L30">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/c2d8c09b23e45b4108ed0650d076e5e42cd8962e?diff=split#diff-77ae53aaf7d034852257b69f5cc60184R30">To</a></td>
                             </tr>

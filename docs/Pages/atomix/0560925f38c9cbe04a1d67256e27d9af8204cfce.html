@@ -304,6 +304,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private execute(request AppendRequest) : CompletableFuture&lt;AppendResponse&gt; renamed to private reset(request ResetRequest) : void in class io.atomix.protocols.log.impl.DistributedLogServerContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5L324">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5R348">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private sendAndReceive(subject String, request T, memberId MemberId) : CompletableFuture&lt;U&gt; renamed to private send(subject String, request T, memberId MemberId) : CompletableFuture&lt;U&gt; in class io.atomix.protocols.log.partition.impl.LogServerCommunicator</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-f4df0bd29f9d5d2a3289993dca1e54a8L49">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-f4df0bd29f9d5d2a3289993dca1e54a8R55">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public read(request ReadRequest) : CompletableFuture&lt;ReadResponse&gt; renamed to public consume(request ConsumeRequest) : CompletableFuture&lt;ConsumeResponse&gt; in class io.atomix.protocols.log.roles.LogServerRole</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-b6acf47a2e3fc05f8311f490bd5a6454L89">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-b6acf47a2e3fc05f8311f490bd5a6454R90">To</a></td>
@@ -363,20 +377,6 @@
                                 <td><i>Rename Method	public offset() : long renamed to public index() : long in class io.atomix.primitive.log.Record</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-209672fd837f1e80fc259ce46ab688ecL36">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-209672fd837f1e80fc259ce46ab688ecR36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private execute(request AppendRequest) : CompletableFuture&lt;AppendResponse&gt; renamed to private reset(request ResetRequest) : void in class io.atomix.protocols.log.impl.DistributedLogServerContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5L324">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5R348">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private sendAndReceive(subject String, request T, memberId MemberId) : CompletableFuture&lt;U&gt; renamed to private send(subject String, request T, memberId MemberId) : CompletableFuture&lt;U&gt; in class io.atomix.protocols.log.partition.impl.LogServerCommunicator</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-f4df0bd29f9d5d2a3289993dca1e54a8L49">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-f4df0bd29f9d5d2a3289993dca1e54a8R55">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -445,6 +445,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;AppendResponse&gt; to void in method private reset(request ResetRequest) : void in class io.atomix.protocols.log.impl.DistributedLogServerContext</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5L324">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5R348">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	CompletableFuture&lt;ReadResponse&gt; to CompletableFuture&lt;ConsumeResponse&gt; in method public consume(request ConsumeRequest) : CompletableFuture&lt;ConsumeResponse&gt; in class io.atomix.protocols.log.roles.LogServerRole</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-b6acf47a2e3fc05f8311f490bd5a6454L89">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-b6acf47a2e3fc05f8311f490bd5a6454R90">To</a></td>
@@ -462,13 +469,6 @@
                                 <td><i>Change Return Type	CompletableFuture&lt;List&lt;Record&gt;&gt; to CompletableFuture&lt;Void&gt; in method public consume(index long, consumer Consumer&lt;Record&gt;) : CompletableFuture&lt;Void&gt; in class io.atomix.protocols.log.impl.DistributedLogSession.DistributedLogConsumer</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbL193">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbR243">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;AppendResponse&gt; to void in method private reset(request ResetRequest) : void in class io.atomix.protocols.log.impl.DistributedLogServerContext</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5L324">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-2938a52a4a5a9cb1284687241f6f57d5R348">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -520,16 +520,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	future : CompletableFuture&lt;List&lt;Record&gt;&gt; to future : CompletableFuture&lt;Void&gt; in method private register(leader MemberId) : CompletableFuture&lt;Void&gt; in class io.atomix.protocols.log.impl.DistributedLogSession.DistributedLogConsumer</i></td>
+                                <td><i>Change Variable Type	future : CompletableFuture&lt;List&lt;Record&gt;&gt; to future : CompletableFuture&lt;Void&gt; in method public consume(index long, consumer Consumer&lt;Record&gt;) : CompletableFuture&lt;Void&gt; in class io.atomix.protocols.log.impl.DistributedLogSession.DistributedLogConsumer</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbL193">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbR210">To</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbR245">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	future : CompletableFuture&lt;List&lt;Record&gt;&gt; to future : CompletableFuture&lt;Void&gt; in method public consume(index long, consumer Consumer&lt;Record&gt;) : CompletableFuture&lt;Void&gt; in class io.atomix.protocols.log.impl.DistributedLogSession.DistributedLogConsumer</i></td>
+                                <td><i>Change Variable Type	future : CompletableFuture&lt;List&lt;Record&gt;&gt; to future : CompletableFuture&lt;Void&gt; in method private register(leader MemberId) : CompletableFuture&lt;Void&gt; in class io.atomix.protocols.log.impl.DistributedLogSession.DistributedLogConsumer</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbL193">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbR245">To</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/0560925f38c9cbe04a1d67256e27d9af8204cfce?diff=split#diff-be0619a16e39f2bfa47cf481820970fbR210">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getResults() : ResultsPage renamed to public collectResults() : List&lt;FilterResult&lt;Id&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateIdFilter.EntityCollector</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-91d0cffb2674f177d116f8f02a7f0b0eL146">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public setCandidateResultsEntityResultsCollector() : void renamed to public setCandidateEntityFilter() : void in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL256">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR270">To</a></td>
@@ -164,13 +171,6 @@
                                 <td><i>Rename Method	public setEntityLoaderCollector() : void renamed to public setIdEntityLoaderFilter() : void in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL246">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR257">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getResults() : ResultsPage renamed to public collectResults() : List&lt;FilterResult&lt;Id&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateIdFilter.EntityCollector</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-91d0cffb2674f177d116f8f02a7f0b0eL146">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R151">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -278,6 +278,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	Observable&lt;PipelineResult&lt;R&gt;&gt; to Observable&lt;R&gt; in method public execute() : Observable&lt;R&gt; in class org.apache.usergrid.corepersistence.pipeline.Pipeline</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-c6d880e9bc861f43dabbd3f1e95be53aL76">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-c6d880e9bc861f43dabbd3f1e95be53aR73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Observable&lt;PipelineResult&lt;ResultsPage&gt;&gt; to Observable&lt;ResultsPage&gt; in method public execute() : Observable&lt;ResultsPage&gt; in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilder</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-96b7287f64d232b907e50780a6c1a977L102">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-96b7287f64d232b907e50780a6c1a977R99">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Observable&lt;CandidateResults&gt; to Observable&lt;FilterResult&lt;Candidate&gt;&gt; in method public call(observable Observable&lt;FilterResult&lt;Id&gt;&gt;) : Observable&lt;FilterResult&lt;Candidate&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.AbstractElasticSearchFilter</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-f81cf36d23bfb13003766785203b59edL68">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-f81cf36d23bfb13003766785203b59edR70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	Observable&lt;Id&gt; to Observable&lt;FilterResult&lt;Id&gt;&gt; in method public call(filterResultObservable Observable&lt;FilterResult&lt;Id&gt;&gt;) : Observable&lt;FilterResult&lt;Id&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.graph.ReadGraphConnectionByTypeFilter</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-eb619101f5c8b85979354135208d90cfL64">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-eb619101f5c8b85979354135208d90cfR66">To</a></td>
@@ -323,27 +344,6 @@
                                 <td><i>Change Return Type	CandidateResultsIdVerifyFilter to CandidateIdFilter in method public candidateResultsIdVerifyFilter() : CandidateIdFilter in class org.apache.usergrid.corepersistence.pipeline.read.FilterFactory</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-3224ad22ea72304c88568e0a8b094229L104">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-3224ad22ea72304c88568e0a8b094229R122">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Observable&lt;PipelineResult&lt;R&gt;&gt; to Observable&lt;R&gt; in method public execute() : Observable&lt;R&gt; in class org.apache.usergrid.corepersistence.pipeline.Pipeline</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-c6d880e9bc861f43dabbd3f1e95be53aL76">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-c6d880e9bc861f43dabbd3f1e95be53aR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Observable&lt;PipelineResult&lt;ResultsPage&gt;&gt; to Observable&lt;ResultsPage&gt; in method public execute() : Observable&lt;ResultsPage&gt; in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilder</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-96b7287f64d232b907e50780a6c1a977L102">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-96b7287f64d232b907e50780a6c1a977R99">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Observable&lt;CandidateResults&gt; to Observable&lt;FilterResult&lt;Candidate&gt;&gt; in method public call(observable Observable&lt;FilterResult&lt;Id&gt;&gt;) : Observable&lt;FilterResult&lt;Candidate&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.AbstractElasticSearchFilter</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-f81cf36d23bfb13003766785203b59edL68">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-f81cf36d23bfb13003766785203b59edR70">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -405,6 +405,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	org.apache.usergrid.corepersistence.pipeline.read.AbstractPipelineOperation renamed to org.apache.usergrid.corepersistence.pipeline.read.AbstractFilter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	org.apache.usergrid.corepersistence.pipeline.read.AbstractSeekingFilter renamed to org.apache.usergrid.corepersistence.pipeline.read.AbstractPathFilter</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -413,13 +420,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateResultsEntityResultsCollector renamed to org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateEntityFilter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.usergrid.corepersistence.pipeline.read.AbstractPipelineOperation renamed to org.apache.usergrid.corepersistence.pipeline.read.AbstractFilter</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -469,13 +469,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	candidateResultsEntityResultsCollector : CandidateResultsEntityResultsCollector to candidateEntityFilter : CandidateEntityFilter in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL237">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR248">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	collector : Collector&lt;?,ResultsPage&gt; to entityLoadFilter : Filter in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL240">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR250">To</a></td>
@@ -486,6 +479,13 @@
                                 <td><i>Rename Attribute	entitySet : EntitySet to versionSet : VersionSet in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateIdFilter.EntityCollector</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-91d0cffb2674f177d116f8f02a7f0b0eL121">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	candidateResultsEntityResultsCollector : CandidateResultsEntityResultsCollector to candidateEntityFilter : CandidateEntityFilter in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL237">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR248">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -501,13 +501,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	resultsObservable : Observable&lt;PipelineResult&lt;ResultsPage&gt;&gt; to resultsObservable : Observable&lt;ResultsPage&gt; in method public searchConnectedEntities(query Query) : Results in class org.apache.usergrid.corepersistence.CpRelationManager</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-1d59219bf20dd71c13797e97df5f849eL884">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-1d59219bf20dd71c13797e97df5f849eR919">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	resultsObservable : Observable&lt;PipelineResult&lt;ResultsPage&gt;&gt; to resultsObservable : Observable&lt;ResultsPage&gt; in method public searchCollection(collName String, query Query) : Results in class org.apache.usergrid.corepersistence.CpRelationManager</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-1d59219bf20dd71c13797e97df5f849eL607">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-1d59219bf20dd71c13797e97df5f849eR650">To</a></td>
@@ -520,6 +513,13 @@
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R143">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	resultsObservable : Observable&lt;PipelineResult&lt;ResultsPage&gt;&gt; to resultsObservable : Observable&lt;ResultsPage&gt; in method public searchConnectedEntities(query Query) : Results in class org.apache.usergrid.corepersistence.CpRelationManager</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-1d59219bf20dd71c13797e97df5f849eL884">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-1d59219bf20dd71c13797e97df5f849eR919">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -530,20 +530,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	entityLoadCollector : EntityLoadCollector to entityLoadCollector : EntityLoadFilter in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL235">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR246">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	results : List&lt;Entity&gt; to results : List&lt;FilterResult&lt;Id&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateIdFilter.EntityCollector</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-91d0cffb2674f177d116f8f02a7f0b0eL117">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R122">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -571,6 +557,20 @@
                                 <td><i>Change Attribute Type	entitySet : EntitySet to versionSet : VersionSet in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateIdFilter.EntityCollector</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-91d0cffb2674f177d116f8f02a7f0b0eL121">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	entityLoadCollector : EntityLoadCollector to entityLoadCollector : EntityLoadFilter in class org.apache.usergrid.corepersistence.pipeline.read.ReadPipelineBuilderImpl.CollectorState</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fL235">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-426f594866a539dafcbe4ccfe58df85fR246">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	results : List&lt;Entity&gt; to results : List&lt;FilterResult&lt;Id&gt;&gt; in class org.apache.usergrid.corepersistence.pipeline.read.elasticsearch.CandidateIdFilter.EntityCollector</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-91d0cffb2674f177d116f8f02a7f0b0eL117">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/cd983d66260222985431a775454183c2ed2305ea?diff=split#diff-7679012a31254dea3ca6715ca80af762R122">To</a></td>
                             </tr>
                             
                             </tbody>

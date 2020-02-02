@@ -319,13 +319,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryClientHeartbeatMessage renamed to org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryClientMetricsUpdateMessage</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.ignite.spi.discovery.tcp.ClientImpl.HeartbeatSender renamed to org.apache.ignite.spi.discovery.tcp.ClientImpl.MetricsSender</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -334,6 +327,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryHeartbeatMessage renamed to org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryMetricsUpdateMessage</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryClientHeartbeatMessage renamed to org.apache.ignite.spi.discovery.tcp.messages.TcpDiscoveryClientMetricsUpdateMessage</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -436,6 +436,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	e : Map.Entry&lt;UUID,TcpDiscoveryHeartbeatMessage.MetricsSet&gt; to e : Map.Entry&lt;UUID,TcpDiscoveryMetricsUpdateMessage.MetricsSet&gt; in method private processMetricsUpdateMessage(msg TcpDiscoveryMetricsUpdateMessage) : void in class org.apache.ignite.spi.discovery.tcp.ServerImpl.RingMessageWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-8858753cc4f46ef3438144aa190a192dL4875">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-8858753cc4f46ef3438144aa190a192dR4926">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	e : Map.Entry&lt;UUID,TcpDiscoveryHeartbeatMessage.MetricsSet&gt; to e : Map.Entry&lt;UUID,TcpDiscoveryMetricsUpdateMessage.MetricsSet&gt; in method private processMetricsUpdateMessage(msg TcpDiscoveryMetricsUpdateMessage) : void in class org.apache.ignite.spi.discovery.tcp.ClientImpl.MessageWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-a29f08bfbd24c708b18e7be99a1098a6L2152">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-a29f08bfbd24c708b18e7be99a1098a6R2170">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	msg : TcpDiscoveryHeartbeatMessage to msg : TcpDiscoveryMetricsUpdateMessage in method private sendMetricsUpdateMessage() : void in class org.apache.ignite.spi.discovery.tcp.ServerImpl.RingMessageWorker</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-8858753cc4f46ef3438144aa190a192dL5340">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-8858753cc4f46ef3438144aa190a192dR5360">To</a></td>
@@ -474,20 +488,6 @@
                                 <td><i>Change Variable Type	metricsSet : TcpDiscoveryHeartbeatMessage.MetricsSet to metricsSet : TcpDiscoveryMetricsUpdateMessage.MetricsSet in method private processMetricsUpdateMessage(msg TcpDiscoveryMetricsUpdateMessage) : void in class org.apache.ignite.spi.discovery.tcp.ClientImpl.MessageWorker</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-a29f08bfbd24c708b18e7be99a1098a6L2152">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-a29f08bfbd24c708b18e7be99a1098a6R2173">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	e : Map.Entry&lt;UUID,TcpDiscoveryHeartbeatMessage.MetricsSet&gt; to e : Map.Entry&lt;UUID,TcpDiscoveryMetricsUpdateMessage.MetricsSet&gt; in method private processMetricsUpdateMessage(msg TcpDiscoveryMetricsUpdateMessage) : void in class org.apache.ignite.spi.discovery.tcp.ServerImpl.RingMessageWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-8858753cc4f46ef3438144aa190a192dL4875">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-8858753cc4f46ef3438144aa190a192dR4926">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	e : Map.Entry&lt;UUID,TcpDiscoveryHeartbeatMessage.MetricsSet&gt; to e : Map.Entry&lt;UUID,TcpDiscoveryMetricsUpdateMessage.MetricsSet&gt; in method private processMetricsUpdateMessage(msg TcpDiscoveryMetricsUpdateMessage) : void in class org.apache.ignite.spi.discovery.tcp.ClientImpl.MessageWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-a29f08bfbd24c708b18e7be99a1098a6L2152">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6998785a8861387b7ad83527a381dc5b772cf76f?diff=split#diff-a29f08bfbd24c708b18e7be99a1098a6R2170">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -154,6 +154,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	protected doAddRegistration(address String, registration HandlerRegistration&lt;T&gt;, replyHandler boolean, localOnly boolean) : boolean renamed to protected addLocalRegistration(address String, registration HandlerRegistration&lt;T&gt;, replyHandler boolean, localOnly boolean) : boolean in class io.vertx.core.eventbus.impl.EventBusImpl</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-5d9e665d9787d031b86b5dbee3b4d783L227">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-da947b6614461234ca5cc3148b7e7ba7R232">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private doServe(msg LocalMessage, holder HandlerHolder&lt;T&gt;) : void renamed to private deliverToHandler(msg MessageImpl, holder HandlerHolder&lt;T&gt;) : void in class io.vertx.core.eventbus.impl.EventBusImpl</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-5d9e665d9787d031b86b5dbee3b4d783L383">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-da947b6614461234ca5cc3148b7e7ba7R487">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	protected serveMessage(msg LocalMessage, handlerRegistration HandlerRegistration&lt;T&gt;, local boolean) : void renamed to protected deliverMessageLocally(msg MessageImpl) : boolean in class io.vertx.core.eventbus.impl.EventBusImpl</i></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-5d9e665d9787d031b86b5dbee3b4d783L330">From</a></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-da947b6614461234ca5cc3148b7e7ba7R357">To</a></td>
@@ -173,20 +187,6 @@
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-ec67cb0ed80ac30fcaac579de787c9a4R305">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	protected doAddRegistration(address String, registration HandlerRegistration&lt;T&gt;, replyHandler boolean, localOnly boolean) : boolean renamed to protected addLocalRegistration(address String, registration HandlerRegistration&lt;T&gt;, replyHandler boolean, localOnly boolean) : boolean in class io.vertx.core.eventbus.impl.EventBusImpl</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-5d9e665d9787d031b86b5dbee3b4d783L227">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-da947b6614461234ca5cc3148b7e7ba7R232">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private doServe(msg LocalMessage, holder HandlerHolder&lt;T&gt;) : void renamed to private deliverToHandler(msg MessageImpl, holder HandlerHolder&lt;T&gt;) : void in class io.vertx.core.eventbus.impl.EventBusImpl</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-5d9e665d9787d031b86b5dbee3b4d783L383">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-da947b6614461234ca5cc3148b7e7ba7R487">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -197,20 +197,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	msg : LocalMessage to msg : MessageImpl in method protected sendReply(msg MessageImpl, options DeliveryOptions, replyHandler Handler&lt;AsyncResult&lt;Message&lt;R&gt;&gt;&gt;) : void in class io.vertx.core.eventbus.impl.MessageImpl</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-4e7b56d5f85b055b3c65eb0c18294a82L153">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-ce70953985cd15c7865eb7dbbf4dcb7aR156">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	bus : EventBus to vertx : Vertx in method public MessageProducerImpl(vertx Vertx, address String, send boolean, options DeliveryOptions) in class io.vertx.core.eventbus.impl.MessageProducerImpl</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-c2cfc4664b095aed816bfca7231a9608L35">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-c2cfc4664b095aed816bfca7231a9608R47">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -266,6 +252,20 @@
                                 <td><i>Change Parameter Type	bus : LocalEventBus to bus : EventBusImpl in method public setBus(bus EventBusImpl) : void in class io.vertx.core.eventbus.impl.MessageImpl</i></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-4e7b56d5f85b055b3c65eb0c18294a82L149">From</a></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-ce70953985cd15c7865eb7dbbf4dcb7aR152">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	msg : LocalMessage to msg : MessageImpl in method protected sendReply(msg MessageImpl, options DeliveryOptions, replyHandler Handler&lt;AsyncResult&lt;Message&lt;R&gt;&gt;&gt;) : void in class io.vertx.core.eventbus.impl.MessageImpl</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-4e7b56d5f85b055b3c65eb0c18294a82L153">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-ce70953985cd15c7865eb7dbbf4dcb7aR156">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	bus : EventBus to vertx : Vertx in method public MessageProducerImpl(vertx Vertx, address String, send boolean, options DeliveryOptions) in class io.vertx.core.eventbus.impl.MessageProducerImpl</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-c2cfc4664b095aed816bfca7231a9608L35">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/c68ab7ccca9b9da6a2356214685f6753df5bcd4e?diff=split#diff-c2cfc4664b095aed816bfca7231a9608R47">To</a></td>
                             </tr>
                             
                             </tbody>

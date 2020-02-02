@@ -154,13 +154,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	dn : DatanodeDetails to replica : ContainerReplica in method public removeContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.states.ContainerStateMap</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bL248">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bR248">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	dn : DatanodeDetails to replica : ContainerReplica in method package updateContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL496">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR469">To</a></td>
@@ -234,6 +227,13 @@
                                 <td><i>Change Parameter Type	containerID : long to containerID : ContainerID in method public getContainerWithPipeline(containerID ContainerID) : ContainerWithPipeline in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0L209">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0R216">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	dn : DatanodeDetails to replica : ContainerReplica in method public removeContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.states.ContainerStateMap</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bL248">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bR248">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -384,13 +384,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public getContainerReplicas(containerID ContainerID) : Set&lt;ContainerReplica&gt; extracted from public getContainerWithPipeline(containerID long) : ContainerWithPipeline in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public getContainer(containerID ContainerID) : ContainerInfo extracted from public getContainerWithPipeline(containerID long) : ContainerWithPipeline in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -399,6 +392,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	public updateContainerState(containerID ContainerID, event HddsProtos.LifeCycleEvent) : HddsProtos.LifeCycleState extracted from public updateContainerState(containerID long, event HddsProtos.LifeCycleEvent) : HddsProtos.LifeCycleState in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public getContainerReplicas(containerID ContainerID) : Set&lt;ContainerReplica&gt; extracted from public getContainerWithPipeline(containerID long) : ContainerWithPipeline in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -413,6 +413,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getStateManager() : ContainerStateManager renamed to public getContainerStateManager() : ContainerStateManager in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0L469">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0R155">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -440,13 +447,6 @@
                                 <td><i>Rename Method	public removeContainerReplica(containerID ContainerID, dn DatanodeDetails) : boolean renamed to package updateContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL496">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR462">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getStateManager() : ContainerStateManager renamed to public getContainerStateManager() : ContainerStateManager in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0L469">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0R155">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -540,6 +540,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	boolean to void in method package updateContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL496">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR462">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	ContainerWithPipeline to ContainerInfo in method package allocateContainer(selector PipelineSelector, type HddsProtos.ReplicationType, replicationFactor HddsProtos.ReplicationFactor, owner String) : ContainerInfo in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL256">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR232">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Set&lt;DatanodeDetails&gt; to Set&lt;ContainerReplica&gt; in method package getContainerReplicas(containerID ContainerID) : Set&lt;ContainerReplica&gt; in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL474">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR450">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	Set&lt;DatanodeDetails&gt; to Set&lt;ContainerReplica&gt; in method public getContainerReplicas(containerID ContainerID) : Set&lt;ContainerReplica&gt; in class org.apache.hadoop.hdds.scm.container.states.ContainerStateMap</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bL193">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bR198">To</a></td>
@@ -571,27 +592,6 @@
                                 <td><i>Change Return Type	HddsProtos.LifeCycleState to ContainerInfo in method private updateContainerStateInternal(containerID ContainerID, event HddsProtos.LifeCycleEvent) : ContainerInfo in class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0L352">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-093b0441d74550179bb6356ce159a9b0R380">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	boolean to void in method package updateContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL496">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR462">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	ContainerWithPipeline to ContainerInfo in method package allocateContainer(selector PipelineSelector, type HddsProtos.ReplicationType, replicationFactor HddsProtos.ReplicationFactor, owner String) : ContainerInfo in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL256">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR232">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Set&lt;DatanodeDetails&gt; to Set&lt;ContainerReplica&gt; in method package getContainerReplicas(containerID ContainerID) : Set&lt;ContainerReplica&gt; in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL474">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR450">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -678,20 +678,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	containerStateManager : ContainerStateManager to containerManager : ContainerManager in class org.apache.hadoop.hdds.scm.node.TestDeadNodeHandler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-88e4c12844aba11fb8554f506eee3bb9L62">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-88e4c12844aba11fb8554f506eee3bb9R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	containerStateManager : ContainerStateManager to containerManager : ContainerManager in class org.apache.hadoop.hdds.scm.container.replication.TestReplicationManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-0a1944377acc08f11dbbf9f46c172f99L65">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-0a1944377acc08f11dbbf9f46c172f99R67">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	containerStateManager : ContainerStateManager to containerManager : ContainerManager in class org.apache.hadoop.hdds.scm.node.DeadNodeHandler</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-2632bd66d78cdd36ef915f6c8e60bbeaL40">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-2632bd66d78cdd36ef915f6c8e60bbeaR43">To</a></td>
@@ -711,6 +697,20 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bR95">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	containerStateManager : ContainerStateManager to containerManager : ContainerManager in class org.apache.hadoop.hdds.scm.node.TestDeadNodeHandler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-88e4c12844aba11fb8554f506eee3bb9L62">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-88e4c12844aba11fb8554f506eee3bb9R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	containerStateManager : ContainerStateManager to containerManager : ContainerManager in class org.apache.hadoop.hdds.scm.container.replication.TestReplicationManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-0a1944377acc08f11dbbf9f46c172f99L65">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-0a1944377acc08f11dbbf9f46c172f99R67">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -721,13 +721,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public removeContainerReplica(containerID ContainerID, replica ContainerReplica) : void extracted from public onMessage(containerReportFromDatanode ContainerReportFromDatanode, publisher EventPublisher) : void in class org.apache.hadoop.hdds.scm.container.ContainerReportHandler &amp; moved to class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -771,6 +764,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public removeContainerReplica(containerID ContainerID, replica ContainerReplica) : void extracted from public onMessage(containerReportFromDatanode ContainerReportFromDatanode, publisher EventPublisher) : void in class org.apache.hadoop.hdds.scm.container.ContainerReportHandler &amp; moved to class org.apache.hadoop.hdds.scm.container.SCMContainerManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -781,20 +781,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	dn : DatanodeDetails to replica : ContainerReplica in method public removeContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.states.ContainerStateMap</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bL256">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bR248">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	dn : DatanodeDetails to replica : ContainerReplica in method package updateContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL504">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR469">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -843,6 +829,20 @@
                                 <td><i>Rename Parameter	containerStateManager : ContainerStateManager to containerManager : ContainerManager in method public DeadNodeHandler(nodeManager NodeManager, containerManager ContainerManager) in class org.apache.hadoop.hdds.scm.node.DeadNodeHandler</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-2632bd66d78cdd36ef915f6c8e60bbeaL48">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-2632bd66d78cdd36ef915f6c8e60bbeaR51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	dn : DatanodeDetails to replica : ContainerReplica in method public removeContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.states.ContainerStateMap</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bL256">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-921eb856d19e9fb80de36ef5677ecb3bR248">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	dn : DatanodeDetails to replica : ContainerReplica in method package updateContainerReplica(containerID ContainerID, replica ContainerReplica) : void in class org.apache.hadoop.hdds.scm.container.ContainerStateManager</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddL504">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/50715c0699b2603622223c40ef0729c83ac26cf0?diff=split#diff-3ad9ff9355582b5d706c4acce685a2ddR469">To</a></td>
                             </tr>
                             
                             </tbody>

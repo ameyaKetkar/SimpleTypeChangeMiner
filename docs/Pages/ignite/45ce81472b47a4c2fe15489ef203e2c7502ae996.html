@@ -174,6 +174,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	drPutVal : GridCacheDrInfo&lt;V&gt; to conflictPutVal : GridCacheDrInfo&lt;V&gt; in method private map0(topSnapshot GridDiscoveryTopologySnapshot, keys Collection&lt;? extends K&gt;, remap boolean, oldNodeId UUID) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicUpdateFuture</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6L534">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6R536">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	drExpireTime : long to conflictExpireTime : long in method private map0(topSnapshot GridDiscoveryTopologySnapshot, keys Collection&lt;? extends K&gt;, remap boolean, oldNodeId UUID) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicUpdateFuture</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6L524">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6R525">To</a></td>
@@ -263,13 +270,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6R523">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	drPutVal : GridCacheDrInfo&lt;V&gt; to conflictPutVal : GridCacheDrInfo&lt;V&gt; in method private map0(topSnapshot GridDiscoveryTopologySnapshot, keys Collection&lt;? extends K&gt;, remap boolean, oldNodeId UUID) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.atomic.GridNearAtomicUpdateFuture</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6L534">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/45ce81472b47a4c2fe15489ef203e2c7502ae996?diff=split#diff-90f6b710a75ed83951c554fee81696b6R536">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -354,13 +354,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private initialTtlAndExpireTime(expiry IgniteCacheExpiryPolicy) : IgniteBiTuple&lt;Long,Long&gt; extracted from public innerUpdate(newVer GridCacheVersion, evtNodeId UUID, affNodeId UUID, op GridCacheOperation, writeObj Object, valBytes byte[], invokeArgs Object[], writeThrough boolean, retval boolean, expiryPlc IgniteCacheExpiryPolicy, evt boolean, metrics boolean, primary boolean, verCheck boolean, filter IgnitePredicate&lt;Cache.Entry&lt;K,V&gt;&gt;[], drType GridDrType, conflictTtl long, conflictExpireTime long, conflictVer GridCacheVersion, conflictResolve boolean, intercept boolean, subjId UUID, taskName String) : GridCacheUpdateAtomicResult&lt;K,V&gt; in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private updateTtl(expiryPlc ExpiryPolicy) : void extracted from private innerGet0(tx IgniteInternalTx&lt;K,V&gt;, readSwap boolean, readThrough boolean, evt boolean, unmarshal boolean, updateMetrics boolean, tmp boolean, subjId UUID, transformClo Object, taskName String, expiryPlc IgniteCacheExpiryPolicy) : V in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -432,6 +425,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private updateTtl(expiryPlc IgniteCacheExpiryPolicy) : void extracted from public innerUpdateLocal(ver GridCacheVersion, op GridCacheOperation, writeObj Object, invokeArgs Object[], writeThrough boolean, retval boolean, expiryPlc ExpiryPolicy, evt boolean, metrics boolean, filter IgnitePredicate&lt;Cache.Entry&lt;K,V&gt;&gt;[], intercept boolean, subjId UUID, taskName String) : GridTuple3&lt;Boolean,V,EntryProcessorResult&lt;Object&gt;&gt; in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private initialTtlAndExpireTime(expiry IgniteCacheExpiryPolicy) : IgniteBiTuple&lt;Long,Long&gt; extracted from public innerUpdate(newVer GridCacheVersion, evtNodeId UUID, affNodeId UUID, op GridCacheOperation, writeObj Object, valBytes byte[], invokeArgs Object[], writeThrough boolean, retval boolean, expiryPlc IgniteCacheExpiryPolicy, evt boolean, metrics boolean, primary boolean, verCheck boolean, filter IgnitePredicate&lt;Cache.Entry&lt;K,V&gt;&gt;[], drType GridDrType, conflictTtl long, conflictExpireTime long, conflictVer GridCacheVersion, conflictResolve boolean, intercept boolean, subjId UUID, taskName String) : GridCacheUpdateAtomicResult&lt;K,V&gt; in class org.apache.ignite.internal.processors.cache.GridCacheMapEntry</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

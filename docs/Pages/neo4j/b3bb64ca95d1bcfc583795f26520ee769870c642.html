@@ -322,13 +322,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	checkPointFlushControl : CheckPointFlushControl to ioLimiter : IOLimiter in method public CheckPointerImpl(transactionIdStore TransactionIdStore, threshold CheckPointThreshold, storageEngine StorageEngine, logPruning LogPruning, appender TransactionAppender, databaseHealth DatabaseHealth, logProvider LogProvider, tracer CheckPointTracer, ioLimiter IOLimiter) in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImpl</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-67637ec3bf49fbf4877a2ed5362bb0a8L53">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-67637ec3bf49fbf4877a2ed5362bb0a8R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	checkPointFlushControl : CheckPointFlushControl to ioLimiter : IOLimiter in method public NeoStoreDataSource(storeDir File, config Config, idGeneratorFactory IdGeneratorFactory, logService LogService, scheduler JobScheduler, tokenNameLookup TokenNameLookup, dependencyResolver DependencyResolver, propertyKeyTokens PropertyKeyTokenHolder, labelTokens LabelTokenHolder, relationshipTypeTokens RelationshipTypeTokenHolder, lockManager Locks, schemaWriteGuard SchemaWriteGuard, transactionEventHandlers TransactionEventHandlers, indexingServiceMonitor IndexingService.Monitor, fs FileSystemAbstraction, transactionMonitor TransactionMonitor, databaseHealth DatabaseHealth, physicalLogMonitor PhysicalLogFile.Monitor, transactionHeaderInformationFactory TransactionHeaderInformationFactory, startupStatistics StartupStatisticsProvider, guard Guard, commitProcessFactory CommitProcessFactory, autoIndexing AutoIndexing, pageCache PageCache, constraintSemantics ConstraintSemantics, monitors Monitors, tracers Tracers, procedures Procedures, ioLimiter IOLimiter) in class org.neo4j.kernel.NeoStoreDataSource</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-4f50fa7d8a68e5134528a3e52591646aL301">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-4f50fa7d8a68e5134528a3e52591646aR336">To</a></td>
@@ -339,6 +332,13 @@
                                 <td><i>Change Parameter Type	flushControl : CheckPointFlushControl to ioLimiter : IOLimiter in method public CheckPointerImpl(transactionIdStore TransactionIdStore, threshold CheckPointThreshold, storageEngine StorageEngine, logPruning LogPruning, appender TransactionAppender, databaseHealth DatabaseHealth, logProvider LogProvider, tracer CheckPointTracer, ioLimiter IOLimiter, lock Lock) in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImpl</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-67637ec3bf49fbf4877a2ed5362bb0a8L76">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-67637ec3bf49fbf4877a2ed5362bb0a8R86">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	checkPointFlushControl : CheckPointFlushControl to ioLimiter : IOLimiter in method public CheckPointerImpl(transactionIdStore TransactionIdStore, threshold CheckPointThreshold, storageEngine StorageEngine, logPruning LogPruning, appender TransactionAppender, databaseHealth DatabaseHealth, logProvider LogProvider, tracer CheckPointTracer, ioLimiter IOLimiter) in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImpl</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-67637ec3bf49fbf4877a2ed5362bb0a8L53">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-67637ec3bf49fbf4877a2ed5362bb0a8R63">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -354,6 +354,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	rushCounter : AtomicLong to limitDisableCounter : AtomicLong in method private verifyAsyncActionCausesConcurrentFlushingRush(asyncAction ThrowingConsumer&lt;CheckPointerImpl,IOException&gt;) : void in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImplTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aL294">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aR321">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	doneRush : AtomicBoolean to doneDisablingLimits : AtomicBoolean in method public mustFlushAsFastAsPossibleDuringTryCheckPoint() : void in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImplTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aL282">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aR296">To</a></td>
@@ -364,13 +371,6 @@
                                 <td><i>Rename Variable	doneRush : AtomicBoolean to doneDisablingLimits : AtomicBoolean in method public mustFlushAsFastAsPossibleDuringForceCheckPoint() : void in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImplTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aL270">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aR270">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	rushCounter : AtomicLong to limitDisableCounter : AtomicLong in method private verifyAsyncActionCausesConcurrentFlushingRush(asyncAction ThrowingConsumer&lt;CheckPointerImpl,IOException&gt;) : void in class org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImplTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aL294">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b3bb64ca95d1bcfc583795f26520ee769870c642?diff=split#diff-99f285a41ce865c88e8444d56a58f20aR321">To</a></td>
                             </tr>
                             
                             </tbody>

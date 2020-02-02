@@ -195,14 +195,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public oldest(cctx GridCacheContext) : ClusterNode moved from class org.apache.ignite.internal.processors.cache.GridCacheUtils to class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture &amp; inlined to private updatePartitionFullMap(msg GridDhtPartitionsFullMessage) : void</i></td>
+                                <td><i>Move And Inline Method	public oldest(cctx GridCacheContext) : ClusterNode moved from class org.apache.ignite.internal.processors.cache.GridCacheUtils to class org.apache.ignite.internal.processors.cache.GridCachePartitionExchangeManager &amp; inlined to package refreshPartitions() : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public oldest(cctx GridCacheContext) : ClusterNode moved from class org.apache.ignite.internal.processors.cache.GridCacheUtils to class org.apache.ignite.internal.processors.cache.GridCachePartitionExchangeManager &amp; inlined to package refreshPartitions() : void</i></td>
+                                <td><i>Move And Inline Method	public oldest(cctx GridCacheContext) : ClusterNode moved from class org.apache.ignite.internal.processors.cache.GridCacheUtils to class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionsExchangeFuture &amp; inlined to private updatePartitionFullMap(msg GridDhtPartitionsFullMessage) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -217,13 +217,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	assigns : GridDhtPreloaderAssignments&lt;K,V&gt; to assigns : GridDhtPreloaderAssignments in method package addAssignments(assigns GridDhtPreloaderAssignments) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionDemandPool.DemandWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bL425">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bR428">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -258,6 +251,13 @@
                                 <td><i>Change Parameter Type	assignments : GridDhtPreloaderAssignments&lt;K,V&gt; to assignments : GridDhtPreloaderAssignments in method public addAssignments(assignments GridDhtPreloaderAssignments, forcePreload boolean) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPreloader</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-95d4da253a3c7fb9b6e34e41993fdcadL260">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-95d4da253a3c7fb9b6e34e41993fdcadR261">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	assigns : GridDhtPreloaderAssignments&lt;K,V&gt; to assigns : GridDhtPreloaderAssignments in method package addAssignments(assigns GridDhtPreloaderAssignments) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionDemandPool.DemandWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bL425">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bR428">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -415,6 +415,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	cctx : GridCacheContext&lt;K,V&gt; to cctx : GridCacheContext&lt;?,?&gt; in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionSupplyPool</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-1ed7783ca69135ca8992144274f3cbd8L48">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-1ed7783ca69135ca8992144274f3cbd8R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	assignQ : LinkedBlockingDeque&lt;GridDhtPreloaderAssignments&lt;K,V&gt;&gt; to assignQ : LinkedBlockingDeque&lt;GridDhtPreloaderAssignments&gt; in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionDemandPool.DemandWorker</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bL402">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bR402">To</a></td>
@@ -453,13 +460,6 @@
                                 <td><i>Change Attribute Type	cctx : GridCacheContext&lt;K,V&gt; to cctx : GridCacheContext&lt;?,?&gt; in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionDemandPool</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bL61">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-79578505361b2351d2d80ef3bc0e1c0bR61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	cctx : GridCacheContext&lt;K,V&gt; to cctx : GridCacheContext&lt;?,?&gt; in class org.apache.ignite.internal.processors.cache.distributed.dht.preloader.GridDhtPartitionSupplyPool</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-1ed7783ca69135ca8992144274f3cbd8L48">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/72d6ea5d1d772594d9ef4c567b2011024268475b?diff=split#diff-1ed7783ca69135ca8992144274f3cbd8R48">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -210,13 +210,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.flink.runtime.operators.sort.MergeMatchIterator renamed to org.apache.flink.runtime.operators.sort.ReusingMergeMatchIterator</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.flink.runtime.operators.resettable.BlockResettableIterator renamed to org.apache.flink.runtime.operators.resettable.NonReusingBlockResettableIterator</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -236,6 +229,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.flink.runtime.operators.sort.MergeMatchIterator renamed to org.apache.flink.runtime.operators.sort.ReusingMergeMatchIterator</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -249,14 +249,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.flink.runtime.operators.sort.SortMergeMatchIteratorITCase.MatchRemovingMatcher moved to org.apache.flink.runtime.operators.sort.NonReusingSortMergeMatchIteratorITCase.MatchRemovingMatcher</i></td>
+                                <td><i>Move Class	org.apache.flink.runtime.operators.sort.SortMergeMatchIteratorITCase.Match moved to org.apache.flink.runtime.operators.sort.NonReusingSortMergeMatchIteratorITCase.Match</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.flink.runtime.operators.sort.SortMergeMatchIteratorITCase.Match moved to org.apache.flink.runtime.operators.sort.NonReusingSortMergeMatchIteratorITCase.Match</i></td>
+                                <td><i>Move Class	org.apache.flink.runtime.operators.sort.SortMergeMatchIteratorITCase.MatchRemovingMatcher moved to org.apache.flink.runtime.operators.sort.NonReusingSortMergeMatchIteratorITCase.MatchRemovingMatcher</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -271,6 +271,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	generator2 : TestData.Generator to generator2 : Generator in method public testMerge() : void in class org.apache.flink.runtime.operators.sort.ReusingSortMergeMatchIteratorITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-d60504efc7155f47d8c17ebadbcd3941L120">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-1d87c2c07c53e13a859d3334cb6f89a7R123">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	iterator : MergeMatchIterator&lt;Record,Record,Record&gt; to iterator : ReusingMergeMatchIterator&lt;Record,Record,Record&gt; in method public testSortBothMerge() : void in class org.apache.flink.runtime.operators.util.HashVsSortMiniBenchmark</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-645ff9d153c6dfa2bb161843f3dff2faL119">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-645ff9d153c6dfa2bb161843f3dff2faR146">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	iterator : MergeMatchIterator&lt;Record,Record,Record&gt; to iterator : ReusingMergeMatchIterator&lt;Record,Record,Record&gt; in method public testMergeWithHighNumberOfCommonKeys() : void in class org.apache.flink.runtime.operators.sort.ReusingSortMergeMatchIteratorITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-d60504efc7155f47d8c17ebadbcd3941L168">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-1d87c2c07c53e13a859d3334cb6f89a7R231">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -319,27 +340,6 @@
                                 <td><i>Change Variable Type	generator1 : TestData.Generator to generator1 : Generator in method public testMerge() : void in class org.apache.flink.runtime.operators.sort.ReusingSortMergeMatchIteratorITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-d60504efc7155f47d8c17ebadbcd3941L120">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-1d87c2c07c53e13a859d3334cb6f89a7R122">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	generator2 : TestData.Generator to generator2 : Generator in method public testMerge() : void in class org.apache.flink.runtime.operators.sort.ReusingSortMergeMatchIteratorITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-d60504efc7155f47d8c17ebadbcd3941L120">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-1d87c2c07c53e13a859d3334cb6f89a7R123">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	iterator : MergeMatchIterator&lt;Record,Record,Record&gt; to iterator : ReusingMergeMatchIterator&lt;Record,Record,Record&gt; in method public testSortBothMerge() : void in class org.apache.flink.runtime.operators.util.HashVsSortMiniBenchmark</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-645ff9d153c6dfa2bb161843f3dff2faL119">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-645ff9d153c6dfa2bb161843f3dff2faR146">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	iterator : MergeMatchIterator&lt;Record,Record,Record&gt; to iterator : ReusingMergeMatchIterator&lt;Record,Record,Record&gt; in method public testMergeWithHighNumberOfCommonKeys() : void in class org.apache.flink.runtime.operators.sort.ReusingSortMergeMatchIteratorITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-d60504efc7155f47d8c17ebadbcd3941L168">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d529749c8f45af693efffe1f69860dae0bfe70bf?diff=split#diff-1d87c2c07c53e13a859d3334cb6f89a7R231">To</a></td>
                             </tr>
                             
                             </tbody>

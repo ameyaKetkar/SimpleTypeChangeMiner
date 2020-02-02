@@ -156,14 +156,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Subclass	org.apache.ignite.internal.processors.odbc.odbc.OdbcRequest from class org.apache.ignite.internal.processors.odbc.SqlListenerRequest</i></td>
+                                <td><i>Extract Subclass	org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequest from class org.apache.ignite.internal.processors.odbc.SqlListenerRequest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Subclass	org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequest from class org.apache.ignite.internal.processors.odbc.SqlListenerRequest</i></td>
+                                <td><i>Extract Subclass	org.apache.ignite.internal.processors.odbc.odbc.OdbcRequest from class org.apache.ignite.internal.processors.odbc.SqlListenerRequest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -227,16 +227,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public decode(msg byte[]) : SqlListenerRequest from class org.apache.ignite.internal.processors.odbc.SqlListenerAbstractMessageParser to public decode(msg byte[]) : SqlListenerRequest from class org.apache.ignite.internal.processors.odbc.odbc.OdbcMessageParser</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-4bc443f2b911c96386af24f752198b21L61">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-e38b4eb73313957bedebefcf52ee2b84R72">To</a></td>
+                                <td><i>Move Method	public encode(msg SqlListenerResponse) : byte[] from class org.apache.ignite.internal.processors.odbc.SqlListenerAbstractMessageParser to public encode(msg0 SqlListenerResponse) : byte[] from class org.apache.ignite.internal.processors.odbc.odbc.OdbcMessageParser</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-4bc443f2b911c96386af24f752198b21L141">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-e38b4eb73313957bedebefcf52ee2b84R154">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Method	public encode(msg SqlListenerResponse) : byte[] from class org.apache.ignite.internal.processors.odbc.SqlListenerAbstractMessageParser to public encode(msg0 SqlListenerResponse) : byte[] from class org.apache.ignite.internal.processors.odbc.odbc.OdbcMessageParser</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-4bc443f2b911c96386af24f752198b21L141">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-e38b4eb73313957bedebefcf52ee2b84R154">To</a></td>
+                                <td><i>Move Method	public decode(msg byte[]) : SqlListenerRequest from class org.apache.ignite.internal.processors.odbc.SqlListenerAbstractMessageParser to public decode(msg byte[]) : SqlListenerRequest from class org.apache.ignite.internal.processors.odbc.odbc.OdbcMessageParser</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-4bc443f2b911c96386af24f752198b21L61">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-e38b4eb73313957bedebefcf52ee2b84R72">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -415,27 +415,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerQueryFetchResult moved and renamed to org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryFetchResult</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerQueryCloseResult moved and renamed to org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryCloseResult</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerRequestHandlerImpl moved and renamed to org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerColumnMeta moved and renamed to org.apache.ignite.internal.processors.odbc.odbc.OdbcColumnMeta</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -469,6 +448,27 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerQueryFetchResult moved and renamed to org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryFetchResult</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerQueryCloseResult moved and renamed to org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryCloseResult</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.apache.ignite.internal.processors.odbc.SqlListenerRequestHandlerImpl moved and renamed to org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -479,6 +479,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.ignite.internal.processors.odbc.OdbcQueryGetParamsMetaResult moved to org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryGetParamsMetaResult</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.ignite.internal.processors.odbc.OdbcTableMeta moved to org.apache.ignite.internal.processors.odbc.odbc.OdbcTableMeta</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -515,20 +529,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.ignite.internal.processors.odbc.OdbcQueryGetParamsMetaResult moved to org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryGetParamsMetaResult</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.ignite.internal.processors.odbc.OdbcTableMeta moved to org.apache.ignite.internal.processors.odbc.odbc.OdbcTableMeta</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -542,16 +542,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	tuple : IgniteBiTuple&lt;QueryCursor,Iterator&gt; to cur : JdbcQueryCursor in method private fetchQuery(req JdbcQueryFetchRequest) : JdbcResponse in class org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-09eef9983fa0d756edc1f84ab6aa2718L232">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5584b92621e08ef78d8f337ebeef3a3eR239">To</a></td>
+                                <td><i>Change Variable Type	other : SqlListenerColumnMeta to other : OdbcColumnMeta in method public equals(o Object) : boolean in class org.apache.ignite.internal.processors.odbc.odbc.OdbcColumnMeta</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-0231060330f8e04fc16dbe033e2b3bb8L84">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-43962acecea81bb31f32cf324e0c7de7R88">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	other : SqlListenerColumnMeta to other : OdbcColumnMeta in method public equals(o Object) : boolean in class org.apache.ignite.internal.processors.odbc.odbc.OdbcColumnMeta</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-0231060330f8e04fc16dbe033e2b3bb8L84">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-43962acecea81bb31f32cf324e0c7de7R88">To</a></td>
+                                <td><i>Change Variable Type	tuple : IgniteBiTuple&lt;QueryCursor,Iterator&gt; to cur : JdbcQueryCursor in method private fetchQuery(req JdbcQueryFetchRequest) : JdbcResponse in class org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-09eef9983fa0d756edc1f84ab6aa2718L232">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5584b92621e08ef78d8f337ebeef3a3eR239">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -564,6 +564,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public response() : Object from class org.apache.ignite.internal.processors.odbc.SqlListenerResponse to public response() : Object from class org.apache.ignite.internal.processors.odbc.odbc.OdbcResponse</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-9552a8741c8c5b649a580d21109ddc87L78">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-b46e23050e031bd9144a7ed40acde01bR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public toString() : String from class org.apache.ignite.internal.processors.odbc.SqlListenerResponse to public toString() : String from class org.apache.ignite.internal.processors.odbc.jdbc.JdbcResponse</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-9552a8741c8c5b649a580d21109ddc87L92">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-7b8e38df0eb41bbdbe468d09185afbceR73">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -584,20 +598,6 @@
                                 <td><i>Push Down Method	public toString() : String from class org.apache.ignite.internal.processors.odbc.SqlListenerResponse to public toString() : String from class org.apache.ignite.internal.processors.odbc.odbc.OdbcResponse</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-9552a8741c8c5b649a580d21109ddc87L92">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-b46e23050e031bd9144a7ed40acde01bR65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public response() : Object from class org.apache.ignite.internal.processors.odbc.SqlListenerResponse to public response() : Object from class org.apache.ignite.internal.processors.odbc.odbc.OdbcResponse</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-9552a8741c8c5b649a580d21109ddc87L78">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-b46e23050e031bd9144a7ed40acde01bR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public toString() : String from class org.apache.ignite.internal.processors.odbc.SqlListenerResponse to public toString() : String from class org.apache.ignite.internal.processors.odbc.jdbc.JdbcResponse</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-9552a8741c8c5b649a580d21109ddc87L92">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-7b8e38df0eb41bbdbe468d09185afbceR73">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -631,20 +631,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	SqlListenerResponse to JdbcResponse in method private executeQuery(req JdbcQueryExecuteRequest) : JdbcResponse in class org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-09eef9983fa0d756edc1f84ab6aa2718L136">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5584b92621e08ef78d8f337ebeef3a3eR128">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Collection&lt;SqlListenerColumnMeta&gt; to Collection&lt;OdbcColumnMeta&gt; in method public getColumnsMetadata() : Collection&lt;OdbcColumnMeta&gt; in class org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryExecuteResult</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-a7c79033022724700c32d2e0fa49c6b6L48">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5c0389b9dc18920fb5d7850dd4826b4dR48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	Collection&lt;SqlListenerColumnMeta&gt; to Collection&lt;OdbcColumnMeta&gt; in method public meta() : Collection&lt;OdbcColumnMeta&gt; in class org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryGetColumnsMetaResult</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-de015dec8311d7d8b3da4eeaf1dee9f6L36">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-efe8f2a0f3185b697d95a8eb1b64f307R36">To</a></td>
@@ -662,6 +648,20 @@
                                 <td><i>Change Return Type	SqlListenerResponse to JdbcResponse in method private fetchQuery(req JdbcQueryFetchRequest) : JdbcResponse in class org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-09eef9983fa0d756edc1f84ab6aa2718L232">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5584b92621e08ef78d8f337ebeef3a3eR231">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	SqlListenerResponse to JdbcResponse in method private executeQuery(req JdbcQueryExecuteRequest) : JdbcResponse in class org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-09eef9983fa0d756edc1f84ab6aa2718L136">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5584b92621e08ef78d8f337ebeef3a3eR128">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Collection&lt;SqlListenerColumnMeta&gt; to Collection&lt;OdbcColumnMeta&gt; in method public getColumnsMetadata() : Collection&lt;OdbcColumnMeta&gt; in class org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryExecuteResult</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-a7c79033022724700c32d2e0fa49c6b6L48">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5c0389b9dc18920fb5d7850dd4826b4dR48">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -702,20 +702,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	meta : Collection&lt;SqlListenerColumnMeta&gt; to meta : Collection&lt;OdbcColumnMeta&gt; in class org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryGetColumnsMetaResult</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-de015dec8311d7d8b3da4eeaf1dee9f6L27">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-efe8f2a0f3185b697d95a8eb1b64f307R27">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	cliIo : JdbcTcpIo to cliIo : JdbcThinTcpIo in class org.apache.ignite.internal.jdbc.thin.JdbcThinConnection</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-fc970aa6714534764e8eebf52e5ecc7eL77">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-03693a98b4b30190856ac0f42d9b3d7fR77">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	columnsMeta : Collection&lt;SqlListenerColumnMeta&gt; to columnsMeta : Collection&lt;OdbcColumnMeta&gt; in class org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryExecuteResult</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-a7c79033022724700c32d2e0fa49c6b6L30">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5c0389b9dc18920fb5d7850dd4826b4dR30">To</a></td>
@@ -726,6 +712,20 @@
                                 <td><i>Change Attribute Type	qryCursors : ConcurrentHashMap&lt;Long,IgniteBiTuple&lt;QueryCursor,Iterator&gt;&gt; to qryCursors : ConcurrentHashMap&lt;Long,JdbcQueryCursor&gt; in class org.apache.ignite.internal.processors.odbc.jdbc.JdbcRequestHandler</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-09eef9983fa0d756edc1f84ab6aa2718L72">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-5584b92621e08ef78d8f337ebeef3a3eR61">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	meta : Collection&lt;SqlListenerColumnMeta&gt; to meta : Collection&lt;OdbcColumnMeta&gt; in class org.apache.ignite.internal.processors.odbc.odbc.OdbcQueryGetColumnsMetaResult</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-de015dec8311d7d8b3da4eeaf1dee9f6L27">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-efe8f2a0f3185b697d95a8eb1b64f307R27">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	cliIo : JdbcTcpIo to cliIo : JdbcThinTcpIo in class org.apache.ignite.internal.jdbc.thin.JdbcThinConnection</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-fc970aa6714534764e8eebf52e5ecc7eL77">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/e92707b65ca9044070a200317079a600c8d92ded?diff=split#diff-03693a98b4b30190856ac0f42d9b3d7fR77">To</a></td>
                             </tr>
                             
                             </tbody>

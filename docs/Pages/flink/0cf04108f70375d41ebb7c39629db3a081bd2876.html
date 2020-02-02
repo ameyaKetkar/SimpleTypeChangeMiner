@@ -216,16 +216,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	states : ArrayList&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in method public CompletedCheckpoint(job JobID, checkpointID long, timestamp long, completionTimestamp long, taskStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L47">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R55">To</a></td>
+                                <td><i>Change Parameter Type	states : ArrayList&lt;StateForTask&gt; to taskGroupStates : Map&lt;JobVertexID,TaskState&gt; in method public TestCheckpoint(jobId JobID, checkpointId long, timestamp long, taskGroupStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest.TestCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L243">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R239">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	states : ArrayList&lt;StateForTask&gt; to taskGroupStates : Map&lt;JobVertexID,TaskState&gt; in method public TestCheckpoint(jobId JobID, checkpointId long, timestamp long, taskGroupStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest.TestCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L243">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R239">To</a></td>
+                                <td><i>Change Parameter Type	states : ArrayList&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in method public CompletedCheckpoint(job JobID, checkpointID long, timestamp long, completionTimestamp long, taskStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L47">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R55">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -238,6 +238,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	state : StateForTask to taskState : TaskState in method private dispose(userClassLoader ClassLoader, releaseState boolean) : void in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L171">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R206">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -286,13 +293,6 @@
                                 <td><i>Rename Variable	exec : Execution to currentExecutionAttempt : Execution in method public restoreSavepoint(tasks Map&lt;JobVertexID,ExecutionJobVertex&gt;, savepointPath String) : void in class org.apache.flink.runtime.checkpoint.SavepointCoordinator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-fd3ad08b5671760efb6d2d02b7caae98L221">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-fd3ad08b5671760efb6d2d02b7caae98R236">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	state : StateForTask to taskState : TaskState in method private dispose(userClassLoader ClassLoader, releaseState boolean) : void in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L171">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R206">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -351,6 +351,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	that : StateForTask to that : SubtaskState in method public equals(o Object) : boolean in class org.apache.flink.runtime.checkpoint.SubtaskState</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-498c150be639e40ff1c3799355e90867L117">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-cfbed458aec92ee514112e7781048d80R100">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	state : StateForTask to state : TaskState in method public discard(userClassLoader ClassLoader) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L83">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R101">To</a></td>
@@ -377,13 +384,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R201">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	that : StateForTask to that : SubtaskState in method public equals(o Object) : boolean in class org.apache.flink.runtime.checkpoint.SubtaskState</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-498c150be639e40ff1c3799355e90867L117">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-cfbed458aec92ee514112e7781048d80R100">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -397,16 +397,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	states : ArrayList&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L45">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R48">To</a></td>
+                                <td><i>Change Attribute Type	collectedStates : List&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L49">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R49">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	collectedStates : List&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L49">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R49">To</a></td>
+                                <td><i>Change Attribute Type	states : ArrayList&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L45">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R48">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -447,16 +447,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	states : ArrayList&lt;StateForTask&gt; to taskGroupStates : Map&lt;JobVertexID,TaskState&gt; in method public TestCheckpoint(jobId JobID, checkpointId long, timestamp long, taskGroupStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest.TestCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L247">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R239">To</a></td>
+                                <td><i>Rename Parameter	states : ArrayList&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in method public CompletedCheckpoint(job JobID, checkpointID long, timestamp long, completionTimestamp long, taskStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L52">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R55">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	states : ArrayList&lt;StateForTask&gt; to taskStates : Map&lt;JobVertexID,TaskState&gt; in method public CompletedCheckpoint(job JobID, checkpointID long, timestamp long, completionTimestamp long, taskStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L52">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R55">To</a></td>
+                                <td><i>Rename Parameter	states : ArrayList&lt;StateForTask&gt; to taskGroupStates : Map&lt;JobVertexID,TaskState&gt; in method public TestCheckpoint(jobId JobID, checkpointId long, timestamp long, taskGroupStates Map&lt;JobVertexID,TaskState&gt;) in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest.TestCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L247">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0cf04108f70375d41ebb7c39629db3a081bd2876?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R239">To</a></td>
                             </tr>
                             
                             </tbody>

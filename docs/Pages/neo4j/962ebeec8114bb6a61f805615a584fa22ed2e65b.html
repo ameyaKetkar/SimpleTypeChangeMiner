@@ -300,6 +300,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public readReplicaDiscoveryService(config Config, logProvider LogProvider, timeoutService DelayedRenewableTimeoutService, readReplicaTimeToLiveTimeout long, readReplicaRefreshRate long) : TopologyService renamed to public readReplicaTopologyService(config Config, logProvider LogProvider, timeoutService DelayedRenewableTimeoutService, readReplicaTimeToLiveTimeout long, readReplicaRefreshRate long, myself MemberId) : ReadReplicaTopologyService in class org.neo4j.causalclustering.discovery.SharedDiscoveryService</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-27847859d66f1e3f2fe468f31c739c92L63">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-27847859d66f1e3f2fe468f31c739c92R62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	package buildMemberAttributes(myself MemberId, config Config) : MemberAttributeConfig renamed to package buildMemberAttributesForCore(myself MemberId, config Config) : MemberAttributeConfig in class org.neo4j.causalclustering.discovery.HazelcastClusterTopology</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-778957abddd038021a91564d5780ee70L148">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-778957abddd038021a91564d5780ee70R179">To</a></td>
@@ -331,13 +338,6 @@
                                 <td><i>Rename Method	private syncStoreWithCore(source MemberId) : void renamed to private syncStoreWithUpstream(source MemberId) : void in class org.neo4j.causalclustering.readreplica.ReadReplicaStartupProcess</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-e0bf3be6246a23c79b5774ed6779a178L147">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-e0bf3be6246a23c79b5774ed6779a178R149">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readReplicaDiscoveryService(config Config, logProvider LogProvider, timeoutService DelayedRenewableTimeoutService, readReplicaTimeToLiveTimeout long, readReplicaRefreshRate long) : TopologyService renamed to public readReplicaTopologyService(config Config, logProvider LogProvider, timeoutService DelayedRenewableTimeoutService, readReplicaTimeToLiveTimeout long, readReplicaRefreshRate long, myself MemberId) : ReadReplicaTopologyService in class org.neo4j.causalclustering.discovery.SharedDiscoveryService</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-27847859d66f1e3f2fe468f31c739c92L63">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-27847859d66f1e3f2fe468f31c739c92R62">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -392,13 +392,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	selectionStrategyPipeline : UpstreamDatabaseStrategySelector to upstreamDatabaseStrategySelector : UpstreamDatabaseStrategySelector in method package EnterpriseReadReplicaEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory, myself MemberId) in class org.neo4j.causalclustering.readreplica.EnterpriseReadReplicaEditionModule</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-3fc58c7c8ca2b37487aef54af74070e8L247">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-3fc58c7c8ca2b37487aef54af74070e8R254">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	topologyService : TopologyService to readReplicaTopologyService : ReadReplicaTopologyService in method public shouldDefaultToRandomCoreServerIfNoOtherStrategySpecified() : void in class org.neo4j.causalclustering.readreplica.UpstreamDatabaseStrategySelectorTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eL75">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eR75">To</a></td>
@@ -439,6 +432,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-de91213f60130bb5d32351758c5c0a6bR290">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	selectionStrategyPipeline : UpstreamDatabaseStrategySelector to upstreamDatabaseStrategySelector : UpstreamDatabaseStrategySelector in method package EnterpriseReadReplicaEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory, myself MemberId) in class org.neo4j.causalclustering.readreplica.EnterpriseReadReplicaEditionModule</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-3fc58c7c8ca2b37487aef54af74070e8L247">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-3fc58c7c8ca2b37487aef54af74070e8R254">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -449,6 +449,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Object to Void in method private addReadReplica(hazelcastInstance HazelcastInstance) : Void in class org.neo4j.causalclustering.discovery.HazelcastClient</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-6e6565c47f95b296dbbf394bf302e55eL84">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-6e6565c47f95b296dbbf394bf302e55eR119">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Set&lt;ReadReplicaAddresses&gt; to Collection&lt;ReadReplicaAddresses&gt; in method public members() : Collection&lt;ReadReplicaAddresses&gt; in class org.neo4j.causalclustering.discovery.ReadReplicaTopology</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-03d0cb01b7ae21703e28dd7af40ede78L38">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-03d0cb01b7ae21703e28dd7af40ede78R45">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -476,20 +490,6 @@
                                 <td><i>Change Return Type	TopologyService to ReadReplicaTopologyService in method public readReplicaTopologyService(config Config, logProvider LogProvider, timeoutService DelayedRenewableTimeoutService, readReplicaTimeToLiveTimeout long, readReplicaRefreshRate long, myself MemberId) : ReadReplicaTopologyService in class org.neo4j.causalclustering.discovery.DiscoveryServiceFactory</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-715b2dab30f9269ec89bc61592d4de08L33">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-715b2dab30f9269ec89bc61592d4de08R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Object to Void in method private addReadReplica(hazelcastInstance HazelcastInstance) : Void in class org.neo4j.causalclustering.discovery.HazelcastClient</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-6e6565c47f95b296dbbf394bf302e55eL84">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-6e6565c47f95b296dbbf394bf302e55eR119">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Set&lt;ReadReplicaAddresses&gt; to Collection&lt;ReadReplicaAddresses&gt; in method public members() : Collection&lt;ReadReplicaAddresses&gt; in class org.neo4j.causalclustering.discovery.ReadReplicaTopology</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-03d0cb01b7ae21703e28dd7af40ede78L38">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-03d0cb01b7ae21703e28dd7af40ede78R45">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -562,6 +562,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	readReplicas : Set&lt;ReadReplicaAddresses&gt; to readReplicas : Map&lt;MemberId,ReadReplicaAddresses&gt; in method package getReadReplicaTopology(hazelcastInstance HazelcastInstance, log Log) : ReadReplicaTopology in class org.neo4j.causalclustering.discovery.HazelcastClusterTopology</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-778957abddd038021a91564d5780ee70L59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-778957abddd038021a91564d5780ee70R61">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	topologyService : TopologyService to readReplicaTopologyService : ReadReplicaTopologyService in method public shouldDefaultToRandomCoreServerIfNoOtherStrategySpecified() : void in class org.neo4j.causalclustering.readreplica.UpstreamDatabaseStrategySelectorTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eL71">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eR75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	defaultStrategy : ConnectToRandomUpstreamCoreServer to defaultStrategy : ConnectToRandomCoreServer in method package EnterpriseReadReplicaEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory, myself MemberId) in class org.neo4j.causalclustering.readreplica.EnterpriseReadReplicaEditionModule</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-3fc58c7c8ca2b37487aef54af74070e8L109">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-3fc58c7c8ca2b37487aef54af74070e8R251">To</a></td>
@@ -595,20 +609,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eR101">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	readReplicas : Set&lt;ReadReplicaAddresses&gt; to readReplicas : Map&lt;MemberId,ReadReplicaAddresses&gt; in method package getReadReplicaTopology(hazelcastInstance HazelcastInstance, log Log) : ReadReplicaTopology in class org.neo4j.causalclustering.discovery.HazelcastClusterTopology</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-778957abddd038021a91564d5780ee70L59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-778957abddd038021a91564d5780ee70R61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	topologyService : TopologyService to readReplicaTopologyService : ReadReplicaTopologyService in method public shouldDefaultToRandomCoreServerIfNoOtherStrategySpecified() : void in class org.neo4j.causalclustering.readreplica.UpstreamDatabaseStrategySelectorTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eL71">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-5bd73d3e424b4aa0673884563502409eR75">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -637,13 +637,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	topologyService : TopologyService to readReplicaTopologyService : ReadReplicaTopologyService in class org.neo4j.causalclustering.readreplica.ReadReplicaStartupProcessTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-a744764640707a643d210a2efbad32cdL65">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-a744764640707a643d210a2efbad32cdR65">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -687,6 +680,13 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-dcfdcd72ccd9a266f1f898c133a83f2bR36">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	topologyService : TopologyService to readReplicaTopologyService : ReadReplicaTopologyService in class org.neo4j.causalclustering.readreplica.ReadReplicaStartupProcessTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-a744764640707a643d210a2efbad32cdL65">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-a744764640707a643d210a2efbad32cdR65">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -697,6 +697,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	remoteCore : MemberId to upstream : MemberId in method private ensureSameStoreIdAs(upstream MemberId) : void in class org.neo4j.causalclustering.readreplica.ReadReplicaStartupProcess</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-e0bf3be6246a23c79b5774ed6779a178L170">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-e0bf3be6246a23c79b5774ed6779a178R172">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -724,13 +731,6 @@
                                 <td><i>Rename Parameter	topologyService : TopologyService to readReplicaTopologyService : ReadReplicaTopologyService in method public UpstreamDatabaseStrategiesLoader(readReplicaTopologyService ReadReplicaTopologyService, config Config) in class org.neo4j.causalclustering.readreplica.UpstreamDatabaseStrategiesLoader</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-dcfdcd72ccd9a266f1f898c133a83f2bL39">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-dcfdcd72ccd9a266f1f898c133a83f2bR39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	remoteCore : MemberId to upstream : MemberId in method private ensureSameStoreIdAs(upstream MemberId) : void in class org.neo4j.causalclustering.readreplica.ReadReplicaStartupProcess</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-e0bf3be6246a23c79b5774ed6779a178L170">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/962ebeec8114bb6a61f805615a584fa22ed2e65b?diff=split#diff-e0bf3be6246a23c79b5774ed6779a178R172">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -228,13 +228,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getFirehoseHandlers() : List&lt;FirehoseHandler&gt; renamed to public getFinishedSpanHandlers() : List&lt;FinishedSpanHandler&gt; in class brave.spring.beans.TracingFactoryBean</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38L80">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public addFirehoseHandler(firehoseHandler FirehoseHandler) : Builder renamed to public addFinishedSpanHandler(finishedSpanHandler FinishedSpanHandler) : Builder in class brave.Tracing.Builder</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bL302">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bR302">To</a></td>
@@ -254,6 +247,13 @@
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bc7257b20832292535723ac2f349ee76R116">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getFirehoseHandlers() : List&lt;FirehoseHandler&gt; renamed to public getFinishedSpanHandlers() : List&lt;FinishedSpanHandler&gt; in class brave.spring.beans.TracingFactoryBean</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38L80">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38R80">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -264,6 +264,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	firehoseHandlers : List&lt;FirehoseHandler&gt; to finishedSpanHandlers : List&lt;FinishedSpanHandler&gt; in method public setFinishedSpanHandlers(finishedSpanHandlers List&lt;FinishedSpanHandler&gt;) : void in class brave.spring.beans.TracingFactoryBean</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38L84">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38R84">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	zipkinHandler : FirehoseHandler to zipkinHandler : FinishedSpanHandler in method public PendingSpans(clock Clock, zipkinHandler FinishedSpanHandler, noop AtomicBoolean) in class brave.internal.recorder.PendingSpans</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831L35">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	second : FirehoseHandler to second : FinishedSpanHandler in method package CompositeFinishedSpanHandler(first FinishedSpanHandler, second FinishedSpanHandler) in class brave.internal.handler.FinishedSpanHandlers.CompositeFinishedSpanHandler</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-125d42c95fc611e072a76a456d4da4d1L72">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-efc5ade4f5ed241744cfc0a1d68544c5R72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	zipkinFirehoseHandler : FirehoseHandler to zipkinFinishedSpanHandler : FinishedSpanHandler in method package init(zipkinFinishedSpanHandler FinishedSpanHandler) : void in class brave.internal.recorder.PendingSpansTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-5f4b56d17e11786bee0ddca94f300b15L35">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-5f4b56d17e11786bee0ddca94f300b15R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in method public addFinishedSpanHandler(finishedSpanHandler FinishedSpanHandler) : Builder in class brave.Tracing.Builder</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bL302">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bR321">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -307,41 +342,6 @@
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d8f0beceea37fc061deafddac563ecbeR21">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	firehoseHandlers : List&lt;FirehoseHandler&gt; to finishedSpanHandlers : List&lt;FinishedSpanHandler&gt; in method public setFinishedSpanHandlers(finishedSpanHandlers List&lt;FinishedSpanHandler&gt;) : void in class brave.spring.beans.TracingFactoryBean</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38L84">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38R84">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	zipkinHandler : FirehoseHandler to zipkinHandler : FinishedSpanHandler in method public PendingSpans(clock Clock, zipkinHandler FinishedSpanHandler, noop AtomicBoolean) in class brave.internal.recorder.PendingSpans</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831L35">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	second : FirehoseHandler to second : FinishedSpanHandler in method package CompositeFinishedSpanHandler(first FinishedSpanHandler, second FinishedSpanHandler) in class brave.internal.handler.FinishedSpanHandlers.CompositeFinishedSpanHandler</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-125d42c95fc611e072a76a456d4da4d1L72">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-efc5ade4f5ed241744cfc0a1d68544c5R72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	zipkinFirehoseHandler : FirehoseHandler to zipkinFinishedSpanHandler : FinishedSpanHandler in method package init(zipkinFinishedSpanHandler FinishedSpanHandler) : void in class brave.internal.recorder.PendingSpansTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-5f4b56d17e11786bee0ddca94f300b15L35">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-5f4b56d17e11786bee0ddca94f300b15R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in method public addFinishedSpanHandler(finishedSpanHandler FinishedSpanHandler) : Builder in class brave.Tracing.Builder</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bL302">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bR321">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -352,6 +352,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in method package Default(builder Builder) in class brave.Tracing.Default</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bL385">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bR385">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -372,13 +379,6 @@
                                 <td><i>Rename Variable	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in method public firehose_dataChangesVisibleToZipkin() : void in class brave.TracingTest</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bce4e281981560a5111f2416f5f3413bL55">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bce4e281981560a5111f2416f5f3413bR55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in method package Default(builder Builder) in class brave.Tracing.Default</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bL385">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cb5fdbe469464030bf646ab940a55a2bR385">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -504,6 +504,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	brave.internal.firehose.MutableSpanConverterTest moved to brave.internal.handler.MutableSpanConverterTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	brave.firehose.MutableSpanBenchmarks moved to brave.handler.MutableSpanBenchmarks</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	brave.internal.firehose.MutableSpanConverterBenchmarks moved to brave.internal.handler.MutableSpanConverterBenchmarks</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -530,20 +544,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	brave.internal.firehose.MutableSpanConverterTest moved to brave.internal.handler.MutableSpanConverterTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	brave.firehose.MutableSpanBenchmarks moved to brave.handler.MutableSpanBenchmarks</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -554,6 +554,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in class brave.Tracer</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L75">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in class brave.RealSpan</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d08a18366795df0aa15c407397f0dae1L15">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d08a18366795df0aa15c407397f0dae1R15">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -574,20 +588,6 @@
                                 <td><i>Rename Attribute	zipkinFirehoseHandler : ZipkinFirehoseHandler to zipkinFinishedSpanHandler : ZipkinFinishedSpanHandler in class brave.internal.handler.ZipkinFinishedSpanHandlerTest</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7dfa4577beefddc659d5f8feab601456L17">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bc255b004e86a99b16051f65916207ceR17">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in class brave.Tracer</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L75">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in class brave.RealSpan</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d08a18366795df0aa15c407397f0dae1L15">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d08a18366795df0aa15c407397f0dae1R15">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -663,14 +663,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Package	brave.internal.firehose to brave.internal.handler</i></td>
+                                <td><i>Change Package	brave.firehose to brave.handler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Package	brave.firehose to brave.handler</i></td>
+                                <td><i>Change Package	brave.internal.firehose to brave.internal.handler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -685,62 +685,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in class brave.Tracer</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L75">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	zipkinHandler : FirehoseHandler to zipkinHandler : FinishedSpanHandler in class brave.internal.recorder.PendingSpans</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831L32">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831R32">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	delegate : FirehoseHandler to delegate : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlers.NoopAwareFinishedSpan</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-125d42c95fc611e072a76a456d4da4d1L40">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-efc5ade4f5ed241744cfc0a1d68544c5R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	listIndexComposite : FirehoseHandler to listIndexComposite : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlersBenchmarks</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cae571ea6c49aaaef4b86d7ac40bd8a6L78">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7ae55b033e5a26296623c3f6d0f431dcR78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	configuredHandlers : Map&lt;String,brave.firehose.FirehoseHandler&gt; to configuredHandlers : Map&lt;String,brave.handler.FinishedSpanHandler&gt; in class brave.features.propagation.SecondarySampling.FinishedSpanHandler</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d8f0beceea37fc061deafddac563ecbeL19">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d8f0beceea37fc061deafddac563ecbeR19">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	composite : FirehoseHandler to composite : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlersBenchmarks</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cae571ea6c49aaaef4b86d7ac40bd8a6L77">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7ae55b033e5a26296623c3f6d0f431dcR77">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	FIREHOSE_HANDLER : FirehoseHandler to FIREHOSE_HANDLER : FinishedSpanHandler in class brave.spring.beans.TracingFactoryBeanTest</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bc7257b20832292535723ac2f349ee76L114">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bc7257b20832292535723ac2f349ee76R114">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	two : FirehoseHandler to two : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlersBenchmarks</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cae571ea6c49aaaef4b86d7ac40bd8a6L56">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7ae55b033e5a26296623c3f6d0f431dcR56">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -812,6 +756,62 @@
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-0b67dc8e59410e64f97093136af282fcR19">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in class brave.Tracer</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41L75">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-2d185a40c3f049fbc07d5b1d4217ae41R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	zipkinHandler : FirehoseHandler to zipkinHandler : FinishedSpanHandler in class brave.internal.recorder.PendingSpans</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831L32">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-03c1cef3e555a53ad8da9dab9a7aa831R32">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	delegate : FirehoseHandler to delegate : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlers.NoopAwareFinishedSpan</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-125d42c95fc611e072a76a456d4da4d1L40">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-efc5ade4f5ed241744cfc0a1d68544c5R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	listIndexComposite : FirehoseHandler to listIndexComposite : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlersBenchmarks</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cae571ea6c49aaaef4b86d7ac40bd8a6L78">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7ae55b033e5a26296623c3f6d0f431dcR78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	configuredHandlers : Map&lt;String,brave.firehose.FirehoseHandler&gt; to configuredHandlers : Map&lt;String,brave.handler.FinishedSpanHandler&gt; in class brave.features.propagation.SecondarySampling.FinishedSpanHandler</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d8f0beceea37fc061deafddac563ecbeL19">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d8f0beceea37fc061deafddac563ecbeR19">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	composite : FirehoseHandler to composite : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlersBenchmarks</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cae571ea6c49aaaef4b86d7ac40bd8a6L77">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7ae55b033e5a26296623c3f6d0f431dcR77">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	FIREHOSE_HANDLER : FirehoseHandler to FIREHOSE_HANDLER : FinishedSpanHandler in class brave.spring.beans.TracingFactoryBeanTest</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bc7257b20832292535723ac2f349ee76L114">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-bc7257b20832292535723ac2f349ee76R114">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	two : FirehoseHandler to two : FinishedSpanHandler in class brave.internal.handler.FinishedSpanHandlersBenchmarks</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-cae571ea6c49aaaef4b86d7ac40bd8a6L56">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-7ae55b033e5a26296623c3f6d0f431dcR56">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -822,6 +822,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	firehoseHandlers : List&lt;FirehoseHandler&gt; to finishedSpanHandlers : List&lt;FinishedSpanHandler&gt; in method public setFinishedSpanHandlers(finishedSpanHandlers List&lt;FinishedSpanHandler&gt;) : void in class brave.spring.beans.TracingFactoryBean</i></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38L84">From</a></td>
+                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38R84">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -856,13 +863,6 @@
                                 <td><i>Rename Parameter	firehoseHandler : FirehoseHandler to finishedSpanHandler : FinishedSpanHandler in method package RealSpan(context TraceContext, pendingSpans PendingSpans, state MutableSpan, clock Clock, finishedSpanHandler FinishedSpanHandler) in class brave.RealSpan</i></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d08a18366795df0aa15c407397f0dae1L22">From</a></td>
                                 <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-d08a18366795df0aa15c407397f0dae1R22">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	firehoseHandlers : List&lt;FirehoseHandler&gt; to finishedSpanHandlers : List&lt;FinishedSpanHandler&gt; in method public setFinishedSpanHandlers(finishedSpanHandlers List&lt;FinishedSpanHandler&gt;) : void in class brave.spring.beans.TracingFactoryBean</i></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38L84">From</a></td>
-                                <td><a href = "https://github.com/openzipkin/brave/commit/30440de855fb69ecae2f95a5f74f3cbe74285347?diff=split#diff-e02416a0cb26b20e5a7d3b969b9aed38R84">To</a></td>
                             </tr>
                             
                             </tbody>

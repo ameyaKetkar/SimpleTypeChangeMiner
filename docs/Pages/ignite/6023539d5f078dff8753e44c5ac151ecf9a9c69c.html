@@ -174,6 +174,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	recoveryDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to recoveryDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in method private recoveryDescriptor(recoveryDescs ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt;, node ClusterNode, key ConnectionKey) : GridNioRecoveryDescriptor in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2949">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3225">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	reconnect : boolean to connIdx : int in method package DisconnectedSessionInfo(recoveryDesc GridNioRecoveryDescriptor, connIdx int) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.DisconnectedSessionInfo</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3960">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4266">To</a></td>
@@ -193,13 +200,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3584">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recoveryDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to recoveryDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in method private recoveryDescriptor(recoveryDescs ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt;, node ClusterNode, key ConnectionKey) : GridNioRecoveryDescriptor in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2949">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3225">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -210,20 +210,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	rmtNodeId : UUID to connKey : ConnectionKey in method public writer(ses GridNioSession) : MessageWriter in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ShmemWorker.body.writerFactory</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3155">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3377">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	recoverySnd : GridNioRecoveryDescriptor to recoveryDesc : GridNioRecoveryDescriptor in method private cleanupRecovery(recoveryDescs ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt;) : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.CommunicationWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3366">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3591">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -302,6 +288,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1914">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	rmtNodeId : UUID to connKey : ConnectionKey in method public writer(ses GridNioSession) : MessageWriter in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ShmemWorker.body.writerFactory</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3155">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3377">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	recoverySnd : GridNioRecoveryDescriptor to recoveryDesc : GridNioRecoveryDescriptor in method private cleanupRecovery(recoveryDescs ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt;) : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.CommunicationWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3366">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3591">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -369,20 +369,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	order : long to idx : int in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3016">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4285">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	reconnect : boolean to connIdx : int in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.DisconnectedSessionInfo</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3958">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4260">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	resolver : AddressResolver to rslvr : AddressResolver in class org.apache.ignite.spi.GridTcpSpiForwardingSelfTest</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-cbc9b8c109f46bc6e7c78941d2afa634L72">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-cbc9b8c109f46bc6e7c78941d2afa634R72">To</a></td>
@@ -395,6 +381,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R293">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	order : long to idx : int in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3016">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4285">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	reconnect : boolean to connIdx : int in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.DisconnectedSessionInfo</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3958">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4260">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -405,20 +405,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public simulateNodeFailure() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2910">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3178">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	clients : Map&lt;UUID,GridCommunicationClient&gt; to clients : Map&lt;UUID,GridCommunicationClient[]&gt; in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-37d68d4da721ac09de2d20f62368470dL169">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-37d68d4da721ac09de2d20f62368470dR185">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -567,6 +553,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R2617">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public simulateNodeFailure() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2910">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3178">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	clients : Map&lt;UUID,GridCommunicationClient&gt; to clients : Map&lt;UUID,GridCommunicationClient[]&gt; in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-37d68d4da721ac09de2d20f62368470dL169">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-37d68d4da721ac09de2d20f62368470dR185">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -630,6 +630,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	outRecDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to outRecDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L959">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1013">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	recoveryDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to recoveryDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L956">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1010">To</a></td>
@@ -684,13 +691,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R155">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	outRecDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to outRecDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L959">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1013">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -701,6 +701,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	order : long to connCnt : long in method package ConnectionKey(nodeId UUID, idx int, connCnt long) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3022">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4295">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -721,13 +728,6 @@
                                 <td><i>Rename Parameter	reconnect : boolean to connIdx : int in method package DisconnectedSessionInfo(recoveryDesc GridNioRecoveryDescriptor, connIdx int) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.DisconnectedSessionInfo</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3965">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4266">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	order : long to connCnt : long in method package ConnectionKey(nodeId UUID, idx int, connCnt long) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L3022">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/6023539d5f078dff8753e44c5ac151ecf9a9c69c?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4295">To</a></td>
                             </tr>
                             
                             </tbody>

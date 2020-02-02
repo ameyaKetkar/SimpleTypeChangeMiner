@@ -267,6 +267,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Method	public close() : void from class org.eclipse.jetty.client.PoolingHttpDestination to public close() : void from class org.eclipse.jetty.client.AbstractConnectionPool</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L228">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R180">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Method	public remove(connection Connection) : boolean from class org.eclipse.jetty.client.PoolingHttpDestination to public remove(connection Connection) : boolean from class org.eclipse.jetty.client.MultiplexConnectionPool</i></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L193">From</a></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-24069168c155bb3c0150b33dedc3a8d4R201">To</a></td>
@@ -284,13 +291,6 @@
                                 <td><i>Move Method	public toString() : String from class org.eclipse.jetty.client.PoolingHttpDestination to public toString() : String from class org.eclipse.jetty.client.MultiplexConnectionPool.Holder</i></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L241">From</a></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-24069168c155bb3c0150b33dedc3a8d4R296">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public close() : void from class org.eclipse.jetty.client.PoolingHttpDestination to public close() : void from class org.eclipse.jetty.client.AbstractConnectionPool</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L228">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R180">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -345,14 +345,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.eclipse.jetty.client.MultiplexConnectionPool from class org.eclipse.jetty.client.PoolingHttpDestination</i></td>
+                                <td><i>Extract Class	org.eclipse.jetty.client.AbstractConnectionPool from class org.eclipse.jetty.client.PoolingHttpDestination</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.eclipse.jetty.client.AbstractConnectionPool from class org.eclipse.jetty.client.PoolingHttpDestination</i></td>
+                                <td><i>Extract Class	org.eclipse.jetty.client.MultiplexConnectionPool from class org.eclipse.jetty.client.PoolingHttpDestination</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -388,13 +388,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	connectionPool : DuplexConnectionPool in method public test_SecondAcquire_ConcurrentWithFirstAcquire_WithEmptyQueue_CreatesTwoConnections() : void from class org.eclipse.jetty.client.http.HttpDestinationOverHTTPTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	connectionPool : DuplexConnectionPool in method public testProxyRequestFailureInTheMiddleOfProxyingSmallContent() : void from class org.eclipse.jetty.proxy.ProxyServletTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -403,6 +396,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	connectionPool : DuplexConnectionPool in method public testProxyRequestFailureInTheMiddleOfProxyingBigContent() : void from class org.eclipse.jetty.proxy.ProxyServletTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	connectionPool : DuplexConnectionPool in method public test_SecondAcquire_ConcurrentWithFirstAcquire_WithEmptyQueue_CreatesTwoConnections() : void from class org.eclipse.jetty.client.http.HttpDestinationOverHTTPTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -417,6 +417,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	activeConnections : Queue&lt;Connection&gt; to activeConnections : Collection&lt;Connection&gt; in method public test_SuccessfulRequest_ReturnsConnection() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L64">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	idleConnections : Queue&lt;Connection&gt; to idleConnections : Collection&lt;Connection&gt; in method public test_ConnectionFailure_RemovesConnection() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L309">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R309">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	idleConnections : Queue&lt;Connection&gt; to idleConnections : Collection&lt;Connection&gt; in method public testConnectionForHTTP10ResponseIsRemoved() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L494">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R483">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	idleConnections : Queue&lt;Connection&gt; to idleConnections : Collection&lt;Connection&gt; in method public test_SuccessfulRequest_ReturnsConnection() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L64">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R75">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -509,34 +537,6 @@
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R486">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	activeConnections : Queue&lt;Connection&gt; to activeConnections : Collection&lt;Connection&gt; in method public test_SuccessfulRequest_ReturnsConnection() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L64">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	idleConnections : Queue&lt;Connection&gt; to idleConnections : Collection&lt;Connection&gt; in method public test_ConnectionFailure_RemovesConnection() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L309">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R309">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	idleConnections : Queue&lt;Connection&gt; to idleConnections : Collection&lt;Connection&gt; in method public testConnectionForHTTP10ResponseIsRemoved() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L494">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R483">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	idleConnections : Queue&lt;Connection&gt; to idleConnections : Collection&lt;Connection&gt; in method public test_SuccessfulRequest_ReturnsConnection() : void in class org.eclipse.jetty.client.HttpConnectionLifecycleTest</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56L64">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-c1bd6ea471289316a2a0b514f0e68b56R75">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -590,20 +590,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-19" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	protected idle(connection Connection, idle boolean) : boolean from class org.eclipse.jetty.client.DuplexConnectionPool to protected idle(connection Connection, close boolean) : boolean from class org.eclipse.jetty.client.AbstractConnectionPool</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL253">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R153">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	protected doStop() : void from class org.eclipse.jetty.client.PoolingHttpDestination to protected doStop() : void from class org.eclipse.jetty.client.HttpDestination</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L59">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-5303f70fea9362413928d29e46e9f944R105">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -724,6 +710,20 @@
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R194">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	protected idle(connection Connection, idle boolean) : boolean from class org.eclipse.jetty.client.DuplexConnectionPool to protected idle(connection Connection, close boolean) : boolean from class org.eclipse.jetty.client.AbstractConnectionPool</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL253">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R153">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	protected doStop() : void from class org.eclipse.jetty.client.PoolingHttpDestination to protected doStop() : void from class org.eclipse.jetty.client.HttpDestination</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L59">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-5303f70fea9362413928d29e46e9f944R105">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -755,6 +755,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	boolean to void in method protected onCreated(connection Connection) : void in class org.eclipse.jetty.client.DuplexConnectionPool</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL319">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eR121">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	Queue&lt;Connection&gt; to Collection&lt;Connection&gt; in method public getActiveConnections() : Collection&lt;Connection&gt; in class org.eclipse.jetty.client.DuplexConnectionPool</i></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL105">From</a></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eR102">To</a></td>
@@ -765,13 +772,6 @@
                                 <td><i>Change Return Type	DuplexConnectionPool to ConnectionPool in method protected newConnectionPool(client HttpClient) : ConnectionPool in class org.eclipse.jetty.client.PoolingHttpDestination</i></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L70">From</a></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89R28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	boolean to void in method protected onCreated(connection Connection) : void in class org.eclipse.jetty.client.DuplexConnectionPool</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL319">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eR121">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -841,13 +841,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	idle : boolean to close : boolean in method protected idle(connection Connection, close boolean) : boolean in class org.eclipse.jetty.client.AbstractConnectionPool</i></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL253">From</a></td>
-                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R153">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	c : Connection to connection : Connection in method public release(connection Connection) : void in class org.eclipse.jetty.client.HttpDestination</i></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-1755172163c426ed3b69a13906587e89L163">From</a></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-5303f70fea9362413928d29e46e9f944R347">To</a></td>
@@ -858,6 +851,13 @@
                                 <td><i>Rename Parameter	sslContextFactory : SslContextFactory to transport : Transport in method public HttpClientLoadTest(transport Transport) in class org.eclipse.jetty.http.client.HttpClientLoadTest</i></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-fb4bd968fa22bedd9d10e49077708e4aL71">From</a></td>
                                 <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-e46b0446d31fb9fb309b0cbfffabbe09R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	idle : boolean to close : boolean in method protected idle(connection Connection, close boolean) : boolean in class org.eclipse.jetty.client.AbstractConnectionPool</i></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-6c7cafacbcc6fb6b40e19be057fe7a1eL253">From</a></td>
+                                <td><a href = "https://github.com/eclipse/jetty.project/commit/0bd1e0ad7d2563b7f756ea56340903a02d5bca5c?diff=split#diff-ce07ceef273edc1ec69ee922c28ef716R153">To</a></td>
                             </tr>
                             
                             </tbody>

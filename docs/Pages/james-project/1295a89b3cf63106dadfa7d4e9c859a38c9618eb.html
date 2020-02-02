@@ -480,6 +480,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Stream&lt;SimpleMailboxMessage&gt;&gt; to Flux&lt;SimpleMailboxMessage&gt; in method private retrieveMessages(messageIds List&lt;ComposedMessageIdWithMetaData&gt;, fetchType FetchType, limit Limit) : Flux&lt;SimpleMailboxMessage&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L179">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R179">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	CompletableFuture&lt;FlagsUpdateStageResult&gt; to Mono&lt;FlagsUpdateStageResult&gt; in method private tryFlagsUpdate(flagUpdateCalculator FlagsUpdateCalculator, newModSeq long, oldMetaData ComposedMessageIdWithMetaData) : Mono&lt;FlagsUpdateStageResult&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L394">From</a></td>
                                 <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R402">To</a></td>
@@ -555,13 +562,6 @@
                                 <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R151">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Stream&lt;SimpleMailboxMessage&gt;&gt; to Flux&lt;SimpleMailboxMessage&gt; in method private retrieveMessages(messageIds List&lt;ComposedMessageIdWithMetaData&gt;, fetchType FetchType, limit Limit) : Flux&lt;SimpleMailboxMessage&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L179">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R179">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -575,16 +575,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	toBeUpdated : Stream&lt;ComposedMessageIdWithMetaData&gt; to toBeUpdated : Flux&lt;ComposedMessageIdWithMetaData&gt; in method public updateFlags(mailbox Mailbox, flagUpdateCalculator FlagsUpdateCalculator, range MessageRange) : Iterator&lt;UpdatedFlags&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L278">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R282">To</a></td>
+                                <td><i>Change Variable Type	idsFailed : Stream&lt;ComposedMessageIdWithMetaData&gt; to toUpdate : Flux&lt;ComposedMessageIdWithMetaData&gt; in method private retryUpdatesStage(mailboxId CassandraId, flagsUpdateCalculator FlagsUpdateCalculator, failed List&lt;MessageUid&gt;) : Mono&lt;FlagsUpdateStageResult&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L303">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R306">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	idsFailed : Stream&lt;ComposedMessageIdWithMetaData&gt; to toUpdate : Flux&lt;ComposedMessageIdWithMetaData&gt; in method private retryUpdatesStage(mailboxId CassandraId, flagsUpdateCalculator FlagsUpdateCalculator, failed List&lt;MessageUid&gt;) : Mono&lt;FlagsUpdateStageResult&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L303">From</a></td>
-                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R306">To</a></td>
+                                <td><i>Change Variable Type	toBeUpdated : Stream&lt;ComposedMessageIdWithMetaData&gt; to toBeUpdated : Flux&lt;ComposedMessageIdWithMetaData&gt; in method public updateFlags(mailbox Mailbox, flagUpdateCalculator FlagsUpdateCalculator, range MessageRange) : Iterator&lt;UpdatedFlags&gt; in class org.apache.james.mailbox.cassandra.mail.CassandraMessageMapper</i></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562L278">From</a></td>
+                                <td><a href = "https://github.com/apache/james-project/commit/1295a89b3cf63106dadfa7d4e9c859a38c9618eb?diff=split#diff-aea9781d88fa7387b0a56f222ccd2562R282">To</a></td>
                             </tr>
                             
                             </tbody>

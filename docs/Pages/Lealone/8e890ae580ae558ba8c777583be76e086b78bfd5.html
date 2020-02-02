@@ -184,14 +184,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	package commit(t MVCCTransaction) : void moved from class org.lealone.transaction.mvcc.MVCCTransactionEngine to class org.lealone.transaction.mvcc.MVCCTransaction &amp; inlined to protected commitLocal() : void</i></td>
+                                <td><i>Move And Inline Method	package prepareCommit(t MVCCTransaction, r RedoLogRecord) : void moved from class org.lealone.transaction.mvcc.MVCCTransactionEngine to class org.lealone.transaction.mvcc.MVCCTransaction &amp; inlined to public prepareCommit() : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	package prepareCommit(t MVCCTransaction, r RedoLogRecord) : void moved from class org.lealone.transaction.mvcc.MVCCTransactionEngine to class org.lealone.transaction.mvcc.MVCCTransaction &amp; inlined to public prepareCommit() : void</i></td>
+                                <td><i>Move And Inline Method	package commit(t MVCCTransaction) : void moved from class org.lealone.transaction.mvcc.MVCCTransactionEngine to class org.lealone.transaction.mvcc.MVCCTransaction &amp; inlined to protected commitLocal() : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -206,6 +206,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	protected commitFinal(tid long) : void from class org.lealone.transaction.mvcc.MVCCTransactionEngine to protected commitFinal(tid long) : void from class org.lealone.transaction.mvcc.MVCCTransaction</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L332">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-397f9ec9e92a4bc53e60e6809787164cR284">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public redo(map StorageMap&lt;K,TransactionalValue&gt;) : void from class org.lealone.transaction.mvcc.MVCCTransactionEngine to public redo(map StorageMap&lt;K,TransactionalValue&gt;) : void from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L219">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R163">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -228,20 +242,6 @@
                                 <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2R66">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	protected commitFinal(tid long) : void from class org.lealone.transaction.mvcc.MVCCTransactionEngine to protected commitFinal(tid long) : void from class org.lealone.transaction.mvcc.MVCCTransaction</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L332">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-397f9ec9e92a4bc53e60e6809787164cR284">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public redo(map StorageMap&lt;K,TransactionalValue&gt;) : void from class org.lealone.transaction.mvcc.MVCCTransactionEngine to public redo(map StorageMap&lt;K,TransactionalValue&gt;) : void from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L219">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R163">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -252,34 +252,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private DEFAULT_MAP_CACHE_SIZE : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine to private DEFAULT_MAP_CACHE_SIZE : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine.StorageMapSaveService</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L49">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2R216">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	public LOG_SYNC_TYPE_PERIODIC : String from class org.lealone.transaction.mvcc.log.RedoLog to public LOG_SYNC_TYPE_PERIODIC : String from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-13a3674797aeba2acbd6d7b8ac989052L37">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	public LOG_SYNC_TYPE_NO_SYNC : String from class org.lealone.transaction.mvcc.log.RedoLog to public LOG_SYNC_TYPE_NO_SYNC : String from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-13a3674797aeba2acbd6d7b8ac989052L39">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private DEFAULT_MAP_SAVE_PERIOD : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine to private DEFAULT_MAP_SAVE_PERIOD : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine.StorageMapSaveService</i></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L50">From</a></td>
-                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2R217">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -314,6 +286,34 @@
                                 <td><i>Move Attribute	private pendingRedoLog : HashMap&lt;String,ArrayList&lt;ByteBuffer&gt;&gt; from class org.lealone.transaction.mvcc.MVCCTransactionEngine to private pendingRedoLog : HashMap&lt;String,ArrayList&lt;ByteBuffer&gt;&gt; from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
                                 <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L63">From</a></td>
                                 <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private DEFAULT_MAP_CACHE_SIZE : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine to private DEFAULT_MAP_CACHE_SIZE : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine.StorageMapSaveService</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L49">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2R216">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public LOG_SYNC_TYPE_PERIODIC : String from class org.lealone.transaction.mvcc.log.RedoLog to public LOG_SYNC_TYPE_PERIODIC : String from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-13a3674797aeba2acbd6d7b8ac989052L37">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	public LOG_SYNC_TYPE_NO_SYNC : String from class org.lealone.transaction.mvcc.log.RedoLog to public LOG_SYNC_TYPE_NO_SYNC : String from class org.lealone.transaction.mvcc.log.LogSyncService</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-13a3674797aeba2acbd6d7b8ac989052L39">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-1e86028a189e4a7684d2d4989d88b686R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private DEFAULT_MAP_SAVE_PERIOD : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine to private DEFAULT_MAP_SAVE_PERIOD : int from class org.lealone.transaction.mvcc.MVCCTransactionEngine.StorageMapSaveService</i></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2L50">From</a></td>
+                                <td><a href = "https://github.com/lealone/Lealone/commit/8e890ae580ae558ba8c777583be76e086b78bfd5?diff=split#diff-3d5c6711dbb8b55727b95f85932d8df2R217">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -172,13 +172,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Inline Method	public isNull() : boolean moved from class org.infinispan.container.entries.RepeatableReadEntry to class org.infinispan.commands.read.GetAllCommand &amp; inlined to public perform(ctx InvocationContext) : Object</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Inline Method	public isNull() : boolean moved from class org.infinispan.container.entries.RepeatableReadEntry to class org.infinispan.commands.write.RemoveCommand &amp; inlined to public perform(ctx InvocationContext) : Object</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -215,6 +208,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Inline Method	public isNull() : boolean moved from class org.infinispan.container.entries.RepeatableReadEntry to class org.infinispan.commands.functional.ReadOnlyKeyCommand &amp; inlined to public perform(ctx InvocationContext) : Object</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Inline Method	public isNull() : boolean moved from class org.infinispan.container.entries.RepeatableReadEntry to class org.infinispan.commands.read.GetAllCommand &amp; inlined to public perform(ctx InvocationContext) : Object</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -400,20 +400,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	cacheTopology : CacheTopology in method public localNodeIsOwner(key Object) : boolean from class org.infinispan.interceptors.locking.ClusteringDependentLogic.InvalidationLogic</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	cacheTopology : CacheTopology in method public localNodeIsPrimaryOwner(key Object) : boolean from class org.infinispan.interceptors.locking.ClusteringDependentLogic.InvalidationLogic</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	configurationBuilder : ConfigurationBuilder in method private addNode(block LatchType, modifyConfiguration Consumer&lt;ConfigurationBuilder&gt;) : NewNode from class org.infinispan.statetransfer.RemoteGetDuringStateTransferTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -440,6 +426,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	cacheTopology : CacheTopology in method public localNodeIsOwner(key Object) : boolean from class org.infinispan.interceptors.locking.ClusteringDependentLogic.InvalidationLogic</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	cacheTopology : CacheTopology in method public localNodeIsPrimaryOwner(key Object) : boolean from class org.infinispan.interceptors.locking.ClusteringDependentLogic.InvalidationLogic</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -450,6 +450,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	requestedKeys : Set&lt;Object&gt; to owners : List&lt;Address&gt; in method private getKeysByOwner(ctx InvocationContext, keys Collection&lt;?&gt;, ch ConsistentHash, availableKeys List&lt;Object&gt;) : Map&lt;Address,List&lt;Object&gt;&gt; in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36L473">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R529">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	remoteGetFuture : CompletableFuture&lt;?&gt; to entry : CacheEntry in method protected handleNonTxWriteCommand(ctx InvocationContext, command AbstractDataWriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36L321">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R206">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -484,20 +498,6 @@
                                 <td><i>Change Variable Type	aInterceptor : ActivationInterceptor to aInterceptor : CacheLoaderInterceptor in method public call() : Map&lt;String,Number&gt; in class org.infinispan.stats.impl.ClusterCacheStatsImpl.DistributedCacheStatsCallable</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-cb130c1ca09d594e1dd93484448ddf54L688">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-cb130c1ca09d594e1dd93484448ddf54R746">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	requestedKeys : Set&lt;Object&gt; to owners : List&lt;Address&gt; in method private getKeysByOwner(ctx InvocationContext, keys Collection&lt;?&gt;, ch ConsistentHash, availableKeys List&lt;Object&gt;) : Map&lt;Address,List&lt;Object&gt;&gt; in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36L473">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R529">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	remoteGetFuture : CompletableFuture&lt;?&gt; to entry : CacheEntry in method protected handleNonTxWriteCommand(ctx InvocationContext, command AbstractDataWriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36L321">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R206">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -556,6 +556,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	protected checkTopologyId(command TopologyAffectedCommand) : CacheTopology extracted from public visitGetAllCommand(ctx InvocationContext, command GetAllCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private addVersionRead(rCtx TxInvocationContext, cacheEntry CacheEntry, key Object) : void extracted from private setSkipRemoteGetsAndInvokeNextForWriteCommand(ctx InvocationContext, command WriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private getKeysByOwner(ctx InvocationContext, keys Collection&lt;?&gt;, ch ConsistentHash, availableKeys List&lt;Object&gt;) : Map&lt;Address,List&lt;Object&gt;&gt; extracted from public visitGetAllCommand(ctx InvocationContext, command GetAllCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -662,27 +683,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	protected checkTopologyId(command TopologyAffectedCommand) : CacheTopology extracted from public visitGetAllCommand(ctx InvocationContext, command GetAllCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private addVersionRead(rCtx TxInvocationContext, cacheEntry CacheEntry, key Object) : void extracted from private setSkipRemoteGetsAndInvokeNextForWriteCommand(ctx InvocationContext, command WriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getKeysByOwner(ctx InvocationContext, keys Collection&lt;?&gt;, ch ConsistentHash, availableKeys List&lt;Object&gt;) : Map&lt;Address,List&lt;Object&gt;&gt; extracted from public visitGetAllCommand(ctx InvocationContext, command GetAllCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -693,6 +693,90 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-31" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.write.ReplaceCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9c4d89c6bbb072789a9fc95d72bdee03L66">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9c4d89c6bbb072789a9fc95d72bdee03R66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.write.ApplyDeltaCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fdb590f8975c193ae30116682ec43ea2L125">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fdb590f8975c193ae30116682ec43ea2R125">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.read.GetCacheEntryCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-8fe371816739fdbc6c3312752037c04bL41">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-8fe371816739fdbc6c3312752037c04bR41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.WriteOnlyManyEntriesCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-63a0a6ca5973e166b4384ce00b62f628L114">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-63a0a6ca5973e166b4384ce00b62f628R119">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.WriteOnlyKeyCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-3374b83f123e7f8acd1f9f2f74b3db6eL69">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-3374b83f123e7f8acd1f9f2f74b3db6eR69">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.WriteOnlyKeyValueCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-bd05016cf582fe4ee27d1ef59ee6f3dbL90">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-bd05016cf582fe4ee27d1ef59ee6f3dbR90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public alwaysReadsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.VisitableCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-ddacffbd72039bd22a316fb643026be5L55">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-ddacffbd72039bd22a316fb643026be5R50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public alwaysReadsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.ReadOnlyKeyCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fd70c9eca13a159f1b76d9c1ea54d247L74">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fd70c9eca13a159f1b76d9c1ea54d247R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.remote.GetKeysInGroupCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d0e0d6b04cabec3e0681078e1cc4aefeL107">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d0e0d6b04cabec3e0681078e1cc4aefeR107">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public testScenario_021_11() : void renamed to public testScenario_021_12() : void in class org.infinispan.statetransfer.RemoteGetDuringStateTransferTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-18dcdc6816efd205860cf252d14d2694L202">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-18dcdc6816efd205860cf252d14d2694R215">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private setSkipRemoteGetsAndInvokeNextForWriteCommand(ctx InvocationContext, command WriteCommand) : BasicInvocationStage renamed to private setSkipRemoteGetsAndInvokeNextForManyEntriesCommand(ctx InvocationContext, command WriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d7e74cc6236d782d324013d36fc08314L612">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d7e74cc6236d782d324013d36fc08314R616">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.write.ClearCommand</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-aeee3a4a6c8676b87b6a01883b34b92cL129">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-aeee3a4a6c8676b87b6a01883b34b92cR129">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -827,90 +911,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R296">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.write.ReplaceCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9c4d89c6bbb072789a9fc95d72bdee03L66">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9c4d89c6bbb072789a9fc95d72bdee03R66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.write.ApplyDeltaCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fdb590f8975c193ae30116682ec43ea2L125">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fdb590f8975c193ae30116682ec43ea2R125">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.read.GetCacheEntryCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-8fe371816739fdbc6c3312752037c04bL41">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-8fe371816739fdbc6c3312752037c04bR41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.WriteOnlyManyEntriesCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-63a0a6ca5973e166b4384ce00b62f628L114">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-63a0a6ca5973e166b4384ce00b62f628R119">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.WriteOnlyKeyCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-3374b83f123e7f8acd1f9f2f74b3db6eL69">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-3374b83f123e7f8acd1f9f2f74b3db6eR69">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.WriteOnlyKeyValueCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-bd05016cf582fe4ee27d1ef59ee6f3dbL90">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-bd05016cf582fe4ee27d1ef59ee6f3dbR90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public alwaysReadsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.VisitableCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-ddacffbd72039bd22a316fb643026be5L55">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-ddacffbd72039bd22a316fb643026be5R50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public alwaysReadsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.functional.ReadOnlyKeyCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fd70c9eca13a159f1b76d9c1ea54d247L74">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-fd70c9eca13a159f1b76d9c1ea54d247R68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.remote.GetKeysInGroupCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d0e0d6b04cabec3e0681078e1cc4aefeL107">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d0e0d6b04cabec3e0681078e1cc4aefeR107">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public testScenario_021_11() : void renamed to public testScenario_021_12() : void in class org.infinispan.statetransfer.RemoteGetDuringStateTransferTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-18dcdc6816efd205860cf252d14d2694L202">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-18dcdc6816efd205860cf252d14d2694R215">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private setSkipRemoteGetsAndInvokeNextForWriteCommand(ctx InvocationContext, command WriteCommand) : BasicInvocationStage renamed to private setSkipRemoteGetsAndInvokeNextForManyEntriesCommand(ctx InvocationContext, command WriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d7e74cc6236d782d324013d36fc08314L612">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-d7e74cc6236d782d324013d36fc08314R616">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public readsExistingValues() : boolean renamed to public loadType() : LoadType in class org.infinispan.commands.write.ClearCommand</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-aeee3a4a6c8676b87b6a01883b34b92cL129">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-aeee3a4a6c8676b87b6a01883b34b92cR129">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -949,6 +949,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Pull Up Method	public undelete(doUndelete boolean) : boolean from class org.infinispan.container.entries.ClearCacheEntry to public undelete(doUndelete boolean) : boolean from class org.infinispan.container.entries.CacheEntry</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-3dfcd9d89093454cdfe21fd47ddcf3d2L137">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-4d19d8c11b6f1cb76bd8dc0c66145d91R148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Pull Up Method	public undelete(doUndelete boolean) : boolean from class org.infinispan.container.entries.NullCacheEntry to public undelete(doUndelete boolean) : boolean from class org.infinispan.container.entries.CacheEntry</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-f0c572bd318d7992479c627bda9cdd5dL127">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-4d19d8c11b6f1cb76bd8dc0c66145d91R148">To</a></td>
@@ -959,13 +966,6 @@
                                 <td><i>Pull Up Method	public visitReadOnlyKeyCommand(ctx InvocationContext, command ReadOnlyKeyCommand) : BasicInvocationStage from class org.infinispan.interceptors.distribution.NonTxDistributionInterceptor to public visitReadOnlyKeyCommand(ctx InvocationContext, command ReadOnlyKeyCommand) : BasicInvocationStage from class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-e8990846a04616d3a99ba4468ebc42faL200">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R698">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public undelete(doUndelete boolean) : boolean from class org.infinispan.container.entries.ClearCacheEntry to public undelete(doUndelete boolean) : boolean from class org.infinispan.container.entries.CacheEntry</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-3dfcd9d89093454cdfe21fd47ddcf3d2L137">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-4d19d8c11b6f1cb76bd8dc0c66145d91R148">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1076,27 +1076,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	protected remoteGetBeforeWrite(ctx InvocationContext, command AbstractDataWriteCommand, key Object, isWrite boolean) : CompletableFuture&lt;?&gt; inlined to protected handleNonTxWriteCommand(ctx InvocationContext, command AbstractDataWriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Method	protected valueIsMissing(entry CacheEntry) : boolean inlined to private visitGetCommand(ctx InvocationContext, command AbstractDataCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Method	package valueUnchanged(e MVCCEntry&lt;K,V&gt;, prevValue V, value V) : boolean inlined to public perform(ctx InvocationContext) : Object in class org.infinispan.commands.functional.ReadWriteKeyValueCommand</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Inline Method	private wrapEntryForReplaceIfNeeded(ctx InvocationContext, command ReplaceCommand) : void inlined to public visitReplaceCommand(ctx InvocationContext, command ReplaceCommand) : BasicInvocationStage in class org.infinispan.interceptors.impl.EntryWrappingInterceptor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -1112,6 +1091,27 @@
                             <tr>
                                 <td></td>
                                 <td><i>Inline Method	private shouldAttemptLookup(e CacheEntry) : boolean inlined to private skipLoad(cmd FlagAffectedCommand, key Object, ctx InvocationContext) : boolean in class org.infinispan.interceptors.impl.CacheLoaderInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Method	protected remoteGetBeforeWrite(ctx InvocationContext, command AbstractDataWriteCommand, key Object, isWrite boolean) : CompletableFuture&lt;?&gt; inlined to protected handleNonTxWriteCommand(ctx InvocationContext, command AbstractDataWriteCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Method	protected valueIsMissing(entry CacheEntry) : boolean inlined to private visitGetCommand(ctx InvocationContext, command AbstractDataCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Method	package valueUnchanged(e MVCCEntry&lt;K,V&gt;, prevValue V, value V) : boolean inlined to public perform(ctx InvocationContext) : Object in class org.infinispan.commands.functional.ReadWriteKeyValueCommand</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -1488,13 +1488,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	protected checkTopologyId(command TopologyAffectedCommand) : CacheTopology extracted from private handleLocalPutMapCommand(ctx InvocationContext, command PutMapCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor &amp; moved to class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract And Move Method	protected checkEvent(event CacheEntryEvent&lt;Object,String&gt;, key MagicKey, isCreated boolean, isRetried boolean) : void extracted from public testPrimaryOwnerGoesDownAfterBackupRaisesEvent() : void in class org.infinispan.notifications.cachelistener.cluster.ClusterListenerReplTest &amp; moved to class org.infinispan.notifications.cachelistener.cluster.AbstractClusterListenerNonTxTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -1528,6 +1521,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	protected checkTopologyId(command TopologyAffectedCommand) : CacheTopology extracted from private handleLocalPutMapCommand(ctx InvocationContext, command PutMapCommand) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor &amp; moved to class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1538,6 +1538,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	owners : List&lt;Address&gt; to distributionInfo : DistributionInfo in method private localWriteInvocation(context InvocationContext, command DataWriteCommand, distributionInfo DistributionInfo) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L248">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R252">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	stage : BasicInvocationStage to ignored : BasicInvocationStage in method private primaryReturnHandler(ignored BasicInvocationStage, ctx InvocationContext, visitableCommand VisitableCommand, localResult Object) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36L336">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R296">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	owners : List&lt;Address&gt; to distributionInfo : DistributionInfo in method private primaryOwnerWrite(context InvocationContext, command DataWriteCommand, distributionInfo DistributionInfo) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L215">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R220">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1600,27 +1621,6 @@
                                 <td><i>Rename Parameter	skipRead : boolean to isOwner : boolean in method public wrapEntryForWriting(ctx InvocationContext, key Object, isOwner boolean) : void in class org.infinispan.container.EntryFactoryImpl</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-947380e8bb4b527ee0003b3b7bd4e2b8L82">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-947380e8bb4b527ee0003b3b7bd4e2b8R95">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	owners : List&lt;Address&gt; to distributionInfo : DistributionInfo in method private localWriteInvocation(context InvocationContext, command DataWriteCommand, distributionInfo DistributionInfo) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L248">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R252">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	stage : BasicInvocationStage to ignored : BasicInvocationStage in method private primaryReturnHandler(ignored BasicInvocationStage, ctx InvocationContext, visitableCommand VisitableCommand, localResult Object) : BasicInvocationStage in class org.infinispan.interceptors.distribution.BaseDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36L336">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-9dbc3388fdfc6a1822034f46c08c7f36R296">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	owners : List&lt;Address&gt; to distributionInfo : DistributionInfo in method private primaryOwnerWrite(context InvocationContext, command DataWriteCommand, distributionInfo DistributionInfo) : BasicInvocationStage in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L215">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/384efa685d98403e598261925ba7615bac593d1a?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R220">To</a></td>
                             </tr>
                             
                             </tbody>

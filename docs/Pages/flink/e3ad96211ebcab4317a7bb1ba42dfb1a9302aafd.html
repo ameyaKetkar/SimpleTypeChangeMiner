@@ -202,16 +202,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	localJobManagerAddressPromise : Promise&lt;String&gt; to localJobManagerAddressPromise : Future&lt;String&gt; in method public StaticFileServerHandler(retriever JobManagerRetriever, localJobManagerAddressPromise Future&lt;String&gt;, timeout FiniteDuration, rootPath File) in class org.apache.flink.runtime.webmonitor.files.StaticFileServerHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061L121">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061R127">To</a></td>
+                                <td><i>Change Parameter Type	localJobManagerAddressPromise : Promise&lt;String&gt; to localJobManagerAddressFuture : Future&lt;String&gt; in method public RuntimeMonitorHandler(handler RequestHandler, retriever JobManagerRetriever, localJobManagerAddressFuture Future&lt;String&gt;, timeout FiniteDuration) in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-64aead7a63a8fc4d42763b78e5dfd362L64">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-64aead7a63a8fc4d42763b78e5dfd362R73">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	localJobManagerAddressPromise : Promise&lt;String&gt; to localJobManagerAddressFuture : Future&lt;String&gt; in method public RuntimeMonitorHandler(handler RequestHandler, retriever JobManagerRetriever, localJobManagerAddressFuture Future&lt;String&gt;, timeout FiniteDuration) in class org.apache.flink.runtime.webmonitor.RuntimeMonitorHandler</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-64aead7a63a8fc4d42763b78e5dfd362L64">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-64aead7a63a8fc4d42763b78e5dfd362R73">To</a></td>
+                                <td><i>Change Parameter Type	localJobManagerAddressPromise : Promise&lt;String&gt; to localJobManagerAddressPromise : Future&lt;String&gt; in method public StaticFileServerHandler(retriever JobManagerRetriever, localJobManagerAddressPromise Future&lt;String&gt;, timeout FiniteDuration, rootPath File) in class org.apache.flink.runtime.webmonitor.files.StaticFileServerHandler</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061L121">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-bc5bdfb10ffeb07eba259d18bfbe0061R127">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -224,6 +224,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	leaderGateway : ActorGateway to gatewayPort : Tuple2&lt;ActorGateway,Integer&gt; in method public getJobManagerGatewayAndWebPort() : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL96">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR91">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -244,13 +251,6 @@
                                 <td><i>Rename Variable	promise : Tuple2&lt;Promise&lt;ActorGateway&gt;,Promise&lt;Integer&gt;&gt; to gatewayPortFuture : Future&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in method public getJobManagerGatewayAndWebPort() : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL87">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	leaderGateway : ActorGateway to gatewayPort : Tuple2&lt;ActorGateway,Integer&gt; in method public getJobManagerGatewayAndWebPort() : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL96">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR91">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -298,6 +298,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	leaderGateway : ActorGateway to gatewayPort : Tuple2&lt;ActorGateway,Integer&gt; in method public getJobManagerGatewayAndWebPort() : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL83">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR91">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	gatewayPromise : Promise&lt;ActorGateway&gt; to leaderGatewayPortPromise : Promise&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in method public notifyLeaderAddress(leaderAddress String, leaderSessionID UUID) : void in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL118">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR132">To</a></td>
@@ -315,13 +322,6 @@
                                 <td><i>Change Variable Type	promise : Tuple2&lt;Promise&lt;ActorGateway&gt;,Promise&lt;Integer&gt;&gt; to gatewayPortFuture : Future&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in method public getJobManagerGatewayAndWebPort() : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL83">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	leaderGateway : ActorGateway to gatewayPort : Tuple2&lt;ActorGateway,Integer&gt; in method public getJobManagerGatewayAndWebPort() : Option&lt;Tuple2&lt;ActorGateway,Integer&gt;&gt; in class org.apache.flink.runtime.webmonitor.JobManagerRetriever</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dL83">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e3ad96211ebcab4317a7bb1ba42dfb1a9302aafd?diff=split#diff-e7f5640bf8ca911f3dbaa8ed43f9120dR91">To</a></td>
                             </tr>
                             
                             </tbody>

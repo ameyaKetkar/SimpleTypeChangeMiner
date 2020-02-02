@@ -197,13 +197,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Attribute	private projection : String[] from class org.infinispan.query.dsl.embedded.impl.EmbeddedQuery to protected projection : String[] from class org.infinispan.query.dsl.impl.BaseQuery</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8fec8b484d0e96305d0946e085ce1718L38">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-4de941554862878c77c5396ba08c751dR16">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Pull Up Attribute	private results : List from class org.infinispan.query.dsl.embedded.impl.EmbeddedQuery to private results : List from class org.infinispan.query.dsl.embedded.impl.BaseEmbeddedQuery</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8fec8b484d0e96305d0946e085ce1718L34">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-7ff45ca43e25226512676332197578eaR34">To</a></td>
@@ -242,6 +235,13 @@
                                 <td><i>Pull Up Attribute	private cache : AdvancedCache&lt;?,?&gt; from class org.infinispan.query.dsl.embedded.impl.EmbeddedQuery to protected cache : AdvancedCache&lt;?,?&gt; from class org.infinispan.query.dsl.embedded.impl.BaseEmbeddedQuery</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8fec8b484d0e96305d0946e085ce1718L30">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-7ff45ca43e25226512676332197578eaR29">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Attribute	private projection : String[] from class org.infinispan.query.dsl.embedded.impl.EmbeddedQuery to protected projection : String[] from class org.infinispan.query.dsl.impl.BaseQuery</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8fec8b484d0e96305d0946e085ce1718L38">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-4de941554862878c77c5396ba08c751dR16">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -357,20 +357,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	projection : String[] in method private buildLuceneQuery(cache AdvancedCache&lt;?,?&gt;, isCompatMode boolean, serCtx SerializationContext, jpqlString String, startOffset long, maxResults int) : Query from class org.infinispan.query.remote.QueryFacadeImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	metadataAdapter : MetadataAdapter&lt;TypeMetadata,AttributeMetadata,AttributeId&gt; in method public getObjectFilter(jpaQuery String) : ObjectFilter from class org.infinispan.objectfilter.impl.BaseMatcher</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	projection : String[] in method public buildLuceneQuery(queryFactory QueryFactory, jpqlString String, startOffset long, maxResults int, additionalLuceneQuery Query) : LuceneQuery from class org.infinispan.query.dsl.embedded.impl.QueryEngine</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -379,6 +365,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	matcherImplClass : Class&lt;? extends Matcher&gt; in method public buildQuery(queryFactory QueryFactory, jpqlString String, startOffset long, maxResults int) : Query from class org.infinispan.query.dsl.embedded.impl.QueryEngine</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	projection : String[] in method private buildLuceneQuery(cache AdvancedCache&lt;?,?&gt;, isCompatMode boolean, serCtx SerializationContext, jpqlString String, startOffset long, maxResults int) : Query from class org.infinispan.query.remote.QueryFacadeImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	metadataAdapter : MetadataAdapter&lt;TypeMetadata,AttributeMetadata,AttributeId&gt; in method public getObjectFilter(jpaQuery String) : ObjectFilter from class org.infinispan.objectfilter.impl.BaseMatcher</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -421,6 +421,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private createAccount(id int) : AccountPB renamed to private createAccountPB(id int) : AccountPB in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819L319">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819R409">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public testEmbeddedQuery() : void renamed to public testEmbeddedLuceneQuery() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819L253">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819R281">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private executeIndexedQuery(cache AdvancedCache&lt;byte[],byte[]&gt;, cacheConfiguration Configuration, serCtx SerializationContext, request QueryRequest) : QueryResponse renamed to private buildLuceneQuery(cache AdvancedCache&lt;?,?&gt;, isCompatMode boolean, serCtx SerializationContext, jpqlString String, startOffset long, maxResults int) : Query in class org.infinispan.query.remote.QueryFacadeImpl</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8adab1b08cc0cabd2ef98a61322bb8d2L136">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8adab1b08cc0cabd2ef98a61322bb8d2R165">To</a></td>
@@ -438,20 +452,6 @@
                                 <td><i>Rename Method	public testEmbeddedQuery() : void renamed to public testEmbeddedLuceneQuery() : void in class org.infinispan.client.hotrod.marshall.NonIndexedEmbeddedCompatTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-20d6fd5702c382bf676012d8e673df4aL27">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-20d6fd5702c382bf676012d8e673df4aR27">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private createAccount(id int) : AccountPB renamed to private createAccountPB(id int) : AccountPB in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819L319">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819R409">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public testEmbeddedQuery() : void renamed to public testEmbeddedLuceneQuery() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819L253">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-b25c2049756cfbc8ac02a25ca4440819R281">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -513,20 +513,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	private createAccountPB() : AccountPB inlined to public testRemoteQuery() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Method	private createAccountPB() : AccountPB inlined to public testEmbeddedLuceneQuery() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Inline Method	private createAccountPB() : AccountPB inlined to public testPutAndGet() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -535,6 +521,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Inline Method	private executeNonIndexedQuery(cache AdvancedCache&lt;byte[],byte[]&gt;, cacheConfiguration Configuration, serCtx SerializationContext, request QueryRequest) : QueryResponse inlined to public query(cache AdvancedCache&lt;byte[],byte[]&gt;, query byte[]) : byte[] in class org.infinispan.query.remote.QueryFacadeImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Method	private createAccountPB() : AccountPB inlined to public testRemoteQuery() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Method	private createAccountPB() : AccountPB inlined to public testEmbeddedLuceneQuery() : void in class org.infinispan.client.hotrod.marshall.EmbeddedCompatTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -588,6 +588,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	normalizedFilter : BooleanExpr to query : BooleanExpr in method public addFilter(queryString String, query BooleanExpr, projection List&lt;String&gt;, sortFields List&lt;SortField&gt;, callback FilterCallback, eventTypes Object[]) : FilterSubscriptionImpl&lt;TypeMetadata,AttributeMetadata,AttributeId&gt; in class org.infinispan.objectfilter.impl.FilterRegistry</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-9fe50e7882855067c26f0eeb386ed54bL74">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-9fe50e7882855067c26f0eeb386ed54bR77">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	normalizedFilter : BooleanExpr to query : BooleanExpr in method public ObjectFilterImpl(matcher BaseMatcher&lt;TypeMetadata,AttributeMetadata,AttributeId&gt;, metadataAdapter MetadataAdapter&lt;TypeMetadata,AttributeMetadata,AttributeId&gt;, queryString String, query BooleanExpr, projections List&lt;String&gt;, sortFields List&lt;SortField&gt;) in class org.infinispan.objectfilter.impl.ObjectFilterImpl</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-48a1c5577b670aee49a67801543150bbL35">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-48a1c5577b670aee49a67801543150bbR35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	queryString : String to jpqlString : String in method private transformJpaToLucene(isCompatMode boolean, serCtx SerializationContext, jpqlString String, searchFactory SearchIntegrator) : LuceneQueryParsingResult in class org.infinispan.query.remote.QueryFacadeImpl</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8adab1b08cc0cabd2ef98a61322bb8d2L192">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-8adab1b08cc0cabd2ef98a61322bb8d2R218">To</a></td>
@@ -605,20 +619,6 @@
                                 <td><i>Rename Parameter	classLoader : ClassLoader to userClassLoader : ClassLoader in method public ReflectionEntityNamesResolver(userClassLoader ClassLoader) in class org.infinispan.objectfilter.impl.hql.ReflectionEntityNamesResolver</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-bb284a4f16fa2cff2de69f2ca6340f59L13">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-bb284a4f16fa2cff2de69f2ca6340f59R13">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	normalizedFilter : BooleanExpr to query : BooleanExpr in method public addFilter(queryString String, query BooleanExpr, projection List&lt;String&gt;, sortFields List&lt;SortField&gt;, callback FilterCallback, eventTypes Object[]) : FilterSubscriptionImpl&lt;TypeMetadata,AttributeMetadata,AttributeId&gt; in class org.infinispan.objectfilter.impl.FilterRegistry</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-9fe50e7882855067c26f0eeb386ed54bL74">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-9fe50e7882855067c26f0eeb386ed54bR77">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	normalizedFilter : BooleanExpr to query : BooleanExpr in method public ObjectFilterImpl(matcher BaseMatcher&lt;TypeMetadata,AttributeMetadata,AttributeId&gt;, metadataAdapter MetadataAdapter&lt;TypeMetadata,AttributeMetadata,AttributeId&gt;, queryString String, query BooleanExpr, projections List&lt;String&gt;, sortFields List&lt;SortField&gt;) in class org.infinispan.objectfilter.impl.ObjectFilterImpl</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-48a1c5577b670aee49a67801543150bbL35">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/35b6c869546a7968b6fd2f640add6eea87e03c22?diff=split#diff-48a1c5577b670aee49a67801543150bbR35">To</a></td>
                             </tr>
                             
                             </tbody>

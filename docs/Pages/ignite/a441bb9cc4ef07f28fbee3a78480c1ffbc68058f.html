@@ -206,13 +206,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public toCacheKeyObject(obj Object, includePartition boolean) : KeyCacheObject inlined to public toCacheKeyObject(obj Object) : KeyCacheObject in class org.apache.ignite.internal.processors.cache.GridCacheContext</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Inline Method	public cacheKeysView(keys Collection&lt;?&gt;, includePartition boolean) : Collection&lt;KeyCacheObject&gt; inlined to public cacheKeysView(keys Collection&lt;?&gt;) : Collection&lt;KeyCacheObject&gt; in class org.apache.ignite.internal.processors.cache.GridCacheContext</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -221,6 +214,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Inline Method	private primaryAndBackups(aff AffinityInfo, key K) : List&lt;ClusterNode&gt; inlined to public mapKeyToPrimaryAndBackups(cacheName String, key K, topVer AffinityTopologyVersion) : List&lt;ClusterNode&gt; in class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Inline Method	public toCacheKeyObject(obj Object, includePartition boolean) : KeyCacheObject inlined to public toCacheKeyObject(obj Object) : KeyCacheObject in class org.apache.ignite.internal.processors.cache.GridCacheContext</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -238,16 +238,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	aff : Affinity&lt;Integer&gt; to aff : Affinity&lt;Object&gt; in method private checkCache(cacheName String, expNodes int) : void in class org.apache.ignite.cache.affinity.AffinityClientNodeSelfTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-8dbd8a47c60ce14e1c16ce114b6057b1L153">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-8dbd8a47c60ce14e1c16ce114b6057b1R184">To</a></td>
+                                <td><i>Change Variable Type	bObj : BinaryObjectImpl to key : KeyCacheObject in method public toCacheKeyObject(ctx CacheObjectContext, cctx GridCacheContext, obj Object, userObj boolean) : KeyCacheObject in class org.apache.ignite.internal.processors.cache.binary.CacheObjectBinaryProcessorImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-fbcf2bbf68a1ae967c15e2ec5794938dL775">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-fbcf2bbf68a1ae967c15e2ec5794938dR782">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	bObj : BinaryObjectImpl to key : KeyCacheObject in method public toCacheKeyObject(ctx CacheObjectContext, cctx GridCacheContext, obj Object, userObj boolean) : KeyCacheObject in class org.apache.ignite.internal.processors.cache.binary.CacheObjectBinaryProcessorImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-fbcf2bbf68a1ae967c15e2ec5794938dL775">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-fbcf2bbf68a1ae967c15e2ec5794938dR782">To</a></td>
+                                <td><i>Change Variable Type	aff : Affinity&lt;Integer&gt; to aff : Affinity&lt;Object&gt; in method private checkCache(cacheName String, expNodes int) : void in class org.apache.ignite.cache.affinity.AffinityClientNodeSelfTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-8dbd8a47c60ce14e1c16ce114b6057b1L153">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/a441bb9cc4ef07f28fbee3a78480c1ffbc68058f?diff=split#diff-8dbd8a47c60ce14e1c16ce114b6057b1R184">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -299,6 +299,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract And Move Method	private affinityKey(key Object) : Object extracted from public affinityKey(cacheName String, key Object) : Object in class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor &amp; moved to class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor.AffinityInfo</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract And Move Method	private affinityKey(key Object) : Object extracted from public affinityKey(key K) : Object in class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor.CacheAffinityProxy &amp; moved to class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor.AffinityInfo</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -307,13 +314,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public toCacheKeyObject(ctx CacheObjectContext, cctx GridCacheContext, obj Object, userObj boolean) : KeyCacheObject extracted from public toCacheKeyObject(ctx CacheObjectContext, obj Object, userObj boolean, partition int) : KeyCacheObject in class org.apache.ignite.internal.processors.cache.binary.CacheObjectBinaryProcessorImpl &amp; moved to class org.apache.ignite.internal.processors.cacheobject.IgniteCacheObjectProcessorImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	private affinityKey(key Object) : Object extracted from public affinityKey(cacheName String, key Object) : Object in class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor &amp; moved to class org.apache.ignite.internal.processors.affinity.GridAffinityProcessor.AffinityInfo</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

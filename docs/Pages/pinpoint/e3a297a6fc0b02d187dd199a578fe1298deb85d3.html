@@ -460,6 +460,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	agentStatCollector : AgentStatMetricCollector&lt;TAgentStat&gt; to agentStatCollector : AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt; in method public CollectJob(dataSender DataSender, agentId String, agentStartTimestamp long, agentStatCollector AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt;, numCollectionsPerBatch int) in class com.navercorp.pinpoint.profiler.monitor.CollectJob</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3L47">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	cpuLoadMetricCollector : AgentStatMetricCollector&lt;TCpuLoad&gt; to cpuLoadMetricCollector : AgentStatMetricCollector&lt;CpuLoadMetricSnapshot&gt; in method public AgentStatCollector(agentId String, agentStartTimestamp long, jvmGcMetricCollector AgentStatMetricCollector&lt;JvmGcMetricSnapshot&gt;, cpuLoadMetricCollector AgentStatMetricCollector&lt;CpuLoadMetricSnapshot&gt;, transactionMetricCollector AgentStatMetricCollector&lt;TransactionMetricSnapshot&gt;, activeTraceMetricCollector AgentStatMetricCollector&lt;ActiveTraceHistogram&gt;, dataSourceMetricCollector AgentStatMetricCollector&lt;DataSourceMetricSnapshot&gt;, responseTimeMetricCollector AgentStatMetricCollector&lt;ResponseTimeValue&gt;, deadlockMetricCollector AgentStatMetricCollector&lt;DeadlockMetricSnapshot&gt;, fileDescriptorMetricCollector AgentStatMetricCollector&lt;FileDescriptorMetricSnapshot&gt;, bufferMetricCollector AgentStatMetricCollector&lt;BufferMetricSnapshot&gt;) in class com.navercorp.pinpoint.profiler.monitor.collector.AgentStatCollector</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-cf347e2b03160eef6ce0898ef1011613L51">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-cf347e2b03160eef6ce0898ef1011613R56">To</a></td>
@@ -577,13 +584,6 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-5af00b791849d911ec3c0709d2d168eeR100">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	agentStatCollector : AgentStatMetricCollector&lt;TAgentStat&gt; to agentStatCollector : AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt; in method public CollectJob(dataSender DataSender, agentId String, agentStartTimestamp long, agentStatCollector AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt;, numCollectionsPerBatch int) in class com.navercorp.pinpoint.profiler.monitor.CollectJob</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3L47">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3R49">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -594,6 +594,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	jvmGcDetailed : TJvmGcDetailed to jvmGcDetailedMetricSnapshot : JvmGcDetailedMetricSnapshot in method public collect() : JvmGcMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.jvmgc.DetailedJvmGcMetricCollector</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcL61">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	jvmGc : TJvmGc to jvmGcMetricSnapshot : JvmGcMetricSnapshot in method public collect() : JvmGcMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.jvmgc.DetailedJvmGcMetricCollector</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcL57">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcR59">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -616,20 +630,6 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3c35c41b7181724a6562f06820e61c92R54">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	jvmGcDetailed : TJvmGcDetailed to jvmGcDetailedMetricSnapshot : JvmGcDetailedMetricSnapshot in method public collect() : JvmGcMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.jvmgc.DetailedJvmGcMetricCollector</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcL61">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcR63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	jvmGc : TJvmGc to jvmGcMetricSnapshot : JvmGcMetricSnapshot in method public collect() : JvmGcMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.jvmgc.DetailedJvmGcMetricCollector</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcL57">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcR59">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -640,6 +640,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-25" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	AgentStatMetricCollector&lt;TAgentStat&gt; to AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt; in method private mockAgentStatMetricCollector() : AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt; in class com.navercorp.pinpoint.profiler.monitor.CollectJobTest</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-4e6ead24dc5794ac9b17ee045466f47eL48">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-4e6ead24dc5794ac9b17ee045466f47eR48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	TThreadDump to ThreadDumpMetricSnapshot in method public createTThreadDump(threadId long) : ThreadDumpMetricSnapshot in class com.navercorp.pinpoint.profiler.util.ThreadDumpUtils</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-12c6fcb3432ec4a01852232f733f9191L69">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-12c6fcb3432ec4a01852232f733f9191R65">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	TTransaction to TransactionMetricSnapshot in method public collect() : TransactionMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.transaction.DefaultTransactionMetricCollector</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-422df0d6789833207fe15626aa193428L37">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-422df0d6789833207fe15626aa193428R36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	AgentStatMetricCollector&lt;TDirectBuffer&gt; to AgentStatMetricCollector&lt;BufferMetricSnapshot&gt; in method public get() : AgentStatMetricCollector&lt;BufferMetricSnapshot&gt; in class com.navercorp.pinpoint.profiler.context.provider.stat.buffer.BufferMetricCollectorProvider</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-210d04fb6b40bb63c8d9f973cc02b725L41">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-210d04fb6b40bb63c8d9f973cc02b725R40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	AgentStatMetricCollector&lt;TDeadlock&gt; to AgentStatMetricCollector&lt;DeadlockMetricSnapshot&gt; in method public get() : AgentStatMetricCollector&lt;DeadlockMetricSnapshot&gt; in class com.navercorp.pinpoint.profiler.context.provider.stat.deadlock.DeadlockMetricCollectorProvider</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-de69419891594fc4f1d150b5480c015fL40">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-de69419891594fc4f1d150b5480c015fR40">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -781,41 +816,6 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-a9b3a0e0e71cbe0f7c4d01a909bb8371R40">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	AgentStatMetricCollector&lt;TAgentStat&gt; to AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt; in method private mockAgentStatMetricCollector() : AgentStatMetricCollector&lt;AgentStatMetricSnapshot&gt; in class com.navercorp.pinpoint.profiler.monitor.CollectJobTest</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-4e6ead24dc5794ac9b17ee045466f47eL48">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-4e6ead24dc5794ac9b17ee045466f47eR48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	TThreadDump to ThreadDumpMetricSnapshot in method public createTThreadDump(threadId long) : ThreadDumpMetricSnapshot in class com.navercorp.pinpoint.profiler.util.ThreadDumpUtils</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-12c6fcb3432ec4a01852232f733f9191L69">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-12c6fcb3432ec4a01852232f733f9191R65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	TTransaction to TransactionMetricSnapshot in method public collect() : TransactionMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.transaction.DefaultTransactionMetricCollector</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-422df0d6789833207fe15626aa193428L37">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-422df0d6789833207fe15626aa193428R36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	AgentStatMetricCollector&lt;TDirectBuffer&gt; to AgentStatMetricCollector&lt;BufferMetricSnapshot&gt; in method public get() : AgentStatMetricCollector&lt;BufferMetricSnapshot&gt; in class com.navercorp.pinpoint.profiler.context.provider.stat.buffer.BufferMetricCollectorProvider</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-210d04fb6b40bb63c8d9f973cc02b725L41">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-210d04fb6b40bb63c8d9f973cc02b725R40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	AgentStatMetricCollector&lt;TDeadlock&gt; to AgentStatMetricCollector&lt;DeadlockMetricSnapshot&gt; in method public get() : AgentStatMetricCollector&lt;DeadlockMetricSnapshot&gt; in class com.navercorp.pinpoint.profiler.context.provider.stat.deadlock.DeadlockMetricCollectorProvider</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-de69419891594fc4f1d150b5480c015fL40">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-de69419891594fc4f1d150b5480c015fR40">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -826,6 +826,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-26" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	transactionCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TTransaction&gt;&gt; to transactionCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TransactionMetricSnapshot&gt;&gt; in method protected configure() : void in class com.navercorp.pinpoint.profiler.context.module.ThriftStatsModule</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96L50">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	jvmGcDetailed : TJvmGcDetailed to jvmGcDetailedMetricSnapshot : JvmGcDetailedMetricSnapshot in method public collect() : JvmGcMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.jvmgc.DetailedJvmGcMetricCollector</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcL55">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	agentStat : TAgentStat to agentStat : AgentStatMetricSnapshot in method public run() : void in class com.navercorp.pinpoint.profiler.monitor.CollectJob</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3L62">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3R67">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	activeTraceCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TActiveTrace&gt;&gt; to activeTraceCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;ActiveTraceHistogram&gt;&gt; in method protected configure() : void in class com.navercorp.pinpoint.profiler.context.module.ThriftStatsModule</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96L50">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96R87">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	deadlock : TDeadlock to deadlock : DeadlockMetricSnapshot in method public collect() : DeadlockMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.deadlock.DefaultDeadlockMetricCollector</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-dcd7dcc95c68b6ef70b7cfed70c27a92L45">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-dcd7dcc95c68b6ef70b7cfed70c27a92R56">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -972,41 +1007,6 @@
                                 <td><i>Change Variable Type	bufferCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TDirectBuffer&gt;&gt; to bufferCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;BufferMetricSnapshot&gt;&gt; in method protected configure() : void in class com.navercorp.pinpoint.profiler.context.module.ThriftStatsModule</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96L50">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96R79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	transactionCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TTransaction&gt;&gt; to transactionCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TransactionMetricSnapshot&gt;&gt; in method protected configure() : void in class com.navercorp.pinpoint.profiler.context.module.ThriftStatsModule</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96L50">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	jvmGcDetailed : TJvmGcDetailed to jvmGcDetailedMetricSnapshot : JvmGcDetailedMetricSnapshot in method public collect() : JvmGcMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.jvmgc.DetailedJvmGcMetricCollector</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcL55">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-31c39d7121846522dbff5e5615a9debcR63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	agentStat : TAgentStat to agentStat : AgentStatMetricSnapshot in method public run() : void in class com.navercorp.pinpoint.profiler.monitor.CollectJob</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3L62">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-3a87dee8852ef3abf40d63950e9075f3R67">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	activeTraceCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;TActiveTrace&gt;&gt; to activeTraceCollector : TypeLiteral&lt;AgentStatMetricCollector&lt;ActiveTraceHistogram&gt;&gt; in method protected configure() : void in class com.navercorp.pinpoint.profiler.context.module.ThriftStatsModule</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96L50">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-09e986cace5a1b427bd22bbca3553a96R87">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	deadlock : TDeadlock to deadlock : DeadlockMetricSnapshot in method public collect() : DeadlockMetricSnapshot in class com.navercorp.pinpoint.profiler.monitor.collector.deadlock.DefaultDeadlockMetricCollector</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-dcd7dcc95c68b6ef70b7cfed70c27a92L45">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/e3a297a6fc0b02d187dd199a578fe1298deb85d3?diff=split#diff-dcd7dcc95c68b6ef70b7cfed70c27a92R56">To</a></td>
                             </tr>
                             
                             </tbody>

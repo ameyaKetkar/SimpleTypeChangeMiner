@@ -196,13 +196,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	connections : ConnectionManager to submitter : GroupSubmitter in method public GroupMessageClient(submitter GroupSubmitter) in class io.atomix.group.messaging.internal.GroupMessageClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-c0ca52f9c4d924061d033cdcad6a41e6L27">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-c0ca52f9c4d924061d033cdcad6a41e6R28">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	task : GroupTask to message : GroupMessage in method private onMessageEvent(message GroupMessage) : void in class io.atomix.group.internal.MembershipGroup</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e1be43c4de895dd9cadbdd3a43368f19L287">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e1be43c4de895dd9cadbdd3a43368f19R218">To</a></td>
@@ -271,6 +264,13 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR35">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	connections : ConnectionManager to submitter : GroupSubmitter in method public GroupMessageClient(submitter GroupSubmitter) in class io.atomix.group.messaging.internal.GroupMessageClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-c0ca52f9c4d924061d033cdcad6a41e6L27">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-c0ca52f9c4d924061d033cdcad6a41e6R28">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -281,6 +281,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public producer(name String) : TaskProducer&lt;T&gt; from class io.atomix.group.task.TaskClient to public producer(name String) : AbstractMessageProducer&lt;T&gt; from class io.atomix.group.messaging.internal.AbstractMessageClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-06c86331c1f4c4fee1d90fec51f3c22fL25">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public onAck(taskId long) : void from class io.atomix.group.task.internal.AbstractTaskProducer to public onAck(messageId long) : void from class io.atomix.group.messaging.internal.AbstractMessageProducer</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-d46bb3e3fe69889f56a97c84418c15e4L60">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baR60">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -324,20 +338,6 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baR72">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public producer(name String) : TaskProducer&lt;T&gt; from class io.atomix.group.task.TaskClient to public producer(name String) : AbstractMessageProducer&lt;T&gt; from class io.atomix.group.messaging.internal.AbstractMessageClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-06c86331c1f4c4fee1d90fec51f3c22fL25">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public onAck(taskId long) : void from class io.atomix.group.task.internal.AbstractTaskProducer to public onAck(messageId long) : void from class io.atomix.group.messaging.internal.AbstractMessageProducer</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-d46bb3e3fe69889f56a97c84418c15e4L60">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baR60">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -369,20 +369,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Class	io.atomix.group.task.TaskConsumer.Options moved and renamed to io.atomix.group.messaging.MessageProducer.DispatchPolicy</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	io.atomix.group.task.RoutingStrategy moved and renamed to io.atomix.group.messaging.MessageProducer.Consistency</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Rename Class	io.atomix.group.util.Submitter moved and renamed to io.atomix.group.internal.GroupSubmitter</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -398,6 +384,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Rename Class	io.atomix.group.messaging.internal.ConnectionManager moved and renamed to io.atomix.group.internal.GroupSubmitter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	io.atomix.group.task.TaskConsumer.Options moved and renamed to io.atomix.group.messaging.MessageProducer.DispatchPolicy</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	io.atomix.group.task.RoutingStrategy moved and renamed to io.atomix.group.messaging.MessageProducer.Consistency</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -433,13 +433,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	task : Task to message : Message in method public close() : void in class io.atomix.group.internal.GroupState.Member</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL542">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR533">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	task : Task to message : Message in method public submit(commit Commit&lt;GroupCommands.Submit&gt;) : void in class io.atomix.group.internal.GroupState</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL265">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR270">To</a></td>
@@ -466,6 +459,13 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-50a3bc2a27b46b6b68958ae098120354R70">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	task : Task to message : Message in method public close() : void in class io.atomix.group.internal.GroupState.Member</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL542">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR533">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -476,6 +476,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public task() : Object renamed to public message() : Object in class io.atomix.group.internal.GroupState.Message</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL636">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR627">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public topic() : String renamed to public type() : String in class io.atomix.group.messaging.internal.GroupMessage</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-262e7008fe0aa67fcfbe2df48f218286L60">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-262e7008fe0aa67fcfbe2df48f218286R72">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -547,20 +561,6 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-9a2bbf0f48a84c4ee9a98264506260c3R362">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public task() : Object renamed to public message() : Object in class io.atomix.group.internal.GroupState.Message</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL636">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR627">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public topic() : String renamed to public type() : String in class io.atomix.group.messaging.internal.GroupMessage</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-262e7008fe0aa67fcfbe2df48f218286L60">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-262e7008fe0aa67fcfbe2df48f218286R72">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -613,27 +613,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	TaskProducer&lt;T&gt; to AbstractMessageProducer&lt;T&gt; in method public producer(name String) : AbstractMessageProducer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-06c86331c1f4c4fee1d90fec51f3c22fL25">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	AbstractTaskConsumer&lt;T&gt; to AbstractMessageConsumer&lt;T&gt; in method public consumer(name String) : AbstractMessageConsumer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageService</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-72d283e0e51878cc54f1b577a3e3149eL39">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-6a6fc52fa5cd906260d86ea2a2312e2fR39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	AbstractTaskProducer&lt;T&gt; to AbstractMessageProducer&lt;T&gt; in method public producer(name String) : AbstractMessageProducer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageClient</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-f07bbfec6c90f5045e4213dcf21f222aL50">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR50">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	void to CompletableFuture&lt;Void&gt; in method public ack() : CompletableFuture&lt;Void&gt; in class io.atomix.group.messaging.internal.GroupMessage</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-262e7008fe0aa67fcfbe2df48f218286L79">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-262e7008fe0aa67fcfbe2df48f218286R86">To</a></td>
@@ -665,6 +644,27 @@
                                 <td><i>Change Return Type	MessageConsumer&lt;T&gt; to AbstractMessageConsumer&lt;T&gt; in method public consumer(name String, options MessageConsumer.Options) : AbstractMessageConsumer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageService</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-6a6fc52fa5cd906260d86ea2a2312e2fL39">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-6a6fc52fa5cd906260d86ea2a2312e2fR44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	TaskProducer&lt;T&gt; to AbstractMessageProducer&lt;T&gt; in method public producer(name String) : AbstractMessageProducer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-06c86331c1f4c4fee1d90fec51f3c22fL25">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	AbstractTaskConsumer&lt;T&gt; to AbstractMessageConsumer&lt;T&gt; in method public consumer(name String) : AbstractMessageConsumer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageService</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-72d283e0e51878cc54f1b577a3e3149eL39">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-6a6fc52fa5cd906260d86ea2a2312e2fR39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	AbstractTaskProducer&lt;T&gt; to AbstractMessageProducer&lt;T&gt; in method public producer(name String) : AbstractMessageProducer&lt;T&gt; in class io.atomix.group.messaging.internal.AbstractMessageClient</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-f07bbfec6c90f5045e4213dcf21f222aL50">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR50">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -726,20 +726,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	task : Task to message : Message in class io.atomix.group.internal.GroupState.Member</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL420">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR417">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	options : MessageProducer.Options to options : Options in class io.atomix.group.messaging.internal.AbstractMessageProducer</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baL27">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baR33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	tasks : Queue&lt;Task&gt; to messages : Queue&lt;Message&gt; in class io.atomix.group.internal.GroupState.Member</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL419">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR416">To</a></td>
@@ -752,6 +738,20 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-e09e7a2b597e08a88b99c72ab11966cfR32">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	task : Task to message : Message in class io.atomix.group.internal.GroupState.Member</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL420">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR417">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	options : MessageProducer.Options to options : Options in class io.atomix.group.messaging.internal.AbstractMessageProducer</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baL27">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-26276cb3c119e6ad2fad8e24eb4334baR33">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -762,13 +762,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	task : Task to message : Message in method public submit(message Message) : void in class io.atomix.group.internal.GroupState.Member</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL486">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR475">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -859,6 +852,13 @@
                                 <td><i>Rename Parameter	connections : ConnectionManager to submitter : GroupSubmitter in method public AbstractMessageService(submitter GroupSubmitter) in class io.atomix.group.messaging.internal.AbstractMessageService</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-6a6fc52fa5cd906260d86ea2a2312e2fL33">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-6a6fc52fa5cd906260d86ea2a2312e2fR33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	task : Task to message : Message in method public submit(message Message) : void in class io.atomix.group.internal.GroupState.Member</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dL486">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/54e7a446b8d6385a678087371a8c2e17c7076a60?diff=split#diff-ae192c9c495c44e4f7af71308fec534dR475">To</a></td>
                             </tr>
                             
                             </tbody>

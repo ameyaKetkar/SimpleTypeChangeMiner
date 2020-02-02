@@ -380,14 +380,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Merge Attribute	[out : OutputStream, outFd : FileDescriptor] to streams : ReplicaOutputStreams in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver</i></td>
+                                <td><i>Merge Attribute	[blockInFd : FileDescriptor, blockIn : InputStream, volumeRef : FsVolumeReference, checksumIn : DataInputStream] to ris : ReplicaInputStreams in class org.apache.hadoop.hdfs.server.datanode.BlockSender</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Merge Attribute	[blockInFd : FileDescriptor, blockIn : InputStream, volumeRef : FsVolumeReference, checksumIn : DataInputStream] to ris : ReplicaInputStreams in class org.apache.hadoop.hdfs.server.datanode.BlockSender</i></td>
+                                <td><i>Merge Attribute	[out : OutputStream, outFd : FileDescriptor] to streams : ReplicaOutputStreams in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -512,27 +512,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private copyBytes(in InputStream, out OutputStream, buffSize int) : void extracted from private breakHardlinks(file File, b Block) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private nativeCopyFileUnbuffered(srcFile File, destFile File, preserveFileDate boolean) : void extracted from public copyBlockdata(destination URI) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public getHardLinkCount(fileName File) : int extracted from public breakHardLinksIfNeeded() : boolean in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private getDataInputStream(f File, seekOffset long) : FileInputStream extracted from public getDataInputStream(seekOffset long) : InputStream in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -555,6 +534,27 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private replaceFile(src File, target File) : void extracted from private breakHardlinks(file File, b Block) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private copyBytes(in InputStream, out OutputStream, buffSize int) : void extracted from private breakHardlinks(file File, b Block) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private nativeCopyFileUnbuffered(srcFile File, destFile File, preserveFileDate boolean) : void extracted from public copyBlockdata(destination URI) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public getHardLinkCount(fileName File) : int extracted from public breakHardLinksIfNeeded() : boolean in class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -615,48 +615,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	public renameBlock(newBlockFile File) : void extracted from public moveReplicaFrom(oldReplicaInfo ReplicaInfo, newBlkFile File) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplicaInPipeline &amp; moved to class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public writeToDisk(b byte[], off int, len int) : long extracted from private receivePacket() : int in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public dropCacheBehindWrites(identifier String, offset long, len long, flags int) : void extracted from private manageWriterOsCache(offsetInBlock long) : void in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public closeDataStream() : void extracted from public close() : void in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public renameMeta(newMetaFile File) : void extracted from public moveReplicaFrom(oldReplicaInfo ReplicaInfo, newBlkFile File) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplicaInPipeline &amp; moved to class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public skipDataFully(len long) : void extracted from private validateIntegrityAndSetLength(blockFile File, genStamp long) : long in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract And Move Method	public readDataFully(buf byte[], off int, len int) : void extracted from private validateIntegrityAndSetLength(blockFile File, genStamp long) : long in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -693,6 +651,48 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract And Move Method	public closeStreams() : void extracted from public close() : void in class org.apache.hadoop.hdfs.server.datanode.BlockSender &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public renameBlock(newBlockFile File) : void extracted from public moveReplicaFrom(oldReplicaInfo ReplicaInfo, newBlkFile File) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplicaInPipeline &amp; moved to class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public writeToDisk(b byte[], off int, len int) : long extracted from private receivePacket() : int in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public dropCacheBehindWrites(identifier String, offset long, len long, flags int) : void extracted from private manageWriterOsCache(offsetInBlock long) : void in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public closeDataStream() : void extracted from public close() : void in class org.apache.hadoop.hdfs.server.datanode.BlockReceiver &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaOutputStreams</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public renameMeta(newMetaFile File) : void extracted from public moveReplicaFrom(oldReplicaInfo ReplicaInfo, newBlkFile File) : void in class org.apache.hadoop.hdfs.server.datanode.LocalReplicaInPipeline &amp; moved to class org.apache.hadoop.hdfs.server.datanode.LocalReplica</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public skipDataFully(len long) : void extracted from private validateIntegrityAndSetLength(blockFile File, genStamp long) : long in class org.apache.hadoop.hdfs.server.datanode.fsdataset.impl.BlockPoolSlice &amp; moved to class org.apache.hadoop.hdfs.server.datanode.fsdataset.ReplicaInputStreams</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

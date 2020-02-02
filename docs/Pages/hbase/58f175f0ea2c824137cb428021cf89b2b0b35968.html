@@ -262,6 +262,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public getIncomingWindowMin() : int renamed to public getDateTieredIncomingWindowMin() : int in class org.apache.hadoop.hbase.regionserver.compactions.CompactionConfiguration</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34L276">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34R273">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public useSingleOutputForMinorCompaction() : boolean renamed to public useDateTieredSingleOutputForMinorCompaction() : boolean in class org.apache.hadoop.hbase.regionserver.compactions.CompactionConfiguration</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34L284">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34R281">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public getCompactionPolicyForTieredWindow() : String renamed to public getCompactionPolicyForDateTieredWindow() : String in class org.apache.hadoop.hbase.regionserver.compactions.CompactionConfiguration</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34L280">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34R277">To</a></td>
@@ -279,20 +293,6 @@
                                 <td><i>Rename Method	public nextWindow(windowsPerTier int, oldestToCompact long) : Window renamed to public nextEarlierWindow() : Window in class org.apache.hadoop.hbase.regionserver.compactions.ExponentialCompactionWindowFactory.Window</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL377">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-44b1788722e35d768ba74804c9d86abaR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public getIncomingWindowMin() : int renamed to public getDateTieredIncomingWindowMin() : int in class org.apache.hadoop.hbase.regionserver.compactions.CompactionConfiguration</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34L276">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34R273">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public useSingleOutputForMinorCompaction() : boolean renamed to public useDateTieredSingleOutputForMinorCompaction() : boolean in class org.apache.hadoop.hbase.regionserver.compactions.CompactionConfiguration</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34L284">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-0bbfa46f7a0722523d3cc5e6aeafec34R281">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -340,16 +340,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	window : Window to window : CompactionWindow in method private generateCompactionRequest(storeFiles ArrayList&lt;StoreFile&gt;, window CompactionWindow, mayUseOffPeak boolean, mayBeStuck boolean, minThreshold int) : DateTieredCompactionRequest in class org.apache.hadoop.hbase.regionserver.compactions.DateTieredCompactionPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL242">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eR257">To</a></td>
+                                <td><i>Change Parameter Type	window : Window to window : CompactionWindow in method private getCompactionBoundariesForMinor(window CompactionWindow, singleOutput boolean) : List&lt;Long&gt; in class org.apache.hadoop.hbase.regionserver.compactions.DateTieredCompactionPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL291">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eR308">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	window : Window to window : CompactionWindow in method private getCompactionBoundariesForMinor(window CompactionWindow, singleOutput boolean) : List&lt;Long&gt; in class org.apache.hadoop.hbase.regionserver.compactions.DateTieredCompactionPolicy</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL291">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eR308">To</a></td>
+                                <td><i>Change Parameter Type	window : Window to window : CompactionWindow in method private generateCompactionRequest(storeFiles ArrayList&lt;StoreFile&gt;, window CompactionWindow, mayUseOffPeak boolean, mayBeStuck boolean, minThreshold int) : DateTieredCompactionRequest in class org.apache.hadoop.hbase.regionserver.compactions.DateTieredCompactionPolicy</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eL242">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/58f175f0ea2c824137cb428021cf89b2b0b35968?diff=split#diff-41d6a73752688006e6fb9ce1c79bb31eR257">To</a></td>
                             </tr>
                             
                             </tbody>

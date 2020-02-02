@@ -154,16 +154,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	wrapper : MulticoreWrapper&lt;Pair&lt;Document,HybridCorefSystem&gt;,StringBuilder[]&gt; to wrapper : MulticoreWrapper&lt;Pair&lt;Document,CorefSystem&gt;,StringBuilder[]&gt; in method private logOutput(wrapper MulticoreWrapper&lt;Pair&lt;Document,CorefSystem&gt;,StringBuilder[]&gt;, writerGold PrintWriter, writerBeforeCoref PrintWriter, writerAfterCoref PrintWriter, docCnt int) : int in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L197">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR181">To</a></td>
+                                <td><i>Change Parameter Type	docMaker : DocumentMaker to docMaker : CorefDocMaker in method public run(docMaker CorefDocMaker) : void in class edu.stanford.nlp.scoref.DocumentProcessor</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-63528cd4a0927f1e4ab4f4ee877c1e7eL36">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-e7bc2b0a3b667aae23f3ed2b9d9d08dbR30">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	docMaker : DocumentMaker to docMaker : CorefDocMaker in method public run(docMaker CorefDocMaker) : void in class edu.stanford.nlp.scoref.DocumentProcessor</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-63528cd4a0927f1e4ab4f4ee877c1e7eL36">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-e7bc2b0a3b667aae23f3ed2b9d9d08dbR30">To</a></td>
+                                <td><i>Change Parameter Type	wrapper : MulticoreWrapper&lt;Pair&lt;Document,HybridCorefSystem&gt;,StringBuilder[]&gt; to wrapper : MulticoreWrapper&lt;Pair&lt;Document,CorefSystem&gt;,StringBuilder[]&gt; in method private logOutput(wrapper MulticoreWrapper&lt;Pair&lt;Document,CorefSystem&gt;,StringBuilder[]&gt;, writerGold PrintWriter, writerBeforeCoref PrintWriter, writerAfterCoref PrintWriter, docCnt int) : int in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L197">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR181">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -176,6 +176,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	edu.stanford.nlp.coref.hybrid.HybridCorefProperties.CorefInputType moved and renamed to edu.stanford.nlp.scoref.StatisticalCorefProperties.Dataset</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	edu.stanford.nlp.coref.hybrid.HybridCorefPrinter moved and renamed to edu.stanford.nlp.hcoref.CorefPrinter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -247,20 +261,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	edu.stanford.nlp.coref.hybrid.HybridCorefProperties.CorefInputType moved and renamed to edu.stanford.nlp.scoref.StatisticalCorefProperties.Dataset</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	edu.stanford.nlp.coref.hybrid.HybridCorefPrinter moved and renamed to edu.stanford.nlp.hcoref.CorefPrinter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -271,6 +271,195 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-65" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.data.InputDoc moved to edu.stanford.nlp.hcoref.data.InputDoc</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.rf.DecisionTree moved to edu.stanford.nlp.hcoref.rf.DecisionTree</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.MetaFeatureExtractor moved to edu.stanford.nlp.scoref.MetaFeatureExtractor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.data.CorefCluster moved to edu.stanford.nlp.hcoref.data.CorefCluster</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.StrictHeadMatch3 moved to edu.stanford.nlp.hcoref.sieve.StrictHeadMatch3</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.MentionMatcher moved to edu.stanford.nlp.hcoref.MentionMatcher</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.DcorefChineseBenchmarkSlowITest moved to edu.stanford.nlp.hcoref.DcorefChineseBenchmarkSlowITest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.md.RuleBasedCorefMentionFinder moved to edu.stanford.nlp.hcoref.md.RuleBasedCorefMentionFinder</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.PairwiseModelTrainer moved to edu.stanford.nlp.scoref.PairwiseModelTrainer</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.ChineseHeadMatch moved to edu.stanford.nlp.hcoref.sieve.ChineseHeadMatch</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.md.HybridCorefMentionFinder moved to edu.stanford.nlp.hcoref.md.HybridCorefMentionFinder</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.data.SpeakerInfo moved to edu.stanford.nlp.hcoref.data.SpeakerInfo</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.SpeakerMatch moved to edu.stanford.nlp.hcoref.sieve.SpeakerMatch</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.data.CorefChain moved to edu.stanford.nlp.hcoref.data.CorefChain</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.RelaxedExactStringMatch moved to edu.stanford.nlp.hcoref.sieve.RelaxedExactStringMatch</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.RFSieve moved to edu.stanford.nlp.hcoref.sieve.RFSieve</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.CorefCoreAnnotations moved to edu.stanford.nlp.hcoref.CorefCoreAnnotations</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.LexicalChainMatch moved to edu.stanford.nlp.hcoref.sieve.LexicalChainMatch</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.NameMatch moved to edu.stanford.nlp.hcoref.sieve.NameMatch</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.FeatureExtractor moved to edu.stanford.nlp.scoref.FeatureExtractor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.demo.ChineseHcorefDemo moved to edu.stanford.nlp.hcoref.demo.ChineseHcorefDemo</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.StrictHeadMatch4 moved to edu.stanford.nlp.hcoref.sieve.StrictHeadMatch4</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.CorefProperties.MentionDetectionType moved to edu.stanford.nlp.hcoref.CorefProperties.MentionDetectionType</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.misc.SingletonPredictor moved to edu.stanford.nlp.hcoref.SingletonPredictor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.DocumentExamples moved to edu.stanford.nlp.scoref.DocumentExamples</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.MetadataWriter moved to edu.stanford.nlp.scoref.MetadataWriter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.DiscourseMatch moved to edu.stanford.nlp.hcoref.sieve.DiscourseMatch</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -538,195 +727,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.data.InputDoc moved to edu.stanford.nlp.hcoref.data.InputDoc</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.rf.DecisionTree moved to edu.stanford.nlp.hcoref.rf.DecisionTree</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.MetaFeatureExtractor moved to edu.stanford.nlp.scoref.MetaFeatureExtractor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.data.CorefCluster moved to edu.stanford.nlp.hcoref.data.CorefCluster</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.StrictHeadMatch3 moved to edu.stanford.nlp.hcoref.sieve.StrictHeadMatch3</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.MentionMatcher moved to edu.stanford.nlp.hcoref.MentionMatcher</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.DcorefChineseBenchmarkSlowITest moved to edu.stanford.nlp.hcoref.DcorefChineseBenchmarkSlowITest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.md.RuleBasedCorefMentionFinder moved to edu.stanford.nlp.hcoref.md.RuleBasedCorefMentionFinder</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.PairwiseModelTrainer moved to edu.stanford.nlp.scoref.PairwiseModelTrainer</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.ChineseHeadMatch moved to edu.stanford.nlp.hcoref.sieve.ChineseHeadMatch</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.md.HybridCorefMentionFinder moved to edu.stanford.nlp.hcoref.md.HybridCorefMentionFinder</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.data.SpeakerInfo moved to edu.stanford.nlp.hcoref.data.SpeakerInfo</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.SpeakerMatch moved to edu.stanford.nlp.hcoref.sieve.SpeakerMatch</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.data.CorefChain moved to edu.stanford.nlp.hcoref.data.CorefChain</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.RelaxedExactStringMatch moved to edu.stanford.nlp.hcoref.sieve.RelaxedExactStringMatch</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.RFSieve moved to edu.stanford.nlp.hcoref.sieve.RFSieve</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.CorefCoreAnnotations moved to edu.stanford.nlp.hcoref.CorefCoreAnnotations</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.LexicalChainMatch moved to edu.stanford.nlp.hcoref.sieve.LexicalChainMatch</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.NameMatch moved to edu.stanford.nlp.hcoref.sieve.NameMatch</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.FeatureExtractor moved to edu.stanford.nlp.scoref.FeatureExtractor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.demo.ChineseHcorefDemo moved to edu.stanford.nlp.hcoref.demo.ChineseHcorefDemo</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.StrictHeadMatch4 moved to edu.stanford.nlp.hcoref.sieve.StrictHeadMatch4</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.CorefProperties.MentionDetectionType moved to edu.stanford.nlp.hcoref.CorefProperties.MentionDetectionType</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.misc.SingletonPredictor moved to edu.stanford.nlp.hcoref.SingletonPredictor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.DocumentExamples moved to edu.stanford.nlp.scoref.DocumentExamples</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.statistical.MetadataWriter moved to edu.stanford.nlp.scoref.MetadataWriter</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	edu.stanford.nlp.coref.hybrid.sieve.DiscourseMatch moved to edu.stanford.nlp.hcoref.sieve.DiscourseMatch</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -755,6 +755,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	wrapper : MulticoreWrapper&lt;Pair&lt;Document,HybridCorefSystem&gt;,StringBuilder[]&gt; to wrapper : MulticoreWrapper&lt;Pair&lt;Document,CorefSystem&gt;,StringBuilder[]&gt; in method public runCoref(args String[]) : void in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L84">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR114">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	cs : HybridCorefSystem to cs : CorefSystem in method public linkDistanceAnalysis(args String[]) : void in class edu.stanford.nlp.hcoref.CorefPrinter</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-7682740eb77ca7e39b3bbb7b9ad39eebL360">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-cde6b4b6c939d2c9767936a257ae8d90R453">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	input : Pair&lt;Document,HybridCorefSystem&gt; to input : Pair&lt;Document,CorefSystem&gt; in method public runCoref(args String[]) : void in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L84">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR117">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -791,27 +812,6 @@
                                 <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-36f971520e21e134ec36f82830a98981R852">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	wrapper : MulticoreWrapper&lt;Pair&lt;Document,HybridCorefSystem&gt;,StringBuilder[]&gt; to wrapper : MulticoreWrapper&lt;Pair&lt;Document,CorefSystem&gt;,StringBuilder[]&gt; in method public runCoref(args String[]) : void in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L84">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR114">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	cs : HybridCorefSystem to cs : CorefSystem in method public linkDistanceAnalysis(args String[]) : void in class edu.stanford.nlp.hcoref.CorefPrinter</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-7682740eb77ca7e39b3bbb7b9ad39eebL360">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-cde6b4b6c939d2c9767936a257ae8d90R453">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	input : Pair&lt;Document,HybridCorefSystem&gt; to input : Pair&lt;Document,CorefSystem&gt; in method public runCoref(args String[]) : void in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L84">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR117">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -825,16 +825,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public testDcorefCoNLLResultV4() : void renamed to public testDcorefCoNLLResult() : void in class edu.stanford.nlp.dcoref.DcorefSlowITest</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-a52a1d6f36a271e35ddbf8762b50e594L37">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-a52a1d6f36a271e35ddbf8762b50e594R39">To</a></td>
+                                <td><i>Rename Method	public relaxedStringMatch(m1 Mention, m2 Mention) : boolean renamed to private partialMatch(m1 Mention, m2 Mention) : boolean in class edu.stanford.nlp.scoref.FeatureExtractor</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-ce4e4f4d30cde589154b4d1104fd33f4L473">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-a25fbb50436cefbd19862b7ee910eb5eR468">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public relaxedStringMatch(m1 Mention, m2 Mention) : boolean renamed to private partialMatch(m1 Mention, m2 Mention) : boolean in class edu.stanford.nlp.scoref.FeatureExtractor</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-ce4e4f4d30cde589154b4d1104fd33f4L473">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-a25fbb50436cefbd19862b7ee910eb5eR468">To</a></td>
+                                <td><i>Rename Method	public testDcorefCoNLLResultV4() : void renamed to public testDcorefCoNLLResult() : void in class edu.stanford.nlp.dcoref.DcorefSlowITest</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-a52a1d6f36a271e35ddbf8762b50e594L37">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-a52a1d6f36a271e35ddbf8762b50e594R39">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -850,14 +850,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	public runCoref(props Properties) : void inlined to public runCoref(args String[]) : void in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
+                                <td><i>Inline Method	protected runDcoref(scorer String) : double inlined to public testDcorefCoNLLResult() : void in class edu.stanford.nlp.dcoref.DcorefSlowITest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Method	protected runDcoref(scorer String) : double inlined to public testDcorefCoNLLResult() : void in class edu.stanford.nlp.dcoref.DcorefSlowITest</i></td>
+                                <td><i>Inline Method	public runCoref(props Properties) : void inlined to public runCoref(args String[]) : void in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -943,16 +943,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	corefSystem : HybridCorefSystem to corefSystem : CorefSystem in class edu.stanford.nlp.pipeline.HybridCorefAnnotator</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-497d45cab6cf3b09119a47d45e9e713eL27">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-497d45cab6cf3b09119a47d45e9e713eR27">To</a></td>
+                                <td><i>Change Attribute Type	docMaker : DocumentMaker to docMaker : CorefDocMaker in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L45">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR41">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	docMaker : DocumentMaker to docMaker : CorefDocMaker in class edu.stanford.nlp.hcoref.CorefSystem</i></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-3c96f46bc3678ae68847da25e5997e39L45">From</a></td>
-                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-46a7a84fa0cede23e356b406423dbcefR41">To</a></td>
+                                <td><i>Change Attribute Type	corefSystem : HybridCorefSystem to corefSystem : CorefSystem in class edu.stanford.nlp.pipeline.HybridCorefAnnotator</i></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-497d45cab6cf3b09119a47d45e9e713eL27">From</a></td>
+                                <td><a href = "https://github.com/stanfordnlp/CoreNLP/commit/e992d3831226e3bdfc9099a0c7cb7f7c19affa0f?diff=split#diff-497d45cab6cf3b09119a47d45e9e713eR27">To</a></td>
                             </tr>
                             
                             </tbody>

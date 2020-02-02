@@ -190,14 +190,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private createVerifyTransaction(account Account, paymentMethodId UUID, paymentExternalKey String, transactionExternalKey String, transactionType TransactionType, pluginProperties Map&lt;String,String&gt;, paymentNb int) : Payment extracted from private testCreateRetrievePayment(account Account, paymentMethodId UUID, PaymentExternalKey String, PaymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
+                                <td><i>Extract Method	private verifyPaymentNoTransaction(account Account, paymentMethodId UUID, payment Payment, paymentExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, paymentNb int) : void extracted from private verifyPayment(account Account, paymentMethodId UUID, Payment Payment, PaymentExternalKey String, authTransactionExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, PaymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private verifyPaymentNoTransaction(account Account, paymentMethodId UUID, payment Payment, paymentExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, paymentNb int) : void extracted from private verifyPayment(account Account, paymentMethodId UUID, Payment Payment, PaymentExternalKey String, authTransactionExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, PaymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
+                                <td><i>Extract Method	private createVerifyTransaction(account Account, paymentMethodId UUID, paymentExternalKey String, transactionExternalKey String, transactionType TransactionType, pluginProperties Map&lt;String,String&gt;, paymentNb int) : Payment extracted from private testCreateRetrievePayment(account Account, paymentMethodId UUID, PaymentExternalKey String, PaymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -212,20 +212,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	PaymentNb : int to paymentNb : int in method private verifyPaymentNoTransaction(account Account, paymentMethodId UUID, payment Payment, paymentExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, paymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652L152">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652R195">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	PaymentNb : int to paymentNb : int in method private verifyPayment(account Account, paymentMethodId UUID, payment Payment, paymentExternalKey String, authTransactionExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, paymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652L152">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652R182">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -288,6 +274,20 @@
                                 <td><i>Rename Parameter	PaymentId : UUID to paymentId : UUID in method private verifyPaymentTransaction(account Account, paymentId UUID, paymentExternalKey String, paymentTransaction PaymentTransaction, transactionExternalKey String, amount BigDecimal, transactionType String) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652L200">From</a></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652R220">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	PaymentNb : int to paymentNb : int in method private verifyPaymentNoTransaction(account Account, paymentMethodId UUID, payment Payment, paymentExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, paymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652L152">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652R195">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	PaymentNb : int to paymentNb : int in method private verifyPayment(account Account, paymentMethodId UUID, payment Payment, paymentExternalKey String, authTransactionExternalKey String, authAmount BigDecimal, capturedAmount BigDecimal, refundedAmount BigDecimal, nbTransactions int, paymentNb int) : void in class org.killbill.billing.jaxrs.TestPayment</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652L152">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/408db8ce4b58595e46582a97ad1a48935c7bd6e4?diff=split#diff-39d20dcce3d6ddf1d4c451f2c44d9652R182">To</a></td>
                             </tr>
                             
                             </tbody>

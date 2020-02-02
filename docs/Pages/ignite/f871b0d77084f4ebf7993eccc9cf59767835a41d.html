@@ -174,16 +174,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	arg : T to args : Collection&lt;? extends T&gt; in method public callAsync(job IgniteClosure&lt;T,R&gt;, args Collection&lt;? extends T&gt;, nodes Collection&lt;ClusterNode&gt;, execName String) : ComputeTaskInternalFuture&lt;Collection&lt;R&gt;&gt; in class org.apache.ignite.internal.processors.closure.GridClosureProcessor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2L663">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2R731">To</a></td>
+                                <td><i>Change Parameter Type	job : IgniteClosure&lt;T,R&gt; to job : IgniteClosure&lt;T,R1&gt; in method public callAsync(job IgniteClosure&lt;T,R1&gt;, args Collection&lt;? extends T&gt;, rdc IgniteReducer&lt;R1,R2&gt;, nodes Collection&lt;ClusterNode&gt;, execName String) : ComputeTaskInternalFuture&lt;R2&gt; in class org.apache.ignite.internal.processors.closure.GridClosureProcessor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2L687">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2R758">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	job : IgniteClosure&lt;T,R&gt; to job : IgniteClosure&lt;T,R1&gt; in method public callAsync(job IgniteClosure&lt;T,R1&gt;, args Collection&lt;? extends T&gt;, rdc IgniteReducer&lt;R1,R2&gt;, nodes Collection&lt;ClusterNode&gt;, execName String) : ComputeTaskInternalFuture&lt;R2&gt; in class org.apache.ignite.internal.processors.closure.GridClosureProcessor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2L687">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2R758">To</a></td>
+                                <td><i>Change Parameter Type	arg : T to args : Collection&lt;? extends T&gt; in method public callAsync(job IgniteClosure&lt;T,R&gt;, args Collection&lt;? extends T&gt;, nodes Collection&lt;ClusterNode&gt;, execName String) : ComputeTaskInternalFuture&lt;Collection&lt;R&gt;&gt; in class org.apache.ignite.internal.processors.closure.GridClosureProcessor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2L663">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f871b0d77084f4ebf7993eccc9cf59767835a41d?diff=split#diff-2497b08f8308d7f756a96d7d2328eaf2R731">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -224,6 +224,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	public execute(task ComputeTask&lt;T,R&gt;, arg T, sys boolean, execName String) : ComputeTaskInternalFuture&lt;R&gt; extracted from public execute(task ComputeTask&lt;T,R&gt;, arg T, sys boolean) : ComputeTaskInternalFuture&lt;R&gt; in class org.apache.ignite.internal.processors.task.GridTaskProcessor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	public execute(taskCls Class&lt;? extends ComputeTask&lt;T,R&gt;&gt;, arg T, execName String) : ComputeTaskInternalFuture&lt;R&gt; extracted from public execute(taskCls Class&lt;? extends ComputeTask&lt;T,R&gt;&gt;, arg T) : ComputeTaskInternalFuture&lt;R&gt; in class org.apache.ignite.internal.processors.task.GridTaskProcessor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -253,13 +260,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	public runAsync(mode GridClosureCallMode, job Runnable, nodes Collection&lt;ClusterNode&gt;, execName String) : ComputeTaskInternalFuture&lt;?&gt; extracted from public runAsync(mode GridClosureCallMode, job Runnable, nodes Collection&lt;ClusterNode&gt;) : ComputeTaskInternalFuture&lt;?&gt; in class org.apache.ignite.internal.processors.closure.GridClosureProcessor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public execute(task ComputeTask&lt;T,R&gt;, arg T, sys boolean, execName String) : ComputeTaskInternalFuture&lt;R&gt; extracted from public execute(task ComputeTask&lt;T,R&gt;, arg T, sys boolean) : ComputeTaskInternalFuture&lt;R&gt; in class org.apache.ignite.internal.processors.task.GridTaskProcessor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

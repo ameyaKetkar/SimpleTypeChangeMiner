@@ -278,16 +278,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	protected stopClusterComponents() : CompletableFuture&lt;Void&gt; from class org.apache.flink.runtime.entrypoint.ClusterEntrypoint to public closeAsync() : CompletableFuture&lt;Void&gt; from class org.apache.flink.runtime.entrypoint.ClusterComponent</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-5334e24ac6a0d7e69599ceca71fd2e99L480">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-b2dcd565638ff5c4c476f607aee0c822R249">To</a></td>
+                                <td><i>Move And Rename Method	protected startClusterComponents(configuration Configuration, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, blobServer BlobServer, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry) : void from class org.apache.flink.runtime.entrypoint.ClusterEntrypoint to public startComponent(configuration Configuration, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, blobServer BlobServer, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, archivedExecutionGraphStore ArchivedExecutionGraphStore, fatalErrorHandler FatalErrorHandler) : void from class org.apache.flink.runtime.entrypoint.ClusterComponent</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-5334e24ac6a0d7e69599ceca71fd2e99L298">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-b2dcd565638ff5c4c476f607aee0c822R144">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	protected startClusterComponents(configuration Configuration, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, blobServer BlobServer, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry) : void from class org.apache.flink.runtime.entrypoint.ClusterEntrypoint to public startComponent(configuration Configuration, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, blobServer BlobServer, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, archivedExecutionGraphStore ArchivedExecutionGraphStore, fatalErrorHandler FatalErrorHandler) : void from class org.apache.flink.runtime.entrypoint.ClusterComponent</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-5334e24ac6a0d7e69599ceca71fd2e99L298">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-b2dcd565638ff5c4c476f607aee0c822R144">To</a></td>
+                                <td><i>Move And Rename Method	protected stopClusterComponents() : CompletableFuture&lt;Void&gt; from class org.apache.flink.runtime.entrypoint.ClusterEntrypoint to public closeAsync() : CompletableFuture&lt;Void&gt; from class org.apache.flink.runtime.entrypoint.ClusterComponent</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-5334e24ac6a0d7e69599ceca71fd2e99L480">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-b2dcd565638ff5c4c476f607aee0c822R249">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -300,6 +300,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	protected createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;?&gt; from class org.apache.flink.mesos.entrypoint.MesosJobClusterEntrypoint to public createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;RegisteredMesosWorkerNode&gt; from class org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerFactory</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-0bae9010a53bdf0a948da58d0daf1d65L116">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-9c1a3cf64079eff6ecf45da9ef635128R64">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private createPackagedProgram() : PackagedProgram from class org.apache.flink.container.entrypoint.StandaloneJobClusterEntryPoint to private createPackagedProgram() : PackagedProgram from class org.apache.flink.container.entrypoint.ClassPathJobGraphRetriever</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-1d24c24deedc77cde670a12f1331055cL96">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-f0bd24da819af103e43344c0f99ab657R72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	protected createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;?&gt; from class org.apache.flink.container.entrypoint.StandaloneJobClusterEntryPoint to public createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;ResourceID&gt; from class org.apache.flink.runtime.resourcemanager.StandaloneResourceManagerFactory</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-1d24c24deedc77cde670a12f1331055cL110">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-2657d01d06ea701832416fc67ebce026R39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	protected retrieveJobGraph(configuration Configuration) : JobGraph from class org.apache.flink.container.entrypoint.StandaloneJobClusterEntryPoint to public retrieveJobGraph(configuration Configuration) : JobGraph from class org.apache.flink.container.entrypoint.ClassPathJobGraphRetriever</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-1d24c24deedc77cde670a12f1331055cL81">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-f0bd24da819af103e43344c0f99ab657R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	protected createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;?&gt; from class org.apache.flink.runtime.entrypoint.StandaloneSessionClusterEntrypoint to public createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;ResourceID&gt; from class org.apache.flink.runtime.resourcemanager.StandaloneResourceManagerFactory</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-a860ca98ba9b55453440cde1d4f1ddfdL49">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-2657d01d06ea701832416fc67ebce026R39">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -362,41 +397,6 @@
                                 <td><i>Move Method	protected createDispatcher(configuration Configuration, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, resourceManagerGateway ResourceManagerGateway, blobServer BlobServer, heartbeatServices HeartbeatServices, jobManagerMetricGroup JobManagerMetricGroup, metricQueryServicePath String, archivedExecutionGraphStore ArchivedExecutionGraphStore, fatalErrorHandler FatalErrorHandler, restAddress String, historyServerArchivist HistoryServerArchivist) : Dispatcher from class org.apache.flink.runtime.entrypoint.JobClusterEntrypoint to public createDispatcher(configuration Configuration, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, resourceManagerGateway ResourceManagerGateway, blobServer BlobServer, heartbeatServices HeartbeatServices, jobManagerMetricGroup JobManagerMetricGroup, metricQueryServicePath String, archivedExecutionGraphStore ArchivedExecutionGraphStore, fatalErrorHandler FatalErrorHandler, restAddress String, historyServerArchivist HistoryServerArchivist) : MiniDispatcher from class org.apache.flink.runtime.dispatcher.JobDispatcherFactory</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-3d880dd44c737ac0c966df7975265ad3L92">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-327509e0b55d1e8a91810d3117a9ee82R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	protected createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;?&gt; from class org.apache.flink.mesos.entrypoint.MesosJobClusterEntrypoint to public createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;RegisteredMesosWorkerNode&gt; from class org.apache.flink.mesos.runtime.clusterframework.MesosResourceManagerFactory</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-0bae9010a53bdf0a948da58d0daf1d65L116">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-9c1a3cf64079eff6ecf45da9ef635128R64">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private createPackagedProgram() : PackagedProgram from class org.apache.flink.container.entrypoint.StandaloneJobClusterEntryPoint to private createPackagedProgram() : PackagedProgram from class org.apache.flink.container.entrypoint.ClassPathJobGraphRetriever</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-1d24c24deedc77cde670a12f1331055cL96">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-f0bd24da819af103e43344c0f99ab657R72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	protected createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;?&gt; from class org.apache.flink.container.entrypoint.StandaloneJobClusterEntryPoint to public createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;ResourceID&gt; from class org.apache.flink.runtime.resourcemanager.StandaloneResourceManagerFactory</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-1d24c24deedc77cde670a12f1331055cL110">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-2657d01d06ea701832416fc67ebce026R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	protected retrieveJobGraph(configuration Configuration) : JobGraph from class org.apache.flink.container.entrypoint.StandaloneJobClusterEntryPoint to public retrieveJobGraph(configuration Configuration) : JobGraph from class org.apache.flink.container.entrypoint.ClassPathJobGraphRetriever</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-1d24c24deedc77cde670a12f1331055cL81">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-f0bd24da819af103e43344c0f99ab657R57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	protected createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;?&gt; from class org.apache.flink.runtime.entrypoint.StandaloneSessionClusterEntrypoint to public createResourceManager(configuration Configuration, resourceId ResourceID, rpcService RpcService, highAvailabilityServices HighAvailabilityServices, heartbeatServices HeartbeatServices, metricRegistry MetricRegistry, fatalErrorHandler FatalErrorHandler, clusterInformation ClusterInformation, webInterfaceUrl String) : ResourceManager&lt;ResourceID&gt; from class org.apache.flink.runtime.resourcemanager.StandaloneResourceManagerFactory</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-a860ca98ba9b55453440cde1d4f1ddfdL49">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/1fcbc9f816460b1a159fd79b4c9bcf83327d79c3?diff=split#diff-2657d01d06ea701832416fc67ebce026R39">To</a></td>
                             </tr>
                             
                             </tbody>

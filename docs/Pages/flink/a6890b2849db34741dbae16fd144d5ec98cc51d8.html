@@ -220,6 +220,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	stateHandleProvider : StateHandleProvider&lt;T&gt; to storage : StateStorageHelper in method public ZooKeeperStateHandleStore(client CuratorFramework, storage StateStorageHelper) in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStore</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0L74">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0R87">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	stateHandleProvider : StateHandleProvider&lt;SubmittedJobGraph&gt; to stateStorage : StateStorageHelper&lt;SubmittedJobGraph&gt; in method public ZooKeeperSubmittedJobGraphStore(client CuratorFramework, currentJobsPath String, stateStorage StateStorageHelper&lt;SubmittedJobGraph&gt;) in class org.apache.flink.runtime.jobmanager.ZooKeeperSubmittedJobGraphStore</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-42bcdb82ff20c5d8d36f31ec4bcfaf9fL90">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-42bcdb82ff20c5d8d36f31ec4bcfaf9fR101">To</a></td>
@@ -230,13 +237,6 @@
                                 <td><i>Change Parameter Type	stateHandleProvider : StateHandleProvider&lt;CompletedCheckpoint&gt; to stateStorage : StateStorageHelper&lt;CompletedCheckpoint&gt; in method public ZooKeeperCompletedCheckpointStore(maxNumberOfCheckpointsToRetain int, userClassLoader ClassLoader, client CuratorFramework, checkpointsPath String, stateStorage StateStorageHelper&lt;CompletedCheckpoint&gt;) in class org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStore</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-a14b1ab70944f9ee99631ef3a484855fL84">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-a14b1ab70944f9ee99631ef3a484855fR104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	stateHandleProvider : StateHandleProvider&lt;T&gt; to storage : StateStorageHelper in method public ZooKeeperStateHandleStore(client CuratorFramework, storage StateStorageHelper) in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStore</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0L74">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0R87">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -270,20 +270,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	stateHandleProvider : LongStateHandleProvider to longStateStorage : LongStateStorage in method public testAdd() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L87">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R85">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	completedCheckpointsPath : String to checkpointsPath : String in method public createCompletedCheckpoints(client CuratorFramework, configuration Configuration, jobId JobID, maxNumberOfCheckpointsToRetain int, userClassLoader ClassLoader) : CompletedCheckpointStore in class org.apache.flink.runtime.util.ZooKeeperUtils</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-538118dd930b7be7c03ad4baeffa1469L225">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-538118dd930b7be7c03ad4baeffa1469R224">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	stateHandleProvider : StateHandleProvider&lt;Long&gt; to stateStorage : StateStorageHelper&lt;Long&gt; in method public testReplaceNonExistingPath() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L273">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R269">To</a></td>
@@ -308,6 +294,20 @@
                                 <td><i>Rename Variable	stateHandleProvider : StateHandleProvider&lt;CompletedCheckpoint&gt; to stateStorage : StateStorageHelper&lt;CompletedCheckpoint&gt; in method public createCompletedCheckpoints(client CuratorFramework, configuration Configuration, jobId JobID, maxNumberOfCheckpointsToRetain int, userClassLoader ClassLoader) : CompletedCheckpointStore in class org.apache.flink.runtime.util.ZooKeeperUtils</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-538118dd930b7be7c03ad4baeffa1469L222">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-538118dd930b7be7c03ad4baeffa1469R229">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	stateHandleProvider : LongStateHandleProvider to longStateStorage : LongStateStorage in method public testAdd() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L87">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R85">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	completedCheckpointsPath : String to checkpointsPath : String in method public createCompletedCheckpoints(client CuratorFramework, configuration Configuration, jobId JobID, maxNumberOfCheckpointsToRetain int, userClassLoader ClassLoader) : CompletedCheckpointStore in class org.apache.flink.runtime.util.ZooKeeperUtils</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-538118dd930b7be7c03ad4baeffa1469L225">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-538118dd930b7be7c03ad4baeffa1469R224">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -338,6 +338,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-23" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.KvStateSnapshot moved to org.apache.flink.runtime.state.KvStateSnapshot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.memory.MemoryHeapKvStateSnapshot moved to org.apache.flink.runtime.state.memory.MemoryHeapKvStateSnapshot</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.filesystem.AbstractFileState moved to org.apache.flink.runtime.state.filesystem.AbstractFileState</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.memory.SerializedStateHandle moved to org.apache.flink.runtime.state.memory.SerializedStateHandle</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.filesystem.FsHeapKvState moved to org.apache.flink.runtime.state.filesystem.FsHeapKvState</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.SerializedCheckpointData moved to org.apache.flink.runtime.state.SerializedCheckpointData</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Class	org.apache.flink.streaming.api.state.MemoryStateBackendTest moved to org.apache.flink.runtime.state.MemoryStateBackendTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -451,55 +500,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.KvStateSnapshot moved to org.apache.flink.runtime.state.KvStateSnapshot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.memory.MemoryHeapKvStateSnapshot moved to org.apache.flink.runtime.state.memory.MemoryHeapKvStateSnapshot</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.filesystem.AbstractFileState moved to org.apache.flink.runtime.state.filesystem.AbstractFileState</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.memory.SerializedStateHandle moved to org.apache.flink.runtime.state.memory.SerializedStateHandle</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.filesystem.FsHeapKvState moved to org.apache.flink.runtime.state.filesystem.FsHeapKvState</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.SerializedCheckpointData moved to org.apache.flink.runtime.state.SerializedCheckpointData</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.apache.flink.streaming.api.state.MemoryStateBackendTest moved to org.apache.flink.runtime.state.MemoryStateBackendTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -513,16 +513,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	stateHandleProvider : StateHandleProvider&lt;T&gt; to storage : StateStorageHelper&lt;T&gt; in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStore</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0L72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0R75">To</a></td>
+                                <td><i>Rename Attribute	StateHandleProvider : LocalStateHandleProvider&lt;SubmittedJobGraph&gt; to localStateStorage : StateStorageHelper&lt;SubmittedJobGraph&gt; in class org.apache.flink.runtime.jobmanager.ZooKeeperSubmittedJobGraphsStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-494bbfe76d40eee6fe0aafe7d94ab474L57">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-494bbfe76d40eee6fe0aafe7d94ab474R59">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	StateHandleProvider : LocalStateHandleProvider&lt;SubmittedJobGraph&gt; to localStateStorage : StateStorageHelper&lt;SubmittedJobGraph&gt; in class org.apache.flink.runtime.jobmanager.ZooKeeperSubmittedJobGraphsStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-494bbfe76d40eee6fe0aafe7d94ab474L57">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-494bbfe76d40eee6fe0aafe7d94ab474R59">To</a></td>
+                                <td><i>Rename Attribute	stateHandleProvider : StateHandleProvider&lt;T&gt; to storage : StateStorageHelper&lt;T&gt; in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStore</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0L72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0R75">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -535,55 +535,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testReplaceDiscardStateHandleAfterFailure() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L281">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R283">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testGetNonExistingPath() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L352">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R353">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testReplace() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L228">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R230">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testGetAll() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L365">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R367">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testRemoveAndDiscardState() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L489">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R491">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testRemoveAndDiscardAllState() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L513">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R513">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testAddDiscardStateHandleAfterFailure() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L195">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R197">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -655,6 +606,55 @@
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R181">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testReplaceDiscardStateHandleAfterFailure() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L281">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R283">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testGetNonExistingPath() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L352">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R353">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testReplace() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L228">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R230">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testGetAll() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L365">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R367">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testRemoveAndDiscardState() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L489">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R491">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testRemoveAndDiscardAllState() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L513">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R513">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateHandleProvider : LongStateHandleProvider to stateHandleProvider : LongStateStorage in method public testAddDiscardStateHandleAfterFailure() : void in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStoreITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7L195">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-112dcc8858ac752cc53b2ca6c8f38aa7R197">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -693,13 +693,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	stateHandleProvider : StateHandleProvider&lt;T&gt; to storage : StateStorageHelper in method public ZooKeeperStateHandleStore(client CuratorFramework, storage StateStorageHelper) in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStore</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0L85">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0R87">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	stateHandleProvider : StateHandleProvider&lt;SubmittedJobGraph&gt; to stateStorage : StateStorageHelper&lt;SubmittedJobGraph&gt; in method public ZooKeeperSubmittedJobGraphStore(client CuratorFramework, currentJobsPath String, stateStorage StateStorageHelper&lt;SubmittedJobGraph&gt;) in class org.apache.flink.runtime.jobmanager.ZooKeeperSubmittedJobGraphStore</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-42bcdb82ff20c5d8d36f31ec4bcfaf9fL93">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-42bcdb82ff20c5d8d36f31ec4bcfaf9fR101">To</a></td>
@@ -710,6 +703,13 @@
                                 <td><i>Rename Parameter	stateHandleProvider : StateHandleProvider&lt;CompletedCheckpoint&gt; to stateStorage : StateStorageHelper&lt;CompletedCheckpoint&gt; in method public ZooKeeperCompletedCheckpointStore(maxNumberOfCheckpointsToRetain int, userClassLoader ClassLoader, client CuratorFramework, checkpointsPath String, stateStorage StateStorageHelper&lt;CompletedCheckpoint&gt;) in class org.apache.flink.runtime.checkpoint.ZooKeeperCompletedCheckpointStore</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-a14b1ab70944f9ee99631ef3a484855fL103">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-a14b1ab70944f9ee99631ef3a484855fR104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	stateHandleProvider : StateHandleProvider&lt;T&gt; to storage : StateStorageHelper in method public ZooKeeperStateHandleStore(client CuratorFramework, storage StateStorageHelper) in class org.apache.flink.runtime.zookeeper.ZooKeeperStateHandleStore</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0L85">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a6890b2849db34741dbae16fd144d5ec98cc51d8?diff=split#diff-cd6ec04778479b341fd1a0391c5815a0R87">To</a></td>
                             </tr>
                             
                             </tbody>

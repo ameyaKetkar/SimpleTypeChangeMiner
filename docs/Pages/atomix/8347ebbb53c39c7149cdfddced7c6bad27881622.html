@@ -202,13 +202,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	executor : StateMachineExecutor to context : StateMachineContext in method public init(context StateMachineContext) : void in class io.atomix.protocols.raft.RaftService</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L164">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR34">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	executor : StateMachineExecutor to executor : RaftOperationExecutor in method protected configure(executor RaftOperationExecutor) : void in class io.atomix.protocols.raft.RaftTest.TestStateMachine</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41L1298">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ca1eafc818098fa06ec36e77d825a41R1298">To</a></td>
@@ -219,6 +212,13 @@
                                 <td><i>Change Parameter Type	executor : RaftServerStateMachineExecutor to context : RaftServerStateMachineContext in method public RaftSessionContext(id SessionId, member MemberId, name String, type String, readConsistency ReadConsistency, timeout long, context RaftServerStateMachineContext, server RaftServerContext) in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ff37e417a506fed8585199ade1c494eL75">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ff37e417a506fed8585199ade1c494eR82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	executor : StateMachineExecutor to context : StateMachineContext in method public init(context StateMachineContext) : void in class io.atomix.protocols.raft.RaftService</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L164">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR34">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -359,13 +359,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private commit() : void renamed to private runTasks() : void in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L616">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getOperationType() : OperationType renamed to public currentOperation() : OperationType in class io.atomix.protocols.raft.impl.RaftServerStateMachineContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-b3a8857b8d2d572da7a964fb1d10d335L79">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-b3a8857b8d2d572da7a964fb1d10d335R131">To</a></td>
@@ -385,6 +378,13 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ff37e417a506fed8585199ade1c494eR149">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private commit() : void renamed to private runTasks() : void in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L616">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R148">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -395,34 +395,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	protected getSessions() : RaftSessions from class io.atomix.protocols.raft.RaftStateMachine to protected getSessions() : RaftSessions from class io.atomix.protocols.raft.RaftService</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L241">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR110">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public init(executor StateMachineExecutor) : void from class io.atomix.protocols.raft.RaftStateMachine to public init(context StateMachineContext) : void from class io.atomix.protocols.raft.RaftService</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L164">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	protected getScheduler() : Scheduler from class io.atomix.protocols.raft.RaftStateMachine to protected getScheduler() : Scheduler from class io.atomix.protocols.raft.RaftService</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L187">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	protected getStateMachineName() : String from class io.atomix.protocols.raft.RaftStateMachine to protected getStateMachineName() : String from class io.atomix.protocols.raft.RaftService</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L205">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR74">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -473,6 +445,34 @@
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR92">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	protected getSessions() : RaftSessions from class io.atomix.protocols.raft.RaftStateMachine to protected getSessions() : RaftSessions from class io.atomix.protocols.raft.RaftService</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L241">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR110">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	public init(executor StateMachineExecutor) : void from class io.atomix.protocols.raft.RaftStateMachine to public init(context StateMachineContext) : void from class io.atomix.protocols.raft.RaftService</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L164">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	protected getScheduler() : Scheduler from class io.atomix.protocols.raft.RaftStateMachine to protected getScheduler() : Scheduler from class io.atomix.protocols.raft.RaftService</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L187">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Push Down Method	protected getStateMachineName() : String from class io.atomix.protocols.raft.RaftStateMachine to protected getStateMachineName() : String from class io.atomix.protocols.raft.RaftService</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-6b98d70dc17f0249a472d6d12c5c0d82L205">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-7e5b71f4dd0ad1287a3288f75d5f71bdR74">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -486,13 +486,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	RaftServerStateMachineContext to StateMachineContext in method public getContext() : StateMachineContext in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L106">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	RaftServerStateMachineSessions to RaftSessions in method public sessions() : RaftSessions in class io.atomix.protocols.raft.impl.RaftServerStateMachineContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-b3a8857b8d2d572da7a964fb1d10d335L116">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-b3a8857b8d2d572da7a964fb1d10d335R146">To</a></td>
@@ -503,6 +496,13 @@
                                 <td><i>Change Return Type	RaftServerStateMachineExecutor to RaftServerStateMachineContext in method public getStateMachineContext() : RaftServerStateMachineContext in class io.atomix.protocols.raft.session.impl.RaftSessionContext</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ff37e417a506fed8585199ade1c494eL149">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-1ff37e417a506fed8585199ade1c494eR149">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RaftServerStateMachineContext to StateMachineContext in method public getContext() : StateMachineContext in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L106">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R63">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -568,20 +568,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	stateMachines : Map&lt;String,RaftServerStateMachineExecutor&gt; to stateMachines : Map&lt;String,RaftServerStateMachineContext&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineManager</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-c2a39ae244f6080302b79f04baee8078L76">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-c2a39ae244f6080302b79f04baee8078R76">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	context : RaftServerStateMachineContext to context : StateMachineContext in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L67">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	scheduledTasks : List&lt;ServerScheduledTask&gt; to scheduledTasks : List&lt;ScheduledTask&gt; in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L71">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R48">To</a></td>
@@ -599,6 +585,20 @@
                                 <td><i>Change Attribute Type	complete : List&lt;ServerScheduledTask&gt; to complete : List&lt;ScheduledTask&gt; in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L72">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	stateMachines : Map&lt;String,RaftServerStateMachineExecutor&gt; to stateMachines : Map&lt;String,RaftServerStateMachineContext&gt; in class io.atomix.protocols.raft.impl.RaftServerStateMachineManager</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-c2a39ae244f6080302b79f04baee8078L76">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-c2a39ae244f6080302b79f04baee8078R76">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	context : RaftServerStateMachineContext to context : StateMachineContext in class io.atomix.protocols.raft.impl.DefaultRaftOperationExecutor</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-d8b8521951c6c0e98a76681c57a37e14L67">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/8347ebbb53c39c7149cdfddced7c6bad27881622?diff=split#diff-a68af2cba020dcef73af76726e22c359R46">To</a></td>
                             </tr>
                             
                             </tbody>

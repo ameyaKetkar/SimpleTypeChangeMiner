@@ -230,13 +230,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public setJobManagerLeaderId(jobManagerLeaderId UUID) : void renamed to public connectToResourceManager(resourceManagerLeaderId UUID, resourceManagerGateway ResourceManagerGateway) : void in class org.apache.flink.runtime.instance.SlotPool</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L104">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R238">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	package containResource(resourceID ResourceID) : boolean renamed to package containsTaskManager(resourceID ResourceID) : boolean in class org.apache.flink.runtime.instance.SlotPool.AvailableSlots</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L690">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R881">To</a></td>
@@ -247,6 +240,13 @@
                                 <td><i>Rename Method	public releaseResource(resourceID ResourceID) : void renamed to public releaseTaskManager(resourceID ResourceID) : void in class org.apache.flink.runtime.instance.SlotPool</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L444">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R545">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public setJobManagerLeaderId(jobManagerLeaderId UUID) : void renamed to public connectToResourceManager(resourceManagerLeaderId UUID, resourceManagerGateway ResourceManagerGateway) : void in class org.apache.flink.runtime.instance.SlotPool</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L104">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R238">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -426,20 +426,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	c : Class to c : Class&lt;?&gt; in method private determineSelfGatewayType() : Class&lt;C&gt; in class org.apache.flink.runtime.rpc.RpcEndpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289L272">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289R292">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	slotsForResource : Set&lt;SlotDescriptor&gt; to slotsForTaskManager : Set&lt;AllocatedSlot&gt; in method package add(slot AllocatedSlot, timestamp long) : void in class org.apache.flink.runtime.instance.SlotPool.AvailableSlots</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L622">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R734">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	e : Exception to t : Throwable in method public suspendExecution(cause Throwable) : void in class org.apache.flink.runtime.jobmaster.JobMaster</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-25b66d647903625abd46ed702f50bec5L340">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-25b66d647903625abd46ed702f50bec5R366">To</a></td>
@@ -450,6 +436,20 @@
                                 <td><i>Change Variable Type	pendingRequest : Tuple2&lt;SlotRequest,FlinkCompletableFuture&lt;SlotDescriptor&gt;&gt; to pendingRequest : PendingRequest in method public failAllocation(allocationID AllocationID, cause Exception) : void in class org.apache.flink.runtime.instance.SlotPool</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L399">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R507">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	c : Class to c : Class&lt;?&gt; in method private determineSelfGatewayType() : Class&lt;C&gt; in class org.apache.flink.runtime.rpc.RpcEndpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289L272">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-43dfbcdd8b836a29023806b9e9e33289R292">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	slotsForResource : Set&lt;SlotDescriptor&gt; to slotsForTaskManager : Set&lt;AllocatedSlot&gt; in method package add(slot AllocatedSlot, timestamp long) : void in class org.apache.flink.runtime.instance.SlotPool.AvailableSlots</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L622">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R734">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -465,14 +465,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	package remove(slotId AllocationID) : Slot extracted from package remove(slot Slot) : SlotDescriptor in class org.apache.flink.runtime.instance.SlotPool.AllocatedSlots</i></td>
+                                <td><i>Extract Method	private internalReturnAllocatedSlot(slot Slot) : void extracted from public returnAllocatedSlot(slot Slot) : boolean in class org.apache.flink.runtime.instance.SlotPool</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private internalReturnAllocatedSlot(slot Slot) : void extracted from public returnAllocatedSlot(slot Slot) : boolean in class org.apache.flink.runtime.instance.SlotPool</i></td>
+                                <td><i>Extract Method	package remove(slotId AllocationID) : Slot extracted from package remove(slot Slot) : SlotDescriptor in class org.apache.flink.runtime.instance.SlotPool.AllocatedSlots</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -490,16 +490,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	pendingRequests : Map&lt;AllocationID,Tuple2&lt;SlotRequest,FlinkCompletableFuture&lt;SlotDescriptor&gt;&gt;&gt; to pendingRequests : HashMap&lt;AllocationID,PendingRequest&gt; in class org.apache.flink.runtime.instance.SlotPool</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L81">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R112">To</a></td>
+                                <td><i>Change Attribute Type	availableSlots : Set&lt;SlotDescriptor&gt; to availableSlots : HashMap&lt;AllocationID,SlotAndTimestamp&gt; in class org.apache.flink.runtime.instance.SlotPool.AvailableSlots</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L615">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R711">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	availableSlots : Set&lt;SlotDescriptor&gt; to availableSlots : HashMap&lt;AllocationID,SlotAndTimestamp&gt; in class org.apache.flink.runtime.instance.SlotPool.AvailableSlots</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L615">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R711">To</a></td>
+                                <td><i>Change Attribute Type	pendingRequests : Map&lt;AllocationID,Tuple2&lt;SlotRequest,FlinkCompletableFuture&lt;SlotDescriptor&gt;&gt;&gt; to pendingRequests : HashMap&lt;AllocationID,PendingRequest&gt; in class org.apache.flink.runtime.instance.SlotPool</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L81">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/a1ba9f1126270d53168394211a99e354aa2cf20d?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R112">To</a></td>
                             </tr>
                             
                             </tbody>

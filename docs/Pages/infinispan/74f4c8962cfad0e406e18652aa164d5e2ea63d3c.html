@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public buildBackupPutMapRpcCommand(command PutMapCommand) : BackupPutMapRpcCommand renamed to public buildBackupMultiKeyWriteRpcCommand(command WriteCommand, keys Collection&lt;Object&gt;) : BackupMultiKeyWriteRpcCommand in class org.infinispan.util.mocks.ControlledCommandFactory</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cL512">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cR511">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private sendPutMapBackupAck(id CommandInvocationId, topologyId int, segment int, flagBitSet long) : void renamed to private sendMultiKeyAck(id CommandInvocationId, topologyId int, segment int, flagBitSet long) : void in class org.infinispan.remoting.inboundhandler.TrianglePerCacheInboundInvocationHandler</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-00a24cf7bcbd09c822d9a659043c46f6L315">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-00a24cf7bcbd09c822d9a659043c46f6R315">To</a></td>
@@ -178,13 +185,6 @@
                                 <td><i>Rename Method	public buildBackupPutMapRpcCommand(command PutMapCommand) : BackupPutMapRpcCommand renamed to public buildBackupMultiKeyWriteRpcCommand(command WriteCommand, keys Collection&lt;Object&gt;) : BackupMultiKeyWriteRpcCommand in class org.infinispan.commands.CommandsFactory</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-75dfe6e3020b0aabfd0059ffd4f5c015L556">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-75dfe6e3020b0aabfd0059ffd4f5c015R555">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public buildBackupPutMapRpcCommand(command PutMapCommand) : BackupPutMapRpcCommand renamed to public buildBackupMultiKeyWriteRpcCommand(command WriteCommand, keys Collection&lt;Object&gt;) : BackupMultiKeyWriteRpcCommand in class org.infinispan.util.mocks.ControlledCommandFactory</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cL512">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cR511">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -391,20 +391,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	BackupPutMapRpcCommand to BackupMultiKeyWriteRpcCommand in method public buildBackupMultiKeyWriteRpcCommand(command WriteCommand, keys Collection&lt;Object&gt;) : BackupMultiKeyWriteRpcCommand in class org.infinispan.util.mocks.ControlledCommandFactory</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cL512">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cR511">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	CompletableFuture&lt;Map&lt;Object,Object&gt;&gt; to CompletableFuture&lt;R&gt; in method private forwardToPrimaryOwners(command C, splitter PrimaryOwnerClassifier, localResult CompletableFuture&lt;R&gt;, mergeResults MergeResults&lt;R&gt;, commandCopy SubsetCommandCopy&lt;C&gt;) : CompletableFuture&lt;R&gt; in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L279">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R345">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	Collector&lt;Map&lt;Object,Object&gt;&gt; to Collector&lt;T&gt; in method public createSegmentBasedCollector(id long, backups Map&lt;Address,Collection&lt;Integer&gt;&gt;, topologyId int) : Collector&lt;T&gt; in class org.infinispan.util.concurrent.CommandAckCollector</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-b1d264aa80e3eac9ce58cd84fc95856dL122">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-b1d264aa80e3eac9ce58cd84fc95856dR122">To</a></td>
@@ -415,6 +401,20 @@
                                 <td><i>Change Return Type	BackupPutMapRpcCommand to BackupMultiKeyWriteRpcCommand in method public buildBackupMultiKeyWriteRpcCommand(command WriteCommand, keys Collection&lt;Object&gt;) : BackupMultiKeyWriteRpcCommand in class org.infinispan.commands.CommandsFactory</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-75dfe6e3020b0aabfd0059ffd4f5c015L556">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-75dfe6e3020b0aabfd0059ffd4f5c015R555">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	BackupPutMapRpcCommand to BackupMultiKeyWriteRpcCommand in method public buildBackupMultiKeyWriteRpcCommand(command WriteCommand, keys Collection&lt;Object&gt;) : BackupMultiKeyWriteRpcCommand in class org.infinispan.util.mocks.ControlledCommandFactory</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cL512">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-1cf0574c4ea3458f3d637538066df07cR511">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	CompletableFuture&lt;Map&lt;Object,Object&gt;&gt; to CompletableFuture&lt;R&gt; in method private forwardToPrimaryOwners(command C, splitter PrimaryOwnerClassifier, localResult CompletableFuture&lt;R&gt;, mergeResults MergeResults&lt;R&gt;, commandCopy SubsetCommandCopy&lt;C&gt;) : CompletableFuture&lt;R&gt; in class org.infinispan.interceptors.distribution.TriangleDistributionInterceptor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4L279">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/74f4c8962cfad0e406e18652aa164d5e2ea63d3c?diff=split#diff-b9d8ec6a9fbcb60ca8255e5fff2108c4R345">To</a></td>
                             </tr>
                             
                             </tbody>

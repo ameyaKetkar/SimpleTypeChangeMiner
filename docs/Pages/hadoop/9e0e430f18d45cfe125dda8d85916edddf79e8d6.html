@@ -154,13 +154,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	factory : ProxyFactory&lt;T&gt; to proxyFactory : HAProxyFactory&lt;T&gt; in method public RequestHedgingProxyProvider(conf Configuration, uri URI, xface Class&lt;T&gt;, proxyFactory HAProxyFactory&lt;T&gt;) in class org.apache.hadoop.hdfs.server.namenode.ha.RequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-0dd640bd18746a8106ddb46e3663158aL155">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7fba28924cf51f2a33cb133e1bbb8cd1R150">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	protos : NamenodeProtocols... to protos : ClientProtocol... in method private createFactory(protos ClientProtocol...) : HAProxyFactory&lt;ClientProtocol&gt; in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L456">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR456">To</a></td>
@@ -171,6 +164,13 @@
                                 <td><i>Change Parameter Type	factory : ProxyFactory&lt;T&gt; to factory : HAProxyFactory&lt;T&gt; in method public ConfiguredFailoverProxyProvider(conf Configuration, uri URI, xface Class&lt;T&gt;, factory HAProxyFactory&lt;T&gt;) in class org.apache.hadoop.hdfs.server.namenode.ha.ConfiguredFailoverProxyProvider</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-21181db85825b83252b10f31f5a51a5eL88">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-a501aadd6a83dbf04c0600187318b3b4R62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	factory : ProxyFactory&lt;T&gt; to proxyFactory : HAProxyFactory&lt;T&gt; in method public RequestHedgingProxyProvider(conf Configuration, uri URI, xface Class&lt;T&gt;, proxyFactory HAProxyFactory&lt;T&gt;) in class org.apache.hadoop.hdfs.server.namenode.ha.RequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-0dd640bd18746a8106ddb46e3663158aL155">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7fba28924cf51f2a33cb133e1bbb8cd1R150">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -298,6 +298,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-26" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	standby : NamenodeProtocols to standby : ClientProtocol in method public testHedgingWhenConnectAndEOFException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L429">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR433">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	worseMock : NamenodeProtocols to worseMock : ClientProtocol in method public testHedgingWhenBothFail() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L125">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR128">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	worseMock : NamenodeProtocols to worseMock : ClientProtocol in method public testPerformFailoverWith3Proxies() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L235">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR267">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testHedgingWhenConnectAndEOFException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L429">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR436">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testHedgingWhenBothFail() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L125">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR132">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testPerformFailoverWith3Proxies() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L235">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR280">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testHedgingWhenConnectException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L395">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR405">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -430,55 +479,6 @@
                                 <td><i>Change Variable Type	active : NamenodeProtocols to active : ClientProtocol in method public testHedgingWhenConnectAndEOFException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L429">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR430">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	standby : NamenodeProtocols to standby : ClientProtocol in method public testHedgingWhenConnectAndEOFException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L429">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR433">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	worseMock : NamenodeProtocols to worseMock : ClientProtocol in method public testHedgingWhenBothFail() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L125">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR128">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	worseMock : NamenodeProtocols to worseMock : ClientProtocol in method public testPerformFailoverWith3Proxies() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L235">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR267">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testHedgingWhenConnectAndEOFException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L429">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR436">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testHedgingWhenBothFail() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L125">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR132">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testPerformFailoverWith3Proxies() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L235">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR280">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	provider : RequestHedgingProxyProvider&lt;NamenodeProtocols&gt; to provider : RequestHedgingProxyProvider&lt;ClientProtocol&gt; in method public testHedgingWhenConnectException() : void in class org.apache.hadoop.hdfs.server.namenode.ha.TestRequestHedgingProxyProvider</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-7d1647999d4df536181b44123202bee5L395">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9e0e430f18d45cfe125dda8d85916edddf79e8d6?diff=split#diff-e31efb619ce93e78e2b5bd45da67f56eR405">To</a></td>
                             </tr>
                             
                             </tbody>

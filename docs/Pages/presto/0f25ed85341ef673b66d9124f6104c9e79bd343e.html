@@ -376,6 +376,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method private assertQueueState(sharedBuffer SharedOutputBuffer, queueId TaskId, partition int, bufferedPages int, pagesSent int, pageBufferBufferedPages int, pageBufferPagesSent int) : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L896">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR897">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public getBufferResult(sharedBuffer SharedOutputBuffer, outputId TaskId, sequenceId long, maxSize DataSize, maxWait Duration) : BufferResult in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L439">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR439">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method private getBufferInfo(sharedBuffer SharedOutputBuffer, queueId TaskId) : BufferInfo in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L929">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR929">To</a></td>
@@ -430,20 +444,6 @@
                                 <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR879">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method private assertQueueState(sharedBuffer SharedOutputBuffer, queueId TaskId, partition int, bufferedPages int, pagesSent int, pageBufferBufferedPages int, pageBufferPagesSent int) : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L896">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR897">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public getBufferResult(sharedBuffer SharedOutputBuffer, outputId TaskId, sequenceId long, maxSize DataSize, maxWait Duration) : BufferResult in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L439">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR439">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -493,6 +493,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Class	com.facebook.presto.execution.buffer.PartitionBuffer renamed to com.facebook.presto.execution.buffer.SharedOutputBufferPartition</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Class	com.facebook.presto.execution.buffer.TestSharedBuffer renamed to com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -501,13 +508,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	com.facebook.presto.execution.buffer.SharedBuffer renamed to com.facebook.presto.execution.buffer.SharedOutputBuffer</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	com.facebook.presto.execution.buffer.PartitionBuffer renamed to com.facebook.presto.execution.buffer.SharedOutputBufferPartition</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -540,6 +540,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-21" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testGetBeforeCreate() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L539">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR543">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testDestroyFreesWriter() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L801">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR805">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testSharedBufferFull() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L257">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR263">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testFinishFreesReader() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L687">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR691">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testAbortBeforeCreate() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L559">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR563">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testAddQueueAfterDestroy() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L516">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR520">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	partitionBuffer : PartitionBuffer to partitionBuffer : SharedOutputBufferPartition in method public enqueue(partition int, page Page) : ListenableFuture&lt;?&gt; in class com.facebook.presto.execution.buffer.SharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-f6c30dba0cef62472953c02e497a1467L210">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R221">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -639,55 +688,6 @@
                                 <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R332">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testGetBeforeCreate() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L539">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR543">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testDestroyFreesWriter() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L801">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR805">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testSharedBufferFull() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L257">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR263">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testFinishFreesReader() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L687">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR691">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testAbortBeforeCreate() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L559">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR563">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sharedBuffer : SharedBuffer to sharedBuffer : SharedOutputBuffer in method public testAddQueueAfterDestroy() : void in class com.facebook.presto.execution.buffer.TestSharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-c369c18014efe80a7bc08ba0b2f39c34L516">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-2448b93d7044a4357f4dfbef3703fc2bR520">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	partitionBuffer : PartitionBuffer to partitionBuffer : SharedOutputBufferPartition in method public enqueue(partition int, page Page) : ListenableFuture&lt;?&gt; in class com.facebook.presto.execution.buffer.SharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-f6c30dba0cef62472953c02e497a1467L210">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R221">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -701,16 +701,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	partitionBuffers : Map&lt;Integer,PartitionBuffer&gt; to partitionBuffers : Map&lt;Integer,SharedOutputBufferPartition&gt; in class com.facebook.presto.execution.buffer.SharedOutputBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-f6c30dba0cef62472953c02e497a1467L73">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R73">To</a></td>
+                                <td><i>Change Attribute Type	partitionBuffer : PartitionBuffer to partition : SharedOutputBufferPartition in class com.facebook.presto.execution.buffer.SharedOutputBuffer.NamedBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-f6c30dba0cef62472953c02e497a1467L377">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R377">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	partitionBuffer : PartitionBuffer to partition : SharedOutputBufferPartition in class com.facebook.presto.execution.buffer.SharedOutputBuffer.NamedBuffer</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-f6c30dba0cef62472953c02e497a1467L377">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R377">To</a></td>
+                                <td><i>Change Attribute Type	partitionBuffers : Map&lt;Integer,PartitionBuffer&gt; to partitionBuffers : Map&lt;Integer,SharedOutputBufferPartition&gt; in class com.facebook.presto.execution.buffer.SharedOutputBuffer</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-f6c30dba0cef62472953c02e497a1467L73">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/0f25ed85341ef673b66d9124f6104c9e79bd343e?diff=split#diff-9333372e4ff4c70063e9c09cebc8b728R73">To</a></td>
                             </tr>
                             
                             </tbody>

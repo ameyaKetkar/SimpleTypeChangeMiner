@@ -194,6 +194,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	parser : GridSqlQueryParser to select : QueryParserResultSelect in method private executeQueryLocal0(schemaName String, qry String, params Collection&lt;Object&gt;, meta List&lt;GridQueryFieldMetadata&gt;, filter IndexingQueryFilter, enforceJoinOrder boolean, startTx boolean, qryTimeout int, cancel GridQueryCancel, mvccTracker MvccQueryTracker, dataPageScanEnabled Boolean) : GridQueryFieldsResult in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L536">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R494">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	fldsQry : SqlFieldsQuery to fieldsQry : SqlFieldsQuery in method private executeQueryLocal0(schemaName String, qry String, params Collection&lt;Object&gt;, meta List&lt;GridQueryFieldMetadata&gt;, filter IndexingQueryFilter, enforceJoinOrder boolean, startTx boolean, qryTimeout int, cancel GridQueryCancel, mvccTracker MvccQueryTracker, dataPageScanEnabled Boolean) : GridQueryFieldsResult in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L507">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R469">To</a></td>
@@ -211,13 +218,6 @@
                                 <td><i>Rename Variable	stmt : PreparedStatement to dml : QueryParserResultDml in method public streamUpdateQuery(schemaName String, qry String, params Object[], streamer IgniteDataStreamer&lt;?,?&gt;) : long in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L714">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R705">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	parser : GridSqlQueryParser to select : QueryParserResultSelect in method private executeQueryLocal0(schemaName String, qry String, params Collection&lt;Object&gt;, meta List&lt;GridQueryFieldMetadata&gt;, filter IndexingQueryFilter, enforceJoinOrder boolean, startTx boolean, qryTimeout int, cancel GridQueryCancel, mvccTracker MvccQueryTracker, dataPageScanEnabled Boolean) : GridQueryFieldsResult in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L536">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R494">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -287,13 +287,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	row : List&lt;?&gt; in method private streamQuery0(qry String, schemaName String, streamer IgniteDataStreamer, dml QueryParserResultDml, args Object[]) : long from class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	newQry : SqlFieldsQuery in method private parseH2(schemaName String, qry SqlFieldsQuery, remainingAllowed boolean) : QueryParserResult from class org.apache.ignite.internal.processors.query.h2.QueryParser</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -302,6 +295,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	cmd : QueryParserResultCommand in method private checkClusterState(parseRes QueryParserResult) : void from class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	row : List&lt;?&gt; in method private streamQuery0(qry String, schemaName String, streamer IgniteDataStreamer, dml QueryParserResultDml, args Object[]) : long from class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -405,16 +405,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	schema : String to schemaName : String in method private updatePlan(schemaName String, dml QueryParserResultDml, fieldsQry SqlFieldsQuery) : UpdatePlan in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L2857">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R2713">To</a></td>
+                                <td><i>Rename Parameter	stmt : PreparedStatement to dml : QueryParserResultDml in method private streamQuery0(qry String, schemaName String, streamer IgniteDataStreamer, dml QueryParserResultDml, args Object[]) : long in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L774">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R753">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	stmt : PreparedStatement to dml : QueryParserResultDml in method private streamQuery0(qry String, schemaName String, streamer IgniteDataStreamer, dml QueryParserResultDml, args Object[]) : long in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L774">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R753">To</a></td>
+                                <td><i>Rename Parameter	schema : String to schemaName : String in method private updatePlan(schemaName String, dml QueryParserResultDml, fieldsQry SqlFieldsQuery) : UpdatePlan in class org.apache.ignite.internal.processors.query.h2.IgniteH2Indexing</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5L2857">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/1619dd5603f9b9eb71dbffc70add54df0a290e2c?diff=split#diff-f025eca4994493a28c47db77d09afdf5R2713">To</a></td>
                             </tr>
                             
                             </tbody>

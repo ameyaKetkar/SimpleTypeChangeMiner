@@ -184,6 +184,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Push Down Method	public acquireChannelLock(partitionKey Object) : void from class org.asynchttpclient.netty.channel.ConnectionSemaphore to public acquireChannelLock(partitionKey Object) : void from class org.asynchttpclient.netty.channel.MaxConnectionSemaphore</i></td>
+                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL67">From</a></td>
+                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-58ba5516211da78fdcc343404550a757R37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Push Down Method	private getFreeConnectionsForHost(partitionKey Object) : NonBlockingSemaphoreLike from class org.asynchttpclient.netty.channel.ConnectionSemaphore to private getFreeConnectionsForHost(partitionKey Object) : NonBlockingSemaphoreLike from class org.asynchttpclient.netty.channel.PerHostConnectionSemaphore</i></td>
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL57">From</a></td>
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-68506ad8e3e885d4fc8e137f2f990887R56">To</a></td>
@@ -203,13 +210,6 @@
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-68506ad8e3e885d4fc8e137f2f990887R50">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Method	public acquireChannelLock(partitionKey Object) : void from class org.asynchttpclient.netty.channel.ConnectionSemaphore to public acquireChannelLock(partitionKey Object) : void from class org.asynchttpclient.netty.channel.MaxConnectionSemaphore</i></td>
-                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL67">From</a></td>
-                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-58ba5516211da78fdcc343404550a757R37">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -223,14 +223,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Subclass	org.asynchttpclient.netty.channel.PerHostConnectionSemaphore from class org.asynchttpclient.netty.channel.ConnectionSemaphore</i></td>
+                                <td><i>Extract Subclass	org.asynchttpclient.netty.channel.MaxConnectionSemaphore from class org.asynchttpclient.netty.channel.ConnectionSemaphore</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Subclass	org.asynchttpclient.netty.channel.MaxConnectionSemaphore from class org.asynchttpclient.netty.channel.ConnectionSemaphore</i></td>
+                                <td><i>Extract Subclass	org.asynchttpclient.netty.channel.PerHostConnectionSemaphore from class org.asynchttpclient.netty.channel.ConnectionSemaphore</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -266,6 +266,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Push Down Attribute	private maxConnectionsPerHost : int from class org.asynchttpclient.netty.channel.ConnectionSemaphore to private maxConnectionsPerHost : int from class org.asynchttpclient.netty.channel.PerHostConnectionSemaphore</i></td>
+                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL33">From</a></td>
+                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-68506ad8e3e885d4fc8e137f2f990887R31">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Push Down Attribute	private tooManyConnectionsPerHost : IOException from class org.asynchttpclient.netty.channel.ConnectionSemaphore to private tooManyConnectionsPerHost : IOException from class org.asynchttpclient.netty.channel.PerHostConnectionSemaphore</i></td>
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL36">From</a></td>
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-68506ad8e3e885d4fc8e137f2f990887R32">To</a></td>
@@ -290,13 +297,6 @@
                                 <td><i>Push Down Attribute	private tooManyConnections : IOException from class org.asynchttpclient.netty.channel.ConnectionSemaphore to private tooManyConnections : IOException from class org.asynchttpclient.netty.channel.MaxConnectionSemaphore</i></td>
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL35">From</a></td>
                                 <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-58ba5516211da78fdcc343404550a757R30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Push Down Attribute	private maxConnectionsPerHost : int from class org.asynchttpclient.netty.channel.ConnectionSemaphore to private maxConnectionsPerHost : int from class org.asynchttpclient.netty.channel.PerHostConnectionSemaphore</i></td>
-                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-4b49fcb670305e046fba445138809a7aL33">From</a></td>
-                                <td><a href = "https://github.com/AsyncHttpClient/async-http-client/commit/c5ac1a0130228eadd6c68bb4dceb066cd15f3b19?diff=split#diff-68506ad8e3e885d4fc8e137f2f990887R31">To</a></td>
                             </tr>
                             
                             </tbody>

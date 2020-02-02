@@ -211,13 +211,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private log : Log from class org.infinispan.client.hotrod.ClientConnectionPoolingTest to private log : Log from class org.infinispan.client.hotrod.impl.transport.netty.HeaderOrEventDecoder</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247ce7e205897259b55a8002a8f22ea0L35">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a9bdd89e4c6c5915e99759df37b998a6R20">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private channelFactory : ChannelFactory from class org.infinispan.client.hotrod.ClientConnectionPoolingTest to private channelFactory : ChannelFactory from class org.infinispan.client.hotrod.impl.transport.netty.ChannelInitializer</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247ce7e205897259b55a8002a8f22ea0L44">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-93abe0499e9994b8e8d543b9894cd28aR52">To</a></td>
@@ -251,6 +244,13 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-3a1206e0c07180523db10ec313c53988R21">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private log : Log from class org.infinispan.client.hotrod.ClientConnectionPoolingTest to private log : Log from class org.infinispan.client.hotrod.impl.transport.netty.HeaderOrEventDecoder</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247ce7e205897259b55a8002a8f22ea0L35">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a9bdd89e4c6c5915e99759df37b998a6R20">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -282,14 +282,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	wrappedName : WrappedByteArray in method public createTopologyId(cacheName byte[], topologyId int) : AtomicInteger from class org.infinispan.client.hotrod.impl.TopologyInfo</i></td>
+                                <td><i>Extract Variable	wrappedName : WrappedByteArray in method public setTopologyId(cacheName byte[], topologyId int) : void from class org.infinispan.client.hotrod.impl.TopologyInfo</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	wrappedName : WrappedByteArray in method public setTopologyId(cacheName byte[], topologyId int) : void from class org.infinispan.client.hotrod.impl.TopologyInfo</i></td>
+                                <td><i>Extract Variable	wrappedName : WrappedByteArray in method public createTopologyId(cacheName byte[], topologyId int) : AtomicInteger from class org.infinispan.client.hotrod.impl.TopologyInfo</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -340,6 +340,139 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-54" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : T renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ExecuteOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89L52">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : V renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.PutIfAbsentOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-77ae53aaf7d034852257b69f5cc60184L46">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-77ae53aaf7d034852257b69f5cc60184R45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Short renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.AddClientListenerOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fL123">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fR139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : CounterConfiguration renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.GetConfigurationOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-02a824cc14782611e9487ac9ca73c82fL35">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-02a824cc14782611e9487ac9ca73c82fR36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : PingResult renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.PingOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-15d35b5cab903459c221632d5e982fbfL55">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-15d35b5cab903459c221632d5e982fbfR59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Boolean renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.RemoveEntryMultimapOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-87578b69b0a7aaa0cc254d6fe9de2fdbL38">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-87578b69b0a7aaa0cc254d6fe9de2fdbR40">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : PingOperation.PingResult renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.FaultTolerantPingOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-42737aad41c66799af5cfa9b35dea071L36">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-42737aad41c66799af5cfa9b35dea071R38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : V renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.GetOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874L37">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874R36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Boolean renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ContainsKeyOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-6a1eb7a6846a0b4f4c07632ee5b2f181L36">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-6a1eb7a6846a0b4f4c07632ee5b2f181R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : QueryResponse renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.QueryOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7L118">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : OutputStream renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.PutStreamOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-cd81f1e5fcd86e9eff4f2074b1009776L82">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-cd81f1e5fcd86e9eff4f2074b1009776R80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : VersionedValue&lt;V&gt; renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.GetWithVersionOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-59cf777ae934479f47033bf071c2fb8bL47">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-59cf777ae934479f47033bf071c2fb8bR46">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Integer renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.SizeOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-1fb27a90fced6167d2651c5232481ee7L25">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-1fb27a90fced6167d2651c5232481ee7R26">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Void renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.ResetOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-f198fee68b066c11b6f83c4b53bfb9c7L32">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-f198fee68b066c11b6f83c4b53bfb9c7R33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Long renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.CompareAndSwapOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-8bf170eec745962333b43cd386320168L48">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-8bf170eec745962333b43cd386320168R49">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Void renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ClearOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-b0746890ce79e9e304c31b55915addaeL32">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-b0746890ce79e9e304c31b55915addaeR33">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Boolean renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.RemoveKeyMultimapOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3L35">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3R36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : IterationNextResponse&lt;E&gt; renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.IterationNextOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeL67">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeR64">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Collection&lt;V&gt; renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.GetKeyMultimapOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39L48">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39R52">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -586,139 +719,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-d6ef8a4174a3e70b4ad0f007407666d3R44">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : T renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ExecuteOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89L52">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : V renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.PutIfAbsentOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-77ae53aaf7d034852257b69f5cc60184L46">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-77ae53aaf7d034852257b69f5cc60184R45">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Short renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.AddClientListenerOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fL123">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : CounterConfiguration renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.GetConfigurationOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-02a824cc14782611e9487ac9ca73c82fL35">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-02a824cc14782611e9487ac9ca73c82fR36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : PingResult renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.PingOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-15d35b5cab903459c221632d5e982fbfL55">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-15d35b5cab903459c221632d5e982fbfR59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Boolean renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.RemoveEntryMultimapOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-87578b69b0a7aaa0cc254d6fe9de2fdbL38">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-87578b69b0a7aaa0cc254d6fe9de2fdbR40">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : PingOperation.PingResult renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.FaultTolerantPingOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-42737aad41c66799af5cfa9b35dea071L36">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-42737aad41c66799af5cfa9b35dea071R38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : V renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.GetOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874L37">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874R36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Boolean renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ContainsKeyOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-6a1eb7a6846a0b4f4c07632ee5b2f181L36">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-6a1eb7a6846a0b4f4c07632ee5b2f181R35">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : QueryResponse renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.QueryOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7L118">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : OutputStream renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.PutStreamOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-cd81f1e5fcd86e9eff4f2074b1009776L82">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-cd81f1e5fcd86e9eff4f2074b1009776R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : VersionedValue&lt;V&gt; renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.GetWithVersionOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-59cf777ae934479f47033bf071c2fb8bL47">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-59cf777ae934479f47033bf071c2fb8bR46">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Integer renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.SizeOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-1fb27a90fced6167d2651c5232481ee7L25">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-1fb27a90fced6167d2651c5232481ee7R26">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Void renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.ResetOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-f198fee68b066c11b6f83c4b53bfb9c7L32">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-f198fee68b066c11b6f83c4b53bfb9c7R33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Long renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.CompareAndSwapOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-8bf170eec745962333b43cd386320168L48">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-8bf170eec745962333b43cd386320168R49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Void renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ClearOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-b0746890ce79e9e304c31b55915addaeL32">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-b0746890ce79e9e304c31b55915addaeR33">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Boolean renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.RemoveKeyMultimapOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3L35">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3R36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : IterationNextResponse&lt;E&gt; renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.IterationNextOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeL67">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeR64">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public decodePayload(buf ByteBuf, status short) : Collection&lt;V&gt; renamed to public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.GetKeyMultimapOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39L48">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39R52">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -761,6 +761,90 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-53" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Boolean to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.DefineCounterOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247a2a5b1f0c2c2ff4f8e88bd6d59ab9L40">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247a2a5b1f0c2c2ff4f8e88bd6d59ab9R41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Short to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.AddClientListenerOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fL123">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fR139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	IterationNextResponse&lt;E&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.IterationNextOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeL67">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeR64">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Boolean to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.RemoveKeyMultimapOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3L35">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3R36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Collection&lt;V&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.GetKeyMultimapOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39L48">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39R52">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	V to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.GetOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874L37">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874R36">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ExecuteOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89L52">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89R51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	QueryResponse to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.QueryOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7L118">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to void in method public abstract acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.HotRodOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd3a1f4e135ab5864eba8ee5d1271b9bL121">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd3a1f4e135ab5864eba8ee5d1271b9bR127">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Map&lt;String,String&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.StatsOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-d6ef8a4174a3e70b4ad0f007407666d3L52">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-d6ef8a4174a3e70b4ad0f007407666d3R44">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Void to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.RemoveClientListenerOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-e2ba14e6521a65d6a0c881ba255b0a6fL63">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-e2ba14e6521a65d6a0c881ba255b0a6fR63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	List&lt;String&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.AuthMechListOperation</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ca368ac9521db24290cc79ef05b8cc4bL54">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ca368ac9521db24290cc79ef05b8cc4bR46">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1049,90 +1133,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ebb19434693da6f9077b177613fb6594R43">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Boolean to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.counter.operation.DefineCounterOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247a2a5b1f0c2c2ff4f8e88bd6d59ab9L40">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-247a2a5b1f0c2c2ff4f8e88bd6d59ab9R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Short to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.AddClientListenerOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fL123">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-c576d4147dcccced553bec9b6bbceb7fR139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	IterationNextResponse&lt;E&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.IterationNextOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeL67">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-0efe7c96a1c77b856ea475615ecddbbeR64">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Boolean to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.RemoveKeyMultimapOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3L35">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a8d3ab6f22bc66b91680fe0aa8e807d3R36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Collection&lt;V&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.multimap.operations.GetKeyMultimapOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39L48">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd02467e79f3093f09ed2f5e0e733a39R52">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	V to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.GetOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874L37">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-db883cb5edc61848683ed669adf91874R36">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.ExecuteOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89L52">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ab67f1678654b187491b99e31d8c5a89R51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	QueryResponse to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.QueryOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7L118">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-719004d5868a74ec4c4bb40c63764da7R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to void in method public abstract acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.HotRodOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd3a1f4e135ab5864eba8ee5d1271b9bL121">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-fd3a1f4e135ab5864eba8ee5d1271b9bR127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Map&lt;String,String&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.StatsOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-d6ef8a4174a3e70b4ad0f007407666d3L52">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-d6ef8a4174a3e70b4ad0f007407666d3R44">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Void to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.RemoveClientListenerOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-e2ba14e6521a65d6a0c881ba255b0a6fL63">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-e2ba14e6521a65d6a0c881ba255b0a6fR63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	List&lt;String&gt; to void in method public acceptResponse(buf ByteBuf, status short, decoder HeaderDecoder) : void in class org.infinispan.client.hotrod.impl.operations.AuthMechListOperation</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ca368ac9521db24290cc79ef05b8cc4bL54">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-ca368ac9521db24290cc79ef05b8cc4bR46">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1164,16 +1164,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	operation : HotRodOperation&lt;T&gt; to operation : AddClientListenerOperation in class org.infinispan.client.hotrod.impl.transport.netty.HeaderOrEventDecoder</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a9bdd89e4c6c5915e99759df37b998a6L20">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a9bdd89e4c6c5915e99759df37b998a6R25">To</a></td>
+                                <td><i>Change Attribute Type	operation : HotRodOperation&lt;T&gt; to operation : HotRodOperation&lt;?&gt; in class org.infinispan.client.hotrod.impl.transport.netty.HeaderDecoder</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-3a1206e0c07180523db10ec313c53988L21">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-3a1206e0c07180523db10ec313c53988R32">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	operation : HotRodOperation&lt;T&gt; to operation : HotRodOperation&lt;?&gt; in class org.infinispan.client.hotrod.impl.transport.netty.HeaderDecoder</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-3a1206e0c07180523db10ec313c53988L21">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-3a1206e0c07180523db10ec313c53988R32">To</a></td>
+                                <td><i>Change Attribute Type	operation : HotRodOperation&lt;T&gt; to operation : AddClientListenerOperation in class org.infinispan.client.hotrod.impl.transport.netty.HeaderOrEventDecoder</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a9bdd89e4c6c5915e99759df37b998a6L20">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/ef6afd691e5342a1b22d1455e9cb71e8566e0341?diff=split#diff-a9bdd89e4c6c5915e99759df37b998a6R25">To</a></td>
                             </tr>
                             
                             </tbody>

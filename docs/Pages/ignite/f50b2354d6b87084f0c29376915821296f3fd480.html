@@ -192,16 +192,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	serializer : RecordSerializer to serializerFactory : RecordSerializerFactory in method private RecordsIterator(cctx GridCacheSharedContext, walWorkDir File, walArchiveDir File, start FileWALPointer, end FileWALPointer, psCfg DataStorageConfiguration, serializerFactory RecordSerializerFactory, ioFactory FileIOFactory, archiver FileArchiver, decompressor FileDecompressor, log IgniteLogger) in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager.RecordsIterator</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10L2500">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10R2914">To</a></td>
+                                <td><i>Change Parameter Type	serializer : RecordSerializer to serializerFactory : RecordSerializerFactory in method protected AbstractWalRecordsIterator(log IgniteLogger, sharedCtx GridCacheSharedContext, serializerFactory RecordSerializerFactory, ioFactory FileIOFactory, bufSize int) in class org.apache.ignite.internal.processors.cache.persistence.wal.AbstractWalRecordsIterator</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-27a111d7ef7b34c29f03ce644926a6c6L82">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-27a111d7ef7b34c29f03ce644926a6c6R94">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	serializer : RecordSerializer to serializerFactory : RecordSerializerFactory in method protected AbstractWalRecordsIterator(log IgniteLogger, sharedCtx GridCacheSharedContext, serializerFactory RecordSerializerFactory, ioFactory FileIOFactory, bufSize int) in class org.apache.ignite.internal.processors.cache.persistence.wal.AbstractWalRecordsIterator</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-27a111d7ef7b34c29f03ce644926a6c6L82">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-27a111d7ef7b34c29f03ce644926a6c6R94">To</a></td>
+                                <td><i>Change Parameter Type	serializer : RecordSerializer to serializerFactory : RecordSerializerFactory in method private RecordsIterator(cctx GridCacheSharedContext, walWorkDir File, walArchiveDir File, start FileWALPointer, end FileWALPointer, psCfg DataStorageConfiguration, serializerFactory RecordSerializerFactory, ioFactory FileIOFactory, archiver FileArchiver, decompressor FileDecompressor, log IgniteLogger) in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager.RecordsIterator</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10L2500">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10R2914">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -281,14 +281,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.wal.RecordDataSerializer moved to org.apache.ignite.internal.processors.cache.persistence.wal.serializer.RecordDataSerializer</i></td>
+                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.wal.RecordSerializer moved to org.apache.ignite.internal.processors.cache.persistence.wal.serializer.RecordSerializer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.wal.RecordSerializer moved to org.apache.ignite.internal.processors.cache.persistence.wal.serializer.RecordSerializer</i></td>
+                                <td><i>Move Class	org.apache.ignite.internal.processors.cache.persistence.wal.RecordDataSerializer moved to org.apache.ignite.internal.processors.cache.persistence.wal.serializer.RecordDataSerializer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -324,6 +324,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Attribute	oldestArchiveSegmentIdx : long to lastTruncatedArchiveIdx : long in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10L173">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10R215">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Attribute	MAGIC : long to REGULAR_MAGIC : long in class org.apache.ignite.internal.processors.cache.persistence.wal.record.HeaderRecord</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-7a392b35c5592101faf66604c85268f3L28">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-7a392b35c5592101faf66604c85268f3R28">To</a></td>
@@ -334,13 +341,6 @@
                                 <td><i>Rename Attribute	serializer : RecordSerializer to serializerFactory : RecordSerializerFactory in class org.apache.ignite.internal.processors.cache.persistence.wal.AbstractWalRecordsIterator</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-27a111d7ef7b34c29f03ce644926a6c6L74">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-27a111d7ef7b34c29f03ce644926a6c6R76">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	oldestArchiveSegmentIdx : long to lastTruncatedArchiveIdx : long in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10L173">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/f50b2354d6b87084f0c29376915821296f3fd480?diff=split#diff-ec6d1421dfb3b28fdcbe1cbfee261b10R215">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -356,14 +356,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private prepareSerializerVersionBuffer(idx long, ver int, compacted boolean) : ByteBuffer extracted from public writeSerializerVersion(io FileIO, idx long, version int) : long in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager</i></td>
+                                <td><i>Extract Method	private changeLastArchivedIndexAndWakeupCompressor(idx long) : void extracted from public run() : void in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager.FileArchiver</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private changeLastArchivedIndexAndWakeupCompressor(idx long) : void extracted from public run() : void in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager.FileArchiver</i></td>
+                                <td><i>Extract Method	private prepareSerializerVersionBuffer(idx long, ver int, compacted boolean) : ByteBuffer extracted from public writeSerializerVersion(io FileIO, idx long, version int) : long in class org.apache.ignite.internal.processors.cache.persistence.wal.FileWriteAheadLogManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

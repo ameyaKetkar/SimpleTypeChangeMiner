@@ -316,16 +316,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public onDisconnect(code SocketStateCode) : boolean renamed to public onClose(code SocketStateCode) : boolean in class com.navercorp.pinpoint.rpc.common.SocketStateCode</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-03097ff0076fb849d06412f4a4d09cecL118">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-03097ff0076fb849d06412f4a4d09cecR118">To</a></td>
+                                <td><i>Rename Method	private messageReceivedHandshakeResponse(message ControlHandshakeResponsePacket, channel Channel) : void renamed to private handleHandshakePacket(message ControlHandshakeResponsePacket, channel Channel) : void in class com.navercorp.pinpoint.rpc.client.PinpointSocketHandler</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-c677801e70907839d97ed89655d2e887L405">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-c677801e70907839d97ed89655d2e887R407">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private messageReceivedHandshakeResponse(message ControlHandshakeResponsePacket, channel Channel) : void renamed to private handleHandshakePacket(message ControlHandshakeResponsePacket, channel Channel) : void in class com.navercorp.pinpoint.rpc.client.PinpointSocketHandler</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-c677801e70907839d97ed89655d2e887L405">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-c677801e70907839d97ed89655d2e887R407">To</a></td>
+                                <td><i>Rename Method	public onDisconnect(code SocketStateCode) : boolean renamed to public onClose(code SocketStateCode) : boolean in class com.navercorp.pinpoint.rpc.common.SocketStateCode</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-03097ff0076fb849d06412f4a4d09cecL118">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/beeb4126470a459404963770ce53a86e0a66b805?diff=split#diff-03097ff0076fb849d06412f4a4d09cecR118">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -452,6 +452,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	public getCurrentStateCode() : SocketStateCode extracted from public channelClosed(ctx ChannelHandlerContext, e ChannelStateEvent) : void in class com.navercorp.pinpoint.rpc.client.PinpointSocketHandler</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	public getCurrentStateCode() : SocketStateCode extracted from private ensureOpen() : void in class com.navercorp.pinpoint.rpc.client.PinpointSocketHandler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -460,13 +467,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private closeChannel() : void extracted from public close() : void in class com.navercorp.pinpoint.rpc.client.PinpointSocketHandler</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public getCurrentStateCode() : SocketStateCode extracted from public channelClosed(ctx ChannelHandlerContext, e ChannelStateEvent) : void in class com.navercorp.pinpoint.rpc.client.PinpointSocketHandler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -367,6 +367,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Attribute	protected UPDATED_UNEXPIRED_AVAIL : String in class org.apache.flink.runtime.state.ttl.TtlStateTestBase</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Attribute	private EXPIRED_AVAIL : String in class org.apache.flink.runtime.state.ttl.TtlStateTestBase</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -386,13 +393,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Attribute	protected UPDATED_UNEXPIRED_AVAIL : String in class org.apache.flink.runtime.state.ttl.TtlStateTestBase</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -403,6 +403,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	oldStateInfo : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to oldStateInfo : RocksDbKvStateInfo in method private tryRegisterKvStateInformation(stateDesc StateDescriptor&lt;S,SV&gt;, namespaceSerializer TypeSerializer&lt;N&gt;, snapshotTransformFactory StateSnapshotTransformFactory&lt;SEV&gt;) : Tuple2&lt;ColumnFamilyHandle,RegisteredKeyValueStateBackendMetaInfo&lt;N,SV&gt;&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1338">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1377">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateMetaInfoEntry : Map.Entry&lt;String,Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt;&gt; to stateMetaInfoEntry : Map.Entry&lt;String,RocksDbKvStateInfo&gt; in method private snapshotMetaData(checkpointId long, stateMetaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;) : Set&lt;StateHandleID&gt; in class org.apache.flink.contrib.streaming.state.snapshot.RocksIncrementalSnapshotStrategy</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-b74bca3c59c302e9f6be9d30792f5fd0L219">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-b74bca3c59c302e9f6be9d30792f5fd0R233">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	metaInfoTuple : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to stateInfo : RocksDbKvStateInfo in method public create(stateName String, byteOrderedElementSerializer TypeSerializer&lt;T&gt;) : KeyGroupedInternalPriorityQueue&lt;T&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBPriorityQueueSetFactory</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1582">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1629">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	metaDataCopy : List&lt;Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt;&gt; to metaDataCopy : List&lt;RocksDbKvStateInfo&gt; in method public doSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.contrib.streaming.state.snapshot.RocksFullSnapshotStrategy</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-00e1b8a15c1d0b4d43dcf1a87eb69d20L113">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-00e1b8a15c1d0b4d43dcf1a87eb69d20R125">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -481,34 +509,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1381">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	oldStateInfo : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to oldStateInfo : RocksDbKvStateInfo in method private tryRegisterKvStateInformation(stateDesc StateDescriptor&lt;S,SV&gt;, namespaceSerializer TypeSerializer&lt;N&gt;, snapshotTransformFactory StateSnapshotTransformFactory&lt;SEV&gt;) : Tuple2&lt;ColumnFamilyHandle,RegisteredKeyValueStateBackendMetaInfo&lt;N,SV&gt;&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1338">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1377">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateMetaInfoEntry : Map.Entry&lt;String,Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt;&gt; to stateMetaInfoEntry : Map.Entry&lt;String,RocksDbKvStateInfo&gt; in method private snapshotMetaData(checkpointId long, stateMetaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;) : Set&lt;StateHandleID&gt; in class org.apache.flink.contrib.streaming.state.snapshot.RocksIncrementalSnapshotStrategy</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-b74bca3c59c302e9f6be9d30792f5fd0L219">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-b74bca3c59c302e9f6be9d30792f5fd0R233">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	metaInfoTuple : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to stateInfo : RocksDbKvStateInfo in method public create(stateName String, byteOrderedElementSerializer TypeSerializer&lt;T&gt;) : KeyGroupedInternalPriorityQueue&lt;T&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBPriorityQueueSetFactory</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1582">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1629">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	metaDataCopy : List&lt;Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt;&gt; to metaDataCopy : List&lt;RocksDbKvStateInfo&gt; in method public doSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.contrib.streaming.state.snapshot.RocksFullSnapshotStrategy</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-00e1b8a15c1d0b4d43dcf1a87eb69d20L113">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-00e1b8a15c1d0b4d43dcf1a87eb69d20R125">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -540,13 +540,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private getCurrentTimestamp() : long extracted from public currentTimestamp() : long in class org.apache.flink.streaming.tests.MonotonicTTLTimeProvider</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private createAndRegisterColumnFamilyDescriptors(stateMetaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;, registerTtlCompactFilter boolean) : List&lt;ColumnFamilyDescriptor&gt; extracted from private createAndRegisterColumnFamilyDescriptors(stateMetaInfoSnapshots List&lt;StateMetaInfoSnapshot&gt;) : List&lt;ColumnFamilyDescriptor&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -555,6 +548,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	package createAndRestoreKeyedStateBackend(numberOfKeyGroups int) : void extracted from package createAndRestoreKeyedStateBackend() : void in class org.apache.flink.runtime.state.ttl.StateBackendTestContext</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private getCurrentTimestamp() : long extracted from public currentTimestamp() : long in class org.apache.flink.streaming.tests.MonotonicTTLTimeProvider</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -569,34 +569,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	columnFamilyDescriptors : List&lt;ColumnFamilyDescriptor&gt; to descriptors : List&lt;ColumnFamilyDescriptor&gt; in method package restoreWithoutRescaling(rawStateHandle KeyedStateHandle) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L904">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R922">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	column : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to metaInfo : RocksDbKvStateInfo in method public numKeyValueStateEntries() : int in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1536">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1578">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	newColumnFamily : ColumnFamilyHandle to newRocksStateInfo : RocksDbKvStateInfo in method private tryRegisterKvStateInformation(stateDesc StateDescriptor&lt;S,SV&gt;, namespaceSerializer TypeSerializer&lt;N&gt;, snapshotTransformFactory StateSnapshotTransformFactory&lt;SEV&gt;) : Tuple2&lt;ColumnFamilyHandle,RegisteredKeyValueStateBackendMetaInfo&lt;N,SV&gt;&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1356">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1381">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	stateMetaInfo : RegisteredStateMetaInfoBase to metaInfoBase : RegisteredStateMetaInfoBase in method private restoreKVStateMetaData() : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBFullRestoreOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L785">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R803">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -645,6 +617,34 @@
                                 <td><i>Rename Variable	tuple2 : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to stateInfo : RocksDbKvStateInfo in method public doSnapshot(checkpointId long, timestamp long, primaryStreamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.contrib.streaming.state.snapshot.RocksFullSnapshotStrategy</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-00e1b8a15c1d0b4d43dcf1a87eb69d20L128">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-00e1b8a15c1d0b4d43dcf1a87eb69d20R128">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	columnFamilyDescriptors : List&lt;ColumnFamilyDescriptor&gt; to descriptors : List&lt;ColumnFamilyDescriptor&gt; in method package restoreWithoutRescaling(rawStateHandle KeyedStateHandle) : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalRestoreOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L904">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R922">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	column : Tuple2&lt;ColumnFamilyHandle,RegisteredStateMetaInfoBase&gt; to metaInfo : RocksDbKvStateInfo in method public numKeyValueStateEntries() : int in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1536">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1578">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	newColumnFamily : ColumnFamilyHandle to newRocksStateInfo : RocksDbKvStateInfo in method private tryRegisterKvStateInformation(stateDesc StateDescriptor&lt;S,SV&gt;, namespaceSerializer TypeSerializer&lt;N&gt;, snapshotTransformFactory StateSnapshotTransformFactory&lt;SEV&gt;) : Tuple2&lt;ColumnFamilyHandle,RegisteredKeyValueStateBackendMetaInfo&lt;N,SV&gt;&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L1356">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R1381">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	stateMetaInfo : RegisteredStateMetaInfoBase to metaInfoBase : RegisteredStateMetaInfoBase in method private restoreKVStateMetaData() : void in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBFullRestoreOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2L785">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/735b5141f14bc56a0c88d792b8413bcad42f0ce3?diff=split#diff-4585546df289e14ed098ed06400303c2R803">To</a></td>
                             </tr>
                             
                             </tbody>

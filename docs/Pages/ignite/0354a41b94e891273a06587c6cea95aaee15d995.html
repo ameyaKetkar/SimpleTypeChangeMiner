@@ -267,6 +267,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Variable	entries : List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt; in method private addMapping(mappings Map&lt;ClusterNode,List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;&gt;, dst Map&lt;UUID,GridDistributedTxMapping&lt;K,V&gt;&gt;) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Variable	needVal : boolean in method private map(entries Iterable&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtLockFuture</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -275,13 +282,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	dhtWrites : Collection&lt;IgniteTxEntry&lt;K,V&gt;&gt; in method private prepare0() : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	entries : List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt; in method private addMapping(mappings Map&lt;ClusterNode,List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;&gt;, dst Map&lt;UUID,GridDistributedTxMapping&lt;K,V&gt;&gt;) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -299,13 +299,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private sendPrepareResponse(res GridNearTxPrepareResponse&lt;K,V&gt;) : void extracted from public onDone(tx0 IgniteTxEx&lt;K,V&gt;, err Throwable) : boolean in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private createPrepareResponse() : GridNearTxPrepareResponse&lt;K,V&gt; extracted from public onDone(tx0 IgniteTxEx&lt;K,V&gt;, err Throwable) : boolean in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -314,6 +307,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	protected finish(nodeId UUID, tx GridDistributedTxRemoteAdapter&lt;K,V&gt;, req GridDhtTxPrepareRequest&lt;K,V&gt;) : void extracted from protected processDhtTxPrepareRequest(nodeId UUID, req GridDhtTxPrepareRequest&lt;K,V&gt;) : void in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxHandler</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private sendPrepareResponse(res GridNearTxPrepareResponse&lt;K,V&gt;) : void extracted from public onDone(tx0 IgniteTxEx&lt;K,V&gt;, err Throwable) : boolean in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareFuture</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -331,20 +331,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public commitVersion() : GridCacheVersion renamed to public writeVersion() : GridCacheVersion in class org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxPrepareRequest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-f76f8826efc7dd0f1789b9333137953bL200">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-f76f8826efc7dd0f1789b9333137953bR228">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public committedVersionsSize() : int renamed to public completedVersionsSize() : int in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L335">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R322">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	package addNearMapping(mappings Map&lt;ClusterNode,List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;&gt;) : void renamed to package addNearNodeEntryMapping(mappings Map&lt;ClusterNode,List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;&gt;) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-1141bbb842fbfc20cc7a621bf1cada1dL291">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-1141bbb842fbfc20cc7a621bf1cada1dR291">To</a></td>
@@ -355,6 +341,20 @@
                                 <td><i>Rename Method	package addDhtMapping(mappings Map&lt;ClusterNode,List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;&gt;) : void renamed to package addDhtNodeEntryMapping(mappings Map&lt;ClusterNode,List&lt;GridDhtCacheEntry&lt;K,V&gt;&gt;&gt;) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxLocalAdapter</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-1141bbb842fbfc20cc7a621bf1cada1dL284">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-1141bbb842fbfc20cc7a621bf1cada1dR284">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public commitVersion() : GridCacheVersion renamed to public writeVersion() : GridCacheVersion in class org.apache.ignite.internal.processors.cache.distributed.GridDistributedTxPrepareRequest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-f76f8826efc7dd0f1789b9333137953bL200">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-f76f8826efc7dd0f1789b9333137953bR228">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public committedVersionsSize() : int renamed to public completedVersionsSize() : int in class org.apache.ignite.internal.processors.cache.transactions.IgniteTxManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69L335">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/0354a41b94e891273a06587c6cea95aaee15d995?diff=split#diff-b74755e922de28c2e5e815c3fcdc2a69R322">To</a></td>
                             </tr>
                             
                             </tbody>

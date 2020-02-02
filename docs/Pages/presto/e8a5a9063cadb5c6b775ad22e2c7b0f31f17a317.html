@@ -406,6 +406,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public setSourceDistribution(source PlanNodeId, partitioning PartitioningHandle) : FragmentProperties renamed to public addSourceDistribution(source PlanNodeId, distribution PartitioningHandle) : FragmentProperties in class com.facebook.presto.sql.planner.PlanFragmenter.FragmentProperties</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aL278">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aR291">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public getPartitionedSourceNode() : PlanNode renamed to public getPartitionedSourceNodes() : Set&lt;PlanNode&gt; in class com.facebook.presto.sql.planner.PlanFragment</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL124">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR132">To</a></td>
@@ -432,13 +439,6 @@
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aR332">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setSourceDistribution(source PlanNodeId, partitioning PartitioningHandle) : FragmentProperties renamed to public addSourceDistribution(source PlanNodeId, distribution PartitioningHandle) : FragmentProperties in class com.facebook.presto.sql.planner.PlanFragmenter.FragmentProperties</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aL278">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aR291">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -449,20 +449,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	splits : Iterable&lt;Split&gt; to splits : Multimap&lt;PlanNodeId,Split&gt; in method public scheduleSplits(node Node, partition int, splits Multimap&lt;PlanNodeId,Split&gt;) : Set&lt;RemoteTask&gt; in class com.facebook.presto.execution.SqlStageExecution</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L297">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522R295">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	splitSource : SplitSource to splitSources : Map&lt;PlanNodeId,SplitSource&gt; in method public FixedSourcePartitionedScheduler(stage SqlStageExecution, splitSources Map&lt;PlanNodeId,SplitSource&gt;, schedulingOrder List&lt;PlanNodeId&gt;, partitioning NodePartitionMap, splitBatchSize int, nodeSelector NodeSelector) in class com.facebook.presto.execution.scheduler.FixedSourcePartitionedScheduler</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-7f43aba0f7991f1a0540f1bf34d63b1eL40">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-7f43aba0f7991f1a0540f1bf34d63b1eR50">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -483,6 +469,20 @@
                                 <td><i>Change Parameter Type	dataSource : Optional&lt;SplitSource&gt; to splitSources : Map&lt;PlanNodeId,SplitSource&gt; in method public StageExecutionPlan(fragment PlanFragment, splitSources Map&lt;PlanNodeId,SplitSource&gt;, subStages List&lt;StageExecutionPlan&gt;) in class com.facebook.presto.sql.planner.StageExecutionPlan</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-a7b14d6d19c1ee0e3e7cf11d63bc6335L34">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-a7b14d6d19c1ee0e3e7cf11d63bc6335R38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	splits : Iterable&lt;Split&gt; to splits : Multimap&lt;PlanNodeId,Split&gt; in method public scheduleSplits(node Node, partition int, splits Multimap&lt;PlanNodeId,Split&gt;) : Set&lt;RemoteTask&gt; in class com.facebook.presto.execution.SqlStageExecution</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522L297">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-e97f65103d2e8ce8ea2916e4ab25f522R295">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	splitSource : SplitSource to splitSources : Map&lt;PlanNodeId,SplitSource&gt; in method public FixedSourcePartitionedScheduler(stage SqlStageExecution, splitSources Map&lt;PlanNodeId,SplitSource&gt;, schedulingOrder List&lt;PlanNodeId&gt;, partitioning NodePartitionMap, splitBatchSize int, nodeSelector NodeSelector) in class com.facebook.presto.execution.scheduler.FixedSourcePartitionedScheduler</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-7f43aba0f7991f1a0540f1bf34d63b1eL40">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-7f43aba0f7991f1a0540f1bf34d63b1eR50">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -527,76 +527,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-34" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitTableWriter(node TableWriterNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L269">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R273">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitIndexJoin(node IndexJoinNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L137">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R139">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitSort(node SortNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L263">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R267">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitTopN(node TopNNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L233">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R237">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitProject(node ProjectNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L221">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R225">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	PlanNode to Set&lt;PlanNode&gt; in method public getPartitionedSourceNodes() : Set&lt;PlanNode&gt; in class com.facebook.presto.sql.planner.PlanFragment</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL124">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR132">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	PlanNode to void in method private findSources(node PlanNode, nodeIds Set&lt;PlanNodeId&gt;, nodes ImmutableSet.Builder&lt;PlanNode&gt;) : void in class com.facebook.presto.sql.planner.PlanFragment</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL139">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR154">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitDistinctLimit(node DistinctLimitNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L257">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R261">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitAggregation(node AggregationNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L185">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R189">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitSample(node SampleNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L163">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R165">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -764,6 +694,76 @@
                                 <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitOutput(node OutputNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L239">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R243">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitTableWriter(node TableWriterNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L269">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R273">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitIndexJoin(node IndexJoinNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L137">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R139">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitSort(node SortNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L263">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R267">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitTopN(node TopNNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L233">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R237">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitProject(node ProjectNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L221">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R225">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	PlanNode to Set&lt;PlanNode&gt; in method public getPartitionedSourceNodes() : Set&lt;PlanNode&gt; in class com.facebook.presto.sql.planner.PlanFragment</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL124">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR132">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	PlanNode to void in method private findSources(node PlanNode, nodeIds Set&lt;PlanNodeId&gt;, nodes ImmutableSet.Builder&lt;PlanNode&gt;) : void in class com.facebook.presto.sql.planner.PlanFragment</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL139">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR154">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitDistinctLimit(node DistinctLimitNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L257">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R261">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitAggregation(node AggregationNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L185">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R189">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Optional&lt;SplitSource&gt; to Map&lt;PlanNodeId,SplitSource&gt; in method public visitSample(node SampleNode, context Void) : Map&lt;PlanNodeId,SplitSource&gt; in class com.facebook.presto.sql.planner.DistributedExecutionPlanner.Visitor</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2L163">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-2367967959fd97a2cf8316c3b6830ac2R165">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -939,20 +939,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	partitionedSource : PlanNodeId to partitionedSources : List&lt;PlanNodeId&gt; in method public PlanFragment(id PlanFragmentId, root PlanNode, symbols Map&lt;Symbol,Type&gt;, partitioning PartitioningHandle, partitionedSources List&lt;PlanNodeId&gt;, partitionFunction PartitionFunctionBinding) in class com.facebook.presto.sql.planner.PlanFragment</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL58">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR59">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	dataSource : Optional&lt;SplitSource&gt; to splitSources : Map&lt;PlanNodeId,SplitSource&gt; in method public StageExecutionPlan(fragment PlanFragment, splitSources Map&lt;PlanNodeId,SplitSource&gt;, subStages List&lt;StageExecutionPlan&gt;) in class com.facebook.presto.sql.planner.StageExecutionPlan</i></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-a7b14d6d19c1ee0e3e7cf11d63bc6335L36">From</a></td>
-                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-a7b14d6d19c1ee0e3e7cf11d63bc6335R38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	partitioning : PartitioningHandle to distribution : PartitioningHandle in method public addSourceDistribution(source PlanNodeId, distribution PartitioningHandle) : FragmentProperties in class com.facebook.presto.sql.planner.PlanFragmenter.FragmentProperties</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aL278">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-11daf1200a756e90f4a3f34f6afc511aR291">To</a></td>
@@ -963,6 +949,20 @@
                                 <td><i>Rename Parameter	splitSource : SplitSource to splitSources : Map&lt;PlanNodeId,SplitSource&gt; in method public FixedSourcePartitionedScheduler(stage SqlStageExecution, splitSources Map&lt;PlanNodeId,SplitSource&gt;, schedulingOrder List&lt;PlanNodeId&gt;, partitioning NodePartitionMap, splitBatchSize int, nodeSelector NodeSelector) in class com.facebook.presto.execution.scheduler.FixedSourcePartitionedScheduler</i></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-7f43aba0f7991f1a0540f1bf34d63b1eL42">From</a></td>
                                 <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-7f43aba0f7991f1a0540f1bf34d63b1eR50">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	partitionedSource : PlanNodeId to partitionedSources : List&lt;PlanNodeId&gt; in method public PlanFragment(id PlanFragmentId, root PlanNode, symbols Map&lt;Symbol,Type&gt;, partitioning PartitioningHandle, partitionedSources List&lt;PlanNodeId&gt;, partitionFunction PartitionFunctionBinding) in class com.facebook.presto.sql.planner.PlanFragment</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddL58">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-4c4ae68c3d93ba5880a797a6859854ddR59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	dataSource : Optional&lt;SplitSource&gt; to splitSources : Map&lt;PlanNodeId,SplitSource&gt; in method public StageExecutionPlan(fragment PlanFragment, splitSources Map&lt;PlanNodeId,SplitSource&gt;, subStages List&lt;StageExecutionPlan&gt;) in class com.facebook.presto.sql.planner.StageExecutionPlan</i></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-a7b14d6d19c1ee0e3e7cf11d63bc6335L36">From</a></td>
+                                <td><a href = "https://github.com/prestodb/presto/commit/e8a5a9063cadb5c6b775ad22e2c7b0f31f17a317?diff=split#diff-a7b14d6d19c1ee0e3e7cf11d63bc6335R38">To</a></td>
                             </tr>
                             
                             </tbody>

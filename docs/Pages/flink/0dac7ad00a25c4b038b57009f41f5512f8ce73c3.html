@@ -299,6 +299,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Merge Parameter	[checkpointID : long, checkpointTimestamp : long] to checkpointMetaData : CheckpointMetaData in method public declineCheckpoint(jobID JobID, executionAttemptID ExecutionAttemptID, checkpointMetaData CheckpointMetaData) : void in class org.apache.flink.runtime.taskmanager.ActorGatewayCheckpointResponder</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Merge Parameter	[alignmentDurationNanos : long, checkpointId : long, timestamp : long] to checkpointMetaData : CheckpointMetaData in method private performCheckpoint(checkpointMetaData CheckpointMetaData) : boolean in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Merge Parameter	[checkpointID : long, synchronousDurationMillis : long, asynchronousDurationMillis : long, bytesBufferedInAlignment : long, alignmentDurationNanos : long] to checkpointMetaData : CheckpointMetaData in method public acknowledgeCheckpoint(jobID JobID, executionAttemptID ExecutionAttemptID, checkpointMetaData CheckpointMetaData, checkpointStateHandles CheckpointStateHandles) : void in class org.apache.flink.runtime.taskmanager.ActorGatewayCheckpointResponder</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -321,20 +335,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Merge Parameter	[checkpointId : long, synchronousDurationMillis : long, asynchronousDurationMillis : long, bytesBufferedInAlignment : long, alignmentDurationNanos : long] to checkpointMetaData : CheckpointMetaData in method public AcknowledgeCheckpoint(job JobID, taskExecutionId ExecutionAttemptID, checkpointMetaData CheckpointMetaData, checkpointStateHandles CheckpointStateHandles) in class org.apache.flink.runtime.messages.checkpoint.AcknowledgeCheckpoint</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Merge Parameter	[checkpointID : long, checkpointTimestamp : long] to checkpointMetaData : CheckpointMetaData in method public declineCheckpoint(jobID JobID, executionAttemptID ExecutionAttemptID, checkpointMetaData CheckpointMetaData) : void in class org.apache.flink.runtime.taskmanager.ActorGatewayCheckpointResponder</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Merge Parameter	[alignmentDurationNanos : long, checkpointId : long, timestamp : long] to checkpointMetaData : CheckpointMetaData in method private performCheckpoint(checkpointMetaData CheckpointMetaData) : boolean in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -388,16 +388,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	checkpointId : long to checkpointMetaData : CheckpointMetaData in method package AsyncCheckpointRunnable(name String, owner StreamTask&lt;?,?&gt;, cancelables ClosableRegistry, nonPartitionedStateHandles ChainedStateHandle&lt;StreamStateHandle&gt;, partitioneableStateHandles ChainedStateHandle&lt;OperatorStateHandle&gt;, keyGroupsStateHandleFuture RunnableFuture&lt;KeyGroupsStateHandle&gt;, checkpointMetaData CheckpointMetaData, asyncStartNanos long) in class org.apache.flink.streaming.runtime.tasks.StreamTask.AsyncCheckpointRunnable</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-9437cb4899bb946f234c272be6724770L936">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-9437cb4899bb946f234c272be6724770R934">To</a></td>
+                                <td><i>Rename Parameter	checkpointId : long to checkpointMetaData : CheckpointMetaData in method public AcknowledgeCheckpoint(job JobID, taskExecutionId ExecutionAttemptID, checkpointMetaData CheckpointMetaData) in class org.apache.flink.runtime.messages.checkpoint.AcknowledgeCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-f08e9b229ee421116bef06a33ec698cbL59">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-f08e9b229ee421116bef06a33ec698cbR50">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	checkpointId : long to checkpointMetaData : CheckpointMetaData in method public AcknowledgeCheckpoint(job JobID, taskExecutionId ExecutionAttemptID, checkpointMetaData CheckpointMetaData) in class org.apache.flink.runtime.messages.checkpoint.AcknowledgeCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-f08e9b229ee421116bef06a33ec698cbL59">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-f08e9b229ee421116bef06a33ec698cbR50">To</a></td>
+                                <td><i>Rename Parameter	checkpointId : long to checkpointMetaData : CheckpointMetaData in method package AsyncCheckpointRunnable(name String, owner StreamTask&lt;?,?&gt;, cancelables ClosableRegistry, nonPartitionedStateHandles ChainedStateHandle&lt;StreamStateHandle&gt;, partitioneableStateHandles ChainedStateHandle&lt;OperatorStateHandle&gt;, keyGroupsStateHandleFuture RunnableFuture&lt;KeyGroupsStateHandle&gt;, checkpointMetaData CheckpointMetaData, asyncStartNanos long) in class org.apache.flink.streaming.runtime.tasks.StreamTask.AsyncCheckpointRunnable</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-9437cb4899bb946f234c272be6724770L936">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/0dac7ad00a25c4b038b57009f41f5512f8ce73c3?diff=split#diff-9437cb4899bb946f234c272be6724770R934">To</a></td>
                             </tr>
                             
                             </tbody>

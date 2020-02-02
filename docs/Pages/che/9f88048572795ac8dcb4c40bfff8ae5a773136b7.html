@@ -222,6 +222,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Variable	uri : String in method private didOpen(openTextDocumentParams DidOpenTextDocumentParams) : void from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	uri : String in method private formatting(documentFormattingParams DocumentFormattingParams) : List&lt;TextEditDto&gt; from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	uri : String in method private definition(textDocumentPositionParams TextDocumentPositionParams) : List&lt;LocationDto&gt; from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	uri : String in method private didChange(didChangeTextDocumentParams DidChangeTextDocumentParams) : void from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Variable	uri : String in method private completion(textDocumentPositionParams TextDocumentPositionParams) : ExtendedCompletionListDto from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -286,34 +314,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	uri : String in method private documentHighlight(textDocumentPositionParams TextDocumentPositionParams) : DocumentHighlightDto from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	uri : String in method private didOpen(openTextDocumentParams DidOpenTextDocumentParams) : void from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	uri : String in method private formatting(documentFormattingParams DocumentFormattingParams) : List&lt;TextEditDto&gt; from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	uri : String in method private definition(textDocumentPositionParams TextDocumentPositionParams) : List&lt;LocationDto&gt; from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	uri : String in method private didChange(didChangeTextDocumentParams DidChangeTextDocumentParams) : void from class org.eclipse.che.api.languageserver.service.TextDocumentService</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -442,6 +442,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	void to ServerCapabilitiesDto in method public initialize(path String) : ServerCapabilitiesDto in class org.eclipse.che.api.languageserver.service.LanguageRegistryService</i></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-88153a0e72b99ca4acaae3e0041f7dbaL78">From</a></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-88153a0e72b99ca4acaae3e0041f7dbaR48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	LanguageServer to CompletableFuture&lt;Pair&lt;LanguageServer,InitializeResult&gt;&gt; in method public initialize(launcher LanguageServerLauncher, client LanguageClient, projectPath String) : CompletableFuture&lt;Pair&lt;LanguageServer,InitializeResult&gt;&gt; in class org.eclipse.che.api.languageserver.registry.ServerInitializer</i></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-da0a4018d13f7dd03093d34a9c1011d9L26">From</a></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-da0a4018d13f7dd03093d34a9c1011d9R28">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	JsonRpcPromise&lt;Boolean&gt; to Promise&lt;ServerCapabilities&gt; in method public initializeServer(path String) : Promise&lt;ServerCapabilities&gt; in class org.eclipse.che.plugin.languageserver.ide.service.LanguageServerRegistryJsonRpcClient</i></td>
                                 <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-ca790bcb4371b4e01b71505da57949fdL32">From</a></td>
                                 <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-ca790bcb4371b4e01b71505da57949fdR35">To</a></td>
@@ -482,20 +496,6 @@
                                 <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-833fbd178485277faa3a715c7d59ba93R316">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	void to ServerCapabilitiesDto in method public initialize(path String) : ServerCapabilitiesDto in class org.eclipse.che.api.languageserver.service.LanguageRegistryService</i></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-88153a0e72b99ca4acaae3e0041f7dbaL78">From</a></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-88153a0e72b99ca4acaae3e0041f7dbaR48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	LanguageServer to CompletableFuture&lt;Pair&lt;LanguageServer,InitializeResult&gt;&gt; in method public initialize(launcher LanguageServerLauncher, client LanguageClient, projectPath String) : CompletableFuture&lt;Pair&lt;LanguageServer,InitializeResult&gt;&gt; in class org.eclipse.che.api.languageserver.registry.ServerInitializer</i></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-da0a4018d13f7dd03093d34a9c1011d9L26">From</a></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-da0a4018d13f7dd03093d34a9c1011d9R28">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -509,16 +509,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	initializeResult : InitializeResult to languageIds : List&lt;String&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerDescription</i></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cL23">From</a></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cR17">To</a></td>
+                                <td><i>Rename Attribute	languageDescription : LanguageDescription to documentFilters : List&lt;DocumentFilter&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerDescription</i></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cL24">From</a></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cR18">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	languageDescription : LanguageDescription to documentFilters : List&lt;DocumentFilter&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerDescription</i></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cL24">From</a></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cR18">To</a></td>
+                                <td><i>Rename Attribute	initializeResult : InitializeResult to languageIds : List&lt;String&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerDescription</i></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cL23">From</a></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cR17">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -531,6 +531,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	initializeResult : InitializeResult to languageIds : List&lt;String&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerDescription</i></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cL23">From</a></td>
+                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cR17">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -558,13 +565,6 @@
                                 <td><i>Change Attribute Type	launchers : Map&lt;String,LanguageServerLauncher&gt; to launchers : List&lt;LanguageServerLauncher&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerRegistryImpl</i></td>
                                 <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-a69c5c2a27e183e87ee4cadc43d6714bL45">From</a></td>
                                 <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-a69c5c2a27e183e87ee4cadc43d6714bR49">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	initializeResult : InitializeResult to languageIds : List&lt;String&gt; in class org.eclipse.che.api.languageserver.registry.LanguageServerDescription</i></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cL23">From</a></td>
-                                <td><a href = "https://github.com/eclipse/che/commit/9f88048572795ac8dcb4c40bfff8ae5a773136b7?diff=split#diff-621ec6579a58ff1fa82f539cb10fb36cR17">To</a></td>
                             </tr>
                             
                             </tbody>

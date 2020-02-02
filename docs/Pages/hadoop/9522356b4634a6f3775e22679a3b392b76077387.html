@@ -154,13 +154,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	filters : LevelDBKeyFilter... to filters : MetadataKeyFilter... in method public getRangeKVs(startKey byte[], count int, filters MetadataKeyFilter...) : List&lt;Entry&lt;byte[],byte[]&gt;&gt; in class org.apache.hadoop.utils.LevelDBStore</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-b4f3011d3797bb6c1afdbd62be7471dfL228">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-b4f3011d3797bb6c1afdbd62be7471dfR289">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	putBatch : List&lt;Map.Entry&lt;byte[],byte[]&gt;&gt; to batchOperation : BatchOperation in method private addVolumeToOwnerList(volume String, owner String, batchOperation BatchOperation) : void in class org.apache.hadoop.ozone.ksm.VolumeManagerImpl</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-e934100caf5e4520b29353724b3f5043L69">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-e934100caf5e4520b29353724b3f5043R68">To</a></td>
@@ -171,6 +164,13 @@
                                 <td><i>Change Parameter Type	db : LevelDBStore to db : MetadataStore in method public putDB(containerName String, db MetadataStore) : void in class org.apache.hadoop.ozone.container.common.utils.ContainerCache</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-c0fece91ba0355e7ecb18a013a22c58bL123">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-c0fece91ba0355e7ecb18a013a22c58bR129">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	filters : LevelDBKeyFilter... to filters : MetadataKeyFilter... in method public getRangeKVs(startKey byte[], count int, filters MetadataKeyFilter...) : List&lt;Entry&lt;byte[],byte[]&gt;&gt; in class org.apache.hadoop.utils.LevelDBStore</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-b4f3011d3797bb6c1afdbd62be7471dfL228">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-b4f3011d3797bb6c1afdbd62be7471dfR289">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -272,20 +272,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	db : LevelDBStore to db : MetadataStore in method public removeContainer(containerData ContainerData, conf Configuration, forceDelete boolean) : void in class org.apache.hadoop.ozone.container.common.helpers.ContainerUtils</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-f4dec2d4d07b0fc73d292287015ed371L332">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-f4dec2d4d07b0fc73d292287015ed371R354">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	filter1 : LevelDBKeyFilter to filter1 : MetadataKeyFilter in method public testGetRangeKVs() : void in class org.apache.hadoop.ozone.TestMetadataStore</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-4dc67ddbb7f5cb9ef7c8847959cd7340L80">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-2aaffa29dc802cb2dc661db694ef1d80R238">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	store : LevelDBStore to store : MetadataStore in method public testCreateContainer() : void in class org.apache.hadoop.ozone.container.common.impl.TestContainerPersistence</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-e7d26cca7f471c72ffda54d64a2682b5L158">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-e7d26cca7f471c72ffda54d64a2682b5R186">To</a></td>
@@ -380,6 +366,20 @@
                                 <td><i>Change Variable Type	prefixFilter : KeyPrefixFilter to prefixFilter : MetadataKeyFilter in method public listContainer(startName String, prefixName String, count int) : List&lt;Pipeline&gt; in class org.apache.hadoop.ozone.scm.container.ContainerMapping</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-b269983b2f64860addd041f6c3583aa9L182">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-b269983b2f64860addd041f6c3583aa9R198">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	db : LevelDBStore to db : MetadataStore in method public removeContainer(containerData ContainerData, conf Configuration, forceDelete boolean) : void in class org.apache.hadoop.ozone.container.common.helpers.ContainerUtils</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-f4dec2d4d07b0fc73d292287015ed371L332">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-f4dec2d4d07b0fc73d292287015ed371R354">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	filter1 : LevelDBKeyFilter to filter1 : MetadataKeyFilter in method public testGetRangeKVs() : void in class org.apache.hadoop.ozone.TestMetadataStore</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-4dc67ddbb7f5cb9ef7c8847959cd7340L80">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/9522356b4634a6f3775e22679a3b392b76077387?diff=split#diff-2aaffa29dc802cb2dc661db694ef1d80R238">To</a></td>
                             </tr>
                             
                             </tbody>

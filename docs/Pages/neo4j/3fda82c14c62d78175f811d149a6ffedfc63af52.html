@@ -344,6 +344,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	logCommands : Collection&lt;LogCommand&gt; to logCommands : Collection&lt;RaftLogCommand&gt; in method public Outcome(nextRole Role, term long, leader CoreMember, leaderCommit long, votedFor CoreMember, votesForMe Set&lt;CoreMember&gt;, lastLogIndexBeforeWeBecameLeader long, followerStates FollowerStates&lt;CoreMember&gt;, renewElectionTimeout boolean, logCommands Collection&lt;RaftLogCommand&gt;, outgoingMessages Collection&lt;RaftMessages.Directed&gt;, shipCommands Collection&lt;ShipCommand&gt;, commitIndex long) in class org.neo4j.coreedge.raft.outcome.Outcome</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-aababa7a7334d78ec4242c850c6401ccL77">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-aababa7a7334d78ec4242c850c6401ccR80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	item : LogCommand to item : RaftLogCommand in method protected matchesSafely(item RaftLogCommand) : boolean in class org.neo4j.coreedge.raft.roles.AppendingTest.LogCommandMatcher</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-77f55c842355e4e11290cc10d53104caL193">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-77f55c842355e4e11290cc10d53104caR194">To</a></td>
@@ -354,13 +361,6 @@
                                 <td><i>Change Parameter Type	logCommand : LogCommand to logCommand : RaftLogCommand in method public addLogCommand(logCommand RaftLogCommand) : void in class org.neo4j.coreedge.raft.outcome.Outcome</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-aababa7a7334d78ec4242c850c6401ccL140">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-aababa7a7334d78ec4242c850c6401ccR140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	logCommands : Collection&lt;LogCommand&gt; to logCommands : Collection&lt;RaftLogCommand&gt; in method public Outcome(nextRole Role, term long, leader CoreMember, leaderCommit long, votedFor CoreMember, votesForMe Set&lt;CoreMember&gt;, lastLogIndexBeforeWeBecameLeader long, followerStates FollowerStates&lt;CoreMember&gt;, renewElectionTimeout boolean, logCommands Collection&lt;RaftLogCommand&gt;, outgoingMessages Collection&lt;RaftMessages.Directed&gt;, shipCommands Collection&lt;ShipCommand&gt;, commitIndex long) in class org.neo4j.coreedge.raft.outcome.Outcome</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-aababa7a7334d78ec4242c850c6401ccL77">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-aababa7a7334d78ec4242c850c6401ccR80">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -415,13 +415,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private additionalReplicationMembers : Set&lt;CoreMember&gt; from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState to private additionalReplicationMembers : Set&lt;CoreMember&gt; from class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL36">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private votingMembers : Set&lt;CoreMember&gt; from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState to private votingMembers : Set&lt;CoreMember&gt; from class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL38">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R68">To</a></td>
@@ -446,6 +439,13 @@
                                 <td><i>Move Attribute	private logIndex : long from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState to private logIndex : long from class org.neo4j.coreedge.raft.state.membership.MembershipEntry</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL43">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-429df3e831a3b8e11ed94e1dd105cff1R38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private additionalReplicationMembers : Set&lt;CoreMember&gt; from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState to private additionalReplicationMembers : Set&lt;CoreMember&gt; from class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL36">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R72">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -504,20 +504,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	logCommands : List&lt;LogCommand&gt; to logCommands : List&lt;RaftLogCommand&gt; in method public membershipManagerShouldRevertToOldMembershipSetAfterTruncationCausesLossOfAllAppendedMembershipSets() : void in class org.neo4j.coreedge.raft.membership.RaftMembershipManagerTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-5677e628e74504b121d410c9e1fe70f9L73">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-5677e628e74504b121d410c9e1fe70f9R78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	noLogCommands : List&lt;LogCommand&gt; to noLogCommands : List&lt;RaftLogCommand&gt; in method public build() : RaftState in class org.neo4j.coreedge.raft.state.RaftStateBuilder</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-eb86196a35c2222613db8f656758ef02L123">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-eb86196a35c2222613db8f656758ef02R133">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	logCommand : LogCommand to logCommand : RaftLogCommand in method public update(outcome Outcome) : void in class org.neo4j.coreedge.raft.state.explorer.ComparableRaftState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-be217eca45204728b95886770e6b8134L143">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-be217eca45204728b95886770e6b8134R152">To</a></td>
@@ -556,6 +542,20 @@
                                 <td><i>Change Variable Type	logCommand : LogCommand to logCommand : RaftLogCommand in method public membershipManagerShouldRevertToEarlierAppendedMembershipSetAfterTruncationCausesLossOfLastAppened() : void in class org.neo4j.coreedge.raft.membership.RaftMembershipManagerTest</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-5677e628e74504b121d410c9e1fe70f9L103">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-5677e628e74504b121d410c9e1fe70f9R114">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	logCommands : List&lt;LogCommand&gt; to logCommands : List&lt;RaftLogCommand&gt; in method public membershipManagerShouldRevertToOldMembershipSetAfterTruncationCausesLossOfAllAppendedMembershipSets() : void in class org.neo4j.coreedge.raft.membership.RaftMembershipManagerTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-5677e628e74504b121d410c9e1fe70f9L73">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-5677e628e74504b121d410c9e1fe70f9R78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	noLogCommands : List&lt;LogCommand&gt; to noLogCommands : List&lt;RaftLogCommand&gt; in method public build() : RaftState in class org.neo4j.coreedge.raft.state.RaftStateBuilder</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-eb86196a35c2222613db8f656758ef02L123">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-eb86196a35c2222613db8f656758ef02R133">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -632,27 +632,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	membershipState : RaftMembershipState to membershipManager : RaftMembershipManager in class org.neo4j.coreedge.raft.membership.RaftMembershipChanger</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-1de57646111e3eed03ff91dab65cc9fcL73">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-e41728c7bf6564cc10f9b99681aff97dR70">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	logIndex : long to ordinal : long in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL43">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fR73">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	membershipStateMachine : RaftMembershipStateMachine to membershipChanger : RaftMembershipChanger in class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1L58">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	memberMarshal : ChannelMarshal&lt;CoreMember&gt; to entryMarshal : MembershipEntry.Marshal in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState.Marshal</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL146">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fR180">To</a></td>
@@ -670,6 +649,27 @@
                                 <td><i>Rename Attribute	stateStorage : StateStorage&lt;RaftMembershipState&gt; to storage : StateStorage&lt;RaftMembershipState&gt; in class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1L69">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	membershipState : RaftMembershipState to membershipManager : RaftMembershipManager in class org.neo4j.coreedge.raft.membership.RaftMembershipChanger</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-1de57646111e3eed03ff91dab65cc9fcL73">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-e41728c7bf6564cc10f9b99681aff97dR70">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	logIndex : long to ordinal : long in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fL43">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-db0264fa0745a1cad37694c182a7256fR73">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	membershipStateMachine : RaftMembershipStateMachine to membershipChanger : RaftMembershipChanger in class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1L58">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3fda82c14c62d78175f811d149a6ffedfc63af52?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R53">To</a></td>
                             </tr>
                             
                             </tbody>

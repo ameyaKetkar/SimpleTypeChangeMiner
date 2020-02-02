@@ -449,13 +449,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public start() : CompletableFuture&lt;ResourceServer&gt; renamed to public join(cluster Collection&lt;Address&gt;) : CompletableFuture&lt;ResourceServer&gt; in class io.atomix.manager.ResourceServer</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128L222">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128R317">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public replace(cluster Cluster) : CompletableFuture&lt;Void&gt; renamed to public stop(cluster Cluster, replica AtomixReplica) : CompletableFuture&lt;Void&gt; in class io.atomix.cluster.BalancingClusterManager</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-349ec921b50d1843b35637bcd7fa877fL157">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5d4bdc6e1e93f6db260b308020462d22R190">To</a></td>
@@ -480,6 +473,13 @@
                                 <td><i>Rename Method	public stop() : CompletableFuture&lt;Void&gt; renamed to public shutdown() : CompletableFuture&lt;Void&gt; in class io.atomix.AtomixReplica</i></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5c52c03062c68019012d97986111258aL415">From</a></td>
                                 <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5c52c03062c68019012d97986111258aR437">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public start() : CompletableFuture&lt;ResourceServer&gt; renamed to public join(cluster Collection&lt;Address&gt;) : CompletableFuture&lt;ResourceServer&gt; in class io.atomix.manager.ResourceServer</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128L222">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128R317">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -541,6 +541,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Inline Method	public builder(clientAddress Address, serverAddress Address, members Address...) : Builder inlined to public builder(address Address, properties Properties) : Builder in class io.atomix.manager.ResourceServer</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Inline Method	private buildServer() : ResourceServer inlined to public build() : AtomixReplica in class io.atomix.AtomixReplica.Builder</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -549,13 +556,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Inline Method	private buildClient() : ResourceClient inlined to public build() : AtomixReplica in class io.atomix.AtomixReplica.Builder</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Inline Method	public builder(clientAddress Address, serverAddress Address, members Address...) : Builder inlined to public builder(address Address, properties Properties) : Builder in class io.atomix.manager.ResourceServer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -652,16 +652,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	balancer : ClusterBalancer to clusterManager : ClusterManager in method private AtomixReplica(client ResourceClient, server ResourceServer, clusterManager ClusterManager) in class io.atomix.AtomixReplica</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5c52c03062c68019012d97986111258aL368">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5c52c03062c68019012d97986111258aR271">To</a></td>
+                                <td><i>Rename Parameter	members : Address... to properties : Properties in method public builder(address Address, properties Properties) : Builder in class io.atomix.manager.ResourceServer</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128L134">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128R121">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	members : Address... to properties : Properties in method public builder(address Address, properties Properties) : Builder in class io.atomix.manager.ResourceServer</i></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128L134">From</a></td>
-                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-197985fa11975876f4c7a96953ac5128R121">To</a></td>
+                                <td><i>Rename Parameter	balancer : ClusterBalancer to clusterManager : ClusterManager in method private AtomixReplica(client ResourceClient, server ResourceServer, clusterManager ClusterManager) in class io.atomix.AtomixReplica</i></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5c52c03062c68019012d97986111258aL368">From</a></td>
+                                <td><a href = "https://github.com/atomix/atomix/commit/b6b79db7199dea4f20a550894d5ad5a01124e4cb?diff=split#diff-5c52c03062c68019012d97986111258aR271">To</a></td>
                             </tr>
                             
                             </tbody>

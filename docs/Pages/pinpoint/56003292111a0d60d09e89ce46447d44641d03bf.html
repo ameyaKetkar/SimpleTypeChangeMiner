@@ -487,6 +487,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Return Type	List&lt;SocketAddress&gt; to List&lt;Address&gt; in method public getConnectedAddressList() : List&lt;Address&gt; in class com.navercorp.pinpoint.collector.cluster.connection.ClusterConnectionManager</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-1e9d9a1ff288337c745ba986ea13c530L34">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-1e9d9a1ff288337c745ba986ea13c530R35">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Return Type	List&lt;SocketAddress&gt; to List&lt;Address&gt; in method public getAddressList() : List&lt;Address&gt; in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionRepository</i></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-c450217908236c12a3525e4a538db8a4L47">From</a></td>
                                 <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-c450217908236c12a3525e4a538db8a4R47">To</a></td>
@@ -513,13 +520,6 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-e2d87d35e936221300f4d6087248ebcbR102">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	List&lt;SocketAddress&gt; to List&lt;Address&gt; in method public getConnectedAddressList() : List&lt;Address&gt; in class com.navercorp.pinpoint.collector.cluster.connection.ClusterConnectionManager</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-1e9d9a1ff288337c745ba986ea13c530L34">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-1e9d9a1ff288337c745ba986ea13c530R35">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -533,14 +533,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	serializer : HeaderTBaseSerializer in method private createTcpDataSender(address Address) : SenderContext from class com.navercorp.pinpoint.collector.cluster.flink.FlinkClusterConnectionManager</i></td>
+                                <td><i>Extract Variable	connect : PinpointSocket in method public connectPointIfAbsent(address Address) : void from class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	connect : PinpointSocket in method public connectPointIfAbsent(address Address) : void from class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterConnectionManager</i></td>
+                                <td><i>Extract Variable	serializer : HeaderTBaseSerializer in method private createTcpDataSender(address Address) : SenderContext from class com.navercorp.pinpoint.collector.cluster.flink.FlinkClusterConnectionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -555,6 +555,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	inetSocketAddress : InetSocketAddress to hostAndPort : T in method public toHostAndPortLIst(addressList List&lt;String&gt;, hostAndPortFactory HostAndPortFactory&lt;T&gt;) : List&lt;T&gt; in class com.navercorp.pinpoint.common.util.NetUtils</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-a473e68b6ac1555d4bc95dbb6b97bbceL42">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-a473e68b6ac1555d4bc95dbb6b97bbceR68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	addressList : List&lt;SocketAddress&gt; to addressList : List&lt;Address&gt; in method private handleAndRegisterWatcher0() : boolean in class com.navercorp.pinpoint.collector.cluster.zookeeper.ZookeeperClusterManager.GetAndRegisterTask</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6L208">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6R220">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	address : SocketAddress to address : Address in method private handleAndRegisterWatcher0() : boolean in class com.navercorp.pinpoint.collector.cluster.zookeeper.ZookeeperClusterManager.GetAndRegisterTask</i></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6L208">From</a></td>
+                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6R230">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -598,27 +619,6 @@
                                 <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-b8369f4306a64a97fd0a4816cae04222R54">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	inetSocketAddress : InetSocketAddress to hostAndPort : T in method public toHostAndPortLIst(addressList List&lt;String&gt;, hostAndPortFactory HostAndPortFactory&lt;T&gt;) : List&lt;T&gt; in class com.navercorp.pinpoint.common.util.NetUtils</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-a473e68b6ac1555d4bc95dbb6b97bbceL42">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-a473e68b6ac1555d4bc95dbb6b97bbceR68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	addressList : List&lt;SocketAddress&gt; to addressList : List&lt;Address&gt; in method private handleAndRegisterWatcher0() : boolean in class com.navercorp.pinpoint.collector.cluster.zookeeper.ZookeeperClusterManager.GetAndRegisterTask</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6L208">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6R220">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	address : SocketAddress to address : Address in method private handleAndRegisterWatcher0() : boolean in class com.navercorp.pinpoint.collector.cluster.zookeeper.ZookeeperClusterManager.GetAndRegisterTask</i></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6L208">From</a></td>
-                                <td><a href = "https://github.com/naver/pinpoint/commit/56003292111a0d60d09e89ce46447d44641d03bf?diff=split#diff-4cb884bd7a69654ac606ebea193457d6R230">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -657,6 +657,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private getAddress(pinpointServer PinpointServer) : Address extracted from public eventPerformed(pinpointServer PinpointServer, stateCode SocketStateCode) : void in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterAcceptor.WebClusterServerChannelStateChangeHandler</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	public scheduledConnect(socketAddressProvider SocketAddressProvider) : PinpointClient extracted from public scheduledConnect(connectAddress InetSocketAddress) : PinpointClient in class com.navercorp.pinpoint.rpc.client.DefaultPinpointClientFactory</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -665,13 +672,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	public toHostAndPortLIst(addressList List&lt;String&gt;, hostAndPortFactory HostAndPortFactory&lt;T&gt;) : List&lt;T&gt; extracted from public toInetSocketAddressLIst(addressList List&lt;String&gt;) : List&lt;InetSocketAddress&gt; in class com.navercorp.pinpoint.common.util.NetUtils</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private getAddress(pinpointServer PinpointServer) : Address extracted from public eventPerformed(pinpointServer PinpointServer, stateCode SocketStateCode) : void in class com.navercorp.pinpoint.collector.cluster.connection.CollectorClusterAcceptor.WebClusterServerChannelStateChangeHandler</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

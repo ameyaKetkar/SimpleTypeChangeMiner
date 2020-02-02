@@ -230,6 +230,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public testManualHashAssignmentForIntermediateNodeInChainThrowsException() : void renamed to public testManualHashAssignmentForIntermediateNodeInChain() : void in class org.apache.flink.streaming.graph.StreamingJobGraphGeneratorNodeHashTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-1482973aa24f4dac1961a956d639c68aL394">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-1482973aa24f4dac1961a956d639c68aR393">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private assignTaskStatesToOperatorInstances(taskState TaskState, executionJobVertex ExecutionJobVertex) : void renamed to private assignAttemptState(executionJobVertex ExecutionJobVertex, operatorStates List&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R108">To</a></td>
@@ -256,13 +263,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-1482973aa24f4dac1961a956d639c68aR444">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public testManualHashAssignmentForIntermediateNodeInChainThrowsException() : void renamed to public testManualHashAssignmentForIntermediateNodeInChain() : void in class org.apache.flink.streaming.graph.StreamingJobGraphGeneratorNodeHashTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-1482973aa24f4dac1961a956d639c68aL394">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-1482973aa24f4dac1961a956d639c68aR393">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -273,6 +273,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	operatorState : TaskState to operatorState : OperatorState in method public getRawKeyedStateHandles(operatorState OperatorState, subtaskKeyGroupRange KeyGroupRange) : List&lt;KeyedStateHandle&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L429">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R415">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	operatorState : TaskState to operatorState : OperatorState in method private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L274">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R257">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L227">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R219">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	state : TaskState to state : OperatorState in method package setTaskState(pending PendingCheckpoint, state OperatorState) : void in class org.apache.flink.runtime.checkpoint.PendingCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433L369">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433R372">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	operatorState : TaskState to operatorState : OperatorState in method private reAssignSubNonPartitionedStates(operatorState OperatorState, subTaskIndex int, newParallelism int, oldParallelism int, subNonPartitionableState List&lt;StreamStateHandle&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L317">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R300">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	operatorStates : List&lt;TaskState&gt; to operatorStates : List&lt;OperatorState&gt; in method private collectPartionableStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, rawOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L361">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R343">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -337,48 +379,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R385">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operatorState : TaskState to operatorState : OperatorState in method public getRawKeyedStateHandles(operatorState OperatorState, subtaskKeyGroupRange KeyGroupRange) : List&lt;KeyedStateHandle&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L429">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R415">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operatorState : TaskState to operatorState : OperatorState in method private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L274">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R257">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L227">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	state : TaskState to state : OperatorState in method package setTaskState(pending PendingCheckpoint, state OperatorState) : void in class org.apache.flink.runtime.checkpoint.PendingCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433L369">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433R372">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operatorState : TaskState to operatorState : OperatorState in method private reAssignSubNonPartitionedStates(operatorState OperatorState, subTaskIndex int, newParallelism int, oldParallelism int, subNonPartitionableState List&lt;StreamStateHandle&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L317">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R300">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operatorStates : List&lt;TaskState&gt; to operatorStates : List&lt;OperatorState&gt; in method private collectPartionableStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, rawOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L361">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R343">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -389,6 +389,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private reAssignSubPartitionableState(newMangedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, subTaskIndex int, operatorIndex int, subManagedOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;, subRawOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperationV2 to private reAssignSubPartitionableState(newMangedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, subTaskIndex int, operatorIndex int, subManagedOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;, subRawOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L253">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R235">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private collectPartionableStates(operatorStates List&lt;TaskState&gt;, managedOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, rawOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperationV2 to private collectPartionableStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, rawOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L361">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R342">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private reAssignSubKeyedStates(operatorState TaskState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; from class org.apache.flink.runtime.checkpoint.StateAssignmentOperationV2 to private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L274">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R256">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -425,27 +446,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R376">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private reAssignSubPartitionableState(newMangedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, subTaskIndex int, operatorIndex int, subManagedOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;, subRawOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperationV2 to private reAssignSubPartitionableState(newMangedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, subTaskIndex int, operatorIndex int, subManagedOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;, subRawOperatorState List&lt;Collection&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L253">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R235">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private collectPartionableStates(operatorStates List&lt;TaskState&gt;, managedOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, rawOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperationV2 to private collectPartionableStates(operatorStates List&lt;OperatorState&gt;, managedOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;, rawOperatorStates List&lt;List&lt;OperatorStateHandle&gt;&gt;) : void from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L361">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R342">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private reAssignSubKeyedStates(operatorState TaskState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; from class org.apache.flink.runtime.checkpoint.StateAssignmentOperationV2 to private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; from class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0d5d0c885cbeefb716acb5e7c2f80c64L274">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R256">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -456,6 +456,69 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-28" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method public testCheckpointWithOnlyMasterState() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2SerializerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bL66">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bR66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method protected verifyCheckpointDiscarded(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L244">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R236">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskStates : ArrayList&lt;TaskState&gt; to operatorStates : List&lt;OperatorState&gt; in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L152">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskStates : Map&lt;JobVertexID,TaskState&gt; to operatorStates : Map&lt;OperatorID,OperatorState&gt; in method public testCleanUpOnSubsume() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L82">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R81">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method public dispose() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e02ac027624600e68dd55e20daf76ccL80">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e02ac027624600e68dd55e20daf76ccR126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L228">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R220">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L104">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R103">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	jobVertexID : JobVertexID to operatorID : OperatorID in method public acknowledgeTask(executionAttemptId ExecutionAttemptID, subtaskState SubtaskState, metrics CheckpointMetrics) : TaskAcknowledgeResult in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L383">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R402">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	expandedToLegacyIds : boolean to statelessTask : boolean in method public assignStates() : boolean in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L67">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R81">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -590,69 +653,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R100">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method public testCheckpointWithOnlyMasterState() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2SerializerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bL66">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bR66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method protected verifyCheckpointDiscarded(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L244">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R236">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskStates : ArrayList&lt;TaskState&gt; to operatorStates : List&lt;OperatorState&gt; in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L152">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R151">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskStates : Map&lt;JobVertexID,TaskState&gt; to operatorStates : Map&lt;OperatorID,OperatorState&gt; in method public testCleanUpOnSubsume() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L82">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R81">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method public dispose() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e02ac027624600e68dd55e20daf76ccL80">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e02ac027624600e68dd55e20daf76ccR126">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L228">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R220">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskState : TaskState to operatorState : OperatorState in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L104">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R103">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	jobVertexID : JobVertexID to operatorID : OperatorID in method public acknowledgeTask(executionAttemptId ExecutionAttemptID, subtaskState SubtaskState, metrics CheckpointMetrics) : TaskAcknowledgeResult in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L383">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R402">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	expandedToLegacyIds : boolean to statelessTask : boolean in method public assignStates() : boolean in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L67">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R81">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -720,6 +720,188 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-58" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : Map&lt;JobVertexID,TaskState&gt; to operatorStates : Map&lt;OperatorID,OperatorState&gt; in method public testCompletedCheckpointStatsCallbacks() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L156">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R165">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L227">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R220">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L88">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R103">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	jobVertexID : JobVertexID to operatorID : OperatorID in method public acknowledgeTask(executionAttemptId ExecutionAttemptID, subtaskState SubtaskState, metrics CheckpointMetrics) : TaskAcknowledgeResult in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L353">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R402">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	subtaskStateMap : Map&lt;Integer,SubtaskState&gt; to subtaskStateMap : Map&lt;Integer,OperatorSubtaskState&gt; in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L88">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R115">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : Map&lt;JobVertexID,TaskState&gt; to operatorStates : HashMap&lt;OperatorID,OperatorState&gt; in method public loadAndValidateSavepoint(jobId JobID, tasks Map&lt;JobVertexID,ExecutionJobVertex&gt;, savepointPath String, classLoader ClassLoader, allowNonRestoredState boolean) : CompletedCheckpoint in class org.apache.flink.runtime.checkpoint.savepoint.SavepointLoader</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-ecf990bbe88bf0966fd0f606dc44392fL44">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-ecf990bbe88bf0966fd0f606dc44392fR88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testSavepointV2() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Test</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-963a8ab5590f0b513f5a3048c9a62b36L35">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-963a8ab5590f0b513f5a3048c9a62b36R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method public getStateSize() : long in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L239">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R215">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskGroupStateEntry : Map.Entry&lt;JobVertexID,TaskState&gt; to task : Map.Entry&lt;JobVertexID,ExecutionJobVertex&gt; in method public assignStates() : boolean in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L64">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R74">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testAbortDiscardsState() : void in class org.apache.flink.runtime.checkpoint.PendingCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433L187">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433R198">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	subtaskState : SubtaskState to subtaskState : OperatorSubtaskState in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L125">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R169">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testCleanUpOnSubsume() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L76">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	newKeyedStatesBackend : List&lt;KeyedStateHandle&gt; to subRawKeyedState : Collection&lt;KeyedStateHandle&gt; in method private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R264">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	parallelKeyedStatesBackend : List&lt;KeyedStateHandle&gt; to oldManagedOperatorStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method private reDistributePartitionableStates(operatorStates List&lt;OperatorState&gt;, newParallelism int, newManagedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R322">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testCompletedCheckpointStatsCallbacks() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L156">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R164">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	subtaskKeyGroupIds : KeyGroupRange to operatorState : OperatorState in method private assignAttemptState(executionJobVertex ExecutionJobVertex, operatorStates List&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R175">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateForTaskGroup : TaskState to stateForTaskGroup : OperatorState in method public testTriggerSavepointAndResumeWithFileBasedCheckpoints() : void in class org.apache.flink.test.checkpointing.SavepointITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcL120">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcR381">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testCheckpointWithOnlyTaskState() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2SerializerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bL76">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bR87">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	jobVertexId : JobVertexID to jobVertexId : OperatorID in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L125">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R154">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : ArrayList&lt;TaskState&gt; to operatorStates : List&lt;OperatorState&gt; in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L125">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R151">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method public testAddCheckpointMoreThanMaxRetained() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L90">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testCheckpointWithNoState() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2SerializerTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bL45">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bR51">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testSuspendDiscardsCheckpoints() : void in class org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-c74b12ce2077bc09ee746b0984c578d4L69">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-c74b12ce2077bc09ee746b0984c578d4R77">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testDiscard() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L50">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	streamTaskState : ChainedStateHandle&lt;StreamStateHandle&gt; to streamTaskState : StreamStateHandle in method public testTriggerSavepointAndResumeWithFileBasedCheckpoints() : void in class org.apache.flink.test.checkpointing.SavepointITCase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcL120">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcR383">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	entry : Map.Entry&lt;Integer,SubtaskState&gt; to entry : Map.Entry&lt;Integer,OperatorSubtaskState&gt; in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L88">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R117">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -945,188 +1127,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e02ac027624600e68dd55e20daf76ccR126">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : Map&lt;JobVertexID,TaskState&gt; to operatorStates : Map&lt;OperatorID,OperatorState&gt; in method public testCompletedCheckpointStatsCallbacks() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L156">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R165">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L227">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R220">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L88">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R103">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	jobVertexID : JobVertexID to operatorID : OperatorID in method public acknowledgeTask(executionAttemptId ExecutionAttemptID, subtaskState SubtaskState, metrics CheckpointMetrics) : TaskAcknowledgeResult in class org.apache.flink.runtime.checkpoint.PendingCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62L353">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-0960170df8c1fba4c7619a8b89ee1e62R402">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	subtaskStateMap : Map&lt;Integer,SubtaskState&gt; to subtaskStateMap : Map&lt;Integer,OperatorSubtaskState&gt; in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L88">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R115">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : Map&lt;JobVertexID,TaskState&gt; to operatorStates : HashMap&lt;OperatorID,OperatorState&gt; in method public loadAndValidateSavepoint(jobId JobID, tasks Map&lt;JobVertexID,ExecutionJobVertex&gt;, savepointPath String, classLoader ClassLoader, allowNonRestoredState boolean) : CompletedCheckpoint in class org.apache.flink.runtime.checkpoint.savepoint.SavepointLoader</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-ecf990bbe88bf0966fd0f606dc44392fL44">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-ecf990bbe88bf0966fd0f606dc44392fR88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testSavepointV2() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Test</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-963a8ab5590f0b513f5a3048c9a62b36L35">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-963a8ab5590f0b513f5a3048c9a62b36R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method public getStateSize() : long in class org.apache.flink.runtime.checkpoint.CompletedCheckpoint</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1L239">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-b9339ae7ce0e536bbc072c4ce1f0e3b1R215">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskGroupStateEntry : Map.Entry&lt;JobVertexID,TaskState&gt; to task : Map.Entry&lt;JobVertexID,ExecutionJobVertex&gt; in method public assignStates() : boolean in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L64">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R74">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testAbortDiscardsState() : void in class org.apache.flink.runtime.checkpoint.PendingCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433L187">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-8028b3477a39796fdf06ea8607638433R198">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	subtaskState : SubtaskState to subtaskState : OperatorSubtaskState in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L125">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R169">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testCleanUpOnSubsume() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L76">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	newKeyedStatesBackend : List&lt;KeyedStateHandle&gt; to subRawKeyedState : Collection&lt;KeyedStateHandle&gt; in method private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R264">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	parallelKeyedStatesBackend : List&lt;KeyedStateHandle&gt; to oldManagedOperatorStates : List&lt;List&lt;OperatorStateHandle&gt;&gt; in method private reDistributePartitionableStates(operatorStates List&lt;OperatorState&gt;, newParallelism int, newManagedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R322">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testCompletedCheckpointStatsCallbacks() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L156">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R164">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	subtaskKeyGroupIds : KeyGroupRange to operatorState : OperatorState in method private assignAttemptState(executionJobVertex ExecutionJobVertex, operatorStates List&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L146">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R175">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateForTaskGroup : TaskState to stateForTaskGroup : OperatorState in method public testTriggerSavepointAndResumeWithFileBasedCheckpoints() : void in class org.apache.flink.test.checkpointing.SavepointITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcL120">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcR381">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testCheckpointWithOnlyTaskState() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2SerializerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bL76">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bR87">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	jobVertexId : JobVertexID to jobVertexId : OperatorID in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L125">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R154">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : ArrayList&lt;TaskState&gt; to operatorStates : List&lt;OperatorState&gt; in method public deserialize(dis DataInputStream, cl ClassLoader) : SavepointV2 in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L125">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R151">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskState : TaskState to operatorState : OperatorState in method public testAddCheckpointMoreThanMaxRetained() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L90">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testCheckpointWithNoState() : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2SerializerTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bL45">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-a3e873bb274dc975043e2c8c56964c0bR51">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	taskStates : Collection&lt;TaskState&gt; to taskStates : Collection&lt;OperatorState&gt; in method public testSuspendDiscardsCheckpoints() : void in class org.apache.flink.runtime.checkpoint.StandaloneCompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-c74b12ce2077bc09ee746b0984c578d4L69">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-c74b12ce2077bc09ee746b0984c578d4R77">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	state : TaskState to state : OperatorState in method public testDiscard() : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9L50">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-2e84cfe56bea1935e1746d7e71e915e9R57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	streamTaskState : ChainedStateHandle&lt;StreamStateHandle&gt; to streamTaskState : StreamStateHandle in method public testTriggerSavepointAndResumeWithFileBasedCheckpoints() : void in class org.apache.flink.test.checkpointing.SavepointITCase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcL120">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-404d1bba464e34a6ffa7714e78b2a6fcR383">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	entry : Map.Entry&lt;Integer,SubtaskState&gt; to entry : Map.Entry&lt;Integer,OperatorSubtaskState&gt; in method public serialize(checkpointMetadata SavepointV2, dos DataOutputStream) : void in class org.apache.flink.runtime.checkpoint.savepoint.SavepointV2Serializer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565L88">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-40baf751e9b73aed6d4956bb8ad30565R117">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1140,13 +1140,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private reDistributePartitionableStates(operatorStates List&lt;OperatorState&gt;, newParallelism int, newManagedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;) : void extracted from private assignTaskStatesToOperatorInstances(taskState TaskState, executionJobVertex ExecutionJobVertex) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	package mockExecutionJobVertex(jobVertexID JobVertexID, jobVertexIDs List&lt;OperatorID&gt;, parallelism int, maxParallelism int) : ExecutionJobVertex extracted from package mockExecutionJobVertex(jobVertexID JobVertexID, parallelism int, maxParallelism int) : ExecutionJobVertex in class org.apache.flink.runtime.checkpoint.CheckpointCoordinatorTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -1155,6 +1148,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private reAssignSubKeyedStates(operatorState OperatorState, keyGroupPartitions List&lt;KeyGroupRange&gt;, subTaskIndex int, newParallelism int, oldParallelism int) : Tuple2&lt;Collection&lt;KeyedStateHandle&gt;,Collection&lt;KeyedStateHandle&gt;&gt; extracted from private assignTaskStatesToOperatorInstances(taskState TaskState, executionJobVertex ExecutionJobVertex) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private reDistributePartitionableStates(operatorStates List&lt;OperatorState&gt;, newParallelism int, newManagedOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;, newRawOperatorStates List&lt;List&lt;Collection&lt;OperatorStateHandle&gt;&gt;&gt;) : void extracted from private assignTaskStatesToOperatorInstances(taskState TaskState, executionJobVertex ExecutionJobVertex) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -1292,6 +1292,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected verifyCheckpointDiscarded(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L243">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R235">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected verifyCheckpointRegistered(operatorStates Collection&lt;OperatorState&gt;, registry SharedStateRegistry) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L235">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R227">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	taskState : TaskState to operatorState : OperatorState in method private checkParallelismPreconditions(operatorState OperatorState, executionJobVertex ExecutionJobVertex) : void in class org.apache.flink.runtime.checkpoint.StateAssignmentOperation</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25L106">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-4bf9021270182f80836318d0f9d4af25R464">To</a></td>
@@ -1330,20 +1344,6 @@
                                 <td><i>Rename Parameter	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected resetCheckpoint(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L227">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R219">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected verifyCheckpointDiscarded(operatorStates Collection&lt;OperatorState&gt;) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L243">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R235">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskStates : Collection&lt;TaskState&gt; to operatorStates : Collection&lt;OperatorState&gt; in method protected verifyCheckpointRegistered(operatorStates Collection&lt;OperatorState&gt;, registry SharedStateRegistry) : void in class org.apache.flink.runtime.checkpoint.CompletedCheckpointStoreTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9L235">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f7980a7e29457753eb3c5b975f3bb4b59d2014f8?diff=split#diff-98d8d242b75aec4f75c7bb24ae80e9d9R227">To</a></td>
                             </tr>
                             
                             </tbody>

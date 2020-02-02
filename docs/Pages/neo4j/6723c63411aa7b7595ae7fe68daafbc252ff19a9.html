@@ -294,16 +294,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public setInitialTokens(tokens Token...) : void from class org.neo4j.kernel.impl.core.TokenHolder to public putAll(tokens List&lt;TOKEN&gt;) : void from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL60">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R54">To</a></td>
+                                <td><i>Move And Rename Method	package addToken(name String, id int, nameToIdMap Map&lt;String,Integer&gt;, idToTokenMap Map&lt;Integer,TOKEN&gt;) : void from class org.neo4j.kernel.impl.core.TokenHolder to private putAndEnsureUnique(nameToId Map&lt;String,Integer&gt;, token Token, owningClass Class&lt;? extends TokenHolder&gt;) : void from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL87">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R45">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	package addToken(name String, id int, nameToIdMap Map&lt;String,Integer&gt;, idToTokenMap Map&lt;Integer,TOKEN&gt;) : void from class org.neo4j.kernel.impl.core.TokenHolder to private putAndEnsureUnique(nameToId Map&lt;String,Integer&gt;, token Token, owningClass Class&lt;? extends TokenHolder&gt;) : void from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL87">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R45">To</a></td>
+                                <td><i>Move And Rename Method	public setInitialTokens(tokens Token...) : void from class org.neo4j.kernel.impl.core.TokenHolder to public putAll(tokens List&lt;TOKEN&gt;) : void from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL60">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R54">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -334,69 +334,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-32" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	recordAccess : RecordAccess&lt;Integer,T,Void&gt; to recordAccess : RecordAccess&lt;Integer,R,Void&gt; in method public createToken(name String, id int, recordAccess RecordAccess&lt;Integer,R,Void&gt;) : void in class org.neo4j.kernel.impl.transaction.state.TokenCreator</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-1edc2a21091b49489a4320f8271c441eL40">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-1edc2a21091b49489a4320f8271c441eR41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	labels : Token[] to labels : List&lt;Token&gt; in method private DumpCountsStore(out PrintStream, labels List&lt;Token&gt;, relationshipTypes List&lt;RelationshipTypeToken&gt;, propertyKeys List&lt;Token&gt;) in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L102">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R104">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	relationshipTypeRepository : BatchingTokenRepository&lt;?&gt; to relationshipTypeRepository : BatchingTokenRepository&lt;?,?&gt; in method public RelationshipEncoderStep(control StageControl, config Configuration, relationshipTypeRepository BatchingTokenRepository&lt;?,?&gt;, cache NodeRelationshipCache, specificIds boolean) in class org.neo4j.unsafe.impl.batchimport.RelationshipEncoderStep</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-691835012173a13500401a0eef921416L55">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-691835012173a13500401a0eef921416R57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	record : T to record : RECORD in method public updateRecord(record RECORD) : void in class org.neo4j.kernel.impl.store.TokenStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL232">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR238">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tokens : Token[] to tokens : List&lt;Token&gt; in method private assertNoDuplicates(tokens List&lt;Token&gt;) : void in class upgrade.StoreMigratorFrom19IT</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4L210">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4R211">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	propertyKeys : Token[] to propertyKeys : List&lt;Token&gt; in method private DumpCountsStore(out PrintStream, labels List&lt;Token&gt;, relationshipTypes List&lt;RelationshipTypeToken&gt;, propertyKeys List&lt;Token&gt;) in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L102">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R105">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	store : TokenStore&lt;?&gt; to store : TokenStore&lt;?,TOKEN&gt; in method private allTokensFrom(store TokenStore&lt;?,TOKEN&gt;) : List&lt;TOKEN&gt; in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L211">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R214">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	type : Token to type : RelationshipTypeToken in method public addRelationshipTypeToken(type RelationshipTypeToken) : void in class org.neo4j.kernel.impl.core.CacheAccessBackDoor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-22e6dd4b81edcf6afdd7b078867a1a05L30">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-22e6dd4b81edcf6afdd7b078867a1a05R30">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	record : T to record : RECORD in method protected writeRecord(record RECORD, cursor PageCursor) : void in class org.neo4j.kernel.impl.store.TokenStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL301">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR306">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -559,6 +496,69 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R104">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	recordAccess : RecordAccess&lt;Integer,T,Void&gt; to recordAccess : RecordAccess&lt;Integer,R,Void&gt; in method public createToken(name String, id int, recordAccess RecordAccess&lt;Integer,R,Void&gt;) : void in class org.neo4j.kernel.impl.transaction.state.TokenCreator</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-1edc2a21091b49489a4320f8271c441eL40">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-1edc2a21091b49489a4320f8271c441eR41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	labels : Token[] to labels : List&lt;Token&gt; in method private DumpCountsStore(out PrintStream, labels List&lt;Token&gt;, relationshipTypes List&lt;RelationshipTypeToken&gt;, propertyKeys List&lt;Token&gt;) in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L102">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R104">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	relationshipTypeRepository : BatchingTokenRepository&lt;?&gt; to relationshipTypeRepository : BatchingTokenRepository&lt;?,?&gt; in method public RelationshipEncoderStep(control StageControl, config Configuration, relationshipTypeRepository BatchingTokenRepository&lt;?,?&gt;, cache NodeRelationshipCache, specificIds boolean) in class org.neo4j.unsafe.impl.batchimport.RelationshipEncoderStep</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-691835012173a13500401a0eef921416L55">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-691835012173a13500401a0eef921416R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	record : T to record : RECORD in method public updateRecord(record RECORD) : void in class org.neo4j.kernel.impl.store.TokenStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL232">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR238">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tokens : Token[] to tokens : List&lt;Token&gt; in method private assertNoDuplicates(tokens List&lt;Token&gt;) : void in class upgrade.StoreMigratorFrom19IT</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4L210">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4R211">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	propertyKeys : Token[] to propertyKeys : List&lt;Token&gt; in method private DumpCountsStore(out PrintStream, labels List&lt;Token&gt;, relationshipTypes List&lt;RelationshipTypeToken&gt;, propertyKeys List&lt;Token&gt;) in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L102">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R105">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	store : TokenStore&lt;?&gt; to store : TokenStore&lt;?,TOKEN&gt; in method private allTokensFrom(store TokenStore&lt;?,TOKEN&gt;) : List&lt;TOKEN&gt; in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L211">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R214">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	type : Token to type : RelationshipTypeToken in method public addRelationshipTypeToken(type RelationshipTypeToken) : void in class org.neo4j.kernel.impl.core.CacheAccessBackDoor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-22e6dd4b81edcf6afdd7b078867a1a05L30">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-22e6dd4b81edcf6afdd7b078867a1a05R30">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	record : T to record : RECORD in method protected writeRecord(record RECORD, cursor PageCursor) : void in class org.neo4j.kernel.impl.store.TokenStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL301">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR306">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -604,16 +604,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private nameToId : Map&lt;String,Integer&gt; from class org.neo4j.kernel.impl.core.TokenHolder to private nameToId : Map&lt;String,Integer&gt; from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL51">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R30">To</a></td>
+                                <td><i>Move Attribute	private idToToken : Map&lt;Integer,TOKEN&gt; from class org.neo4j.kernel.impl.core.TokenHolder to private idToToken : Map&lt;Integer,TOKEN&gt; from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL52">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R31">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private idToToken : Map&lt;Integer,TOKEN&gt; from class org.neo4j.kernel.impl.core.TokenHolder to private idToToken : Map&lt;Integer,TOKEN&gt; from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL52">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R31">To</a></td>
+                                <td><i>Move Attribute	private nameToId : Map&lt;String,Integer&gt; from class org.neo4j.kernel.impl.core.TokenHolder to private nameToId : Map&lt;String,Integer&gt; from class org.neo4j.kernel.impl.core.InMemoryTokenCache</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-09bb708b1e56483f4d4576e1f069841cL51">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-dd32f7e399344226592b326153284555R30">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -662,6 +662,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-22" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	creator : TokenCreator&lt;RelationshipTypeTokenRecord&gt; to creator : TokenCreator&lt;RelationshipTypeTokenRecord,RelationshipTypeToken&gt; in method public createRelationshipTypeToken(name String, id int) : void in class org.neo4j.kernel.impl.transaction.state.NeoStoreTransactionContext</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-2c763530fa84d3e2c1b6f3bb7bab8272L108">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-2c763530fa84d3e2c1b6f3bb7bab8272R112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	record : T to record : RECORD in method public getTokens(maxCount int) : List&lt;TOKEN&gt; in class org.neo4j.kernel.impl.store.TokenStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL117">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR129">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tokens : Token[] to tokens : List&lt;Token&gt; in method public shouldDeduplicateUniquePropertyIndexKeys() : void in class upgrade.StoreMigratorFrom19IT</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4L134">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4R172">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	tokens : Token[] to tokens : List&lt;Token&gt; in method private buildPropertyKeyIndex(tokenStore PropertyKeyTokenStore) : Map&lt;String,Integer&gt; in class org.neo4j.kernel.impl.storemigration.legacystore.v21.propertydeduplication.NonIndexedConflictResolver</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-117fd7e3e13a0679298339f4a5e48961L53">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-117fd7e3e13a0679298339f4a5e48961R55">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -789,34 +817,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-1edc2a21091b49489a4320f8271c441eR43">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	creator : TokenCreator&lt;RelationshipTypeTokenRecord&gt; to creator : TokenCreator&lt;RelationshipTypeTokenRecord,RelationshipTypeToken&gt; in method public createRelationshipTypeToken(name String, id int) : void in class org.neo4j.kernel.impl.transaction.state.NeoStoreTransactionContext</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-2c763530fa84d3e2c1b6f3bb7bab8272L108">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-2c763530fa84d3e2c1b6f3bb7bab8272R112">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	record : T to record : RECORD in method public getTokens(maxCount int) : List&lt;TOKEN&gt; in class org.neo4j.kernel.impl.store.TokenStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL117">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR129">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tokens : Token[] to tokens : List&lt;Token&gt; in method public shouldDeduplicateUniquePropertyIndexKeys() : void in class upgrade.StoreMigratorFrom19IT</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4L134">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-268c807683ba03bbf085fb141966b8e4R172">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	tokens : Token[] to tokens : List&lt;Token&gt; in method private buildPropertyKeyIndex(tokenStore PropertyKeyTokenStore) : Map&lt;String,Integer&gt; in class org.neo4j.kernel.impl.storemigration.legacystore.v21.propertydeduplication.NonIndexedConflictResolver</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-117fd7e3e13a0679298339f4a5e48961L53">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-117fd7e3e13a0679298339f4a5e48961R55">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -908,34 +908,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	Token[] to List&lt;TOKEN&gt; in method private allTokensFrom(store TokenStore&lt;?,TOKEN&gt;) : List&lt;TOKEN&gt; in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L211">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R214">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to RECORD in method protected abstract createRecord(key int) : RECORD in class org.neo4j.unsafe.impl.batchimport.store.BatchingTokenRepository</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-9cd01ddcd3b9f10911be0c1ecdc1b1a2L115">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-9cd01ddcd3b9f10911be0c1ecdc1b1a2R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to RECORD in method public getRecord(id int) : RECORD in class org.neo4j.kernel.impl.store.TokenStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL149">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR154">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	T to RECORD in method public forceGetRecord(id long) : RECORD in class org.neo4j.kernel.impl.store.TokenStore</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL187">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR192">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	Token to TOKEN in method public getToken(id int) : TOKEN in class org.neo4j.kernel.impl.store.TokenStore</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL143">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR148">To</a></td>
@@ -960,6 +932,34 @@
                                 <td><i>Change Return Type	T to RECORD in method public getRecord(id long) : RECORD in class org.neo4j.kernel.impl.store.TokenStore</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL181">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR186">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Token[] to List&lt;TOKEN&gt; in method private allTokensFrom(store TokenStore&lt;?,TOKEN&gt;) : List&lt;TOKEN&gt; in class org.neo4j.kernel.impl.store.counts.DumpCountsStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4L211">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-7efa4c72882e09ce796436e9022310f4R214">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to RECORD in method protected abstract createRecord(key int) : RECORD in class org.neo4j.unsafe.impl.batchimport.store.BatchingTokenRepository</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-9cd01ddcd3b9f10911be0c1ecdc1b1a2L115">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-9cd01ddcd3b9f10911be0c1ecdc1b1a2R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to RECORD in method public getRecord(id int) : RECORD in class org.neo4j.kernel.impl.store.TokenStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL149">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR154">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	T to RECORD in method public forceGetRecord(id long) : RECORD in class org.neo4j.kernel.impl.store.TokenStore</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccL187">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/6723c63411aa7b7595ae7fe68daafbc252ff19a9?diff=split#diff-082b6715a62db1a1dbfb50ca873363ccR192">To</a></td>
                             </tr>
                             
                             </tbody>

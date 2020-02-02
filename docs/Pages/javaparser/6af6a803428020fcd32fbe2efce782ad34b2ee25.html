@@ -162,6 +162,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public setTypeArgs(typeArgs List&lt;Type&lt;?&gt;&gt;) : void renamed to public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : MethodCallExpr in class com.github.javaparser.ast.expr.MethodCallExpr</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4L136">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4R136">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public setTypeArgs(typeArgs List&lt;Type&lt;?&gt;&gt;) : void renamed to public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : ObjectCreationExpr in class com.github.javaparser.ast.expr.ObjectCreationExpr</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748L153">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748R156">To</a></td>
@@ -181,13 +188,6 @@
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-e54b9506d0f186eae074cb7a11221dfcR100">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public setTypeArgs(typeArgs List&lt;Type&lt;?&gt;&gt;) : void renamed to public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : MethodCallExpr in class com.github.javaparser.ast.expr.MethodCallExpr</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4L136">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4R136">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -198,6 +198,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-12" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Inline Method	public setTypeArgs(typeArgs List&lt;Type&lt;?&gt;&gt;) : void moved from class com.github.javaparser.ast.type.ClassOrInterfaceType to class com.github.javaparser.ast.expr.ObjectCreationExpr &amp; inlined to public ObjectCreationExpr(range Range, scope Expression, type ClassOrInterfaceType, typeArguments List&lt;Type&lt;?&gt;&gt;, args List&lt;Expression&gt;, anonymousBody List&lt;BodyDeclaration&lt;?&gt;&gt;)</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Inline Method	public getTypeArgs() : List&lt;Type&lt;?&gt;&gt; moved from class com.github.javaparser.ast.type.ClassOrInterfaceType to class com.github.javaparser.ast.visitor.VoidVisitorAdapter &amp; inlined to public visit(n ClassOrInterfaceType, arg A) : void</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -265,20 +279,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Inline Method	public getTypeArgs() : List&lt;Type&lt;?&gt;&gt; moved from class com.github.javaparser.ast.type.ClassOrInterfaceType to class com.github.javaparser.ast.visitor.VoidVisitorAdapter &amp; inlined to public visit(n ExplicitConstructorInvocationStmt, arg A) : void</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Inline Method	public setTypeArgs(typeArgs List&lt;Type&lt;?&gt;&gt;) : void moved from class com.github.javaparser.ast.type.ClassOrInterfaceType to class com.github.javaparser.ast.expr.ObjectCreationExpr &amp; inlined to public ObjectCreationExpr(range Range, scope Expression, type ClassOrInterfaceType, typeArguments List&lt;Type&lt;?&gt;&gt;, args List&lt;Expression&gt;, anonymousBody List&lt;BodyDeclaration&lt;?&gt;&gt;)</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Inline Method	public getTypeArgs() : List&lt;Type&lt;?&gt;&gt; moved from class com.github.javaparser.ast.type.ClassOrInterfaceType to class com.github.javaparser.ast.visitor.VoidVisitorAdapter &amp; inlined to public visit(n ClassOrInterfaceType, arg A) : void</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -367,6 +367,62 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public visit(n ClassOrInterfaceType, arg A) : Node in class com.github.javaparser.ast.visitor.ModifierVisitorAdapter</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cL340">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cR340">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public visit(n ObjectCreationExpr, arg A) : Node in class com.github.javaparser.ast.visitor.ModifierVisitorAdapter</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cL782">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cR782">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments_ : List&lt;Type&lt;?&gt;&gt; in method public visit(_n MethodCallExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L790">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R792">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n MethodCallExpr, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L1001">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R937">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments_ : List&lt;Type&lt;?&gt;&gt; in method public visit(_n ExplicitConstructorInvocationStmt, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L959">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R964">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n ClassOrInterfaceType, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L440">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R370">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments_ : List&lt;Type&lt;?&gt;&gt; in method public visit(_n ClassOrInterfaceType, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L428">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R428">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n ExplicitConstructorInvocationStmt, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L716">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R644">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n ObjectCreationExpr, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L1129">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R1063">To</a></td>
@@ -440,62 +496,6 @@
                                 <td><i>Rename Variable	scope : Expression to scope_ : Expression in method public visit(_n FieldAccessExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L663">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R663">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public visit(n ClassOrInterfaceType, arg A) : Node in class com.github.javaparser.ast.visitor.ModifierVisitorAdapter</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cL340">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cR340">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public visit(n ObjectCreationExpr, arg A) : Node in class com.github.javaparser.ast.visitor.ModifierVisitorAdapter</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cL782">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-8daf20ebad8d758294a1c3c6039af84cR782">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments_ : List&lt;Type&lt;?&gt;&gt; in method public visit(_n MethodCallExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L790">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R792">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n MethodCallExpr, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L1001">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R937">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments_ : List&lt;Type&lt;?&gt;&gt; in method public visit(_n ExplicitConstructorInvocationStmt, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L959">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R964">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n ClassOrInterfaceType, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L440">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R370">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments_ : List&lt;Type&lt;?&gt;&gt; in method public visit(_n ClassOrInterfaceType, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L428">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R428">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	t : Type to type : Type&lt;?&gt; in method public visit(n ExplicitConstructorInvocationStmt, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L716">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R644">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -578,13 +578,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.TypeArguments to private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.expr.ObjectCreationExpr</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-40306870d0894e2ee3f340f7e9c67b82L33">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748R55">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.TypeArguments to private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.expr.MethodCallExpr</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-40306870d0894e2ee3f340f7e9c67b82L33">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4R41">To</a></td>
@@ -602,6 +595,13 @@
                                 <td><i>Move Attribute	private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.TypeArguments to private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.expr.FieldAccessExpr</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-40306870d0894e2ee3f340f7e9c67b82L33">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-e54b9506d0f186eae074cb7a11221dfcR41">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.TypeArguments to private typeArguments : List&lt;Type&lt;?&gt;&gt; from class com.github.javaparser.ast.expr.ObjectCreationExpr</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-40306870d0894e2ee3f340f7e9c67b82L33">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748R55">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -653,62 +653,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-16" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n ArrayCreationExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L553">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R555">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n Parameter, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L367">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R370">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n CastExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L606">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R608">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n VariableDeclarationExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L883">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R891">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n ArrayType, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L455">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R458">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	elementType_ : Type to elementType_ : Type&lt;?&gt; in method public visit(_n FieldDeclaration, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L268">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R272">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	t : Type to type : Type&lt;?&gt; in method public visit(n MethodReferenceExpr, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L1680">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R1617">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n AnnotationMemberDeclaration, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L252">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R256">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -764,6 +708,62 @@
                                 <td><i>Change Variable Type	t : Type to t : Type&lt;?&gt; in method public visit(n TypeExpr, arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L1263">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R1274">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n ArrayCreationExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L553">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R555">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n Parameter, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L367">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R370">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n CastExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L606">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R608">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n VariableDeclarationExpr, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L883">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R891">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n ArrayType, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L455">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R458">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	elementType_ : Type to elementType_ : Type&lt;?&gt; in method public visit(_n FieldDeclaration, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L268">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R272">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	t : Type to type : Type&lt;?&gt; in method public visit(n MethodReferenceExpr, arg A) : R in class com.github.javaparser.ast.visitor.GenericVisitorAdapter</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7L1680">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-3e7bd4a95c02eabe80b3eae29f8e02c7R1617">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	type_ : Type to type_ : Type&lt;?&gt; in method public visit(_n AnnotationMemberDeclaration, _arg Object) : Node in class com.github.javaparser.ast.visitor.CloneVisitor</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9L252">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-9656c9d4971c5eec38646295834971a9R256">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -829,41 +829,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : MethodCallExpr in class com.github.javaparser.ast.expr.MethodCallExpr</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4L136">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4R137">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : ObjectCreationExpr in class com.github.javaparser.ast.expr.ObjectCreationExpr</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748L153">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748R157">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : ExplicitConstructorInvocationStmt in class com.github.javaparser.ast.stmt.ExplicitConstructorInvocationStmt</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0L109">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0R115">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public ExplicitConstructorInvocationStmt(range Range, typeArguments List&lt;Type&lt;?&gt;&gt;, isThis boolean, expr Expression, args List&lt;Expression&gt;) in class com.github.javaparser.ast.stmt.ExplicitConstructorInvocationStmt</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0L58">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	typeArguments : TypeArguments to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : MethodReferenceExpr in class com.github.javaparser.ast.expr.MethodReferenceExpr</i></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-2b513c753813e05974d948841b7477a2L82">From</a></td>
-                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-2b513c753813e05974d948841b7477a2R89">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public ObjectCreationExpr(range Range, scope Expression, type ClassOrInterfaceType, typeArguments List&lt;Type&lt;?&gt;&gt;, args List&lt;Expression&gt;, anonymousBody List&lt;BodyDeclaration&lt;?&gt;&gt;) in class com.github.javaparser.ast.expr.ObjectCreationExpr</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748L76">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748R79">To</a></td>
@@ -895,6 +860,41 @@
                                 <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : FieldAccessExpr in class com.github.javaparser.ast.expr.FieldAccessExpr</i></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-e54b9506d0f186eae074cb7a11221dfcL99">From</a></td>
                                 <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-e54b9506d0f186eae074cb7a11221dfcR101">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : MethodCallExpr in class com.github.javaparser.ast.expr.MethodCallExpr</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4L136">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-acdacecd2ce274b17fafade537bcceb4R137">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : ObjectCreationExpr in class com.github.javaparser.ast.expr.ObjectCreationExpr</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748L153">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-20c54e5bbdcf3e631845ca6087594748R157">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : ExplicitConstructorInvocationStmt in class com.github.javaparser.ast.stmt.ExplicitConstructorInvocationStmt</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0L109">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0R115">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	typeArgs : List&lt;Type&lt;?&gt;&gt; to typeArguments : List&lt;Type&lt;?&gt;&gt; in method public ExplicitConstructorInvocationStmt(range Range, typeArguments List&lt;Type&lt;?&gt;&gt;, isThis boolean, expr Expression, args List&lt;Expression&gt;) in class com.github.javaparser.ast.stmt.ExplicitConstructorInvocationStmt</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0L58">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-fe81dbc8b2a0268060508d2f9f1c81f0R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	typeArguments : TypeArguments to types : List&lt;Type&lt;?&gt;&gt; in method public setTypeArguments(types List&lt;Type&lt;?&gt;&gt;) : MethodReferenceExpr in class com.github.javaparser.ast.expr.MethodReferenceExpr</i></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-2b513c753813e05974d948841b7477a2L82">From</a></td>
+                                <td><a href = "https://github.com/javaparser/javaparser/commit/6af6a803428020fcd32fbe2efce782ad34b2ee25?diff=split#diff-2b513c753813e05974d948841b7477a2R89">To</a></td>
                             </tr>
                             
                             </tbody>

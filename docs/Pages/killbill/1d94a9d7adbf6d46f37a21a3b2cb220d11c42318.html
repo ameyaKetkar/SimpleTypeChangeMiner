@@ -172,16 +172,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getAllEntitlementsForAccountId(accountId UUID, tenantContext InternalTenantContext) : AccountEntitlements renamed to public getAllEntitlementsForAccount(tenantContext InternalTenantContext) : AccountEntitlements in class org.killbill.billing.entitlement.api.svcs.DefaultEntitlementApiBase</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-bf32f27375ca069b7bb4f141f04884b2L126">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-bf32f27375ca069b7bb4f141f04884b2R126">To</a></td>
+                                <td><i>Rename Method	public getAllEntitlementsForAccountId(accountId UUID, context InternalTenantContext) : AccountEntitlements renamed to public getAllEntitlementsForAccount(context InternalTenantContext) : AccountEntitlements in class org.killbill.billing.entitlement.EntitlementInternalApi</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-e1419c560370d51747b7f092ce7c4b14L33">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-e1419c560370d51747b7f092ce7c4b14R33">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getAllEntitlementsForAccountId(accountId UUID, context InternalTenantContext) : AccountEntitlements renamed to public getAllEntitlementsForAccount(context InternalTenantContext) : AccountEntitlements in class org.killbill.billing.entitlement.EntitlementInternalApi</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-e1419c560370d51747b7f092ce7c4b14L33">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-e1419c560370d51747b7f092ce7c4b14R33">To</a></td>
+                                <td><i>Rename Method	public getAllEntitlementsForAccountId(accountId UUID, tenantContext InternalTenantContext) : AccountEntitlements renamed to public getAllEntitlementsForAccount(tenantContext InternalTenantContext) : AccountEntitlements in class org.killbill.billing.entitlement.api.svcs.DefaultEntitlementApiBase</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-bf32f27375ca069b7bb4f141f04884b2L126">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-bf32f27375ca069b7bb4f141f04884b2R126">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -194,6 +194,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	accountTimeZone : DateTimeZone to internalCallContext : InternalCallContext in method private getMinBillingEventDate(eventSet BillingEventSet, internalCallContext InternalCallContext) : LocalDate in class org.killbill.billing.invoice.generator.UsageInvoiceItemGenerator</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138L150">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138R146">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	dateAndTimeZoneContext : AccountDateAndTimeZoneContext to internalTenantContext : InternalTenantContext in method public SubscriptionConsumableInArrear(accountId UUID, invoiceId UUID, subscriptionBillingEvents List&lt;BillingEvent&gt;, rawUsage List&lt;RawUsage&gt;, targetDate LocalDate, rawUsageStartDate LocalDate, internalTenantContext InternalTenantContext) in class org.killbill.billing.invoice.usage.SubscriptionConsumableInArrear</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-df060e723eb132ccd3cda39892991ddbL80">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-df060e723eb132ccd3cda39892991ddbR87">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -214,20 +228,6 @@
                                 <td><i>Change Parameter Type	dateAndTimeZoneContext : AccountDateAndTimeZoneContext to internalCallContext : InternalCallContext in method private generateFixedPriceItem(invoiceId UUID, accountId UUID, thisEvent BillingEvent, targetDate LocalDate, currency Currency, internalCallContext InternalCallContext) : InvoiceItem in class org.killbill.billing.invoice.generator.FixedAndRecurringInvoiceItemGenerator</i></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-505ca0a38378c25d777b11f515acc1cfL344">From</a></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-505ca0a38378c25d777b11f515acc1cfR341">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	accountTimeZone : DateTimeZone to internalCallContext : InternalCallContext in method private getMinBillingEventDate(eventSet BillingEventSet, internalCallContext InternalCallContext) : LocalDate in class org.killbill.billing.invoice.generator.UsageInvoiceItemGenerator</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138L150">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138R146">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	dateAndTimeZoneContext : AccountDateAndTimeZoneContext to internalTenantContext : InternalTenantContext in method public SubscriptionConsumableInArrear(accountId UUID, invoiceId UUID, subscriptionBillingEvents List&lt;BillingEvent&gt;, rawUsage List&lt;RawUsage&gt;, targetDate LocalDate, rawUsageStartDate LocalDate, internalTenantContext InternalTenantContext) in class org.killbill.billing.invoice.usage.SubscriptionConsumableInArrear</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-df060e723eb132ccd3cda39892991ddbL80">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-df060e723eb132ccd3cda39892991ddbR87">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -372,13 +372,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	accountTimeZone : DateTimeZone to internalCallContext : InternalCallContext in method private getMinBillingEventDate(eventSet BillingEventSet, internalCallContext InternalCallContext) : LocalDate in class org.killbill.billing.invoice.generator.UsageInvoiceItemGenerator</i></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138L150">From</a></td>
-                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138R146">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	dateAndTimeZoneContext : AccountDateAndTimeZoneContext to internalTenantContext : InternalTenantContext in method public SubscriptionConsumableInArrear(accountId UUID, invoiceId UUID, subscriptionBillingEvents List&lt;BillingEvent&gt;, rawUsage List&lt;RawUsage&gt;, targetDate LocalDate, rawUsageStartDate LocalDate, internalTenantContext InternalTenantContext) in class org.killbill.billing.invoice.usage.SubscriptionConsumableInArrear</i></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-df060e723eb132ccd3cda39892991ddbL86">From</a></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-df060e723eb132ccd3cda39892991ddbR87">To</a></td>
@@ -403,6 +396,13 @@
                                 <td><i>Rename Parameter	dateAndTimeZoneContext : AccountDateAndTimeZoneContext to internalCallContext : InternalCallContext in method private generateFixedPriceItem(invoiceId UUID, accountId UUID, thisEvent BillingEvent, targetDate LocalDate, currency Currency, internalCallContext InternalCallContext) : InvoiceItem in class org.killbill.billing.invoice.generator.FixedAndRecurringInvoiceItemGenerator</i></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-505ca0a38378c25d777b11f515acc1cfL345">From</a></td>
                                 <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-505ca0a38378c25d777b11f515acc1cfR341">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	accountTimeZone : DateTimeZone to internalCallContext : InternalCallContext in method private getMinBillingEventDate(eventSet BillingEventSet, internalCallContext InternalCallContext) : LocalDate in class org.killbill.billing.invoice.generator.UsageInvoiceItemGenerator</i></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138L150">From</a></td>
+                                <td><a href = "https://github.com/killbill/killbill/commit/1d94a9d7adbf6d46f37a21a3b2cb220d11c42318?diff=split#diff-2b00309027703312ef6698cd80af3138R146">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -174,13 +174,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	exchFut : GridDhtPartitionsExchangeFuture to exchFut : GridDhtTopologyFuture in method public updateTopologyVersion(exchFut GridDhtTopologyFuture, discoCache DiscoCache, updateSeq long, stopping boolean) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtPartitionTopology</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-b534f9fd54af594f6904e262a6823467L54">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-b534f9fd54af594f6904e262a6823467R65">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Parameter Type	exchId : GridDhtPartitionExchangeId to exchVer : AffinityTopologyVersion in method public update(exchVer AffinityTopologyVersion, partMap GridDhtPartitionFullMap, cntrMap Map&lt;Integer,T2&lt;Long,Long&gt;&gt;) : GridDhtPartitionMap in class org.apache.ignite.internal.processors.cache.distributed.dht.GridClientPartitionTopology</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-6b3fd99cb139f1f06f25484e7888a43cL561">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-6b3fd99cb139f1f06f25484e7888a43cR566">To</a></td>
@@ -247,6 +240,13 @@
                                 <td><i>Change Parameter Type	exchId : GridDhtPartitionExchangeId to exchangeVer : AffinityTopologyVersion in method public update(exchangeVer AffinityTopologyVersion, partMap GridDhtPartitionFullMap, cntrMap Map&lt;Integer,T2&lt;Long,Long&gt;&gt;) : GridDhtPartitionMap in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtPartitionTopology</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-b534f9fd54af594f6904e262a6823467L223">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-b534f9fd54af594f6904e262a6823467R231">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	exchFut : GridDhtPartitionsExchangeFuture to exchFut : GridDhtTopologyFuture in method public updateTopologyVersion(exchFut GridDhtTopologyFuture, discoCache DiscoCache, updateSeq long, stopping boolean) : void in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtPartitionTopology</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-b534f9fd54af594f6904e262a6823467L54">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-b534f9fd54af594f6904e262a6823467R65">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -334,20 +334,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	exchTopVer : AffinityTopologyVersion in method public updateTopologyVersion(exchFut GridDhtTopologyFuture, discoCache DiscoCache, updSeq long, stopping boolean) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtPartitionTopologyImpl</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	exchTopVer : AffinityTopologyVersion in method public updateTopologyVersion(exchFut GridDhtTopologyFuture, discoCache DiscoCache, updSeq long, stopping boolean) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridClientPartitionTopology</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	fut : IgniteInternalFuture&lt;?&gt; in method public testLocalClose() : void from class org.apache.ignite.internal.processors.cache.CacheStopAndDestroySelfTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -356,6 +342,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Variable	cacheCtx : GridCacheContext&lt;?,?&gt; in method public finishUnmarshal(ctx GridCacheSharedContext, ldr ClassLoader) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtTxPrepareRequest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	exchTopVer : AffinityTopologyVersion in method public updateTopologyVersion(exchFut GridDhtTopologyFuture, discoCache DiscoCache, updSeq long, stopping boolean) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtPartitionTopologyImpl</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	exchTopVer : AffinityTopologyVersion in method public updateTopologyVersion(exchFut GridDhtTopologyFuture, discoCache DiscoCache, updSeq long, stopping boolean) : void from class org.apache.ignite.internal.processors.cache.distributed.dht.GridClientPartitionTopology</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -537,20 +537,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	req : DynamicCacheChangeRequest to id : UUID in class org.apache.ignite.internal.processors.cache.GridCacheProcessor.DynamicCacheStartFuture</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5L3739">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R3840">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	registeredGrps : Map&lt;Integer,CacheGroupDescriptor&gt; to caches : CachesInfo in class org.apache.ignite.internal.processors.cache.CacheAffinitySharedManager</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-95bb83179a84dd0fc2565176e598ff4aL84">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-95bb83179a84dd0fc2565176e598ff4aR96">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Attribute	lastExchangeId : GridDhtPartitionExchangeId to lastExchangeVer : AffinityTopologyVersion in class org.apache.ignite.internal.processors.cache.distributed.dht.GridDhtPartitionTopologyImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-be88cd39da0bb163edd865170a47c194L108">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-be88cd39da0bb163edd865170a47c194R108">To</a></td>
@@ -563,6 +549,20 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-6b3fd99cb139f1f06f25484e7888a43cR86">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	req : DynamicCacheChangeRequest to id : UUID in class org.apache.ignite.internal.processors.cache.GridCacheProcessor.DynamicCacheStartFuture</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5L3739">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R3840">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	registeredGrps : Map&lt;Integer,CacheGroupDescriptor&gt; to caches : CachesInfo in class org.apache.ignite.internal.processors.cache.CacheAffinitySharedManager</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-95bb83179a84dd0fc2565176e598ff4aL84">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-95bb83179a84dd0fc2565176e598ff4aR96">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -573,6 +573,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	req : DynamicCacheChangeRequest to id : UUID in class org.apache.ignite.internal.processors.cache.GridCacheProcessor.DynamicCacheStartFuture</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5L3739">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R3840">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -600,13 +607,6 @@
                                 <td><i>Change Attribute Type	lastExchangeId : GridDhtPartitionExchangeId to lastExchangeVer : AffinityTopologyVersion in class org.apache.ignite.internal.processors.cache.distributed.dht.GridClientPartitionTopology</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-6b3fd99cb139f1f06f25484e7888a43cL86">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-6b3fd99cb139f1f06f25484e7888a43cR86">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	req : DynamicCacheChangeRequest to id : UUID in class org.apache.ignite.internal.processors.cache.GridCacheProcessor.DynamicCacheStartFuture</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5L3739">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/4026ddcc2161ca4bf5ad3dc04cabd284c608738a?diff=split#diff-3b0297f8e0e757b6b5ede921d629c6b5R3840">To</a></td>
                             </tr>
                             
                             </tbody>

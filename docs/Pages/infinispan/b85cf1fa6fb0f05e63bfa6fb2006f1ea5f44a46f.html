@@ -222,6 +222,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Variable	serverTransactionTable : ServerTransactionTable to perCacheTxTable : PerCacheTxTable in method private assertServerTransactionTableEmpty() : void in class org.infinispan.server.hotrod.tx.TxFunctionalTest</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-48c427490391e5f9abec48f786d05d1cL562">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-48c427490391e5f9abec48f786d05d1cR585">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Variable	transactionTable : ServerTransactionTable to txTable : GlobalTxTable in method private createGlobalTxTable(cacheManager EmbeddedCacheManager) : void in class org.infinispan.server.hotrod.LifecycleCallbacks</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeL84">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeR134">To</a></td>
@@ -253,13 +260,6 @@
                                 <td><i>Rename Variable	globalTxTable : Cache&lt;CacheXid,TxState&gt; to cache : Cache&lt;CacheXid,TxState&gt; in method private createGlobalTxTable(cacheManager EmbeddedCacheManager) : void in class org.infinispan.server.hotrod.LifecycleCallbacks</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeL83">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeR133">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	serverTransactionTable : ServerTransactionTable to perCacheTxTable : PerCacheTxTable in method private assertServerTransactionTableEmpty() : void in class org.infinispan.server.hotrod.tx.TxFunctionalTest</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-48c427490391e5f9abec48f786d05d1cL562">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-48c427490391e5f9abec48f786d05d1cR585">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -329,6 +329,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	org.infinispan.server.hotrod.tx.CacheXid moved to org.infinispan.server.hotrod.tx.table.CacheXid</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	org.infinispan.server.hotrod.tx.ClientAddress moved to org.infinispan.server.hotrod.tx.table.ClientAddress</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -337,13 +344,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.infinispan.server.hotrod.tx.TxState moved to org.infinispan.server.hotrod.tx.table.TxState</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.infinispan.server.hotrod.tx.CacheXid moved to org.infinispan.server.hotrod.tx.table.CacheXid</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -379,6 +379,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Variable Type	transactionTable : ServerTransactionTable to txTable : GlobalTxTable in method private createGlobalTxTable(cacheManager EmbeddedCacheManager) : void in class org.infinispan.server.hotrod.LifecycleCallbacks</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeL72">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeR134">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	txContext : PrepareTransactionDecodeContext to prepareCoordinator : PrepareCoordinator in method private prepareTransactionInternal(header HotRodHeader, cache AdvancedCache&lt;byte[],byte[]&gt;, xid XidImpl, onePhaseCommit boolean, writes List&lt;TransactionWrite&gt;, recoverable boolean, timeout long) : void in class org.infinispan.server.hotrod.TransactionRequestProcessor</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-1d73b82b98d583ff266eeec00b7560cbL75">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-1d73b82b98d583ff266eeec00b7560cbR112">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Variable Type	serverTransactionTable : ServerTransactionTable to perCacheTxTable : PerCacheTxTable in method private assertServerTransactionTableEmpty() : void in class org.infinispan.server.hotrod.tx.TopologyChangeFunctionalTest</i></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-8d9bd0fd125cdf537263ed639e31f1a8L232">From</a></td>
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-8d9bd0fd125cdf537263ed639e31f1a8R250">To</a></td>
@@ -398,20 +412,6 @@
                                 <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-cfce87996e71ad89d37a105c2c4ce59eR163">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	transactionTable : ServerTransactionTable to txTable : GlobalTxTable in method private createGlobalTxTable(cacheManager EmbeddedCacheManager) : void in class org.infinispan.server.hotrod.LifecycleCallbacks</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeL72">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-7e6dfa8257c7c8c13832b8c8d946e6aeR134">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	txContext : PrepareTransactionDecodeContext to prepareCoordinator : PrepareCoordinator in method private prepareTransactionInternal(header HotRodHeader, cache AdvancedCache&lt;byte[],byte[]&gt;, xid XidImpl, onePhaseCommit boolean, writes List&lt;TransactionWrite&gt;, recoverable boolean, timeout long) : void in class org.infinispan.server.hotrod.TransactionRequestProcessor</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-1d73b82b98d583ff266eeec00b7560cbL75">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-1d73b82b98d583ff266eeec00b7560cbR112">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -425,14 +425,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public cache(header HotRodHeader, subject Subject, cacheName String) : AdvancedCache&lt;byte[],byte[]&gt; extracted from public cache(header HotRodHeader, subject Subject) : AdvancedCache&lt;byte[],byte[]&gt; in class org.infinispan.server.hotrod.HotRodServer</i></td>
+                                <td><i>Extract Method	private createGlobalTxTable(cacheManager EmbeddedCacheManager) : void extracted from private registerServerTransactionTable(componentRegistry ComponentRegistry, cacheName String) : void in class org.infinispan.server.hotrod.LifecycleCallbacks</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private createGlobalTxTable(cacheManager EmbeddedCacheManager) : void extracted from private registerServerTransactionTable(componentRegistry ComponentRegistry, cacheName String) : void in class org.infinispan.server.hotrod.LifecycleCallbacks</i></td>
+                                <td><i>Extract Method	public cache(header HotRodHeader, subject Subject, cacheName String) : AdvancedCache&lt;byte[],byte[]&gt; extracted from public cache(header HotRodHeader, subject Subject) : AdvancedCache&lt;byte[],byte[]&gt; in class org.infinispan.server.hotrod.HotRodServer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -450,16 +450,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	status : int to status : Status in class org.infinispan.server.hotrod.tx.table.TxState</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-4625397492070626dfe9419722dd206cL37">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-f66b24e5b9249733c4aba58b480de354R39">To</a></td>
+                                <td><i>Change Attribute Type	preparedCaches : Collection&lt;TransactionContext&lt;?,?&gt;&gt; to preparedCaches : List&lt;TransactionContext&lt;?,?&gt;&gt; in class org.infinispan.client.hotrod.impl.transaction.XaModeTransactionTable.XaAdapter</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-0405518c446f7a7cbe57f079196ba477L66">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-0405518c446f7a7cbe57f079196ba477R65">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	preparedCaches : Collection&lt;TransactionContext&lt;?,?&gt;&gt; to preparedCaches : List&lt;TransactionContext&lt;?,?&gt;&gt; in class org.infinispan.client.hotrod.impl.transaction.XaModeTransactionTable.XaAdapter</i></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-0405518c446f7a7cbe57f079196ba477L66">From</a></td>
-                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-0405518c446f7a7cbe57f079196ba477R65">To</a></td>
+                                <td><i>Change Attribute Type	status : int to status : Status in class org.infinispan.server.hotrod.tx.table.TxState</i></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-4625397492070626dfe9419722dd206cL37">From</a></td>
+                                <td><a href = "https://github.com/infinispan/infinispan/commit/b85cf1fa6fb0f05e63bfa6fb2006f1ea5f44a46f?diff=split#diff-f66b24e5b9249733c4aba58b480de354R39">To</a></td>
                             </tr>
                             
                             </tbody>

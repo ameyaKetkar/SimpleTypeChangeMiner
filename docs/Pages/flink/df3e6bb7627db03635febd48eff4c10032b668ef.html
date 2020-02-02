@@ -252,6 +252,41 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	toRelease : Iterable&lt;TaskLocalStateStore&gt; to toRelease : Iterable&lt;TaskLocalStateStoreImpl&gt; in method private doRelease(toRelease Iterable&lt;TaskLocalStateStoreImpl&gt;) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL80">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR212">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	jobID : JobID to allocationID : AllocationID in method public releaseLocalStateForAllocationId(allocationID AllocationID) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL62">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR143">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	operatorSubtaskStateFromJobManager : OperatorSubtaskState to restoreStateAlternatives : Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt; in method protected rawKeyedStateInputs(restoreStateAlternatives Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt;) : CloseableIterable&lt;KeyGroupStatePartitionStreamProvider&gt; in class org.apache.flink.streaming.api.operators.StreamTaskStateInitializerImpl</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62L284">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62R305">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	keyedStateManagedFuture : RunnableFuture&lt;KeyedStateHandle&gt; to keyedStateManagedFuture : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public OperatorSnapshotFutures(keyedStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, keyedStateRawFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, operatorStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;, operatorStateRawFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;) in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL42">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	keyedStateRawFuture : RunnableFuture&lt;KeyedStateHandle&gt; to keyedStateRawFuture : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public OperatorSnapshotFutures(keyedStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, keyedStateRawFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, operatorStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;, operatorStateRawFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;) in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL42">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR59">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	operatorStateManagedFuture : RunnableFuture&lt;OperatorStateHandle&gt; to operatorStateManagedFuture : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public setOperatorStateManagedFuture(operatorStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;) : void in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL73">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR94">To</a></td>
@@ -341,41 +376,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR61">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	toRelease : Iterable&lt;TaskLocalStateStore&gt; to toRelease : Iterable&lt;TaskLocalStateStoreImpl&gt; in method private doRelease(toRelease Iterable&lt;TaskLocalStateStoreImpl&gt;) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL80">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR212">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	jobID : JobID to allocationID : AllocationID in method public releaseLocalStateForAllocationId(allocationID AllocationID) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL62">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR143">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operatorSubtaskStateFromJobManager : OperatorSubtaskState to restoreStateAlternatives : Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt; in method protected rawKeyedStateInputs(restoreStateAlternatives Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt;) : CloseableIterable&lt;KeyGroupStatePartitionStreamProvider&gt; in class org.apache.flink.streaming.api.operators.StreamTaskStateInitializerImpl</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62L284">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62R305">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	keyedStateManagedFuture : RunnableFuture&lt;KeyedStateHandle&gt; to keyedStateManagedFuture : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public OperatorSnapshotFutures(keyedStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, keyedStateRawFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, operatorStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;, operatorStateRawFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;) in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL42">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	keyedStateRawFuture : RunnableFuture&lt;KeyedStateHandle&gt; to keyedStateRawFuture : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public OperatorSnapshotFutures(keyedStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, keyedStateRawFuture RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt;, operatorStateManagedFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;, operatorStateRawFuture RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt;) in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL42">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR59">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -386,6 +386,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	private getSizeNullSafe(stateObject StateObject) : long from class org.apache.flink.runtime.checkpoint.OperatorSubtaskState to private getSizeNullSafe(stateObject StateObject) : long from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4a8d9d98e6366308f30197feee8b37f3L156">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R202">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public hashCode() : int from class org.apache.flink.runtime.state.OperatorStateHandle to public hashCode() : int from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37656ad802b76d7d503634316f1fb645L108">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R171">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Method	public toString() : String from class org.apache.flink.runtime.state.OperatorStateHandle to public toString() : String from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37656ad802b76d7d503634316f1fb645L122">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R176">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -422,27 +443,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R134">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	private getSizeNullSafe(stateObject StateObject) : long from class org.apache.flink.runtime.checkpoint.OperatorSubtaskState to private getSizeNullSafe(stateObject StateObject) : long from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4a8d9d98e6366308f30197feee8b37f3L156">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R202">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public hashCode() : int from class org.apache.flink.runtime.state.OperatorStateHandle to public hashCode() : int from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37656ad802b76d7d503634316f1fb645L108">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R171">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Method	public toString() : String from class org.apache.flink.runtime.state.OperatorStateHandle to public toString() : String from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37656ad802b76d7d503634316f1fb645L122">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R176">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -474,20 +474,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	private subtaskIndex : int from class org.apache.flink.runtime.state.TaskLocalStateStore to private subtaskIndex : int from class org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImpl</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-923295f0f4222df48ceb2828feb945b4L42">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-157cb631cb9c9bacc0dd77b31612fd96R61">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private serialVersionUID : long from class org.apache.flink.runtime.state.OperatorStateHandle to private serialVersionUID : long from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37656ad802b76d7d503634316f1fb645L44">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R41">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private jobVertexID : JobVertexID from class org.apache.flink.runtime.state.TaskLocalStateStore to private jobVertexID : JobVertexID from class org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImpl</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-923295f0f4222df48ceb2828feb945b4L39">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-157cb631cb9c9bacc0dd77b31612fd96R57">To</a></td>
@@ -498,6 +484,20 @@
                                 <td><i>Move Attribute	private jobID : JobID from class org.apache.flink.runtime.state.TaskLocalStateStore to private jobID : JobID from class org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImpl</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-923295f0f4222df48ceb2828feb945b4L36">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-157cb631cb9c9bacc0dd77b31612fd96R53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private subtaskIndex : int from class org.apache.flink.runtime.state.TaskLocalStateStore to private subtaskIndex : int from class org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImpl</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-923295f0f4222df48ceb2828feb945b4L42">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-157cb631cb9c9bacc0dd77b31612fd96R61">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private serialVersionUID : long from class org.apache.flink.runtime.state.OperatorStateHandle to private serialVersionUID : long from class org.apache.flink.runtime.checkpoint.StateObjectCollection</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37656ad802b76d7d503634316f1fb645L44">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-f3f3a5cf356ed8e4a12bcbffa6ed5a26R41">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -513,13 +513,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.apache.flink.runtime.checkpoint.StateObjectCollection from class org.apache.flink.runtime.state.OperatorStateHandle</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Class	org.apache.flink.runtime.checkpoint.StateObjectCollection from class org.apache.flink.runtime.checkpoint.OperatorSubtaskState</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -528,6 +521,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Class	org.apache.flink.runtime.state.LocalRecoveryDirectoryProviderImpl from class org.apache.flink.runtime.state.TaskLocalStateStore</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Class	org.apache.flink.runtime.checkpoint.StateObjectCollection from class org.apache.flink.runtime.state.OperatorStateHandle</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -624,6 +624,55 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-36" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	snapshot : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method private snapshotRestoreRoundtrip(useCompression boolean) : void in class org.apache.flink.runtime.state.StateSnapshotCompressionTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-9315f3807b09df60f979d5e20d45f4e1L98">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-9315f3807b09df60f979d5e20d45f4e1R140">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	snapshot1 : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot1 : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public testParallelAsyncSnapshots() : void in class org.apache.flink.runtime.state.StateBackendTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cL3305">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR3338">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	snapshot : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public testDismissingSnapshotNotRunnable() : void in class org.apache.flink.contrib.streaming.state.RocksDBStateBackendTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a1638656985de46f0603355b86836e76L299">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a1638656985de46f0603355b86836e76R306">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateStore : TaskLocalStateStore to stateStore : TaskLocalStateStoreImpl in method private doRelease(toRelease Iterable&lt;TaskLocalStateStoreImpl&gt;) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL80">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR216">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	subtaskState : OperatorSubtaskState to subtaskState : PrioritizedOperatorSubtaskState in method public invoke() : void in class org.apache.flink.runtime.jobmanager.JobManagerHARecoveryTest.BlockingInvokable</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-12385b3ae8d5ef65e3792bd6064ff78eL477">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-12385b3ae8d5ef65e3792bd6064ff78eR486">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	snapshot : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public testAsyncSnapshotCancellation() : void in class org.apache.flink.runtime.state.StateBackendTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cL3451">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR3480">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	runnableFuture : RunnableFuture&lt;OperatorStateHandle&gt; to runnableFuture : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public testSnapshotAsyncClose() : void in class org.apache.flink.runtime.state.OperatorStateBackendTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-089c29cc7a211286c50d86fc6148e439L737">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-089c29cc7a211286c50d86fc6148e439R782">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -828,55 +877,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a1638656985de46f0603355b86836e76R329">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	snapshot : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method private snapshotRestoreRoundtrip(useCompression boolean) : void in class org.apache.flink.runtime.state.StateSnapshotCompressionTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-9315f3807b09df60f979d5e20d45f4e1L98">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-9315f3807b09df60f979d5e20d45f4e1R140">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	snapshot1 : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot1 : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public testParallelAsyncSnapshots() : void in class org.apache.flink.runtime.state.StateBackendTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cL3305">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR3338">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	snapshot : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public testDismissingSnapshotNotRunnable() : void in class org.apache.flink.contrib.streaming.state.RocksDBStateBackendTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a1638656985de46f0603355b86836e76L299">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a1638656985de46f0603355b86836e76R306">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateStore : TaskLocalStateStore to stateStore : TaskLocalStateStoreImpl in method private doRelease(toRelease Iterable&lt;TaskLocalStateStoreImpl&gt;) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL80">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR216">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	subtaskState : OperatorSubtaskState to subtaskState : PrioritizedOperatorSubtaskState in method public invoke() : void in class org.apache.flink.runtime.jobmanager.JobManagerHARecoveryTest.BlockingInvokable</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-12385b3ae8d5ef65e3792bd6064ff78eL477">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-12385b3ae8d5ef65e3792bd6064ff78eR486">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	snapshot : RunnableFuture&lt;KeyedStateHandle&gt; to snapshot : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public testAsyncSnapshotCancellation() : void in class org.apache.flink.runtime.state.StateBackendTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cL3451">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-afd5851ba816ab7e22de575ae8600f5cR3480">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	runnableFuture : RunnableFuture&lt;OperatorStateHandle&gt; to runnableFuture : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public testSnapshotAsyncClose() : void in class org.apache.flink.runtime.state.OperatorStateBackendTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-089c29cc7a211286c50d86fc6148e439L737">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-089c29cc7a211286c50d86fc6148e439R782">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -961,13 +961,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public reportStateHandles(checkpointMetaData CheckpointMetaData, checkpointMetrics CheckpointMetrics, acknowledgedState TaskStateSnapshot) : void renamed to public reportTaskStateSnapshots(checkpointMetaData CheckpointMetaData, checkpointMetrics CheckpointMetrics, acknowledgedState TaskStateSnapshot, localState TaskStateSnapshot) : void in class org.apache.flink.runtime.state.TestTaskStateManager</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4b30d23f87f265407f9f4bc9ec905553L74">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4b30d23f87f265407f9f4bc9ec905553R90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public getLastTaskStateSnapshot() : TaskStateSnapshot renamed to public getLastJobManagerTaskStateSnapshot() : TaskStateSnapshot in class org.apache.flink.runtime.state.TestTaskStateManager</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4b30d23f87f265407f9f4bc9ec905553L154">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4b30d23f87f265407f9f4bc9ec905553R223">To</a></td>
@@ -1015,6 +1008,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-5e618337a105c15723ae0d6dd58c6340R43">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public reportStateHandles(checkpointMetaData CheckpointMetaData, checkpointMetrics CheckpointMetrics, acknowledgedState TaskStateSnapshot) : void renamed to public reportTaskStateSnapshots(checkpointMetaData CheckpointMetaData, checkpointMetrics CheckpointMetrics, acknowledgedState TaskStateSnapshot, localState TaskStateSnapshot) : void in class org.apache.flink.runtime.state.TestTaskStateManager</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4b30d23f87f265407f9f4bc9ec905553L74">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4b30d23f87f265407f9f4bc9ec905553R90">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1025,13 +1025,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public testWriteAndRead() : void from class org.apache.flink.runtime.state.filesystem.FsCheckpointMetadataOutputStreamTest to public testWriteAndRead() : void from class org.apache.flink.runtime.state.filesystem.AbstractCheckpointStateOutputStreamTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a181ab7af075c37b8b96198800d8df49L92">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-1a5957c2ad06693aced84db2bb6d6c92R92">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1068,6 +1061,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-1a5957c2ad06693aced84db2bb6d6c92R63">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public testWriteAndRead() : void from class org.apache.flink.runtime.state.filesystem.FsCheckpointMetadataOutputStreamTest to public testWriteAndRead() : void from class org.apache.flink.runtime.state.filesystem.AbstractCheckpointStateOutputStreamTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-a181ab7af075c37b8b96198800d8df49L92">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-1a5957c2ad06693aced84db2bb6d6c92R92">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1078,6 +1078,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	taskStateSnapshot : TaskStateSnapshot to jmTaskStateSnapshot : TaskStateSnapshot in method public initializeState(jmOperatorStateHandles OperatorSubtaskState, tmOperatorStateHandles OperatorSubtaskState) : void in class org.apache.flink.streaming.util.AbstractStreamOperatorTestHarness</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2L377">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2R387">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1135,13 +1142,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62R120">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	taskStateSnapshot : TaskStateSnapshot to jmTaskStateSnapshot : TaskStateSnapshot in method public initializeState(jmOperatorStateHandles OperatorSubtaskState, tmOperatorStateHandles OperatorSubtaskState) : void in class org.apache.flink.streaming.util.AbstractStreamOperatorTestHarness</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2L377">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2R387">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1152,27 +1152,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	RunnableFuture&lt;OperatorStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public snapshot(checkpointId long, timestamp long, streamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37644cbe3beed6d7a26163229540682dL301">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37644cbe3beed6d7a26163229540682dR303">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	RunnableFuture&lt;OperatorStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public getOperatorStateManagedFuture() : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL69">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	RunnableFuture&lt;KeyedStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public getKeyedStateStreamFuture() : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.state.StateSnapshotContextSynchronousImpl</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7b4a1971b962422ad3128ed521ccf302L112">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7b4a1971b962422ad3128ed521ccf302R120">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1277,6 +1256,27 @@
                                 <td><i>Change Return Type	RunnableFuture&lt;KeyedStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public snapshot(checkpointId long, timestamp long, streamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4585546df289e14ed098ed06400303c2L358">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4585546df289e14ed098ed06400303c2R365">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RunnableFuture&lt;OperatorStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public snapshot(checkpointId long, timestamp long, streamFactory CheckpointStreamFactory, checkpointOptions CheckpointOptions) : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37644cbe3beed6d7a26163229540682dL301">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-37644cbe3beed6d7a26163229540682dR303">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RunnableFuture&lt;OperatorStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in method public getOperatorStateManagedFuture() : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL69">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	RunnableFuture&lt;KeyedStateHandle&gt; to RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in method public getKeyedStateStreamFuture() : RunnableFuture&lt;SnapshotResult&lt;KeyedStateHandle&gt;&gt; in class org.apache.flink.runtime.state.StateSnapshotContextSynchronousImpl</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7b4a1971b962422ad3128ed521ccf302L112">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7b4a1971b962422ad3128ed521ccf302R120">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1385,13 +1385,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Attribute Type	operatorStateRawFuture : RunnableFuture&lt;OperatorStateHandle&gt; to operatorStateRawFuture : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL36">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Attribute Type	managedKeyedState : Collection&lt;KeyedStateHandle&gt; to managedKeyedState : StateObjectCollection&lt;KeyedStateHandle&gt; in class org.apache.flink.runtime.checkpoint.OperatorSubtaskState</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4a8d9d98e6366308f30197feee8b37f3L78">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4a8d9d98e6366308f30197feee8b37f3R75">To</a></td>
@@ -1467,6 +1460,13 @@
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-2b618d8cc4a9287cef9227f8e90f8239R39">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	operatorStateRawFuture : RunnableFuture&lt;OperatorStateHandle&gt; to operatorStateRawFuture : RunnableFuture&lt;SnapshotResult&lt;OperatorStateHandle&gt;&gt; in class org.apache.flink.streaming.api.operators.OperatorSnapshotFutures</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fL36">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-70cf0b0ac499d689928589b1d52b3c3fR47">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1477,6 +1477,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	operatorSubtaskStateFromJobManager : OperatorSubtaskState to restoreStateAlternatives : Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt; in method protected rawKeyedStateInputs(restoreStateAlternatives Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt;) : CloseableIterable&lt;KeyGroupStatePartitionStreamProvider&gt; in class org.apache.flink.streaming.api.operators.StreamTaskStateInitializerImpl</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62L285">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62R305">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	operatorStateHandles : OperatorSubtaskState to jmOperatorStateHandles : OperatorSubtaskState in method public initializeState(jmOperatorStateHandles OperatorSubtaskState, tmOperatorStateHandles OperatorSubtaskState) : void in class org.apache.flink.streaming.util.AbstractStreamOperatorTestHarness</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2L322">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2R337">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	taskStateManager : TaskExecutorLocalStateStoresManager to taskManagerStateStore : TaskExecutorLocalStateStoresManager in method package TaskManagerServices(taskManagerLocation TaskManagerLocation, memoryManager MemoryManager, ioManager IOManager, networkEnvironment NetworkEnvironment, broadcastVariableManager BroadcastVariableManager, fileCache FileCache, taskSlotTable TaskSlotTable, jobManagerTable JobManagerTable, jobLeaderService JobLeaderService, taskManagerStateStore TaskExecutorLocalStateStoresManager) in class org.apache.flink.runtime.taskexecutor.TaskManagerServices</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4c3b0783838c1958e8727df5117e7910L93">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4c3b0783838c1958e8727df5117e7910R99">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1504,27 +1525,6 @@
                                 <td><i>Rename Parameter	jobID : JobID to allocationID : AllocationID in method public releaseLocalStateForAllocationId(allocationID AllocationID) : void in class org.apache.flink.runtime.state.TaskExecutorLocalStateStoresManager</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fL62">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-40c8c48eb641aafa02fdb3e2cc158d2fR143">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	operatorSubtaskStateFromJobManager : OperatorSubtaskState to restoreStateAlternatives : Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt; in method protected rawKeyedStateInputs(restoreStateAlternatives Iterator&lt;StateObjectCollection&lt;KeyedStateHandle&gt;&gt;) : CloseableIterable&lt;KeyGroupStatePartitionStreamProvider&gt; in class org.apache.flink.streaming.api.operators.StreamTaskStateInitializerImpl</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62L285">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-7702ed704610dbab4700b414d72d4d62R305">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	operatorStateHandles : OperatorSubtaskState to jmOperatorStateHandles : OperatorSubtaskState in method public initializeState(jmOperatorStateHandles OperatorSubtaskState, tmOperatorStateHandles OperatorSubtaskState) : void in class org.apache.flink.streaming.util.AbstractStreamOperatorTestHarness</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2L322">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-c0c0801da7cb8dc8a0f225d8a2d570f2R337">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskStateManager : TaskExecutorLocalStateStoresManager to taskManagerStateStore : TaskExecutorLocalStateStoresManager in method package TaskManagerServices(taskManagerLocation TaskManagerLocation, memoryManager MemoryManager, ioManager IOManager, networkEnvironment NetworkEnvironment, broadcastVariableManager BroadcastVariableManager, fileCache FileCache, taskSlotTable TaskSlotTable, jobManagerTable JobManagerTable, jobLeaderService JobLeaderService, taskManagerStateStore TaskExecutorLocalStateStoresManager) in class org.apache.flink.runtime.taskexecutor.TaskManagerServices</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4c3b0783838c1958e8727df5117e7910L93">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/df3e6bb7627db03635febd48eff4c10032b668ef?diff=split#diff-4c3b0783838c1958e8727df5117e7910R99">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -156,6 +156,48 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	fut : GridNioFuture&lt;?&gt; to fut : SessionWriteRequest in method package removeFuture(fut SessionWriteRequest) : boolean in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL248">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR342">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	msg : ByteBuffer to msg : Message in method package send(ses GridNioSession, msg Message, createFut boolean) : GridNioFuture&lt;?&gt; in class org.apache.ignite.internal.util.nio.GridNioServer</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L398">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R503">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	ses : GridSelectorNioSessionImpl to ses : GridNioSession in method public resetSession(ses GridNioSession) : void in class org.apache.ignite.internal.util.nio.GridNioServer.WriteRequestImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L2210">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R2706">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	writeFut : GridNioFuture&lt;?&gt; to writeFut : SessionWriteRequest in method package offerFuture(writeFut SessionWriteRequest) : int in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL176">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR282">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	order : long to idx : int in method package ConnectionKey(nodeId UUID, idx int, connCnt long) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2892">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4417">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method public add(req SessionWriteRequest) : boolean in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL156">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR177">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	futs : GridNioFuture&lt;?&gt;[] to reqs : SessionWriteRequest[] in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL400">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR445">To</a></td>
@@ -201,48 +243,6 @@
                                 <td><i>Change Parameter Type	selectorIdx : int to worker : GridNioWorker in method package GridSelectorNioSessionImpl(log IgniteLogger, worker GridNioWorker, filterChain GridNioFilterChain, locAddr InetSocketAddress, rmtAddr InetSocketAddress, accepted boolean, sndQueueLimit int, writeBuf ByteBuffer, readBuf ByteBuffer) in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL68">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	fut : GridNioFuture&lt;?&gt; to fut : SessionWriteRequest in method package removeFuture(fut SessionWriteRequest) : boolean in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL248">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR342">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	msg : ByteBuffer to msg : Message in method package send(ses GridNioSession, msg Message, createFut boolean) : GridNioFuture&lt;?&gt; in class org.apache.ignite.internal.util.nio.GridNioServer</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L398">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R503">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	ses : GridSelectorNioSessionImpl to ses : GridNioSession in method public resetSession(ses GridNioSession) : void in class org.apache.ignite.internal.util.nio.GridNioServer.WriteRequestImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L2210">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R2706">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	writeFut : GridNioFuture&lt;?&gt; to writeFut : SessionWriteRequest in method package offerFuture(writeFut SessionWriteRequest) : int in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL176">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR282">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	order : long to idx : int in method package ConnectionKey(nodeId UUID, idx int, connCnt long) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2892">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4417">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method public add(req SessionWriteRequest) : boolean in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL156">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR177">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -301,13 +301,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	nodeId : UUID in method public dumpStats() : void from class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Variable	ses : GridSelectorNioSessionImpl in method private bodyInternal() : void from class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -334,6 +327,13 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	nodeId : UUID in method public dumpStats() : void from class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -344,6 +344,69 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-37" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	req : NioOperationFuture to req0 : SessionChangeRequest in method private bodyInternal() : void in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1366">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1666">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	fut0 : GridNioFuture&lt;?&gt; to fut0 : SessionWriteRequest in method public resend(ses GridNioSession) : void in class org.apache.ignite.internal.util.nio.GridNioServer</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L501">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R622">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public simulateNodeFailure() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2808">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3274">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	clients : Map&lt;UUID,GridCommunicationClient&gt; to clients : Map&lt;UUID,GridCommunicationClient[]&gt; in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dL169">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dR185">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	req : NioOperationFuture&lt;?&gt; to req : SessionWriteRequest in method private processWrite0(key SelectionKey) : void in class org.apache.ignite.internal.util.nio.GridNioServer.DirectNioClientWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1138">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1368">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	msg : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL400">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR448">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dL169">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dR189">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private dumpStats() : void in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1366">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1960">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	rmtNodeId : UUID to key : ConnectionKey in method public writer(ses GridNioSession) : MessageWriter in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.resetNioServer.writerFactory</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1654">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1986">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -541,69 +604,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1971">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	req : NioOperationFuture to req0 : SessionChangeRequest in method private bodyInternal() : void in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1366">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1666">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	fut0 : GridNioFuture&lt;?&gt; to fut0 : SessionWriteRequest in method public resend(ses GridNioSession) : void in class org.apache.ignite.internal.util.nio.GridNioServer</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L501">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R622">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public simulateNodeFailure() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2808">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3274">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	clients : Map&lt;UUID,GridCommunicationClient&gt; to clients : Map&lt;UUID,GridCommunicationClient[]&gt; in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dL169">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dR185">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	req : NioOperationFuture&lt;?&gt; to req : SessionWriteRequest in method private processWrite0(key SelectionKey) : void in class org.apache.ignite.internal.util.nio.GridNioServer.DirectNioClientWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1138">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1368">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	msg : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL400">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR448">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dL169">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dR189">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private dumpStats() : void in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1366">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1960">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	rmtNodeId : UUID to key : ConnectionKey in method public writer(ses GridNioSession) : MessageWriter in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.resetNioServer.writerFactory</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1654">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1986">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -670,6 +670,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	public recoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void renamed to public inRecoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL274">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR376">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public recoveryDescriptor() : GridNioRecoveryDescriptor renamed to public inRecoveryDescriptor() : GridNioRecoveryDescriptor in class org.apache.ignite.internal.util.nio.GridNioSessionImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-3862572bb76b871566cc6bf99718458eL303">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-3862572bb76b871566cc6bf99718458eR355">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public recoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void renamed to public inRecoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void in class org.apache.ignite.internal.util.nio.GridNioSession</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d8f3974b5dc699bdd5235357a293d954L158">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d8f3974b5dc699bdd5235357a293d954R169">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public recoveryDescriptor() : GridNioRecoveryDescriptor renamed to public inRecoveryDescriptor() : GridNioRecoveryDescriptor in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL281">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR383">To</a></td>
@@ -717,27 +738,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d8f3974b5dc699bdd5235357a293d954R179">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public recoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void renamed to public inRecoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL274">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR376">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public recoveryDescriptor() : GridNioRecoveryDescriptor renamed to public inRecoveryDescriptor() : GridNioRecoveryDescriptor in class org.apache.ignite.internal.util.nio.GridNioSessionImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-3862572bb76b871566cc6bf99718458eL303">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-3862572bb76b871566cc6bf99718458eR355">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	public recoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void renamed to public inRecoveryDescriptor(recoveryDesc GridNioRecoveryDescriptor) : void in class org.apache.ignite.internal.util.nio.GridNioSession</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d8f3974b5dc699bdd5235357a293d954L158">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d8f3974b5dc699bdd5235357a293d954R169">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -748,6 +748,76 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-21" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public simulateNodeFailure() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2821">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3274">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	futs : GridNioFuture&lt;?&gt;[] to reqs : SessionWriteRequest[] in method public onNodeLeft() : boolean in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL217">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR232">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public spiStop() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1840">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R2170">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	fut : NioOperationFuture&lt;?&gt; to req : SessionWriteRequest in method protected close(ses GridSelectorNioSessionImpl, e IgniteCheckedException) : boolean in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1827">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R2254">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dL181">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dR189">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	msg : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL404">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR448">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	other : ClientKey to key : ConnectionKey in method public equals(o Object) : boolean in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2909">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4452">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private dumpStats() : void in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1485">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1960">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method package onNodeLeft(nodeId UUID) : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1901">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R2245">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	rmtNodeId : UUID to key : ConnectionKey in method public writer(ses GridNioSession) : MessageWriter in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.resetNioServer.writerFactory</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1660">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1986">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -826,76 +896,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R2257">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public simulateNodeFailure() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2821">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R3274">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	futs : GridNioFuture&lt;?&gt;[] to reqs : SessionWriteRequest[] in method public onNodeLeft() : boolean in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL217">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR232">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method public spiStop() : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1840">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R2170">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	fut : NioOperationFuture&lt;?&gt; to req : SessionWriteRequest in method protected close(ses GridSelectorNioSessionImpl, e IgniteCheckedException) : boolean in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1827">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R2254">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method package closeSessions(ignite Ignite) : boolean in class org.apache.ignite.internal.processors.cache.distributed.IgniteCacheMessageRecoveryAbstractTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dL181">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-37d68d4da721ac09de2d20f62368470dR189">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	msg : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL404">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR448">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	other : ClientKey to key : ConnectionKey in method public equals(o Object) : boolean in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2909">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4452">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method private dumpStats() : void in class org.apache.ignite.internal.util.nio.GridNioServer.AbstractNioClientWorker</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25L1485">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-52583bdb88e18c3c3014e871c8f50e25R1960">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	client : GridCommunicationClient to clients0 : GridCommunicationClient[] in method package onNodeLeft(nodeId UUID) : void in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1901">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R2245">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	rmtNodeId : UUID to key : ConnectionKey in method public writer(ses GridNioSession) : MessageWriter in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.resetNioServer.writerFactory</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L1660">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1986">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -906,13 +906,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Deque&lt;GridNioFuture&lt;?&gt;&gt; to Deque&lt;SessionWriteRequest&gt; in method public messagesRequests() : Deque&lt;SessionWriteRequest&gt; in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL238">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR253">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -963,6 +956,13 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR323">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Deque&lt;GridNioFuture&lt;?&gt;&gt; to Deque&lt;SessionWriteRequest&gt; in method public messagesRequests() : Deque&lt;SessionWriteRequest&gt; in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL238">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR253">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -991,13 +991,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-6" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	resolver : AddressResolver to rslvr : AddressResolver in class org.apache.ignite.spi.GridTcpSpiForwardingSelfTest</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-cbc9b8c109f46bc6e7c78941d2afa634L72">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-cbc9b8c109f46bc6e7c78941d2afa634R72">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1032,6 +1025,13 @@
                                 <td><i>Rename Attribute	msgFuts : ArrayDeque&lt;GridNioFuture&lt;?&gt;&gt; to msgReqs : ArrayDeque&lt;SessionWriteRequest&gt; in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL39">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	resolver : AddressResolver to rslvr : AddressResolver in class org.apache.ignite.spi.GridTcpSpiForwardingSelfTest</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-cbc9b8c109f46bc6e7c78941d2afa634L72">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-cbc9b8c109f46bc6e7c78941d2afa634R72">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1069,6 +1069,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	recoveryDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to recoveryDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L870">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1067">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	msgFuts : ArrayDeque&lt;GridNioFuture&lt;?&gt;&gt; to msgReqs : ArrayDeque&lt;SessionWriteRequest&gt; in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL39">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR39">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1126,20 +1140,6 @@
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR49">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	recoveryDescs : ConcurrentMap&lt;ClientKey,GridNioRecoveryDescriptor&gt; to recoveryDescs : ConcurrentMap&lt;ConnectionKey,GridNioRecoveryDescriptor&gt; in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L870">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R1067">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	msgFuts : ArrayDeque&lt;GridNioFuture&lt;?&gt;&gt; to msgReqs : ArrayDeque&lt;SessionWriteRequest&gt; in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL39">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR39">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1185,41 +1185,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	obj : Object to o : Object in method public equals(o Object) : boolean in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2902">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4445">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	selectorIdx : int to worker : GridNioWorker in method package GridSelectorNioSessionImpl(log IgniteLogger, worker GridNioWorker, filterChain GridNioFilterChain, locAddr InetSocketAddress, rmtAddr InetSocketAddress, accepted boolean, sndQueueLimit int, writeBuf ByteBuffer, readBuf ByteBuffer) in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL83">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	order : long to idx : int in method package ConnectionKey(nodeId UUID, idx int, connCnt long) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2896">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4417">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method public add(req SessionWriteRequest) : boolean in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL160">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR177">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	futs : GridNioFuture&lt;?&gt;[] to reqs : SessionWriteRequest[] in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL403">From</a></td>
-                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR445">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	closure : IgniteInClosure&lt;IgniteException&gt; to c : IgniteInClosure&lt;IgniteException&gt; in method public ackClosure(c IgniteInClosure&lt;IgniteException&gt;) : void in class org.apache.ignite.internal.util.nio.GridNioFuture</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-f4a75feb14b116cb680a4c8c767abe50L50">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-f4a75feb14b116cb680a4c8c767abe50R50">To</a></td>
@@ -1251,6 +1216,41 @@
                                 <td><i>Rename Parameter	closure : IgniteInClosure&lt;IgniteException&gt; to c : IgniteInClosure&lt;IgniteException&gt; in method public sendMessage(nodeId UUID, msg Message, c IgniteInClosure&lt;IgniteException&gt;) : boolean in class org.apache.ignite.internal.util.nio.GridCommunicationClient</i></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-e9138c25b68ca95b48475dee105d43cbL103">From</a></td>
                                 <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-e9138c25b68ca95b48475dee105d43cbR103">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	obj : Object to o : Object in method public equals(o Object) : boolean in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2902">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4445">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	selectorIdx : int to worker : GridNioWorker in method package GridSelectorNioSessionImpl(log IgniteLogger, worker GridNioWorker, filterChain GridNioFilterChain, locAddr InetSocketAddress, rmtAddr InetSocketAddress, accepted boolean, sndQueueLimit int, writeBuf ByteBuffer, readBuf ByteBuffer) in class org.apache.ignite.internal.util.nio.GridSelectorNioSessionImpl</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afL83">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-d0da8f513c12fc0f3f27db748d3b99afR94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	order : long to idx : int in method package ConnectionKey(nodeId UUID, idx int, connCnt long) in class org.apache.ignite.spi.communication.tcp.TcpCommunicationSpi.ConnectionKey</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5L2896">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-aecd2e168bba63926706214a24d7b2c5R4417">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	fut : GridNioFuture&lt;?&gt; to req : SessionWriteRequest in method public add(req SessionWriteRequest) : boolean in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL160">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR177">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	futs : GridNioFuture&lt;?&gt;[] to reqs : SessionWriteRequest[] in method private notifyOnNodeLeft(reqs SessionWriteRequest[]) : void in class org.apache.ignite.internal.util.nio.GridNioRecoveryDescriptor</i></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dL403">From</a></td>
+                                <td><a href = "https://github.com/apache/ignite/commit/05dd08b993e2d7f88176c051463b178431714f85?diff=split#diff-ec55fe8e71d045c4fad0a1f7cec6682dR445">To</a></td>
                             </tr>
                             
                             </tbody>

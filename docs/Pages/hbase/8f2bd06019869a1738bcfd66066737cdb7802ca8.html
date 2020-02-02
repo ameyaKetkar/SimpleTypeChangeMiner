@@ -262,6 +262,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	private scopeBulkLoadEdits(htd HTableDescriptor, replicationManager ReplicationSourceManager, scopes NavigableMap&lt;byte[],Integer&gt;, tableName TableName, cell Cell) : void renamed to public scopeWALEdits(logKey WALKey, logEdit WALEdit, conf Configuration, replicationManager ReplicationSourceManager) : void in class org.apache.hadoop.hbase.replication.regionserver.Replication</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-d31b35bf4d127f7e4ab096419a6174a2L305">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-d31b35bf4d127f7e4ab096419a6174a2R259">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	public setScopes(scopes NavigableMap&lt;byte[],Integer&gt;) : void renamed to private setReplicationScope(replicationScope NavigableMap&lt;byte[],Integer&gt;) : void in class org.apache.hadoop.hbase.wal.WALKey</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eL435">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eR506">To</a></td>
@@ -274,13 +281,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eR492">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	private scopeBulkLoadEdits(htd HTableDescriptor, replicationManager ReplicationSourceManager, scopes NavigableMap&lt;byte[],Integer&gt;, tableName TableName, cell Cell) : void renamed to public scopeWALEdits(logKey WALKey, logEdit WALEdit, conf Configuration, replicationManager ReplicationSourceManager) : void in class org.apache.hadoop.hbase.replication.regionserver.Replication</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-d31b35bf4d127f7e4ab096419a6174a2L305">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-d31b35bf4d127f7e4ab096419a6174a2R259">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -291,6 +291,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	htd : HTableDescriptor to replicationScope : NavigableMap&lt;byte[],Integer&gt; in method public writeCompactionMarker(wal WAL, replicationScope NavigableMap&lt;byte[],Integer&gt;, hri HRegionInfo, c CompactionDescriptor, mvcc MultiVersionConcurrencyControl) : WALKey in class org.apache.hadoop.hbase.regionserver.wal.WALUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aL52">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aR62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	htd : HTableDescriptor to replicationScope : NavigableMap&lt;byte[],Integer&gt; in method public doFullAppendTransaction(wal WAL, replicationScope NavigableMap&lt;byte[],Integer&gt;, hri HRegionInfo, edit WALEdit, mvcc MultiVersionConcurrencyControl, sync boolean) : WALKey in class org.apache.hadoop.hbase.regionserver.wal.WALUtil</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aL129">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aR143">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -334,20 +348,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aR115">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	htd : HTableDescriptor to replicationScope : NavigableMap&lt;byte[],Integer&gt; in method public writeCompactionMarker(wal WAL, replicationScope NavigableMap&lt;byte[],Integer&gt;, hri HRegionInfo, c CompactionDescriptor, mvcc MultiVersionConcurrencyControl) : WALKey in class org.apache.hadoop.hbase.regionserver.wal.WALUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aL52">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aR62">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	htd : HTableDescriptor to replicationScope : NavigableMap&lt;byte[],Integer&gt; in method public doFullAppendTransaction(wal WAL, replicationScope NavigableMap&lt;byte[],Integer&gt;, hri HRegionInfo, edit WALEdit, mvcc MultiVersionConcurrencyControl, sync boolean) : WALKey in class org.apache.hadoop.hbase.regionserver.wal.WALUtil</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aL129">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-dba58d8fa902e94ee5369d2fbc431f1aR143">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -379,6 +379,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Attribute	private scopes : NavigableMap&lt;byte[],Integer&gt; from class org.apache.hadoop.hbase.wal.WALKey to private scopes : NavigableMap&lt;byte[],Integer&gt; from class org.apache.hadoop.hbase.replication.regionserver.TestReplicationWALReaderManager</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eL196">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-fbd7ef7e3878ab457f64ae0261a06780R80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Attribute	private scopes : NavigableMap&lt;byte[],Integer&gt; from class org.apache.hadoop.hbase.wal.WALKey to protected scopes : NavigableMap&lt;byte[],Integer&gt; from class org.apache.hadoop.hbase.mapreduce.TestWALRecordReader</i></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eL196">From</a></td>
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-2350826ce93512c4bdec0b5deaf8fbf9R82">To</a></td>
@@ -398,13 +405,6 @@
                                 <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-510d51b3d179b621b8cbed3d8c86c67cR135">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private scopes : NavigableMap&lt;byte[],Integer&gt; from class org.apache.hadoop.hbase.wal.WALKey to private scopes : NavigableMap&lt;byte[],Integer&gt; from class org.apache.hadoop.hbase.replication.regionserver.TestReplicationWALReaderManager</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eL196">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-fbd7ef7e3878ab457f64ae0261a06780R80">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -418,16 +418,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	tableName : String to regionInfo : HRegionInfo in class org.apache.hadoop.hbase.mapreduce.TestImportExport.TableWALActionListener</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-07b72ded21daf96223610ea02cdedd7dL698">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-07b72ded21daf96223610ea02cdedd7dR699">To</a></td>
+                                <td><i>Rename Attribute	scopes : NavigableMap&lt;byte[],Integer&gt; to replicationScope : NavigableMap&lt;byte[],Integer&gt; in class org.apache.hadoop.hbase.wal.WALKey</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eL196">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eR196">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	scopes : NavigableMap&lt;byte[],Integer&gt; to replicationScope : NavigableMap&lt;byte[],Integer&gt; in class org.apache.hadoop.hbase.wal.WALKey</i></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eL196">From</a></td>
-                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-01aca9c0651e9103d9de869d698d2a7eR196">To</a></td>
+                                <td><i>Rename Attribute	tableName : String to regionInfo : HRegionInfo in class org.apache.hadoop.hbase.mapreduce.TestImportExport.TableWALActionListener</i></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-07b72ded21daf96223610ea02cdedd7dL698">From</a></td>
+                                <td><a href = "https://github.com/apache/hbase/commit/8f2bd06019869a1738bcfd66066737cdb7802ca8?diff=split#diff-07b72ded21daf96223610ea02cdedd7dR699">To</a></td>
                             </tr>
                             
                             </tbody>

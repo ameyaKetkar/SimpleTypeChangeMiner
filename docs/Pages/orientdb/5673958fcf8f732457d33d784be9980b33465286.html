@@ -244,16 +244,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in method public ODistributedRequest(manager ODistributedServerManager, senderNodeId int, msgSequence long, databaseName String, payload ORemoteTask) in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L50">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R51">To</a></td>
+                                <td><i>Change Parameter Type	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in method public ODistributedRequest(manager ODistributedServerManager) in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L46">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R47">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in method public ODistributedRequest(manager ODistributedServerManager) in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L46">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R47">To</a></td>
+                                <td><i>Change Parameter Type	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in method public ODistributedRequest(manager ODistributedServerManager, senderNodeId int, msgSequence long, databaseName String, payload ORemoteTask) in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L50">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R51">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -305,14 +305,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	com.orientechnologies.orient.server.distributed.impl.task.ODefaultRemoteTaskFactory renamed to com.orientechnologies.orient.server.distributed.impl.task.ODefaultRemoteTaskFactoryV0</i></td>
+                                <td><i>Rename Class	com.orientechnologies.orient.server.distributed.impl.task.OHeartbeatTask renamed to com.orientechnologies.orient.server.distributed.impl.task.OGossipTask</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	com.orientechnologies.orient.server.distributed.impl.task.OHeartbeatTask renamed to com.orientechnologies.orient.server.distributed.impl.task.OGossipTask</i></td>
+                                <td><i>Rename Class	com.orientechnologies.orient.server.distributed.impl.task.ODefaultRemoteTaskFactory renamed to com.orientechnologies.orient.server.distributed.impl.task.ODefaultRemoteTaskFactoryV0</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -345,6 +345,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Variable	eventNodeName : String in method public entryAdded(iEvent EntryEvent&lt;String,Object&gt;) : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -388,13 +395,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Variable	eventNodeName : String in method public entryAdded(iEvent EntryEvent&lt;String,Object&gt;) : void from class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -405,6 +405,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-8" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	winners : List&lt;byte[]&gt; to winners : List&lt;ORawBuffer&gt; in method public onConflict(databaseName String, clusterName String, rid ORecordId, dManager ODistributedServerManager, candidates Map&lt;Object,List&lt;String&gt;&gt;) : OConflictResult in class com.orientechnologies.orient.server.distributed.conflict.OContentDistributedConflictResolver</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-41bed00306c134004ab8c114d7b043ffL39">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-41bed00306c134004ab8c114d7b043ffR84">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -455,13 +462,6 @@
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-e18b25f5cc4bc43d16baab3ed84cfe96R170">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	winners : List&lt;byte[]&gt; to winners : List&lt;ORawBuffer&gt; in method public onConflict(databaseName String, clusterName String, rid ORecordId, dManager ODistributedServerManager, candidates Map&lt;Object,List&lt;String&gt;&gt;) : OConflictResult in class com.orientechnologies.orient.server.distributed.conflict.OContentDistributedConflictResolver</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-41bed00306c134004ab8c114d7b043ffL39">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-41bed00306c134004ab8c114d7b043ffR84">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -500,13 +500,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private finalizeRequest(resp ODistributedResponseManager, localNodeName String, involvedClusters Set&lt;String&gt;, txTask OTxTask) : boolean extracted from public commit(database ODatabaseDocumentInternal, iTx OTransaction, callback Runnable, eventListener ODistributedStorageEventListener) : List&lt;ORecordOperation&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedTransactionManager</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	private assignLockManagerFromCluster() : void extracted from public startup() : void in class com.orientechnologies.orient.server.hazelcast.OHazelcastPlugin</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -536,6 +529,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private checkForCompletion() : boolean extracted from public collectResponse(response ODistributedResponse) : boolean in class com.orientechnologies.orient.server.distributed.ODistributedResponseManager</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	private finalizeRequest(resp ODistributedResponseManager, localNodeName String, involvedClusters Set&lt;String&gt;, txTask OTxTask) : boolean extracted from public commit(database ODatabaseDocumentInternal, iTx OTransaction, callback Runnable, eventListener ODistributedStorageEventListener) : List&lt;ORecordOperation&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedTransactionManager</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -690,13 +690,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Pull Up Method	public isIdempotent() : boolean from class com.orientechnologies.orient.server.distributed.impl.task.OUpdateDatabaseStatusTask to public hasResponse() : boolean from class com.orientechnologies.orient.server.distributed.task.OAbstractRemoteTask</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-ee70792f9acc17bdf485fdb93fccdfedL96">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-5cc59bfe9c8a4512373da34cc312a29dR93">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Pull Up Method	public isIdempotent() : boolean from class com.orientechnologies.orient.server.distributed.impl.task.ORequestDatabaseConfigurationTask to public hasResponse() : boolean from class com.orientechnologies.orient.server.distributed.task.OAbstractRemoteTask</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-df235947f59c681e1e78709f7740f433L94">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-5cc59bfe9c8a4512373da34cc312a29dR93">To</a></td>
@@ -713,6 +706,13 @@
                                 <td></td>
                                 <td><i>Pull Up Method	public isIdempotent() : boolean from class com.orientechnologies.orient.server.distributed.impl.task.OUpdateDatabaseConfigurationTask to public hasResponse() : boolean from class com.orientechnologies.orient.server.distributed.task.OAbstractRemoteTask</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-d0e79e8a238d737feea9d21ef2c7c35bL107">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-5cc59bfe9c8a4512373da34cc312a29dR93">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public isIdempotent() : boolean from class com.orientechnologies.orient.server.distributed.impl.task.OUpdateDatabaseStatusTask to public hasResponse() : boolean from class com.orientechnologies.orient.server.distributed.task.OAbstractRemoteTask</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-ee70792f9acc17bdf485fdb93fccdfedL96">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-5cc59bfe9c8a4512373da34cc312a29dR93">To</a></td>
                             </tr>
                             
@@ -744,6 +744,13 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	originalRecord : ORawBuffer to currentRecord : ORawBuffer in method public lockRecord(rid ORID, requestId ODistributedRequestId, timeout long) : boolean in class com.orientechnologies.orient.server.distributed.impl.ODistributedDatabaseImpl</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-268c8e2b188ab087851b9e654e8ad8d5L549">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-268c8e2b188ab087851b9e654e8ad8d5R584">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -806,13 +813,6 @@
                                 <td><i>Rename Variable	pRequest : ODistributedTxContext to ctx : ODistributedTxContext in method public execute(msgId ODistributedRequestId, iServer OServer, iManager ODistributedServerManager, database ODatabaseDocumentInternal) : Object in class com.orientechnologies.orient.server.distributed.impl.task.OCompleted2pcTask</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-e5b4e89034b4903ba2cbfcaa2379c6fdL93">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-e5b4e89034b4903ba2cbfcaa2379c6fdR93">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	originalRecord : ORawBuffer to currentRecord : ORawBuffer in method public lockRecord(rid ORID, requestId ODistributedRequestId, timeout long) : boolean in class com.orientechnologies.orient.server.distributed.impl.ODistributedDatabaseImpl</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-268c8e2b188ab087851b9e654e8ad8d5L549">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-268c8e2b188ab087851b9e654e8ad8d5R584">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -924,6 +924,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Attribute Type	activeNodesUuidByName : Map&lt;String,String&gt; to activeNodesUuidByName : ConcurrentMap&lt;String,String&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L121">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R116">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	registeredNodeByName : Map&lt;String,Integer&gt; to registeredNodeByName : ConcurrentMap&lt;String,Integer&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L123">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	activeNodes : Map&lt;String,Member&gt; to activeNodes : ConcurrentMap&lt;String,Member&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L119">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R114">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Attribute Type	autoRemovalOfServers : Map&lt;String,Long&gt; to autoRemovalOfServers : ConcurrentMap&lt;String,Long&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L124">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R119">To</a></td>
@@ -955,27 +976,6 @@
                                 <td><i>Change Attribute Type	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L39">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	activeNodesUuidByName : Map&lt;String,String&gt; to activeNodesUuidByName : ConcurrentMap&lt;String,String&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L121">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R116">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	registeredNodeByName : Map&lt;String,Integer&gt; to registeredNodeByName : ConcurrentMap&lt;String,Integer&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L123">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R118">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	activeNodes : Map&lt;String,Member&gt; to activeNodes : ConcurrentMap&lt;String,Member&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedAbstractPlugin</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487L119">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-0b5041b41b5369aa062260d7e86b8487R114">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1013,41 +1013,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in method public ODistributedRequest(manager ODistributedServerManager) in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L46">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R47">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	availableNodes : int to totalConfiguredServers : int in method public getReadQuorum(clusterName String, totalConfiguredServers int, server String) : int in class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7L704">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7R707">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	iAvailableNodes : int to totalServers : int in method private getQuorum(quorumSetting String, iClusterName String, totalServers int, defaultValue Object, server String) : int in class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7L782">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7R785">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	iRequestId : ODistributedRequestId to requestId : ODistributedRequestId in method public lockRecord(record ORID, requestId ODistributedRequestId, timeout long) : boolean in class com.orientechnologies.orient.server.distributed.ODistributedDatabase</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-1aea0717b4550319e40766748e87c8e8L67">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-1aea0717b4550319e40766748e87c8e8R68">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	recordType : byte to iRecordType : byte in method public recyclePosition(iRecordId ORecordId, iContent byte[], iVersion int, iRecordType byte) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedStorage</i></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-51b4304778f95031f43d574c3810c9ffL1013">From</a></td>
-                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-51b4304778f95031f43d574c3810c9ffR1185">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1131,6 +1096,41 @@
                                 <td><i>Rename Parameter	contextConfiguration : OContextConfiguration to iProperties : OContextConfiguration in method public open(iUserName String, iUserPassword String, iProperties OContextConfiguration) : void in class com.orientechnologies.orient.server.distributed.impl.ODistributedStorage</i></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-51b4304778f95031f43d574c3810c9ffL1303">From</a></td>
                                 <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-51b4304778f95031f43d574c3810c9ffR1327">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	taskFactory : ORemoteTaskFactory to manager : ODistributedServerManager in method public ODistributedRequest(manager ODistributedServerManager) in class com.orientechnologies.orient.server.distributed.ODistributedRequest</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46L46">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-c83c5f4b0133bcbd93e4ce7e98972e46R47">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	availableNodes : int to totalConfiguredServers : int in method public getReadQuorum(clusterName String, totalConfiguredServers int, server String) : int in class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7L704">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7R707">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	iAvailableNodes : int to totalServers : int in method private getQuorum(quorumSetting String, iClusterName String, totalServers int, defaultValue Object, server String) : int in class com.orientechnologies.orient.server.distributed.ODistributedConfiguration</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7L782">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-26f1f58a5e3fc971d88da2d5c793c4c7R785">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	iRequestId : ODistributedRequestId to requestId : ODistributedRequestId in method public lockRecord(record ORID, requestId ODistributedRequestId, timeout long) : boolean in class com.orientechnologies.orient.server.distributed.ODistributedDatabase</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-1aea0717b4550319e40766748e87c8e8L67">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-1aea0717b4550319e40766748e87c8e8R68">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	recordType : byte to iRecordType : byte in method public recyclePosition(iRecordId ORecordId, iContent byte[], iVersion int, iRecordType byte) : OStorageOperationResult&lt;Integer&gt; in class com.orientechnologies.orient.server.distributed.impl.ODistributedStorage</i></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-51b4304778f95031f43d574c3810c9ffL1013">From</a></td>
+                                <td><a href = "https://github.com/orientechnologies/orientdb/commit/5673958fcf8f732457d33d784be9980b33465286?diff=split#diff-51b4304778f95031f43d574c3810c9ffR1185">To</a></td>
                             </tr>
                             
                             </tbody>

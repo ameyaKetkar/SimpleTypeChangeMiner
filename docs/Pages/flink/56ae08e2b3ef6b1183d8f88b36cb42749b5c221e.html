@@ -224,6 +224,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Change Parameter Type	operator : OneInputStreamOperator&lt;?,T&gt; to operator : OneInputStreamOperator in method public CopyingOperatorCollector(operator OneInputStreamOperator, serializer TypeSerializer&lt;T&gt;) in class org.apache.flink.streaming.runtime.tasks.OutputHandler.CopyingOperatorCollector</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eL265">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eR265">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Change Parameter Type	state : Serializable to state : Map&lt;String,PartitionedStateHandle&gt; in method public restoreInitialState(state Map&lt;String,PartitionedStateHandle&gt;) : void in class org.apache.flink.streaming.api.operators.StatefulStreamOperator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0154b589830c19f934d45515ce0bcbefL32">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0154b589830c19f934d45515ce0bcbefR34">To</a></td>
@@ -234,13 +241,6 @@
                                 <td><i>Change Parameter Type	state : Serializable to snapshots : Map&lt;String,PartitionedStateHandle&gt; in method public restoreInitialState(snapshots Map&lt;String,PartitionedStateHandle&gt;) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L72">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R74">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	operator : OneInputStreamOperator&lt;?,T&gt; to operator : OneInputStreamOperator in method public CopyingOperatorCollector(operator OneInputStreamOperator, serializer TypeSerializer&lt;T&gt;) in class org.apache.flink.streaming.runtime.tasks.OutputHandler.CopyingOperatorCollector</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eL265">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-35d4d723c1c801f7e6ffbe807de10f5eR265">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -306,20 +306,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	snapshot : Entry&lt;String,Map&lt;Serializable,StateHandle&lt;Serializable&gt;&gt;&gt; to snapshot : Entry&lt;String,PartitionedStateHandle&gt; in method public restoreInitialState(snapshots Map&lt;String,PartitionedStateHandle&gt;) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R78">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	chainedStates : List&lt;Serializable&gt; to chainedStates : List&lt;Map&lt;String,PartitionedStateHandle&gt;&gt; in method public triggerCheckpoint(checkpointId long, timestamp long) : void in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0991ff832ff67bef34b5459dfb5f8939L238">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0991ff832ff67bef34b5459dfb5f8939R246">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	snapshots : Map&lt;String,Map&lt;Serializable,StateHandle&lt;Serializable&gt;&gt;&gt; to snapshots : Map&lt;String,PartitionedStateHandle&gt; in method public getStateSnapshotFromFunction(checkpointId long, timestamp long) : Map&lt;String,PartitionedStateHandle&gt; in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L87">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R94">To</a></td>
@@ -330,6 +316,20 @@
                                 <td><i>Change Variable Type	chainedOperator : OneInputStreamOperator&lt;?,?&gt; to stateEntry : Entry&lt;String,PartitionedStateHandle&gt; in method public confirmCheckpoint(checkpointId long, stateHandle SerializedValue&lt;StateHandle&lt;?&gt;&gt;) : void in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0991ff832ff67bef34b5459dfb5f8939L300">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0991ff832ff67bef34b5459dfb5f8939R317">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	snapshot : Entry&lt;String,Map&lt;Serializable,StateHandle&lt;Serializable&gt;&gt;&gt; to snapshot : Entry&lt;String,PartitionedStateHandle&gt; in method public restoreInitialState(snapshots Map&lt;String,PartitionedStateHandle&gt;) : void in class org.apache.flink.streaming.api.operators.AbstractUdfStreamOperator</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510L72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-fe6ebc077271bd92a0adbb2869a8d510R78">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	chainedStates : List&lt;Serializable&gt; to chainedStates : List&lt;Map&lt;String,PartitionedStateHandle&gt;&gt; in method public triggerCheckpoint(checkpointId long, timestamp long) : void in class org.apache.flink.streaming.runtime.tasks.StreamTask</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0991ff832ff67bef34b5459dfb5f8939L238">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/56ae08e2b3ef6b1183d8f88b36cb42749b5c221e?diff=split#diff-0991ff832ff67bef34b5459dfb5f8939R246">To</a></td>
                             </tr>
                             
                             </tbody>

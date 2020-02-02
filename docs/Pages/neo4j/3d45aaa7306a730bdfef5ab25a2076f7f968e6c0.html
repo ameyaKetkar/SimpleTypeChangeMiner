@@ -492,6 +492,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Attribute	protected state : TransactionState from class org.neo4j.kernel.impl.api.cursor.TxAbstractNodeCursor to private state : TransactionState from class org.neo4j.kernel.impl.api.cursor.TxSingleNodeCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-b500786497195e5f58c8118ea805bca7L48">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-da5810feb6cba4b1db0a00086846f4c8R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	protected relationshipStore : RelationshipStore from class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor to private relationshipStore : RelationshipStore from class org.neo4j.kernel.impl.api.store.StoreSingleNodeCursor</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-99399908a4ac886aea6563e0a228210fL62">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aR58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Attribute	protected relationshipGroupStore : RecordStore&lt;RelationshipGroupRecord&gt; from class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor to private relationshipGroupStore : RecordStore&lt;RelationshipGroupRecord&gt; from class org.neo4j.kernel.impl.api.store.StoreSingleNodeCursor</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-99399908a4ac886aea6563e0a228210fL63">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aR59">To</a></td>
@@ -546,20 +560,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-da5810feb6cba4b1db0a00086846f4c8R52">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	protected state : TransactionState from class org.neo4j.kernel.impl.api.cursor.TxAbstractNodeCursor to private state : TransactionState from class org.neo4j.kernel.impl.api.cursor.TxSingleNodeCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-b500786497195e5f58c8118ea805bca7L48">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-da5810feb6cba4b1db0a00086846f4c8R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	protected relationshipStore : RelationshipStore from class org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor to private relationshipStore : RelationshipStore from class org.neo4j.kernel.impl.api.store.StoreSingleNodeCursor</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-99399908a4ac886aea6563e0a228210fL62">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/3d45aaa7306a730bdfef5ab25a2076f7f968e6c0?diff=split#diff-3a7a50f4a41de5fee97286a796d2104aR58">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -591,14 +591,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor.DegreeItemDenseCursor moved to org.neo4j.kernel.impl.api.store.DegreeItemDenseCursor</i></td>
+                                <td><i>Move Class	org.neo4j.kernel.impl.api.cursor.TxAbstractNodeCursor.DegreeCursor moved to org.neo4j.kernel.impl.api.cursor.TxSingleNodeCursor.DegreeCursor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Class	org.neo4j.kernel.impl.api.cursor.TxAbstractNodeCursor.DegreeCursor moved to org.neo4j.kernel.impl.api.cursor.TxSingleNodeCursor.DegreeCursor</i></td>
+                                <td><i>Move Class	org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor.DegreeItemDenseCursor moved to org.neo4j.kernel.impl.api.store.DegreeItemDenseCursor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -670,14 +670,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public mapForAll(function Function&lt;T,E&gt;, consumer Consumer&lt;E&gt;) : void extracted from public forAll(consumer Consumer&lt;T&gt;) : void in class org.neo4j.cursor.RawCursor</i></td>
+                                <td><i>Extract Method	private lockAllNodes(state KernelStatement) : void extracted from package lockAllNodesAndConsumeRelationships(nodeId long, state KernelStatement) : void in class org.neo4j.kernel.impl.api.TwoPhaseNodeForRelationshipLocking</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	private lockAllNodes(state KernelStatement) : void extracted from package lockAllNodesAndConsumeRelationships(nodeId long, state KernelStatement) : void in class org.neo4j.kernel.impl.api.TwoPhaseNodeForRelationshipLocking</i></td>
+                                <td><i>Extract Method	public mapForAll(function Function&lt;T,E&gt;, consumer Consumer&lt;E&gt;) : void extracted from public forAll(consumer Consumer&lt;T&gt;) : void in class org.neo4j.cursor.RawCursor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -695,14 +695,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	exists : boolean in method public next() : boolean from class org.neo4j.kernel.impl.api.cursor.TxSingleNodeCursor</i></td>
+                                <td><i>Inline Variable	cursor : Cursor&lt;NodeItem&gt; in method private nodeCursor(statement StorageStatement, nodeId long) : Cursor&lt;NodeItem&gt; from class org.neo4j.kernel.api.txstate.TransactionCountingStateVisitor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Inline Variable	cursor : Cursor&lt;NodeItem&gt; in method private nodeCursor(statement StorageStatement, nodeId long) : Cursor&lt;NodeItem&gt; from class org.neo4j.kernel.api.txstate.TransactionCountingStateVisitor</i></td>
+                                <td><i>Inline Variable	exists : boolean in method public next() : boolean from class org.neo4j.kernel.impl.api.cursor.TxSingleNodeCursor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -720,14 +720,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	package returnRelationships(ops EntityReadOperations, state KernelStatement, nodeId long, skipFirst boolean, relIds RelationshipData...) : void extracted from public detachDeleteNodeWithoutRelationshipsExclusivelyLockNode() : void in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest &amp; moved to class org.neo4j.kernel.impl.api.TwoPhaseNodeForRelationshipLockingTest</i></td>
+                                <td><i>Extract And Move Method	package returnRelationships(ops EntityReadOperations, state KernelStatement, nodeId long, skipFirst boolean, relIds RelationshipData...) : void extracted from public detachDeleteNodeExclusivelyLockNodes() : void in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest &amp; moved to class org.neo4j.kernel.impl.api.TwoPhaseNodeForRelationshipLockingTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract And Move Method	package returnRelationships(ops EntityReadOperations, state KernelStatement, nodeId long, skipFirst boolean, relIds RelationshipData...) : void extracted from public detachDeleteNodeExclusivelyLockNodes() : void in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest &amp; moved to class org.neo4j.kernel.impl.api.TwoPhaseNodeForRelationshipLockingTest</i></td>
+                                <td><i>Extract And Move Method	package returnRelationships(ops EntityReadOperations, state KernelStatement, nodeId long, skipFirst boolean, relIds RelationshipData...) : void extracted from public detachDeleteNodeWithoutRelationshipsExclusivelyLockNode() : void in class org.neo4j.kernel.impl.api.LockingStatementOperationsTest &amp; moved to class org.neo4j.kernel.impl.api.TwoPhaseNodeForRelationshipLockingTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

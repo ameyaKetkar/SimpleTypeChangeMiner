@@ -234,16 +234,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	future : Future&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public addSlot(vertex JobVertexID, subtaskIndex int, future CompletableFuture&lt;SimpleSlot&gt;) : void in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL48">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR48">To</a></td>
+                                <td><i>Change Parameter Type	futures : Future&lt;SimpleSlot&gt;[] to futures : CompletableFuture&lt;SimpleSlot&gt;[] in method public addSlots(vertex JobVertexID, futures CompletableFuture&lt;SimpleSlot&gt;[]) : void in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL64">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR64">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Parameter Type	futures : Future&lt;SimpleSlot&gt;[] to futures : CompletableFuture&lt;SimpleSlot&gt;[] in method public addSlots(vertex JobVertexID, futures CompletableFuture&lt;SimpleSlot&gt;[]) : void in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL64">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR64">To</a></td>
+                                <td><i>Change Parameter Type	future : Future&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public addSlot(vertex JobVertexID, subtaskIndex int, future CompletableFuture&lt;SimpleSlot&gt;) : void in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL48">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR48">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -256,6 +256,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Future&lt;SimpleSlot&gt; to CompletableFuture&lt;SimpleSlot&gt; in method public allocateSlot(task ScheduledUnit, allowQueued boolean) : CompletableFuture&lt;SimpleSlot&gt; in class org.apache.flink.runtime.executiongraph.utils.SimpleSlotProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aL72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aR72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Future&lt;SimpleSlot&gt; to CompletableFuture&lt;SimpleSlot&gt; in method public allocateSlot(task ScheduledUnit, allowQueued boolean) : CompletableFuture&lt;SimpleSlot&gt; in class org.apache.flink.runtime.instance.SlotPool.ProviderAndOwner</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L982">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R982">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -278,20 +292,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-1ef805ebddecc80987188c32262ce43eR38">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Future&lt;SimpleSlot&gt; to CompletableFuture&lt;SimpleSlot&gt; in method public allocateSlot(task ScheduledUnit, allowQueued boolean) : CompletableFuture&lt;SimpleSlot&gt; in class org.apache.flink.runtime.executiongraph.utils.SimpleSlotProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aL72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-7937a5e137fe9a1a9829b7dce32a565aR72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Future&lt;SimpleSlot&gt; to CompletableFuture&lt;SimpleSlot&gt; in method public allocateSlot(task ScheduledUnit, allowQueued boolean) : CompletableFuture&lt;SimpleSlot&gt; in class org.apache.flink.runtime.instance.SlotPool.ProviderAndOwner</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050L982">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-cb5ae892328d9cfde9aef6a61ff64050R982">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -302,48 +302,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-13" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	future : FlinkCompletableFuture&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testExecutionGraphRestartTimeMetric() : void in class org.apache.flink.runtime.executiongraph.ExecutionGraphMetricsTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-bfe386191f76d438dbfd9a846f7dbb3bL70">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-bfe386191f76d438dbfd9a846f7dbb3bR117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	futures : Future&lt;SimpleSlot&gt;[] to futures : CompletableFuture&lt;SimpleSlot&gt;[] in method public addSlot(vertex JobVertexID, subtaskIndex int, future CompletableFuture&lt;SimpleSlot&gt;) : void in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL48">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR53">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	future : Future&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testTimeoutForSlotAllocation() : void in class org.apache.flink.runtime.executiongraph.ExecutionGraphSchedulingTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972L339">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972R395">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	future : FlinkCompletableFuture&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testSlotReleasedWhenScheduledImmediately() : void in class org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-e9ba1b660e26aa387bf9663c20945a41L47">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-e9ba1b660e26aa387bf9663c20945a41R63">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	future : Future&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public allocateSlot(task ScheduledUnit, allowQueued boolean) : CompletableFuture&lt;SimpleSlot&gt; in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR79">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	targetFuture : FlinkCompletableFuture&lt;SimpleSlot&gt; to targetFuture : CompletableFuture&lt;SimpleSlot&gt; in method public testScheduleSourceBeforeTarget() : void in class org.apache.flink.runtime.executiongraph.ExecutionGraphSchedulingTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972L88">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972R113">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -392,6 +350,48 @@
                                 <td><i>Change Variable Type	future : FlinkCompletableFuture&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testSlotReleasedWhenScheduledQueued() : void in class org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-e9ba1b660e26aa387bf9663c20945a41L79">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-e9ba1b660e26aa387bf9663c20945a41R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : FlinkCompletableFuture&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testExecutionGraphRestartTimeMetric() : void in class org.apache.flink.runtime.executiongraph.ExecutionGraphMetricsTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-bfe386191f76d438dbfd9a846f7dbb3bL70">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-bfe386191f76d438dbfd9a846f7dbb3bR117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	futures : Future&lt;SimpleSlot&gt;[] to futures : CompletableFuture&lt;SimpleSlot&gt;[] in method public addSlot(vertex JobVertexID, subtaskIndex int, future CompletableFuture&lt;SimpleSlot&gt;) : void in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL48">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR53">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : Future&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testTimeoutForSlotAllocation() : void in class org.apache.flink.runtime.executiongraph.ExecutionGraphSchedulingTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972L339">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972R395">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : FlinkCompletableFuture&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public testSlotReleasedWhenScheduledImmediately() : void in class org.apache.flink.runtime.executiongraph.ExecutionVertexSchedulingTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-e9ba1b660e26aa387bf9663c20945a41L47">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-e9ba1b660e26aa387bf9663c20945a41R63">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	future : Future&lt;SimpleSlot&gt; to future : CompletableFuture&lt;SimpleSlot&gt; in method public allocateSlot(task ScheduledUnit, allowQueued boolean) : CompletableFuture&lt;SimpleSlot&gt; in class org.apache.flink.runtime.executiongraph.ProgrammedSlotProvider</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bL72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-37c31f2e810501c46b63d3412a37fc3bR79">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	targetFuture : FlinkCompletableFuture&lt;SimpleSlot&gt; to targetFuture : CompletableFuture&lt;SimpleSlot&gt; in method public testScheduleSourceBeforeTarget() : void in class org.apache.flink.runtime.executiongraph.ExecutionGraphSchedulingTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972L88">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/32bc67e6c64d3c0c6b49523f799a8b1fbb2dd80c?diff=split#diff-91e7df5cc0fb2ddd9025af7f0c913972R113">To</a></td>
                             </tr>
                             
                             </tbody>

@@ -283,16 +283,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private addDMLFence(table PTable) : void from class org.apache.phoenix.execute.MutationState to public markDMLFence(table PTable) : void from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL263">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R279">To</a></td>
+                                <td><i>Move And Rename Method	private addTransactionParticipant(txAware TransactionAware) : void from class org.apache.phoenix.execute.MutationState to package addTransactionAware(txAware TransactionAware) : void from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL359">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R507">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	private addTransactionParticipant(txAware TransactionAware) : void from class org.apache.phoenix.execute.MutationState to package addTransactionAware(txAware TransactionAware) : void from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL359">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R507">To</a></td>
+                                <td><i>Move And Rename Method	private addDMLFence(table PTable) : void from class org.apache.phoenix.execute.MutationState to public markDMLFence(table PTable) : void from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL263">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R279">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -305,6 +305,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	txContext : TransactionContext to txContext : PhoenixTransactionContext in method package MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, mutations Map&lt;TableRef,Map&lt;ImmutableBytesPtr,RowMutationState&gt;&gt;, subTask boolean, txContext PhoenixTransactionContext) in class org.apache.phoenix.execute.MutationState</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL175">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR168">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	txContext : TransactionContext to txContext : PhoenixTransactionContext in method public MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, txContext PhoenixTransactionContext) in class org.apache.phoenix.execute.MutationState</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL154">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR145">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tx : Transaction to txnContext : PhoenixTransactionContext in method private processMutation(env RegionCoprocessorEnvironment, indexMetaData PhoenixIndexMetaData, txRollbackAttribute byte[], scanner ResultScanner, txnContext PhoenixTransactionContext, upsertColumns Set&lt;ColumnReference&gt;, indexUpdates Collection&lt;Pair&lt;Mutation,byte[]&gt;&gt;, mutations Map&lt;ImmutableBytesPtr,MultiMutation&gt;, mutationsToFindPreviousValue Map&lt;ImmutableBytesPtr,MultiMutation&gt;) : void in class org.apache.phoenix.index.PhoenixTransactionalIndexer</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23L300">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23R302">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	tx : Transaction to tx : PhoenixTransactionContext in method private processRollback(env RegionCoprocessorEnvironment, indexMetaData PhoenixIndexMetaData, txRollbackAttribute byte[], scanner ResultScanner, tx PhoenixTransactionContext, mutableColumns Set&lt;ColumnReference&gt;, indexUpdates Collection&lt;Pair&lt;Mutation,byte[]&gt;&gt;, mutations Map&lt;ImmutableBytesPtr,MultiMutation&gt;) : void in class org.apache.phoenix.index.PhoenixTransactionalIndexer</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23L327">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23R329">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -346,34 +374,6 @@
                                 <td><i>Change Parameter Type	txContext : TransactionContext to txContext : PhoenixTransactionContext in method private MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, subTask boolean, txContext PhoenixTransactionContext) in class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL166">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR157">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	txContext : TransactionContext to txContext : PhoenixTransactionContext in method package MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, mutations Map&lt;TableRef,Map&lt;ImmutableBytesPtr,RowMutationState&gt;&gt;, subTask boolean, txContext PhoenixTransactionContext) in class org.apache.phoenix.execute.MutationState</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL175">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR168">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	txContext : TransactionContext to txContext : PhoenixTransactionContext in method public MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, txContext PhoenixTransactionContext) in class org.apache.phoenix.execute.MutationState</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL154">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR145">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tx : Transaction to txnContext : PhoenixTransactionContext in method private processMutation(env RegionCoprocessorEnvironment, indexMetaData PhoenixIndexMetaData, txRollbackAttribute byte[], scanner ResultScanner, txnContext PhoenixTransactionContext, upsertColumns Set&lt;ColumnReference&gt;, indexUpdates Collection&lt;Pair&lt;Mutation,byte[]&gt;&gt;, mutations Map&lt;ImmutableBytesPtr,MultiMutation&gt;, mutationsToFindPreviousValue Map&lt;ImmutableBytesPtr,MultiMutation&gt;) : void in class org.apache.phoenix.index.PhoenixTransactionalIndexer</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23L300">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23R302">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	tx : Transaction to tx : PhoenixTransactionContext in method private processRollback(env RegionCoprocessorEnvironment, indexMetaData PhoenixIndexMetaData, txRollbackAttribute byte[], scanner ResultScanner, tx PhoenixTransactionContext, mutableColumns Set&lt;ColumnReference&gt;, indexUpdates Collection&lt;Pair&lt;Mutation,byte[]&gt;&gt;, mutations Map&lt;ImmutableBytesPtr,MultiMutation&gt;) : void in class org.apache.phoenix.index.PhoenixTransactionalIndexer</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23L327">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23R329">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -485,27 +485,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move Attribute	protected txManager : TransactionManager from class org.apache.phoenix.query.BaseTest to private txManager : TransactionManager from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1L190">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R80">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private CODEC : TransactionCodec from class org.apache.phoenix.execute.MutationState to private CODEC : TransactionCodec from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL125">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R75">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private tx : Transaction from class org.apache.phoenix.execute.MutationState to private tx : Transaction from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL140">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R84">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move Attribute	private zkClient : ZKClientService from class org.apache.phoenix.query.BaseTest to private zkClient : ZKClientService from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1L188">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R78">To</a></td>
@@ -532,6 +511,27 @@
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R82">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	protected txManager : TransactionManager from class org.apache.phoenix.query.BaseTest to private txManager : TransactionManager from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-9317980c3977f3a6fe6ad219ea2659f1L190">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R80">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private CODEC : TransactionCodec from class org.apache.phoenix.execute.MutationState to private CODEC : TransactionCodec from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL125">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R75">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move Attribute	private tx : Transaction from class org.apache.phoenix.execute.MutationState to private tx : Transaction from class org.apache.phoenix.transaction.TephraTransactionContext</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL140">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-fc0045a78d49e0f1328ad2de899b7f36R84">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -545,14 +545,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.apache.phoenix.transaction.TephraTransactionContext from class org.apache.phoenix.query.BaseTest</i></td>
+                                <td><i>Extract Class	org.apache.phoenix.transaction.TephraTransactionContext from class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Class	org.apache.phoenix.transaction.TephraTransactionContext from class org.apache.phoenix.execute.MutationState</i></td>
+                                <td><i>Extract Class	org.apache.phoenix.transaction.TephraTransactionContext from class org.apache.phoenix.query.BaseTest</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -570,14 +570,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	propertyTTL : String in method public testProperties() : void from class org.apache.phoenix.tx.TransactionIT</i></td>
+                                <td><i>Extract Variable	str : String in method public testCreateTableToBeTransactional() : void from class org.apache.phoenix.tx.ParameterizedTransactionIT</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Variable	str : String in method public testCreateTableToBeTransactional() : void from class org.apache.phoenix.tx.ParameterizedTransactionIT</i></td>
+                                <td><i>Extract Variable	propertyTTL : String in method public testProperties() : void from class org.apache.phoenix.tx.TransactionIT</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -648,13 +648,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	tx : Transaction to txnContext : PhoenixTransactionContext in method private processMutation(env RegionCoprocessorEnvironment, indexMetaData PhoenixIndexMetaData, txRollbackAttribute byte[], scanner ResultScanner, txnContext PhoenixTransactionContext, upsertColumns Set&lt;ColumnReference&gt;, indexUpdates Collection&lt;Pair&lt;Mutation,byte[]&gt;&gt;, mutations Map&lt;ImmutableBytesPtr,MultiMutation&gt;, mutationsToFindPreviousValue Map&lt;ImmutableBytesPtr,MultiMutation&gt;) : void in class org.apache.phoenix.index.PhoenixTransactionalIndexer</i></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23L303">From</a></td>
-                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23R302">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	tx : Transaction to subTask : boolean in method private MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, subTask boolean, txContext PhoenixTransactionContext, sizeOffset long) in class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL170">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR161">To</a></td>
@@ -665,6 +658,13 @@
                                 <td><i>Rename Parameter	tx : Transaction to subTask : boolean in method private MutationState(maxSize long, maxSizeBytes long, connection PhoenixConnection, subTask boolean, txContext PhoenixTransactionContext) in class org.apache.phoenix.execute.MutationState</i></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baL166">From</a></td>
                                 <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-cb8840fc3a60dc6ffbeb1062d8fad1baR157">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	tx : Transaction to txnContext : PhoenixTransactionContext in method private processMutation(env RegionCoprocessorEnvironment, indexMetaData PhoenixIndexMetaData, txRollbackAttribute byte[], scanner ResultScanner, txnContext PhoenixTransactionContext, upsertColumns Set&lt;ColumnReference&gt;, indexUpdates Collection&lt;Pair&lt;Mutation,byte[]&gt;&gt;, mutations Map&lt;ImmutableBytesPtr,MultiMutation&gt;, mutationsToFindPreviousValue Map&lt;ImmutableBytesPtr,MultiMutation&gt;) : void in class org.apache.phoenix.index.PhoenixTransactionalIndexer</i></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23L303">From</a></td>
+                                <td><a href = "https://github.com/apache/phoenix/commit/3c68a87ef80d1443d2abfaa8e485a00f9780adbc?diff=split#diff-8a6671deb3d81b3b865cd06d2940df23R302">To</a></td>
                             </tr>
                             
                             </tbody>

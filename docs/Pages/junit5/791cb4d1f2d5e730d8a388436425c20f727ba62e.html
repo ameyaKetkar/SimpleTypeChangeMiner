@@ -154,16 +154,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private loadClassForClassFile(file File, packageName String) : Optional&lt;Class&lt;?&gt;&gt; renamed to private loadClassFromFile(packageName String, classFile File) : Optional&lt;Class&lt;?&gt;&gt; in class org.junit.platform.commons.util.ClasspathScanner</i></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL201">From</a></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR160">To</a></td>
+                                <td><i>Rename Method	private handleClassFileSafely(packageName String, classesCollector List&lt;Class&lt;?&gt;&gt;, classFilter Predicate&lt;Class&lt;?&gt;&gt;, file File) : void renamed to private processClassFileSafely(packageName String, classFile File, classFilter Predicate&lt;Class&lt;?&gt;&gt;, classes List&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScanner</i></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL142">From</a></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR144">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private handleClassFileSafely(packageName String, classesCollector List&lt;Class&lt;?&gt;&gt;, classFilter Predicate&lt;Class&lt;?&gt;&gt;, file File) : void renamed to private processClassFileSafely(packageName String, classFile File, classFilter Predicate&lt;Class&lt;?&gt;&gt;, classes List&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScanner</i></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL142">From</a></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR144">To</a></td>
+                                <td><i>Rename Method	private loadClassForClassFile(file File, packageName String) : Optional&lt;Class&lt;?&gt;&gt; renamed to private loadClassFromFile(packageName String, classFile File) : Optional&lt;Class&lt;?&gt;&gt; in class org.junit.platform.commons.util.ClasspathScanner</i></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL201">From</a></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR160">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -211,13 +211,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Parameterize Variable	malformedClassNameSimulationFilter : Predicate&lt;Class&lt;?&gt;&gt; to filter : Predicate&lt;Class&lt;?&gt;&gt; in method private assertClassesScannedWhenExceptionIsThrown(filter Predicate&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScannerTests</i></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8L41">From</a></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8R88">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Parameterize Variable	runtimeExceptionSimulationFilter : Predicate&lt;Class&lt;?&gt;&gt; to filter : Predicate&lt;Class&lt;?&gt;&gt; in method private assertClassesScannedWhenExceptionIsThrown(filter Predicate&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScannerTests</i></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8L73">From</a></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8R88">To</a></td>
@@ -227,6 +220,13 @@
                                 <td></td>
                                 <td><i>Parameterize Variable	otherInternalErrorSimulationFilter : Predicate&lt;Class&lt;?&gt;&gt; to filter : Predicate&lt;Class&lt;?&gt;&gt; in method private assertClassesScannedWhenExceptionIsThrown(filter Predicate&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScannerTests</i></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8L57">From</a></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8R88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Parameterize Variable	malformedClassNameSimulationFilter : Predicate&lt;Class&lt;?&gt;&gt; to filter : Predicate&lt;Class&lt;?&gt;&gt; in method private assertClassesScannedWhenExceptionIsThrown(filter Predicate&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScannerTests</i></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8L41">From</a></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-8bbfa8b3b0ef5c87e92ae882dd4211c8R88">To</a></td>
                             </tr>
                             
@@ -314,6 +314,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	basePackageName : String to packageName : String in method private packagePath(packageName String) : String in class org.junit.platform.commons.util.ClasspathScanner</i></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL112">From</a></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR218">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	classesCollector : List&lt;Class&lt;?&gt;&gt; to classes : List&lt;Class&lt;?&gt;&gt; in method private collectClassesRecursively(packageName String, sourceDir File, classFilter Predicate&lt;Class&lt;?&gt;&gt;, classes List&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScanner</i></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL125">From</a></td>
+                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR126">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	classesCollector : List&lt;Class&lt;?&gt;&gt; to classes : List&lt;Class&lt;?&gt;&gt; in method private processClassFileSafely(packageName String, classFile File, classFilter Predicate&lt;Class&lt;?&gt;&gt;, classes List&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScanner</i></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL142">From</a></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR145">To</a></td>
@@ -331,20 +345,6 @@
                                 <td><i>Rename Parameter	file : File to classFile : File in method private loadClassFromFile(packageName String, classFile File) : Optional&lt;Class&lt;?&gt;&gt; in class org.junit.platform.commons.util.ClasspathScanner</i></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL201">From</a></td>
                                 <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR160">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	basePackageName : String to packageName : String in method private packagePath(packageName String) : String in class org.junit.platform.commons.util.ClasspathScanner</i></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL112">From</a></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR218">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	classesCollector : List&lt;Class&lt;?&gt;&gt; to classes : List&lt;Class&lt;?&gt;&gt; in method private collectClassesRecursively(packageName String, sourceDir File, classFilter Predicate&lt;Class&lt;?&gt;&gt;, classes List&lt;Class&lt;?&gt;&gt;) : void in class org.junit.platform.commons.util.ClasspathScanner</i></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cL125">From</a></td>
-                                <td><a href = "https://github.com/junit-team/junit5/commit/791cb4d1f2d5e730d8a388436425c20f727ba62e?diff=split#diff-b362277ce637287483ae4b5b8250f76cR126">To</a></td>
                             </tr>
                             
                             </tbody>

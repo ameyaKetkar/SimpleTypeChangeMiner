@@ -154,6 +154,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	package addToPlacementSets(recoverPreemptedRequestForAContainer boolean, dedupRequests Map&lt;SchedulerRequestKey,Map&lt;String,ResourceRequest&gt;&gt;) : boolean renamed to package addRequestToAppPlacement(recoverPreemptedRequestForAContainer boolean, dedupRequests Map&lt;SchedulerRequestKey,Map&lt;String,ResourceRequest&gt;&gt;) : boolean in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL208">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR208">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	private preCheckForPlacementSet(clusterResource Resource, ps PlacementSet&lt;FiCaSchedulerNode&gt;, schedulingMode SchedulingMode, resourceLimits ResourceLimits, schedulerKey SchedulerRequestKey) : ContainerAllocation renamed to private preCheckForNodeCandidateSet(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, schedulingMode SchedulingMode, resourceLimits ResourceLimits, schedulerKey SchedulerRequestKey) : ContainerAllocation in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.allocator.RegularContainerAllocator</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-d843858ba2043c9de2bca5fe089f24ecL98">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-d843858ba2043c9de2bca5fe089f24ecR98">To</a></td>
@@ -187,13 +194,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05R1334">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package addToPlacementSets(recoverPreemptedRequestForAContainer boolean, dedupRequests Map&lt;SchedulerRequestKey,Map&lt;String,ResourceRequest&gt;&gt;) : boolean renamed to package addRequestToAppPlacement(recoverPreemptedRequestForAContainer boolean, dedupRequests Map&lt;SchedulerRequestKey,Map&lt;String,ResourceRequest&gt;&gt;) : boolean in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL208">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR208">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -204,6 +204,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-18" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	clusterPlacementSet : PlacementSet&lt;N&gt; to candidateNodeSet : CandidateNodeSet&lt;N&gt; in method public getPreferredNodeIterator(candidateNodeSet CandidateNodeSet&lt;N&gt;) : Iterator&lt;N&gt; in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.LocalityAppPlacementAllocator</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-2c421288d7d9496bdabe89b2ef491ab9L63">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-3282fe14ef59395cdf050e641695dff1R71">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method public assignContainers(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, resourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdL480">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdR482">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method public assignContainers(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, resourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueue</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-f14a622b43a56fbf5a5509210cfcf547L188">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-f14a622b43a56fbf5a5509210cfcf547R196">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateFromReservedContainer(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, currentResourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-3b873a7c82d54aeb03339a7c0b378f36L973">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-3b873a7c82d54aeb03339a7c0b378f36R974">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainersOnMultiNodes(candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1388">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1398">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -296,41 +331,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-6be83ea319cba2ecba35e0931a6ceffdR51">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	clusterPlacementSet : PlacementSet&lt;N&gt; to candidateNodeSet : CandidateNodeSet&lt;N&gt; in method public getPreferredNodeIterator(candidateNodeSet CandidateNodeSet&lt;N&gt;) : Iterator&lt;N&gt; in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.LocalityAppPlacementAllocator</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-2c421288d7d9496bdabe89b2ef491ab9L63">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-3282fe14ef59395cdf050e641695dff1R71">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method public assignContainers(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, resourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdL480">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdR482">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method public assignContainers(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, resourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CSQueue</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-f14a622b43a56fbf5a5509210cfcf547L188">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-f14a622b43a56fbf5a5509210cfcf547R196">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateFromReservedContainer(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, currentResourceLimits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.LeafQueue</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-3b873a7c82d54aeb03339a7c0b378f36L973">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-3b873a7c82d54aeb03339a7c0b378f36R974">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainersOnMultiNodes(candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1388">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1398">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -341,41 +341,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public acceptNodePartition(schedulerKey SchedulerRequestKey, nodePartition String, schedulingMode SchedulingMode) : boolean in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL629">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR634">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public stop() : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL480">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR484">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainersToNode(nodeId NodeId, withNodeHeartbeat boolean) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1195">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1195">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public showRequests() : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05L620">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05R617">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public move(newQueue Queue) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL445">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR448">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -417,6 +382,41 @@
                                 <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public canDelayTo(schedulerKey SchedulerRequestKey, resourceName String) : boolean in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL617">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR622">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public acceptNodePartition(schedulerKey SchedulerRequestKey, nodePartition String, schedulingMode SchedulingMode) : boolean in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL629">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR634">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public stop() : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL480">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR484">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainersToNode(nodeId NodeId, withNodeHeartbeat boolean) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1195">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1195">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public showRequests() : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05L620">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05R617">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public move(newQueue Queue) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.AppSchedulingInfo</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eL445">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-507f74435c77e7855e3b6c3e9ffda56eR448">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -464,20 +464,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.SimplePlacementSet renamed to org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.SimpleCandidateNodeSet</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.SchedulingPlacementSet renamed to org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.AppPlacementAllocator</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.PlacementSet renamed to org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.CandidateNodeSet</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -486,6 +472,20 @@
                             <tr>
                                 <td></td>
                                 <td><i>Rename Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.LocalitySchedulingPlacementSet renamed to org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.LocalityAppPlacementAllocator</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.SimplePlacementSet renamed to org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.SimpleCandidateNodeSet</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.SchedulingPlacementSet renamed to org.apache.hadoop.yarn.server.resourcemanager.scheduler.placement.AppPlacementAllocator</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -518,6 +518,20 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-14" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainersToNode(nodeId NodeId, withNodeHeartbeat boolean) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1184">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1195">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public showRequests() : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05L615">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05R617">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -603,20 +617,6 @@
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05R316">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainersToNode(nodeId NodeId, withNodeHeartbeat boolean) : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1184">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1195">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	ps : SchedulingPlacementSet to ap : AppPlacementAllocator in method public showRequests() : void in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.SchedulerApplicationAttempt</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05L615">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-0d49524d0a60a82f044f2c8710e12b05R617">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -645,6 +645,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-17" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method public abstract assignContainers(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, schedulingMode SchedulingMode, resourceLimits ResourceLimits, reservedContainer RMContainer) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.allocator.AbstractContainerAllocator</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-aa0e68bd140e28dc865ffe46924ec83aL186">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-aa0e68bd140e28dc865ffe46924ec83aR185">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private assignContainersToChildQueues(cluster Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, limits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdL713">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdR714">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateOrReserveNewContainers(candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, withNodeHeartbeat boolean) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1336">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1339">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainerOnSingleNode(candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, node FiCaSchedulerNode, withNodeHeartbeat boolean) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1240">From</a></td>
+                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1243">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -735,34 +763,6 @@
                                 <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocate(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, schedulingMode SchedulingMode, resourceLimits ResourceLimits, schedulerKey SchedulerRequestKey, reservedContainer RMContainer) : ContainerAllocation in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.allocator.RegularContainerAllocator</i></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-d843858ba2043c9de2bca5fe089f24ecL783">From</a></td>
                                 <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-d843858ba2043c9de2bca5fe089f24ecR784">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method public abstract assignContainers(clusterResource Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, schedulingMode SchedulingMode, resourceLimits ResourceLimits, reservedContainer RMContainer) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.allocator.AbstractContainerAllocator</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-aa0e68bd140e28dc865ffe46924ec83aL186">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-aa0e68bd140e28dc865ffe46924ec83aR185">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private assignContainersToChildQueues(cluster Resource, candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, limits ResourceLimits, schedulingMode SchedulingMode) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.ParentQueue</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdL713">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-1511a871b64a29999f505b5479e638fdR714">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateOrReserveNewContainers(candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, withNodeHeartbeat boolean) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1336">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1339">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	ps : PlacementSet&lt;FiCaSchedulerNode&gt; to candidates : CandidateNodeSet&lt;FiCaSchedulerNode&gt; in method private allocateContainerOnSingleNode(candidates CandidateNodeSet&lt;FiCaSchedulerNode&gt;, node FiCaSchedulerNode, withNodeHeartbeat boolean) : CSAssignment in class org.apache.hadoop.yarn.server.resourcemanager.scheduler.capacity.CapacityScheduler</i></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaL1240">From</a></td>
-                                <td><a href = "https://github.com/apache/hadoop/commit/ac4d2b1081d8836a21bc70e77f4e6cd2071a9949?diff=split#diff-4c6d7464a7df4e8e3f32931540a72afaR1243">To</a></td>
                             </tr>
                             
                             </tbody>

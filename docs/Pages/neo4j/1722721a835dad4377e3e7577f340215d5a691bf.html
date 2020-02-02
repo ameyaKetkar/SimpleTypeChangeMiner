@@ -300,13 +300,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Move And Rename Method	public unsubscribe(listener ReplicatedContentListener) : void from class org.neo4j.coreedge.raft.replication.RaftReplicator to public deregisterListener(listener Listener) : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-49342b5eb371506bb6240f6ac3a56b74L73">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Move And Rename Method	public unsubscribe(listener ReplicatedContentListener) : void from class org.neo4j.coreedge.raft.replication.DirectReplicator to public deregisterListener(listener Listener) : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-927bf39aa54609502c25cbef448ac176L45">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR127">To</a></td>
@@ -324,6 +317,13 @@
                                 <td><i>Move And Rename Method	public subscribe(listener ReplicatedContentListener) : void from class org.neo4j.coreedge.raft.replication.DirectReplicator to public registerListener(listener Listener) : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-927bf39aa54609502c25cbef448ac176L39">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR121">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Method	public unsubscribe(listener ReplicatedContentListener) : void from class org.neo4j.coreedge.raft.replication.RaftReplicator to public deregisterListener(listener Listener) : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-49342b5eb371506bb6240f6ac3a56b74L73">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR127">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -375,6 +375,41 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	termState : TermState to termStorage : StateStorage&lt;TermState&gt; in method public RaftInstance(myself MEMBER, termStorage StateStorage&lt;TermState&gt;, voteStorage StateStorage&lt;VoteState&lt;MEMBER&gt;&gt;, entryLog RaftLog, stateMachine StateMachine, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, monitors Monitors, flushAfter int) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L108">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	other : InMemoryIdAllocationState to other : IdAllocationState in method public IdAllocationState(other IdAllocationState) in class org.neo4j.coreedge.raft.state.id_allocation.IdAllocationState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2656ba2969877911a5130844924970c3L84">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-9a7c782ed84de713a0e869c5f586f952R83">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	idAllocationState : IdAllocationState to storage : StateStorage&lt;IdAllocationState&gt; in method public ReplicatedIdAllocationStateMachine(me CoreMember, storage StateStorage&lt;IdAllocationState&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachine</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c9e95f4f3adf636d1280373bcf07ae83L53">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c9e95f4f3adf636d1280373bcf07ae83R58">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	target : InMemoryGlobalSessionTrackerState&lt;MEMBER&gt; to target : GlobalSessionTrackerState&lt;MEMBER&gt; in method public marshal(target GlobalSessionTrackerState&lt;MEMBER&gt;, channel WritableChannel) : void in class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-7065439989b9e8726c3c119e84e9ccf0L121">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R114">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Parameter Type	listener : ReplicatedContentListener to listener : Listener in method public deregisterListener(listener Listener) : void in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-49342b5eb371506bb6240f6ac3a56b74L73">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR128">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -444,41 +479,6 @@
                                 <td><i>Change Parameter Type	other : InMemoryRaftMembershipState&lt;MEMBER&gt; to other : RaftMembershipState&lt;MEMBER&gt; in method public RaftMembershipState(other RaftMembershipState&lt;MEMBER&gt;) in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-f844f9be5ba6e0be0e4e71e8d742d244L55">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	termState : TermState to termStorage : StateStorage&lt;TermState&gt; in method public RaftInstance(myself MEMBER, termStorage StateStorage&lt;TermState&gt;, voteStorage StateStorage&lt;VoteState&lt;MEMBER&gt;&gt;, entryLog RaftLog, stateMachine StateMachine, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, monitors Monitors, flushAfter int) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L108">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	other : InMemoryIdAllocationState to other : IdAllocationState in method public IdAllocationState(other IdAllocationState) in class org.neo4j.coreedge.raft.state.id_allocation.IdAllocationState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2656ba2969877911a5130844924970c3L84">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-9a7c782ed84de713a0e869c5f586f952R83">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	idAllocationState : IdAllocationState to storage : StateStorage&lt;IdAllocationState&gt; in method public ReplicatedIdAllocationStateMachine(me CoreMember, storage StateStorage&lt;IdAllocationState&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachine</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c9e95f4f3adf636d1280373bcf07ae83L53">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c9e95f4f3adf636d1280373bcf07ae83R58">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	target : InMemoryGlobalSessionTrackerState&lt;MEMBER&gt; to target : GlobalSessionTrackerState&lt;MEMBER&gt; in method public marshal(target GlobalSessionTrackerState&lt;MEMBER&gt;, channel WritableChannel) : void in class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-7065439989b9e8726c3c119e84e9ccf0L121">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R114">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Parameter Type	listener : ReplicatedContentListener to listener : Listener in method public deregisterListener(listener Listener) : void in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-49342b5eb371506bb6240f6ac3a56b74L73">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR128">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -650,20 +650,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipStateTest renamed to org.neo4j.coreedge.raft.state.membership.RaftMembershipStateTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.id_allocation.InMemoryIdAllocationStateTest renamed to org.neo4j.coreedge.raft.state.id_allocation.IdAllocationStateTest</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Class	org.neo4j.coreedge.raft.state.PersistedStateIT renamed to org.neo4j.coreedge.raft.state.DurableStateStorageIT</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -704,6 +690,20 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipStateTest renamed to org.neo4j.coreedge.raft.state.membership.RaftMembershipStateTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Class	org.neo4j.coreedge.raft.state.id_allocation.InMemoryIdAllocationStateTest renamed to org.neo4j.coreedge.raft.state.id_allocation.IdAllocationStateTest</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -714,13 +714,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move And Rename Class	org.neo4j.coreedge.raft.replication.session.InMemoryGlobalSessionTrackerState.InMemoryGlobalSessionTrackerStateChannelMarshal moved and renamed to org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -746,6 +739,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move And Rename Class	org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipState.InMemoryRaftMembershipStateChannelMarshal moved and renamed to org.neo4j.coreedge.raft.state.membership.RaftMembershipState.Marshal</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Move And Rename Class	org.neo4j.coreedge.raft.replication.session.InMemoryGlobalSessionTrackerState.InMemoryGlobalSessionTrackerStateChannelMarshal moved and renamed to org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState.Marshal</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -778,41 +778,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-25" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	onDiskGlobalSessionTrackerState : OnDiskGlobalSessionTrackerState&lt;CoreMember&gt; to onDiskGlobalSessionTrackerState : StateStorage&lt;GlobalSessionTrackerState&lt;CoreMember&gt;&gt; in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL148">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR226">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	onDiskReplicatedLockTokenState : OnDiskReplicatedLockTokenState&lt;CoreMember&gt; to lockTokenState : StateStorage&lt;InMemoryReplicatedLockTokenState&lt;CoreMember&gt;&gt; in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL148">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR208">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	marshal : InMemoryIdAllocationState.InMemoryIdAllocationStateChannelMarshal to marshal : IdAllocationState.Marshal in method public shouldReturnNullForHalfWrittenEntries() : void in class org.neo4j.coreedge.raft.state.id_allocation.IdAllocationStateTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-46ad97c3b60495247651074814547256L55">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-0835631e7af9d7ac587d7edf42d0edbaR66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	statePersister : StatePersister&lt;AtomicInteger&gt; to storage : DurableStateStorage&lt;AtomicInteger&gt; in method public shouldClearFileOnFirstUse() : void in class org.neo4j.coreedge.raft.state.DurableStateStorageTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-b7cbb5f391925e113ea5ac3fbe22b1c4L123">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-51aab43770b4f3fc2bdac17209dfed36R127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	sessionTrackerState : InMemoryGlobalSessionTrackerState&lt;RaftTestMember&gt; to sessionTrackerState : GlobalSessionTrackerState&lt;RaftTestMember&gt; in method public shouldSkipUpdatingSessionStateForSameIndexAfterSuccessfulUpdate() : void in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachinePersistenceTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-e85a6f0700c46a5272da0a9ecdcadbddL132">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-e85a6f0700c46a5272da0a9ecdcadbddR136">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -954,6 +919,41 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-bc7c468cbe2bcdcfd299dacb583d7b47R39">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	onDiskGlobalSessionTrackerState : OnDiskGlobalSessionTrackerState&lt;CoreMember&gt; to onDiskGlobalSessionTrackerState : StateStorage&lt;GlobalSessionTrackerState&lt;CoreMember&gt;&gt; in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL148">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR226">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	onDiskReplicatedLockTokenState : OnDiskReplicatedLockTokenState&lt;CoreMember&gt; to lockTokenState : StateStorage&lt;InMemoryReplicatedLockTokenState&lt;CoreMember&gt;&gt; in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL148">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR208">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	marshal : InMemoryIdAllocationState.InMemoryIdAllocationStateChannelMarshal to marshal : IdAllocationState.Marshal in method public shouldReturnNullForHalfWrittenEntries() : void in class org.neo4j.coreedge.raft.state.id_allocation.IdAllocationStateTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-46ad97c3b60495247651074814547256L55">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-0835631e7af9d7ac587d7edf42d0edbaR66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	statePersister : StatePersister&lt;AtomicInteger&gt; to storage : DurableStateStorage&lt;AtomicInteger&gt; in method public shouldClearFileOnFirstUse() : void in class org.neo4j.coreedge.raft.state.DurableStateStorageTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-b7cbb5f391925e113ea5ac3fbe22b1c4L123">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-51aab43770b4f3fc2bdac17209dfed36R127">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	sessionTrackerState : InMemoryGlobalSessionTrackerState&lt;RaftTestMember&gt; to sessionTrackerState : GlobalSessionTrackerState&lt;RaftTestMember&gt; in method public shouldSkipUpdatingSessionStateForSameIndexAfterSuccessfulUpdate() : void in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachinePersistenceTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-e85a6f0700c46a5272da0a9ecdcadbddL132">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-e85a6f0700c46a5272da0a9ecdcadbddR136">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1067,6 +1067,34 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-30" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	private validateGlobalSessionAndGetLocalSessionTracker(globalSession GlobalSession&lt;MEMBER&gt;) : LocalSessionTracker from class org.neo4j.coreedge.raft.replication.session.InMemoryGlobalSessionTrackerState to private validateGlobalSessionAndGetLocalSessionTracker(globalSession GlobalSession&lt;MEMBER&gt;) : LocalSessionTracker from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-7065439989b9e8726c3c119e84e9ccf0L97">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R90">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	private isNewSession(globalSession GlobalSession&lt;MEMBER&gt;, existingSessionTracker LocalSessionTracker) : boolean from class org.neo4j.coreedge.raft.replication.session.InMemoryGlobalSessionTrackerState to private isNewSession(globalSession GlobalSession&lt;MEMBER&gt;, existingSessionTracker LocalSessionTracker) : boolean from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-7065439989b9e8726c3c119e84e9ccf0L80">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R74">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public setVotingMembers(newVotingMembers Set&lt;MEMBER&gt;) : void from class org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipState to public setVotingMembers(newVotingMembers Set&lt;MEMBER&gt;) : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-f844f9be5ba6e0be0e4e71e8d742d244L64">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR66">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	private updateReplicationMembers() : void from class org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipState to private updateReplicationMembers() : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-f844f9be5ba6e0be0e4e71e8d742d244L94">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR95">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1250,34 +1278,6 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR90">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	private validateGlobalSessionAndGetLocalSessionTracker(globalSession GlobalSession&lt;MEMBER&gt;) : LocalSessionTracker from class org.neo4j.coreedge.raft.replication.session.InMemoryGlobalSessionTrackerState to private validateGlobalSessionAndGetLocalSessionTracker(globalSession GlobalSession&lt;MEMBER&gt;) : LocalSessionTracker from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-7065439989b9e8726c3c119e84e9ccf0L97">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R90">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	private isNewSession(globalSession GlobalSession&lt;MEMBER&gt;, existingSessionTracker LocalSessionTracker) : boolean from class org.neo4j.coreedge.raft.replication.session.InMemoryGlobalSessionTrackerState to private isNewSession(globalSession GlobalSession&lt;MEMBER&gt;, existingSessionTracker LocalSessionTracker) : boolean from class org.neo4j.coreedge.raft.replication.session.GlobalSessionTrackerState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-7065439989b9e8726c3c119e84e9ccf0L80">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R74">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public setVotingMembers(newVotingMembers Set&lt;MEMBER&gt;) : void from class org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipState to public setVotingMembers(newVotingMembers Set&lt;MEMBER&gt;) : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-f844f9be5ba6e0be0e4e71e8d742d244L64">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	private updateReplicationMembers() : void from class org.neo4j.coreedge.raft.state.membership.InMemoryRaftMembershipState to private updateReplicationMembers() : void from class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-f844f9be5ba6e0be0e4e71e8d742d244L94">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR95">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -1288,20 +1288,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-7" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	onDiskReplicatedLockTokenState : OnDiskReplicatedLockTokenState&lt;CoreMember&gt; to lockTokenState : StateStorage&lt;InMemoryReplicatedLockTokenState&lt;CoreMember&gt;&gt; in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL247">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR208">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	idAllocationState : IdAllocationState to stateStorage : StateStorage&lt;IdAllocationState&gt; in method public shouldIgnoreAlreadySeenIndex() : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachineTest</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-880aef3efc943a7088ca86621e2fc358L203">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-880aef3efc943a7088ca86621e2fc358R205">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1338,6 +1324,20 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-51aab43770b4f3fc2bdac17209dfed36R100">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	onDiskReplicatedLockTokenState : OnDiskReplicatedLockTokenState&lt;CoreMember&gt; to lockTokenState : StateStorage&lt;InMemoryReplicatedLockTokenState&lt;CoreMember&gt;&gt; in method public EnterpriseCoreEditionModule(platformModule PlatformModule, discoveryServiceFactory DiscoveryServiceFactory) in class org.neo4j.coreedge.server.core.EnterpriseCoreEditionModule</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaL247">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-463ea4722019a6dd3c784c222cd5b4eaR208">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	idAllocationState : IdAllocationState to stateStorage : StateStorage&lt;IdAllocationState&gt; in method public shouldIgnoreAlreadySeenIndex() : void in class org.neo4j.coreedge.raft.replication.id.ReplicatedIdAllocationStateMachineTest</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-880aef3efc943a7088ca86621e2fc358L203">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-880aef3efc943a7088ca86621e2fc358R205">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1348,27 +1348,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to STATE in method public readLastEntryFrom(file File) : STATE in class org.neo4j.coreedge.raft.state.StateRecoveryManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-79ebd67d693dbf65f89673f02a6e939bL48">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ed3a4fd186d30aaa199a663a5af128c4R97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	InMemoryIdAllocationState to STATE in method public readLastEntryFrom(file File) : STATE in class org.neo4j.coreedge.raft.state.StateRecoveryManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-b1c177018d20a0c76944d839eedf47c4L48">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ed3a4fd186d30aaa199a663a5af128c4R97">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	InMemoryVoteState&lt;MEMBER&gt; to STATE in method public readLastEntryFrom(file File) : STATE in class org.neo4j.coreedge.raft.state.StateRecoveryManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-5b8a62a68a0a4b96b0fe4d01e05599c0L48">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ed3a4fd186d30aaa199a663a5af128c4R97">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1419,6 +1398,27 @@
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-2c91d68fcc7af49327b5d7bc3c88c7c1R143">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	InMemoryReplicatedLockTokenState&lt;MEMBER&gt; to STATE in method public readLastEntryFrom(file File) : STATE in class org.neo4j.coreedge.raft.state.StateRecoveryManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-79ebd67d693dbf65f89673f02a6e939bL48">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ed3a4fd186d30aaa199a663a5af128c4R97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	InMemoryIdAllocationState to STATE in method public readLastEntryFrom(file File) : STATE in class org.neo4j.coreedge.raft.state.StateRecoveryManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-b1c177018d20a0c76944d839eedf47c4L48">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ed3a4fd186d30aaa199a663a5af128c4R97">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	InMemoryVoteState&lt;MEMBER&gt; to STATE in method public readLastEntryFrom(file File) : STATE in class org.neo4j.coreedge.raft.state.StateRecoveryManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-5b8a62a68a0a4b96b0fe4d01e05599c0L48">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ed3a4fd186d30aaa199a663a5af128c4R97">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -1429,13 +1429,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-5" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Attribute	statePersister : StatePersister&lt;Long&gt; to stateStorage : DurableStateStorage&lt;Long&gt; in class org.neo4j.coreedge.raft.state.DurableStateStorageIT.LongState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ceef2b68fc1e9575a4ac1192b971d4e1L252">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-d2bd299f567fdefa67b80fcef6d9bfedR253">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -1463,6 +1456,13 @@
                                 <td><i>Rename Attribute	state : RaftState&lt;MEMBER&gt; to raftState : RaftState&lt;MEMBER&gt; in class org.neo4j.coreedge.raft.RaftInstance</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L85">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R94">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Attribute	statePersister : StatePersister&lt;Long&gt; to stateStorage : DurableStateStorage&lt;Long&gt; in class org.neo4j.coreedge.raft.state.DurableStateStorageIT.LongState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-ceef2b68fc1e9575a4ac1192b971d4e1L252">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-d2bd299f567fdefa67b80fcef6d9bfedR253">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -1574,6 +1574,34 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Parameter	voteState : VoteState&lt;MEMBER&gt; to voteStorage : StateStorage&lt;VoteState&lt;MEMBER&gt;&gt; in method public RaftInstance(myself MEMBER, termStorage StateStorage&lt;TermState&gt;, voteStorage StateStorage&lt;VoteState&lt;MEMBER&gt;&gt;, entryLog RaftLog, stateMachine StateMachine, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, monitors Monitors, flushAfter int) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L108">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R118">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	globalSessionTrackerState : GlobalSessionTrackerState&lt;MEMBER&gt; to storage : StateStorage&lt;GlobalSessionTrackerState&lt;MEMBER&gt;&gt; in method public ReplicatedTransactionStateMachine(commitProcess TransactionCommitProcess, myGlobalSession GlobalSession, lockTokenManager LockTokenManager, transactionFutures CommittingTransactions, storage StateStorage&lt;GlobalSessionTrackerState&lt;MEMBER&gt;&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L60">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R62">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	termState : TermState to termStorage : StateStorage&lt;TermState&gt; in method public RaftInstance(myself MEMBER, termStorage StateStorage&lt;TermState&gt;, voteStorage StateStorage&lt;VoteState&lt;MEMBER&gt;&gt;, entryLog RaftLog, stateMachine StateMachine, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, monitors Monitors, flushAfter int) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L108">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R117">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	raftMembershipState : RaftMembershipState&lt;MEMBER&gt; to stateStorage : StateStorage&lt;RaftMembershipState&lt;MEMBER&gt;&gt; in method public RaftMembershipManager(replicator Replicator, memberSetBuilder RaftGroup.Builder&lt;MEMBER&gt;, entryLog RaftLog, logProvider LogProvider, expectedClusterSize int, electionTimeout long, clock Clock, catchupTimeout long, stateStorage StateStorage&lt;RaftMembershipState&lt;MEMBER&gt;&gt;) in class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1L66">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R77">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Parameter	catchingUpMember : MEMBER to member : MEMBER in method public addAdditionalReplicationMember(member MEMBER) : void in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fL33">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR74">To</a></td>
@@ -1619,34 +1647,6 @@
                                 <td><i>Rename Parameter	members : Set&lt;MEMBER&gt; to newVotingMembers : Set&lt;MEMBER&gt; in method public setVotingMembers(newVotingMembers Set&lt;MEMBER&gt;) : void in class org.neo4j.coreedge.raft.state.membership.RaftMembershipState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fL31">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-db0264fa0745a1cad37694c182a7256fR66">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	voteState : VoteState&lt;MEMBER&gt; to voteStorage : StateStorage&lt;VoteState&lt;MEMBER&gt;&gt; in method public RaftInstance(myself MEMBER, termStorage StateStorage&lt;TermState&gt;, voteStorage StateStorage&lt;VoteState&lt;MEMBER&gt;&gt;, entryLog RaftLog, stateMachine StateMachine, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, monitors Monitors, flushAfter int) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L108">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R118">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	globalSessionTrackerState : GlobalSessionTrackerState&lt;MEMBER&gt; to storage : StateStorage&lt;GlobalSessionTrackerState&lt;MEMBER&gt;&gt; in method public ReplicatedTransactionStateMachine(commitProcess TransactionCommitProcess, myGlobalSession GlobalSession, lockTokenManager LockTokenManager, transactionFutures CommittingTransactions, storage StateStorage&lt;GlobalSessionTrackerState&lt;MEMBER&gt;&gt;, logProvider LogProvider) in class org.neo4j.coreedge.raft.replication.tx.ReplicatedTransactionStateMachine</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256L60">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-1a63254fc79bc62a567ab11170dfc256R62">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	termState : TermState to termStorage : StateStorage&lt;TermState&gt; in method public RaftInstance(myself MEMBER, termStorage StateStorage&lt;TermState&gt;, voteStorage StateStorage&lt;VoteState&lt;MEMBER&gt;&gt;, entryLog RaftLog, stateMachine StateMachine, electionTimeout long, heartbeatInterval long, renewableTimeoutService RenewableTimeoutService, inbound Inbound, outbound Outbound&lt;MEMBER&gt;, leaderWaitTimeout long, logProvider LogProvider, membershipManager RaftMembershipManager&lt;MEMBER&gt;, logShipping RaftLogShippingManager&lt;MEMBER&gt;, databaseHealthSupplier Supplier&lt;DatabaseHealth&gt;, monitors Monitors, flushAfter int) in class org.neo4j.coreedge.raft.RaftInstance</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636L108">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-8daba578a5e4098b41f86c2f5554a636R117">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	raftMembershipState : RaftMembershipState&lt;MEMBER&gt; to stateStorage : StateStorage&lt;RaftMembershipState&lt;MEMBER&gt;&gt; in method public RaftMembershipManager(replicator Replicator, memberSetBuilder RaftGroup.Builder&lt;MEMBER&gt;, entryLog RaftLog, logProvider LogProvider, expectedClusterSize int, electionTimeout long, clock Clock, catchupTimeout long, stateStorage StateStorage&lt;RaftMembershipState&lt;MEMBER&gt;&gt;) in class org.neo4j.coreedge.raft.membership.RaftMembershipManager</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1L66">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/1722721a835dad4377e3e7577f340215d5a691bf?diff=split#diff-c39f242b9be8eb47b8f80ffddad6ccb1R77">To</a></td>
                             </tr>
                             
                             </tbody>

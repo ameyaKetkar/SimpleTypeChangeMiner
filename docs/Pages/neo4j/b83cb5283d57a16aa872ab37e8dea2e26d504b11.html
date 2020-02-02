@@ -356,6 +356,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Attribute	private propertyCursor : InstanceCache&lt;TxPropertyCursor&gt; from class org.neo4j.kernel.impl.api.KernelStatement to private propertyCursor : InstanceCache&lt;TxPropertyCursor&gt; from class org.neo4j.kernel.impl.api.state.TxState</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L59">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-a57268ea99b659fe815634ce2660672eR162">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Attribute	private GET_KEY_INDEX_ID : ToIntFunction&lt;PropertyCursor&gt; from class org.neo4j.kernel.impl.api.store.DiskLayer to public GET_KEY_INDEX_ID : ToIntFunction&lt;PropertyCursor&gt; from class org.neo4j.kernel.api.cursor.PropertyCursor</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-39e7628da35070b1a2aefbddafd53585L121">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-727a4a4f15afde4b1f5c2e2ee091d3e5R42">To</a></td>
@@ -380,13 +387,6 @@
                                 <td><i>Move Attribute	private labelCursor : InstanceCache&lt;TxLabelCursor&gt; from class org.neo4j.kernel.impl.api.KernelStatement to private labelCursor : InstanceCache&lt;TxLabelCursor&gt; from class org.neo4j.kernel.impl.api.state.TxState</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L60">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-a57268ea99b659fe815634ce2660672eR163">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Attribute	private propertyCursor : InstanceCache&lt;TxPropertyCursor&gt; from class org.neo4j.kernel.impl.api.KernelStatement to private propertyCursor : InstanceCache&lt;TxPropertyCursor&gt; from class org.neo4j.kernel.impl.api.state.TxState</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-7816cf189d1c6d6edf33f7d1de24e4c1L59">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-a57268ea99b659fe815634ce2660672eR162">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -481,13 +481,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public nodeCursor(statement KernelStatement, nodeId long) : NodeCursor extracted from public nodeGetAllProperties(state KernelStatement, nodeId long) : Iterator&lt;DefinedProperty&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Extract Method	public relationshipCursor(statement KernelStatement, relationshipId long) : RelationshipCursor extracted from public relationshipExists(state KernelStatement, relId long) : boolean in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -524,6 +517,13 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	public relationshipCursor(statement KernelStatement, relationshipId long) : RelationshipCursor extracted from public relationshipGetProperty(state KernelStatement, relationshipId long, propertyKeyId int) : Property in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public nodeCursor(statement KernelStatement, nodeId long) : NodeCursor extracted from public nodeGetAllProperties(state KernelStatement, nodeId long) : Iterator&lt;DefinedProperty&gt; in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -662,20 +662,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	state : KernelStatement to statement : KernelStatement in method public nodeCursorGetAll(statement KernelStatement) : NodeCursor in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751L419">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751R431">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	state : KernelStatement to statement : KernelStatement in method public relationshipCursorGetAll(statement KernelStatement) : RelationshipCursor in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751L425">From</a></td>
-                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751R437">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	state : KernelStatement to statement : KernelStatement in method public nodeCursor(statement KernelStatement, nodeId long) : NodeCursor in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-94e898a8535f13220449b217db75fd90L192">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-94e898a8535f13220449b217db75fd90R118">To</a></td>
@@ -728,6 +714,20 @@
                                 <td><i>Rename Parameter	state : KernelStatement to statement : KernelStatement in method public relationshipCursor(statement KernelStatement, relationshipId long) : RelationshipCursor in class org.neo4j.kernel.impl.api.StateHandlingStatementOperations</i></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-94e898a8535f13220449b217db75fd90L211">From</a></td>
                                 <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-94e898a8535f13220449b217db75fd90R131">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	state : KernelStatement to statement : KernelStatement in method public nodeCursorGetAll(statement KernelStatement) : NodeCursor in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751L419">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751R431">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	state : KernelStatement to statement : KernelStatement in method public relationshipCursorGetAll(statement KernelStatement) : RelationshipCursor in class org.neo4j.kernel.impl.api.ConstraintEnforcingEntityOperations</i></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751L425">From</a></td>
+                                <td><a href = "https://github.com/neo4j/neo4j/commit/b83cb5283d57a16aa872ab37e8dea2e26d504b11?diff=split#diff-0694c9de7c6c3b2738144757b771b751R437">To</a></td>
                             </tr>
                             
                             </tbody>

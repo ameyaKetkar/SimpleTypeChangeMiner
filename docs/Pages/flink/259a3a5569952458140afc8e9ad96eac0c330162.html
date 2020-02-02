@@ -218,13 +218,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private isConnected() : boolean renamed to private isJobManagerConnected() : boolean in class org.apache.flink.runtime.client.JobClientActor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL429">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR328">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	private hasJobBeenSubmitted() : boolean renamed to protected isClientConnected() : boolean in class org.apache.flink.runtime.client.JobClientActor</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL433">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR332">To</a></td>
@@ -235,6 +228,13 @@
                                 <td><i>Rename Method	public testConnectionTimeoutWithoutJobManager() : void renamed to public testConnectionTimeoutWithoutJobManagerForSubmission() : void in class org.apache.flink.runtime.client.JobClientActorTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-2b26ba6323f1e8dde846467053b44cebL103">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-2b26ba6323f1e8dde846467053b44cebR142">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private isConnected() : boolean renamed to private isJobManagerConnected() : boolean in class org.apache.flink.runtime.client.JobClientActor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL429">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR328">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -354,16 +354,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	terminated : boolean to toBeTerminated : boolean in class org.apache.flink.runtime.client.JobClientActor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL70">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR58">To</a></td>
+                                <td><i>Rename Attribute	submitter : ActorRef to client : ActorRef in class org.apache.flink.runtime.client.JobClientActor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL79">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR67">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Attribute	submitter : ActorRef to client : ActorRef in class org.apache.flink.runtime.client.JobClientActor</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL79">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR67">To</a></td>
+                                <td><i>Rename Attribute	terminated : boolean to toBeTerminated : boolean in class org.apache.flink.runtime.client.JobClientActor</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bL70">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/259a3a5569952458140afc8e9ad96eac0c330162?diff=split#diff-3cb9bf97b04da354b80ede3f82dffd7bR58">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -404,14 +404,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public submitJob(actorSystem ActorSystem, leaderRetrievalService LeaderRetrievalService, jobGraph JobGraph, timeout FiniteDuration, sysoutLogUpdates boolean, classLoader ClassLoader) : JobListeningContext extracted from public submitJobAndWait(actorSystem ActorSystem, leaderRetrievalService LeaderRetrievalService, jobGraph JobGraph, timeout FiniteDuration, sysoutLogUpdates boolean, classLoader ClassLoader) : JobExecutionResult in class org.apache.flink.runtime.client.JobClient</i></td>
+                                <td><i>Extract Method	public awaitJobResult(listeningContext JobListeningContext) : JobExecutionResult extracted from public submitJobAndWait(actorSystem ActorSystem, leaderRetrievalService LeaderRetrievalService, jobGraph JobGraph, timeout FiniteDuration, sysoutLogUpdates boolean, classLoader ClassLoader) : JobExecutionResult in class org.apache.flink.runtime.client.JobClient</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Method	public awaitJobResult(listeningContext JobListeningContext) : JobExecutionResult extracted from public submitJobAndWait(actorSystem ActorSystem, leaderRetrievalService LeaderRetrievalService, jobGraph JobGraph, timeout FiniteDuration, sysoutLogUpdates boolean, classLoader ClassLoader) : JobExecutionResult in class org.apache.flink.runtime.client.JobClient</i></td>
+                                <td><i>Extract Method	public submitJob(actorSystem ActorSystem, leaderRetrievalService LeaderRetrievalService, jobGraph JobGraph, timeout FiniteDuration, sysoutLogUpdates boolean, classLoader ClassLoader) : JobListeningContext extracted from public submitJobAndWait(actorSystem ActorSystem, leaderRetrievalService LeaderRetrievalService, jobGraph JobGraph, timeout FiniteDuration, sysoutLogUpdates boolean, classLoader ClassLoader) : JobExecutionResult in class org.apache.flink.runtime.client.JobClient</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

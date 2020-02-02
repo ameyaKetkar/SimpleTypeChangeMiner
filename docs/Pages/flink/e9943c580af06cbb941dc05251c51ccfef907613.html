@@ -252,13 +252,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public getNextBufferOrEvent() : BufferOrEvent renamed to public getNextBufferConsumer() : BufferConsumerAndChannel in class org.apache.flink.runtime.io.network.partition.consumer.LocalInputChannelTest.TestPartitionProducerBufferSource</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-63dcf966f73eab00530bf1b0ac777c87L444">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-63dcf966f73eab00530bf1b0ac777c87R446">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public writeBuffer(buffer Buffer, targetChannel int) : void renamed to public addBufferConsumer(buffer BufferConsumer, targetChannel int) : void in class org.apache.flink.runtime.io.network.api.writer.RecordWriterTest.CollectingPartitionWriter</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddL568">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddR427">To</a></td>
@@ -297,6 +290,13 @@
                                 <td><i>Rename Method	public writeBuffer(buffer Buffer, subpartitionIndex int) : void renamed to public addBufferConsumer(bufferConsumer BufferConsumer, subpartitionIndex int) : void in class org.apache.flink.runtime.io.network.partition.ResultPartition</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-097e48ca7d6306f84764b90955d45c79L240">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-097e48ca7d6306f84764b90955d45c79R241">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public getNextBufferOrEvent() : BufferOrEvent renamed to public getNextBufferConsumer() : BufferConsumerAndChannel in class org.apache.flink.runtime.io.network.partition.consumer.LocalInputChannelTest.TestPartitionProducerBufferSource</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-63dcf966f73eab00530bf1b0ac777c87L444">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-63dcf966f73eab00530bf1b0ac777c87R446">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -428,34 +428,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Variable	bufferOrEvent : BufferOrEvent to consumerAndChannel : BufferConsumerAndChannel in method public call() : Boolean in class org.apache.flink.runtime.io.network.util.TestPartitionProducer</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2424b3bc8b95896707917190146186a2L74">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2424b3bc8b95896707917190146186a2R72">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method protected testAddOnPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3L187">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3R188">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterFinish() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L59">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterRelease() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L85">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method protected testAddOnReleasedPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3L151">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3R152">To</a></td>
@@ -487,6 +459,34 @@
                                 <td><i>Rename Variable	buffer : Buffer to bufferBuilder : BufferBuilder in method public invoke() : void in class org.apache.flink.runtime.io.network.partition.PartialConsumePipelinedResultTest.SlowBufferSender</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-9b99079178a14ae2256631e04c0839e1L123">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-9b99079178a14ae2256631e04c0839e1R124">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	bufferOrEvent : BufferOrEvent to consumerAndChannel : BufferConsumerAndChannel in method public call() : Boolean in class org.apache.flink.runtime.io.network.util.TestPartitionProducer</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2424b3bc8b95896707917190146186a2L74">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2424b3bc8b95896707917190146186a2R72">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method protected testAddOnPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3L187">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3R188">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterFinish() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L59">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Variable	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterRelease() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L85">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R82">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -531,6 +531,48 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-15" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method protected testAddOnPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3L178">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3R188">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterFinish() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L46">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R57">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterRelease() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L72">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R82">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	queues : Queue&lt;Buffer&gt;[] to queues : Queue&lt;BufferConsumer&gt;[] in method public testBroadcastEventNoRecords() : void in class org.apache.flink.runtime.io.network.api.writer.RecordWriterTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddL328">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddR202">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	buffer : Buffer to buffer : BufferConsumer in method public release() : void in class org.apache.flink.runtime.io.network.partition.SpillableSubpartition</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-342618fc45a7fa775fa16af4c84b861fL145">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-342618fc45a7fa775fa16af4c84b861fR142">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method private verifyViewReleasedAfterParentRelease(partition ResultSubpartition) : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L112">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R111">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -595,48 +637,6 @@
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddR239">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method protected testAddOnPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3L178">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-508c42ca13013fda3b3ba4302414cbf3R188">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterFinish() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L46">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R57">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method public testAddAfterRelease() : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R82">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	queues : Queue&lt;Buffer&gt;[] to queues : Queue&lt;BufferConsumer&gt;[] in method public testBroadcastEventNoRecords() : void in class org.apache.flink.runtime.io.network.api.writer.RecordWriterTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddL328">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-1c43ca330fb31510d4e33a34079040ddR202">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	buffer : Buffer to buffer : BufferConsumer in method public release() : void in class org.apache.flink.runtime.io.network.partition.SpillableSubpartition</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-342618fc45a7fa775fa16af4c84b861fL145">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-342618fc45a7fa775fa16af4c84b861fR142">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	buffer : Buffer to bufferConsumer : BufferConsumer in method private verifyViewReleasedAfterParentRelease(partition ResultSubpartition) : void in class org.apache.flink.runtime.io.network.partition.SubpartitionTestBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4L112">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-2b66907a52d1d84a33d1b7ca0c4478e4R111">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -668,6 +668,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	private spillFinishedBufferConsumers() : long extracted from public add(buffer Buffer) : boolean in class org.apache.flink.runtime.io.network.partition.SpillableSubpartition</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	public createFilledBufferBuilder(size int, dataSize int) : BufferBuilder extracted from public createBufferBuilder(size int) : BufferBuilder in class org.apache.flink.runtime.io.network.buffer.BufferBuilderTestUtils</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -676,13 +683,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	private spillFinishedBufferConsumers() : long extracted from public releaseMemory() : int in class org.apache.flink.runtime.io.network.partition.SpillableSubpartition</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	private spillFinishedBufferConsumers() : long extracted from public add(buffer Buffer) : boolean in class org.apache.flink.runtime.io.network.partition.SpillableSubpartition</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -697,13 +697,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-4" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	buffers : ArrayDeque&lt;Buffer&gt; to buffers : ArrayDeque&lt;BufferConsumer&gt; in class org.apache.flink.runtime.io.network.partition.ResultSubpartition</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-b4fdcf5462713c43e42bbe900e948448L43">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-b4fdcf5462713c43e42bbe900e948448R44">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -724,6 +717,13 @@
                                 <td><i>Change Attribute Type	buffers : ArrayDeque&lt;Buffer&gt; to buffers : ArrayDeque&lt;BufferConsumer&gt; in class org.apache.flink.runtime.io.network.partition.SpillableSubpartitionView</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-a46399680de9f97c730a4c1553aefe8fL44">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-a46399680de9f97c730a4c1553aefe8fR45">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	buffers : ArrayDeque&lt;Buffer&gt; to buffers : ArrayDeque&lt;BufferConsumer&gt; in class org.apache.flink.runtime.io.network.partition.ResultSubpartition</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-b4fdcf5462713c43e42bbe900e948448L43">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-b4fdcf5462713c43e42bbe900e948448R44">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -757,6 +757,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract And Move Method	public isRecycled() : boolean extracted from protected testAddOnFinishedPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest &amp; moved to class org.apache.flink.runtime.io.network.buffer.BufferConsumer</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public isBuffer() : boolean extracted from public testConsumeSpillablePartitionSpilledDuringConsume() : void in class org.apache.flink.runtime.io.network.partition.SpillableSubpartitionTest &amp; moved to class org.apache.flink.runtime.io.network.buffer.BufferConsumer</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract And Move Method	public isBuffer() : boolean extracted from public testConsumeSpilledPartition() : void in class org.apache.flink.runtime.io.network.partition.SpillableSubpartitionTest &amp; moved to class org.apache.flink.runtime.io.network.buffer.BufferConsumer</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -776,20 +790,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public isRecycled() : boolean extracted from protected testAddOnFinishedPartition(pipelined ResultPartitionType) : void in class org.apache.flink.runtime.io.network.partition.ResultPartitionTest &amp; moved to class org.apache.flink.runtime.io.network.buffer.BufferConsumer</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public isBuffer() : boolean extracted from public testConsumeSpillablePartitionSpilledDuringConsume() : void in class org.apache.flink.runtime.io.network.partition.SpillableSubpartitionTest &amp; moved to class org.apache.flink.runtime.io.network.buffer.BufferConsumer</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -800,13 +800,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	buffer : Buffer to bufferConsumer : BufferConsumer in method public add(bufferConsumer BufferConsumer) : boolean in class org.apache.flink.runtime.io.network.partition.PipelinedSubpartition</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-d0842fed408376df0144e6a82d5f3136L60">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-d0842fed408376df0144e6a82d5f3136R61">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -869,6 +862,13 @@
                                 <td><i>Rename Parameter	buffer : Buffer to bufferConsumer : BufferConsumer in method package addBufferConsumer(bufferConsumer BufferConsumer) : void in class org.apache.flink.runtime.io.network.partition.InputGateConcurrentTest.PipelinedSubpartitionSource</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-8c66d8d59ee0462139bc3504b68313f1L204">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-8c66d8d59ee0462139bc3504b68313f1R206">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	buffer : Buffer to bufferConsumer : BufferConsumer in method public add(bufferConsumer BufferConsumer) : boolean in class org.apache.flink.runtime.io.network.partition.PipelinedSubpartition</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-d0842fed408376df0144e6a82d5f3136L60">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/e9943c580af06cbb941dc05251c51ccfef907613?diff=split#diff-d0842fed408376df0144e6a82d5f3136R61">To</a></td>
                             </tr>
                             
                             </tbody>

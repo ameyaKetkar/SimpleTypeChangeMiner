@@ -210,13 +210,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	public testMissingTupleGenericsException() : void renamed to public testMissingTupleGenerics() : void in class org.apache.flink.api.java.type.extractor.TypeExtractorTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-417275fc3a7691a7007e764c5ac7be36L627">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-417275fc3a7691a7007e764c5ac7be36R628">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public testCustomType() : void renamed to public testGenericType() : void in class org.apache.flink.api.java.typeutils.TypeInfoParserTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-231f154d7d66df307eaf3f809eaf4787L151">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-231f154d7d66df307eaf3f809eaf4787R152">To</a></td>
@@ -234,6 +227,13 @@
                                 <td><i>Rename Method	public testFunctionDependingOnInputException() : void renamed to public testFunctionDependingOnUnknownInput() : void in class org.apache.flink.api.java.type.extractor.TypeExtractorTest</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-417275fc3a7691a7007e764c5ac7be36L895">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-417275fc3a7691a7007e764c5ac7be36R908">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	public testMissingTupleGenericsException() : void renamed to public testMissingTupleGenerics() : void in class org.apache.flink.api.java.type.extractor.TypeExtractorTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-417275fc3a7691a7007e764c5ac7be36L627">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/d8dbaeeb4df4524e136423425edc9d87d1f25897?diff=split#diff-417275fc3a7691a7007e764c5ac7be36R628">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -378,6 +378,20 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract Method	public getCoGroupReturnTypes(coGroupInterface CoGroupFunction&lt;IN1,IN2,OUT&gt;, in1Type TypeInformation&lt;IN1&gt;, in2Type TypeInformation&lt;IN2&gt;, functionName String, allowMissing boolean) : TypeInformation&lt;OUT&gt; extracted from public getCoGroupReturnTypes(coGroupInterface CoGroupFunction&lt;IN1,IN2,OUT&gt;, in1Type TypeInformation&lt;IN1&gt;, in2Type TypeInformation&lt;IN2&gt;) : TypeInformation&lt;OUT&gt; in class org.apache.flink.api.java.typeutils.TypeExtractor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract Method	public getKeySelectorTypes(selectorInterface KeySelector&lt;IN,OUT&gt;, inType TypeInformation&lt;IN&gt;, functionName String, allowMissing boolean) : TypeInformation&lt;OUT&gt; extracted from public getKeySelectorTypes(selectorInterface KeySelector&lt;IN,OUT&gt;, inType TypeInformation&lt;IN&gt;) : TypeInformation&lt;OUT&gt; in class org.apache.flink.api.java.typeutils.TypeExtractor</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract Method	private loadClass(fullyQualifiedName String) : Class&lt;?&gt; extracted from private parse(sb StringBuilder) : TypeInformation&lt;?&gt; in class org.apache.flink.api.java.typeutils.TypeInfoParser</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -435,20 +449,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Extract Method	public getGroupReduceReturnTypes(groupReduceInterface GroupReduceFunction&lt;IN,OUT&gt;, inType TypeInformation&lt;IN&gt;, functionName String, allowMissing boolean) : TypeInformation&lt;OUT&gt; extracted from public getGroupReduceReturnTypes(groupReduceInterface GroupReduceFunction&lt;IN,OUT&gt;, inType TypeInformation&lt;IN&gt;) : TypeInformation&lt;OUT&gt; in class org.apache.flink.api.java.typeutils.TypeExtractor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public getCoGroupReturnTypes(coGroupInterface CoGroupFunction&lt;IN1,IN2,OUT&gt;, in1Type TypeInformation&lt;IN1&gt;, in2Type TypeInformation&lt;IN2&gt;, functionName String, allowMissing boolean) : TypeInformation&lt;OUT&gt; extracted from public getCoGroupReturnTypes(coGroupInterface CoGroupFunction&lt;IN1,IN2,OUT&gt;, in1Type TypeInformation&lt;IN1&gt;, in2Type TypeInformation&lt;IN2&gt;) : TypeInformation&lt;OUT&gt; in class org.apache.flink.api.java.typeutils.TypeExtractor</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract Method	public getKeySelectorTypes(selectorInterface KeySelector&lt;IN,OUT&gt;, inType TypeInformation&lt;IN&gt;, functionName String, allowMissing boolean) : TypeInformation&lt;OUT&gt; extracted from public getKeySelectorTypes(selectorInterface KeySelector&lt;IN,OUT&gt;, inType TypeInformation&lt;IN&gt;) : TypeInformation&lt;OUT&gt; in class org.apache.flink.api.java.typeutils.TypeExtractor</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>

@@ -154,13 +154,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Method	private getVersionsOlderThanMarked(ecm EntityCollectionManager, entityId Id, markedVersion UUID) : List&lt;UUID&gt; renamed to private getVersionsOlderThanOrEqualToMarked(ecm EntityCollectionManager, entityId Id, markedVersion UUID) : List&lt;UUID&gt; in class org.apache.usergrid.corepersistence.asyncevents.EventBuilderImpl</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2L193">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2R274">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Method	public deIndexEntity(applicationScope ApplicationScope, entityId Id, markedVersion UUID, allVersionsBeforeMarked List&lt;UUID&gt;) : Observable&lt;IndexOperationMessage&gt; renamed to public deIndexOldVersions(applicationScope ApplicationScope, entityId Id, versions List&lt;UUID&gt;) : Observable&lt;IndexOperationMessage&gt; in class org.apache.usergrid.corepersistence.index.IndexServiceImpl</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-a8f918de94291c409f65d1a1402baa14L260">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-a8f918de94291c409f65d1a1402baa14R270">To</a></td>
@@ -178,6 +171,13 @@
                                 <td><i>Rename Method	public getCompactedNode() : Observable&lt;Id&gt; renamed to public getEdgesDeleted() : Observable&lt;MarkedEdge&gt; in class org.apache.usergrid.corepersistence.asyncevents.EventBuilder.EntityDeleteResults</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-df68ff4ecec2a85ef91020d7627cf49aL119">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-df68ff4ecec2a85ef91020d7627cf49aR120">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Method	private getVersionsOlderThanMarked(ecm EntityCollectionManager, entityId Id, markedVersion UUID) : List&lt;UUID&gt; renamed to private getVersionsOlderThanOrEqualToMarked(ecm EntityCollectionManager, entityId Id, markedVersion UUID) : List&lt;UUID&gt; in class org.apache.usergrid.corepersistence.asyncevents.EventBuilderImpl</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2L193">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2R274">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -229,27 +229,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	Observable&lt;Id&gt; to Observable&lt;MarkedEdge&gt; in method public compactNode(inputNode Id) : Observable&lt;MarkedEdge&gt; in class org.apache.usergrid.persistence.graph.impl.GraphManagerImpl</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-c94ebfd8dea7a17a8ad144ac518cc989L264">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-c94ebfd8dea7a17a8ad144ac518cc989R264">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Observable&lt;Integer&gt; to Observable&lt;MarkedEdge&gt; in method public receive(scope ApplicationScope, node Id, timestamp UUID) : Observable&lt;MarkedEdge&gt; in class org.apache.usergrid.persistence.graph.impl.stage.NodeDeleteListener</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-f4fd111a56618f90e95a10da18aad8aeL35">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-f4fd111a56618f90e95a10da18aad8aeR37">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Observable&lt;IndexOperationMessage&gt; to IndexOperationMessage in method public buildDeleteEdge(applicationScope ApplicationScope, edge Edge) : IndexOperationMessage in class org.apache.usergrid.corepersistence.asyncevents.EventBuilderImpl</i></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2L92">From</a></td>
-                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2R91">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	Observable&lt;Id&gt; to Observable&lt;MarkedEdge&gt; in method public compactNode(node Id) : Observable&lt;MarkedEdge&gt; in class org.apache.usergrid.persistence.graph.GraphManager</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-8ff6805e120c03a87e37caa4233ffa49L90">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-8ff6805e120c03a87e37caa4233ffa49R90">To</a></td>
@@ -288,6 +267,27 @@
                                 <td><i>Change Return Type	EntityDeleteResults to IndexOperationMessage in method public buildEntityDelete(applicationScope ApplicationScope, entityId Id) : IndexOperationMessage in class org.apache.usergrid.corepersistence.asyncevents.EventBuilderImpl</i></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2L108">From</a></td>
                                 <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2R130">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Observable&lt;Id&gt; to Observable&lt;MarkedEdge&gt; in method public compactNode(inputNode Id) : Observable&lt;MarkedEdge&gt; in class org.apache.usergrid.persistence.graph.impl.GraphManagerImpl</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-c94ebfd8dea7a17a8ad144ac518cc989L264">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-c94ebfd8dea7a17a8ad144ac518cc989R264">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Observable&lt;Integer&gt; to Observable&lt;MarkedEdge&gt; in method public receive(scope ApplicationScope, node Id, timestamp UUID) : Observable&lt;MarkedEdge&gt; in class org.apache.usergrid.persistence.graph.impl.stage.NodeDeleteListener</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-f4fd111a56618f90e95a10da18aad8aeL35">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-f4fd111a56618f90e95a10da18aad8aeR37">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Observable&lt;IndexOperationMessage&gt; to IndexOperationMessage in method public buildDeleteEdge(applicationScope ApplicationScope, edge Edge) : IndexOperationMessage in class org.apache.usergrid.corepersistence.asyncevents.EventBuilderImpl</i></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2L92">From</a></td>
+                                <td><a href = "https://github.com/apache/usergrid/commit/c201f1f67aa0f373958c3886c893979215cba88f?diff=split#diff-006fc38830b9a74573b36037b26c34e2R91">To</a></td>
                             </tr>
                             
                             </tbody>

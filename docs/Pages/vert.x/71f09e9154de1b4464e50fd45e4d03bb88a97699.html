@@ -329,6 +329,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Rename Method	package handleReset(code long) : void renamed to package callReset(code long) : void in class io.vertx.core.http.impl.Http2ServerResponseImpl</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-3de7a0561eb881216daf4ce348439e41L87">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-3de7a0561eb881216daf4ce348439e41R88">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Rename Method	package handleReset(errorCode long) : void renamed to package callReset(errorCode long) : void in class io.vertx.core.http.impl.VertxHttp2ClientHandler.Http2ClientStream</i></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-7e9b07635ff59d001d19bf4f2eb60b02L272">From</a></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-7e9b07635ff59d001d19bf4f2eb60b02R194">To</a></td>
@@ -362,13 +369,6 @@
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R127">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Method	package handleReset(code long) : void renamed to package callReset(code long) : void in class io.vertx.core.http.impl.Http2ServerResponseImpl</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-3de7a0561eb881216daf4ce348439e41L87">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-3de7a0561eb881216daf4ce348439e41R88">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -379,6 +379,27 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-9" class="collapse">
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public onDataRead(ctx ChannelHandlerContext, streamId int, data ByteBuf, padding int, endOfStream boolean) : int from class io.vertx.core.http.impl.VertxHttp2ServerHandler to public onDataRead(ctx ChannelHandlerContext, streamId int, data ByteBuf, padding int, endOfStream boolean) : int from class io.vertx.core.http.impl.VertxHttp2ConnectionHandler</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-2b2db01ce3843b992dbd2dd449dbdfdaL180">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-16462be4aa492a5a7ae5e4da06f7024fR204">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	protected onStreamError(ctx ChannelHandlerContext, cause Throwable, http2Ex Http2Exception.StreamException) : void from class io.vertx.core.http.impl.VertxHttp2ClientHandler to protected onStreamError(ctx ChannelHandlerContext, cause Throwable, http2Ex Http2Exception.StreamException) : void from class io.vertx.core.http.impl.VertxHttp2ConnectionHandler</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-7e9b07635ff59d001d19bf4f2eb60b02L175">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-16462be4aa492a5a7ae5e4da06f7024fR253">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Pull Up Method	public Http2ServerRequestImpl(vertx Vertx, connection VertxHttp2ServerHandler, serverOrigin String, conn Http2Connection, stream Http2Stream, ctx ChannelHandlerContext, encoder Http2ConnectionEncoder, headers Http2Headers, contentEncoding String) from class io.vertx.core.http.impl.Http2ServerRequestImpl to package VertxHttp2Stream(vertx Vertx, context ContextImpl, handlerContext ChannelHandlerContext, encoder Http2ConnectionEncoder, decoder Http2ConnectionDecoder, stream Http2Stream) from class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-9dce25015b520efb33907b11739ecf68L95">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R48">To</a></td>
+                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -420,27 +441,6 @@
                                 <td><i>Pull Up Method	public onRstStreamRead(ctx ChannelHandlerContext, streamId int, errorCode long) : void from class io.vertx.core.http.impl.VertxHttp2ServerHandler to public onRstStreamRead(ctx ChannelHandlerContext, streamId int, errorCode long) : void from class io.vertx.core.http.impl.VertxHttp2ConnectionHandler</i></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-2b2db01ce3843b992dbd2dd449dbdfdaL197">From</a></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-16462be4aa492a5a7ae5e4da06f7024fR198">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public onDataRead(ctx ChannelHandlerContext, streamId int, data ByteBuf, padding int, endOfStream boolean) : int from class io.vertx.core.http.impl.VertxHttp2ServerHandler to public onDataRead(ctx ChannelHandlerContext, streamId int, data ByteBuf, padding int, endOfStream boolean) : int from class io.vertx.core.http.impl.VertxHttp2ConnectionHandler</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-2b2db01ce3843b992dbd2dd449dbdfdaL180">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-16462be4aa492a5a7ae5e4da06f7024fR204">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	protected onStreamError(ctx ChannelHandlerContext, cause Throwable, http2Ex Http2Exception.StreamException) : void from class io.vertx.core.http.impl.VertxHttp2ClientHandler to protected onStreamError(ctx ChannelHandlerContext, cause Throwable, http2Ex Http2Exception.StreamException) : void from class io.vertx.core.http.impl.VertxHttp2ConnectionHandler</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-7e9b07635ff59d001d19bf4f2eb60b02L175">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-16462be4aa492a5a7ae5e4da06f7024fR253">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public Http2ServerRequestImpl(vertx Vertx, connection VertxHttp2ServerHandler, serverOrigin String, conn Http2Connection, stream Http2Stream, ctx ChannelHandlerContext, encoder Http2ConnectionEncoder, headers Http2Headers, contentEncoding String) from class io.vertx.core.http.impl.Http2ServerRequestImpl to package VertxHttp2Stream(vertx Vertx, context ContextImpl, handlerContext ChannelHandlerContext, encoder Http2ConnectionEncoder, decoder Http2ConnectionDecoder, stream Http2Stream) from class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-9dce25015b520efb33907b11739ecf68L95">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R48">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -492,6 +492,27 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Extract And Move Method	package bytesWritten() : long extracted from public bytesWritten() : long in class io.vertx.core.http.impl.Http2ServerResponseImpl &amp; moved to class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	public doResume() : void extracted from public resume() : HttpServerRequest in class io.vertx.core.http.impl.Http2ServerRequestImpl &amp; moved to class io.vertx.core.http.impl.ClientConnection</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Extract And Move Method	package writeData(chunk ByteBuf, end boolean) : void extracted from public writeBuffer(buf ByteBuf, end boolean) : void in class io.vertx.core.http.impl.VertxHttp2ClientHandler.Http2ClientStream &amp; moved to class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Extract And Move Method	public doResume() : void extracted from public resume() : HttpServerRequest in class io.vertx.core.http.impl.Http2ServerRequestImpl &amp; moved to class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -518,27 +539,6 @@
                                 <td><a href = "">To</a></td>
                             </tr>
                             
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	package bytesWritten() : long extracted from public bytesWritten() : long in class io.vertx.core.http.impl.Http2ServerResponseImpl &amp; moved to class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	public doResume() : void extracted from public resume() : HttpServerRequest in class io.vertx.core.http.impl.Http2ServerRequestImpl &amp; moved to class io.vertx.core.http.impl.ClientConnection</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Extract And Move Method	package writeData(chunk ByteBuf, end boolean) : void extracted from public writeBuffer(buf ByteBuf, end boolean) : void in class io.vertx.core.http.impl.VertxHttp2ClientHandler.Http2ClientStream &amp; moved to class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
                             </tbody>
                             
                             <tbody>
@@ -552,20 +552,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	ctx : ChannelHandlerContext to handlerContext : ChannelHandlerContext in method package VertxHttp2Stream(vertx Vertx, context ContextImpl, handlerContext ChannelHandlerContext, encoder Http2ConnectionEncoder, decoder Http2ConnectionDecoder, stream Http2Stream) in class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-9dce25015b520efb33907b11739ecf68L101">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R48">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Rename Parameter	code : long to errorCode : long in method package abstract callReset(errorCode long) : void in class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29L26">From</a></td>
-                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R127">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Rename Parameter	code : long to errorCode : long in method package callReset(errorCode long) : void in class io.vertx.core.http.impl.Http2ServerRequestImpl</i></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-9dce25015b520efb33907b11739ecf68L138">From</a></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-9dce25015b520efb33907b11739ecf68R178">To</a></td>
@@ -576,6 +562,20 @@
                                 <td><i>Rename Parameter	code : long to errorCode : long in method package callReset(errorCode long) : void in class io.vertx.core.http.impl.VertxHttp2ServerHandler.Push</i></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-2b2db01ce3843b992dbd2dd449dbdfdaL233">From</a></td>
                                 <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-2b2db01ce3843b992dbd2dd449dbdfdaR199">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	ctx : ChannelHandlerContext to handlerContext : ChannelHandlerContext in method package VertxHttp2Stream(vertx Vertx, context ContextImpl, handlerContext ChannelHandlerContext, encoder Http2ConnectionEncoder, decoder Http2ConnectionDecoder, stream Http2Stream) in class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-9dce25015b520efb33907b11739ecf68L101">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R48">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Rename Parameter	code : long to errorCode : long in method package abstract callReset(errorCode long) : void in class io.vertx.core.http.impl.VertxHttp2Stream</i></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29L26">From</a></td>
+                                <td><a href = "https://github.com/eclipse-vertx/vert.x/commit/71f09e9154de1b4464e50fd45e4d03bb88a97699?diff=split#diff-a1f9a6cef12f8f7a881419c2a4cafc29R127">To</a></td>
                             </tr>
                             
                             </tbody>

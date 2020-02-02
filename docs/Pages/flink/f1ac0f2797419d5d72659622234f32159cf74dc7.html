@@ -262,6 +262,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Pull Up Method	public getName() : String from class org.apache.flink.runtime.state.RegisteredOperatorBackendStateMetaInfo to public getName() : String from class org.apache.flink.runtime.state.RegisteredStateMetaInfoBase</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-e455a0c580ec04e78d174193a60b106cL76">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-7cd78476ccd554115c2b5b76ccbea1c7R38">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Pull Up Method	public getName() : String from class org.apache.flink.runtime.state.RegisteredKeyedBackendStateMetaInfo to public getName() : String from class org.apache.flink.runtime.state.RegisteredStateMetaInfoBase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-d3a7d8228d3955c8f351976603672670L64">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-7cd78476ccd554115c2b5b76ccbea1c7R38">To</a></td>
@@ -271,13 +278,6 @@
                                 <td></td>
                                 <td><i>Pull Up Method	public getName() : String from class org.apache.flink.runtime.state.RegisteredBroadcastBackendStateMetaInfo to public getName() : String from class org.apache.flink.runtime.state.RegisteredStateMetaInfoBase</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-db9d1e11df99cf467f9bf754de303b05L72">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-7cd78476ccd554115c2b5b76ccbea1c7R38">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Pull Up Method	public getName() : String from class org.apache.flink.runtime.state.RegisteredOperatorBackendStateMetaInfo to public getName() : String from class org.apache.flink.runtime.state.RegisteredStateMetaInfoBase</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-e455a0c580ec04e78d174193a60b106cL76">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-7cd78476ccd554115c2b5b76ccbea1c7R38">To</a></td>
                             </tr>
                             
@@ -546,41 +546,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Variable Type	stateMetaInfoList : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to stateMetaInfoList : List&lt;StateMetaInfoSnapshot&gt; in method public testKeyedBackendSerializationProxyRoundtrip() : void in class org.apache.flink.runtime.state.SerializationProxiesTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaL44">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaR56">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	restoredMetaInfo : RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt; to restoredMetaInfo : StateMetaInfoSnapshot in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62L282">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62R339">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	restoredBroadcastMetaInfoSnapshots : List&lt;RegisteredBroadcastBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredBroadcastMetaInfoSnapshots : List&lt;StateMetaInfoSnapshot&gt; in method public restore(restoreSnapshots Collection&lt;OperatorStateHandle&gt;) : void in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL476">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR544">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	restoredMetaInfo : RegisteredOperatorBackendStateMetaInfo.Snapshot&lt;S&gt; to restoredSnapshot : StateMetaInfoSnapshot in method private getListState(stateDescriptor ListStateDescriptor&lt;S&gt;, mode OperatorStateHandle.Mode) : ListState&lt;S&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL708">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR759">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	stateMetaInfoList : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to stateMetaInfoList : List&lt;StateMetaInfoSnapshot&gt; in method public testKeyedBackendSerializationProxyRoundtripWithSerializerSerializationFailures() : void in class org.apache.flink.runtime.state.SerializationProxiesTest</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaL82">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaR94">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Variable Type	restoredMetaInfos : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredMetaInfos : List&lt;StateMetaInfoSnapshot&gt; in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62L282">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62R336">To</a></td>
@@ -691,6 +656,41 @@
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR405">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateMetaInfoList : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to stateMetaInfoList : List&lt;StateMetaInfoSnapshot&gt; in method public testKeyedBackendSerializationProxyRoundtrip() : void in class org.apache.flink.runtime.state.SerializationProxiesTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaL44">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaR56">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	restoredMetaInfo : RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt; to restoredMetaInfo : StateMetaInfoSnapshot in method private restorePartitionedState(state Collection&lt;KeyedStateHandle&gt;) : void in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62L282">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62R339">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	restoredBroadcastMetaInfoSnapshots : List&lt;RegisteredBroadcastBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredBroadcastMetaInfoSnapshots : List&lt;StateMetaInfoSnapshot&gt; in method public restore(restoreSnapshots Collection&lt;OperatorStateHandle&gt;) : void in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL476">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR544">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	restoredMetaInfo : RegisteredOperatorBackendStateMetaInfo.Snapshot&lt;S&gt; to restoredSnapshot : StateMetaInfoSnapshot in method private getListState(stateDescriptor ListStateDescriptor&lt;S&gt;, mode OperatorStateHandle.Mode) : ListState&lt;S&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL708">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR759">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	stateMetaInfoList : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to stateMetaInfoList : List&lt;StateMetaInfoSnapshot&gt; in method public testKeyedBackendSerializationProxyRoundtripWithSerializerSerializationFailures() : void in class org.apache.flink.runtime.state.SerializationProxiesTest</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaL82">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-0ee3c5c271466be8559a6a29b265feeaR94">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -719,34 +719,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-10" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	restoredBroadcastStateMetaInfos : Map&lt;String,RegisteredBroadcastBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredBroadcastStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL119">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR120">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	restoredKvStateMetaInfos : Map&lt;String,RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredKvStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2L233">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2R234">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	restoredKvStateMetaInfos : Map&lt;String,RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredKvStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62L147">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62R148">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Attribute Type	stateMetaInfoSnapshots : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to stateMetaInfoSnapshots : List&lt;StateMetaInfoSnapshot&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalSnapshotOperation</i></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2L2294">From</a></td>
-                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2R2283">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -788,6 +760,34 @@
                                 <td><i>Change Attribute Type	restoredOperatorStateMetaInfos : Map&lt;String,RegisteredOperatorBackendStateMetaInfo.Snapshot&lt;?&gt;&gt; to restoredOperatorStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL114">From</a></td>
                                 <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR115">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	restoredBroadcastStateMetaInfos : Map&lt;String,RegisteredBroadcastBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredBroadcastStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.runtime.state.DefaultOperatorStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dL119">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-37644cbe3beed6d7a26163229540682dR120">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	restoredKvStateMetaInfos : Map&lt;String,RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredKvStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2L233">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2R234">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	restoredKvStateMetaInfos : Map&lt;String,RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to restoredKvStateMetaInfos : Map&lt;String,StateMetaInfoSnapshot&gt; in class org.apache.flink.runtime.state.heap.HeapKeyedStateBackend</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62L147">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-166333601cc781668209538cca90dd62R148">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Attribute Type	stateMetaInfoSnapshots : List&lt;RegisteredKeyedBackendStateMetaInfo.Snapshot&lt;?,?&gt;&gt; to stateMetaInfoSnapshots : List&lt;StateMetaInfoSnapshot&gt; in class org.apache.flink.contrib.streaming.state.RocksDBKeyedStateBackend.RocksDBIncrementalSnapshotOperation</i></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2L2294">From</a></td>
+                                <td><a href = "https://github.com/apache/flink/commit/f1ac0f2797419d5d72659622234f32159cf74dc7?diff=split#diff-4585546df289e14ed098ed06400303c2R2283">To</a></td>
                             </tr>
                             
                             </tbody>

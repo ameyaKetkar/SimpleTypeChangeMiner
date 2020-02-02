@@ -378,6 +378,13 @@
                             
                             <tr>
                                 <td></td>
+                                <td><i>Move Class	org.keycloak.storage.ldap.mappers.LDAPTransaction.TransactionState moved to org.keycloak.models.AbstractKeycloakTransaction.TransactionState</i></td>
+                                <td><a href = "">From</a></td>
+                                <td><a href = "">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
                                 <td><i>Move Class	org.keycloak.models.sessions.infinispan.initializer.InfinispanUserSessionInitializer.WorkerResult moved to org.keycloak.models.sessions.infinispan.initializer.InfinispanCacheInitializer.WorkerResult</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
@@ -386,13 +393,6 @@
                             <tr>
                                 <td></td>
                                 <td><i>Move Class	org.keycloak.testsuite.util.cli.RoleCommands.CreateRoles.StateHolder moved to org.keycloak.testsuite.util.cli.BatchTaskRunner.StateHolder</i></td>
-                                <td><a href = "">From</a></td>
-                                <td><a href = "">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Move Class	org.keycloak.storage.ldap.mappers.LDAPTransaction.TransactionState moved to org.keycloak.models.AbstractKeycloakTransaction.TransactionState</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -432,13 +432,6 @@
                             </tr>
                             </tbody>
                             <tbody id="group-of-rows-11" class="collapse">
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Variable Type	itr : Iterator&lt;Map.Entry&lt;String,SessionEntity&gt;&gt; to itr : Iterator&lt;UserSessionEntity&gt; in method public getOfflineUserSessions(realm RealmModel, user UserModel) : List&lt;UserSessionModel&gt; in class org.keycloak.models.sessions.infinispan.InfinispanUserSessionProvider</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9L460">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9R652">To</a></td>
-                            </tr>
                             
                             <tr>
                                 <td></td>
@@ -508,6 +501,13 @@
                                 <td><i>Change Variable Type	cache : Cache&lt;String,SessionEntity&gt; to cache : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in method protected getUserSessions(realm RealmModel, client ClientModel, firstResult int, maxResults int, offline boolean) : List&lt;UserSessionModel&gt; in class org.keycloak.models.sessions.infinispan.InfinispanUserSessionProvider</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9L177">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9R256">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Variable Type	itr : Iterator&lt;Map.Entry&lt;String,SessionEntity&gt;&gt; to itr : Iterator&lt;UserSessionEntity&gt; in method public getOfflineUserSessions(realm RealmModel, user UserModel) : List&lt;UserSessionModel&gt; in class org.keycloak.models.sessions.infinispan.InfinispanUserSessionProvider</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9L460">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9R652">To</a></td>
                             </tr>
                             
                             </tbody>
@@ -676,20 +676,6 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Change Return Type	Function&lt;Map.Entry&lt;String,SessionEntity&gt;,String&gt; to Function&lt;Map.Entry&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt;,String&gt; in method public sessionId() : Function&lt;Map.Entry&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt;,String&gt; in class org.keycloak.models.sessions.infinispan.stream.Mappers</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-a2970ca02061d70058e13799ebdb9c6bL40">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-a2970ca02061d70058e13799ebdb9c6bR39">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
-                                <td><i>Change Return Type	Cache&lt;String,SessionEntity&gt; to Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in method protected getCache(offline boolean) : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in class org.keycloak.models.sessions.infinispan.InfinispanUserSessionProvider</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9L81">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9R116">To</a></td>
-                            </tr>
-                            
-                            <tr>
-                                <td></td>
                                 <td><i>Change Return Type	Function&lt;Map.Entry&lt;String,Optional&lt;UserSessionTimestamp&gt;&gt;,UserSessionTimestamp&gt; to Function&lt;Map.Entry&lt;String,SessionEntityWrapper&gt;,Map.Entry&lt;String,SessionEntity&gt;&gt; in method public unwrap() : Function&lt;Map.Entry&lt;String,SessionEntityWrapper&gt;,Map.Entry&lt;String,SessionEntity&gt;&gt; in class org.keycloak.models.sessions.infinispan.stream.Mappers</i></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-a2970ca02061d70058e13799ebdb9c6bL36">From</a></td>
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-a2970ca02061d70058e13799ebdb9c6bR35">To</a></td>
@@ -716,6 +702,20 @@
                                 <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-bae20d93121059ec77ed776aebfe2bc6R55">To</a></td>
                             </tr>
                             
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Function&lt;Map.Entry&lt;String,SessionEntity&gt;,String&gt; to Function&lt;Map.Entry&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt;,String&gt; in method public sessionId() : Function&lt;Map.Entry&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt;,String&gt; in class org.keycloak.models.sessions.infinispan.stream.Mappers</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-a2970ca02061d70058e13799ebdb9c6bL40">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-a2970ca02061d70058e13799ebdb9c6bR39">To</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td><i>Change Return Type	Cache&lt;String,SessionEntity&gt; to Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in method protected getCache(offline boolean) : Cache&lt;String,SessionEntityWrapper&lt;UserSessionEntity&gt;&gt; in class org.keycloak.models.sessions.infinispan.InfinispanUserSessionProvider</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9L81">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-91e2bf6387e9a22d8434ec6c9f7072f9R116">To</a></td>
+                            </tr>
+                            
                             </tbody>
                             
                             <tbody>
@@ -729,14 +729,14 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Superclass	org.keycloak.models.AbstractKeycloakTransaction from classes [org.keycloak.storage.ldap.mappers.LDAPTransaction]</i></td>
+                                <td><i>Extract Superclass	org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener from classes [org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener.FetchInitialStateCacheListener, org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener.DontFetchInitialStateCacheListener]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Extract Superclass	org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener from classes [org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener.FetchInitialStateCacheListener, org.keycloak.models.sessions.infinispan.remotestore.RemoteCacheSessionListener.DontFetchInitialStateCacheListener]</i></td>
+                                <td><i>Extract Superclass	org.keycloak.models.AbstractKeycloakTransaction from classes [org.keycloak.storage.ldap.mappers.LDAPTransaction]</i></td>
                                 <td><a href = "">From</a></td>
                                 <td><a href = "">To</a></td>
                             </tr>
@@ -818,16 +818,16 @@
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	cache : Cache&lt;String,SessionEntity&gt; to updateTx : InfinispanChangelogBasedTransaction in method public AuthenticatedClientSessionAdapter(entity AuthenticatedClientSessionEntity, client ClientModel, userSession UserSessionAdapter, provider InfinispanUserSessionProvider, updateTx InfinispanChangelogBasedTransaction) in class org.keycloak.models.sessions.infinispan.AuthenticatedClientSessionAdapter</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-dbb6fe2a00cd986f561ee714458a36ebL45">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-dbb6fe2a00cd986f561ee714458a36ebR50">To</a></td>
+                                <td><i>Rename Parameter	cache : Cache&lt;String,SessionEntity&gt; to updateTx : InfinispanChangelogBasedTransaction in method public UserSessionAdapter(session KeycloakSession, provider InfinispanUserSessionProvider, updateTx InfinispanChangelogBasedTransaction, realm RealmModel, entity UserSessionEntity, offline boolean) in class org.keycloak.models.sessions.infinispan.UserSessionAdapter</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-d5b6135a38b144f78ca59aa6c64b3d61L55">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-d5b6135a38b144f78ca59aa6c64b3d61R56">To</a></td>
                             </tr>
                             
                             <tr>
                                 <td></td>
-                                <td><i>Rename Parameter	cache : Cache&lt;String,SessionEntity&gt; to updateTx : InfinispanChangelogBasedTransaction in method public UserSessionAdapter(session KeycloakSession, provider InfinispanUserSessionProvider, updateTx InfinispanChangelogBasedTransaction, realm RealmModel, entity UserSessionEntity, offline boolean) in class org.keycloak.models.sessions.infinispan.UserSessionAdapter</i></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-d5b6135a38b144f78ca59aa6c64b3d61L55">From</a></td>
-                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-d5b6135a38b144f78ca59aa6c64b3d61R56">To</a></td>
+                                <td><i>Rename Parameter	cache : Cache&lt;String,SessionEntity&gt; to updateTx : InfinispanChangelogBasedTransaction in method public AuthenticatedClientSessionAdapter(entity AuthenticatedClientSessionEntity, client ClientModel, userSession UserSessionAdapter, provider InfinispanUserSessionProvider, updateTx InfinispanChangelogBasedTransaction) in class org.keycloak.models.sessions.infinispan.AuthenticatedClientSessionAdapter</i></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-dbb6fe2a00cd986f561ee714458a36ebL45">From</a></td>
+                                <td><a href = "https://github.com/keycloak/keycloak/commit/07e2136b3b29984252c974a3f11ba3ddb69abda3?diff=split#diff-dbb6fe2a00cd986f561ee714458a36ebR50">To</a></td>
                             </tr>
                             
                             </tbody>
