@@ -126,7 +126,7 @@ public class Runner {
 
         List<Project> alreadyProcessed = readWriteProtos.<Project>readAll("projects", "Project");
 
-        List<String> ignoreCommits = Arrays.asList("11cc13b043c9d73c49134f27aef5e4c05dc6f30a","927c61205c818fcfd3c743bcb8ddea47a8b04f7f");
+        List<String> ignoreCommits = Arrays.asList();//"11cc13b043c9d73c49134f27aef5e4c05dc6f30a","927c61205c818fcfd3c743bcb8ddea47a8b04f7f");
 
         projectsGit.parallelStream().forEach(prc -> {
             LOGGER.info("Analysing project : " + prc._1()._1());
