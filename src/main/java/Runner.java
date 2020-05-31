@@ -208,7 +208,7 @@ public class Runner {
             }else{
                 cmt.setDependencyUpdate(upd.get());
                 cmt.addAllDependencies(depsCurr);
-                downloadDependencies("/Output/dependencies/", depsCurr.stream().map(x->String.join(":", x.getArtifactID(),x.getGroupID(), x.getVersion())).collect(toSet()));
+                downloadDependencies(outputFolder.resolve("dependencies"), depsCurr.stream().map(x->String.join(":", x.getArtifactID(),x.getGroupID(), x.getVersion())).collect(toSet()));
             }
         }else{
             cmt.addAllDependencies(depsBefore);
