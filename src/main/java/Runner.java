@@ -143,7 +143,7 @@ public class Runner {
             int counter = 0;
 
           //  if(alreadyProcessed.stream().noneMatch(x->x.getName().equals(project.getName())))
-          //      readWriteProtos.write(project, "projects", true);
+            readWriteProtos.write(project, "projects", true);
 
             List<RevCommit> commitstoAnalyze = filterAlreadyProcessed(commits, prc._1()._1()).stream()
                     .filter(x-> ignoreCommits.stream().noneMatch(s -> s.equals(x.getId().getName())))
