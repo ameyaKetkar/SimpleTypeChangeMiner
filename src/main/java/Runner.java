@@ -129,7 +129,7 @@ public class Runner {
 //                        .map(x -> Tuple.of(x, getCommits(x._2(), COMMIT_TIME_DESC, epochStart, new ArrayList<>(), new ArrayList<>())))
 //                        .collect(toList());
 
-        List<Project> alreadyProcessed = readWriteProtos.<Project>readAll("projects", "Project");
+   //     List<Project> alreadyProcessed = readWriteProtos.<Project>readAll("projects", "Project");
 
         List<String> ignoreCommits = Arrays.asList();//"11cc13b043c9d73c49134f27aef5e4c05dc6f30a","927c61205c818fcfd3c743bcb8ddea47a8b04f7f");
 
@@ -142,8 +142,8 @@ public class Runner {
             Set<JarInfo> jarsBefore = new HashSet<>();
             int counter = 0;
 
-            if(alreadyProcessed.stream().noneMatch(x->x.getName().equals(project.getName())))
-                readWriteProtos.write(project, "projects", true);
+          //  if(alreadyProcessed.stream().noneMatch(x->x.getName().equals(project.getName())))
+          //      readWriteProtos.write(project, "projects", true);
 
             List<RevCommit> commitstoAnalyze = filterAlreadyProcessed(commits, prc._1()._1()).stream()
                     .filter(x-> ignoreCommits.stream().noneMatch(s -> s.equals(x.getId().getName())))
