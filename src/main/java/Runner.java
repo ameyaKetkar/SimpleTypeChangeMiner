@@ -76,6 +76,7 @@ public class Runner {
     public static Properties prop;
     public static Path pathToCorpus;
     public static Path projectList;
+    public static Path pathToSetup;
     public static Function<String,Path> projectPath;
     public static Date epochStart;
     public static Path outputFolder;
@@ -91,11 +92,12 @@ public class Runner {
             prop = new Properties();
             InputStream input = new FileInputStream("paths.properties");
             prop.load(input);
-            pathToCorpus = Paths.get(prop.getProperty("PathToCorpus"));
+            pathToSetup=Paths.get(prop.getProperty("PathToSetup")).resolve("SimpleTypeChangeMiner");
+            pathToCorpus = pathToSetup.getParent().resolve(prop.getProperty("PathToCorpus"));
             projectList = pathToCorpus.resolve(prop.getProperty("InputProjects"));
             projectPath = p -> pathToCorpus.resolve("Project_"+p).resolve(p);
             epochStart = new SimpleDateFormat("YYYY-mm-dd").parse(prop.getProperty("epoch"));
-            outputFolder = Paths.get(".").toAbsolutePath().resolve(prop.getProperty("output"));
+            outputFolder = pathToSetup.resolve(prop.getProperty("output"));
             readWriteProtos = new ReadWriteAt(outputFolder.resolve("ProtosOut"));
             readWriteCleanProtos = new ReadWriteAt(outputFolder.resolve("CleanProtos"));
             mavenHome = prop.getProperty("mavenHome");
@@ -120,7 +122,10 @@ public class Runner {
                 projects.stream()
                         .map(x -> Tuple.of(x, tryToClone(x._2(), projectPath.apply(x._1()))))
                         .filter(x -> x._2().isSuccess())
-                        .map(x->x.map2(Try::get)).collect(toList());
+                        .map(x->x.map2(Try::get))
+//                        .filter(x -> x._1()._1().contains("truth"))
+                        .collect(toList());
+
 //                        .map(x -> Tuple.of(x, getCommits(x._2(), COMMIT_TIME_DESC, epochStart, new ArrayList<>(), new ArrayList<>())))
 //                        .collect(toList());
 
